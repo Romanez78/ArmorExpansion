@@ -15,4 +15,6 @@
 func void Patch_AE_Init() {
     HookDaedalusFuncS("C_PlayerHasFakeGuild", "Ninja_ArmorExpansion_C_PlayerHasFakeGuild");
 	HookDaedalusFuncS("Startup_Demontower", "Ninja_ArmorExpansion_Startup_Demontower");
+    HookDaedalusFuncS("PC_Common_Condition", "Ninja_ArmorExpansion_PC_Common_Condition");
+    HookDaedalusFuncS("PC_Ore_Condition", "Ninja_ArmorExpansion_PC_Ore_Condition");
 };
