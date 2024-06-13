@@ -18,7 +18,7 @@ INSTANCE ITAR_MIL_H (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"WACHEH.3ds";
+	visual 					=	"HeavyMilitiaOC.3ds";
 	visual_change 			=	"Armor_Thorus_ADDON2.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
@@ -248,14 +248,14 @@ INSTANCE ITAR_PAL_C (C_Item)
     protection [PROT_EDGE]  =    90;
     protection [PROT_BLUNT] =    90;
     protection [PROT_POINT] =    90;
-    protection [PROT_FIRE]  =    35;
+    protection [PROT_FIRE]  =    40;
     protection [PROT_MAGIC] =    20;
 
     value    =    5000;
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "PALGA.3ds";
+    visual    =    "PALCROSBOW.3ds";
     visual_change    =    "Armor_Pal_M8.asc";
     visual_skin    =    0;
     material    =    MAT_METAL;
@@ -310,7 +310,7 @@ INSTANCE ITAR_MIL_Med2 (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"WACHERM.3DS";
+	visual 					=	"MEDIUMMILR.3DS";
 	visual_change 			=	"ARMOR_MIL_MEDIUM.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -345,7 +345,7 @@ INSTANCE ITAR_MIL_P (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"WACHERC.3DS";
+	visual 					=	"MilitiaRed.3DS";
 	visual_change 			=	"ARMOR_MIL_P.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
@@ -486,7 +486,7 @@ INSTANCE ITAR_SLD_BOW (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDB.3ds";
+	visual 					=	"SLDHC.3ds";
 	visual_change 			=	"Armor_SLD_BOW.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -537,7 +537,7 @@ INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"WACHER.3DS";
+	visual 					=	"LIGHTMILR.3DS";
 	visual_change 			=	"Armor_MIL_R.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -573,7 +573,7 @@ INSTANCE ITAR_CRUSADER (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"CRUSADER.3ds";
+	visual 					=	"CRUSADERHELMETGROUND.3DS";
 	visual_change 			=	"Armor_CRUSADER.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
@@ -624,7 +624,7 @@ INSTANCE ITAR_SLD_SCOUT (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDSC.3ds";
+	visual 					=	"SLDSCOUT.3ds";
 	visual_change 			=	"ARMOR_SLD_SCOUT.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -680,7 +680,7 @@ INSTANCE ITAR_MIL_SCOUT (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"WACHERS.3ds";
+	visual 					=	"MilitiaScout.3ds";
 	visual_change 			=	"ARMOR_MIL_SCOUT.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -736,7 +736,7 @@ INSTANCE ITAR_SLD_R (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDR.3ds";
+	visual 					=	"SLDMR.3ds";
 	visual_change 			=	"Armor_Sld_R.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -775,7 +775,7 @@ INSTANCE ITAR_SLD_LR (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDRL.3ds";
+	visual 					=	"SLDLR.3ds";
 	visual_change 			=	"Armor_Sld_LR.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -814,7 +814,7 @@ INSTANCE ITAR_PAL_CH (C_Item)
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "ItAr_Pal_M3.3ds";
+    visual    =    "ItAr_Pal_H.3ds";
     visual_change    =    "Armor_Pal_H4000.asc";
     visual_skin    =    0;
     material    =    MAT_METAL;
@@ -1019,7 +1019,7 @@ INSTANCE ITAR_PAL_MH (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ItAr_Pal_M3.3ds";
+	visual 					=	"ItAr_Pal_H.3ds";
 	visual_change 			=	"Armor_Pal_M10_02.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
@@ -1096,4 +1096,319 @@ func void UnEquip_ITAR_PIR_H_ARMOREXPANSION()
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_1H, -5);
 		self.attribute[ATR_DEXTERITY] 		-= 10;
+};
+INSTANCE ITAR_PAL_ANH (C_Item)
+{
+	name 					=	"Obohacená Paladinská Zbroj";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	140;
+	protection [PROT_BLUNT] = 	140;
+	protection [PROT_POINT] = 	140;
+	protection [PROT_FIRE] 	= 	125;
+	protection [PROT_MAGIC] = 	75;
+
+	value 					=	VALUE_ITAR_PAL_H;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ARCPALANH.3ds";
+	visual_change 			=	"Armor_Pal_H_Blessed.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	on_equip    			=    Equip_ITAR_PAL_A;
+    on_unequip    			=    UnEquip_ITAR_PAL_A;	
+	
+	description				=	name;
+	TEXT[0]                 =       "+40 Bonus maximální many.";	
+
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+FUNC VOID Equip_ItAr_PAL_A()
+	{
+		B_RaiseAttribute	(self, ATR_MANA_MAX,	40);
+		Npc_ChangeAttribute	(self, ATR_MANA,	40);
+	};
+FUNC VOID UnEquip_ItAr_PAL_A()
+	{
+		B_RaiseAttribute	(self, ATR_MANA_MAX,	-40);
+		Npc_ChangeAttribute	(self, ATR_MANA,	-40);
+	};
+INSTANCE ITAR_PAL_RNH (C_Item)
+{
+	name 					=	"Rezavá Paladinská Zbroj";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	80;
+	protection [PROT_BLUNT] = 	80;
+	protection [PROT_POINT] = 	80;
+	protection [PROT_FIRE] 	= 	20;
+	protection [PROT_MAGIC] = 	20;
+
+	value 					=	2000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"RUSTARCNH.3ds";
+	visual_change 			=	"Armor_Pal_H_Rusty.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	description				=	name;
+	TEXT[0]                 =       "Tahle zbroj zažila lepší èasy";	
+
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_PAL_FNH (C_Item)
+{
+	name 					=	"Opravená Paladinská Zbroj";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	120;
+	protection [PROT_BLUNT] = 	120;
+	protection [PROT_POINT] = 	120;
+	protection [PROT_FIRE] 	= 	70;
+	protection [PROT_MAGIC] = 	40;
+
+	value 					=	VALUE_ITAR_PAL_H;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ARCPALANH.3ds";
+	visual_change 			=	"Armor_Pal_H_Blessed.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	on_equip    			=    Equip_ITAR_PAL_F;
+    on_unequip    			=    UnEquip_ITAR_PAL_F;	
+	
+	description				=	name;
+	TEXT[0]                 =       "+20 bonus maximální many";	
+
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_PAL_AFH (C_Item)
+{
+	name 					=	"Obohacená Paladinská Zbroj";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	140;
+	protection [PROT_BLUNT] = 	140;
+	protection [PROT_POINT] = 	140;
+	protection [PROT_FIRE] 	= 	125;
+	protection [PROT_MAGIC] = 	75;
+
+	value 					=	VALUE_ITAR_PAL_H;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ARCPALA.3ds";
+	visual_change 			=	"Armor_PAL_H_ARCFULLHELM.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	on_equip    			=    Equip_ITAR_PAL_A;
+    on_unequip    			=    UnEquip_ITAR_PAL_A;	
+	
+	description				=	name;
+	TEXT[0]                 =       "+40 Bonus maximální many.";	
+
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+FUNC VOID Equip_ItAr_PAL_A()
+	{
+		B_RaiseAttribute	(self, ATR_MANA_MAX,	40);
+		Npc_ChangeAttribute	(self, ATR_MANA,	40);
+	};
+FUNC VOID UnEquip_ItAr_PAL_A()
+	{
+		B_RaiseAttribute	(self, ATR_MANA_MAX,	-40);
+		Npc_ChangeAttribute	(self, ATR_MANA,	-40);
+	};
+INSTANCE ITAR_PAL_RFH (C_Item)
+{
+	name 					=	"Rezavá Paladinská Zbroj";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	80;
+	protection [PROT_BLUNT] = 	80;
+	protection [PROT_POINT] = 	80;
+	protection [PROT_FIRE] 	= 	20;
+	protection [PROT_MAGIC] = 	20;
+
+	value 					=	2000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"RUSTARC.3ds";
+	visual_change 			=	"Armor_PAL_H_RUSTFULLHELM.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	description				=	name;
+	TEXT[0]                 =       "Tahle zbroj zažila lepší èasy";	
+
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_PAL_FFH (C_Item)
+{
+	name 					=	"Opravená Paladinská Zbroj";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	120;
+	protection [PROT_BLUNT] = 	120;
+	protection [PROT_POINT] = 	120;
+	protection [PROT_FIRE] 	= 	70;
+	protection [PROT_MAGIC] = 	40;
+
+	value 					=	VALUE_ITAR_PAL_H;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ARCPALA.3ds";
+	visual_change 			=	"Armor_PAL_H_ARCFULLHELM.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	on_equip    			=    Equip_ITAR_PAL_F;
+    on_unequip    			=    UnEquip_ITAR_PAL_F;	
+	
+	description				=	name;
+	TEXT[0]                 =       "+20 bonus maximální many";	
+
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_NH_CRUSADER (C_Item)
+{
+	name 					=	"Zbroj Køižáka";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	115;
+	protection [PROT_BLUNT] = 	115;
+	protection [PROT_POINT] = 	115;
+	protection [PROT_FIRE] 	= 	65;
+	protection [PROT_MAGIC] = 	40;
+	
+	value 					=	10000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"CRUSADER.3DS";
+	visual_change 			=	"Armor_CRUSADER_NH.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+	
+	on_equip				=	Equip_ITAR_CRUSADER;
+	on_unequip				=	UnEquip_ITAR_CRUSADER;
+	
+	description				=	name;
+	TEXT[0]                 =       "+5% Talent s obouruèními zbranìmi";
+	
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
 };
