@@ -30,7 +30,7 @@ instance PAL_298_Ritter (Npc_Default)
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_N_Normal08, BodyTex_N, ITAR_PAL_MH);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_N_Normal08, BodyTex_N, ITAR_PAL_MH_ARMOREXPANSION);	
 	Mdl_SetModelFatness	(self, 1);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	

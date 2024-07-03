@@ -25,7 +25,7 @@ instance VLK_440_Bartok (Npc_Default)
 	CreateInvItems (self, ItPo_Health_03, 5);
 	
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_N_Important_Arto, BodyTex_N,ITAR_GAMBESON);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_N_Important_Arto, BodyTex_N,ITAR_GAMBESON_ARMOREXPANSION);	
 	Mdl_SetModelFatness	(self,0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	

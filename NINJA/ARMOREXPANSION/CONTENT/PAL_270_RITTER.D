@@ -23,7 +23,7 @@ instance PAL_270_Ritter (Npc_Default)
 
 		
 	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_L_ToughBart_Quentin, BodyTex_L, ITAR_PAL_MH);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_L_ToughBart_Quentin, BodyTex_L, ITAR_PAL_MH_ARMOREXPANSION);	
 	Mdl_SetModelFatness	(self, 0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); // Tired / Militia / Mage / Arrogance / Relaxed
 	

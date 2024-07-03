@@ -16,15 +16,15 @@ instance Mil_327_Miliz (Npc_Default)
 	fight_tactic		= FAI_HUMAN_STRONG;	
 	
 	// ------ Equippte Waffen ------																	
-	EquipItem			(self, ItMw_1h_Mil_Sword);
-	
+	EquipItem			(self, ItMw_Shortsword1);
+	EquipItem			(self, ItRw_Mil_Crossbow);
 	
 	// ------ Inventory ------
 	B_CreateAmbientInv 	(self);
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Normal20, BodyTex_N, ITAR_MIL_SCOUT);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Normal20, BodyTex_N, ITAR_MIL_SCOUT_ARMOREXPANSION);	
 	Mdl_SetModelFatness	(self,0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	

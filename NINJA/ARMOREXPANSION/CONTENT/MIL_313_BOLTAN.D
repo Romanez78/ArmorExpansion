@@ -1,21 +1,22 @@
-instance Mil_312_Wulfgar (Npc_Default)
+
+instance Mil_313_Boltan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wulfgar";	
+	name 		= "Boltan";	
 	guild 		= GIL_MIL;
-	id 			= 312;
-	voice 		= 4;
+	id 			= 313;
+	voice 		= 5;
 	flags       = 0;																
-	npctype		= NPCTYPE_MAIN;
+	npctype		= NPCTYPE_AMBIENT;
 	
 	// ------ Attribute ------
 	B_SetAttributesToChapter (self, 3);																	
 		
 	// ------ Kampf-Taktik ------
-	fight_tactic = FAI_HUMAN_STRONG;	
+	fight_tactic		= FAI_HUMAN_STRONG;	
 	
 	// ------ Equippte Waffen ------																	
-	EquipItem(self, ItMw_1h_Mil_Sword);
+	EquipItem			(self, ItMw_1h_Mil_Sword);
 	
 	
 	// ------ Inventory ------
@@ -23,16 +24,22 @@ instance Mil_312_Wulfgar (Npc_Default)
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart06, BodyTex_N, ITAR_MIL_H_ARMOREXPANSION);	
-	Mdl_SetModelFatness	(self, 2);
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_B_Normal01, BodyTex_B, ITAR_MIL_H_ArmorExpansion);	
+	Mdl_SetModelFatness	(self,0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
-	
+
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
 	// ------ Kampf-Talente ------																		
-	B_SetFightSkills (self, 60); 
+	B_SetFightSkills (self, 55); 
 	
 	// ------ TA anmelden ------
-	daily_routine 		= Rtn_PreStart_312;
+	daily_routine 		= Rtn_Start_313;
+};
+
+FUNC VOID Rtn_Start_313 ()
+{	
+	TA_Sit_Chair			(06,55,21,00,"NW_CITY_HABOUR_KASERN_PRISON_SIT");
+  	TA_Stand_Guarding		(21,00,06,55,"NW_CITY_HABOUR_KASERN_PRISON_02");
 };

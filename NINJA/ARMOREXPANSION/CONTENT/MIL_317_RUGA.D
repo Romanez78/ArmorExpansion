@@ -25,7 +25,7 @@ instance Mil_317_Ruga (Npc_Default)
 	CreateInvItems (self,ItKe_City_Tower_03,1);
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Thief", Face_N_NormalBart03, BodyTex_N, ITAR_MIL_P);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Thief", Face_N_NormalBart03, BodyTex_N, ITAR_MIL_P_ARMOREXPANSION);	
 	Mdl_SetModelFatness	(self,0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	

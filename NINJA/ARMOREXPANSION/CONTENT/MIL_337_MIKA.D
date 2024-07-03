@@ -24,7 +24,7 @@ instance Mil_337_Mika (Npc_Default)
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fatbald", Face_L_ToughBart_Quentin, BodyTex_L, ITAR_MIL_Med2);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fatbald", Face_L_ToughBart_Quentin, BodyTex_L, ITAR_MIL_Med2_ARMOREXPANSION);	
 	Mdl_SetModelFatness	(self, 2);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 

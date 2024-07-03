@@ -19,9 +19,11 @@
 
 
 /*
- *  [VARIABLES]
+ *  [CONSTANTS]
+ *   - [MOBSI]
+ *  Treat an anvil like another mobsi, when player wants to forge an armor from a packet.
  */
-var int NINJA_ARMOREXPANSION_ArmorForging; // Did player select the option to forge an armor?
+const int NINJA_ARMOREXPANSION_MOBSI_SmithWeapon = 102;
 
 
 /*
@@ -118,7 +120,7 @@ func void NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(var string armorName)
 func int Ninja_ArmorExpansion_PC_Common_Condition()
 {
     // If player already selected forging an armor
-    if (true == NINJA_ARMOREXPANSION_ArmorForging)
+    if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
         return false;
     };
@@ -128,7 +130,7 @@ func int Ninja_ArmorExpansion_PC_Common_Condition()
 func int Ninja_ArmorExpansion_PC_Ore_Condition()
 {
     // If player already selected forging an armor
-    if (true == NINJA_ARMOREXPANSION_ArmorForging)
+    if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
         return false;
     };
@@ -158,17 +160,14 @@ func int NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_Condition()
         {
             if (false == Erzwaffen)
             {
-                if (false == NINJA_ARMOREXPANSION_ArmorForging)
-                {
-                    return TRUE;
-                };
+                return TRUE;
             };
         };
     };
 };
 func void NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_Info()
 {
-	NINJA_ARMOREXPANSION_ArmorForging = true;
+    PLAYER_MOBSI_PRODUCTION = NINJA_ARMOREXPANSION_MOBSI_SmithWeapon;
 };
 
 /*
@@ -186,23 +185,45 @@ instance NINJA_ARMOREXPANSION_PC_FORGE_ARMORBACK(C_INFO)
 };
 func int NINJA_ARMOREXPANSION_PC_FORGE_ARMORBACK_Condition()
 {
-    if (PLAYER_MOBSI_PRODUCTION == MOBSI_SMITHWEAPON)
+    if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (false == Normalwaffen)
-        {
-            if (false == Erzwaffen)
-            {
-                if (true == NINJA_ARMOREXPANSION_ArmorForging)
-                {
-                    return true;
-                };
-            };
-        };
+        return true;
     };
 };
 func void NINJA_ARMOREXPANSION_PC_FORGE_ARMORBACK_Info()
 {
-	NINJA_ARMOREXPANSION_ArmorForging = false;
+    // Return to original constant.
+	PLAYER_MOBSI_PRODUCTION = MOBSI_SmithWeapon;
+};
+
+/*
+ *  NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_End
+ *   - end mobsi dialogue
+ */
+instance NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_End(C_Info)
+{
+	npc				= PC_Hero;
+	nr				= 999;
+	condition		= NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_End_Condition;
+	information		= NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_End_Info;
+	permanent		= TRUE;
+	description		= DIALOG_ENDE;
+};
+func int NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_End_Condition()
+{
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+	{
+		return TRUE;
+	};
+};
+func void NINJA_ARMOREXPANSION_PC_FORGE_ARMOR_End_Info()
+{
+	CreateInvItems(self, ItMiSwordRaw, 1);
+	B_ENDPRODUCTIONDIALOG();
+    
+    // For sure I reset it.
+	Erzwaffen = FALSE;
+	NormalWaffen = FALSE;
 };
 
 
@@ -223,15 +244,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_ST (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_ST_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has a blueprint
-            if (0 < Npc_HasItems(hero, ItWr_BluePrint_StewarkArmor))
-            {	
-                return true;
-            };
+        // If has a blueprint
+        if (0 < Npc_HasItems(hero, ItWr_BluePrint_StewarkArmor))
+        {	
+            return true;
         };
     };
 };
@@ -290,10 +308,10 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_ST_Info()
         
         
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_ST);
+        CreateInvItem(hero, ITAR_PAL_ST_ARMOREXPANSION);
         
         // Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_ST.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_ST_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -316,15 +334,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_A))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_A_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -339,7 +354,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_ANH__Itar_pal_a;
-    amount_current = Npc_HasItems(hero, Itar_Pal_A); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_A_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -347,7 +362,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -361,13 +376,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_a, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_a_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_ANH);
+        CreateInvItem(hero, ITAR_PAL_ANH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
 		
         // Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_ANH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -389,15 +404,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_A))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_A_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -412,7 +424,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_AFH__Itar_pal_a;
-    amount_current = Npc_HasItems(hero, Itar_Pal_A); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_A_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -420,7 +432,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -434,13 +446,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_a, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_a_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_AFH);
+        CreateInvItem(hero, ITAR_PAL_AFH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
 		
         // Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_AFH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -462,15 +474,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_ANH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_ANH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -485,7 +494,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_AFH__itar_pal_anh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_ANH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_ANH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -493,7 +502,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_ANH.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_ANH_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -507,13 +516,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_anh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_anh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_AFH);
+        CreateInvItem(hero, ITAR_PAL_AFH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_AFH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -535,15 +544,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_AFH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_AFH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -558,7 +564,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_ANH__itar_pal_afh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_AFH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_AFH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -566,7 +572,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_AFH.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_AFH_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -580,13 +586,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_afh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_afh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_ANH);
+        CreateInvItem(hero, ITAR_PAL_ANH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_ANH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -608,15 +614,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_AFH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_AFH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -631,7 +634,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_A__itar_pal_afh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_AFH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_AFH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -639,7 +642,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -653,13 +656,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_afh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_afh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_A);
+        CreateInvItem(hero, ITAR_PAL_A_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_A.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_A_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -681,15 +684,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_ANH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_ANH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -704,7 +704,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_A__itar_pal_anh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_ANH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_ANH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -712,7 +712,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_A_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -726,13 +726,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_anh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_anh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_A);
+        CreateInvItem(hero, ITAR_PAL_A_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_A.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_A_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -754,15 +754,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_FNH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_FNH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_F))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_F_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -777,7 +774,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FNH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_FNH__Itar_pal_f;
-    amount_current = Npc_HasItems(hero, Itar_Pal_F); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_F_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -785,7 +782,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FNH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -799,13 +796,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FNH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_F, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_F_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_FNH);
+        CreateInvItem(hero, ITAR_PAL_FNH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
 		
         // Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_FNH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -827,15 +824,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_F))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_F_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -850,7 +844,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_FFH__Itar_pal_F;
-    amount_current = Npc_HasItems(hero, Itar_Pal_F); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_F_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -858,7 +852,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -872,13 +866,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_F, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_F_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_FFH);
+        CreateInvItem(hero, ITAR_PAL_FFH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
 		
         // Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_FFH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -900,15 +894,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_FNH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_FNH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -923,7 +914,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_FFH__itar_pal_fnh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_FNH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_FNH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -931,7 +922,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_FNH.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_FNH_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -945,13 +936,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_fnh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_fnh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_fFH);
+        CreateInvItem(hero, ITAR_PAL_fFH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_fFH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_fFH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -973,15 +964,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_fFH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_fFH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -996,7 +984,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_fNH__itar_pal_ffh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_fFH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_fFH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1004,7 +992,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_fFH.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_fFH_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1018,13 +1006,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_ffh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_ffh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_fNH);
+        CreateInvItem(hero, ITAR_PAL_fNH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_fNH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_fNH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1046,15 +1034,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_FFH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_FFH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1069,7 +1054,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_F__itar_pal_Ffh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_FFH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_FFH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1077,7 +1062,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1091,13 +1076,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_Ffh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_Ffh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_F);
+        CreateInvItem(hero, ITAR_PAL_F_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_F.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_F_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1119,15 +1104,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_FNH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_FNH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1142,7 +1124,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_F__itar_pal_fnh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_FNH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_FNH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1150,7 +1132,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_F_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1164,13 +1146,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_fnh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_fnh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_F);
+        CreateInvItem(hero, ITAR_PAL_F_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_F.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_F_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1192,15 +1174,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_R))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_R_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1215,7 +1194,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_RNH__Itar_pal_r;
-    amount_current = Npc_HasItems(hero, Itar_Pal_R); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_R_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1223,7 +1202,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1237,13 +1216,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_r, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_r_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_RNH);
+        CreateInvItem(hero, ITAR_PAL_RNH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
 		
         // Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RNH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1265,15 +1244,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_R))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_R_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1288,7 +1264,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_RFH__Itar_pal_r;
-    amount_current = Npc_HasItems(hero, Itar_Pal_R); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_R_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1296,7 +1272,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1310,13 +1286,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_r, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_r_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_RFH);
+        CreateInvItem(hero, ITAR_PAL_RFH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
 		
         // Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RFH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1338,15 +1314,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_RNH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_RNH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1361,7 +1334,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_RFH__itar_pal_Rnh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_RNH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_RNH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1369,7 +1342,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_RNH.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_RNH_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1383,13 +1356,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_rnh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_rnh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_RFH);
+        CreateInvItem(hero, ITAR_PAL_RFH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RFH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1411,15 +1384,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_RFH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_RFH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1434,7 +1404,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_RNH__itar_pal_Rfh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_RFH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_RFH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1442,7 +1412,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_RFH.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_RFH_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1456,13 +1426,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_Rfh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_Rfh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_RNH);
+        CreateInvItem(hero, ITAR_PAL_RNH_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RNH.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1484,15 +1454,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_RFH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_RFH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1507,7 +1474,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_R__itar_pal_rfh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_RFH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_RFH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1515,7 +1482,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1529,13 +1496,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_rfh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_rfh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_R);
+        CreateInvItem(hero, ITAR_PAL_R_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_R.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_R_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1557,15 +1524,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Pal_RNH))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Pal_RNH_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1580,7 +1544,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_PAL_R__itar_pal_rnh ;
-    amount_current = Npc_HasItems(hero, Itar_Pal_RNH); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Pal_RNH_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1588,7 +1552,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Pal_R_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1602,13 +1566,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_pal_rnh, 1);
+        Npc_RemoveInvItems(hero, Itar_pal_rnh_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_R);
+        CreateInvItem(hero, ITAR_PAL_R_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_R.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_PAL_R_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1630,15 +1594,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_Crusader))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_Crusader_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1653,7 +1614,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_CRUSADER_NH__itar_Crusader ;
-    amount_current = Npc_HasItems(hero, Itar_Crusader); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_Crusader_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1661,7 +1622,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_nh_Crusader.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_nh_Crusader_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1675,13 +1636,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_crusader, 1);
+        Npc_RemoveInvItems(hero, Itar_crusader_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_nh_crusader);
+        CreateInvItem(hero, ITAR_nh_crusader_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_nh_crusader.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_nh_crusader_ARMOREXPANSION.name);
     // If hasn't
     } else
     {
@@ -1703,15 +1664,12 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader (C_INFO)
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Condition()
 {	
-	if (MOBSI_SMITHWEAPON == PLAYER_MOBSI_PRODUCTION)
+	if (NINJA_ARMOREXPANSION_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
-        if (true == NINJA_ARMOREXPANSION_ArmorForging)
-        {
-            // If has armor
-            if (0 < Npc_HasItems(hero, Itar_nh_crusader))
-            {	
-                return true;
-            };
+        // If has armor
+        if (0 < Npc_HasItems(hero, Itar_nh_crusader_ARMOREXPANSION))
+        {	
+            return true;
         };
     };
 };
@@ -1726,7 +1684,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Info()
     
     // [Itar_Pal_A]
     amount_needed = NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_CRUSADER__itar_pal_Crusader_NH ;
-    amount_current = Npc_HasItems(hero, Itar_nh_crusader); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Itar_nh_crusader_ARMOREXPANSION); // IMPORTANT: An one of a raw steel is in a hand
     
     if (amount_needed > amount_current)
     {
@@ -1734,7 +1692,7 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Info()
         amount_missing = amount_needed - amount_current;
     
         // Print message
-        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Crusader.name, amount_missing);
+        NINJA_ARMOREXPANSION_Func_Print_ProdItemsMissing(Itar_Crusader_ARMOREXPANSION.name, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1748,13 +1706,13 @@ FUNC VOID NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Info()
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
         Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
-        Npc_RemoveInvItems(hero, Itar_nh_crusader, 1);
+        Npc_RemoveInvItems(hero, Itar_nh_crusader_ARMOREXPANSION, 1);
         // Create an armor
-        CreateInvItem(hero, ITAR_crusader);
+        CreateInvItem(hero, ITAR_crusader_ARMOREXPANSION);
         CreateInvItem(hero, ItMiSwordrawhot);
         
 		// Print an information about success
-        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_crusader.name);
+        NINJA_ARMOREXPANSION_Func_Print_ForgeSuccess(ITAR_crusader_ARMOREXPANSION.name);
     // If hasn't
     } else
     {

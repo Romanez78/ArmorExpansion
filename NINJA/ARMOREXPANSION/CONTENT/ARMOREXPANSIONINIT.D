@@ -17,4 +17,10 @@ func void Patch_AE_Init() {
 	HookDaedalusFuncS("Startup_Demontower", "Ninja_ArmorExpansion_Startup_Demontower");
     HookDaedalusFuncS("PC_Common_Condition", "Ninja_ArmorExpansion_PC_Common_Condition");
     HookDaedalusFuncS("PC_Ore_Condition", "Ninja_ArmorExpansion_PC_Ore_Condition");
+    
+    // Equipping bonuses
+    HookDaedalusFuncS("Equip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_Equip_ItBE_Addon_MIL_01");
+    HookDaedalusFuncS("UnEquip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_UnEquip_ItBE_Addon_MIL_01");
+    HookDaedalusFuncS("Equip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_Equip_ItBE_Addon_SLD_01");
+    HookDaedalusFuncS("UnEquip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_UnEquip_ItBE_Addon_SLD_01");
 };
