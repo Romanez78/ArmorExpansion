@@ -29,7 +29,7 @@ var int Ninja_ArmorExpansion__ITAR_MIL_H_Equipped;
 var int Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped;
 INSTANCE ITAR_MIL_H_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Tìžká Zbroj Domobrany";
+	name 					=	"TÃ¬Å¾kÃ¡ Zbroj Domobrany";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -76,7 +76,7 @@ func void Ninja_ArmorExpansion__Equip_ITAR_MIL_H()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = true;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -92,7 +92,7 @@ func void Ninja_ArmorExpansion__UnEquip_ITAR_MIL_H()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = false;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -104,7 +104,7 @@ func void Ninja_ArmorExpansion__UnEquip_ITAR_MIL_H()
 };
 INSTANCE ITAR_GAMBESON_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Lovecký Gambeson";
+	name 					=	"LoveckÃ½ Gambeson";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -128,7 +128,7 @@ INSTANCE ITAR_GAMBESON_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_GAMBESON_ARMOREXPANSION;
 
 	description				=	name;
-	TEXT[0]                 =       "+3% støelecký talent.";
+	TEXT[0]                 =       "+3% stÃ¸eleckÃ½ talent.";
 	
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -155,7 +155,7 @@ func void UnEquip_ITAR_GAMBESON_ARMOREXPANSION()
 	};
 INSTANCE ITAR_PAL_A_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Obohacená Paladinská Zbroj";
+	name 					=	"ObohacenÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -179,7 +179,7 @@ INSTANCE ITAR_PAL_A_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_PAL_A_ARMOREXPANSION;	
 	
 	description				=	name;
-	TEXT[0]                 =       "+40 Bonus maximální many.";	
+	TEXT[0]                 =       "+40 Bonus maximÃ¡lnÃ­ many.";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -209,7 +209,7 @@ FUNC VOID UnEquip_ItAr_PAL_A_ARMOREXPANSION()
 	};
 INSTANCE ITAR_PAL_R_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Rezavá Paladinská Zbroj";
+	name 					=	"RezavÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -230,7 +230,7 @@ INSTANCE ITAR_PAL_R_ARMOREXPANSION (C_Item)
 	material 				=	MAT_METAL;
 
 	description				=	name;
-	TEXT[0]                 =       "Tahle zbroj zažila lepší èasy";	
+	TEXT[0]                 =       "Tahle zbroj zaÅ¾ila lepÅ¡Ã­ Ã¨asy";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -249,7 +249,7 @@ INSTANCE ITAR_PAL_R_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PAL_F_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Opravená Paladinská Zbroj";
+	name 					=	"OpravenÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -273,7 +273,7 @@ INSTANCE ITAR_PAL_F_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_PAL_F_ARMOREXPANSION;	
 	
 	description				=	name;
-	TEXT[0]                 =       "+20 bonus maximální many";	
+	TEXT[0]                 =       "+20 bonus maximÃ¡lnÃ­ many";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -303,7 +303,7 @@ FUNC VOID UnEquip_ItAr_PAL_F_ARMOREXPANSION()
 	};
 INSTANCE ITAR_PAL_C_ARMOREXPANSION (C_Item)
 {
-    name    =    "Zbroj Rytíøe Kušišníka";
+    name    =    "Zbroj RytÃ­Å™e KuÅ¡iÅ¡nÃ­ka";
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -327,7 +327,7 @@ INSTANCE ITAR_PAL_C_ARMOREXPANSION (C_Item)
     on_unequip    =    UnEquip_ITAR_PAL_C_ARMOREXPANSION;
 
     description    =    name;
-	TEXT[0]                 =       "+5% støelecký talent";
+	TEXT[0]                 =       "+5% stÃ¸eleckÃ½ talent";
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -358,7 +358,7 @@ func void UnEquip_ITAR_PAL_C_ARMOREXPANSION()
 };
 INSTANCE ITAR_MIL_Med2_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Vylepšená Støednì Tìžká Zbroj Domobrany";
+	name 					=	"VylepÅ¡enÃ¡ StÃ¸ednÃ¬ TÃ¬Å¾kÃ¡ Zbroj Domobrany";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -400,7 +400,7 @@ func void Ninja_ArmorExpansion__Equip_ITAR_MIL_Med2_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = true;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -416,7 +416,7 @@ func void Ninja_ArmorExpansion__UnEquip_ITAR_MIL_Med2_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = false;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -428,7 +428,7 @@ func void Ninja_ArmorExpansion__UnEquip_ITAR_MIL_Med2_ARMOREXPANSION()
 };
 INSTANCE ITAR_MIL_P_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Zbroj Milicionáøe Kušišníka";
+	name 					=	"Zbroj MilicionÃ¡Ã¸e KuÅ¡iÅ¡nÃ­ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -452,7 +452,7 @@ INSTANCE ITAR_MIL_P_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_MIL_P_ARMOREXPANSION;
 	
 	description				=	name;
-    TEXT[0]                 =       "+5% støelecký talent";
+    TEXT[0]                 =       "+5% stÃ¸eleckÃ½ talent";
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		
@@ -472,7 +472,7 @@ func void Equip_ITAR_MIL_P_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = true;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -490,7 +490,7 @@ func void UnEquip_ITAR_MIL_P_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = false;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -502,7 +502,7 @@ func void UnEquip_ITAR_MIL_P_ARMOREXPANSION()
 };
 INSTANCE ITAR_MIL_M (C_Item)
 {
-	name 					=	"Støední Zbroj Domobrany";
+	name 					=	"StÃ¸ednÃ­ Zbroj Domobrany";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -540,7 +540,7 @@ INSTANCE ITAR_MIL_M (C_Item)
 };
 INSTANCE ITAR_DJG_CL_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Lehká Zbroj Lovce Drakù";
+	name 					=	"LehkÃ¡ Zbroj Lovce DrakÃ¹";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -565,7 +565,7 @@ INSTANCE ITAR_DJG_CL_ARMOREXPANSION (C_Item)
 
 	description				=	name; 
 		
-	TEXT[0]                 =       "+5% støelecký talent";
+	TEXT[0]                 =       "+5% stÃ¸eleckÃ½ talent";
 	TEXT[1]					=	NAME_Prot_Edge;		
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	
@@ -595,15 +595,15 @@ func void UnEquip_ITAR_DHT2S_ARMOREXPANSION()
 };
 INSTANCE ITAR_SLD_BOW_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Zbroj Nájemného Lovce";
+	name 					=	"Zbroj NÃ¡jemnÃ©ho Lovce";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	60;
-	protection [PROT_BLUNT] = 	60;
-	protection [PROT_POINT] = 	60;
-	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_EDGE]	=	65;
+	protection [PROT_BLUNT] = 	65;
+	protection [PROT_POINT] = 	65;
+	protection [PROT_FIRE] 	= 	15;
 	protection [PROT_MAGIC] = 	10;
 
 	value 					=	2500;
@@ -620,7 +620,7 @@ INSTANCE ITAR_SLD_BOW_ARMOREXPANSION (C_Item)
 	
 	description				=	name;
 
-	TEXT[0]					=	"+5% støelecký talent";
+	TEXT[0]					=	"+5% stÃ¸eleckÃ½ talent";
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		
@@ -641,7 +641,7 @@ func void Equip_ITAR_SLD_BOW_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = true;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -660,7 +660,7 @@ func void UnEquip_ITAR_SLD_BOW_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = false;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -672,7 +672,7 @@ func void UnEquip_ITAR_SLD_BOW_ARMOREXPANSION()
 };
 INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 {
-	name 					=	"Vylepšená Lehká Zbroj Domobrany";
+	name 					=	"VylepÅ¡enÃ¡ LehkÃ¡ Zbroj Domobrany";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -715,7 +715,7 @@ func void Equip_ITAR_MIL_R_ArmorExpansion()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = true;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -731,7 +731,7 @@ func void UnEquip_ITAR_MIL_R_ArmorExpansion()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = false;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -743,16 +743,16 @@ func void UnEquip_ITAR_MIL_R_ArmorExpansion()
 };
 INSTANCE ITAR_CRUSADER_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Zbroj Køižáka";
+	name 					=	"Zbroj KÃ¸iÅ¾Ã¡ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	115;
-	protection [PROT_BLUNT] = 	115;
-	protection [PROT_POINT] = 	115;
-	protection [PROT_FIRE] 	= 	65;
-	protection [PROT_MAGIC] = 	40;
+	protection [PROT_EDGE]	=	110;
+	protection [PROT_BLUNT] = 	110;
+	protection [PROT_POINT] = 	110;
+	protection [PROT_FIRE] 	= 	60;
+	protection [PROT_MAGIC] = 	35;
 	
 	value 					=	10000;
 
@@ -767,7 +767,7 @@ INSTANCE ITAR_CRUSADER_ARMOREXPANSION (C_Item)
 	on_unequip				=	UnEquip_ITAR_CRUSADER_ARMOREXPANSION;
 	
 	description				=	name;
-	TEXT[0]                 =       "+5% obouruèní talent";
+	TEXT[0]                 =       "+5% obouruÃ¨nÃ­ talent";
 	
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -794,12 +794,12 @@ func void UnEquip_ITAR_CRUSADER_ARMOREXPANSION()
 };
 INSTANCE ITAR_SLD_SCOUT_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Odìv Žoldáka Zvìda";
+	name 					=	"OdÃ¬v Å½oldÃ¡ka ZvÃ¬da";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	35;
+	protection [PROT_EDGE]	=	30;
 	protection [PROT_BLUNT] = 	35;
 	protection [PROT_POINT] = 	35;
 	protection [PROT_FIRE] 	= 	5;
@@ -819,7 +819,7 @@ INSTANCE ITAR_SLD_SCOUT_ARMOREXPANSION (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	"+5% støelecký talent";
+	TEXT[0]					= 	"+5% stÃ¸eleckÃ½ talent";
 	
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -845,7 +845,7 @@ func void Equip_ITAR_SLD_SCOUT_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = true;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -864,7 +864,7 @@ func void UnEquip_ITAR_SLD_SCOUT_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = false;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -876,7 +876,7 @@ func void UnEquip_ITAR_SLD_SCOUT_ARMOREXPANSION()
 };
 INSTANCE ITAR_MIL_SCOUT_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Odìv Královského Zvìda";
+	name 					=	"OdÃ¬v KrÃ¡lovskÃ©ho ZvÃ¬da";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -901,7 +901,7 @@ INSTANCE ITAR_MIL_SCOUT_ARMOREXPANSION (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	"+5% støelecký talent";
+	TEXT[0]					= 	"+5% stÃ¸eleckÃ½ talent";
 	
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -927,7 +927,7 @@ func void Equip_ITAR_MIL_SCOUT_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = true;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -946,7 +946,7 @@ func void UnEquip_ITAR_MIL_SCOUT_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_MIL_H_Equipped = false;
     
-        if (MIL01_Equipped == TRUE) // Gürtel
+        if (MIL01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -958,14 +958,14 @@ func void UnEquip_ITAR_MIL_SCOUT_ARMOREXPANSION()
 };
 INSTANCE ITAR_SLD_R_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Vylepšená Støední Zbroj Žoldáka";
+	name 					=	"VylepÅ¡enÃ¡ StÃ¸ednÃ­ Zbroj Å½oldÃ¡ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	60;
-	protection [PROT_BLUNT] = 	60;
-	protection [PROT_POINT] = 	60;
+	protection [PROT_EDGE]	=	65;
+	protection [PROT_BLUNT] = 	65;
+	protection [PROT_POINT] = 	65;
 	protection [PROT_FIRE] 	= 	10;
 	protection [PROT_MAGIC] = 	10;
 
@@ -1004,7 +1004,7 @@ func void Equip_ITAR_SLD_R_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = true;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -1020,7 +1020,7 @@ func void UnEquip_ITAR_SLD_R_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = false;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -1032,7 +1032,7 @@ func void UnEquip_ITAR_SLD_R_ARMOREXPANSION()
 };
 INSTANCE ITAR_SLD_LR_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Vylepšená Lehká Zbroj Žoldáka";
+	name 					=	"VylepÅ¡enÃ¡ LehkÃ¡ Zbroj Å½oldÃ¡ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1078,7 +1078,7 @@ func void Equip_ITAR_SLD_LR_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = true;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] += BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -1094,7 +1094,7 @@ func void UnEquip_ITAR_SLD_LR_ARMOREXPANSION()
     {
         Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped = false;
     
-        if (SLD01_Equipped == TRUE) // Gürtel
+        if (SLD01_Equipped == TRUE) // GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] -= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -1106,7 +1106,7 @@ func void UnEquip_ITAR_SLD_LR_ARMOREXPANSION()
 };
 INSTANCE ITAR_PAL_CH_ARMOREXPANSION (C_Item)
 {
-    name    =    "Zbroj Paladina Kušišníka";
+    name    =    "Zbroj Paladina KuÅ¡iÅ¡nÃ­ka";
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -1130,7 +1130,7 @@ INSTANCE ITAR_PAL_CH_ARMOREXPANSION (C_Item)
     on_unequip    =    UnEquip_ITAR_PAL_CH_ARMOREXPANSION;
 
     description    =    name;
-	TEXT[0]                 =       "+5% støelecký talent";
+	TEXT[0]                 =       "+5% stÃ¸eleckÃ½ talent";
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -1161,7 +1161,7 @@ func void UnEquip_ITAR_PAL_CH_ARMOREXPANSION()
 };
 INSTANCE ITAR_DJG_CH_ARMOREXPANSION (C_Item)
 {
-    name    =    "Tìžká Zbroj Lovce Drakù";
+    name    =    "TÃ¬Å¾kÃ¡ Zbroj Lovce DrakÃ¹";
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -1185,7 +1185,7 @@ INSTANCE ITAR_DJG_CH_ARMOREXPANSION (C_Item)
     on_unequip    =    UnEquip_ITAR_DJG_CH_ARMOREXPANSION;
 
     description    =    name;
-	TEXT[0]                 =       "+5% støelecký talent";
+	TEXT[0]                 =       "+5% stÃ¸eleckÃ½ talent";
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -1216,7 +1216,7 @@ func void UnEquip_ITAR_DJG_CH_ARMOREXPANSION()
 };
 INSTANCE ITAR_DJG_CM_ARMOREXPANSION (C_Item)
 {
-    name    =    "Støední Zbroj Lovce Drakù";
+    name    =    "StÃ¸ednÃ­ Zbroj Lovce DrakÃ¹";
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -1240,7 +1240,7 @@ INSTANCE ITAR_DJG_CM_ARMOREXPANSION (C_Item)
     on_unequip    =    UnEquip_ITAR_DJG_CM_ARMOREXPANSION;
 
     description    =    name;
-	TEXT[0]                 =       "+5% støelecký talent";
+	TEXT[0]                 =       "+5% stÃ¸eleckÃ½ talent";
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -1271,7 +1271,7 @@ func void UnEquip_ITAR_DJG_CM_ARMOREXPANSION()
 };
 INSTANCE ITAR_PAL_ST_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Stewarkská Plátová Zbroj";
+	name 					=	"StewarkskÃ¡ PlÃ¡tovÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1311,7 +1311,7 @@ INSTANCE ITAR_PAL_ST_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PAL_MH_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Tìžká Zbroj Rytíøe";
+	name 					=	"TÃ¬Å¾kÃ¡ Zbroj RytÃ­Ã¸e";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1351,7 +1351,7 @@ INSTANCE ITAR_PAL_MH_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PIR_H_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Zbroj Kapitána";
+	name 					=	"Zbroj KapitÃ¡na";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1376,7 +1376,7 @@ INSTANCE ITAR_PIR_H_ARMOREXPANSION (C_Item)
 	
 	description				=	name;
 
-	TEXT[0]					= 	"+10 bonus k obratnosti, +10% Jednoruèní talent";	
+	TEXT[0]					= 	"+10 bonus k obratnosti, +10% JednoruÃ¨nÃ­ talent";	
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	
@@ -1406,7 +1406,7 @@ func void UnEquip_ITAR_PIR_H_ARMOREXPANSION()
 };
 INSTANCE ITAR_PAL_ANH_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Obohacená Paladinská Zbroj";
+	name 					=	"ObohacenÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1430,7 +1430,7 @@ INSTANCE ITAR_PAL_ANH_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_PAL_A_ARMOREXPANSION;	
 	
 	description				=	name;
-	TEXT[0]                 =       "+40 Bonus maximální many.";	
+	TEXT[0]                 =       "+40 Bonus maximÃ¡lnÃ­ many.";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1449,7 +1449,7 @@ INSTANCE ITAR_PAL_ANH_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PAL_RNH_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Rezavá Paladinská Zbroj";
+	name 					=	"RezavÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1470,7 +1470,7 @@ INSTANCE ITAR_PAL_RNH_ARMOREXPANSION (C_Item)
 	material 				=	MAT_METAL;
 
 	description				=	name;
-	TEXT[0]                 =       "Tahle zbroj zažila lepší èasy";	
+	TEXT[0]                 =       "Tahle zbroj zaÅ¾ila lepÅ¡Ã­ Ã¨asy";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1489,7 +1489,7 @@ INSTANCE ITAR_PAL_RNH_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PAL_FNH_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Opravená Paladinská Zbroj";
+	name 					=	"OpravenÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1513,7 +1513,7 @@ INSTANCE ITAR_PAL_FNH_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_PAL_F_ARMOREXPANSION;	
 	
 	description				=	name;
-	TEXT[0]                 =       "+20 bonus maximální many";	
+	TEXT[0]                 =       "+20 bonus maximÃ¡lnÃ­ many";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1532,7 +1532,7 @@ INSTANCE ITAR_PAL_FNH_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PAL_AFH_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Obohacená Paladinská Zbroj";
+	name 					=	"ObohacenÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1556,7 +1556,7 @@ INSTANCE ITAR_PAL_AFH_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_PAL_A_ARMOREXPANSION;	
 	
 	description				=	name;
-	TEXT[0]                 =       "+40 Bonus maximální many.";	
+	TEXT[0]                 =       "+40 Bonus maximÃ¡lnÃ­ many.";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1575,7 +1575,7 @@ INSTANCE ITAR_PAL_AFH_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PAL_RFH_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Rezavá Paladinská Zbroj";
+	name 					=	"RezavÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1596,7 +1596,7 @@ INSTANCE ITAR_PAL_RFH_ARMOREXPANSION (C_Item)
 	material 				=	MAT_METAL;
 
 	description				=	name;
-	TEXT[0]                 =       "Tahle zbroj zažila lepší èasy";	
+	TEXT[0]                 =       "Tahle zbroj zaÅ¾ila lepÅ¡Ã­ Ã¨asy";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1615,7 +1615,7 @@ INSTANCE ITAR_PAL_RFH_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_PAL_FFH_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Opravená Paladinská Zbroj";
+	name 					=	"OpravenÃ¡ PaladinskÃ¡ Zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1639,7 +1639,7 @@ INSTANCE ITAR_PAL_FFH_ARMOREXPANSION (C_Item)
     on_unequip    			=    UnEquip_ITAR_PAL_F_ARMOREXPANSION;	
 	
 	description				=	name;
-	TEXT[0]                 =       "+20 bonus maximální many";	
+	TEXT[0]                 =       "+20 bonus maximÃ¡lnÃ­ many";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1658,7 +1658,7 @@ INSTANCE ITAR_PAL_FFH_ARMOREXPANSION (C_Item)
 };
 INSTANCE ITAR_NH_CRUSADER_ARMOREXPANSION (C_Item)
 {
-	name 					=	"Zbroj Køižáka";
+	name 					=	"Zbroj KÃ¸iÅ¾Ã¡ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1682,7 +1682,7 @@ INSTANCE ITAR_NH_CRUSADER_ARMOREXPANSION (C_Item)
 	on_unequip				=	UnEquip_ITAR_CRUSADER_ARMOREXPANSION;
 	
 	description				=	name;
-	TEXT[0]                 =       "+5% Talent s obouruèními zbranìmi";
+	TEXT[0]                 =       "+5% Talent s obouruÃ¨nÃ­mi zbranÃ¬mi";
 	
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
