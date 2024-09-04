@@ -21,6 +21,6 @@ func void Patch_AE_Init() {
     // Equipping bonuses
     HookDaedalusFuncS("Equip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_Equip_ItBE_Addon_MIL_01");
     HookDaedalusFuncS("UnEquip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_UnEquip_ItBE_Addon_MIL_01");
-    HookDaedalusFuncS("Equip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_Equip_ItBE_Addon_SLD_01");
-    HookDaedalusFuncS("UnEquip_ItBE_Addon_MIL_01", "Ninja_ArmorExpansion_UnEquip_ItBE_Addon_SLD_01");
+    HookDaedalusFuncS("Equip_ItBE_Addon_SLD_01", "Ninja_ArmorExpansion_Equip_ItBE_Addon_SLD_01");
+    HookDaedalusFuncS("UnEquip_ItBE_Addon_SLD_01", "Ninja_ArmorExpansion_UnEquip_ItBE_Addon_SLD_01");
 };
