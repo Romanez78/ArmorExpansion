@@ -3,6 +3,33 @@
 // ***************
 
 /*
+ *  [ARMOR CHANGING]
+ *
+ *  `1948` is the address of oCNpc::head_visualName property written in the decimal system.
+ */
+var string Ninja_ArmorExpansion_ArmorChanging_Head_Current_name;
+func void Ninja_ArmorExpansion_ArmorChanging_Head_HumHeadBald(var C_NPC slf)
+{
+    if (true == Npc_IsPlayer(slf))
+    {
+        Ninja_ArmorExpansion_ArmorChanging_Head_Current_name = "Hum_Head_Bald";
+        
+        MEM_WriteString(MEM_InstToPtr(slf)+1948, Ninja_ArmorExpansion_ArmorChanging_Head_Current_name);
+    };
+};
+
+func void Ninja_ArmorExpansion_ArmorChanging_Head_Original(var C_NPC slf)
+{
+    if (true == Npc_IsPlayer(slf))
+    {
+        Ninja_ArmorExpansion_ArmorChanging_Head_Current_name = "Hum_Head_Pony";
+        
+        MEM_WriteString(MEM_InstToPtr(slf)+1948, Ninja_ArmorExpansion_ArmorChanging_Head_Current_name);
+    };
+};
+
+
+/*
  *  [BONUSES]
  */
 func void Ninja_ArmorExpansion_ItemsWithBonuses_HPMana_UnEquipping(var int attribute, var int bonus)
@@ -787,10 +814,16 @@ INSTANCE ITAR_CRUSADER_ARMOREXPANSION (C_Item)
 func void Equip_ITAR_CRUSADER_ARMOREXPANSION()
 {
     B_RaiseFightTalent(self, NPC_TALENT_2H, 5);
+    
+    // A head adjusting
+    Ninja_ArmorExpansion_ArmorChanging_Head_HumHeadBald(self);
 };
 func void UnEquip_ITAR_CRUSADER_ARMOREXPANSION()
 {
     B_RaiseFightTalent(self, NPC_TALENT_2H, -5);
+        
+    // A head adjusting
+    Ninja_ArmorExpansion_ArmorChanging_Head_Original(self);
 };
 INSTANCE ITAR_SLD_SCOUT_ARMOREXPANSION (C_Item)
 {
