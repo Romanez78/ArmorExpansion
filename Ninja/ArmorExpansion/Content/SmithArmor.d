@@ -73,7 +73,7 @@ const int NINJA_ARMOREXPANSION_INGREDIENTS_ITAR_CRUSADER__itar_pal_Crusader_NH =
  *
  *  The constants used to create an alert (print on a screen) about missing ingredient(s) or an forged armor.
  */
-const string NINJA_ARMOREXPANSION_PRINT_ProdItemsMissing__SUBSTR_1 = "ChybÌ: ";
+const string NINJA_ARMOREXPANSION_PRINT_ProdItemsMissing__SUBSTR_1 = "Chyb√≠: ";
 const string NINJA_ARMOREXPANSION_PRINT_ProdItemsMissing__SUBSTR_2 = " x";
 const string NINJA_ARMOREXPANSION_PRINT_ForgeSuccess = " vyrobeno!";
 
@@ -240,7 +240,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_ST (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_ST_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_ST_Info;
 	permanent		= true;
-    description     = "Forge Stewarksk· Pl·tov· Zbroj";
+    description     = "Forge Stewarksk√° Pl√°tov√° Zbroj";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_ST_Condition()
 {	
@@ -330,7 +330,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu z ObohacenÈ paladinskÈ zbroje";
+    description     = "Odebrat Helmu z Obohacen√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_Condition()
 {	
@@ -400,7 +400,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_Info;
 	permanent		= true;
-    description     = "Sklopit hledÌ ObohacenÈ paladinskÈ zbroje";
+    description     = "Sklopit hled√≠ Obohacen√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_Condition()
 {	
@@ -470,7 +470,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH_Info;
 	permanent		= true;
-    description     = "Sklopit hledÌ ObohacenÈ paladinskÈ zbroje";
+    description     = "Sklopit hled√≠ Obohacen√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_AFH_NH_Condition()
 {	
@@ -540,7 +540,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu ObohacenÈ paladinskÈ zbroje";
+    description     = "Odebrat Helmu Obohacen√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_ANH_FH_Condition()
 {	
@@ -610,7 +610,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledÌ ObohacenÈ paladinskÈ zbroje";
+    description     = "Vyklopit hled√≠ Obohacen√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_FH_Condition()
 {	
@@ -680,7 +680,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledÌ ObohacenÈ paladinskÈ zbroje";
+    description     = "Vyklopit hled√≠ Obohacen√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_A_NH_Condition()
 {	
@@ -750,7 +750,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_FNH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu z opravenÈ paladinskÈ zbroje";
+    description     = "Odebrat Helmu z opraven√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_FNH_Condition()
 {	
@@ -820,7 +820,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_Info;
 	permanent		= true;
-    description     = "Sklopit hledÌ opravenÈ paladinskÈ zbroje";
+    description     = "Sklopit hled√≠ opraven√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_Condition()
 {	
@@ -890,7 +890,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH_Info;
 	permanent		= true;
-    description     = "Sklopit hledÌ opravenÈ paladinskÈ zbroje";
+    description     = "Sklopit hled√≠ opraven√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_FFH_NH_Condition()
 {	
@@ -960,7 +960,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu opravenÈ paladinskÈ zbroje";
+    description     = "Odebrat Helmu opraven√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_fNH_FH_Condition()
 {	
@@ -1030,7 +1030,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledÌ opravenÈ paladinskÈ zbroje";
+    description     = "Vyklopit hled√≠ opraven√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_FH_Condition()
 {	
@@ -1100,7 +1100,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledÌ ObohacenÈ paladinskÈ zbroje";
+    description     = "Vyklopit hled√≠ Obohacen√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_F_NH_Condition()
 {	
@@ -1170,7 +1170,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu z RezavÈ paladinskÈ zbroje";
+    description     = "Odebrat Helmu z Rezav√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_Condition()
 {	
@@ -1240,7 +1240,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_Info;
 	permanent		= true;
-    description     = "Sklopit hledÌ RezavÈ paladinskÈ zbroje";
+    description     = "Sklopit hled√≠ Rezav√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_Condition()
 {	
@@ -1310,7 +1310,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH_Info;
 	permanent		= true;
-    description     = "Sklopit hledÌ RezavÈ paladinskÈ zbroje";
+    description     = "Sklopit hled√≠ Rezav√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RFH_NH_Condition()
 {	
@@ -1380,7 +1380,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu RezavÈ paladinskÈ zbroje";
+    description     = "Odebrat Helmu Rezav√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_RNH_FH_Condition()
 {	
@@ -1450,7 +1450,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledÌ RezavÈ paladinskÈ zbroje";
+    description     = "Vyklopit hled√≠ Rezav√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_FH_Condition()
 {	
@@ -1520,7 +1520,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledÌ RezavÈ paladinskÈ zbroje";
+    description     = "Vyklopit hled√≠ Rezav√© paladinsk√© zbroje";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_PAL_R_NH_Condition()
 {	
@@ -1590,7 +1590,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu ze zbroje k¯iû·ka";
+    description     = "Odebrat Helmu ze zbroje k√∏i≈æ√°ka";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Condition()
 {	
@@ -1660,7 +1660,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Info;
 	permanent		= true;
-    description     = "Vr·tit helmu ke zbroji k¯Ìû·ka";
+    description     = "Vr√°tit helmu ke zbroji k√∏√≠≈æ√°ka";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Condition()
 {	

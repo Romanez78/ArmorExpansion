@@ -2,7 +2,7 @@
 instance BAU_989_DeadTreasureHunter (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mrtvý lovec pokladù";
+	name 		= "MrtvÃ½ lovec pokladÃ¹";
 	guild 		= GIL_BAU;
 	id 			= 989;
 	voice 		= 14;
@@ -41,8 +41,8 @@ instance BAU_989_DeadTreasureHunter (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 60); //Grenzen für Talent-Level liegen bei 30 und 60i
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 60); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60i
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_989;

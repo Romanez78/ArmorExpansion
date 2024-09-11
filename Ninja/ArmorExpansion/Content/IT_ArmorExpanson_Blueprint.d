@@ -3,7 +3,7 @@
 // ********************************
 instance ItWr_BluePrint_StewarkArmor(C_Item)
 {
-	name = "N·kres na v˝robu pl·tovÈ zbroje ze Stewarku";
+	name = "N√°kres na v√Ωrobu pl√°tov√© zbroje ze Stewarku";
 
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
@@ -29,24 +29,24 @@ func void Use_Plan_StewarkArmor()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetFont(nDocID,0,FONT_Book);
-	Doc_PrintLine(nDocID,0,"     N·kres na v˝robu pl·tovÈ zbroje ze Stewarku");
+	Doc_PrintLine(nDocID,0,"     N√°kres na v√Ωrobu pl√°tov√© zbroje ze Stewarku");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Tohle je n·kres pro vöechny schopnÈ kov·¯e mÏsta Stewark,");
-    Doc_PrintLines(nDocID,0,"m·te za ˙kol vyrobit novÈ kusy zbroje kterou bude");
-    Doc_PrintLines(nDocID,0,"vybavena str·û mÏsta.");
-    Doc_PrintLines(nDocID,0,"Suroviny dostanete brzy, na v˝robu jednÈ zbroje budete pot¯ebovat:");
-    Doc_PrintLines(nDocID,0,"-6 Kus˘ surovÈho ûeleza");
-    Doc_PrintLines(nDocID,0,"-3 K˘ûe Warga");
-    Doc_PrintLines(nDocID,0,"N·vod k v˝robÏ je na druhÈ stranÏ tohoto n·kresu.");
+	Doc_PrintLines(nDocID,0,"Tohle je n√°kres pro v≈°echny schopn√© kov√°√∏e m√¨sta Stewark,");
+    Doc_PrintLines(nDocID,0,"m√°te za √∫kol vyrobit nov√© kusy zbroje kterou bude");
+    Doc_PrintLines(nDocID,0,"vybavena str√°≈æ m√¨sta.");
+    Doc_PrintLines(nDocID,0,"Suroviny dostanete brzy, na v√Ωrobu jedn√© zbroje budete pot√∏ebovat:");
+    Doc_PrintLines(nDocID,0,"-6 Kus√π surov√©ho ≈æeleza");
+    Doc_PrintLines(nDocID,0,"-3 K√π≈æe Warga");
+    Doc_PrintLines(nDocID,0,"N√°vod k v√Ωrob√¨ je na druh√© stran√¨ tohoto n√°kresu.");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Pokud budete p¯istiûeni jak prod·v·te suroviny");
-	Doc_PrintLines(nDocID,0,"nebo n·kres, budete tvrdÏ potrest·ni.");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"");
+	Doc_PrintLines(nDocID,0,"Pokud budete p√∏isti≈æeni jak prod√°v√°te suroviny");
+	Doc_PrintLines(nDocID,0,"nebo n√°kres, budete tvrd√¨ potrest√°ni.");
 	Doc_PrintLines(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Rozkaz vydal velitel mÏstskÈ str·ûe Cenric");
+	Doc_PrintLines(nDocID,0,"");
+	Doc_PrintLines(nDocID,0,"");
+	Doc_PrintLines(nDocID,0,"Rozkaz vydal velitel m√¨stsk√© str√°≈æe Cenric");
 	Doc_PrintLines(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_Show(nDocID);

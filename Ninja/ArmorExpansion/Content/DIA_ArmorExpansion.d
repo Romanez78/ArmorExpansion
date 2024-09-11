@@ -1,5 +1,5 @@
 // *********************************************************
-// 		  				      My Changes				
+// 		  				      My Changes
 // *********************************************************
 instance Ninja_ArmorExpansion_DIA_BRIAN_BUYRAWSTEEL_PATCHOC (C_INFO)
 {
@@ -11,7 +11,7 @@ instance Ninja_ArmorExpansion_DIA_BRIAN_BUYRAWSTEEL_PATCHOC (C_INFO)
 	description	 = 	"Pot¯ebuju vÌce surovÈ oceli.";
 };
 func int Ninja_ArmorExpansion_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_Condition ()
-{	
+{
 	if (Kapitel >= 1)
 	{
 		return TRUE;
@@ -33,7 +33,7 @@ instance Ninja_ArmorExpansion_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL		(C_INFO)
 	description	 = 	"Prodej mi jeden kus surovÈ oceli. (Cena: 200 zlat˝ch).";
 };
 func int Ninja_ArmorExpansion_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_Condition ()
-{	
+{
 	if (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_BRIAN_BUYRAWSTEEL_PATCHOC))
 	{
 		return TRUE;
@@ -42,13 +42,13 @@ func int Ninja_ArmorExpansion_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_Condition ()
 func void Ninja_ArmorExpansion_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_Info ()
 {
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_1"); //Prodej mi jeden kus surovÈ oceli.
-	
+
 	if (B_GiveInvItems(other, self, ItMi_Gold, 200))
-	{	
+	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2"); //Tady je.
-		B_GiveInvItems (self, other, ItMiSwordraw, 1);	
+		B_GiveInvItems (self, other, ItMiSwordraw, 1);
 	}
-	else 
+	else
 	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_3"); //P¯ijÔ aû budeö mÌt u sebe dost zlata
 	};
@@ -66,7 +66,7 @@ instance Ninja_ArmorExpansion_DIA_Matteo_GAMBESON(C_INFO)
 	description	 = 	"Koupit Loveck˝ Gambeson (350 zlat˝ch). 20/20/20 bonus pro zbranÏ na d·lku.";
 };
 func int Ninja_ArmorExpansion_DIA_Matteo_GAMBESON_Condition()
-{	
+{
 	if (Npc_KnowsInfo (other,Ninja_ArmorExpansion_DIA_Matteo_SellWhat))
 	&& (Ninja_ArmorExpansion_Matteo_GAMBESONBought == FALSE)
 	{
@@ -76,14 +76,14 @@ func int Ninja_ArmorExpansion_DIA_Matteo_GAMBESON_Condition()
 func void Ninja_ArmorExpansion_DIA_Matteo_GAMBESON_Info()
 {
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_Matteo_LEATHER_15_00"); //Dob¯e, dej mi tu zbroj.
-	
+
 	if (B_GiveInvItems(other, self, ItMi_Gold, 350))
-	{	
+	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Matteo_LEATHER_09_01"); //Bude se ti lÌbit.
 
 		Ninja_ArmorExpansion_Matteo_GAMBESONBought = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_GAMBESON, 1);
 	}
-	else 
+	else
 	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Matteo_LEATHER_09_02"); //Ta zbroj m· svojÌ cenu - a taky za nÌ stojÌ takûe se vraù aû budeö mÌt dost zlata.
 	};
@@ -102,7 +102,7 @@ instance Ninja_ArmorExpansion_DIA_MORTIS_ARMORQUESTION (C_INFO)
 	description	 = 	"Nem·ö pro mnÏ nÏjakou lepöÌ zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_MORTIS_ARMORQUESTION_Condition ()
-{	
+{
 	if (other.guild == GIL_MIL)
 	{
 		return TRUE;
@@ -132,7 +132,7 @@ instance Ninja_ArmorExpansion_DIA_MORTIS_MIL_LTHINGS (C_INFO)
 	description	 = 	"ChtÏl bych vylepöit lehkou zbroj";
 };
 func int Ninja_ArmorExpansion_DIA_MORTIS_MIL_LTHINGS_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, ItAr_MIL_L) > 0)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_MORTIS_ARMORQUESTION))
 	{
@@ -162,7 +162,7 @@ instance Ninja_ArmorExpansion_DIA_MORTIS_MIL_LReforgedArmor (C_INFO)
 	description	 = 	"M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ lehkÈ zbroje.";
 };
 func int Ninja_ArmorExpansion_DIA_MORTIS_MIL_LReforgedArmor_Condition ()
-{	
+{
 	if (Npc_HasItems(other,ItAr_MIL_L) >= 0) && (Npc_HasItems(other,ItMiSwordraw) >= 1) && (Npc_HasItems(other,ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other,ItMi_Gold) >= 200)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_MORTIS_MIL_LTHINGS))
 	{
@@ -174,14 +174,14 @@ func void Ninja_ArmorExpansion_DIA_MORTIS_MIL_LReforgedArmor_Info ()
     AI_Output(other, self, "Ninja_ArmorExpansion_DIA_MORTIS_LREFORGEDARMOR_15_01"); //M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ lehkÈ zbroje.
 
 	if (Npc_HasItems(other,ItAr_MIL_L) >= 0) && (Npc_HasItems(other,ItMiSwordraw) >= 1) && (Npc_HasItems(other,ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other,ItMi_Gold) >= 200)
-	{	
+	{
         B_GivePlayerXP(20);
-        B_GiveInvItems(other, self, ItAr_MIL_L, 1);				
+        B_GiveInvItems(other, self, ItAr_MIL_L, 1);
         B_GiveInvItems(other, self, ItMiSwordraw, 1);
         B_GiveInvItems(other, self, ItAt_Addon_KeilerFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_LREFORGEDARMOR_13_12"); //Dob¯e, d·m se tedy do pr·ce.
-        
+
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
         AI_UseMob(self, "BSFIRE", -1);
@@ -195,14 +195,14 @@ func void Ninja_ArmorExpansion_DIA_MORTIS_MIL_LReforgedArmor_Info ()
         AI_UseMob(self, "BSCOOL", -1);
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
-        
+
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_LREFORGEDARMOR_13_13"); //Hotovo.
         B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_MIL_R, 1);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_LREFORGEDARMOR_13_14"); //Tady ji m·ö, docela se mi povedla ¯ekl bych.
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_MORTIS_LREFORGEDARMOR_15_15"); //DÌky.
 		B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MORTIS_ARMOR,"Mortis mi vylepöil lehkou zbroj.");
 	}
-	else 
+	else
 	{
 	    AI_Output (self, other, "Ninja_ArmorExpansion_DIA_MORTIS_LREFORGEDARMOR_13_16"); //Vraù se aû to vöechno budeö mÌt u sebe.
 	};
@@ -220,7 +220,7 @@ instance Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumHUH (C_INFO)
 	description	 = 	"ChtÏl bych vylepöit st¯ednÌ zbroj";
 };
 func int Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumHUH_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, ItAr_MIL_M) > 0)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_MORTIS_ARMORQUESTION))
 	{
@@ -235,7 +235,7 @@ func void Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumHUH_Info ()
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumHUH_13_05"); //dva ocelovÈ pruty a k˘ûi z Warga.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumHUH_13_06"); //Budu za tu pr·ci chtÌt 600 zlat˝ch.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumHUH_15_08"); //Dobr·, pokusÌm se to sehnat.
-		B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MORTIS_ARMOR,"Na vylepöenÌ st¯ednÌ zbroje bude Mortis pot¯ebovat dva ocelovÈ pruty, k˘ûi z Warga a 600 zlat˝ch.");	
+		B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MORTIS_ARMOR,"Na vylepöenÌ st¯ednÌ zbroje bude Mortis pot¯ebovat dva ocelovÈ pruty, k˘ûi z Warga a 600 zlat˝ch.");
 };
 //-------------------------------------
 var int Ninja_ArmorExpansion_MORTIS_MILITIA_MediumArmorBought;
@@ -250,7 +250,7 @@ instance Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumArmor (C_INFO)
 	description	 = 	"M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ st¯ednÌ zbroje.";
 };
 func int Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumArmor_Condition ()
-{	
+{
 	if (Ninja_ArmorExpansion_MORTIS_MILITIA_MediumArmorBought == FALSE)
 	&& (Npc_HasItems(other, ItAr_MIL_M) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
@@ -269,15 +269,15 @@ func void Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumArmor_Info ()
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
     && (Npc_HasItems(other, ItAt_wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 600)
-	{	
+	{
         B_GivePlayerXP(25);
-        B_GiveInvItems(other, self, ItAr_MIL_M, 1);				
+        B_GiveInvItems(other, self, ItAr_MIL_M, 1);
         B_GiveInvItems(other, self, ItMiSwordraw, 2);
 		B_GiveInvItems(other, self, ItAt_wargfur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 600);
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_MORTIS_MediumArmor_15_10"); //Tady to je.
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_MediumArmor_13_11"); //Dob¯e, d·m se tedy do pr·ce.
-        
+
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
         AI_UseMob(self, "BSFIRE", -1);
@@ -291,14 +291,14 @@ func void Ninja_ArmorExpansion_DIA_MORTIS_MILITIA_MediumArmor_Info ()
         AI_UseMob(self, "BSCOOL", -1);
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
-        
+
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_MediumArmor_13_12"); //Hotovo.
         Ninja_ArmorExpansion_MORTIS_MILITIA_MediumArmorBought = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_MIL_Med2, 1);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MORTIS_MediumArmor_13_13"); //Tady ji m·ö, docela se mi povedla ¯ekl bych.
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_MORTIS_MediumArmor_15_14"); //DÌky.
 				B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MORTIS_ARMOR,"Mortis mi vylepöil st¯ednÌ zbroj.");
 	}
-	else 
+	else
 	{
 	    AI_Output (self, other, "Ninja_ArmorExpansion_DIA_MORTIS_MediumArmor_13_16"); //Vraù se aû to vöechno budeö mÌt u sebe.
 	};
@@ -316,7 +316,7 @@ instance Ninja_ArmorExpansion_DIA_ANDRE_MIL_SCOUTArmor (C_INFO)
 	description	 = 	"Nenaöla by se tu pro mnÏ lehËÌ zbroj? (VymÏnit st·vajÌcÌ)";
 };
 func int Ninja_ArmorExpansion_DIA_ANDRE_MIL_SCOUTArmor_Condition ()
-{	
+{
 	if (Ninja_ArmorExpansion_ANDRE_MIL_SCOUTArmorBought == FALSE)
 	&& (Npc_Hasitems(other, ItAr_MIL_L) > 0)
 	{
@@ -329,8 +329,8 @@ func void Ninja_ArmorExpansion_DIA_ANDRE_MIL_SCOUTArmor_Info ()
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_ANDRE_MIL_SCOUTARMOR_15_02"); //Radöi pouûÌv·m zbranÏ na d·lku.
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_ANDRE_MIL_SCOUTARMOR_13_03"); //M˘ûu ti vymÏnit tvojÌ zbroj za zbroj zvÏda. Je lehËÌ neû standartnÌ v˝bava takûe budeö obratnÏjöÌ, ale i zranitelnÏjöÌ
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_ANDRE_MIL_SCOUTARMOR_15_04"); //Beru ji.
-    B_GiveInvItems(other, self, ItAr_MIL_L, 1);	
-	Ninja_ArmorExpansion_ANDRE_MIL_SCOUTArmorBought = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_MIL_SCOUT, 1);		
+    B_GiveInvItems(other, self, ItAr_MIL_L, 1);
+	Ninja_ArmorExpansion_ANDRE_MIL_SCOUTArmorBought = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_MIL_SCOUT, 1);
     AI_Output(other, self, "Ninja_ArmorExpansion_DIA_ANDRE_MIL_SCOUTARMOR_15_9");//Tady m·ö, aù ti slouûÌ dob¯e.
 };
 //-------------------------------------
@@ -347,17 +347,17 @@ instance Ninja_ArmorExpansion_DIA_ANDRE_MILITIA_ARMORREWARD (C_INFO)
 	description	 = 	"";
 };
 func int Ninja_ArmorExpansion_DIA_ANDRE_MILITIA_ARMORREWARD_Condition ()
-{	
+{
 	if	(MIS_ANDRE_WAREHOUSE == LOG_SUCCESS)
 	&&	(MIS_Andre_REDLIGHT == LOG_SUCCESS)
-	&&	(MIS_AndreHelpLobart == LOG_SUCCESS)	
-	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_Andre_LOBART_SUCCESS))	
+	&&	(MIS_AndreHelpLobart == LOG_SUCCESS)
+	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_Andre_LOBART_SUCCESS))
 	{
 		return TRUE;
 	};
 };
 func void Ninja_ArmorExpansion_DIA_ANDRE_MILITIA_ARMORREWARD_Info ()
-{	
+{
 		AI_Output (self,other,"Ninja_ArmorExpansion_DIA_ANDRE_MILITIA_ARMORREWARD_01_03"); //Vykonal si vöechny moje zad·nÌ.
 		AI_Output (self,other,"Ninja_ArmorExpansion_DIA_ANDRE_MILITIA_ARMORREWARD_01_04"); //TÌm si mi dok·zal ûe si zaslouûÌö pov˝öenÌ.
 		B_GiveInvItems(self, other, ITAR_MIL_M, 1);
@@ -375,7 +375,7 @@ instance Ninja_ArmorExpansion_DIA_LEE_SLD_SCOUTArmor (C_INFO)
 	description	 = 	"Nenaöla by se tu pro mnÏ lehËÌ zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_LEE_SLD_SCOUTArmor_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, ItAr_SLD_L) > 0)
 	{
 		return TRUE;
@@ -398,7 +398,7 @@ instance Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought (C_INFO)
 	description	 = 	"Slyöel jsem ûe dÏl·ö zbroje pro zvÏdy.";
 };
 func int Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, ItAr_SLD_L) > 0)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_LEE_SLD_SCOUTArmor))
 	{
@@ -410,7 +410,7 @@ func void Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought_Info ()
     AI_Output(other, self, "Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought_15_01"); //Slyöel jsem ûe dÏl·ö zbroje pro zvÏdy.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought_15_02"); //chtÏl bych si vymÏnit tu co m·m teÔ
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought_13_03"); //JistÏ, zrovna jsem jednu dokonËil. M˘ûeö ji mÌt zadarmo, kv˘li star˝m Ëas˘m.
-	B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_SLD_SCOUT, 1);	
+	B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_SLD_SCOUT, 1);
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought_15_06"); //DÌky.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_WOLF_SLD_SCOUTArmorBought_13_07"); //Nem·ö za co
 };
@@ -427,7 +427,7 @@ instance Ninja_ArmorExpansion_DIA_BENNET_SLDARMORASK (C_INFO)
 	description	 = 	"M˘ûeö mi prodat nÏjakou lepöÌ zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_BENNET_SLDARMORASK_Condition ()
-{	
+{
 	if (other.guild == GIL_SLD)
 	{
 		return TRUE;
@@ -454,7 +454,7 @@ instance Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedHUH (C_INFO)
 	description	 = 	"Chci si nechat vylepöit lehkou zbroj.";
 };
 func int Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedHUH_Condition ()
-{	
+{
 	if (BENNET_SLD_LReforgedArmorBought == FALSE)
 	&& (Npc_Hasitems(other, ItAr_SLD_L) > 0)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_BENNET_SLDARMORASK))
@@ -469,7 +469,7 @@ func void Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedHUH_Info ()
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedHUH_13_06"); //Na lehkou zbroj ti postaËÌ dva ocelovÈ pruty a dvÏ vlËÌ k˘ûe.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedHUH_13_07"); //Budu chtÌt 200 zlat˝ch za v˝robu.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedHUH_15_09"); //Dobr·.
-		B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_BENNET_ARMOR,"Na vylepöenÌ lehkÈ zbroje bude Bennet pot¯ebovat dva ocelovÈ pruty, dvÏ k˘ûe z vlka a 200 zlat˝ch.");	
+		B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_BENNET_ARMOR,"Na vylepöenÌ lehkÈ zbroje bude Bennet pot¯ebovat dva ocelovÈ pruty, dvÏ k˘ûe z vlka a 200 zlat˝ch.");
 };
 //-------------------------------------
 var int Ninja_ArmorExpansion_BENNET_SLD_LReforgedArmorBought;
@@ -484,7 +484,7 @@ instance Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor (C_INFO)
 	description	 = 	"M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ lehkÈ zbroje.";
 };
 func int Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_Condition ()
-{	
+{
 	if (Ninja_ArmorExpansion_BENNET_SLD_LReforgedArmorBought == FALSE)
 	&& (Npc_Hasitems(other, ItAr_SLD_L) > 0)
 	&& (Npc_HasItems(other, ItMiSwordraw) >= 2)
@@ -497,21 +497,21 @@ func int Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_Condition ()
 };
 func void Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_Info ()
 {
-    AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_15_01"); //M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ lehkÈ zbroje.	
+    AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_15_01"); //M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ lehkÈ zbroje.
 
 	if (Npc_HasItems(other, ItAr_SLD_L) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
     && (Npc_HasItems(other, ItAt_Wolffur) >= 2)
     && (Npc_HasItems(other, ItMi_Gold) >= 200)
-	{	
+	{
         B_GivePlayerXP(20);
-        B_GiveInvItems(other, self, ItAr_SLD_L, 1);				
+        B_GiveInvItems(other, self, ItAr_SLD_L, 1);
         B_GiveInvItems(other, self, ItMiSwordraw, 2);
         B_GiveInvItems(other, self, ItAt_WolfFur, 2);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_15_11"); //Tady to je.
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_13_12"); //Dob¯e, tak se na to podÌvejme.
-        
+
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
         AI_UseMob(self, "BSFIRE", -1);
@@ -525,14 +525,14 @@ func void Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_Info ()
         AI_UseMob(self, "BSCOOL", -1);
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
-        
+
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_13_13"); //Hotovo.
         Ninja_ArmorExpansion_BENNET_SLD_LReforgedArmorBought = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_SLD_LR, 1);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_13_14"); //Tady je, docela se mi povedla.
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_15_15"); //DÌky.
 				B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MORTIS_ARMOR,"Bennet mi vylepöil lehkou zbroj.");
 	}
-	else 
+	else
 	{
 	    AI_Output (self, other, "Ninja_ArmorExpansion_DIA_BENNET_SLD_LReforgedArmor_13_16"); //Vraù se aû to vöechno budeö mÌt.
 	};
@@ -544,7 +544,7 @@ instance Ninja_ArmorExpansion_DIA_Engor_RSkaufen		(C_INFO)
 	condition	 = 	Ninja_ArmorExpansion_DIA_Engor_RSkaufen_Condition;
 	information	 = 	Ninja_ArmorExpansion_DIA_Engor_RSkaufen_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Koupit tÏûkou zbroj domobrany (Obrany: SeËnÈ 70, BodnÈ 70. Cena: 2500 zlat˝ch)"; 
+	description	 = 	"Koupit tÏûkou zbroj domobrany (Obrany: SeËnÈ 70, BodnÈ 70. Cena: 2500 zlat˝ch)";
 };
 //--------------------------------------
 var int Ninja_ArmorExpansion_DIA_Engor_RSkaufen_perm;
@@ -579,7 +579,7 @@ instance Ninja_ArmorExpansion_DIA_Engor_ARCHER_KAUFEN		(C_INFO)
 	condition	 = 	Ninja_ArmorExpansion_DIA_Engor_ARCHER_KAUFEN_Condition;
 	information	 = 	Ninja_ArmorExpansion_DIA_Engor_ARCHER_KAUFEN_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Koupit zbroj domobr·nce KuöiönÌka (65/65, bonus na d·lku, Cena: 2300 zlat˝ch)"; 
+	description	 = 	"Koupit zbroj domobr·nce KuöiönÌka (65/65, bonus na d·lku, Cena: 2300 zlat˝ch)";
 };
 func int Ninja_ArmorExpansion_DIA_Engor_ARCHER_KAUFEN_Condition ()
 {
@@ -614,7 +614,7 @@ instance Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedHUH (C_INFO)
 	description	 = 	"Chci si nechat vylepöit st¯ednÌ zbroj.";
 };
 func int Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedHUH_Condition ()
-{	
+{
 	if (BENNET_MERC_MReforgedArmorBought == FALSE)
 	&& (Npc_Hasitems(other, ItAr_SLD_M) > 0)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_BENNET_SLDARMORASK))
@@ -645,7 +645,7 @@ instance Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor (C_INFO)
 	description	 = 	"M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ st¯ednÌ zbroje.";
 };
 func int Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_Condition ()
-{	
+{
 	if (Ninja_ArmorExpansion_BENNET_MERC_MReforgedArmorBought == FALSE)
 	&& (Npc_Hasitems(other, ItAr_SLD_M) > 0)
 	&& (Npc_HasItems(other, ItMiSwordraw) >= 2)
@@ -659,20 +659,20 @@ func int Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_Condition ()
 func void Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_Info ()
 {
     AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_15_01"); //M·m vöechny pot¯ebnÈ materi·ly na vylepöenÌ st¯ednÌ zbroje.
-	
+
 	if (Npc_HasItems(other, ItAr_SLD_M) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
 	 && (Npc_HasItems(other, ItAt_Wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 650)
-	{	
+	{
         B_GivePlayerXP(25);
-        B_GiveInvItems(other, self, ItAr_SLD_M, 1);				
+        B_GiveInvItems(other, self, ItAr_SLD_M, 1);
         B_GiveInvItems(other, self, ItMiSwordraw, 2);
 		B_GiveInvItems(other, self, ItAt_WargFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 650);
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_15_10"); //Tady to je.
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_13_11"); //Dob¯e, tak se na to podÌvejme.
-        
+
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
         AI_UseMob(self, "BSFIRE", -1);
@@ -686,14 +686,14 @@ func void Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_Info ()
         AI_UseMob(self, "BSCOOL", -1);
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
-        
+
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_13_12"); //Hotovo.
         Ninja_ArmorExpansion_BENNET_MERC_MReforgedArmorBought = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_SLD_R, 1);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_13_13"); //Tady je, docela se mi povedla.
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_15_14"); //DÌky.
 		B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MORTIS_ARMOR,"Bennet mi vylepöil st¯ednÌ zbroj.");
 	}
-	else 
+	else
 	{
 	    AI_Output (self, other, "Ninja_ArmorExpansion_DIA_BENNET_MERC_MReforgedArmor_13_16"); //Vraù se aû to vöechno budeö mÌt u sebe.
 	};
@@ -730,11 +730,11 @@ INSTANCE Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW		(C_INFO)
 	nr			 = 	990;
 	condition	 = 	Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW_Condition;
 	information	 = 	Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW_Info;
-	permanent	 = 	TRUE; 
+	permanent	 = 	TRUE;
 	description	 = 	"Nenaöla by se pro mnÏ lehËÌ zbroj? (VymÏnit st·vajÌcÌ)";
 };
 func int Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, ItAr_PAL_M) > 0)
 	{
 		return TRUE;
@@ -746,8 +746,8 @@ func void Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW_Info ()
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW_15_02"); //Radöi pouûÌv·m zbranÏ na d·lku.
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW_13_03"); //M˘ûu ti vymÏnit tvojÌ rytÌ¯skou zbroj za odlehËenou variantu, urËenou pro kuöiönÌky.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW15_04"); //Beru jÌ.
-        B_GiveInvItems(other, self, ItAr_PAL_M, 1);	
-		B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_PAL_C, 1);		
+        B_GiveInvItems(other, self, ItAr_PAL_M, 1);
+		B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_PAL_C, 1);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW_15_9");//Nos ji se ctÌ, rytÌ¯i.
 };
 //-------------------------------------
@@ -763,7 +763,7 @@ instance Ninja_ArmorExpansion_DIA_Martin_ARCPALA_NOTIF		(C_INFO)
 	important	 = 	TRUE;
 };
 func int Ninja_ArmorExpansion_DIA_Martin_ARCPALA_NOTIF_Condition ()
-{	
+{
 	if (other.guild == GIL_PAL)
 	{
 		return TRUE;
@@ -796,7 +796,7 @@ instance Ninja_ArmorExpansion_DIA_Martin_ARKPALA		(C_INFO)
 	description	 = 	"Dob¯e, beru tu zbroj (Obrany: SeËnÈ 80, BodnÈ 80. Cena: 2000 zlat˝ch).";
 };
 func int Ninja_ArmorExpansion_DIA_Martin_ARKPALA_Condition ()
-{	
+{
 	if (Ninja_ArmorExpansion_Martin_ARKPALA_BOUGHT == FALSE)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_Martin_ARCPALA_NOTIF))
 	{
@@ -806,15 +806,15 @@ func int Ninja_ArmorExpansion_DIA_Martin_ARKPALA_Condition ()
 func void Ninja_ArmorExpansion_DIA_Martin_ARKPALA_Info ()
 {
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_Martin_ARKPALA_BOUGHT_4_1"); //Dob¯e, beru tu zbroj.
-	
+
 	if (B_GiveInvItems(other, self, ItMi_Gold, 2000))
-	{	
+	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Martin_ARKPALA_BOUGHT_4_2"); //Dob¯e, tady ji m·ö.
 			B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MARTIN_ARMOR,"Koupil jsem si od Martina paladinskou zbroj. Je rezav· ale zkuöen˝ kov·¯ by ji mÏl opravit, jenom najÌt nÏjakÈho kdo by byl ochotn˝ to pro mnÏ udÏlat.");
 
 		Ninja_ArmorExpansion_Martin_ARKPALA_BOUGHT = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_PAL_R, 1);
 	}
-	else 
+	else
 	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Martin_ARKPALA_BOUGHT_4_3"); //P¯ijÔ aû budeö mÌt u sebe dost zlata
 	};
@@ -829,7 +829,7 @@ instance Ninja_ArmorExpansion_DIA_MORTIS_PAL_REFORGE		(C_INFO)
 	description	 = 	"Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_MORTIS_PAL_REFORGE_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, Ninja_ArmorExpansion_ITAR_PAL_R) > 0)
 	{
 		return TRUE;
@@ -853,7 +853,7 @@ instance Ninja_ArmorExpansion_DIA_BENNET_PAL_REFORGE		(C_INFO)
 	description	 = 	"Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_BENNET_PAL_REFORGE_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, Ninja_ArmorExpansion_ITAR_PAL_R) > 0)
 	{
 		return TRUE;
@@ -879,7 +879,7 @@ instance Ninja_ArmorExpansion_DIA_CARL_PAL_REFORGE		(C_INFO)
 	description	 = 	"Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_CARL_PAL_REFORGE_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, Ninja_ArmorExpansion_ITAR_PAL_R) > 0)
 	{
 		return TRUE;
@@ -904,7 +904,7 @@ instance Ninja_ArmorExpansion_DIA_JAN_PAL_REFORGE		(C_INFO)
 	description	 = 	"Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_JAN_PAL_REFORGE_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, Ninja_ArmorExpansion_ITAR_PAL_R) > 0)
 	{
 		return TRUE;
@@ -929,7 +929,7 @@ instance Ninja_ArmorExpansion_DIA_HUNO_PAL_REFORGE		(C_INFO)
 	description	 = 	"Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_HUNO_PAL_REFORGE_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, Ninja_ArmorExpansion_ITAR_PAL_R) > 0)
 	{
 		return TRUE;
@@ -954,7 +954,7 @@ instance Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW		(C_INFO)
 	description	 = 	"Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
 };
 func int Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, Ninja_ArmorExpansion_ITAR_PAL_R) > 0)
 	{
 		return TRUE;
@@ -965,10 +965,10 @@ func void Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_Info ()
 	B_GivePlayerXP(10);
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_3_01"); //Ukaû mi ji.
-        B_GiveInvItems(other, self, Ninja_ArmorExpansion_ITAR_PAL_R, 1);	
+        B_GiveInvItems(other, self, Ninja_ArmorExpansion_ITAR_PAL_R, 1);
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_3_02"); //Uû je to dlouho co jsem takovou zbroj vidÏl.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_3_03"); //Jsou kovanÈ z jinÈ slitiny kovu a magickÈ rudy neû ostatnÌ a pak jsou poûehn·ny m·gy z kl·ötera v Nordmaru
-	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_3_04"); //Rez nepronikla moc hluboko, nebude moc tÏûkÈ ji opravit. 
+	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_3_04"); //Rez nepronikla moc hluboko, nebude moc tÏûkÈ ji opravit.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_3_05"); //Samoz¯ejmÏ pokud budu mÌt pot¯ebnÈ materi·ly.
 		B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_PAL_R, 1);
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW_3_06"); //Kde si ji sehnal?
@@ -988,7 +988,7 @@ instance Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE (C_INFO)
 	description	 = 	"Takûe, co budeö na opravu zbroje pot¯ebovat?";
 };
 func int Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_Condition ()
-{	
+{
 	if (Ninja_ArmorExpansion_HARAD_PALADIN_REFORGEBought == FALSE)
 	&& (Npc_KnowsInfo (other, Ninja_ArmorExpansion_DIA_HARAD_PAL_SHOW))
 	{
@@ -1003,21 +1003,21 @@ func void Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_Info ()
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_05"); //3 Hrudky magickÈ oceli.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_06"); //Co budeö za svou pr·ci chtÌt?
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_07"); //Nic. Bude mi potÏöenÌm pracovat na takovÈm kousku.
-	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_15_08"); //Dobr·, pokusÌm se to vöechno sehnat. 
+	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_15_08"); //Dobr·, pokusÌm se to vöechno sehnat.
 	B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MARTIN_ARMOR,"Na opravu zbroje bude Harad pot¯ebovat 6 ocelov˝ch prut˘ a t¯i hrudky rudy.");
 
 	if (Npc_HasItems(other, Ninja_ArmorExpansion_ITAR_PAL_R) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 6)
     && (Npc_HasItems(other, ItMi_Nugget) >= 3)
-	{	
+	{
         B_GivePlayerXP(100);
-        B_GiveInvItems(other, self, Ninja_ArmorExpansion_ITAR_PAL_R, 1);				
+        B_GiveInvItems(other, self, Ninja_ArmorExpansion_ITAR_PAL_R, 1);
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_15_9");//Tady je ta zbroj.
         B_GiveInvItems(other, self, ItMiSwordraw, 6);
         B_GiveInvItems(other, self, ItMi_Nugget, 2);
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_15_10"); //A tady pot¯ebnÈ materi·ly.
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_11"); //Dobr·, d·m se do pr·ce.
-        
+
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
         AI_UseMob(self, "BSFIRE", -1);
@@ -1030,7 +1030,7 @@ func void Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_Info ()
         AI_UseMob(self, "BSCOOL", 1);
         AI_UseMob(self, "BSCOOL", -1);
         B_TurnToNpc(other, self);
-		        
+
 		B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
         AI_UseMob(self, "BSFIRE", -1);
@@ -1044,7 +1044,7 @@ func void Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_Info ()
         AI_UseMob(self, "BSCOOL", -1);
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
-        
+
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_12"); //Hotovo.
         Ninja_ArmorExpansion_HARAD_PALADIN_REFORGEBought = B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_PAL_F, 1);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_13"); //Tady je, Povedlo se mi ji opravit.
@@ -1053,7 +1053,7 @@ func void Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_Info ()
         AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_15_14"); //DÌky.
 		B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MARTIN_ARMOR,"Harad mi opravil paladinskou zbroj, ale nepoda¯ilo se mu navr·tit jejÌ magickou moc. Budu pro to muset najÌt ochotnÈho m·ga ohnÏ, jeden takov˝ mnÏ napad·.");
 	}
-	else 
+	else
 	{
 	    AI_Output (self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_16"); //P¯ijÔ aû to vöechno seûeneö.
 	};
@@ -1068,7 +1068,7 @@ instance Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR (C_INFO)
 	description	 = 	"Pot¯ebuji tvojÌ pomoc.";
 };
 func int Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_Condition ()
-{	
+{
 	if (Npc_HasItems(other, Ninja_ArmorExpansion_ITAR_PAL_F) > 0)
 	{
 		return TRUE;
@@ -1088,7 +1088,7 @@ func void Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_Info ()
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_07"); //Jestli se ale nepletu tak je zde v knihovnÏ kl·öteru kniha kter· popisuje tento postup.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_07"); //Budu pot¯ebovat nÏj·k˝ Ëas si tu knihu nastudovat. MezitÌm by si se ale mÏl postarat o draky v hornickÈm ˙dolÌ, vÌö jak na tom je Garondova jednotka.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_15_08"); //JasnÏ, uvidÌme se pozdÏji Miltene.
-	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_07"); //HodnÏ ötÏstÌ!	
+	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_PALADIN_REFORGE_13_07"); //HodnÏ ötÏstÌ!
 	B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MARTIN_ARMOR,"Milten souhlasil ûe mi pom˘ûe navr·tit zbroji jejÌ magickou sÌlu, ale nejd¯Ìve si bude muset nastudovat postup ritu·lu. NÏj·k˝ Ëas mu to zabere takûe mi ¯ekl ûe se m·m mezitÌm postarat o draky v hornickÈm ˙dolÌ.");
 };
 instance Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR (C_INFO)
@@ -1101,7 +1101,7 @@ instance Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR (C_INFO)
 	description	 = 	"Pot¯ebuji tvojÌ pomoc.";
 };
 func int Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_Condition ()
-{	
+{
 	if (Npc_HasItems(other, Ninja_ArmorExpansion_ITAR_PAL_F) > 0)
 	{
 		return TRUE;
@@ -1121,7 +1121,7 @@ func void Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_Info ()
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_13_09"); //Jestli se ale nepletu tak je zde v knihovnÏ kl·öteru kniha kter· popisuje tento postup.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_13_10"); //Budu pot¯ebovat nÏj·k˝ Ëas si tu knihu nastudovat. MezitÌm by si se ale mÏl postarat o draky v hornickÈm ˙dolÌ, vÌö jak na tom je Garondova jednotka.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_15_11"); //JasnÏ, uvidÌme se pozdÏji Miltene.
-	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_13_12"); //HodnÏ ötÏstÌ!	
+	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR_13_12"); //HodnÏ ötÏstÌ!
 	B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MARTIN_ARMOR,"Milten souhlasil ûe mi pom˘ûe navr·tit zbroji jejÌ magickou sÌlu, ale nejd¯Ìve si bude muset nastudovat postup ritu·lu. NÏj·k˝ Ëas mu to zabere takûe mi ¯ekl ûe se m·m mezitÌm postarat o draky v hornickÈm ˙dolÌ.");
 };
 instance Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR (C_INFO)
@@ -1134,7 +1134,7 @@ instance Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR (C_INFO)
 	description	 = 	"UdÏlal si pokrok ve sv˝ch studiÌch?";
 };
 func int Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR_Condition ()
-{	
+{
 	if (Npc_KnowsInfo (other,Ninja_ArmorExpansion_DIA_MILTEN_PALADINARMOR))
 	&& (Npc_KnowsInfo (other,Ninja_ArmorExpansion_DIA_MiltenNW_AllDragonsDead))
 	{
@@ -1150,7 +1150,7 @@ func void Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR_Info ()
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR_13_05"); //Svitek zniËenÌ zla, ohnivÈ koule a 2 kamennÈ krystaly.
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR_13_06"); //JedinÏ tak dok·ûu dos·hnout podobn˝ch v˝sledk˘ jako p¯i provedenÌ ritu·lu v kl·öteru v Nordmaru
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR_13_07"); //Dobr·, jdu sehnat ti vÏci.
-	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR_13_08"); //HodnÏ ötÏstÌ, douf·m ûe se ti to povede.	
+	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR_13_08"); //HodnÏ ötÏstÌ, douf·m ûe se ti to povede.
 	B_LogEntry (NINJA_ARMOREXPANSION_TOPIC_MARTIN_ARMOR,"Milten Bude na ritu·l pot¯ebovat svitek zniËenÌ zla, svitek ohnivÈ koule a 2 kamennÈ krystaly.");
 };
 instance Ninja_ArmorExpansion_DIA_MILTEN_RITUALARMOR (C_INFO)
@@ -1163,7 +1163,7 @@ instance Ninja_ArmorExpansion_DIA_MILTEN_RITUALARMOR (C_INFO)
 	description	 = 	"M·m vöe co budeö pot¯ebovat.";
 };
 func int Ninja_ArmorExpansion_DIA_MILTEN_RITUALARMOR_Condition ()
-{	
+{
 	if (Npc_KnowsInfo (other,Ninja_ArmorExpansion_DIA_MILTEN_PLATEARMOR))
     && (Npc_HasItems(other, ItSc_InstantFireball) >= 1)
     && (Npc_HasItems(other, ItSc_PalDestroyEvil) >= 1)
@@ -1198,7 +1198,7 @@ instance Ninja_ArmorExpansion_DIA_MILTEN_LORDRMOR (C_INFO)
 	description	 = 	"Super, a kdy bude ritu·l hotov˝?";
 };
 func int Ninja_ArmorExpansion_DIA_MILTEN_LORDRMOR_Condition ()
-{	
+{
 	if (Npc_KnowsInfo (other,Ninja_ArmorExpansion_DIA_MILTEN_RITUALARMOR))
 	&& (Ninja_ArmorExpansion_Player_GotARCArmor == FALSE)
 	{
@@ -1206,7 +1206,7 @@ func int Ninja_ArmorExpansion_DIA_MILTEN_LORDRMOR_Condition ()
 	};
 };
 func void Ninja_ArmorExpansion_DIA_MILTEN_LORDRMOR_Info()
-{	
+{
 	AI_Output (other, self, "Ninja_ArmorExpansion_DIA_MILTEN_LORDRMOR_15_00"); //Super, a kdy bude ritu·l hotov˝?
 
 	if (Npc_HasItems(self, ItSc_InstantFireball) >= 1)
@@ -1219,7 +1219,7 @@ func void Ninja_ArmorExpansion_DIA_MILTEN_LORDRMOR_Info()
 			Ninja_ArmorExpansion_MILTEN_BIGMAGIC_DAY = (Wld_GetDay() + 1);
 			Ninja_ArmorExpansion_MILTEN_LORDRMOR_MakeArmor = TRUE;
 		};
-		
+
 		if (Ninja_ArmorExpansion_MILTEN_LORDRMOR_MakeArmor == TRUE)
 		&& (Ninja_ArmorExpansion_MILTEN_BIGMAGIC_DAY > Wld_GetDay())
 		{
@@ -1250,11 +1250,11 @@ INSTANCE Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW		(C_INFO)
 	nr			 = 	990;
 	condition	 = 	Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_Condition;
 	information	 = 	Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_Info;
-	permanent	 = 	TRUE; 
+	permanent	 = 	TRUE;
 	description	 = 	"NemÏl by se pro mnÏ lehËÌ zbroj? (VymÏnit zbroj Drakobijce)";
 };
 func int Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, ItAr_DJG_L) > 0)
 	{
 		return TRUE;
@@ -1266,8 +1266,8 @@ func void Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_Info ()
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_15_02"); //Neber si to öpatnÏ, jsem za nÌ vdÏËn˝ ale preferuji lehËÌ.
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_13_03"); //VlastnÏ ano, jednu takovou jsem taky vytvo¯il, jestli chceö tak ti je m˘ûu vymÏnit.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_15_04"); //DÌky, Beru jÌ.
-        B_GiveInvItems(other, self, ItAr_DJG_L, 1);	
-		B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_DJG_CL, 1);		
+        B_GiveInvItems(other, self, ItAr_DJG_L, 1);
+		B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_DJG_CL, 1);
         AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Bennet_CROSSBOW_15_9");//Tady je, aù ti slouûÌ.
 };
 instance Ninja_ArmorExpansion_DIA_HARAD_END_MAKE	(C_INFO)
@@ -1280,7 +1280,7 @@ instance Ninja_ArmorExpansion_DIA_HARAD_END_MAKE	(C_INFO)
 	description	 = 	"Nemohl by si mi p¯ekovat moji zbroj paladina?";
 };
 func int Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_Condition ()
-{	
+{
 	if (Npc_Hasitems(other, ItAr_PAL_H) > 0)
 	{
 		return TRUE;
@@ -1294,9 +1294,9 @@ func void Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_Info ()
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_4"); //To by nemÏlo b˝t tÏûkÈ, urËitÏ bych to zvl·dl.
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_5"); //Co za to budeö chtÌt?
     AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_6"); //Nic, sluûbu pro paladina vykon·m zadarmo.
-	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_7"); //Tady ji m·ö v tom p¯ÌpadÏ.	
-        B_GiveInvItems(other, self, ItAr_PAL_H, 1);	
-		        
+	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_7"); //Tady ji m·ö v tom p¯ÌpadÏ.
+        B_GiveInvItems(other, self, ItAr_PAL_H, 1);
+
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
         AI_UseMob(self, "BSFIRE", -1);
@@ -1310,7 +1310,7 @@ func void Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_Info ()
         AI_UseMob(self, "BSCOOL", -1);
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
-        
+
 	AI_Output(self, other, "Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_8"); //Hotovo, nebylo to nic tÏûkÈho. Tady je.
 		B_GiveInvItems(self, other, Ninja_ArmorExpansion_ITAR_PAL_CH, 1);
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_HARAD_END_MAKE_9"); //DÌky!
@@ -1336,30 +1336,30 @@ func int Ninja_ArmorExpansion_DIA_Bennet_PATCH_DJG_ARMOR_CM_Condition ()
 	&& (Show_DJG_Armor_M == TRUE)
 	{
 		return TRUE;
-	};	
+	};
 };
 
 func void Ninja_ArmorExpansion_DIA_Bennet_PATCH_DJG_ARMOR_CM_Info ()
-{	
+{
 	AI_Output	(other,self ,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_M_15_00"); //KoupÌm tu zbroj.
-	
+
 	if (Npc_HasItems (other,itmi_Gold) >= 12000)
 	{
 		AI_Output 	(self ,other,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_M_06_01"); //SkvÏle. Bude se ti lÌbit.
 		AI_Output	(other,self ,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_M_15_02"); //Za takovou cenu v to douf·m.
 		AI_Output 	(self ,other,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_M_06_03"); //P¯esvedËÌö se, ûe to za tu cenu st·lo.
-		
+
 		B_GiveInvItems (other,self,ItMi_Gold,12000);
 		CreateInvItems (self,Ninja_ArmorExpansion_ITAR_DJG_CM,1);
 		B_GiveInvItems (self,other,Ninja_ArmorExpansion_ITAR_DJG_CM,1);
-		
+
 		Ninja_ArmorExpansion_DIA_Bennet_PATCH_DJG_ARMOR_CM_permanent = TRUE;
 	}
 	else
 	{
 		AI_Output 	(self ,other,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_M_06_04"); //Nem·ö dost zlat˝ch.
-	};	
-	
+	};
+
 };
 //---------------------------------------------------
 var int Ninja_ArmorExpansion_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent;
@@ -1382,29 +1382,29 @@ func int Ninja_ArmorExpansion_DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition ()
 	&& (Npc_KnowsInfo (other,Ninja_ArmorExpansion_DIA_Bennet_BetterArmor))
 	{
 		return TRUE;
-	};	
+	};
 };
 
 func void Ninja_ArmorExpansion_DIA_Bennet_PATCH_DJG_ARMOR_CH_Info ()
-{	
+{
 	AI_Output	(other,self ,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_H_15_00"); //Dej mi tu zbroj
-	
+
 	if (Npc_HasItems (other,itmi_Gold) >= 20000)
 	{
 		AI_Output 	(self ,other,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_H_06_01"); //Tohle je nejlepöÌ zbroj kterou jsem kdy vyrobil.
 		AI_Output 	(self ,other,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_H_06_02"); //Je to opravdov˝ mistrovsk˝ kousek.
-		
+
 		B_GiveInvItems (other,self,ItMi_Gold,20000);
 		CreateInvItems (self,Ninja_ArmorExpansion_ITAR_DJG_CH,1);
 		B_GiveInvItems (self,other,Ninja_ArmorExpansion_ITAR_DJG_CH,1);
-		
+
 		Ninja_ArmorExpansion_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent = TRUE;
 	}
 	else
 	{
 		AI_Output 	(self ,other,"Ninja_ArmorExpansion_DIA_Bennet_DJG_ARMOR_H_06_03"); //Nem·ö dost zlata.
-	};	
-	
+	};
+
 };
 instance Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD (C_INFO)
 {
@@ -1417,7 +1417,7 @@ instance Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD (C_INFO)
 	description	 = 	"";
 };
 func int Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD_Condition ()
-{	
+{
 	if (MIS_KilledDragons >= 2)
 	&& (other.guild == GIL_PAL)
 	{
@@ -1425,7 +1425,7 @@ func int Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD_Condition ()
 	};
 };
 func void Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD_Info ()
-{	
+{
 		AI_Output (self,other,"Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD_01_03"); //Zadrû.
 		AI_Output (self,other,"Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD_01_04"); //Jsi jedin˝ z n·s komu se zatÌm poda¯ilo nÏj·kÈho draka zabÌt.
 		AI_Output (self,other,"Ninja_ArmorExpansion_DIA_GAROND_KNIGHT_ARMORREWARD_01_05"); //M·m nadÏji ûe se ti povede je dostat vöechny.
@@ -1459,8 +1459,8 @@ func void Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA_Inf
 	AI_Output	(other, self, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_15_00"); //Co takhle nÏj·k· lepöÌ zbroj?
 	AI_Output	(self, other, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_01_01"); //Sakra, co si myslÌö?
 	AI_Output	(self, other, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_01_02"); //Odkrouhneö Ravena a najednou je z tebe nov˝ kapit·n?
-	AI_Output	(other, self, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_15_03"); //Takhle jsem to nemyslel. Kapit·nem z˘staneö ty, jenom mi jde o tu zbroj.	
-	AI_Output	(self, other, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_01_04"); //Dobr·, m˘ûu ti prodat jeden z m˝ch osobnÌch kousk˘.	
+	AI_Output	(other, self, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_15_03"); //Takhle jsem to nemyslel. Kapit·nem z˘staneö ty, jenom mi jde o tu zbroj.
+	AI_Output	(self, other, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_01_04"); //Dobr·, m˘ûu ti prodat jeden z m˝ch osobnÌch kousk˘.
 	AI_Output	(self, other, "Ninja_ArmorExpansion_DIA_Addon_Greg_RavenDead_01_05"); //Ale p¯ijde tÏ to draho, chci za nÌ 2700 zlat˝ch
 	B_LogEntry (Topic_Addon_PIR_Trader, "Od Grega si m˘ûu koupit zbroj kapit·na za 2700 zlat˝ch");
 };
@@ -1490,14 +1490,14 @@ func int Ninja_ArmorExpansion_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_Condition 
 func void Ninja_ArmorExpansion_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_Info ()
 {
 	AI_Output(other, self, "Ninja_ArmorExpansion_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_4_1"); //Prodej mi kapit·nskou zbroj.
-	
+
 	if (B_GiveInvItems(other, self, ItMi_Gold, 2700))
-	{	
+	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_4_2"); //Tady jÌ m·ö, ale pamatuj si ûe kapit·nem z˘st·v·m j·.
 		B_GiveInvItems(self, other, ITAR_PIR_H_ARMOREXPANSION, 1);
         Ninja_ArmorExpansion_ARMOREXPANSION_BOUGHT_CAPTAIN = TRUE;
 	}
-	else 
+	else
 	{
 		AI_Output(self, other, "Ninja_ArmorExpansion_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_4_3"); //Vraù se aû budeö mÌt u sebe dost zlata.
 	};
