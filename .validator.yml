@@ -3,4 +3,5 @@
 
 prefix:
 ignore-declaration:
+  - ITAR_MIL_M
 ignore-resource:
