@@ -724,9 +724,6 @@ func void Ninja_ArmorExpansion_DIA_Ulthar_Info ()
 	AI_Output			(other, self, "Ninja_ArmorExpansion_DIA_Ulthar_05_03"); //Dìkuji.
 	B_GiveInvItems (self, other, Ninja_ArmorExpansion_ITAR_CRUSADER, 1);
 };
-//-------------------------------------
-var int Lord_Hagen_CROSSBOW;
-//-------------------------------------
 INSTANCE Ninja_ArmorExpansion_DIA_Lord_Hagen_CROSSBOW		(C_INFO)
 {
 	npc			 = 	PAL_200_Hagen;
