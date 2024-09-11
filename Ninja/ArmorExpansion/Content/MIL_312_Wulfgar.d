@@ -23,7 +23,7 @@ instance Mil_312_Wulfgar (Npc_Default)
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart06, BodyTex_N, ITAR_MIL_H_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart06, BodyTex_N, Ninja_ArmorExpansion_ITAR_MIL_H);	
 	Mdl_SetModelFatness	(self, 2);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	

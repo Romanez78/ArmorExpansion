@@ -26,7 +26,7 @@ instance VLK_4120_Bilgot (Npc_Default)
 		
 	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
 	
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_P_Weak_Ulf_Wohlers, BodyTex_P, ITAR_MIL_R_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_P_Weak_Ulf_Wohlers, BodyTex_P, Ninja_ArmorExpansion_ITAR_MIL_R);	
 	Mdl_SetModelFatness	(self, 1);
 	Mdl_ApplyOverlayMds	(self, "Humans_Relaxed.mds"); // Tired / Militia / Mage / Arrogance / Relaxed
 	

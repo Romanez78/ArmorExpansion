@@ -24,7 +24,7 @@ instance Pal_207_Girion (Npc_Default)
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Pony", Face_N_Lefty, BodyTex_N, ITAR_PAL_MH_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Pony", Face_N_Lefty, BodyTex_N, Ninja_ArmorExpansion_ITAR_PAL_MH);	
 	Mdl_SetModelFatness	(self, 1);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	

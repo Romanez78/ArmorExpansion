@@ -25,7 +25,7 @@ instance SLD_822_Raoul (Npc_Default)
 
 		
 	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_L_Ian, BodyTex_L, ITAR_SLD_LR_ARMOREXPANSION);
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_L_Ian, BodyTex_L, Ninja_ArmorExpansion_ITAR_SLD_LR);
 	Mdl_SetModelFatness	(self, 1.5);
 	Mdl_ApplyOverlayMds	(self, "Humans_Relaxed.mds"); // Tired / Militia / Mage / Arrogance / Relaxed
 	

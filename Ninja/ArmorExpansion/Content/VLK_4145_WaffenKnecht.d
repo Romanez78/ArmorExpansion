@@ -25,7 +25,7 @@ instance VLK_4145_Waffenknecht (Npc_Default)
 		
 	// ------ visuals ------																			
 	
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_NormalBart09, BodyTex_N, ITAR_MIL_P_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_NormalBart09, BodyTex_N, Ninja_ArmorExpansion_ITAR_MIL_P);	
 	Mdl_SetModelFatness	(self, 1);
 	Mdl_ApplyOverlayMds	(self, "Humans_Relaxed.mds"); 
 	

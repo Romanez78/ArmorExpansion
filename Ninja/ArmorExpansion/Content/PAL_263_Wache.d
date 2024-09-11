@@ -23,7 +23,7 @@ instance PAL_263_Wache (Npc_Default)
 
 		
 	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_Bloodwyn, BodyTex_N, ITAR_PAL_MH_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_Bloodwyn, BodyTex_N, Ninja_ArmorExpansion_ITAR_PAL_MH);	
 	Mdl_SetModelFatness	(self, 2);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); // Tired / Militia / Mage / Arrogance / Relaxed
 	

@@ -24,7 +24,7 @@ instance PAL_258_Keroloth  (Npc_Default)
 
 		
 	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_N_Normal20, BodyTex_N, ITAR_PAL_MH_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_N_Normal20, BodyTex_N, Ninja_ArmorExpansion_ITAR_PAL_MH);	
 	Mdl_SetModelFatness	(self, 0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); // Tired / Militia / Mage / Arrogance / Relaxed
 	

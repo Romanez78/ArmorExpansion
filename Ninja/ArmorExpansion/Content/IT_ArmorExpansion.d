@@ -50,11 +50,11 @@ func void Ninja_ArmorExpansion_ItemsWithBonuses_HPMana_UnEquipping(var int attri
     };
 };
 
-const int NINJA_ArmorEXPANSION_ITAR_PAL_A_ARMOREXPANSION_BONUS_MANA = 40;
-const int NINJA_ArmorEXPANSION_ITAR_PAL_F_ARMOREXPANSION_BONUS_MANA = 20;
+const int Ninja_ArmorExpansion_ITAR_PAL_A_BONUS_MANA = 40;
+const int Ninja_ArmorExpansion_ITAR_PAL_F_BONUS_MANA = 20;
 var int Ninja_ArmorExpansion__ITAR_MIL_H_Equipped;
 var int Ninja_ArmorExpansion__ITAR_SLD_BOW_Equipped;
-INSTANCE ITAR_MIL_H_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_MIL_H (C_Item)
 {
 	name 					=	"Tižká Zbroj Domobrany";
 
@@ -129,7 +129,7 @@ func void Ninja_ArmorExpansion__UnEquip_ITAR_MIL_H()
 		};
     };
 };
-INSTANCE ITAR_GAMBESON_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_GAMBESON (C_Item)
 {
 	name 					=	"Lovecký Gambeson";
 
@@ -151,8 +151,8 @@ INSTANCE ITAR_GAMBESON_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-	on_equip    			=    Equip_ITAR_GAMBESON_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_GAMBESON_ARMOREXPANSION;
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_GAMBESON;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_GAMBESON;
 
 	description				=	name;
 	TEXT[0]                 =       "+3% stoelecký talent.";
@@ -168,19 +168,19 @@ INSTANCE ITAR_GAMBESON_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_GAMBESON_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_GAMBESON()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 3);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 3);
 };
-func void UnEquip_ITAR_GAMBESON_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_GAMBESON()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -3);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -3);
 	};
-INSTANCE ITAR_PAL_A_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_A (C_Item)
 {
 	name 					=	"Obohacená Paladinská Zbroj";
 
@@ -202,8 +202,8 @@ INSTANCE ITAR_PAL_A_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip    			=    Equip_ITAR_PAL_A_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_PAL_A_ARMOREXPANSION;	
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_PAL_A;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_A;	
 	
 	description				=	name;
 	TEXT[0]                 =       "+40 Bonus maximální many.";	
@@ -223,18 +223,18 @@ INSTANCE ITAR_PAL_A_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-FUNC VOID Equip_ItAr_PAL_A_ARMOREXPANSION()
+FUNC VOID Ninja_ArmorExpansion_Equip_ITAR_PAL_A()
 	{
     // Mana
-    self.attribute[ATR_MANA_MAX] += NINJA_ArmorEXPANSION_ITAR_PAL_A_ARMOREXPANSION_BONUS_MANA;
-	self.attribute[ATR_MANA] += NINJA_ArmorEXPANSION_ITAR_PAL_A_ARMOREXPANSION_BONUS_MANA;
+    self.attribute[ATR_MANA_MAX] += Ninja_ArmorExpansion_ITAR_PAL_A_BONUS_MANA;
+	self.attribute[ATR_MANA] += Ninja_ArmorExpansion_ITAR_PAL_A_BONUS_MANA;
 	};
-FUNC VOID UnEquip_ItAr_PAL_A_ARMOREXPANSION()
+FUNC VOID Ninja_ArmorExpansion_UnEquip_ITAR_PAL_A()
 	{
     // Mana
-    Ninja_ArmorExpansion_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, NINJA_ArmorEXPANSION_ITAR_PAL_A_ARMOREXPANSION_BONUS_MANA);
+    Ninja_ArmorExpansion_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Ninja_ArmorExpansion_ITAR_PAL_A_BONUS_MANA);
 	};
-INSTANCE ITAR_PAL_R_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_R (C_Item)
 {
 	name 					=	"Rezavá Paladinská Zbroj";
 
@@ -274,7 +274,7 @@ INSTANCE ITAR_PAL_R_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PAL_F_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_F (C_Item)
 {
 	name 					=	"Opravená Paladinská Zbroj";
 
@@ -296,8 +296,8 @@ INSTANCE ITAR_PAL_F_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip    			=    Equip_ITAR_PAL_F_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_PAL_F_ARMOREXPANSION;	
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_PAL_F;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_F;	
 	
 	description				=	name;
 	TEXT[0]                 =       "+20 bonus maximální many";	
@@ -317,18 +317,18 @@ INSTANCE ITAR_PAL_F_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-FUNC VOID Equip_ItAr_PAL_F_ARMOREXPANSION()
+FUNC VOID Ninja_ArmorExpansion_Equip_ITAR_PAL_F()
 	{
     // Mana
-    self.attribute[ATR_MANA_MAX] += NINJA_ArmorEXPANSION_ITAR_PAL_F_ARMOREXPANSION_BONUS_MANA;
-	self.attribute[ATR_MANA] += NINJA_ArmorEXPANSION_ITAR_PAL_F_ARMOREXPANSION_BONUS_MANA;
+    self.attribute[ATR_MANA_MAX] += Ninja_ArmorExpansion_ITAR_PAL_F_BONUS_MANA;
+	self.attribute[ATR_MANA] += Ninja_ArmorExpansion_ITAR_PAL_F_BONUS_MANA;
 	};
-FUNC VOID UnEquip_ItAr_PAL_F_ARMOREXPANSION()
+FUNC VOID Ninja_ArmorExpansion_UnEquip_ITAR_PAL_F()
 	{
     // Mana
-    Ninja_ArmorExpansion_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, NINJA_ArmorEXPANSION_ITAR_PAL_F_ARMOREXPANSION_BONUS_MANA);
+    Ninja_ArmorExpansion_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Ninja_ArmorExpansion_ITAR_PAL_F_BONUS_MANA);
 	};
-INSTANCE ITAR_PAL_C_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_C (C_Item)
 {
     name    =    "Zbroj Rytíøe Kušišníka";
 
@@ -350,8 +350,8 @@ INSTANCE ITAR_PAL_C_ARMOREXPANSION (C_Item)
     visual_skin    =    0;
     material    =    MAT_METAL;
 
-    on_equip    =    Equip_ITAR_PAL_C_ARMOREXPANSION;
-    on_unequip    =    UnEquip_ITAR_PAL_C_ARMOREXPANSION;
+    on_equip    =    Ninja_ArmorExpansion_Equip_ITAR_PAL_C;
+    on_unequip    =    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_C;
 
     description    =    name;
 	TEXT[0]                 =       "+5% stoelecký talent";
@@ -371,19 +371,19 @@ INSTANCE ITAR_PAL_C_ARMOREXPANSION (C_Item)
     TEXT[5]    =    NAME_Value;
     COUNT[5]    =    value;
 };
-func void Equip_ITAR_PAL_C_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_PAL_C()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
 };
-func void UnEquip_ITAR_PAL_C_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_PAL_C()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE ITAR_MIL_Med2_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_MIL_Med2 (C_Item)
 {
 	name 					=	"Vylepšená Stoedni Tižká Zbroj Domobrany";
 
@@ -405,8 +405,8 @@ INSTANCE ITAR_MIL_Med2_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-	    on_equip    		=    Ninja_ArmorExpansion__Equip_ITAR_MIL_Med2_ARMOREXPANSION;
-    on_unequip    			=    Ninja_ArmorExpansion__UnEquip_ITAR_MIL_Med2_ARMOREXPANSION;
+	    on_equip    		=    Ninja_ArmorExpansion__Ninja_ArmorExpansion_Equip_ITAR_MIL_Med2;
+    on_unequip    			=    Ninja_ArmorExpansion__Ninja_ArmorExpansion_UnEquip_ITAR_MIL_Med2;
 	
 	description				=	name;
     TEXT[0]                 =       "";
@@ -421,7 +421,7 @@ INSTANCE ITAR_MIL_Med2_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Ninja_ArmorExpansion__Equip_ITAR_MIL_Med2_ARMOREXPANSION()
+func void Ninja_ArmorExpansion__Ninja_ArmorExpansion_Equip_ITAR_MIL_Med2()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -437,7 +437,7 @@ func void Ninja_ArmorExpansion__Equip_ITAR_MIL_Med2_ARMOREXPANSION()
 		};
     };
 };
-func void Ninja_ArmorExpansion__UnEquip_ITAR_MIL_Med2_ARMOREXPANSION()
+func void Ninja_ArmorExpansion__Ninja_ArmorExpansion_UnEquip_ITAR_MIL_Med2()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -453,7 +453,7 @@ func void Ninja_ArmorExpansion__UnEquip_ITAR_MIL_Med2_ARMOREXPANSION()
 		};
     };
 };
-INSTANCE ITAR_MIL_P_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_MIL_P (C_Item)
 {
 	name 					=	"Zbroj Milicionáoe Kušišníka";
 
@@ -475,8 +475,8 @@ INSTANCE ITAR_MIL_P_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 	
-	on_equip    			=    Equip_ITAR_MIL_P_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_MIL_P_ARMOREXPANSION;
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_MIL_P;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_MIL_P;
 	
 	description				=	name;
     TEXT[0]                 =       "+5% stoelecký talent";
@@ -491,7 +491,7 @@ INSTANCE ITAR_MIL_P_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_MIL_P_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_MIL_P()
 {
 	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
@@ -509,7 +509,7 @@ func void Equip_ITAR_MIL_P_ARMOREXPANSION()
 		};
     };
 };
-func void UnEquip_ITAR_MIL_P_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_MIL_P()
 {
 	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
@@ -537,7 +537,7 @@ INSTANCE ITAR_MIL_M (C_Item)
 
 	value 					=	1500;
 };
-INSTANCE ITAR_DJG_CL_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_DJG_CL (C_Item)
 {
 	name 					=	"Lehká Zbroj Lovce Draku";
 
@@ -592,7 +592,7 @@ func void UnEquip_ITAR_DHT2S_ARMOREXPANSION()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE ITAR_SLD_BOW_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_SLD_BOW (C_Item)
 {
 	name 					=	"Zbroj Nájemného Lovce";
 
@@ -614,8 +614,8 @@ INSTANCE ITAR_SLD_BOW_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-	on_equip				=	Equip_ITAR_SLD_BOW_ARMOREXPANSION;
-	on_unequip				=	UnEquip_ITAR_SLD_BOW_ARMOREXPANSION;
+	on_equip				=	Ninja_ArmorExpansion_Equip_ITAR_SLD_BOW;
+	on_unequip				=	Ninja_ArmorExpansion_UnEquip_ITAR_SLD_BOW;
 	
 	description				=	name;
 
@@ -631,7 +631,7 @@ INSTANCE ITAR_SLD_BOW_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_SLD_BOW_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_SLD_BOW()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
@@ -650,7 +650,7 @@ func void Equip_ITAR_SLD_BOW_ARMOREXPANSION()
 		};
     };
 };
-func void UnEquip_ITAR_SLD_BOW_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_SLD_BOW()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
@@ -669,7 +669,7 @@ func void UnEquip_ITAR_SLD_BOW_ARMOREXPANSION()
 		};
     };
 };
-INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_MIL_R (C_Item)
 {
 	name 					=	"Vylepšená Lehká Zbroj Domobrany";
 
@@ -691,8 +691,8 @@ INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-		on_equip			=	Equip_ITAR_MIL_R_ArmorExpansion;
-	on_unequip				=	UnEquip_ITAR_MIL_R_ArmorExpansion;
+		on_equip			=	Ninja_ArmorExpansion_Equip_ITAR_MIL_R;
+	on_unequip				=	Ninja_ArmorExpansion_UnEquip_ITAR_MIL_R;
 	
 	description				=	name;
 	
@@ -708,7 +708,7 @@ INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_MIL_R_ArmorExpansion()
+func void Ninja_ArmorExpansion_Equip_ITAR_MIL_R()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -724,7 +724,7 @@ func void Equip_ITAR_MIL_R_ArmorExpansion()
 		};
     };
 };
-func void UnEquip_ITAR_MIL_R_ArmorExpansion()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_MIL_R()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -740,7 +740,7 @@ func void UnEquip_ITAR_MIL_R_ArmorExpansion()
 		};
     };
 };
-INSTANCE ITAR_CRUSADER_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_CRUSADER (C_Item)
 {
 	name 					=	"Zbroj Koižáka";
 
@@ -762,8 +762,8 @@ INSTANCE ITAR_CRUSADER_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 	
-	on_equip				=	Equip_ITAR_CRUSADER_ARMOREXPANSION;
-	on_unequip				=	UnEquip_ITAR_CRUSADER_ARMOREXPANSION;
+	on_equip				=	Ninja_ArmorExpansion_Equip_ITAR_CRUSADER;
+	on_unequip				=	Ninja_ArmorExpansion_UnEquip_ITAR_CRUSADER;
 	
 	description				=	name;
 	TEXT[0]                 =       "+5% obouruení talent";
@@ -783,21 +783,21 @@ INSTANCE ITAR_CRUSADER_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_CRUSADER_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_CRUSADER()
 {
     B_RaiseFightTalent(self, NPC_TALENT_2H, 5);
     
     // A head adjusting
     Ninja_ArmorExpansion_ArmorChanging_Head_HumHeadBald(self);
 };
-func void UnEquip_ITAR_CRUSADER_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_CRUSADER()
 {
     B_RaiseFightTalent(self, NPC_TALENT_2H, -5);
         
     // A head adjusting
     Ninja_ArmorExpansion_ArmorChanging_Head_Original(self);
 };
-INSTANCE ITAR_SLD_SCOUT_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_SLD_SCOUT (C_Item)
 {
 	name 					=	"Odiv Žoldáka Zvida";
 
@@ -819,8 +819,8 @@ INSTANCE ITAR_SLD_SCOUT_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-	on_equip				=	Equip_ITAR_SLD_SCOUT_ARMOREXPANSION;
-	on_unequip				=	UnEquip_ITAR_SLD_SCOUT_ARMOREXPANSION;
+	on_equip				=	Ninja_ArmorExpansion_Equip_ITAR_SLD_SCOUT;
+	on_unequip				=	Ninja_ArmorExpansion_UnEquip_ITAR_SLD_SCOUT;
 
 	description				=	name;
 
@@ -841,7 +841,7 @@ INSTANCE ITAR_SLD_SCOUT_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_SLD_SCOUT_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_SLD_SCOUT()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
@@ -860,7 +860,7 @@ func void Equip_ITAR_SLD_SCOUT_ARMOREXPANSION()
 		};
     };
 };
-func void UnEquip_ITAR_SLD_SCOUT_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_SLD_SCOUT()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
@@ -879,7 +879,7 @@ func void UnEquip_ITAR_SLD_SCOUT_ARMOREXPANSION()
 		};
     };
 };
-INSTANCE ITAR_MIL_SCOUT_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_MIL_SCOUT (C_Item)
 {
 	name 					=	"Odiv Královského Zvida";
 
@@ -901,8 +901,8 @@ INSTANCE ITAR_MIL_SCOUT_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-	on_equip				=	Equip_ITAR_MIL_SCOUT_ARMOREXPANSION;
-	on_unequip				=	UnEquip_ITAR_MIL_SCOUT_ARMOREXPANSION;
+	on_equip				=	Ninja_ArmorExpansion_Equip_ITAR_MIL_SCOUT;
+	on_unequip				=	Ninja_ArmorExpansion_UnEquip_ITAR_MIL_SCOUT;
 
 	description				=	name;
 
@@ -923,7 +923,7 @@ INSTANCE ITAR_MIL_SCOUT_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_MIL_SCOUT_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_MIL_SCOUT()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
@@ -942,7 +942,7 @@ func void Equip_ITAR_MIL_SCOUT_ARMOREXPANSION()
 		};
     };
 };
-func void UnEquip_ITAR_MIL_SCOUT_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_MIL_SCOUT()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
@@ -961,7 +961,7 @@ func void UnEquip_ITAR_MIL_SCOUT_ARMOREXPANSION()
 		};
     };
 };
-INSTANCE ITAR_SLD_R_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_SLD_R (C_Item)
 {
 	name 					=	"Vylepšená Stoední Zbroj Žoldáka";
 
@@ -983,8 +983,8 @@ INSTANCE ITAR_SLD_R_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-	on_equip				= Equip_ITAR_SLD_R_ARMOREXPANSION;
-	on_unequip				= UnEquip_ITAR_SLD_R_ARMOREXPANSION;
+	on_equip				= Ninja_ArmorExpansion_Equip_ITAR_SLD_R;
+	on_unequip				= Ninja_ArmorExpansion_UnEquip_ITAR_SLD_R;
 	
 	description				=	name;
 
@@ -1003,7 +1003,7 @@ INSTANCE ITAR_SLD_R_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_SLD_R_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_SLD_R()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -1019,7 +1019,7 @@ func void Equip_ITAR_SLD_R_ARMOREXPANSION()
 		};
     };
 };
-func void UnEquip_ITAR_SLD_R_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_SLD_R()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -1035,7 +1035,7 @@ func void UnEquip_ITAR_SLD_R_ARMOREXPANSION()
 		};
     };
 };
-INSTANCE ITAR_SLD_LR_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_SLD_LR (C_Item)
 {
 	name 					=	"Vylepšená Lehká Zbroj Žoldáka";
 
@@ -1057,8 +1057,8 @@ INSTANCE ITAR_SLD_LR_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 	
-		on_equip			= Equip_ITAR_SLD_LR_ARMOREXPANSION;
-	on_unequip				= UnEquip_ITAR_SLD_LR_ARMOREXPANSION;
+		on_equip			= Ninja_ArmorExpansion_Equip_ITAR_SLD_LR;
+	on_unequip				= Ninja_ArmorExpansion_UnEquip_ITAR_SLD_LR;
 	
 	description				=	name;
 	
@@ -1077,7 +1077,7 @@ INSTANCE ITAR_SLD_LR_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_SLD_LR_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_SLD_LR()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -1093,7 +1093,7 @@ func void Equip_ITAR_SLD_LR_ARMOREXPANSION()
 		};
     };
 };
-func void UnEquip_ITAR_SLD_LR_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_SLD_LR()
 {
     if (true == Npc_IsPlayer(self))
     {
@@ -1109,7 +1109,7 @@ func void UnEquip_ITAR_SLD_LR_ARMOREXPANSION()
 		};
     };
 };
-INSTANCE ITAR_PAL_CH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_CH (C_Item)
 {
     name    =    "Zbroj Paladina Kušišníka";
 
@@ -1131,8 +1131,8 @@ INSTANCE ITAR_PAL_CH_ARMOREXPANSION (C_Item)
     visual_skin    =    0;
     material    =    MAT_METAL;
 
-    on_equip    =    Equip_ITAR_PAL_CH_ARMOREXPANSION;
-    on_unequip    =    UnEquip_ITAR_PAL_CH_ARMOREXPANSION;
+    on_equip    =    Ninja_ArmorExpansion_Equip_ITAR_PAL_CH;
+    on_unequip    =    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_CH;
 
     description    =    name;
 	TEXT[0]                 =       "+5% stoelecký talent";
@@ -1152,19 +1152,19 @@ INSTANCE ITAR_PAL_CH_ARMOREXPANSION (C_Item)
     TEXT[5]    =    NAME_Value;
     COUNT[5]    =    value;
 };
-func void Equip_ITAR_PAL_CH_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_PAL_CH()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
 };
-func void UnEquip_ITAR_PAL_CH_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_PAL_CH()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE ITAR_DJG_CH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_DJG_CH (C_Item)
 {
     name    =    "Tižká Zbroj Lovce Draku";
 
@@ -1186,8 +1186,8 @@ INSTANCE ITAR_DJG_CH_ARMOREXPANSION (C_Item)
     visual_skin    =    0;
     material    =    MAT_METAL;
 
-    on_equip    =    Equip_ITAR_DJG_CH_ARMOREXPANSION;
-    on_unequip    =    UnEquip_ITAR_DJG_CH_ARMOREXPANSION;
+    on_equip    =    Ninja_ArmorExpansion_Equip_ITAR_DJG_CH;
+    on_unequip    =    Ninja_ArmorExpansion_UnEquip_ITAR_DJG_CH;
 
     description    =    name;
 	TEXT[0]                 =       "+5% stoelecký talent";
@@ -1207,19 +1207,19 @@ INSTANCE ITAR_DJG_CH_ARMOREXPANSION (C_Item)
     TEXT[5]    =    NAME_Value;
     COUNT[5]    =    value;
 };
-func void Equip_ITAR_DJG_CH_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_DJG_CH()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
 };
-func void UnEquip_ITAR_DJG_CH_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_DJG_CH()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE ITAR_DJG_CM_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_DJG_CM (C_Item)
 {
     name    =    "Stoední Zbroj Lovce Draku";
 
@@ -1241,8 +1241,8 @@ INSTANCE ITAR_DJG_CM_ARMOREXPANSION (C_Item)
     visual_skin    =    0;
     material    =    MAT_METAL;
 
-    on_equip    =    Equip_ITAR_DJG_CM_ARMOREXPANSION;
-    on_unequip    =    UnEquip_ITAR_DJG_CM_ARMOREXPANSION;
+    on_equip    =    Ninja_ArmorExpansion_Equip_ITAR_DJG_CM;
+    on_unequip    =    Ninja_ArmorExpansion_UnEquip_ITAR_DJG_CM;
 
     description    =    name;
 	TEXT[0]                 =       "+5% stoelecký talent";
@@ -1262,19 +1262,19 @@ INSTANCE ITAR_DJG_CM_ARMOREXPANSION (C_Item)
     TEXT[5]    =    NAME_Value;
     COUNT[5]    =    value;
 };
-func void Equip_ITAR_DJG_CM_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_Equip_ITAR_DJG_CM()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
 };
-func void UnEquip_ITAR_DJG_CM_ARMOREXPANSION()
+func void Ninja_ArmorExpansion_UnEquip_ITAR_DJG_CM()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE ITAR_PAL_ST_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_ST (C_Item)
 {
 	name 					=	"Stewarkská Plátová Zbroj";
 
@@ -1314,7 +1314,7 @@ INSTANCE ITAR_PAL_ST_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PAL_MH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_MH (C_Item)
 {
 	name 					=	"Tižká Zbroj Rytíoe";
 
@@ -1409,7 +1409,7 @@ func void UnEquip_ITAR_PIR_H_ARMOREXPANSION()
     B_RaiseFightTalent(self, NPC_TALENT_1H, -5);
 	Npc_ChangeAttribute(self,ATR_DEXTERITY, -10);
 };
-INSTANCE ITAR_PAL_ANH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_ANH (C_Item)
 {
 	name 					=	"Obohacená Paladinská Zbroj";
 
@@ -1431,8 +1431,8 @@ INSTANCE ITAR_PAL_ANH_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip    			=    Equip_ITAR_PAL_A_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_PAL_A_ARMOREXPANSION;	
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_PAL_A;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_A;	
 	
 	description				=	name;
 	TEXT[0]                 =       "+40 Bonus maximální many.";	
@@ -1452,7 +1452,7 @@ INSTANCE ITAR_PAL_ANH_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PAL_RNH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_RNH (C_Item)
 {
 	name 					=	"Rezavá Paladinská Zbroj";
 
@@ -1492,7 +1492,7 @@ INSTANCE ITAR_PAL_RNH_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PAL_FNH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_FNH (C_Item)
 {
 	name 					=	"Opravená Paladinská Zbroj";
 
@@ -1514,8 +1514,8 @@ INSTANCE ITAR_PAL_FNH_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip    			=    Equip_ITAR_PAL_F_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_PAL_F_ARMOREXPANSION;	
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_PAL_F;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_F;	
 	
 	description				=	name;
 	TEXT[0]                 =       "+20 bonus maximální many";	
@@ -1535,7 +1535,7 @@ INSTANCE ITAR_PAL_FNH_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PAL_AFH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_AFH (C_Item)
 {
 	name 					=	"Obohacená Paladinská Zbroj";
 
@@ -1557,8 +1557,8 @@ INSTANCE ITAR_PAL_AFH_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip    			=    Equip_ITAR_PAL_A_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_PAL_A_ARMOREXPANSION;	
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_PAL_A;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_A;	
 	
 	description				=	name;
 	TEXT[0]                 =       "+40 Bonus maximální many.";	
@@ -1578,7 +1578,7 @@ INSTANCE ITAR_PAL_AFH_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PAL_RFH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_RFH (C_Item)
 {
 	name 					=	"Rezavá Paladinská Zbroj";
 
@@ -1618,7 +1618,7 @@ INSTANCE ITAR_PAL_RFH_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PAL_FFH_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_PAL_FFH (C_Item)
 {
 	name 					=	"Opravená Paladinská Zbroj";
 
@@ -1640,8 +1640,8 @@ INSTANCE ITAR_PAL_FFH_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip    			=    Equip_ITAR_PAL_F_ARMOREXPANSION;
-    on_unequip    			=    UnEquip_ITAR_PAL_F_ARMOREXPANSION;	
+	on_equip    			=    Ninja_ArmorExpansion_Equip_ITAR_PAL_F;
+    on_unequip    			=    Ninja_ArmorExpansion_UnEquip_ITAR_PAL_F;	
 	
 	description				=	name;
 	TEXT[0]                 =       "+20 bonus maximální many";	
@@ -1661,7 +1661,7 @@ INSTANCE ITAR_PAL_FFH_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_NH_CRUSADER_ARMOREXPANSION (C_Item)
+INSTANCE Ninja_ArmorExpansion_ITAR_NH_CRUSADER (C_Item)
 {
 	name 					=	"Zbroj Koižáka";
 
@@ -1683,8 +1683,8 @@ INSTANCE ITAR_NH_CRUSADER_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 	
-	on_equip				=	Equip_ITAR_CRUSADER_ARMOREXPANSION;
-	on_unequip				=	UnEquip_ITAR_CRUSADER_ARMOREXPANSION;
+	on_equip				=	Ninja_ArmorExpansion_Equip_ITAR_CRUSADER;
+	on_unequip				=	Ninja_ArmorExpansion_UnEquip_ITAR_CRUSADER;
 	
 	description				=	name;
 	TEXT[0]                 =       "+5% Talent s obourueními zbranimi";

@@ -24,7 +24,7 @@ instance Mil_319_Pablo (Npc_Default)
 	CreateInvItems (self,ItKe_City_Tower_01,1);
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart_Dusty, BodyTex_N, ITAR_MIL_Med2_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart_Dusty, BodyTex_N, Ninja_ArmorExpansion_ITAR_MIL_Med2);	
 	Mdl_SetModelFatness	(self,1);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	

@@ -24,7 +24,7 @@ instance Mil_313_Boltan (Npc_Default)
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_B_Normal01, BodyTex_B, ITAR_MIL_H_ArmorExpansion);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_B_Normal01, BodyTex_B, Ninja_ArmorExpansion_ITAR_MIL_H);	
 	Mdl_SetModelFatness	(self,0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 

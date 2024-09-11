@@ -24,7 +24,7 @@ instance Mil_327_Miliz (Npc_Default)
 
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Normal20, BodyTex_N, ITAR_MIL_SCOUT_ARMOREXPANSION);	
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Normal20, BodyTex_N, Ninja_ArmorExpansion_ITAR_MIL_SCOUT);	
 	Mdl_SetModelFatness	(self,0);
 	Mdl_ApplyOverlayMds	(self, "Humans_Militia.mds"); 
 	
