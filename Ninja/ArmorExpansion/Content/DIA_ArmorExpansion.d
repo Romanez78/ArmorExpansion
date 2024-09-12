@@ -67,7 +67,7 @@ instance Patch_AE_DIA_Matteo_GAMBESON(C_INFO)
 };
 func int Patch_AE_DIA_Matteo_GAMBESON_Condition()
 {
-	if (Npc_KnowsInfo (other,Patch_AE_DIA_Matteo_SellWhat))
+	if (Npc_KnowsInfo (other, DIA_Matteo_SellWhat))
 	&& (Patch_AE_Matteo_GAMBESONBought == FALSE)
 	{
 		return TRUE;
@@ -351,7 +351,7 @@ func int Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_Condition ()
 	if	(MIS_ANDRE_WAREHOUSE == LOG_SUCCESS)
 	&&	(MIS_Andre_REDLIGHT == LOG_SUCCESS)
 	&&	(MIS_AndreHelpLobart == LOG_SUCCESS)
-	&& (Npc_KnowsInfo (other, Patch_AE_DIA_Andre_LOBART_SUCCESS))
+	&& (Npc_KnowsInfo (other, DIA_Andre_LOBART_SUCCESS))
 	{
 		return TRUE;
 	};
@@ -444,6 +444,9 @@ func void Patch_AE_DIA_BENNET_SLDARMORASK_Info ()
 		Log_CreateTopic (Patch_AE_TOPIC_BENNET_ARMOR,LOG_NOTE);
 	B_LogEntry (Patch_AE_TOPIC_BENNET_ARMOR,"Bennet mi může vylepšit zbroje žoldáka když mu přinesu materiály a zlato.");
 };
+//-------------------------------------
+var int Patch_AE_BENNET_SLD_LReforgedArmorBought;
+//-------------------------------------
 instance Patch_AE_DIA_BENNET_SLD_LReforgedHUH (C_INFO)
 {
 	npc			 =  SLD_809_Bennet;
@@ -455,7 +458,7 @@ instance Patch_AE_DIA_BENNET_SLD_LReforgedHUH (C_INFO)
 };
 func int Patch_AE_DIA_BENNET_SLD_LReforgedHUH_Condition ()
 {
-	if (BENNET_SLD_LReforgedArmorBought == FALSE)
+	if (Patch_AE_BENNET_SLD_LReforgedArmorBought == FALSE)
 	&& (Npc_Hasitems(other, ItAr_SLD_L) > 0)
 	&& (Npc_KnowsInfo (other, Patch_AE_DIA_BENNET_SLDARMORASK))
 	{
@@ -471,9 +474,6 @@ func void Patch_AE_DIA_BENNET_SLD_LReforgedHUH_Info ()
 	AI_Output(other, self, "Patch_AE_DIA_BENNET_SLD_LReforgedHUH_15_09"); //Dobrá.
 		B_LogEntry (Patch_AE_TOPIC_BENNET_ARMOR,"Na vylepšení lehké zbroje bude Bennet potřebovat dva ocelové pruty, dvě kůže z vlka a 200 zlatých.");
 };
-//-------------------------------------
-var int Patch_AE_BENNET_SLD_LReforgedArmorBought;
-//-------------------------------------
 instance Patch_AE_DIA_BENNET_SLD_LReforgedArmor (C_INFO)
 {
 	npc			 =  SLD_809_Bennet;
@@ -552,7 +552,7 @@ var int Patch_AE_DIA_Engor_RSkaufen_perm;
 func int Patch_AE_DIA_Engor_RSkaufen_Condition ()
 {
 	if (other.guild == GIL_MIL)
-	&& Npc_KnowsInfo (other, Patch_AE_DIA_Engor_Ruestung)
+	&& Npc_KnowsInfo (other, DIA_Engor_Ruestung)
 	&& (Patch_AE_DIA_Engor_RSkaufen_perm == FALSE)
 	{
 		return TRUE;
@@ -584,7 +584,7 @@ instance Patch_AE_DIA_Engor_ARCHER_KAUFEN		(C_INFO)
 func int Patch_AE_DIA_Engor_ARCHER_KAUFEN_Condition ()
 {
 	if (other.guild == GIL_MIL)
-	&& Npc_KnowsInfo (other, Patch_AE_DIA_Engor_Ruestung)
+	&& Npc_KnowsInfo (other, DIA_Engor_Ruestung)
 	&& (Patch_AE_DIA_Engor_RSkaufen_perm == FALSE)
 	{
 		return TRUE;
@@ -604,6 +604,9 @@ func void Patch_AE_DIA_Engor_ARCHER_KAUFEN_Info ()
 		AI_Output (self, other, "Patch_AE_DIA_Engor_RSkaufen_13_02"); //Nejdřív mi přines to zlato.
 	};
 };
+//-------------------------------------
+var int Patch_AE_BENNET_MERC_MReforgedArmorBought;
+//-------------------------------------
 instance Patch_AE_DIA_BENNET_MERC_MReforgedHUH (C_INFO)
 {
 	npc			 =  SLD_809_Bennet;
@@ -615,7 +618,7 @@ instance Patch_AE_DIA_BENNET_MERC_MReforgedHUH (C_INFO)
 };
 func int Patch_AE_DIA_BENNET_MERC_MReforgedHUH_Condition ()
 {
-	if (BENNET_MERC_MReforgedArmorBought == FALSE)
+	if (Patch_AE_BENNET_MERC_MReforgedArmorBought == FALSE)
 	&& (Npc_Hasitems(other, ItAr_SLD_M) > 0)
 	&& (Npc_KnowsInfo (other, Patch_AE_DIA_BENNET_SLDARMORASK))
 	{
@@ -632,9 +635,6 @@ func void Patch_AE_DIA_BENNET_MERC_MReforgedHUH_Info ()
 	AI_Output(other, self, "Patch_AE_DIA_BENNET_MERC_MReforgedHUH_15_08"); //Dobrá.
 			B_LogEntry (Patch_AE_TOPIC_BENNET_ARMOR,"Na vylepšení střední zbroje bude Bennet potřebovat tři ocelové pruty, jednu kůži ze skřetího psa, dvě kůže z trolla a 650 zlatých.");
 };
-//-------------------------------------
-var int Patch_AE_BENNET_MERC_MReforgedArmorBought;
-//-------------------------------------
 instance Patch_AE_DIA_BENNET_MERC_MReforgedArmor (C_INFO)
 {
 	npc			 =  SLD_809_Bennet;
@@ -1136,7 +1136,7 @@ instance Patch_AE_DIA_MILTEN_PLATEARMOR (C_INFO)
 func int Patch_AE_DIA_MILTEN_PLATEARMOR_Condition ()
 {
 	if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_PALADINARMOR))
-	&& (Npc_KnowsInfo (other,Patch_AE_DIA_MiltenNW_AllDragonsDead))
+	&& (Npc_KnowsInfo (other, DIA_MiltenNW_AllDragonsDead))
 	{
 		return TRUE;
 	};
@@ -1379,7 +1379,7 @@ func int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition ()
 {
 	IF (Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent == FALSE)
 	&& (hero.guild == GIL_DJG)
-	&& (Npc_KnowsInfo (other,Patch_AE_DIA_Bennet_BetterArmor))
+	&& (Npc_KnowsInfo (other, DIA_Bennet_BetterArmor))
 	{
 		return TRUE;
 	};
@@ -1436,25 +1436,25 @@ func void Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_Info ()
 ///////////////////////////////////////////////////////////////////////
 //	Info RavenDead
 ///////////////////////////////////////////////////////////////////////
-instance Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA		(C_INFO)
+instance Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION		(C_INFO)
 {
 	npc		 = 	PIR_1320_Addon_Greg;
 	nr		 = 	2;
-	condition	 = 	Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA_Condition;
-	information	 = 	Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA_Info;
+	condition	 = 	Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Condition;
+	information	 = 	Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Info;
 
 	description	 = 	"Co takhle nějáká lepší zbroj?";
 };
 
-func int Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA_Condition ()
+func int Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Condition ()
 {
-	if ((Npc_KnowsInfo (other,Patch_AE_DIA_Addon_Greg_RavenDead) == TRUE))
+	if ((Npc_KnowsInfo (other, DIA_Addon_Greg_RavenDead) == TRUE))
 	{
 		return TRUE;
 	};
 };
 
-func void Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA_Info ()
+func void Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Info ()
 {
 	AI_Output	(other, self, "Patch_AE_DIA_Addon_Greg_RavenDead_15_00"); //Co takhle nějáká lepší zbroj?
 	AI_Output	(self, other, "Patch_AE_DIA_Addon_Greg_RavenDead_01_01"); //Sakra, co si myslíš?
@@ -1468,26 +1468,26 @@ func void Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA_Info ()
 //	Info RavenDead
 ///////////////////////////////////////////////////////////////////////
 Var int Patch_AE_ARMOREXPANSION_BOUGHT_CAPTAIN;
-instance Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA		(C_INFO)
+instance Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION		(C_INFO)
 {
 	npc		 = 	PIR_1320_Addon_Greg;
 	nr		 = 	2;
-	condition	 = 	Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_Condition;
-	information	 = 	Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_Info;
+	condition	 = 	Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_Condition;
+	information	 = 	Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_Info;
 
 	description	 = 	"Koupit kapitánský plášť (75/75/75/25/15, +5% jednoruční talent, +10 Obratnost, Cena 2700)";
 };
 
-func int Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_Condition ()
+func int Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_Condition ()
 {
-	if ((Npc_KnowsInfo (other,Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_NINJA) == TRUE))
+	if ((Npc_KnowsInfo (other,Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION) == TRUE))
 	&& (Patch_AE_ARMOREXPANSION_BOUGHT_CAPTAIN == FALSE)
 	{
 		return TRUE;
 	};
 };
 
-func void Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_Info ()
+func void Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_Info ()
 {
 	AI_Output(other, self, "Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_4_1"); //Prodej mi kapitánskou zbroj.
 
