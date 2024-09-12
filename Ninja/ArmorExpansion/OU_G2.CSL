@@ -1,0 +1,254 @@
+ZenGin Archive
+ver 1
+zCArchiverGeneric
+ASCII
+saveGame 0
+date 12.09.2024 22:21:31
+user Redefix
+END
+objects 61
+END
+
+[% zCCSLib 0 0]
+	NumOfItems=int:20
+[% zCCSBlock 0 1]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 3]
+subType=enum:0
+text=string:Nenašla by se pro mně lehhčí zbroj?.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 4]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 5]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 6]
+subType=enum:0
+text=string:Radši používám zbraně na dálku.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 7]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 8]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 9]
+subType=enum:0
+text=string:Můžu ti vyměnit tvojí zbroj za zbroj zvěda. Je lehčí než standartní výbava takže budeš obratnější, ale i zranitelnější
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 10]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 11]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 12]
+subType=enum:0
+text=string:Beru ji.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 13]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 14]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 15]
+subType=enum:0
+text=string:Tady máš, ať ti slouží dobře.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 16]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 17]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 18]
+subType=enum:0
+text=string:Vykonal si všechny moje zadání.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 19]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 20]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 21]
+subType=enum:0
+text=string:Tím si mi dokázal že si zasloužíš povýšení.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 22]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 23]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 24]
+subType=enum:0
+text=string:Tady máš, střední zbroj domobrany.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 25]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 26]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 27]
+subType=enum:0
+text=string:Ať ti slouží vojáku.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 28]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_CS
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 29]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 30]
+subType=enum:0
+text=string:Díky.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_CS.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 31]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 32]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 33]
+subType=enum:0
+text=string:Couldn't you find lighter armor for me?
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 34]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 35]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 36]
+subType=enum:0
+text=string:I prefer to fight at a distance.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 37]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 38]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 39]
+subType=enum:0
+text=string:I can trade you your armor for the armor of a scout. It's lighter than standard equipment, so you'll be more agile, but also more vulnerable.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 40]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 41]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 42]
+subType=enum:0
+text=string:I'll take it.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 43]
+blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 44]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 45]
+subType=enum:0
+text=string:Here, let it serve you well.
+name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 46]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 47]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 48]
+subType=enum:0
+text=string:You did all my assignments.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 49]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 50]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 51]
+subType=enum:0
+text=string:You proved to me that you deserve a promotion.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 52]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 53]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 54]
+subType=enum:0
+text=string:Here you go, militia medium armor.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 55]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 56]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 57]
+subType=enum:0
+text=string:Serve you right, soldier.
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_EN.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 58]
+blockName=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_EN
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 59]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 60]
+subType=enum:0
+text=string: Localized OU (do not change)
+name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_EN.WAV
+[]
+[]
+[]
+[]
