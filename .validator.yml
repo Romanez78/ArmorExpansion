@@ -10,4 +10,5 @@ ignore-declaration:
   - GIL_SLD
   - GIL_DJG
   - ITAR_MIL_M
+  - Rtn_Start_44989
 ignore-resource:
