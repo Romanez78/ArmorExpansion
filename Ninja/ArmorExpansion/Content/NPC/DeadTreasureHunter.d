@@ -1,7 +1,6 @@
 /*
  * The NPC is not very compatible with other mods, because it requires a lot of functions and items, that might not
  * exist if a mod has removed them. This will result in ugly crashes and parser errors (and crying players).
- * You can look in the GitHub repository in the file ".validator.yml" to see all the symbols that will make problems.
  */
 
 instance Patch_AE_DeadTreasureHunter (Npc_Default)
@@ -23,7 +22,7 @@ instance Patch_AE_DeadTreasureHunter (Npc_Default)
 	// ------ Equippte Waffen ------																	//Munition wird automatisch generiert, darf aber angegeben werden
 
 	// ------ Inventory ------
-	CreateInvItems (self, Patch_AE_ITWR_BluePrint_StewarkArmor,1);
+	CreateInvItems (self, ITWR_BluePrint_StewarkArmor_ArmorExpansion,1);
 	CreateInvItems (self, ITMI_Gold,250);
 	CreateInvItems (self, ITMI_Goldplate,1);
 	CreateInvItems (self, ITMI_Silverring,2);

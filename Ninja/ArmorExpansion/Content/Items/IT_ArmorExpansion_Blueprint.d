@@ -1,7 +1,7 @@
 // ********************************
 // Stewark Armor Blueprint
 // ********************************
-instance Patch_AE_ItWr_BluePrint_StewarkArmor(C_Item)
+instance ItWr_BluePrint_StewarkArmor_ArmorExpansion(C_Item)
 {
 	name = "Nákres na výrobu plátové zbroje ze Stewarku";
 

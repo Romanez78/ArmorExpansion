@@ -22,4 +22,4 @@ Content\NpcArmors.d
 Content\C_PlayerHasFakeGuild.d
 Content\Startup.d
 
-Content\Init.d
+Content\ArmorExpansionInit.d

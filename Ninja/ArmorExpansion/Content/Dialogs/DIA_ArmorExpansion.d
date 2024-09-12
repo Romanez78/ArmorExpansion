@@ -1,7 +1,6 @@
 /*
  * The Dialogs are not very compatible with other mods, because they requires a lot of functions and items, that might
  * not exist if a mod has removed them. This will result in ugly crashes and parser errors (and crying players).
- * You can look in the GitHub repository in the file ".validator.yml" to see all the symbols that will make problems.
  */
 
 // *********************************************************
@@ -25,10 +24,11 @@ func int Patch_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_Condition ()
 };
 func void Patch_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_15_01"); //Potřebuju více surové oceli.
-    AI_Output(self, other, "Patch_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_02"); //Můžu ti prodat nějáke z mých osobních zásob, ale vyjde tě to draho.
-    AI_Output(self, other, "Patch_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_03"); //200 zlatých za jeden kus.
+    AI_Output(other, self, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_15_01"); //Potřebuju více surové oceli.
+    AI_Output(self, other, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_02"); //Můžu ti prodat nějáke z mých osobních zásob, ale vyjde tě to draho.
+    AI_Output(self, other, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_03"); //200 zlatých za jeden kus.
 };
+
 instance Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL		(C_INFO)
 {
 	npc		 = 	VLK_457_Brian;
@@ -47,16 +47,16 @@ func int Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_Condition ()
 };
 func void Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_Info ()
 {
-	AI_Output(other, self, "Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_1"); //Prodej mi jeden kus surové oceli.
+	AI_Output(other, self, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_1"); //Prodej mi jeden kus surové oceli.
 
 	if (B_GiveInvItems(other, self, ItMi_Gold, 200))
 	{
-		AI_Output(self, other, "Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2"); //Tady je.
+		AI_Output(self, other, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2"); //Tady je.
 		B_GiveInvItems (self, other, ItMiSwordraw, 1);
 	}
 	else
 	{
-		AI_Output(self, other, "Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_3"); //Přijď až budeš mít u sebe dost zlata
+		AI_Output(self, other, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_3"); //Přijď až budeš mít u sebe dost zlata
 	};
 };
 //-------------------------------------
@@ -81,22 +81,21 @@ func int Patch_AE_DIA_Matteo_GAMBESON_Condition()
 };
 func void Patch_AE_DIA_Matteo_GAMBESON_Info()
 {
-	AI_Output(other, self, "Patch_AE_DIA_Matteo_LEATHER_15_00"); //Dobře, dej mi tu zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00"); //Dobře, dej mi tu zbroj.
 
 	if (B_GiveInvItems(other, self, ItMi_Gold, 350))
 	{
-		AI_Output(self, other, "Patch_AE_DIA_Matteo_LEATHER_09_01"); //Bude se ti líbit.
+		AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01"); //Bude se ti líbit.
 
-		Patch_AE_Matteo_GAMBESONBought = B_GiveInvItems(self, other, Patch_AE_ITAR_GAMBESON, 1);
+		Patch_AE_Matteo_GAMBESONBought = B_GiveInvItems(self, other, ItAr_GAMBESON_ARMOREXPANSION, 1);
 	}
 	else
 	{
-		AI_Output(self, other, "Patch_AE_DIA_Matteo_LEATHER_09_02"); //Ta zbroj má svojí cenu - a taky za ní stojí takže se vrať až budeš mít dost zlata.
+		AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02"); //Ta zbroj má svojí cenu - a taky za ní stojí takže se vrať až budeš mít dost zlata.
 	};
 };
 //-------------------------------------
 const string	Patch_AE_TOPIC_MORTIS_ARMOR				=   "Vylepšení zbroje domobrany.";
-var int Patch_AE_MORTIS_ARMORQUESTION;
 //-------------------------------------
 instance Patch_AE_DIA_MORTIS_ARMORQUESTION (C_INFO)
 {
@@ -116,18 +115,16 @@ func int Patch_AE_DIA_MORTIS_ARMORQUESTION_Condition ()
 };
 func void Patch_AE_DIA_MORTIS_ARMORQUESTION_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_MORTIS_ARMORQUESTION_15_01"); //Nemáš pro mně nějakou lepší zbroj?
-    AI_Output(self, other, "Patch_AE_DIA_MORTIS_ARMORQUESTION_13_02"); //Jedině Lord Andre ti může dát lepší zbroj.
-    AI_Output(self, other, "Patch_AE_DIA_MORTIS_ARMORQUESTION_13_03"); //Ale to neznamená že ti nemůžu trochu vylepšit tu co už máš, nebyl by jsi první komu jsem to dělal.
-	AI_Output(other, self, "Patch_AE_DIA_MORTIS_ARMORQUESTION_15_04"); //Co to bude stát?
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_ARMORQUESTION_13_05"); //Budeš si muset přinést materiál, já tu žádný na zbyt nemám.
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_ARMORQUESTION_13_06"); //A nějáké zlato za mojí práci.
+    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01"); //Nemáš pro mně nějakou lepší zbroj?
+    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02"); //Jedině Lord Andre ti může dát lepší zbroj.
+    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03"); //Ale to neznamená že ti nemůžu trochu vylepšit tu co už máš, nebyl by jsi první komu jsem to dělal.
+	AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04"); //Co to bude stát?
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05"); //Budeš si muset přinést materiál, já tu žádný na zbyt nemám.
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06"); //A nějáké zlato za mojí práci.
 	Log_CreateTopic (Patch_AE_TOPIC_MORTIS_ARMOR,LOG_NOTE);
 	B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Mortis mi může vylepšit zbroje domobrany když mu přinesu materiály a zlato.");
 };
-//-------------------------------------
-var int Patch_AE_MORTIS_MIL_LTHINGS;
-//-------------------------------------
+
 instance Patch_AE_DIA_MORTIS_MIL_LTHINGS (C_INFO)
 {
 	npc			 =  MIL_314_MORTIS;
@@ -147,17 +144,15 @@ func int Patch_AE_DIA_MORTIS_MIL_LTHINGS_Condition ()
 };
 func void Patch_AE_DIA_MORTIS_MIL_LTHINGS_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_MORTIS_MIL_LTHINGS_15_01"); //Chtěl bych vylepšit lehkou zbroj.
-	AI_Output(other, self, "Patch_AE_DIA_MORTIS_MIL_LTHINGS_15_04"); //Co na to budeš potřebovat?.
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_MIL_LTHINGS_13_06"); //Na lehkou zbroj bude stačit jeden ocelový prut a kančí kůže.
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_MIL_LTHINGS_13_07"); //A řekněme že 200 zlatých mi bude za tu práci stačit.
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_MIL_LTHINGS_13_08"); //A samozrejmě mi budeš muset taky přinést tu zbroj.
-	AI_Output(other, self, "Patch_AE_DIA_MORTIS_MIL_LTHINGS_15_09"); //Dobrá, pokusím se to sehnat.
+    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01"); //Chtěl bych vylepšit lehkou zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04"); //Co na to budeš potřebovat?.
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06"); //Na lehkou zbroj bude stačit jeden ocelový prut a kančí kůže.
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07"); //A řekněme že 200 zlatých mi bude za tu práci stačit.
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08"); //A samozrejmě mi budeš muset taky přinést tu zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09"); //Dobrá, pokusím se to sehnat.
 		B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Na vylepšení lehké zbroje bude Mortis potřebovat jeden ocelový prut, kančí kůži a 200 zlatých.");
 };
-//-------------------------------------
-var int Patch_AE_MORTIS_MIL_LReforgedArmor;
-//-------------------------------------
+
 instance Patch_AE_DIA_MORTIS_MIL_LReforgedArmor (C_INFO)
 {
 	npc			 =  MIL_314_MORTIS;
@@ -177,7 +172,7 @@ func int Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Condition ()
 };
 func void Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_MORTIS_LREFORGEDARMOR_15_01"); //Mám všechny potřebné materiály na vylepšení lehké zbroje.
+    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01"); //Mám všechny potřebné materiály na vylepšení lehké zbroje.
 
 	if (Npc_HasItems(other,ItAr_MIL_L) >= 0) && (Npc_HasItems(other,ItMiSwordraw) >= 1) && (Npc_HasItems(other,ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other,ItMi_Gold) >= 200)
 	{
@@ -186,7 +181,7 @@ func void Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info ()
         B_GiveInvItems(other, self, ItMiSwordraw, 1);
         B_GiveInvItems(other, self, ItAt_Addon_KeilerFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
-        AI_Output(self, other, "Patch_AE_DIA_MORTIS_LREFORGEDARMOR_13_12"); //Dobře, dám se tedy do práce.
+        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12"); //Dobře, dám se tedy do práce.
 
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
@@ -202,20 +197,18 @@ func void Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info ()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-        AI_Output(self, other, "Patch_AE_DIA_MORTIS_LREFORGEDARMOR_13_13"); //Hotovo.
-        B_GiveInvItems(self, other, Patch_AE_ITAR_MIL_R, 1);
-        AI_Output(self, other, "Patch_AE_DIA_MORTIS_LREFORGEDARMOR_13_14"); //Tady ji máš, docela se mi povedla řekl bych.
-        AI_Output(other, self, "Patch_AE_DIA_MORTIS_LREFORGEDARMOR_15_15"); //Díky.
+        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13"); //Hotovo.
+        B_GiveInvItems(self, other, ITAR_MIL_R_ArmorExpansion, 1);
+        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14"); //Tady ji máš, docela se mi povedla řekl bych.
+        AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15"); //Díky.
 		B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Mortis mi vylepšil lehkou zbroj.");
 	}
 	else
 	{
-	    AI_Output (self, other, "Patch_AE_DIA_MORTIS_LREFORGEDARMOR_13_16"); //Vrať se až to všechno budeš mít u sebe.
+	    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16"); //Vrať se až to všechno budeš mít u sebe.
 	};
 };
-//-------------------------------------
-var int Patch_AE_MORTIS_MILITIA_MediumHUH;
-//-------------------------------------
+
 instance Patch_AE_DIA_MORTIS_MILITIA_MediumHUH (C_INFO)
 {
 	npc			 =  MIL_314_MORTIS;
@@ -235,14 +228,15 @@ func int Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Condition ()
 };
 func void Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_15_01"); //Chtěl bych vylepšit střední zbroj.
-	AI_Output(other, self, "Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_15_03"); //Co na to budeš potřebovat?.
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_13_04"); //Na střední zbroj si budeš muset přinést o něco víc.
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_13_05"); //dva ocelové pruty a kůži z Warga.
-	AI_Output(self, other, "Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_13_06"); //Budu za tu práci chtít 600 zlatých.
-	AI_Output(other, self, "Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_15_08"); //Dobrá, pokusím se to sehnat.
+    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01"); //Chtěl bych vylepšit střední zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03"); //Co na to budeš potřebovat?.
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04"); //Na střední zbroj si budeš muset přinést o něco víc.
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05"); //dva ocelové pruty a kůži z Warga.
+	AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06"); //Budu za tu práci chtít 600 zlatých.
+	AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08"); //Dobrá, pokusím se to sehnat.
 		B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Na vylepšení střední zbroje bude Mortis potřebovat dva ocelové pruty, kůži z Warga a 600 zlatých.");
 };
+
 //-------------------------------------
 var int Patch_AE_MORTIS_MILITIA_MediumArmorBought;
 //-------------------------------------
@@ -269,7 +263,7 @@ func int Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Condition ()
 };
 func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_MORTIS_MediumArmor_15_01"); //Mám všechny potřebné materiály na vylepšení střední zbroje.
+    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01"); //Mám všechny potřebné materiály na vylepšení střední zbroje.
 
 	if (Npc_HasItems(other, ItAr_MIL_M) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
@@ -281,8 +275,8 @@ func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info ()
         B_GiveInvItems(other, self, ItMiSwordraw, 2);
 		B_GiveInvItems(other, self, ItAt_wargfur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 600);
-        AI_Output(other, self, "Patch_AE_DIA_MORTIS_MediumArmor_15_10"); //Tady to je.
-        AI_Output(self, other, "Patch_AE_DIA_MORTIS_MediumArmor_13_11"); //Dobře, dám se tedy do práce.
+        AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10"); //Tady to je.
+        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11"); //Dobře, dám se tedy do práce.
 
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
@@ -298,17 +292,18 @@ func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info ()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-        AI_Output(self, other, "Patch_AE_DIA_MORTIS_MediumArmor_13_12"); //Hotovo.
-        Patch_AE_MORTIS_MILITIA_MediumArmorBought = B_GiveInvItems(self, other, Patch_AE_ITAR_MIL_Med2, 1);
-        AI_Output(self, other, "Patch_AE_DIA_MORTIS_MediumArmor_13_13"); //Tady ji máš, docela se mi povedla řekl bych.
-        AI_Output(other, self, "Patch_AE_DIA_MORTIS_MediumArmor_15_14"); //Díky.
+        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12"); //Hotovo.
+        Patch_AE_MORTIS_MILITIA_MediumArmorBought = B_GiveInvItems(self, other, ITAR_MIL_Med2_ARMOREXPANSION, 1);
+        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13"); //Tady ji máš, docela se mi povedla řekl bych.
+        AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14"); //Díky.
 				B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Mortis mi vylepšil střední zbroj.");
 	}
 	else
 	{
-	    AI_Output (self, other, "Patch_AE_DIA_MORTIS_MediumArmor_13_16"); //Vrať se až to všechno budeš mít u sebe.
+	    AI_Output(self, other, "PATCH_AE_DIA_PATCH_ARMOREXPANSION_MORTIS_MEDIUMARMOR_13_16"); //Vrať se až to všechno budeš mít u sebe.
 	};
 };
+
 //-------------------------------------
 var int Patch_AE_ANDRE_MIL_SCOUTArmorBought;
 //-------------------------------------
@@ -331,17 +326,15 @@ func int Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Condition ()
 };
 func void Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01"); //Nenašla by se pro mně lehhčí zbroj?.
-	AI_Output(other, self, "Patch_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02"); //Radši používám zbraně na dálku.
-    AI_Output(self, other, "Patch_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03"); //Můžu ti vyměnit tvojí zbroj za zbroj zvěda. Je lehčí než standartní výbava takže budeš obratnější, ale i zranitelnější
-	AI_Output(other, self, "Patch_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04"); //Beru ji.
+    AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01"); //Nenašla by se pro mně lehhčí zbroj?.
+	AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02"); //Radši používám zbraně na dálku.
+    AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03"); //Můžu ti vyměnit tvojí zbroj za zbroj zvěda. Je lehčí než standartní výbava takže budeš obratnější, ale i zranitelnější
+	AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04"); //Beru ji.
     B_GiveInvItems(other, self, ItAr_MIL_L, 1);
-	Patch_AE_ANDRE_MIL_SCOUTArmorBought = B_GiveInvItems(self, other, Patch_AE_ITAR_MIL_SCOUT, 1);
-    AI_Output(other, self, "Patch_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9");//Tady máš, ať ti slouží dobře.
+	Patch_AE_ANDRE_MIL_SCOUTArmorBought = B_GiveInvItems(self, other, ITAR_MIL_SCOUT_ARMOREXPANSION, 1);
+    AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9");//Tady máš, ať ti slouží dobře.
 };
-//-------------------------------------
-var int Patch_AE_ANDRE_MILITIA_ARMORREWARDBought;
-//-------------------------------------
+
 instance Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD (C_INFO)
 {
 	npc			 =  MIL_311_ANDRE;
@@ -364,13 +357,14 @@ func int Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_Condition ()
 };
 func void Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_Info ()
 {
-		AI_Output (self,other,"Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03"); //Vykonal si všechny moje zadání.
-		AI_Output (self,other,"Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04"); //Tím si mi dokázal že si zasloužíš povýšení.
+		AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03"); //Vykonal si všechny moje zadání.
+		AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04"); //Tím si mi dokázal že si zasloužíš povýšení.
 		B_GiveInvItems(self, other, ITAR_MIL_M, 1);
-		AI_Output (self,other,"Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05"); //Tady máš, střední zbroj domobrany.
-		AI_Output (self,other,"Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06"); //Ať ti slouží vojáku.
-		AI_Output (other,self,"Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01"); //Díky.
+		AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05"); //Tady máš, střední zbroj domobrany.
+		AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06"); //Ať ti slouží vojáku.
+		AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01"); //Díky.
 };
+
 instance Patch_AE_DIA_LEE_SLD_SCOUTArmor (C_INFO)
 {
 	npc			 =  SLD_800_Lee;
@@ -389,11 +383,12 @@ func int Patch_AE_DIA_LEE_SLD_SCOUTArmor_Condition ()
 };
 func void Patch_AE_DIA_LEE_SLD_SCOUTArmor_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_LEE_SLD_SCOUTArmor_15_01"); //Nenašla by se pro mně lehhčí zbroj?.
-	AI_Output(other, self, "Patch_AE_DIA_LEE_SLD_SCOUTArmor_15_02"); //Radši používám zbraně na dálku.
-    AI_Output(self, other, "Patch_AE_DIA_LEE_SLD_SCOUTArmor_13_03"); //Já nic takového pro tebe nemám, ale nejsi první kdo něco takového chce
-	AI_Output(self, other, "Patch_AE_DIA_LEE_SLD_SCOUTArmor_13_04"); //Jdi za Wolfem, myslím si že on by měl pro tebe něco mít
+    AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01"); //Nenašla by se pro mně lehhčí zbroj?.
+	AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02"); //Radši používám zbraně na dálku.
+    AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03"); //Já nic takového pro tebe nemám, ale nejsi první kdo něco takového chce
+	AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04"); //Jdi za Wolfem, myslím si že on by měl pro tebe něco mít
 };
+
 instance Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought (C_INFO)
 {
 	npc			 =  SLD_811_Wolf;
@@ -413,13 +408,14 @@ func int Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_Condition ()
 };
 func void Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_15_01"); //Slyšel jsem že děláš zbroje pro zvědy.
-	AI_Output(other, self, "Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_15_02"); //chtěl bych si vyměnit tu co mám teď
-    AI_Output(self, other, "Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_13_03"); //Jistě, zrovna jsem jednu dokončil. Můžeš ji mít zadarmo, kvůli starým časům.
-	B_GiveInvItems(self, other, Patch_AE_ITAR_SLD_SCOUT, 1);
-	AI_Output(other, self, "Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_15_06"); //Díky.
-	AI_Output(self, other, "Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_13_07"); //Nemáš za co
+    AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01"); //Slyšel jsem že děláš zbroje pro zvědy.
+	AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02"); //chtěl bych si vyměnit tu co mám teď
+    AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03"); //Jistě, zrovna jsem jednu dokončil. Můžeš ji mít zadarmo, kvůli starým časům.
+	B_GiveInvItems(self, other, ItAr_SLD_SCOUT_ARMOREXPANSION, 1);
+	AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06"); //Díky.
+	AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07"); //Nemáš za co
 };
+
 //-------------------------------------
 const string	Patch_AE_TOPIC_BENNET_ARMOR				=   "Vylepšení zbroje žoldáka.";
 //-------------------------------------
@@ -441,15 +437,16 @@ func int Patch_AE_DIA_BENNET_SLDARMORASK_Condition ()
 };
 func void Patch_AE_DIA_BENNET_SLDARMORASK_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_BENNET_SLDARMORASK_15_01"); //Můžeš mi prodat nějakou lepší zbroj?.
-    AI_Output(self, other, "Patch_AE_DIA_BENNET_SLDARMORASK_13_02"); //Ne, zbroje může rozdávat jenom Lee.
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_SLDARMORASK_13_03"); //Můžu ti ale vylepšit tu co jsi už dostal, ale budu za to něco chtít.
-	AI_Output(other, self, "Patch_AE_DIA_BENNET_SLDARMORASK_15_04"); //A to?
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_SLDARMORASK_13_05"); //Material na výrobu, ten si přineseš sám, nebudu ti to dělat ze svých zásob.
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_SLDARMORASK_13_07"); //A nepracuju zadarmo, takže si taky připrav nějáké zlato.
+    AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLDARMORASK_15_01"); //Můžeš mi prodat nějakou lepší zbroj?.
+    AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_02"); //Ne, zbroje může rozdávat jenom Lee.
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_03"); //Můžu ti ale vylepšit tu co jsi už dostal, ale budu za to něco chtít.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLDARMORASK_15_04"); //A to?
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_05"); //Material na výrobu, ten si přineseš sám, nebudu ti to dělat ze svých zásob.
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_07"); //A nepracuju zadarmo, takže si taky připrav nějáké zlato.
 		Log_CreateTopic (Patch_AE_TOPIC_BENNET_ARMOR,LOG_NOTE);
 	B_LogEntry (Patch_AE_TOPIC_BENNET_ARMOR,"Bennet mi může vylepšit zbroje žoldáka když mu přinesu materiály a zlato.");
 };
+
 //-------------------------------------
 var int Patch_AE_BENNET_SLD_LReforgedArmorBought;
 //-------------------------------------
@@ -473,13 +470,14 @@ func int Patch_AE_DIA_BENNET_SLD_LReforgedHUH_Condition ()
 };
 func void Patch_AE_DIA_BENNET_SLD_LReforgedHUH_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_BENNET_SLD_LReforgedHUH_15_01"); //Chci si nechat vylepšit lehkou zbroj.
-	AI_Output(other, self, "Patch_AE_DIA_BENNET_SLD_LReforgedHUH_15_04"); //Co na to potřebuješ?
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_SLD_LReforgedHUH_13_06"); //Na lehkou zbroj ti postačí dva ocelové pruty a dvě vlčí kůže.
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_SLD_LReforgedHUH_13_07"); //Budu chtít 200 zlatých za výrobu.
-	AI_Output(other, self, "Patch_AE_DIA_BENNET_SLD_LReforgedHUH_15_09"); //Dobrá.
+    AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_01"); //Chci si nechat vylepšit lehkou zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_04"); //Co na to potřebuješ?
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_06"); //Na lehkou zbroj ti postačí dva ocelové pruty a dvě vlčí kůže.
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_07"); //Budu chtít 200 zlatých za výrobu.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_09"); //Dobrá.
 		B_LogEntry (Patch_AE_TOPIC_BENNET_ARMOR,"Na vylepšení lehké zbroje bude Bennet potřebovat dva ocelové pruty, dvě kůže z vlka a 200 zlatých.");
 };
+
 instance Patch_AE_DIA_BENNET_SLD_LReforgedArmor (C_INFO)
 {
 	npc			 =  SLD_809_Bennet;
@@ -503,7 +501,7 @@ func int Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Condition ()
 };
 func void Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_BENNET_SLD_LReforgedArmor_15_01"); //Mám všechny potřebné materiály na vylepšení lehké zbroje.
+    AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_01"); //Mám všechny potřebné materiály na vylepšení lehké zbroje.
 
 	if (Npc_HasItems(other, ItAr_SLD_L) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
@@ -515,8 +513,8 @@ func void Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Info ()
         B_GiveInvItems(other, self, ItMiSwordraw, 2);
         B_GiveInvItems(other, self, ItAt_WolfFur, 2);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
-        AI_Output(other, self, "Patch_AE_DIA_BENNET_SLD_LReforgedArmor_15_11"); //Tady to je.
-        AI_Output(self, other, "Patch_AE_DIA_BENNET_SLD_LReforgedArmor_13_12"); //Dobře, tak se na to podívejme.
+        AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_11"); //Tady to je.
+        AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_12"); //Dobře, tak se na to podívejme.
 
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
@@ -532,52 +530,55 @@ func void Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Info ()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-        AI_Output(self, other, "Patch_AE_DIA_BENNET_SLD_LReforgedArmor_13_13"); //Hotovo.
-        Patch_AE_BENNET_SLD_LReforgedArmorBought = B_GiveInvItems(self, other, Patch_AE_ITAR_SLD_LR, 1);
-        AI_Output(self, other, "Patch_AE_DIA_BENNET_SLD_LReforgedArmor_13_14"); //Tady je, docela se mi povedla.
-        AI_Output(other, self, "Patch_AE_DIA_BENNET_SLD_LReforgedArmor_15_15"); //Díky.
+        AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_13"); //Hotovo.
+        Patch_AE_BENNET_SLD_LReforgedArmorBought = B_GiveInvItems(self, other, ITAR_SLD_LR_ARMOREXPANSION, 1);
+        AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_14"); //Tady je, docela se mi povedla.
+        AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_15"); //Díky.
 				B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Bennet mi vylepšil lehkou zbroj.");
 	}
 	else
 	{
-	    AI_Output (self, other, "Patch_AE_DIA_BENNET_SLD_LReforgedArmor_13_16"); //Vrať se až to všechno budeš mít.
+	    AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_16"); //Vrať se až to všechno budeš mít.
 	};
 };
-instance Patch_AE_DIA_Engor_RSkaufen		(C_INFO)
+
+// Original dialog
+instance DIA_Engor_RSkaufen		(C_INFO)
 {
 	npc		 	 = 	VLK_4108_Engor;
 	nr		 	 = 	2;
-	condition	 = 	Patch_AE_DIA_Engor_RSkaufen_Condition;
-	information	 = 	Patch_AE_DIA_Engor_RSkaufen_Info;
+	condition	 = 	DIA_Engor_RSkaufen_Condition;
+	information	 = 	DIA_Engor_RSkaufen_Info;
 	permanent 	 =  TRUE;
 	description	 = 	"Koupit těžkou zbroj domobrany (Obrany: Sečné 70, Bodné 70. Cena: 2500 zlatých)";
 };
 //--------------------------------------
-var int Patch_AE_DIA_Engor_RSkaufen_perm;
+var int DIA_Engor_RSkaufen_perm;
 //--------------------------------------
-func int Patch_AE_DIA_Engor_RSkaufen_Condition ()
+func int DIA_Engor_RSkaufen_Condition ()
 {
 	if (other.guild == GIL_MIL)
 	&& Npc_KnowsInfo (other, DIA_Engor_Ruestung)
-	&& (Patch_AE_DIA_Engor_RSkaufen_perm == FALSE)
+	&& (DIA_Engor_RSkaufen_perm == FALSE)
 	{
 		return TRUE;
 	};
 };
-func void Patch_AE_DIA_Engor_RSkaufen_Info ()
+func void DIA_Engor_RSkaufen_Info ()
 {
 	if (B_GiveInvItems (other, self, Itmi_Gold,2500))
 	{
-		AI_Output (other, self, "Patch_AE_DIA_Engor_RSkaufen_15_00"); //Dej mi tu zbroj.
-		AI_Output (self, other, "Patch_AE_DIA_Engor_RSkaufen_13_01"); //Tady ji máš, dobře tě ochrání, je to zatraceně dobrý kousek.
-		B_GiveInvItems (self,other, Patch_AE_ITAR_MIL_H,1);
-		Patch_AE_DIA_Engor_RSkaufen_perm = TRUE;
+		AI_Output(other, self, "DIA_ENGOR_RSKAUFEN_15_00"); //Dej mi tu zbroj.
+		AI_Output(self, other, "DIA_ENGOR_RSKAUFEN_13_01"); //Tady ji máš, dobře tě ochrání, je to zatraceně dobrý kousek.
+		B_GiveInvItems (self,other, ITAR_MIL_H_ARMOREXPANSION,1);
+		DIA_Engor_RSkaufen_perm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "Patch_AE_DIA_Engor_RSkaufen_13_02"); //Nejdřív mi přines to zlato.
+		AI_Output(self, other, "DIA_ENGOR_RSKAUFEN_13_02"); //Nejdřív mi přines to zlato.
 	};
 };
+
 instance Patch_AE_DIA_Engor_ARCHER_KAUFEN		(C_INFO)
 {
 	npc		 	 = 	VLK_4108_Engor;
@@ -591,7 +592,7 @@ func int Patch_AE_DIA_Engor_ARCHER_KAUFEN_Condition ()
 {
 	if (other.guild == GIL_MIL)
 	&& Npc_KnowsInfo (other, DIA_Engor_Ruestung)
-	&& (Patch_AE_DIA_Engor_RSkaufen_perm == FALSE)
+	&& (DIA_Engor_RSkaufen_perm == FALSE)
 	{
 		return TRUE;
 	};
@@ -600,16 +601,17 @@ func void Patch_AE_DIA_Engor_ARCHER_KAUFEN_Info ()
 {
 	if (B_GiveInvItems (other, self, Itmi_Gold,2300))
 	{
-		AI_Output (other, self, "Patch_AE_DIA_Engor_RSkaufen_15_00"); //Dej mi tu zbroj.
-		AI_Output (self, other, "Patch_AE_DIA_Engor_RSkaufen_13_01"); //Tady ji máš, dobře tě ochrání, je to zatraceně dobrý kousek.
-		B_GiveInvItems (self,other, Patch_AE_ITAR_MIL_P,1);
-		Patch_AE_DIA_Engor_RSkaufen_perm = TRUE;
+		AI_Output(other, self, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00"); //Dej mi tu zbroj.
+		AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01"); //Tady ji máš, dobře tě ochrání, je to zatraceně dobrý kousek.
+		B_GiveInvItems (self,other, ITAR_MIL_P_ARMOREXPANSION,1);
+		DIA_Engor_RSkaufen_perm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "Patch_AE_DIA_Engor_RSkaufen_13_02"); //Nejdřív mi přines to zlato.
+		AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02"); //Nejdřív mi přines to zlato.
 	};
 };
+
 //-------------------------------------
 var int Patch_AE_BENNET_MERC_MReforgedArmorBought;
 //-------------------------------------
@@ -633,14 +635,15 @@ func int Patch_AE_DIA_BENNET_MERC_MReforgedHUH_Condition ()
 };
 func void Patch_AE_DIA_BENNET_MERC_MReforgedHUH_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_BENNET_MERC_MReforgedHUH_15_01"); //Chci si nechat vylepšit střední zbroj.
-	AI_Output(other, self, "Patch_AE_DIA_BENNET_MERC_MReforgedHUH_15_03"); //Co na to potřebuješ?
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_MERC_MReforgedHUH_13_04"); //Na střední zbroj toho bude potřeba víc.
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_MERC_MReforgedHUH_13_05"); //Tři ocelový pruty, a jednu kůži z Warga.
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_MERC_MReforgedHUH_13_06"); //Za výrobu budu chtít, řekněme 650 zlatých.
-	AI_Output(other, self, "Patch_AE_DIA_BENNET_MERC_MReforgedHUH_15_08"); //Dobrá.
+    AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_01"); //Chci si nechat vylepšit střední zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_03"); //Co na to potřebuješ?
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_04"); //Na střední zbroj toho bude potřeba víc.
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_05"); //Tři ocelový pruty, a jednu kůži z Warga.
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_06"); //Za výrobu budu chtít, řekněme 650 zlatých.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_08"); //Dobrá.
 			B_LogEntry (Patch_AE_TOPIC_BENNET_ARMOR,"Na vylepšení střední zbroje bude Bennet potřebovat tři ocelové pruty, jednu kůži ze skřetího psa, dvě kůže z trolla a 650 zlatých.");
 };
+
 instance Patch_AE_DIA_BENNET_MERC_MReforgedArmor (C_INFO)
 {
 	npc			 =  SLD_809_Bennet;
@@ -664,7 +667,7 @@ func int Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Condition ()
 };
 func void Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_BENNET_MERC_MReforgedArmor_15_01"); //Mám všechny potřebné materiály na vylepšení střední zbroje.
+    AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_01"); //Mám všechny potřebné materiály na vylepšení střední zbroje.
 
 	if (Npc_HasItems(other, ItAr_SLD_M) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
@@ -676,8 +679,8 @@ func void Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Info ()
         B_GiveInvItems(other, self, ItMiSwordraw, 2);
 		B_GiveInvItems(other, self, ItAt_WargFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 650);
-        AI_Output(other, self, "Patch_AE_DIA_BENNET_MERC_MReforgedArmor_15_10"); //Tady to je.
-        AI_Output(self, other, "Patch_AE_DIA_BENNET_MERC_MReforgedArmor_13_11"); //Dobře, tak se na to podívejme.
+        AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_10"); //Tady to je.
+        AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_11"); //Dobře, tak se na to podívejme.
 
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
@@ -693,29 +696,30 @@ func void Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Info ()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-        AI_Output(self, other, "Patch_AE_DIA_BENNET_MERC_MReforgedArmor_13_12"); //Hotovo.
-        Patch_AE_BENNET_MERC_MReforgedArmorBought = B_GiveInvItems(self, other, Patch_AE_ITAR_SLD_R, 1);
-        AI_Output(self, other, "Patch_AE_DIA_BENNET_MERC_MReforgedArmor_13_13"); //Tady je, docela se mi povedla.
-        AI_Output(other, self, "Patch_AE_DIA_BENNET_MERC_MReforgedArmor_15_14"); //Díky.
+        AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_12"); //Hotovo.
+        Patch_AE_BENNET_MERC_MReforgedArmorBought = B_GiveInvItems(self, other, ITAR_SLD_R_ARMOREXPANSION, 1);
+        AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_13"); //Tady je, docela se mi povedla.
+        AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_14"); //Díky.
 		B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Bennet mi vylepšil střední zbroj.");
 	}
 	else
 	{
-	    AI_Output (self, other, "Patch_AE_DIA_BENNET_MERC_MReforgedArmor_13_16"); //Vrať se až to všechno budeš mít u sebe.
+	    AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_16"); //Vrať se až to všechno budeš mít u sebe.
 	};
 };
-instance Patch_AE_DIA_Ulthar		(C_INFO)
+
+instance Patch_AE_DIA_ARMOREXPANSION_Ulthar		(C_INFO)
 {
 	npc		 = 	KDF_502_Ulthar;
 	nr		 = 	30;
-	condition	 = 	Patch_AE_DIA_Ulthar_Condition;
-	information	 = 	Patch_AE_DIA_Ulthar_Info;
+	condition	 = 	Patch_AE_DIA_ARMOREXPANSION_Ulthar_Condition;
+	information	 = 	Patch_AE_DIA_ARMOREXPANSION_Ulthar_Info;
 	important	 =	TRUE;
 
 	description  = 	"Vyčistil jsem všechny svatině.";
 };
 
-func int Patch_AE_DIA_Ulthar_Condition ()
+func int Patch_AE_DIA_ARMOREXPANSION_Ulthar_Condition ()
 {
 	if (MIS_Ulthar_HeileSchreine_PAL == LOG_SUCCESS)
 		{
@@ -723,13 +727,14 @@ func int Patch_AE_DIA_Ulthar_Condition ()
 		};
 };
 
-func void Patch_AE_DIA_Ulthar_Info ()
+func void Patch_AE_DIA_ARMOREXPANSION_Ulthar_Info ()
 {
-	AI_Output			(self, other, "Patch_AE_DIA_Ulthar_05_01"); //Počkej, chtěli jsme tě ještě podpořit v tvém boji proti zlu novou zbrojí.
-	AI_Output			(self, other, "Patch_AE_DIA_Ulthar_05_02"); //Vezmi si tuhle zbroj křižáka Innose, jsem si jistý že ji využiješ.
-	AI_Output			(other, self, "Patch_AE_DIA_Ulthar_05_03"); //Děkuji.
-	B_GiveInvItems (self, other, Patch_AE_ITAR_CRUSADER, 1);
+	AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01"); //Počkej, chtěli jsme tě ještě podpořit v tvém boji proti zlu novou zbrojí.
+	AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02"); //Vezmi si tuhle zbroj křižáka Innose, jsem si jistý že ji využiješ.
+	AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03"); //Děkuji.
+	B_GiveInvItems (self, other, ItAr_Crusader_ARMOREXPANSION, 1);
 };
+
 INSTANCE Patch_AE_DIA_Lord_Hagen_CROSSBOW		(C_INFO)
 {
 	npc			 = 	PAL_200_Hagen;
@@ -748,14 +753,15 @@ func int Patch_AE_DIA_Lord_Hagen_CROSSBOW_Condition ()
 };
 func void Patch_AE_DIA_Lord_Hagen_CROSSBOW_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_Lord_Hagen_CROSSBOW_15_01"); //Nenašla by se pro mně lehčí zbroj?.
-	AI_Output(other, self, "Patch_AE_DIA_Lord_Hagen_CROSSBOW_15_02"); //Radši používám zbraně na dálku.
-    AI_Output(self, other, "Patch_AE_DIA_Lord_Hagen_CROSSBOW_13_03"); //Můžu ti vyměnit tvojí rytířskou zbroj za odlehčenou variantu, určenou pro kušišníky.
-	AI_Output(other, self, "Patch_AE_DIA_Lord_Hagen_CROSSBOW15_04"); //Beru jí.
+    AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01"); //Nenašla by se pro mně lehčí zbroj?.
+	AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02"); //Radši používám zbraně na dálku.
+    AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03"); //Můžu ti vyměnit tvojí rytířskou zbroj za odlehčenou variantu, určenou pro kušišníky.
+	AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW15_04"); //Beru jí.
         B_GiveInvItems(other, self, ItAr_PAL_M, 1);
-		B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_C, 1);
-        AI_Output(self, other, "Patch_AE_DIA_Lord_Hagen_CROSSBOW_15_9");//Nos ji se ctí, rytíři.
+		B_GiveInvItems(self, other, ITAR_PAL_C_ARMOREXPANSION, 1);
+        AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9");//Nos ji se ctí, rytíři.
 };
+
 //-------------------------------------
 const string	Patch_AE_TOPIC_MARTIN_ARMOR				=   "Vyjímečná Paladinská zbroj";
 //-------------------------------------
@@ -777,18 +783,19 @@ func int Patch_AE_DIA_Martin_ARCPALA_NOTIF_Condition ()
 };
 func void Patch_AE_DIA_Martin_ARCPALA_NOTIF_Info ()
 {
-    AI_Output(self, other, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_01"); //Slyšel jsem že si se stal paladinem.
-    AI_Output(self, other, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_02"); //Možná bych to pro tebe měl něco zvláštního
-	AI_Output(other, self, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_03"); //O čem to mluvíš?
-    AI_Output(self, other, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_04"); //Mám tu na skladě výjimečnou paladinskou zbroj.
-	AI_Output(self, other, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_05"); //Slyšel jsem že tenhle typ zbroje má vysokou ochranu proti magickým útokům
-    AI_Output(self, other, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_06"); //Ale už tu nejáký čas leží, a pobřežní počasí jí neudělalo dobře
-	AI_Output(self, other, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_07"); //Není to ale nic co by se nedalo opravit, ty určitě na něco přijdeš.
-	AI_Output(self, other, "Patch_AE_DIA_Martin_ARCPALA_NOTIF_3_08"); //Za 2000 zlatých je tvoje.
+    AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01"); //Slyšel jsem že si se stal paladinem.
+    AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02"); //Možná bych to pro tebe měl něco zvláštního
+	AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03"); //O čem to mluvíš?
+    AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04"); //Mám tu na skladě výjimečnou paladinskou zbroj.
+	AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05"); //Slyšel jsem že tenhle typ zbroje má vysokou ochranu proti magickým útokům
+    AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06"); //Ale už tu nejáký čas leží, a pobřežní počasí jí neudělalo dobře
+	AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07"); //Není to ale nic co by se nedalo opravit, ty určitě na něco přijdeš.
+	AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08"); //Za 2000 zlatých je tvoje.
 	Log_CreateTopic (Patch_AE_TOPIC_MARTIN_ARMOR, LOG_MISSION);
 	Log_SetTopicStatus(Patch_AE_TOPIC_MARTIN_ARMOR, LOG_RUNNING);
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Martin mi nabídl vyjímečnou zbroj paladina. Zní to jako zajímavá nabídka.");
 };
+
 //-------------------------------------
 var int Patch_AE_Martin_ARKPALA_BOUGHT;
 //-------------------------------------
@@ -811,20 +818,21 @@ func int Patch_AE_DIA_Martin_ARKPALA_Condition ()
 };
 func void Patch_AE_DIA_Martin_ARKPALA_Info ()
 {
-	AI_Output(other, self, "Patch_AE_DIA_Martin_ARKPALA_BOUGHT_4_1"); //Dobře, beru tu zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARKPALA_BOUGHT_4_1"); //Dobře, beru tu zbroj.
 
 	if (B_GiveInvItems(other, self, ItMi_Gold, 2000))
 	{
-		AI_Output(self, other, "Patch_AE_DIA_Martin_ARKPALA_BOUGHT_4_2"); //Dobře, tady ji máš.
+		AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BOUGHT_4_2"); //Dobře, tady ji máš.
 			B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Koupil jsem si od Martina paladinskou zbroj. Je rezavá ale zkušený kovář by ji měl opravit, jenom najít nějakého kdo by byl ochotný to pro mně udělat.");
 
-		Patch_AE_Martin_ARKPALA_BOUGHT = B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_R, 1);
+		Patch_AE_Martin_ARKPALA_BOUGHT = B_GiveInvItems(self, other, ItAr_PAL_R_ARMOREXPANSION, 1);
 	}
 	else
 	{
-		AI_Output(self, other, "Patch_AE_DIA_Martin_ARKPALA_BOUGHT_4_3"); //Přijď až budeš mít u sebe dost zlata
+		AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BOUGHT_4_3"); //Přijď až budeš mít u sebe dost zlata
 	};
 };
+
 instance Patch_AE_DIA_MORTIS_PAL_REFORGE		(C_INFO)
 {
 	npc		 = 	MIL_314_MORTIS;
@@ -836,7 +844,7 @@ instance Patch_AE_DIA_MORTIS_PAL_REFORGE		(C_INFO)
 };
 func int Patch_AE_DIA_MORTIS_PAL_REFORGE_Condition ()
 {
-	if (Npc_Hasitems(other, Patch_AE_ITAR_PAL_R) > 0)
+	if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
 	{
 		return TRUE;
 	};
@@ -844,11 +852,12 @@ func int Patch_AE_DIA_MORTIS_PAL_REFORGE_Condition ()
 func void Patch_AE_DIA_MORTIS_PAL_REFORGE_Info ()
 {
 	B_GivePlayerXP(10);
-	AI_Output(other, self, "Patch_AE_DIA_MORTIS_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
-    AI_Output(self, other, "Patch_AE_DIA_MORTIS_PAL_REFORGE_3_01"); //Nemohl, nemám na to čas ani zkušenosti.
-    AI_Output(self, other, "Patch_AE_DIA_MORTIS_PAL_REFORGE_3_02"); //Budeš si muset najít jiného kováře.
+	AI_Output(other, self, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01"); //Nemohl, nemám na to čas ani zkušenosti.
+    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02"); //Budeš si muset najít jiného kováře.
 		B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Mortis mi zbroj neopraví.");
 };
+
 instance Patch_AE_DIA_BENNET_PAL_REFORGE		(C_INFO)
 {
 	npc		 = 	SLD_809_Bennet;
@@ -860,7 +869,7 @@ instance Patch_AE_DIA_BENNET_PAL_REFORGE		(C_INFO)
 };
 func int Patch_AE_DIA_BENNET_PAL_REFORGE_Condition ()
 {
-	if (Npc_Hasitems(other, Patch_AE_ITAR_PAL_R) > 0)
+	if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
 	{
 		return TRUE;
 	};
@@ -868,13 +877,14 @@ func int Patch_AE_DIA_BENNET_PAL_REFORGE_Condition ()
 func void Patch_AE_DIA_BENNET_PAL_REFORGE_Info ()
 {
 	B_GivePlayerXP(10);
-	AI_Output(other, self, "Patch_AE_DIA_BENNET_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
-    AI_Output(self, other, "Patch_AE_DIA_BENNET_PAL_REFORGE_3_01"); //Promiň, ale nemohl.
-    AI_Output(self, other, "Patch_AE_DIA_BENNET_PAL_REFORGE_3_03"); //Nic proti tobě nemám, vždyť si mně dostal z vězení.
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_PAL_REFORGE_3_04"); //Ale co by si pomyslely ostatní na farmě kdybych tu začal opravovat zbroje paladinů?
-	AI_Output(self, other, "Patch_AE_DIA_BENNET_PAL_REFORGE_3_05"); //Budeš si muset najít jiného kováře.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+    AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_01"); //Promiň, ale nemohl.
+    AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_03"); //Nic proti tobě nemám, vždyť si mně dostal z vězení.
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_04"); //Ale co by si pomyslely ostatní na farmě kdybych tu začal opravovat zbroje paladinů?
+	AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_05"); //Budeš si muset najít jiného kováře.
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Bennet mi zbroj neopraví.");
 };
+
 instance Patch_AE_DIA_CARL_PAL_REFORGE		(C_INFO)
 {
 	npc		 = 	VLK_461_Carl;
@@ -886,7 +896,7 @@ instance Patch_AE_DIA_CARL_PAL_REFORGE		(C_INFO)
 };
 func int Patch_AE_DIA_CARL_PAL_REFORGE_Condition ()
 {
-	if (Npc_Hasitems(other, Patch_AE_ITAR_PAL_R) > 0)
+	if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
 	{
 		return TRUE;
 	};
@@ -894,12 +904,13 @@ func int Patch_AE_DIA_CARL_PAL_REFORGE_Condition ()
 func void Patch_AE_DIA_CARL_PAL_REFORGE_Info ()
 {
 	B_GivePlayerXP(10);
-	AI_Output(other, self, "Patch_AE_DIA_CARL_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
-    AI_Output(self, other, "Patch_AE_DIA_CARL_PAL_REFORGE_3_01"); //Paladinskou zbroj?.
-    AI_Output(self, other, "Patch_AE_DIA_CARL_PAL_REFORGE_3_02"); //Promiň chlapče, ale to je nad moje síly.
-	AI_Output(self, other, "Patch_AE_DIA_CARL_PAL_REFORGE_3_03"); //Budeš si muset najít jiného kováře.
+	AI_Output(other, self, "PATCH_AE_DIA_CARL_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+    AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_01"); //Paladinskou zbroj?.
+    AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02"); //Promiň chlapče, ale to je nad moje síly.
+	AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03"); //Budeš si muset najít jiného kováře.
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Carl mi zbroj neopraví.");
 };
+
 instance Patch_AE_DIA_JAN_PAL_REFORGE		(C_INFO)
 {
 	npc		 = 	DJG_714_Jan;
@@ -911,7 +922,7 @@ instance Patch_AE_DIA_JAN_PAL_REFORGE		(C_INFO)
 };
 func int Patch_AE_DIA_JAN_PAL_REFORGE_Condition ()
 {
-	if (Npc_Hasitems(other, Patch_AE_ITAR_PAL_R) > 0)
+	if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
 	{
 		return TRUE;
 	};
@@ -919,12 +930,13 @@ func int Patch_AE_DIA_JAN_PAL_REFORGE_Condition ()
 func void Patch_AE_DIA_JAN_PAL_REFORGE_Info ()
 {
 	B_GivePlayerXP(50);
-	AI_Output(other, self, "Patch_AE_DIA_JAN_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
-    AI_Output(self, other, "Patch_AE_DIA_JAN_PAL_REFORGE_3_01"); //Jsem na tenkém ledě jenom abych tu mohl pracovat.
-    AI_Output(self, other, "Patch_AE_DIA_JAN_PAL_REFORGE_3_02"); //Nehodlám riskovat že mně nějáký z tvých kolegů udá za to že se hrabu v paladinských věcech.
-	AI_Output(self, other, "Patch_AE_DIA_JAN_PAL_REFORGE_3_03"); //Budeš si muset najít jiného kováře.
+	AI_Output(other, self, "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+    AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01"); //Jsem na tenkém ledě jenom abych tu mohl pracovat.
+    AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02"); //Nehodlám riskovat že mně nějáký z tvých kolegů udá za to že se hrabu v paladinských věcech.
+	AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03"); //Budeš si muset najít jiného kováře.
 		B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Drakobijec Jan mi zbroj neopraví.");
 };
+
 instance Patch_AE_DIA_HUNO_PAL_REFORGE		(C_INFO)
 {
 	npc		 = 	BDT_1099_Addon_Huno;
@@ -936,7 +948,7 @@ instance Patch_AE_DIA_HUNO_PAL_REFORGE		(C_INFO)
 };
 func int Patch_AE_DIA_HUNO_PAL_REFORGE_Condition ()
 {
-	if (Npc_Hasitems(other, Patch_AE_ITAR_PAL_R) > 0)
+	if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
 	{
 		return TRUE;
 	};
@@ -944,12 +956,13 @@ func int Patch_AE_DIA_HUNO_PAL_REFORGE_Condition ()
 func void Patch_AE_DIA_HUNO_PAL_REFORGE_Info ()
 {
 	B_GivePlayerXP(25);
-	AI_Output(other, self, "Patch_AE_DIA_HUNO_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
-    AI_Output(self, other, "Patch_AE_DIA_HUNO_PAL_REFORGE_3_01"); //S paladinskými zbrojemi nemám vůbec žádné zkušenosti, nic takového v kolonii nebylo.
-    AI_Output(self, other, "Patch_AE_DIA_HUNO_PAL_REFORGE_3_02"); //Promiň, ale s tímhle ti nepomůžu.
-	AI_Output(self, other, "Patch_AE_DIA_HUNO_PAL_REFORGE_3_03"); //Budeš si muset najít jiného kováře.
+	AI_Output(other, self, "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+    AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01"); //S paladinskými zbrojemi nemám vůbec žádné zkušenosti, nic takového v kolonii nebylo.
+    AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02"); //Promiň, ale s tímhle ti nepomůžu.
+	AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03"); //Budeš si muset najít jiného kováře.
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Huno mi zbroj neopraví.");
 };
+
 instance Patch_AE_DIA_HARAD_PAL_SHOW		(C_INFO)
 {
 	npc		 = 	VLK_412_Harad;
@@ -961,7 +974,7 @@ instance Patch_AE_DIA_HARAD_PAL_SHOW		(C_INFO)
 };
 func int Patch_AE_DIA_HARAD_PAL_SHOW_Condition ()
 {
-	if (Npc_Hasitems(other, Patch_AE_ITAR_PAL_R) > 0)
+	if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
 	{
 		return TRUE;
 	};
@@ -969,18 +982,19 @@ func int Patch_AE_DIA_HARAD_PAL_SHOW_Condition ()
 func void Patch_AE_DIA_HARAD_PAL_SHOW_Info ()
 {
 	B_GivePlayerXP(10);
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_PAL_SHOW_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
-    AI_Output(self, other, "Patch_AE_DIA_HARAD_PAL_SHOW_3_01"); //Ukaž mi ji.
-        B_GiveInvItems(other, self, Patch_AE_ITAR_PAL_R, 1);
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PAL_SHOW_3_02"); //Už je to dlouho co jsem takovou zbroj viděl.
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PAL_SHOW_3_03"); //Jsou kované z jiné slitiny kovu a magické rudy než ostatní a pak jsou požehnány mágy z kláštera v Nordmaru
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PAL_SHOW_3_04"); //Rez nepronikla moc hluboko, nebude moc těžké ji opravit.
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PAL_SHOW_3_05"); //Samozřejmě pokud budu mít potřebné materiály.
-		B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_R, 1);
-    AI_Output(self, other, "Patch_AE_DIA_HARAD_PAL_SHOW_3_06"); //Kde si ji sehnal?
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_PAL_SHOW_3_07"); //Prodal mi ji Martin, válela se mezi paladinským vybavením tak jsem ji chtěl použít.
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+    AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01"); //Ukaž mi ji.
+        B_GiveInvItems(other, self, ItAr_PAL_R_ARMOREXPANSION, 1);
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02"); //Už je to dlouho co jsem takovou zbroj viděl.
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03"); //Jsou kované z jiné slitiny kovu a magické rudy než ostatní a pak jsou požehnány mágy z kláštera v Nordmaru
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04"); //Rez nepronikla moc hluboko, nebude moc těžké ji opravit.
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05"); //Samozřejmě pokud budu mít potřebné materiály.
+		B_GiveInvItems(self, other, ITAR_PAL_R_ARMOREXPANSION, 1);
+    AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06"); //Kde si ji sehnal?
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07"); //Prodal mi ji Martin, válela se mezi paladinským vybavením tak jsem ji chtěl použít.
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Harad souhlasil že mi zbroj opraví.");
 };
+
 //-------------------------------------
 var int Patch_AE_HARAD_PALADIN_REFORGEBought;
 //-------------------------------------
@@ -1003,26 +1017,26 @@ func int Patch_AE_DIA_HARAD_PALADIN_REFORGE_Condition ()
 };
 func void Patch_AE_DIA_HARAD_PALADIN_REFORGE_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_15_01"); //Takže, co budeš na opravu zbroje potřebovat?
-    AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_02"); //Hmm, nech mně se zamyslet
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_04"); //Několik ocelových prutů, 6 by mělo stačit.
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_05"); //3 Hrudky magické oceli.
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_06"); //Co budeš za svou práci chtít?
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_07"); //Nic. Bude mi potěšením pracovat na takovém kousku.
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_15_08"); //Dobrá, pokusím se to všechno sehnat.
+    AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01"); //Takže, co budeš na opravu zbroje potřebovat?
+    AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02"); //Hmm, nech mně se zamyslet
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04"); //Několik ocelových prutů, 6 by mělo stačit.
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05"); //3 Hrudky magické oceli.
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06"); //Co budeš za svou práci chtít?
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07"); //Nic. Bude mi potěšením pracovat na takovém kousku.
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08"); //Dobrá, pokusím se to všechno sehnat.
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Na opravu zbroje bude Harad potřebovat 6 ocelových prutů a tři hrudky rudy.");
 
-	if (Npc_HasItems(other, Patch_AE_ITAR_PAL_R) > 0)
+	if (Npc_HasItems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 6)
     && (Npc_HasItems(other, ItMi_Nugget) >= 3)
 	{
         B_GivePlayerXP(100);
-        B_GiveInvItems(other, self, Patch_AE_ITAR_PAL_R, 1);
-        AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_15_9");//Tady je ta zbroj.
+        B_GiveInvItems(other, self, ItAr_PAL_R_ARMOREXPANSION, 1);
+        AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9");//Tady je ta zbroj.
         B_GiveInvItems(other, self, ItMiSwordraw, 6);
         B_GiveInvItems(other, self, ItMi_Nugget, 2);
-        AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_15_10"); //A tady potřebné materiály.
-        AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_11"); //Dobrá, dám se do práce.
+        AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10"); //A tady potřebné materiály.
+        AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11"); //Dobrá, dám se do práce.
 
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
@@ -1051,19 +1065,20 @@ func void Patch_AE_DIA_HARAD_PALADIN_REFORGE_Info ()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-        AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_12"); //Hotovo.
-        Patch_AE_HARAD_PALADIN_REFORGEBought = B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_F, 1);
-        AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_13"); //Tady je, Povedlo se mi ji opravit.
-		AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_14"); //Ale nedokázal jsem ji navrátit její magickou moc.
-		AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_15"); //Na to budeš potřebovat zkušeného mága ohně, který je ochotný pro tebe zbroj posvětit.
-        AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_15_14"); //Díky.
+        AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12"); //Hotovo.
+        Patch_AE_HARAD_PALADIN_REFORGEBought = B_GiveInvItems(self, other, ITAR_PAL_F_ARMOREXPANSION, 1);
+        AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13"); //Tady je, Povedlo se mi ji opravit.
+		AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14"); //Ale nedokázal jsem ji navrátit její magickou moc.
+		AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15"); //Na to budeš potřebovat zkušeného mága ohně, který je ochotný pro tebe zbroj posvětit.
+        AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14"); //Díky.
 		B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Harad mi opravil paladinskou zbroj, ale nepodařilo se mu navrátit její magickou moc. Budu pro to muset najít ochotného mága ohně, jeden takový mně napadá.");
 	}
 	else
 	{
-	    AI_Output (self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_16"); //Přijď až to všechno seženeš.
+	    AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16"); //Přijď až to všechno seženeš.
 	};
 };
+
 instance Patch_AE_DIA_MILTEN_PALADINARMOR (C_INFO)
 {
 	npc			 =  PC_Mage_NW;
@@ -1075,61 +1090,29 @@ instance Patch_AE_DIA_MILTEN_PALADINARMOR (C_INFO)
 };
 func int Patch_AE_DIA_MILTEN_PALADINARMOR_Condition ()
 {
-	if (Npc_HasItems(other, Patch_AE_ITAR_PAL_F) > 0)
+	if (Npc_HasItems(other, ItAr_PAL_F_ARMOREXPANSION) > 0)
 	{
 		return TRUE;
 	};
 };
 func void Patch_AE_DIA_MILTEN_PALADINARMOR_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_15_01"); //Potřebuji tvojí pomoc.
-    AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_02"); //O co jde?
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_04"); //Potřeboval bych navrátit magickou moc této zbroji, nedokázal by si to pro mně udělat?
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_05"); //Ukaž mi ji
-	B_GiveInvItems(other, self, Patch_AE_ITAR_PAL_F, 1);
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_06"); //Páni, tohle jsem nečekal.
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_07"); //Takové zbroje nosí paladiny z Myrtany požehnat do klášteru v Nordmaru.
-		B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_F, 1);
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_07"); //O rituálu požehnání jsem něco málo už slyšel, ale nemám ještě dostatek znalostí abych ho provedl.
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_07"); //Jestli se ale nepletu tak je zde v knihovně klášteru kniha která popisuje tento postup.
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_07"); //Budu potřebovat nějáký čas si tu knihu nastudovat. Mezitím by si se ale měl postarat o draky v hornickém údolí, víš jak na tom je Garondova jednotka.
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_15_08"); //Jasně, uvidíme se později Miltene.
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_PALADIN_REFORGE_13_07"); //Hodně štěstí!
+    AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01"); //Potřebuji tvojí pomoc.
+    AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02"); //O co jde?
+	AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_04"); //Potřeboval bych navrátit magickou moc této zbroji, nedokázal by si to pro mně udělat?
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05"); //Ukaž mi ji
+	B_GiveInvItems(other, self, ITAR_PAL_F_ARMOREXPANSION, 1);
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06"); //Páni, tohle jsem nečekal.
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07"); //Takové zbroje nosí paladiny z Myrtany požehnat do klášteru v Nordmaru.
+		B_GiveInvItems(self, other, ITAR_PAL_F_ARMOREXPANSION, 1);
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08"); //O rituálu požehnání jsem něco málo už slyšel, ale nemám ještě dostatek znalostí abych ho provedl.
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09"); //Jestli se ale nepletu tak je zde v knihovně klášteru kniha která popisuje tento postup.
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10"); //Budu potřebovat nějáký čas si tu knihu nastudovat. Mezitím by si se ale měl postarat o draky v hornickém údolí, víš jak na tom je Garondova jednotka.
+	AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11"); //Jasně, uvidíme se později Miltene.
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12"); //Hodně štěstí!
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Milten souhlasil že mi pomůže navrátit zbroji její magickou sílu, ale nejdříve si bude muset nastudovat postup rituálu. Nějáký čas mu to zabere takže mi řekl že se mám mezitím postarat o draky v hornickém údolí.");
 };
-instance Patch_AE_DIA_MILTEN_PALADINARMOR (C_INFO)
-{
-	npc			 =  PC_Mage_NW;
-	nr			 =  8;
-	condition	 = 	Patch_AE_DIA_MILTEN_PALADINARMOR_Condition;
-	information	 = 	Patch_AE_DIA_MILTEN_PALADINARMOR_Info;
-	permanent	 = 	FALSE;
-	description	 = 	"Potřebuji tvojí pomoc.";
-};
-func int Patch_AE_DIA_MILTEN_PALADINARMOR_Condition ()
-{
-	if (Npc_HasItems(other, Patch_AE_ITAR_PAL_F) > 0)
-	{
-		return TRUE;
-	};
-};
-func void Patch_AE_DIA_MILTEN_PALADINARMOR_Info ()
-{
-    AI_Output(other, self, "Patch_AE_DIA_MILTEN_PALADINARMOR_15_01"); //Potřebuji tvojí pomoc.
-    AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_02"); //O co jde?
-	AI_Output(other, self, "Patch_AE_DIA_MILTEN_PALADINARMOR_04"); //Potřeboval bych navrátit magickou moc této zbroji, nedokázal by si to pro mně udělat?
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_05"); //Ukaž mi ji
-	B_GiveInvItems(other, self, Patch_AE_ITAR_PAL_F, 1);
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_06"); //Páni, tohle jsem nečekal.
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_07"); //Takové zbroje nosí paladiny z Myrtany požehnat do klášteru v Nordmaru.
-		B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_F, 1);
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_08"); //O rituálu požehnání jsem něco málo už slyšel, ale nemám ještě dostatek znalostí abych ho provedl.
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_09"); //Jestli se ale nepletu tak je zde v knihovně klášteru kniha která popisuje tento postup.
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_10"); //Budu potřebovat nějáký čas si tu knihu nastudovat. Mezitím by si se ale měl postarat o draky v hornickém údolí, víš jak na tom je Garondova jednotka.
-	AI_Output(other, self, "Patch_AE_DIA_MILTEN_PALADINARMOR_15_11"); //Jasně, uvidíme se později Miltene.
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PALADINARMOR_13_12"); //Hodně štěstí!
-	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Milten souhlasil že mi pomůže navrátit zbroji její magickou sílu, ale nejdříve si bude muset nastudovat postup rituálu. Nějáký čas mu to zabere takže mi řekl že se mám mezitím postarat o draky v hornickém údolí.");
-};
+
 instance Patch_AE_DIA_MILTEN_PLATEARMOR (C_INFO)
 {
 	npc			 =  PC_Mage_NW;
@@ -1141,7 +1124,7 @@ instance Patch_AE_DIA_MILTEN_PLATEARMOR (C_INFO)
 };
 func int Patch_AE_DIA_MILTEN_PLATEARMOR_Condition ()
 {
-	if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_PALADINARMOR))
+	if (Npc_KnowsInfo (other, Patch_AE_DIA_MILTEN_PALADINARMOR))
 	&& (Npc_KnowsInfo (other, DIA_MiltenNW_AllDragonsDead))
 	{
 		return TRUE;
@@ -1149,16 +1132,17 @@ func int Patch_AE_DIA_MILTEN_PLATEARMOR_Condition ()
 };
 func void Patch_AE_DIA_MILTEN_PLATEARMOR_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_MILTEN_PLATEARMOR_15_01"); //Udělal si pokrok ve svých studiích?
-    AI_Output(self, other, "Patch_AE_DIA_MILTEN_PLATEARMOR_13_02"); //Ano, dokážu říct že postupu rituálu rozumím.
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PLATEARMOR_13_03"); //Ale budu potřebovat pár věcí
-	AI_Output(other, self, "Patch_AE_DIA_MILTEN_PLATEARMOR_15_04"); //Jaké?
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PLATEARMOR_13_05"); //Svitek zničení zla, ohnivé koule a 2 kamenné krystaly.
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PLATEARMOR_13_06"); //Jedině tak dokážu dosáhnout podobných výsledků jako při provedení rituálu v klášteru v Nordmaru
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PLATEARMOR_13_07"); //Dobrá, jdu sehnat ti věci.
-	AI_Output(self, other, "Patch_AE_DIA_MILTEN_PLATEARMOR_13_08"); //Hodně štěstí, doufám že se ti to povede.
+    AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01"); //Udělal si pokrok ve svých studiích?
+    AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02"); //Ano, dokážu říct že postupu rituálu rozumím.
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03"); //Ale budu potřebovat pár věcí
+	AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04"); //Jaké?
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05"); //Svitek zničení zla, ohnivé koule a 2 kamenné krystaly.
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06"); //Jedině tak dokážu dosáhnout podobných výsledků jako při provedení rituálu v klášteru v Nordmaru
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07"); //Dobrá, jdu sehnat ti věci.
+	AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08"); //Hodně štěstí, doufám že se ti to povede.
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Milten Bude na rituál potřebovat svitek zničení zla, svitek ohnivé koule a 2 kamenné krystaly.");
 };
+
 instance Patch_AE_DIA_MILTEN_RITUALARMOR (C_INFO)
 {
 	npc			 =  PC_Mage_NW;
@@ -1174,19 +1158,19 @@ func int Patch_AE_DIA_MILTEN_RITUALARMOR_Condition ()
     && (Npc_HasItems(other, ItSc_InstantFireball) >= 1)
     && (Npc_HasItems(other, ItSc_PalDestroyEvil) >= 1)
     && (Npc_HasItems(other, ItMi_Rockcrystal) >= 2)
-	&& (Npc_HasItems(other, Patch_AE_ITAR_PAL_F) >= 1)
+	&& (Npc_HasItems(other, ITAR_PAL_F_ARMOREXPANSION) >= 1)
 	{
 		return TRUE;
 	};
 };
 func void Patch_AE_DIA_MILTEN_RITUALARMOR_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_MILTEN_RITUALARMOR_15_01"); //Mám vše co budeš potřebovat.
-		B_GiveInvItems(other, self, Patch_AE_ITAR_PAL_F, 1);
+    AI_Output(other, self, "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01"); //Mám vše co budeš potřebovat.
+		B_GiveInvItems(other, self, ITAR_PAL_F_ARMOREXPANSION, 1);
 		B_GiveInvItems(other, self, ItSc_InstantFireball, 1);
 		B_GiveInvItems(other, self, ItSc_PalDestroyEvil, 1);
 		B_GiveInvItems(other, self, ItMi_Rockcrystal, 2);
-    AI_Output(self, other, "Patch_AE_DIA_MILTEN_RITUALARMOR_13_02"); //Skvěle. Můžu začít s rituálem.
+    AI_Output(self, other, "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02"); //Skvěle. Můžu začít s rituálem.
 	B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Donesl jsem Miltenovi všechno potřebné pro rituál.");
 };
 //-------------------------------------
@@ -1213,12 +1197,12 @@ func int Patch_AE_DIA_MILTEN_LORDRMOR_Condition ()
 };
 func void Patch_AE_DIA_MILTEN_LORDRMOR_Info()
 {
-	AI_Output (other, self, "Patch_AE_DIA_MILTEN_LORDRMOR_15_00"); //Super, a kdy bude rituál hotový?
+	AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00"); //Super, a kdy bude rituál hotový?
 
 	if (Npc_HasItems(self, ItSc_InstantFireball) >= 1)
     && (Npc_HasItems(self, ItSc_PalDestroyEvil) >= 1)
     && (Npc_HasItems(self, ItMi_Rockcrystal) >= 2)
-	&& (Npc_HasItems(self, Patch_AE_ITAR_PAL_F) >= 1)
+	&& (Npc_HasItems(self, ITAR_PAL_F_ARMOREXPANSION) >= 1)
 	{
 		if (Patch_AE_MILTEN_LORDRMOR_MakeArmor == FALSE)
 		{
@@ -1229,17 +1213,17 @@ func void Patch_AE_DIA_MILTEN_LORDRMOR_Info()
 		if (Patch_AE_MILTEN_LORDRMOR_MakeArmor == TRUE)
 		&& (Patch_AE_MILTEN_BIGMAGIC_DAY > Wld_GetDay())
 		{
-			AI_Output (self, other, "Patch_AE_DIA_MILTEN_LORDRMOR_08_01"); //Chvilku to potrvá, vrať se zítra.
+			AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01"); //Chvilku to potrvá, vrať se zítra.
 		}
 		else
 		{
-			CreateInvItems (self, Patch_AE_ITAR_PAL_A, 1);
+			CreateInvItems (self, ItAr_PAL_A_ARMOREXPANSION, 1);
 
-			AI_Output (self, other, "Patch_AE_DIA_MILTEN_LORDRMOR_08_02"); //Už jsem ho provedl, povedlo se.
-			B_GiveInvItems (self, other, Patch_AE_ITAR_PAL_A, 1);
-			AI_Output (self, other, "Patch_AE_DIA_MILTEN_LORDRMOR_08_03"); //Vše proběhlo překvapivě hladce.
-			AI_Output (other, self, "Patch_AE_DIA_MILTEN_LORDRMOR_15_04"); //To jsem rád, díky.
-			AI_Output (self, other, "Patch_AE_DIA_MILTEN_LORDRMOR_08_05"); //Nemáš za co, ať ti slouží.
+			AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_02"); //Už jsem ho provedl, povedlo se.
+			B_GiveInvItems (self, other, ItAr_PAL_A_ARMOREXPANSION, 1);
+			AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_03"); //Vše proběhlo překvapivě hladce.
+			AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04"); //To jsem rád, díky.
+			AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05"); //Nemáš za co, ať ti slouží.
 			Patch_AE_Player_GotARCArmor = TRUE;
 			Log_SetTopicStatus(Patch_AE_TOPIC_MARTIN_ARMOR, LOG_SUCCESS);
 			B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR,"Miltenovi se povedlo navrátit zbroji její magickou moc.");
@@ -1247,9 +1231,10 @@ func void Patch_AE_DIA_MILTEN_LORDRMOR_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "Patch_AE_DIA_Wolfee_ArmorReady_08_06"); //NN
+		AI_Output(self, other, "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06"); //NN
 	};
 };
+
 INSTANCE Patch_AE_DIA_Bennet_CROSSBOW		(C_INFO)
 {
 	npc			 = 	SLD_809_Bennet;
@@ -1268,14 +1253,15 @@ func int Patch_AE_DIA_Bennet_CROSSBOW_Condition ()
 };
 func void Patch_AE_DIA_Bennet_CROSSBOW_Info ()
 {
-    AI_Output(other, self, "Patch_AE_DIA_Bennet_CROSSBOW_15_01"); //Neměl by se pro mně lehčí zbroj?.
-	AI_Output(other, self, "Patch_AE_DIA_Bennet_CROSSBOW_15_02"); //Neber si to špatně, jsem za ní vděčný ale preferuji lehčí.
-    AI_Output(self, other, "Patch_AE_DIA_Bennet_CROSSBOW_13_03"); //Vlastně ano, jednu takovou jsem taky vytvořil, jestli chceš tak ti je můžu vyměnit.
-	AI_Output(other, self, "Patch_AE_DIA_Bennet_CROSSBOW_15_04"); //Díky, Beru jí.
+    AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_01"); //Neměl by se pro mně lehčí zbroj?.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_02"); //Neber si to špatně, jsem za ní vděčný ale preferuji lehčí.
+    AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_13_03"); //Vlastně ano, jednu takovou jsem taky vytvořil, jestli chceš tak ti je můžu vyměnit.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_04"); //Díky, Beru jí.
         B_GiveInvItems(other, self, ItAr_DJG_L, 1);
-		B_GiveInvItems(self, other, Patch_AE_ITAR_DJG_CL, 1);
-        AI_Output(self, other, "Patch_AE_DIA_Bennet_CROSSBOW_15_9");//Tady je, ať ti slouží.
+		B_GiveInvItems(self, other, ITAR_DJG_CL_ARMOREXPANSION, 1);
+        AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_15_9");//Tady je, ať ti slouží.
 };
+
 instance Patch_AE_DIA_HARAD_END_MAKE	(C_INFO)
 {
 	npc		 = 	VLK_412_Harad;
@@ -1294,13 +1280,13 @@ func int Patch_AE_DIA_HARAD_END_MAKE_Condition ()
 };
 func void Patch_AE_DIA_HARAD_END_MAKE_Info ()
 {
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_END_MAKE_1"); //Nemohl by si mi překovat moji zbroj paladina?
-    AI_Output(self, other, "Patch_AE_DIA_HARAD_END_MAKE_2"); //Určitě, ale nevím co by se ti na ní nelíbilo.
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_END_MAKE_3"); //Používám zbraně na dálku, tak bych ji chtěl odlehčit.
-    AI_Output(self, other, "Patch_AE_DIA_HARAD_END_MAKE_4"); //To by nemělo být těžké, určitě bych to zvládl.
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_END_MAKE_5"); //Co za to budeš chtít?
-    AI_Output(self, other, "Patch_AE_DIA_HARAD_END_MAKE_6"); //Nic, službu pro paladina vykonám zadarmo.
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_END_MAKE_7"); //Tady ji máš v tom případě.
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_1"); //Nemohl by si mi překovat moji zbroj paladina?
+    AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_2"); //Určitě, ale nevím co by se ti na ní nelíbilo.
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_3"); //Používám zbraně na dálku, tak bych ji chtěl odlehčit.
+    AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_4"); //To by nemělo být těžké, určitě bych to zvládl.
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_5"); //Co za to budeš chtít?
+    AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_6"); //Nic, službu pro paladina vykonám zadarmo.
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_7"); //Tady ji máš v tom případě.
         B_GiveInvItems(other, self, ItAr_PAL_H, 1);
 
         B_LookAtNpc(other, self);
@@ -1317,14 +1303,14 @@ func void Patch_AE_DIA_HARAD_END_MAKE_Info ()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-	AI_Output(self, other, "Patch_AE_DIA_HARAD_END_MAKE_8"); //Hotovo, nebylo to nic těžkého. Tady je.
-		B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_CH, 1);
-	AI_Output(other, self, "Patch_AE_DIA_HARAD_END_MAKE_9"); //Díky!
+	AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_8"); //Hotovo, nebylo to nic těžkého. Tady je.
+		B_GiveInvItems(self, other, ITAR_PAL_CH_ARMOREXPANSION, 1);
+	AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_9"); //Díky!
 };
+
 //-----------------------------
 var int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_permanent;
 //-----------------------------
-
 instance Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM		(C_INFO)
 {
 	npc		 	 = 	SLD_809_Bennet;
@@ -1347,71 +1333,73 @@ func int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_Condition ()
 
 func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_Info ()
 {
-	AI_Output	(other,self ,"Patch_AE_DIA_Bennet_DJG_ARMOR_M_15_00"); //Koupím tu zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_00"); //Koupím tu zbroj.
 
 	if (Npc_HasItems (other,itmi_Gold) >= 12000)
 	{
-		AI_Output 	(self ,other,"Patch_AE_DIA_Bennet_DJG_ARMOR_M_06_01"); //Skvěle. Bude se ti líbit.
-		AI_Output	(other,self ,"Patch_AE_DIA_Bennet_DJG_ARMOR_M_15_02"); //Za takovou cenu v to doufám.
-		AI_Output 	(self ,other,"Patch_AE_DIA_Bennet_DJG_ARMOR_M_06_03"); //Přesvedčíš se, že to za tu cenu stálo.
+		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_01"); //Skvěle. Bude se ti líbit.
+		AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_02"); //Za takovou cenu v to doufám.
+		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_03"); //Přesvedčíš se, že to za tu cenu stálo.
 
 		B_GiveInvItems (other,self,ItMi_Gold,12000);
-		CreateInvItems (self,Patch_AE_ITAR_DJG_CM,1);
-		B_GiveInvItems (self,other,Patch_AE_ITAR_DJG_CM,1);
+		CreateInvItems (self,ITAR_DJG_CM_ARMOREXPANSION,1);
+		B_GiveInvItems (self,other,ITAR_DJG_CM_ARMOREXPANSION,1);
 
 		Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_permanent = TRUE;
 	}
 	else
 	{
-		AI_Output 	(self ,other,"Patch_AE_DIA_Bennet_DJG_ARMOR_M_06_04"); //Nemáš dost zlatých.
+		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_04"); //Nemáš dost zlatých.
 	};
 
 };
+
 //---------------------------------------------------
-var int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent;
+var int Bennet_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent;
 //---------------------------------------------------
 
-instance Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH		(C_INFO)
+instance DIA_Bennet_PATCH_DJG_ARMOR_CH		(C_INFO)
 {
 	npc		 	 = 	SLD_809_Bennet;
 	nr           = 	8;
-	condition	 = 	Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition;
-	information	 = 	Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Info;
+	condition	 = 	DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition;
+	information	 = 	DIA_Bennet_PATCH_DJG_ARMOR_CH_Info;
 	permanent	 = 	TRUE;
 	description	 =	"Těžká zbroj lovce draků: Obrana: Sečné 140, Bodné 140. (20000 zlatých)"; //Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
 };
 
-func int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition ()
+func int DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition ()
 {
-	IF (Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent == FALSE)
+	IF (Bennet_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent == FALSE)
 	&& (hero.guild == GIL_DJG)
-	&& (Npc_KnowsInfo (other, DIA_Bennet_BetterArmor))
+	&& (Npc_KnowsInfo (other,DIA_Bennet_BetterArmor))
 	{
 		return TRUE;
 	};
 };
 
-func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Info ()
+func void DIA_Bennet_PATCH_DJG_ARMOR_CH_Info ()
 {
-	AI_Output	(other,self ,"Patch_AE_DIA_Bennet_DJG_ARMOR_H_15_00"); //Dej mi tu zbroj
+	AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_15_00"); //Dej mi tu zbroj
 
 	if (Npc_HasItems (other,itmi_Gold) >= 20000)
 	{
-		AI_Output 	(self ,other,"Patch_AE_DIA_Bennet_DJG_ARMOR_H_06_01"); //Tohle je nejlepší zbroj kterou jsem kdy vyrobil.
-		AI_Output 	(self ,other,"Patch_AE_DIA_Bennet_DJG_ARMOR_H_06_02"); //Je to opravdový mistrovský kousek.
+		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_06_01"); //Tohle je nejlepší zbroj kterou jsem kdy vyrobil.
+		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_06_02"); //Je to opravdový mistrovský kousek.
 
 		B_GiveInvItems (other,self,ItMi_Gold,20000);
-		CreateInvItems (self,Patch_AE_ITAR_DJG_CH,1);
-		B_GiveInvItems (self,other,Patch_AE_ITAR_DJG_CH,1);
+		CreateInvItems (self,ITAR_DJG_CH_ARMOREXPANSION,1);
+		B_GiveInvItems (self,other,ITAR_DJG_CH_ARMOREXPANSION,1);
 
-		Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent = TRUE;
+		Bennet_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent = TRUE;
 	}
 	else
 	{
-		AI_Output 	(self ,other,"Patch_AE_DIA_Bennet_DJG_ARMOR_H_06_03"); //Nemáš dost zlata.
+		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_06_03"); //Nemáš dost zlata.
 	};
 
 };
+
 instance Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD (C_INFO)
 {
 	npc			 =  PAL_250_Garond;
@@ -1432,13 +1420,14 @@ func int Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_Condition ()
 };
 func void Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_Info ()
 {
-		AI_Output (self,other,"Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03"); //Zadrž.
-		AI_Output (self,other,"Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04"); //Jsi jediný z nás komu se zatím podařilo nějákého draka zabít.
-		AI_Output (self,other,"Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05"); //Mám naději že se ti povede je dostat všechny.
-		B_GiveInvItems(self, other, Patch_AE_ITAR_PAL_MH, 1);
-		AI_Output (self,other,"Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06"); //Tady máš, tohle by ti mělo pomoci ve tvém úkolu. A teď už běž, není moc času nazbyt.
-		AI_Output (other,self,"Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01"); //Díky.
+		AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03"); //Zadrž.
+		AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04"); //Jsi jediný z nás komu se zatím podařilo nějákého draka zabít.
+		AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05"); //Mám naději že se ti povede je dostat všechny.
+		B_GiveInvItems(self, other, ITAR_PAL_MH_ARMOREXPANSION, 1);
+		AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06"); //Tady máš, tohle by ti mělo pomoci ve tvém úkolu. A teď už běž, není moc času nazbyt.
+		AI_Output(other, self, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01"); //Díky.
 };
+
 ///////////////////////////////////////////////////////////////////////
 //	Info RavenDead
 ///////////////////////////////////////////////////////////////////////
@@ -1448,28 +1437,26 @@ instance Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION		(C_INFO)
 	nr		 = 	2;
 	condition	 = 	Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Condition;
 	information	 = 	Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Info;
-
 	description	 = 	"Co takhle nějáká lepší zbroj?";
 };
-
 func int Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Condition ()
 {
-	if ((Npc_KnowsInfo (other, DIA_Addon_Greg_RavenDead) == TRUE))
+	if ((Npc_KnowsInfo (other,DIA_Addon_Greg_RavenDead) == TRUE))
 	{
 		return TRUE;
 	};
 };
-
 func void Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_Info ()
 {
-	AI_Output	(other, self, "Patch_AE_DIA_Addon_Greg_RavenDead_15_00"); //Co takhle nějáká lepší zbroj?
-	AI_Output	(self, other, "Patch_AE_DIA_Addon_Greg_RavenDead_01_01"); //Sakra, co si myslíš?
-	AI_Output	(self, other, "Patch_AE_DIA_Addon_Greg_RavenDead_01_02"); //Odkrouhneš Ravena a najednou je z tebe nový kapitán?
-	AI_Output	(other, self, "Patch_AE_DIA_Addon_Greg_RavenDead_15_03"); //Takhle jsem to nemyslel. Kapitánem zůstaneš ty, jenom mi jde o tu zbroj.
-	AI_Output	(self, other, "Patch_AE_DIA_Addon_Greg_RavenDead_01_04"); //Dobrá, můžu ti prodat jeden z mých osobních kousků.
-	AI_Output	(self, other, "Patch_AE_DIA_Addon_Greg_RavenDead_01_05"); //Ale přijde tě to draho, chci za ní 2700 zlatých
+	AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00"); //Co takhle nějáká lepší zbroj?
+	AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01"); //Sakra, co si myslíš?
+	AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02"); //Odkrouhneš Ravena a najednou je z tebe nový kapitán?
+	AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03"); //Takhle jsem to nemyslel. Kapitánem zůstaneš ty, jenom mi jde o tu zbroj.
+	AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04"); //Dobrá, můžu ti prodat jeden z mých osobních kousků.
+	AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05"); //Ale přijde tě to draho, chci za ní 2700 zlatých
 	B_LogEntry (Topic_Addon_PIR_Trader, "Od Grega si můžu koupit zbroj kapitána za 2700 zlatých");
 };
+
 ///////////////////////////////////////////////////////////////////////
 //	Info RavenDead
 ///////////////////////////////////////////////////////////////////////
@@ -1495,16 +1482,16 @@ func int Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_Condition ()
 
 func void Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_Info ()
 {
-	AI_Output(other, self, "Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_4_1"); //Prodej mi kapitánskou zbroj.
+	AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1"); //Prodej mi kapitánskou zbroj.
 
 	if (B_GiveInvItems(other, self, ItMi_Gold, 2700))
 	{
-		AI_Output(self, other, "Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_4_2"); //Tady jí máš, ale pamatuj si že kapitánem zůstávám já.
+		AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2"); //Tady jí máš, ale pamatuj si že kapitánem zůstávám já.
 		B_GiveInvItems(self, other, ITAR_PIR_H_ARMOREXPANSION, 1);
-        Patch_AE_ARMOREXPANSION_BOUGHT_CAPTAIN = TRUE;
+	 Patch_AE_ARMOREXPANSION_BOUGHT_CAPTAIN = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_NINJA_4_3"); //Vrať se až budeš mít u sebe dost zlata.
+		AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3"); //Vrať se až budeš mít u sebe dost zlata.
 	};
 };

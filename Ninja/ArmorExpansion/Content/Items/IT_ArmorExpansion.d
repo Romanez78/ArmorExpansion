@@ -56,7 +56,7 @@ const int Patch_AE_ITAR_PAL_A_BONUS_MANA = 40;
 const int Patch_AE_ITAR_PAL_F_BONUS_MANA = 20;
 var int Patch_AE__ITAR_MIL_H_Equipped;
 var int Patch_AE__ITAR_SLD_BOW_Equipped;
-INSTANCE Patch_AE_ITAR_MIL_H (C_Item)
+INSTANCE ITAR_MIL_H_ArmorExpansion (C_Item)
 {
 	name 					=	"Tižká Zbroj Domobrany";
 
@@ -131,7 +131,7 @@ func void Patch_AE__UnEquip_ITAR_MIL_H()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_GAMBESON (C_Item)
+INSTANCE ITAR_GAMBESON_ArmorExpansion (C_Item)
 {
 	name 					=	"Lovecký Gambeson";
 
@@ -182,7 +182,7 @@ func void Patch_AE_UnEquip_ITAR_GAMBESON()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -3);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -3);
 	};
-INSTANCE Patch_AE_ITAR_PAL_A (C_Item)
+INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
 {
 	name 					=	"Obohacená Paladinská Zbroj";
 
@@ -236,7 +236,7 @@ FUNC VOID Patch_AE_UnEquip_ITAR_PAL_A()
     // Mana
     Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Patch_AE_ITAR_PAL_A_BONUS_MANA);
 	};
-INSTANCE Patch_AE_ITAR_PAL_R (C_Item)
+INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 {
 	name 					=	"Rezavá Paladinská Zbroj";
 
@@ -276,7 +276,7 @@ INSTANCE Patch_AE_ITAR_PAL_R (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_PAL_F (C_Item)
+INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
 {
 	name 					=	"Opravená Paladinská Zbroj";
 
@@ -330,7 +330,7 @@ FUNC VOID Patch_AE_UnEquip_ITAR_PAL_F()
     // Mana
     Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Patch_AE_ITAR_PAL_F_BONUS_MANA);
 	};
-INSTANCE Patch_AE_ITAR_PAL_C (C_Item)
+INSTANCE ITAR_PAL_C_ArmorExpansion (C_Item)
 {
     name    =    "Zbroj Rytíře Kušišníka";
 
@@ -385,7 +385,7 @@ func void Patch_AE_UnEquip_ITAR_PAL_C()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE Patch_AE_ITAR_MIL_Med2 (C_Item)
+INSTANCE ITAR_MIL_Med2_ArmorExpansion (C_Item)
 {
 	name 					=	"Vylepšená Stoedni Tižká Zbroj Domobrany";
 
@@ -455,7 +455,7 @@ func void Patch_AE__Patch_AE_UnEquip_ITAR_MIL_Med2()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_MIL_P (C_Item)
+INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
 {
 	name 					=	"Zbroj Milicionáoe Kušišníka";
 
@@ -539,7 +539,7 @@ INSTANCE ITAR_MIL_M (C_Item)
 
 	value 					=	1500;
 };
-INSTANCE Patch_AE_ITAR_DJG_CL (C_Item)
+INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
 {
 	name 					=	"Lehká Zbroj Lovce Draku";
 
@@ -594,7 +594,7 @@ func void UnEquip_ITAR_DHT2S_ARMOREXPANSION()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE Patch_AE_ITAR_SLD_BOW (C_Item)
+INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 {
 	name 					=	"Zbroj Nájemného Lovce";
 
@@ -671,7 +671,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_BOW()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_MIL_R (C_Item)
+INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 {
 	name 					=	"Vylepšená Lehká Zbroj Domobrany";
 
@@ -742,7 +742,7 @@ func void Patch_AE_UnEquip_ITAR_MIL_R()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_CRUSADER (C_Item)
+INSTANCE ITAR_CRUSADER_ArmorExpansion (C_Item)
 {
 	name 					=	"Zbroj Koižáka";
 
@@ -799,7 +799,7 @@ func void Patch_AE_UnEquip_ITAR_CRUSADER()
     // A head adjusting
     Patch_AE_ArmorChanging_Head_Original(self);
 };
-INSTANCE Patch_AE_ITAR_SLD_SCOUT (C_Item)
+INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 {
 	name 					=	"Odiv Žoldáka Zvida";
 
@@ -881,7 +881,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_SCOUT()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_MIL_SCOUT (C_Item)
+INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 {
 	name 					=	"Odiv Královského Zvida";
 
@@ -963,7 +963,7 @@ func void Patch_AE_UnEquip_ITAR_MIL_SCOUT()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_SLD_R (C_Item)
+INSTANCE ITAR_SLD_R_ArmorExpansion (C_Item)
 {
 	name 					=	"Vylepšená Stoední Zbroj Žoldáka";
 
@@ -1037,7 +1037,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_R()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_SLD_LR (C_Item)
+INSTANCE ITAR_SLD_LR_ArmorExpansion (C_Item)
 {
 	name 					=	"Vylepšená Lehká Zbroj Žoldáka";
 
@@ -1111,7 +1111,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_LR()
 		};
     };
 };
-INSTANCE Patch_AE_ITAR_PAL_CH (C_Item)
+INSTANCE ITAR_PAL_CH_ArmorExpansion (C_Item)
 {
     name    =    "Zbroj Paladina Kušišníka";
 
@@ -1166,7 +1166,7 @@ func void Patch_AE_UnEquip_ITAR_PAL_CH()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE Patch_AE_ITAR_DJG_CH (C_Item)
+INSTANCE ITAR_DJG_CH_ArmorExpansion (C_Item)
 {
     name    =    "Tižká Zbroj Lovce Draku";
 
@@ -1221,7 +1221,7 @@ func void Patch_AE_UnEquip_ITAR_DJG_CH()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE Patch_AE_ITAR_DJG_CM (C_Item)
+INSTANCE ITAR_DJG_CM_ArmorExpansion (C_Item)
 {
     name    =    "Stoední Zbroj Lovce Draku";
 
@@ -1276,7 +1276,7 @@ func void Patch_AE_UnEquip_ITAR_DJG_CM()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
-INSTANCE Patch_AE_ITAR_PAL_ST (C_Item)
+INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 {
 	name 					=	"Stewarkská Plátová Zbroj";
 
@@ -1316,7 +1316,7 @@ INSTANCE Patch_AE_ITAR_PAL_ST (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_PAL_MH (C_Item)
+INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 {
 	name 					=	"Tižká Zbroj Rytíoe";
 
@@ -1356,7 +1356,7 @@ INSTANCE Patch_AE_ITAR_PAL_MH (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE ITAR_PIR_H_ARMOREXPANSION (C_Item)
+INSTANCE ITAR_PIR_H_ArmorExpansion (C_Item)
 {
 	name 					=	"Zbroj Kapitána";
 
@@ -1378,8 +1378,8 @@ INSTANCE ITAR_PIR_H_ARMOREXPANSION (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
-    on_equip    =    Equip_ITAR_PIR_H_ARMOREXPANSION;
-    on_unequip    =    UnEquip_ITAR_PIR_H_ARMOREXPANSION;
+    on_equip    =    Equip_ITAR_PIR_H_ArmorExpansion;
+    on_unequip    =    UnEquip_ITAR_PIR_H_ArmorExpansion;
 
 	description				=	name;
 
@@ -1399,19 +1399,19 @@ INSTANCE ITAR_PIR_H_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-func void Equip_ITAR_PIR_H_ARMOREXPANSION()
+func void Equip_ITAR_PIR_H_ArmorExpansion()
 {
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_1H, 5);
 	Npc_ChangeAttribute(self,ATR_DEXTERITY,+ 10);
 };
-func void UnEquip_ITAR_PIR_H_ARMOREXPANSION()
+func void UnEquip_ITAR_PIR_H_ArmorExpansion()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_1H, -5);
 	Npc_ChangeAttribute(self,ATR_DEXTERITY, -10);
 };
-INSTANCE Patch_AE_ITAR_PAL_ANH (C_Item)
+INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
 {
 	name 					=	"Obohacená Paladinská Zbroj";
 
@@ -1454,7 +1454,7 @@ INSTANCE Patch_AE_ITAR_PAL_ANH (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_PAL_RNH (C_Item)
+INSTANCE ITAR_PAL_RNH_ArmorExpansion (C_Item)
 {
 	name 					=	"Rezavá Paladinská Zbroj";
 
@@ -1494,7 +1494,7 @@ INSTANCE Patch_AE_ITAR_PAL_RNH (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_PAL_FNH (C_Item)
+INSTANCE ITAR_PAL_FNH_ArmorExpansion (C_Item)
 {
 	name 					=	"Opravená Paladinská Zbroj";
 
@@ -1537,7 +1537,7 @@ INSTANCE Patch_AE_ITAR_PAL_FNH (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_PAL_AFH (C_Item)
+INSTANCE ITAR_PAL_AFH_ArmorExpansion (C_Item)
 {
 	name 					=	"Obohacená Paladinská Zbroj";
 
@@ -1580,7 +1580,7 @@ INSTANCE Patch_AE_ITAR_PAL_AFH (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_PAL_RFH (C_Item)
+INSTANCE ITAR_PAL_RFH_ArmorExpansion (C_Item)
 {
 	name 					=	"Rezavá Paladinská Zbroj";
 
@@ -1620,7 +1620,7 @@ INSTANCE Patch_AE_ITAR_PAL_RFH (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_PAL_FFH (C_Item)
+INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
 {
 	name 					=	"Opravená Paladinská Zbroj";
 
@@ -1663,7 +1663,7 @@ INSTANCE Patch_AE_ITAR_PAL_FFH (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-INSTANCE Patch_AE_ITAR_NH_CRUSADER (C_Item)
+INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 {
 	name 					=	"Zbroj Koižáka";
 
