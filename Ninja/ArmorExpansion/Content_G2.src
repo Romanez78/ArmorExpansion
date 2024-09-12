@@ -1,12 +1,8 @@
 Ikarus
 LeGo
 
-// Required symbols
-Content\RequiredSymbols.d
-
 // Internal
 Content\Internal\ArmorRecords.d
-Content\Internal\SymbolChecks.d
 Content\Internal\ApplyRevert.d
 
 // Items
