@@ -1,67 +1,23 @@
 Ikarus
 LeGo
 
+// Required symbols
+Content\RequiredSymbols.d
+// Internal
+Content\Internal\ArmorRecords.d
+Content\Internal\SymbolChecks.d
+Content\Internal\ApplyRevert.d
 // Items
 Content\Items\IT_Belts.d
 Content\Items\IT_ArmorExpansion.d
 Content\Items\IT_ArmorExpansion_BluePrint.d
-
 // NPCs
-Content\NPC\MIL_312_Wulfgar.d
-Content\NPC\PAL_267_Sengrath.d
-Content\NPC\MIL_309_Stadtwache.d
-Content\NPC\MIL_310_Stadtwache.d
-Content\NPC\MIL_332_Stadtwache.d
-Content\NPC\MIL_333_Stadtwache.d
-Content\NPC\MIL_317_Ruga.d
-Content\NPC\MIL_313_Boltan.d
-Content\NPC\MIL_319_Pablo.d
-Content\NPC\MIL_324_Peck.d
-Content\NPC\MIL_327_Miliz.d
-Content\NPC\MIL_337_Mika.d
-Content\NPC\PAL_266_Ritter.d
-Content\NPC\PAL_274_Ritter.d
-Content\NPC\PAL_204_Torwache.d
-Content\NPC\PAL_270_Ritter.d
-Content\NPC\PAL_297_Ritter.d
-Content\NPC\PAL_298_Ritter.d
-Content\NPC\PAL_258_Keroloth.d
-Content\NPC\PAL_262_Wache.d
-Content\NPC\PAL_253_Wache.d
-Content\NPC\PAL_207_Girion.d
-Content\NPC\PAL_207_Girion_DI.d
-Content\NPC\PAL_263_Wache.d
-Content\NPC\PAL_216_Cedric.d
-Content\NPC\PAL_205_Torwache.d
-Content\NPC\SLD_808_Jarvis.d
-Content\NPC\SLD_811_Wolf.d
-Content\NPC\SLD_811_Wolf_DI.d
-Content\NPC\SLD_822_Raoul.d
-Content\NPC\SLD_802_Buster.d
-Content\NPC\SLD_815_Soeldner.d
-Content\NPC\SLD_816_Fester.d
-Content\NPC\SLD_817_Soeldner.d
-Content\NPC\VLK_440_Bartok.d
-Content\NPC\VLK_4100_Brutus.d
-Content\NPC\VLK_4104_WaffenKnecht.d
-Content\NPC\VLK_4105_WaffenKnecht.d
-Content\NPC\VLK_4108_Engor.d
-Content\NPC\VLK_4120_Bilgot.d
-Content\NPC\VLK_4140_WaffenKnecht.d
-Content\NPC\VLK_4145_WaffenKnecht.d
 Content\NPC\BAU_989_DeadTreasureHunter.d
-
 // Dialogs
 Content\Dialogs\DIA_ArmorExpansion.d
 Content\Dialogs\SmithArmor.d
-
 // Functions
+Content\NpcArmors.d
 Content\C_PlayerHasFakeGuild.d
 Content\Startup.d
-Content\ArmorExpansionInit.d
-
-// Utility
-Content\Util.d
-Content\Checks.d
-
 Content\Init.d

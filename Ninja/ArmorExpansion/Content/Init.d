@@ -15,6 +15,30 @@ func void Ninja_ArmorExpansion_Menu() {
     // Check if all necessary symbols exist, otherwise terminate the game with a user-friendly error message
     Patch_AE_SymbolChecks();
 
-    // Initialize the hooks
-    Patch_AE_Init();
+    // Register engine hooks
+    Patch_AE_InitRevert();
+
+    // Register script hooks for events and dialogs
+    HookDaedalusFuncS("C_PlayerHasFakeGuild", "Patch_AE_C_PlayerHasFakeGuild");
+    HookDaedalusFuncS("Startup_Demontower", "Patch_AE_Startup_Demontower");
+    HookDaedalusFuncS("PC_Common_Condition", "Patch_AE_PC_Common_Condition");
+    HookDaedalusFuncS("PC_Ore_Condition", "Patch_AE_PC_Ore_Condition");
+
+    // Register script hooks for equipping bonuses
+    HookDaedalusFuncS("Equip_ItBE_Addon_MIL_01", "Patch_AE_Equip_ItBE_Addon_MIL_01");
+    HookDaedalusFuncS("UnEquip_ItBE_Addon_MIL_01", "Patch_AE_UnEquip_ItBE_Addon_MIL_01");
+    HookDaedalusFuncS("Equip_ItBE_Addon_SLD_01", "Patch_AE_Equip_ItBE_Addon_SLD_01");
+    HookDaedalusFuncS("UnEquip_ItBE_Addon_SLD_01", "Patch_AE_UnEquip_ItBE_Addon_SLD_01");
+};
+
+
+/*
+ * Initialization function called by Ninja after "Init_Global" (G2) / "Init_<Levelname>" (G1)
+ */
+func void Ninja_ArmorExpansion_Init() {
+    // Initialize Ikarus
+    MEM_InitAll();
+
+    // On every initialization apply the patch specific changes
+    Patch_AE_ApplyChanges();
 };
