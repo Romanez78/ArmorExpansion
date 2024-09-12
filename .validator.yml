@@ -2,6 +2,7 @@
 # For more information, visit https://github.com/szapp/patch-validator/#configuration
 
 prefix:
+  - Patch_AE
 ignore-declaration:
   - ITAR_MIL_M
 ignore-resource:

@@ -1,13 +1,13 @@
-const string Ninja_ArmorExpansion_Version = "ArmorExpansion 1.0";
+const string Patch_AE_Version = "ArmorExpansion 1.0";
 
 /*
  * Initialization function called by Ninja after "Init_Global" (G2) / "Init_<Levelname>" (G1)
  */
-func void Ninja_ArmorExpansion_Init() {
+func void Patch_AE_Init() {
     // Init Ikarus&Lego
     LeGo_MergeFlags(LeGo_PermMem);
-    
-    MEM_Info(ConcatStrings(ConcatStrings("Initialize ", Ninja_ArmorExpansion_Version), "."));
+
+    MEM_Info(ConcatStrings(ConcatStrings("Initialize ", Patch_AE_Version), "."));
     Patch_AE_Init();
-    MEM_Info(ConcatStrings(Ninja_ArmorExpansion_Version, " was initialized successfully."));
+    MEM_Info(ConcatStrings(Patch_AE_Version, " was initialized successfully."));
 };
