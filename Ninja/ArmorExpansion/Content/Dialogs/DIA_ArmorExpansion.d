@@ -1355,22 +1355,21 @@ func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_Info ()
 };
 
 //---------------------------------------------------
-var int Bennet_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent;
+var int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent;
 //---------------------------------------------------
-
-instance DIA_Bennet_PATCH_DJG_ARMOR_CH		(C_INFO)
+instance Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH		(C_INFO)
 {
 	npc		 	 = 	SLD_809_Bennet;
 	nr           = 	8;
-	condition	 = 	DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition;
-	information	 = 	DIA_Bennet_PATCH_DJG_ARMOR_CH_Info;
+	condition	 = 	Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition;
+	information	 = 	Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Info;
 	permanent	 = 	TRUE;
 	description	 =	"Těžká zbroj lovce draků: Obrana: Sečné 140, Bodné 140. (20000 zlatých)"; //Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
 };
 
-func int DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition ()
+func int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition ()
 {
-	IF (Bennet_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent == FALSE)
+	IF (Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent == FALSE)
 	&& (hero.guild == GIL_DJG)
 	&& (Npc_KnowsInfo (other,DIA_Bennet_BetterArmor))
 	{
@@ -1378,24 +1377,24 @@ func int DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition ()
 	};
 };
 
-func void DIA_Bennet_PATCH_DJG_ARMOR_CH_Info ()
+func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Info ()
 {
-	AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_15_00"); //Dej mi tu zbroj
+	AI_Output(other, self, "Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_15_00"); //Dej mi tu zbroj
 
 	if (Npc_HasItems (other,itmi_Gold) >= 20000)
 	{
-		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_06_01"); //Tohle je nejlepší zbroj kterou jsem kdy vyrobil.
-		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_06_02"); //Je to opravdový mistrovský kousek.
+		AI_Output(self, other, "Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_06_01"); //Tohle je nejlepší zbroj kterou jsem kdy vyrobil.
+		AI_Output(self, other, "Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_06_02"); //Je to opravdový mistrovský kousek.
 
 		B_GiveInvItems (other,self,ItMi_Gold,20000);
 		CreateInvItems (self,ITAR_DJG_CH_ARMOREXPANSION,1);
 		B_GiveInvItems (self,other,ITAR_DJG_CH_ARMOREXPANSION,1);
 
-		Bennet_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent = TRUE;
+		Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_permanent = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_H_06_03"); //Nemáš dost zlata.
+		AI_Output(self, other, "Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_06_03"); //Nemáš dost zlata.
 	};
 
 };
