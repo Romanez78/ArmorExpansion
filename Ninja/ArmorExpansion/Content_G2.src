@@ -14,7 +14,24 @@ Content\Items\IT_ArmorExpansion_Blueprint.d
 Content\NPC\DeadTreasureHunter.d
 
 // Dialogs
-Content\Dialogs\DIA_ArmorExpansion.d
+Content\Dialogs\Andre.d
+Content\Dialogs\Bennet.d
+Content\Dialogs\Brian.d
+Content\Dialogs\Carl.d
+Content\Dialogs\Engor.d
+Content\Dialogs\Garond.d
+Content\Dialogs\Gred.d
+Content\Dialogs\Hagen.d
+Content\Dialogs\Harad.d
+Content\Dialogs\Huno.d
+Content\Dialogs\Jan.d
+Content\Dialogs\Lee.d
+Content\Dialogs\Martin.d
+Content\Dialogs\Matteo.d
+Content\Dialogs\Milten.d
+Content\Dialogs\Mortis.d
+Content\Dialogs\Ulthar.d
+Content\Dialogs\Wolf.d
 Content\Dialogs\SmithArmor.d
 
 // Functions
