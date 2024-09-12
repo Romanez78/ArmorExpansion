@@ -9,7 +9,7 @@ instance Patch_AE_DIA_ANDRE_MIL_SCOUTArmor (C_INFO)
     condition    =  Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Condition;
     information  =  Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Info;
     permanent    =  TRUE;
-    description  =  "Nenašla by se tu pro mně lehčí zbroj? (Vyměnit stávající)";
+    description  =  Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc;
 };
 func int Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Condition()
 {
@@ -21,13 +21,13 @@ func int Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Condition()
 };
 func void Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Info()
 {
-    AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01"); //Nenašla by se pro mně lehhčí zbroj?.
-    AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02"); //Radši používám zbraně na dálku.
-    AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03"); //Můžu ti vyměnit tvojí zbroj za zbroj zvěda. Je lehčí než standartní výbava takže budeš obratnější, ale i zranitelnější
-    AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04"); //Beru ji.
+    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01);
+    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02);
+    AI_Output(self, other, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03);
+    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04);
     B_GiveInvItems(other, self, ItAr_MIL_L, 1);
     Patch_AE_ANDRE_MIL_SCOUTArmorBought = B_GiveInvItems(self, other, ITAR_MIL_SCOUT_ARMOREXPANSION, 1);
-    AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9"); //Tady máš, ať ti slouží dobře.
+    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9);
 };
 
 instance Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD (C_INFO)
@@ -52,10 +52,10 @@ func int Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_Condition()
 };
 func void Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_Info()
 {
-    AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03"); //Vykonal si všechny moje zadání.
-    AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04"); //Tím si mi dokázal že si zasloužíš povýšení.
+    AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03);
+    AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04);
     B_GiveInvItems(self, other, ITAR_MIL_M, 1);
-    AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05"); //Tady máš, střední zbroj domobrany.
-    AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06"); //Ať ti slouží vojáku.
-    AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01"); //Díky.
+    AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05);
+    AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06);
+    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01);
 };

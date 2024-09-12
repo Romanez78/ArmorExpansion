@@ -34,6 +34,8 @@ func void Ninja_ArmorExpansion_Menu() {
 
     if (loc == Patch_AE_Lang_EN) {
         Patch_AE_LocalizeEnglish();
+    } else if (loc == Patch_AE_Lang_PL) {
+        Patch_AE_LocalizeEnglish(); // Just for testing
     } else if (loc == Patch_AE_Lang_DE) {
         Patch_AE_LocalizeEnglish(); // Just for testing
     };

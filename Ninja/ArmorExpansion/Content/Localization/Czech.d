@@ -63,3 +63,34 @@ const string Patch_AE_TEXT_ArcheryBonus3 = "+3% stoelecký talent"; //ITAR_GAMBE
 const string Patch_AE_TEXT_ArcheryBonus5 = "+5% stoelecký talent"; // ITAR_PAL_C_ArmorExpansion, ITAR_MIL_P_ArmorExpansion, ITAR_DJG_CL_ArmorExpansion, ITAR_SLD_BOW_ArmorExpansion, ITAR_SLD_SCOUT_ArmorExpansion, ITAR_MIL_SCOUT_ArmorExpansion, ITAR_PAL_CH_ArmorExpansion, ITAR_DJG_CH_ArmorExpansion, ITAR_DJG_CM_ArmorExpansion
 const string Patch_AE_TEXT_TwoHandedBonus5 = "+5% obouruení talent"; // ITAR_CRUSADER_ArmorExpansion, ITAR_NH_CRUSADER_ArmorExpansion
 const string Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 bonus k obratnosti, +10% Jednoruení talent"; // ITAR_PIR_H_ArmorExpansion
+
+// ==============
+//    DIALOGS
+// ==============
+
+// Andre
+const string Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc = "Nenašla by se tu pro mně lehčí zbroj? (Vyměnit stávající)";
+// AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS"); //Nenašla by se pro mně lehhčí zbroj?.
+// AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_CS"); //Radši používám zbraně na dálku.
+// AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_CS"); //Můžu ti vyměnit tvojí zbroj za zbroj zvěda. Je lehčí než standartní výbava takže budeš obratnější, ale i zranitelnější
+// AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_CS"); //Beru ji.
+// AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_CS"); //Tady máš, ať ti slouží dobře.
+
+// AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_CS"); //Vykonal si všechny moje zadání.
+// AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_CS"); //Tím si mi dokázal že si zasloužíš povýšení.
+// AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_CS"); //Tady máš, střední zbroj domobrany.
+// AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_CS"); //Ať ti slouží vojáku.
+// AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_CS"); //Díky.
+
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01 = "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS";
+const string PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02 = "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_CS";
+const string PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03 = "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_CS";
+const string PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04 = "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_CS";
+const string PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9 = "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_CS";
+const string PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03 = "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_CS";
+const string PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04 = "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_CS";
+const string PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05 = "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_CS";
+const string PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06 = "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_CS";
+const string PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01 = "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_CS";
