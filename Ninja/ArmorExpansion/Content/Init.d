@@ -1,13 +1,20 @@
-const string Patch_AE_Version = "ArmorExpansion 1.0";
-
 /*
- * Initialization function called by Ninja after "Init_Global" (G2) / "Init_<Levelname>" (G1)
+ * Menu initialization function called by Ninja every time a menu is opened
+ *
+ * Here used to inject initialization before very first new game/loading once
  */
-func void Patch_AE_Init() {
-    // Init Ikarus
+func void Ninja_ArmorExpansion_Menu() {
+    // Only perform this initialization once
+    const int once = 0;
+    if (once) { return; };
+    once = 1;
+
+    // Initialize Ikarus
     MEM_InitAll();
 
-    MEM_Info(ConcatStrings(ConcatStrings("Initialize ", Patch_AE_Version), "."));
+    // Check if all necessary symbols exist, otherwise terminate the game with a user-friendly error message
+    Patch_AE_SymbolChecks();
+
+    // Initialize the hooks
     Patch_AE_Init();
-    MEM_Info(ConcatStrings(Patch_AE_Version, " was initialized successfully."));
 };
