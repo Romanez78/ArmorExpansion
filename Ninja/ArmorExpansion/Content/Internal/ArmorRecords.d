@@ -1,4 +1,7 @@
 /*
+ * This is internal functionality for the file "NpcArmors.d". It handles the mechanics to update the armors to a
+ * save game.
+ *
  * To allow changing the armors of NPCs in a safe way that will not impact game saves after removing the patch,
  * the original armors have to be stored and re-equipped on saving the game. The mechanics are in this file.
  */
@@ -8,6 +11,7 @@ const int Patch_AE_NpcArmors_htbl = 0;
 
 /*
  * Set only the armor instance of an NPC with "Mdl_SetVisualBody" while keeping other visual properties untouched
+ * This function is called below in "Patch_AE_NpcUpdateArmor".
  */
 func void Patch_AE_NpcSetArmor(var C_Npc slf, var int armorInstance) {
     var oCNpc npc; npc = Hlp_GetNpc(slf);
@@ -33,9 +37,10 @@ func void Patch_AE_NpcSetArmor(var C_Npc slf, var int armorInstance) {
 };
 
 /*
- * Equip new armor and store the original one in the hash table
+ * Equip new armor and store the original one in the hash table.
+ * This function is called from "NpcArmors.d" for each NPC to equip a new armor from the patch.
  */
-func void Patch_AE_NpcArmorOn(var string npcInstanceName, var int armorInstance) {
+func void Patch_AE_NpcUpdateArmor(var string npcInstanceName, var int armorInstance) {
     // Check if instance exists
     const int npcInstance = -1; npcInstance = MEM_GetSymbolIndex(STR_Upper(npcInstanceName));
     if (npcInstance == -1) {
@@ -52,7 +57,7 @@ func void Patch_AE_NpcArmorOn(var string npcInstanceName, var int armorInstance)
     if (Npc_HasEquippedArmor(slf)) {
         var oCItem itm; itm = Npc_GetEquippedArmor(slf);
         Npc_RemoveInvItems(slf, itm.instanz, 1);
-        _HT_Insert(Patch_AE_NpcArmors_htbl, itm.instanz, npcInstance);
+        _HT_Insert(Patch_AE_NpcArmors_htbl, itm.instanz, npcInstance); // We now know what armor the NPC had before
     } else {
         _HT_Insert(Patch_AE_NpcArmors_htbl, -1, npcInstance);
     };
@@ -63,8 +68,9 @@ func void Patch_AE_NpcArmorOn(var string npcInstanceName, var int armorInstance)
 
 /*
  * Equip an armor (without storing original in hash table, for reverting)
+ * This function is called every time the game is saved, to revert all the armors to their original.
  */
-func void Patch_AE_NpcArmorOff(var int npcInstance, var int armorInstance) {
+func void Patch_AE_NpcOriginalArmor(var int npcInstance, var int armorInstance) {
     // Check if NPC exists (in this world)
     var C_Npc slf; slf = Hlp_GetNpc(npcInstance);
     if (!Hlp_IsValidNpc(slf)) {
@@ -83,7 +89,7 @@ func void Patch_AE_NpcArmorOff(var int npcInstance, var int armorInstance) {
 
 /*
  * Called by Patch_AE_ApplyChanges to equip the new armors
- * Make changes in "Patch_AE_NpcArmors"
+ * Make changes in "NpcArmors.d".
  */
 func int Patch_AE_NpcArmorsApply() {
     if (Patch_AE_NpcArmors_htbl) {
@@ -103,7 +109,10 @@ func void Patch_AE_NpcArmorsRevert() {
         return;
     };
 
-    _HT_ForEach(Patch_AE_NpcArmors_htbl, Patch_AE_NpcArmorOff);
+    // Go through all NPC-armor combinations and equip the original armor
+    _HT_ForEach(Patch_AE_NpcArmors_htbl, Patch_AE_NpcOriginalArmor);
+
+    // In the end clear the NPC-armor combinations
     _HT_Destroy(Patch_AE_NpcArmors_htbl);
     Patch_AE_NpcArmors_htbl = 0;
 };
