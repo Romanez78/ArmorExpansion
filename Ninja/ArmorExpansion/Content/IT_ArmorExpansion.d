@@ -330,7 +330,7 @@ FUNC VOID Ninja_ArmorExpansion_UnEquip_ITAR_PAL_F()
 	};
 INSTANCE Ninja_ArmorExpansion_ITAR_PAL_C (C_Item)
 {
-    name    =    "Zbroj Rytíøe Kušišníka";
+    name    =    "Zbroj Rytíře Kušišníka";
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;

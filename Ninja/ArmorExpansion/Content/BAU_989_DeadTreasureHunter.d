@@ -2,7 +2,7 @@
 instance BAU_989_DeadTreasureHunter (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mrtvý lovec pokladù";
+	name 		= "Mrtvý lovec pokladů";
 	guild 		= GIL_BAU;
 	id 			= 989;
 	voice 		= 14;

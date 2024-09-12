@@ -1590,7 +1590,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu ze zbroje køižáka";
+    description     = "Odebrat Helmu ze zbroje křižáka";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_CRUSADER_NH_Condition()
 {	
@@ -1660,7 +1660,7 @@ INSTANCE NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader (C_INFO)
 	condition		= NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Condition;
 	information		= NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Info;
 	permanent		= true;
-    description     = "Vrátit helmu ke zbroji køížáka";
+    description     = "Vrátit helmu ke zbroji křížáka";
 };
 FUNC INT NINJA_ARMOREXPANSION_PC_ITAR_nh_crusader_Condition()
 {	
