@@ -1,7 +1,7 @@
 # ArmorExpansion
 
-[![Scripts](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml)
-[![Validation](https://github.com/Romanez78/ArmorExpansion/actions/workflows/validation.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/validation.yml)
+[![Scripts](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml)<!--
+ [![Validation](https://github.com/Romanez78/ArmorExpansion/actions/workflows/validation.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/validation.yml) -->
 [![Build](https://github.com/Romanez78/ArmorExpansion/actions/workflows/build.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/build.yml)
 [![GitHub release](https://img.shields.io/github/v/release/Romanez78/ArmorExpansion.svg)](https://github.com/Romanez78/ArmorExpansion/releases/latest)  
 <!-- [![World of Gothic](https://raw.githubusercontent.com/szapp/patch-template/main/.github/actions/initialization/badges/wog.svg)](https://www.worldofgothic.de/dl/download_XXXX.htm) -->
