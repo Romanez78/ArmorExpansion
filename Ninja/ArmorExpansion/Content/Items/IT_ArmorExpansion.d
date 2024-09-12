@@ -58,7 +58,7 @@ var int Patch_AE__ITAR_MIL_H_Equipped;
 var int Patch_AE__ITAR_SLD_BOW_Equipped;
 INSTANCE ITAR_MIL_H_ArmorExpansion (C_Item)
 {
-	name 					=	"Tižká Zbroj Domobrany";
+	name 					=	ITAR_MIL_H_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -133,7 +133,7 @@ func void Patch_AE__UnEquip_ITAR_MIL_H()
 };
 INSTANCE ITAR_GAMBESON_ArmorExpansion (C_Item)
 {
-	name 					=	"Lovecký Gambeson";
+	name 					=	ITAR_GAMBESON_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -157,7 +157,7 @@ INSTANCE ITAR_GAMBESON_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;
 
 	description				=	name;
-	TEXT[0]                 =       "+3% stoelecký talent.";
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus3;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -184,7 +184,7 @@ func void Patch_AE_UnEquip_ITAR_GAMBESON()
 	};
 INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
 {
-	name 					=	"Obohacená Paladinská Zbroj";
+	name 					=	ITAR_PAL_A_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -208,7 +208,7 @@ INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_PAL_A;
 
 	description				=	name;
-	TEXT[0]                 =       "+40 Bonus maximální many.";
+	TEXT[0]                 =       Patch_AE_TEXT_MaxManaBonus40;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -238,7 +238,7 @@ FUNC VOID Patch_AE_UnEquip_ITAR_PAL_A()
 	};
 INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 {
-	name 					=	"Rezavá Paladinská Zbroj";
+	name 					=	ITAR_PAL_R_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -259,7 +259,7 @@ INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 	material 				=	MAT_METAL;
 
 	description				=	name;
-	TEXT[0]                 =       "Tahle zbroj zažila lepší easy";
+	TEXT[0]                 =       Patch_AE_TEXT_OldArmor;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -278,7 +278,7 @@ INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
 {
-	name 					=	"Opravená Paladinská Zbroj";
+	name 					=	ITAR_PAL_F_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -302,7 +302,7 @@ INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_PAL_F;
 
 	description				=	name;
-	TEXT[0]                 =       "+20 bonus maximální many";
+	TEXT[0]                 =       Patch_AE_TEXT_MaxManaBonus20;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -332,7 +332,7 @@ FUNC VOID Patch_AE_UnEquip_ITAR_PAL_F()
 	};
 INSTANCE ITAR_PAL_C_ArmorExpansion (C_Item)
 {
-    name    =    "Zbroj Rytíře Kušišníka";
+    name    =    ITAR_PAL_C_ArmorExpansion__name;
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -356,7 +356,7 @@ INSTANCE ITAR_PAL_C_ArmorExpansion (C_Item)
     on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_C;
 
     description    =    name;
-	TEXT[0]                 =       "+5% stoelecký talent";
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -387,7 +387,7 @@ func void Patch_AE_UnEquip_ITAR_PAL_C()
 };
 INSTANCE ITAR_MIL_Med2_ArmorExpansion (C_Item)
 {
-	name 					=	"Vylepšená Stoedni Tižká Zbroj Domobrany";
+	name 					=	ITAR_MIL_Med2_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -457,7 +457,7 @@ func void Patch_AE__Patch_AE_UnEquip_ITAR_MIL_Med2()
 };
 INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
 {
-	name 					=	"Zbroj Milicionáoe Kušišníka";
+	name 					=	ITAR_MIL_P_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -481,7 +481,7 @@ INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_MIL_P;
 
 	description				=	name;
-    TEXT[0]                 =       "+5% stoelecký talent";
+    TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;
@@ -531,7 +531,7 @@ func void Patch_AE_UnEquip_ITAR_MIL_P()
 };
 INSTANCE ITAR_MIL_M (C_Item)
 {
-	name 					=	"Stoední Zbroj Domobrany";
+	name 					=	ITAR_MIL_M__name;
 
 	protection [PROT_EDGE]	=	50;
 	protection [PROT_BLUNT] = 	50;
@@ -541,7 +541,7 @@ INSTANCE ITAR_MIL_M (C_Item)
 };
 INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
 {
-	name 					=	"Lehká Zbroj Lovce Draku";
+	name 					=	ITAR_DJG_CL_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -566,7 +566,7 @@ INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]                 =       "+5% stoelecký talent";
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
 
@@ -596,7 +596,7 @@ func void UnEquip_ITAR_DHT2S_ARMOREXPANSION()
 };
 INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 {
-	name 					=	"Zbroj Nájemného Lovce";
+	name 					=	ITAR_SLD_BOW_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -621,7 +621,7 @@ INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					=	"+5% stoelecký talent";
+	TEXT[0]					=	Patch_AE_TEXT_ArcheryBonus5;
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;
@@ -673,7 +673,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_BOW()
 };
 INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 {
-	name 					=	"Vylepšená Lehká Zbroj Domobrany";
+	name 					=	ITAR_MIL_R_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -744,7 +744,7 @@ func void Patch_AE_UnEquip_ITAR_MIL_R()
 };
 INSTANCE ITAR_CRUSADER_ArmorExpansion (C_Item)
 {
-	name 					=	"Zbroj Koižáka";
+	name 					=	ITAR_CRUSADER_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -768,7 +768,7 @@ INSTANCE ITAR_CRUSADER_ArmorExpansion (C_Item)
 	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER;
 
 	description				=	name;
-	TEXT[0]                 =       "+5% obouruení talent";
+	TEXT[0]                 =       Patch_AE_TEXT_TwoHandedBonus5;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -801,7 +801,7 @@ func void Patch_AE_UnEquip_ITAR_CRUSADER()
 };
 INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 {
-	name 					=	"Odiv Žoldáka Zvida";
+	name 					=	ITAR_SLD_SCOUT_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -826,7 +826,7 @@ INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	"+5% stoelecký talent";
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus5;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -883,7 +883,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_SCOUT()
 };
 INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 {
-	name 					=	"Odiv Královského Zvida";
+	name 					=	ITAR_MIL_SCOUT_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -908,7 +908,7 @@ INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	"+5% stoelecký talent";
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus5;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -965,7 +965,7 @@ func void Patch_AE_UnEquip_ITAR_MIL_SCOUT()
 };
 INSTANCE ITAR_SLD_R_ArmorExpansion (C_Item)
 {
-	name 					=	"Vylepšená Stoední Zbroj Žoldáka";
+	name 					=	ITAR_SLD_R_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1039,7 +1039,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_R()
 };
 INSTANCE ITAR_SLD_LR_ArmorExpansion (C_Item)
 {
-	name 					=	"Vylepšená Lehká Zbroj Žoldáka";
+	name 					=	ITAR_SLD_LR_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1113,7 +1113,7 @@ func void Patch_AE_UnEquip_ITAR_SLD_LR()
 };
 INSTANCE ITAR_PAL_CH_ArmorExpansion (C_Item)
 {
-    name    =    "Zbroj Paladina Kušišníka";
+    name    =    ITAR_PAL_CH_ArmorExpansion__name;
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -1137,7 +1137,7 @@ INSTANCE ITAR_PAL_CH_ArmorExpansion (C_Item)
     on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_CH;
 
     description    =    name;
-	TEXT[0]                 =       "+5% stoelecký talent";
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -1168,7 +1168,7 @@ func void Patch_AE_UnEquip_ITAR_PAL_CH()
 };
 INSTANCE ITAR_DJG_CH_ArmorExpansion (C_Item)
 {
-    name    =    "Tižká Zbroj Lovce Draku";
+    name    =    ITAR_DJG_CH_ArmorExpansion__name;
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -1192,7 +1192,7 @@ INSTANCE ITAR_DJG_CH_ArmorExpansion (C_Item)
     on_unequip    =    Patch_AE_UnEquip_ITAR_DJG_CH;
 
     description    =    name;
-	TEXT[0]                 =       "+5% stoelecký talent";
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -1223,7 +1223,7 @@ func void Patch_AE_UnEquip_ITAR_DJG_CH()
 };
 INSTANCE ITAR_DJG_CM_ArmorExpansion (C_Item)
 {
-    name    =    "Stoední Zbroj Lovce Draku";
+    name    =    ITAR_DJG_CM_ArmorExpansion__name;
 
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
@@ -1247,7 +1247,7 @@ INSTANCE ITAR_DJG_CM_ArmorExpansion (C_Item)
     on_unequip    =    Patch_AE_UnEquip_ITAR_DJG_CM;
 
     description    =    name;
-	TEXT[0]                 =       "+5% stoelecký talent";
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
 
     TEXT[1]    =    NAME_Prot_Edge;
     COUNT[1]    =    protection[PROT_EDGE];
@@ -1278,7 +1278,7 @@ func void Patch_AE_UnEquip_ITAR_DJG_CM()
 };
 INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 {
-	name 					=	"Stewarkská Plátová Zbroj";
+	name 					=	ITAR_PAL_ST_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1318,7 +1318,7 @@ INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 {
-	name 					=	"Tižká Zbroj Rytíoe";
+	name 					=	ITAR_PAL_MH_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1358,7 +1358,7 @@ INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PIR_H_ArmorExpansion (C_Item)
 {
-	name 					=	"Zbroj Kapitána";
+	name 					=	ITAR_PIR_H_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1383,7 +1383,7 @@ INSTANCE ITAR_PIR_H_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	"+10 bonus k obratnosti, +10% Jednoruení talent";
+	TEXT[0]					= 	Patch_AE_TEXT_DexBonus10_OneHandedBonus10;
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
 
@@ -1413,7 +1413,7 @@ func void UnEquip_ITAR_PIR_H_ArmorExpansion()
 };
 INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
 {
-	name 					=	"Obohacená Paladinská Zbroj";
+	name 					=	ITAR_PAL_ANH_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1437,7 +1437,7 @@ INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_PAL_A;
 
 	description				=	name;
-	TEXT[0]                 =       "+40 Bonus maximální many.";
+	TEXT[0]                 =       Patch_AE_TEXT_MaxManaBonus40;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1456,7 +1456,7 @@ INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PAL_RNH_ArmorExpansion (C_Item)
 {
-	name 					=	"Rezavá Paladinská Zbroj";
+	name 					=	ITAR_PAL_RNH_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1477,7 +1477,7 @@ INSTANCE ITAR_PAL_RNH_ArmorExpansion (C_Item)
 	material 				=	MAT_METAL;
 
 	description				=	name;
-	TEXT[0]                 =       "Tahle zbroj zažila lepší easy";
+	TEXT[0]                 =       Patch_AE_TEXT_OldArmor;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1496,7 +1496,7 @@ INSTANCE ITAR_PAL_RNH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PAL_FNH_ArmorExpansion (C_Item)
 {
-	name 					=	"Opravená Paladinská Zbroj";
+	name 					=	ITAR_PAL_FNH_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1520,7 +1520,7 @@ INSTANCE ITAR_PAL_FNH_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_PAL_F;
 
 	description				=	name;
-	TEXT[0]                 =       "+20 bonus maximální many";
+	TEXT[0]                 =       Patch_AE_TEXT_MaxManaBonus20;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1539,7 +1539,7 @@ INSTANCE ITAR_PAL_FNH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PAL_AFH_ArmorExpansion (C_Item)
 {
-	name 					=	"Obohacená Paladinská Zbroj";
+	name 					=	ITAR_PAL_AFH_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1563,7 +1563,7 @@ INSTANCE ITAR_PAL_AFH_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_PAL_A;
 
 	description				=	name;
-	TEXT[0]                 =       "+40 Bonus maximální many.";
+	TEXT[0]                 =       Patch_AE_TEXT_MaxManaBonus40;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1582,7 +1582,7 @@ INSTANCE ITAR_PAL_AFH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PAL_RFH_ArmorExpansion (C_Item)
 {
-	name 					=	"Rezavá Paladinská Zbroj";
+	name 					=	ITAR_PAL_RFH_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1603,7 +1603,7 @@ INSTANCE ITAR_PAL_RFH_ArmorExpansion (C_Item)
 	material 				=	MAT_METAL;
 
 	description				=	name;
-	TEXT[0]                 =       "Tahle zbroj zažila lepší easy";
+	TEXT[0]                 =       Patch_AE_TEXT_OldArmor;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1622,7 +1622,7 @@ INSTANCE ITAR_PAL_RFH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
 {
-	name 					=	"Opravená Paladinská Zbroj";
+	name 					=	ITAR_PAL_FFH_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1646,7 +1646,7 @@ INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
     on_unequip    			=    Patch_AE_UnEquip_ITAR_PAL_F;
 
 	description				=	name;
-	TEXT[0]                 =       "+20 bonus maximální many";
+	TEXT[0]                 =       Patch_AE_TEXT_MaxManaBonus20;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1665,7 +1665,7 @@ INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 {
-	name 					=	"Zbroj Koižáka";
+	name 					=	ITAR_NH_CRUSADER_ArmorExpansion_name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1689,7 +1689,7 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER;
 
 	description				=	name;
-	TEXT[0]                 =       "+5% Talent s obourueními zbranimi";
+	TEXT[0]                 =       Patch_AE_TEXT_TwoHandedBonus5;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];

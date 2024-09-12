@@ -3,7 +3,7 @@
 // ********************************
 instance ItWr_BluePrint_StewarkArmor_ArmorExpansion(C_Item)
 {
-	name = "Nákres na výrobu plátové zbroje ze Stewarku";
+	name = ItWr_BluePrint_StewarkArmor_ArmorExpansion__name;
 
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
@@ -29,25 +29,25 @@ func void Patch_AE_Use_Plan_StewarkArmor()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetFont(nDocID,0,FONT_Book);
-	Doc_PrintLine(nDocID,0,"     Nákres na výrobu plátové zbroje ze Stewarku");
-	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Tohle je nákres pro všechny schopné kováře města Stewark,");
-    Doc_PrintLines(nDocID,0,"máte za úkol vyrobit nové kusy zbroje kterou bude");
-    Doc_PrintLines(nDocID,0,"vybavena stráž města.");
-    Doc_PrintLines(nDocID,0,"Suroviny dostanete brzy, na výrobu jedné zbroje budete potřebovat:");
-    Doc_PrintLines(nDocID,0,"-6 Kusů surového železa");
-    Doc_PrintLines(nDocID,0,"-3 Kůže Warga");
-    Doc_PrintLines(nDocID,0,"Návod k výrobě je na druhé straně tohoto nákresu.");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Pokud budete přistiženi jak prodáváte suroviny");
-	Doc_PrintLines(nDocID,0,"nebo nákres, budete tvrdě potrestáni.");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Rozkaz vydal velitel městské stráže Cenric");
-	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"");
+	Doc_PrintLine(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line1);
+	Doc_PrintLine(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line2);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line3);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line4);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line5);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line5);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line6);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line7);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line8);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line9);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line10);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line11);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line12);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line13);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line14);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line15);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line16);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line17);
+	Doc_PrintLines(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line18);
+	Doc_PrintLine(nDocID,0,Patch_AE_Use_Plan_StewarkArmor__line19);
 	Doc_Show(nDocID);
 };

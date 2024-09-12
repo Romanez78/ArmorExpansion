@@ -28,6 +28,16 @@ func void Ninja_ArmorExpansion_Menu() {
     HookDaedalusFuncS("UnEquip_ItBE_Addon_MIL_01", "Patch_AE_UnEquip_ItBE_Addon_MIL_01");
     HookDaedalusFuncS("Equip_ItBE_Addon_SLD_01",   "Patch_AE_Equip_ItBE_Addon_SLD_01");
     HookDaedalusFuncS("UnEquip_ItBE_Addon_SLD_01", "Patch_AE_UnEquip_ItBE_Addon_SLD_01");
+
+    // Localization
+    const int loc = 0; loc = Patch_AE_GuessLocalization();
+
+    if (loc == Patch_AE_Lang_EN) {
+        Patch_AE_LocalizeEnglish();
+    } else if (loc == Patch_AE_Lang_DE) {
+        Patch_AE_LocalizeEnglish(); // Just for testing
+    };
+    // Else: keep Czech
 };
 
 
