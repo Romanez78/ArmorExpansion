@@ -1,3 +1,9 @@
+/*
+ * The Dialogs are not very compatible with other mods, because they requires a lot of functions and items, that might
+ * not exist if a mod has removed them. This will result in ugly crashes and parser errors (and crying players).
+ * You can look in the GitHub repository in the file ".validator.yml" to see all the symbols that will make problems.
+ */
+
 // *********************************************************
 // 		  				      My Changes
 // *********************************************************
