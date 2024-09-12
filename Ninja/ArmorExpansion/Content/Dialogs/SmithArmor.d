@@ -38,7 +38,7 @@ const int Patch_AE_MOBSI_SmithWeapon = 102;
 
 /*
  *  instance `ITAR_PAL_ST`
- *      Description: in `Use_Plan_StewarkArmor` called by `ItWr_BluePrint_StewarkArmor` [IT_ARMOREXPANSION.D]
+ *      Description: in `Patch_AE_Use_Plan_StewarkArmor` called by `Patch_AE_ItWr_BluePrint_StewarkArmor` [IT_ARMOREXPANSION.D]
  */
 const int Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot = 6;
 const int Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItAt_WargFur = 3;
@@ -247,7 +247,7 @@ FUNC INT Patch_AE_PC_ITAR_PAL_ST_Condition()
 	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
     {
         // If has a blueprint
-        if (0 < Npc_HasItems(hero, ItWr_BluePrint_StewarkArmor))
+        if (0 < Npc_HasItems(hero, Patch_AE_ItWr_BluePrint_StewarkArmor))
         {
             return true;
         };

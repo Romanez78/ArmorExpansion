@@ -23,7 +23,7 @@ instance Patch_AE_DeadTreasureHunter (Npc_Default)
 	// ------ Equippte Waffen ------																	//Munition wird automatisch generiert, darf aber angegeben werden
 
 	// ------ Inventory ------
-	CreateInvItems (self, ITWR_BluePrint_StewarkArmor,1);
+	CreateInvItems (self, Patch_AE_ITWR_BluePrint_StewarkArmor,1);
 	CreateInvItems (self, ITMI_Gold,250);
 	CreateInvItems (self, ITMI_Goldplate,1);
 	CreateInvItems (self, ITMI_Silverring,2);

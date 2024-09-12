@@ -15,7 +15,41 @@ ignore-declaration:
   # This symbol has to be named that way (the routine of the NPC)
   - Rtn_Start_44989
 
-  # The following symbols can cause problems. Ideally, they should be removed/replaced or checked dynamically.
+  # The following symbols can cause problems!
+  # Ideally, they should be removed/replaced or checked dynamically!
+
+  # Startup.d
+  - B_KillNpc
+
+  # IT_Belts.d
+  - BA_BONUS01
+
+  # IT_ArmorExpansion.d
+  - ATR_MANA
+  - ATR_MANA_MAX
+  - ATR_DEXTERITY
+  - NPC_TALENT_1H
+  - NPC_TALENT_2H
+  - NPC_TALENT_CROSSBOW
+  - NPC_TALENT_BOW
+  - ITEM_KAT_ARMOR
+  - WEAR_TORSO
+  - MAT_METAL
+  - MAT_LEATHER
+  - PROT_EDGE
+  - PROT_BLUNT
+  - PROT_POINT
+  - PROT_FIRE
+  - PROT_MAGIC
+  - NAME_Prot_Edge
+  - NAME_Prot_Point
+  - NAME_Prot_Fire
+  - NAME_Prot_Magic
+  - NAME_Value
+  - MIL01_Equipped
+  - SLD01_Equipped
+  - VALUE_ITAR_PAL_H
+  - VALUE_ITAR_PIR_H_Addon
 
   # DeadTreasureHunter.d
   - Npc_Default
@@ -23,7 +57,6 @@ ignore-declaration:
   - NPCTYPE_AMBIENT
   - B_SetAttributesToChapter
   - FAI_HUMAN_STRONG
-  - ITWR_BluePrint_StewarkArmor
   - ITMI_Gold
   - ITMI_Goldplate
   - ITMI_Silverring
@@ -46,9 +79,6 @@ ignore-declaration:
   - B_GiveNpcTalents
   - B_SetFightSkills
   - TA_Stand_WP
-
-  # Startup.d
-  - B_KillNpc
 
   # DIA_ArmorExpansion.d
   - B_GiveInvItems

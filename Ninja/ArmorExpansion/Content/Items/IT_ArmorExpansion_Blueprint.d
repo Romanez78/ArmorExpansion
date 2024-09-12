@@ -1,7 +1,7 @@
 // ********************************
 // Stewark Armor Blueprint
 // ********************************
-instance ItWr_BluePrint_StewarkArmor(C_Item)
+instance Patch_AE_ItWr_BluePrint_StewarkArmor(C_Item)
 {
 	name = "Nákres na výrobu plátové zbroje ze Stewarku";
 
@@ -13,13 +13,13 @@ instance ItWr_BluePrint_StewarkArmor(C_Item)
 	visual = "ItWr_Scroll_01.3DS";
 	material = MAT_LEATHER;
 
-	on_state[0] = Use_Plan_StewarkArmor;
+	on_state[0] = Patch_AE_Use_Plan_StewarkArmor;
 
 	scemeName = "MAP";
 
 	description = name;
 };
-func void Use_Plan_StewarkArmor()
+func void Patch_AE_Use_Plan_StewarkArmor()
 {
 	var int nDocID;
 	nDocID = Doc_Create();
@@ -50,4 +50,4 @@ func void Use_Plan_StewarkArmor()
 	Doc_PrintLines(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_Show(nDocID);
-};  
+};

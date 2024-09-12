@@ -14,7 +14,8 @@ func void Patch_AE_ArmorChanging_Head_HumHeadBald(var C_NPC slf)
     {
         Patch_AE_ArmorChanging_Head_Current_name = "Hum_Head_Bald";
 
-        MEM_WriteString(MEM_InstToPtr(slf)+1948, Patch_AE_ArmorChanging_Head_Current_name);
+        var oCNpc npc; npc = Hlp_GetNpc(slf);
+        npc.head_visualName = Patch_AE_ArmorChanging_Head_Current_name;
     };
 };
 
@@ -24,7 +25,8 @@ func void Patch_AE_ArmorChanging_Head_Original(var C_NPC slf)
     {
         Patch_AE_ArmorChanging_Head_Current_name = "Hum_Head_Pony";
 
-        MEM_WriteString(MEM_InstToPtr(slf)+1948, Patch_AE_ArmorChanging_Head_Current_name);
+        var oCNpc npc; npc = Hlp_GetNpc(slf);
+        npc.head_visualName = Patch_AE_ArmorChanging_Head_Current_name;
     };
 };
 
