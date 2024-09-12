@@ -1,21 +1,21 @@
 func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
 {
+	// First call the original function.
+	// This is important to ensure that any quest-related changes of a mod are still properly executed.
+	PassArgumentN(slf);
+	PassArgumentN(oth);
+	ContinueCall();
+	var int hasFakeGuild;
+	hasFakeGuild = MEM_PopIntResult(); // That is the return value from "C_PlayerHasFakeGuild".
+
+	// If the player has does not have a fake guild according to the game/mod, there is nothing to extend.
+	if (!hasFakeGuild) {
+		return FALSE;
+	};
+
+	// But otherwise, correct any false positives with the new armors:
+
 	var C_Item itm; itm = Npc_GetEquippedArmor(oth);
-
-	if (slf.aivar[AIV_IgnoresArmor] == TRUE)
-	{
-		return false;
-	};
-
-	if (slf.aivar[aiv_IgnoresFakeGuild] == TRUE)
-	{
-		return false;
-	};
-
-	if (C_NpcIsGateGuard(self) == TRUE)
-	{
-		return false;
-	};
 
     // Check, that player has an proper armor from the patch.
     var int HasProperArmorFromPatch;
@@ -85,9 +85,9 @@ func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
     if (true == HasProperArmorFromPatch)
     {
         return false;
+    }
+    else
+    {
+        return true;
     };
-
-    PassArgumentN(slf);
-    PassArgumentN(oth);
-    ContinueCall();
 };

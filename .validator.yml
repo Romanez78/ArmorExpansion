@@ -4,5 +4,10 @@
 prefix:
   - Patch_AE
 ignore-declaration:
+  - GIL_NONE
+  - GIL_MIL
+  - GIL_PAL
+  - GIL_SLD
+  - GIL_DJG
   - ITAR_MIL_M
 ignore-resource:
