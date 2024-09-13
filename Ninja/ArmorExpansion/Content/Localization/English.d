@@ -62,6 +62,11 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_TEXT_ArcheryBonus5 = "+5% Archery Bonus";
     Patch_AE_TEXT_TwoHandedBonus5 = "+5% Two-Handed Bonus";
     Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 Dexterity Bonus, +10% One-handed Bonus";
+    
+    // Alerts: The constants used to create an alert (print on a screen) about missing ingredient(s) or an forged armor.
+    Patch_AE_PRINT_ProdItemsMissing__SUBSTR_1 = "Missing: ";
+    Patch_AE_PRINT_ProdItemsMissing__SUBSTR_2 = " x";
+    Patch_AE_PRINT_ForgeSuccess = " forged!";
 
     // ==============
     //    DIALOGS
@@ -692,5 +697,54 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_EN";
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_EN";
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_EN";
+    
+    // ----
+    // Hero
+    // ----
+    Patch_AE_PC_FORGE_ARMOR_desc = "Forge the Weapon";
+    Patch_AE_PC_ITAR_PAL_ST_desc = "Forge Stewark Canvas Armour";
+    Patch_AE_PC_ITAR_PAL_ANH_desc = "Remove Helm from Enriched Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_AFH_desc = "Lower the visor of the Enriched Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_AFH_NH_desc = "Lower the visor of the Enriched Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_ANH_FH_desc = "Remove the Helm of the Enriched Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_A_FH_desc = "Dump the visor of the Enriched Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_A_NH_desc = "Dump the visor of the Enriched Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_FNH_desc = "Remove Helm from repaired paladin armor";
+    Patch_AE_PC_ITAR_PAL_FFH_desc = "Lower the visor of the repaired paladin armor";
+    Patch_AE_PC_ITAR_PAL_FFH_NH_desc = "Lower the visor of the repaired paladin armor";
+    Patch_AE_PC_ITAR_PAL_fNH_FH_desc = "Remove Helmet from repaired paladin armor";
+    Patch_AE_PC_ITAR_PAL_F_FH_desc = "Dump the visor of the repaired paladin armor";
+    Patch_AE_PC_ITAR_PAL_F_NH_desc = "Dump the visor of the Enriched Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_RNH_desc = "Remove Helm from Rusted Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_RFH_desc = "Lower the visor of the Rusted Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_RFH_NH_desc = "Lower the visor of the Rusted Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_RNH_FH_desc = "Remove the Helmet of the Rusty Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_R_FH_desc = "Dump the visor of the Rusty Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_R_NH_desc = "Dump the visor of the Rusty Paladin Armor";
+    Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Remove Helmet from Crusader Armor";
+    Patch_AE_PC_ITAR_nh_crusader_desc = "Return Helmet to Crusader Armor";
+
 
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

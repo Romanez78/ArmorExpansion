@@ -67,16 +67,6 @@ const int Patch_AE_INGREDIENTS_ITAR_PAL_rFH__itar_pal_rnh = 1;
 const int Patch_AE_INGREDIENTS_ITAR_CRUSADER_NH__itar_Crusader = 1;
 const int Patch_AE_INGREDIENTS_ITAR_CRUSADER__itar_pal_Crusader_NH = 1;
 
-/*
- *  [CONSTANTS]
- *   - [ALERTS]
- *
- *  The constants used to create an alert (print on a screen) about missing ingredient(s) or an forged armor.
- */
-const string Patch_AE_PRINT_ProdItemsMissing__SUBSTR_1 = "Chybí: ";
-const string Patch_AE_PRINT_ProdItemsMissing__SUBSTR_2 = " x";
-const string Patch_AE_PRINT_ForgeSuccess = " vyrobeno!";
-
 
 /*
  *  [FUNCTIONS & INSTANCES]
@@ -150,7 +140,7 @@ instance Patch_AE_PC_FORGE_ARMOR(C_INFO)
 	condition		= Patch_AE_PC_FORGE_ARMOR_Condition;
 	information		= Patch_AE_PC_FORGE_ARMOR_Info;
 	permanent		= true;
-	description		= "Vykovat Zbroj";
+	description		= Patch_AE_PC_FORGE_ARMOR_desc;
 };
 func int Patch_AE_PC_FORGE_ARMOR_Condition()
 {
@@ -240,7 +230,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_ST (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_ST_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_ST_Info;
 	permanent		= true;
-    description     = "Forge Stewarkská Plátová Zbroj";
+    description     = Patch_AE_PC_ITAR_PAL_ST_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_ST_Condition()
 {
@@ -330,7 +320,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_ANH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_ANH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_ANH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu z Obohacené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_ANH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_ANH_Condition()
 {
@@ -400,7 +390,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_AFH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_AFH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_AFH_Info;
 	permanent		= true;
-    description     = "Sklopit hledí Obohacené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_AFH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_AFH_Condition()
 {
@@ -470,7 +460,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_AFH_NH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_AFH_NH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_AFH_NH_Info;
 	permanent		= true;
-    description     = "Sklopit hledí Obohacené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_AFH_NH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_AFH_NH_Condition()
 {
@@ -540,7 +530,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_ANH_FH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_ANH_FH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_ANH_FH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu Obohacené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_ANH_FH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_ANH_FH_Condition()
 {
@@ -610,7 +600,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_A_FH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_A_FH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_A_FH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledí Obohacené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_A_FH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_A_FH_Condition()
 {
@@ -680,7 +670,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_A_NH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_A_NH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_A_NH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledí Obohacené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_A_NH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_A_NH_Condition()
 {
@@ -750,7 +740,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_FNH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_fNH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_fNH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu z opravené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_FNH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_FNH_Condition()
 {
@@ -820,7 +810,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_FFH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_FFH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_FFH_Info;
 	permanent		= true;
-    description     = "Sklopit hledí opravené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_FFH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_FFH_Condition()
 {
@@ -890,7 +880,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_FFH_NH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_FFH_NH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_FFH_NH_Info;
 	permanent		= true;
-    description     = "Sklopit hledí opravené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_FFH_NH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_FFH_NH_Condition()
 {
@@ -960,7 +950,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_fNH_FH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_fNH_FH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_fNH_FH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu opravené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_fNH_FH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_fNH_FH_Condition()
 {
@@ -1030,7 +1020,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_F_FH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_F_FH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_F_FH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledí opravené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_F_FH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_F_FH_Condition()
 {
@@ -1100,7 +1090,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_F_NH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_F_NH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_F_NH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledí Obohacené paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_F_NH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_F_NH_Condition()
 {
@@ -1170,7 +1160,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_RNH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_RNH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_RNH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu z Rezavé paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_RNH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_RNH_Condition()
 {
@@ -1240,7 +1230,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_RFH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_RFH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_RFH_Info;
 	permanent		= true;
-    description     = "Sklopit hledí Rezavé paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_RFH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_RFH_Condition()
 {
@@ -1310,7 +1300,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_RFH_NH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_RFH_NH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_RFH_NH_Info;
 	permanent		= true;
-    description     = "Sklopit hledí Rezavé paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_RFH_NH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_RFH_NH_Condition()
 {
@@ -1380,7 +1370,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_RNH_FH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_RNH_FH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_RNH_FH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu Rezavé paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_RNH_FH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_RNH_FH_Condition()
 {
@@ -1450,7 +1440,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_R_FH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_R_FH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_R_FH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledí Rezavé paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_R_FH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_R_FH_Condition()
 {
@@ -1520,7 +1510,7 @@ INSTANCE Patch_AE_PC_ITAR_PAL_R_NH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_PAL_R_NH_Condition;
 	information		= Patch_AE_PC_ITAR_PAL_R_NH_Info;
 	permanent		= true;
-    description     = "Vyklopit hledí Rezavé paladinské zbroje";
+    description     = Patch_AE_PC_ITAR_PAL_R_NH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_PAL_R_NH_Condition()
 {
@@ -1590,7 +1580,7 @@ INSTANCE Patch_AE_PC_ITAR_CRUSADER_NH (C_INFO)
 	condition		= Patch_AE_PC_ITAR_CRUSADER_NH_Condition;
 	information		= Patch_AE_PC_ITAR_CRUSADER_NH_Info;
 	permanent		= true;
-    description     = "Odebrat Helmu ze zbroje křižáka";
+    description     = Patch_AE_PC_ITAR_CRUSADER_NH_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_CRUSADER_NH_Condition()
 {
@@ -1660,7 +1650,7 @@ INSTANCE Patch_AE_PC_ITAR_nh_crusader (C_INFO)
 	condition		= Patch_AE_PC_ITAR_nh_crusader_Condition;
 	information		= Patch_AE_PC_ITAR_nh_crusader_Info;
 	permanent		= true;
-    description     = "Vrátit helmu ke zbroji křížáka";
+    description     = Patch_AE_PC_ITAR_nh_crusader_desc;
 };
 FUNC INT Patch_AE_PC_ITAR_nh_crusader_Condition()
 {

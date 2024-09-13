@@ -64,6 +64,11 @@ const string Patch_AE_TEXT_ArcheryBonus5 = "+5% stoelecký talent"; // ITAR_PAL_
 const string Patch_AE_TEXT_TwoHandedBonus5 = "+5% obouruení talent"; // ITAR_CRUSADER_ArmorExpansion, ITAR_NH_CRUSADER_ArmorExpansion
 const string Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 bonus k obratnosti, +10% Jednoruení talent"; // ITAR_PIR_H_ArmorExpansion
 
+// Alerts: The constants used to create an alert (print on a screen) about missing ingredient(s) or an forged armor.
+const string Patch_AE_PRINT_ProdItemsMissing__SUBSTR_1 = "Chybí: ";
+const string Patch_AE_PRINT_ProdItemsMissing__SUBSTR_2 = " x";
+const string Patch_AE_PRINT_ForgeSuccess = " vyrobeno!";
+
 // ==============
 //    DIALOGS
 // ==============
@@ -670,7 +675,6 @@ const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_desc = "Nemohl by si mi opravit tuh
 const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_entry = "Mortis mi zbroj neopraví.";
 
 // Localized OU (do not change)
-
 const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_CS";
 const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_CS";
 const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_CS";
@@ -705,3 +709,29 @@ const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16 = "PATCH_AE_DIA_MORTI
 const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_CS";
 const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_CS";
 const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_CS";
+
+// ----
+// Hero
+// ----
+const string Patch_AE_PC_FORGE_ARMOR_desc = "Vykovat Zbroj";
+const string Patch_AE_PC_ITAR_PAL_ST_desc = "Forge Stewarkská Plátová Zbroj";
+const string Patch_AE_PC_ITAR_PAL_ANH_desc = "Odebrat Helmu z Obohacené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_AFH_desc = "Sklopit hledí Obohacené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_AFH_NH_desc = "Sklopit hledí Obohacené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_ANH_FH_desc = "Odebrat Helmu Obohacené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_A_FH_desc = "Vyklopit hledí Obohacené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_A_NH_desc = "Vyklopit hledí Obohacené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_FNH_desc = "Odebrat Helmu z opravené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_FFH_desc = "Sklopit hledí opravené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_FFH_NH_desc = "Sklopit hledí opravené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_fNH_FH_desc = "Odebrat Helmu opravené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_F_FH_desc = "Vyklopit hledí opravené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_F_NH_desc = "Vyklopit hledí Obohacené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_RNH_desc = "Odebrat Helmu z Rezavé paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_RFH_desc = "Sklopit hledí Rezavé paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_RFH_NH_desc = "Sklopit hledí Rezavé paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_RNH_FH_desc = "Odebrat Helmu Rezavé paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_R_FH_desc = "Vyklopit hledí Rezavé paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_R_NH_desc = "Vyklopit hledí Rezavé paladinské zbroje";
+const string Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Odebrat Helmu ze zbroje křižáka";
+const string Patch_AE_PC_ITAR_nh_crusader_desc = "Vrátit helmu ke zbroji křížáka";
