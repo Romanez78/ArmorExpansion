@@ -738,6 +738,23 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_EN";
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN";
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_EN";
-
+    
+    // ----
+    // Wolf
+    // ----
+    
+    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "I hear you make armor for scouts.";
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN"); //I hear you make armor for scouts.
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN"); //I'd like to replace the one I have now.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN"); //Sure, I just finished one. You can have it for free, for old time's sake.
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN"); //Thanks, man.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN"); //You're welcome.
+    
+    // Localized OU (do not change)
+    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN";
+    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN";
+    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN";
+    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN";
+    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN";
 };
 
