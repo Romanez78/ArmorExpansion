@@ -1,7 +1,3 @@
-//-------------------------------------
-const string Patch_AE_TOPIC_MORTIS_ARMOR = "Vylepšení zbroje domobrany.";
-//-------------------------------------
-
 instance Patch_AE_DIA_MORTIS_ARMORQUESTION (C_INFO)
 {
     npc          =  MIL_314_MORTIS;
@@ -9,7 +5,7 @@ instance Patch_AE_DIA_MORTIS_ARMORQUESTION (C_INFO)
     condition    =  Patch_AE_DIA_MORTIS_ARMORQUESTION_Condition;
     information  =  Patch_AE_DIA_MORTIS_ARMORQUESTION_Info;
     permanent    =  FALSE;
-    description  =  "Nemáš pro mně nějakou lepší zbroj?";
+    description  =  Patch_AE_DIA_MORTIS_ARMORQUESTION_desc;
 };
 func int Patch_AE_DIA_MORTIS_ARMORQUESTION_Condition()
 {
@@ -20,14 +16,14 @@ func int Patch_AE_DIA_MORTIS_ARMORQUESTION_Condition()
 };
 func void Patch_AE_DIA_MORTIS_ARMORQUESTION_Info()
 {
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01"); //Nemáš pro mně nějakou lepší zbroj?
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02"); //Jedině Lord Andre ti může dát lepší zbroj.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03"); //Ale to neznamená že ti nemůžu trochu vylepšit tu co už máš, nebyl by jsi první komu jsem to dělal.
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04"); //Co to bude stát?
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05"); //Budeš si muset přinést materiál, já tu žádný na zbyt nemám.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06"); //A nějáké zlato za mojí práci.
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03);
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06);
     Log_CreateTopic(Patch_AE_TOPIC_MORTIS_ARMOR, LOG_NOTE);
-    B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, "Mortis mi může vylepšit zbroje domobrany když mu přinesu materiály a zlato.");
+    B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, Patch_AE_DIA_MORTIS_ARMORQUESTION_entry);
 };
 
 instance Patch_AE_DIA_MORTIS_MIL_LTHINGS (C_INFO)
@@ -37,7 +33,7 @@ instance Patch_AE_DIA_MORTIS_MIL_LTHINGS (C_INFO)
     condition    =  Patch_AE_DIA_MORTIS_MIL_LTHINGS_Condition;
     information  =  Patch_AE_DIA_MORTIS_MIL_LTHINGS_Info;
     permanent    =  FALSE;
-    description  =  "Chtěl bych vylepšit lehkou zbroj";
+    description  =  Patch_AE_DIA_MORTIS_MIL_LTHINGS_desc;
 };
 func int Patch_AE_DIA_MORTIS_MIL_LTHINGS_Condition()
 {
@@ -49,13 +45,13 @@ func int Patch_AE_DIA_MORTIS_MIL_LTHINGS_Condition()
 };
 func void Patch_AE_DIA_MORTIS_MIL_LTHINGS_Info()
 {
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01"); //Chtěl bych vylepšit lehkou zbroj.
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04"); //Co na to budeš potřebovat?.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06"); //Na lehkou zbroj bude stačit jeden ocelový prut a kančí kůže.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07"); //A řekněme že 200 zlatých mi bude za tu práci stačit.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08"); //A samozrejmě mi budeš muset taky přinést tu zbroj.
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09"); //Dobrá, pokusím se to sehnat.
-    B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, "Na vylepšení lehké zbroje bude Mortis potřebovat jeden ocelový prut, kančí kůži a 200 zlatých.");
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01);
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08);
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09);
+    B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, Patch_AE_DIA_MORTIS_MIL_LTHINGS_entry);
 };
 
 instance Patch_AE_DIA_MORTIS_MIL_LReforgedArmor (C_INFO)
@@ -65,7 +61,7 @@ instance Patch_AE_DIA_MORTIS_MIL_LReforgedArmor (C_INFO)
     condition    =  Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Condition;
     information  =  Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info;
     permanent    =  TRUE;
-    description  =  "Mám všechny potřebné materiály na vylepšení lehké zbroje.";
+    description  =  PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_desc;
 };
 func int Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Condition()
 {
@@ -77,7 +73,7 @@ func int Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Condition()
 };
 func void Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info()
 {
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01"); //Mám všechny potřebné materiály na vylepšení lehké zbroje.
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01);
 
     if (Npc_HasItems(other, ItAr_MIL_L) >= 0) && (Npc_HasItems(other, ItMiSwordraw) >= 1) && (Npc_HasItems(other, ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other, ItMi_Gold) >= 200)
     {
@@ -86,7 +82,7 @@ func void Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info()
         B_GiveInvItems(other, self, ItMiSwordraw, 1);
         B_GiveInvItems(other, self, ItAt_Addon_KeilerFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
-        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12"); //Dobře, dám se tedy do práce.
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12);
 
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
@@ -102,15 +98,15 @@ func void Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13"); //Hotovo.
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13);
         B_GiveInvItems(self, other, ITAR_MIL_R_ArmorExpansion, 1);
-        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14"); //Tady ji máš, docela se mi povedla řekl bych.
-        AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15"); //Díky.
-        B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Mortis mi vylepšil lehkou zbroj.");
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14);
+        AI_Output(other, self, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15);
+        B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_entry);
     }
     else
     {
-        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16"); //Vrať se až to všechno budeš mít u sebe.
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16);
     };
 };
 
@@ -121,7 +117,7 @@ instance Patch_AE_DIA_MORTIS_MILITIA_MediumHUH (C_INFO)
     condition    =  Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Condition;
     information  =  Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Info;
     permanent    =  FALSE;
-    description  =  "Chtěl bych vylepšit střední zbroj";
+    description  =  PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_desc;
 };
 func int Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Condition()
 {
@@ -133,13 +129,13 @@ func int Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Condition()
 };
 func void Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Info()
 {
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01"); //Chtěl bych vylepšit střední zbroj.
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03"); //Co na to budeš potřebovat?.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04"); //Na střední zbroj si budeš muset přinést o něco víc.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05"); //dva ocelové pruty a kůži z Warga.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06"); //Budu za tu práci chtít 600 zlatých.
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08"); //Dobrá, pokusím se to sehnat.
-    B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, "Na vylepšení střední zbroje bude Mortis potřebovat dva ocelové pruty, kůži z Warga a 600 zlatých.");
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01);
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06);
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08);
+    B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_entry);
 };
 
 //-------------------------------------
@@ -152,7 +148,7 @@ instance Patch_AE_DIA_MORTIS_MILITIA_MediumArmor (C_INFO)
     condition    =  Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Condition;
     information  =  Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info;
     permanent    =  TRUE;
-    description  =  "Mám všechny potřebné materiály na vylepšení střední zbroje.";
+    description  =  PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_desc;
 };
 func int Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Condition()
 {
@@ -168,7 +164,7 @@ func int Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Condition()
 };
 func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info()
 {
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01"); //Mám všechny potřebné materiály na vylepšení střední zbroje.
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01);
 
     if (Npc_HasItems(other, ItAr_MIL_M) > 0)
     && (Npc_HasItems(other, ItMiSwordraw) >= 2)
@@ -180,8 +176,8 @@ func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info()
         B_GiveInvItems(other, self, ItMiSwordraw, 2);
         B_GiveInvItems(other, self, ItAt_wargfur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 600);
-        AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10"); //Tady to je.
-        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11"); //Dobře, dám se tedy do práce.
+        AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10);
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11);
 
         B_LookAtNpc(other, self);
         AI_UseMob(self, "BSFIRE", 1);
@@ -197,15 +193,15 @@ func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info()
         B_TurnToNpc(other, self);
         B_TurnToNpc(self, other);
 
-        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12"); //Hotovo.
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12);
         Patch_AE_MORTIS_MILITIA_MediumArmorBought = B_GiveInvItems(self, other, ITAR_MIL_Med2_ARMOREXPANSION, 1);
-        AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13"); //Tady ji máš, docela se mi povedla řekl bych.
-        AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14"); //Díky.
-        B_LogEntry (Patch_AE_TOPIC_MORTIS_ARMOR,"Mortis mi vylepšil střední zbroj.");
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13);
+        AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14);
+        B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR,PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_entry);
     }
     else
     {
-        AI_Output(self, other, "PATCH_AE_DIA_PATCH_ARMOREXPANSION_MORTIS_MEDIUMARMOR_13_16"); //Vrať se až to všechno budeš mít u sebe.
+        AI_Output(self, other, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16);
     };
 };
 
@@ -216,7 +212,7 @@ instance Patch_AE_DIA_MORTIS_PAL_REFORGE (C_INFO)
     condition    =  Patch_AE_DIA_MORTIS_PAL_REFORGE_Condition;
     information  =  Patch_AE_DIA_MORTIS_PAL_REFORGE_Info;
     permanent    =  FALSE;
-    description  =  "Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
+    description  =  PATCH_AE_DIA_MORTIS_PAL_REFORGE_desc;
 };
 func int Patch_AE_DIA_MORTIS_PAL_REFORGE_Condition()
 {
@@ -228,8 +224,8 @@ func int Patch_AE_DIA_MORTIS_PAL_REFORGE_Condition()
 func void Patch_AE_DIA_MORTIS_PAL_REFORGE_Info()
 {
     B_GivePlayerXP(10);
-    AI_Output(other, self, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01"); //Nemohl, nemám na to čas ani zkušenosti.
-    AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02"); //Budeš si muset najít jiného kováře.
-    B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, "Mortis mi zbroj neopraví.");
+    AI_Output(other, self, PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01);
+    AI_Output(self, other, PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02);
+    B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, PATCH_AE_DIA_MORTIS_PAL_REFORGE_entry);
 };

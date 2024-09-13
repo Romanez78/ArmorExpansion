@@ -610,3 +610,98 @@ const string PATCH_AE_DIA_MILTEN_LORDRMOR_08_03 = "PATCH_AE_DIA_MILTEN_LORDRMOR_
 const string PATCH_AE_DIA_MILTEN_LORDRMOR_15_04 = "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_CS";
 const string PATCH_AE_DIA_MILTEN_LORDRMOR_08_05 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_CS";
 const string PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06 = "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_CS";
+
+// ------
+// Mortis
+// ------
+
+const string Patch_AE_TOPIC_MORTIS_ARMOR = "Vylepšení zbroje domobrany.";
+
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_desc = "Nemáš pro mně nějakou lepší zbroj?";
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_CS"); //Nemáš pro mně nějakou lepší zbroj?
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_CS"); //Jedině Lord Andre ti může dát lepší zbroj.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_CS"); //Ale to neznamená že ti nemůžu trochu vylepšit tu co už máš, nebyl by jsi první komu jsem to dělal.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_CS"); //Co to bude stát?
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_CS"); //Budeš si muset přinést materiál, já tu žádný na zbyt nemám.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_CS"); //A nějáké zlato za mojí práci.
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_entry = "Mortis mi může vylepšit zbroje domobrany když mu přinesu materiály a zlato.";
+
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_desc = "Chtěl bych vylepšit lehkou zbroj";
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_CS"); //Chtěl bych vylepšit lehkou zbroj.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_CS"); //Co na to budeš potřebovat?.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_CS"); //Na lehkou zbroj bude stačit jeden ocelový prut a kančí kůže.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_CS"); //A řekněme že 200 zlatých mi bude za tu práci stačit.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_CS"); //A samozrejmě mi budeš muset taky přinést tu zbroj.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_CS"); //Dobrá, pokusím se to sehnat.
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_entry = "Na vylepšení lehké zbroje bude Mortis potřebovat jeden ocelový prut, kančí kůži a 200 zlatých.";
+
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_desc = "Mám všechny potřebné materiály na vylepšení lehké zbroje.";
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_CS"); //Mám všechny potřebné materiály na vylepšení lehké zbroje.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_CS"); //Dobře, dám se tedy do práce.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_CS"); //Hotovo.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_CS"); //Tady ji máš, docela se mi povedla řekl bych.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_CS"); //Díky.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_CS"); //Vrať se až to všechno budeš mít u sebe.
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_entry = "Mortis mi vylepšil lehkou zbroj.";
+
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_desc = "Chtěl bych vylepšit střední zbroj";
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_CS"); //Chtěl bych vylepšit střední zbroj.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_CS"); //Co na to budeš potřebovat?.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_CS"); //Na střední zbroj si budeš muset přinést o něco víc.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_CS"); //dva ocelové pruty a kůži z Warga.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_CS"); //Budu za tu práci chtít 600 zlatých.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_CS"); //Dobrá, pokusím se to sehnat.
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_entry = "Na vylepšení střední zbroje bude Mortis potřebovat dva ocelové pruty, kůži z Warga a 600 zlatých.";
+
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_desc = "Mám všechny potřebné materiály na vylepšení střední zbroje.";
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_CS"); //Mám všechny potřebné materiály na vylepšení střední zbroje.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_CS"); //Tady to je.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_CS"); //Dobře, dám se tedy do práce.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_CS"); //Hotovo.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_CS"); //Tady ji máš, docela se mi povedla řekl bych.
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_CS"); //Díky.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_CS"); //Vrať se až to všechno budeš mít u sebe.
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_entry = "Mortis mi vylepšil střední zbroj.";
+
+const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_desc = "Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
+// AI_Output(other, self, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_CS"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_CS"); //Nemohl, nemám na to čas ani zkušenosti.
+// AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_CS"); //Budeš si muset najít jiného kováře.
+const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_entry = "Mortis mi zbroj neopraví.";
+
+// Localized OU (do not change)
+
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_CS";
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_CS";
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_CS";
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_CS";
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_CS";
+const string PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_CS";
+const string PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_CS";
+const string PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_CS";
+const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_CS";
+const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_CS";
+const string PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_CS";

@@ -532,7 +532,7 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_DIA_MILTEN_PALADINARMOR_desc = "I need your help.";
     // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_EN"); //I need your help.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_EN"); //What's going on?
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_EN");    //I need to restore the magical powers of this armor, could you do that for me?
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_EN"); //I need to restore the magical powers of this armor, could you do that for me?
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_EN"); //Let me see it.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_EN"); //Wow, I didn't see that coming.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_EN"); //It's the kind of armor Myrtanian paladins wear to bless the monastery in Nordmar.
@@ -599,6 +599,98 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_MILTEN_LORDRMOR_08_05 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_EN";
     PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06 = "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_EN";
 
+    // ------
+    // Mortis
+    // ------
+    
+    Patch_AE_TOPIC_MORTIS_ARMOR = "Improvements to the militia armour.";
+    
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_desc = "Don't you have any better armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_EN"); //Do you have any better armor for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_EN"); //Only Lord Andre can give you better armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_EN"); //But that doesn't mean I can't upgrade the one you already have. You wouldn't be the first person I've done that to.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_EN"); //What will it cost?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_EN"); //You'll have to bring materials, I don't have any left.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_EN"); //And some gold for my work.
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_entry = "Mortis can upgrade my militia armour if I bring him materials and gold.";
+    
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_desc = "I'd like to upgrade the light armor";
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_EN"); //I'd like to upgrade the light armor.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_EN"); //What do you need for that?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_EN"); //For light armor, one steel rod and boarskin will suffice.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_EN"); //And let's say 200 gold will do the job.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_EN"); //And of course, you'll have to bring me the armor.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_EN"); //All right, I'll try to get it.
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_entry = "To upgrade his light armour Mortis will need one steel rod, a boar skin and 200 gold coins.";
+    
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_desc = "I have all the materials I need to upgrade the light armor.";
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_EN"); //I have all the materials I need to upgrade the light armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_EN"); //All right, I'll get to work.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_EN"); //I'm done.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_EN"); //There you go, I think I've done a pretty good job.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_EN"); //Thank you.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_EN"); //Come back when you've got it all.
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_entry = "Mortis upgraded my light armor.";
+    
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_desc = "I'd like to upgrade my medium armor";
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_EN"); //I'd like to upgrade my medium armor.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_EN"); //What do you need for that?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_EN"); //You'll need to bring a little more for the medium armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_EN"); //two steel bars and a Wargo skin.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_EN"); //I'll charge 600 gold for the job.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_EN"); //All right, I'll try to get it.
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_entry = "To upgrade the medium armour Mortis will need two steel bars, a Wargo skin and 600 gold.";
+    
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_desc = "I have all the materials I need to upgrade my medium armor.";
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_EN"); //I've got all the materials I need to upgrade my medium armor.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_EN"); //Here you go.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_EN"); //Okay, I'll get to work.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_EN"); //I'm done.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_EN"); //There you go, I think I've done a pretty good job.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_EN"); //Thank you.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_EN"); //Come back when you've got it all with you.
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_entry = "Mortis upgraded my medium armor.";
+    
+    PATCH_AE_DIA_MORTIS_PAL_REFORGE_desc = "Could you fix this rusty paladin armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_EN"); //No, I don't have the time or the experience.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_EN"); //You'll have to find another blacksmith.
+    PATCH_AE_DIA_MORTIS_PAL_REFORGE_entry = "Mortis will not repair my armor.";
+    
+    // Localized OU (do not change)
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_EN";
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_EN";
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_EN";
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_EN";
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_EN";
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09 = "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_EN";
+    PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16 = "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_EN";
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16 = "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_EN";
+    PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_EN";
+    PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_EN";
+    PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_EN";
 
 };
-
