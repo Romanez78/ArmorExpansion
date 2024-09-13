@@ -510,8 +510,25 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_EN";
     PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_EN";
     PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_EN";
+    
+    // ------
+    // Matteo
+    // ------
+    
+    Patch_AE_DIA_Matteo_GAMBESON_desc = "Buy Hunting Gambeson (350 gold). 20/20/20 bonus for ranged weapons.";
+    // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN"); //Okay, give me the armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN"); //You'll like it.
+    // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN"); //The armor's worth its weight in gold, so come back when you have enough gold.
+    
+    // Localized OU (do not change)
+    PATCH_AE_DIA_MATTEO_GAMBESON_15_00 = "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN";
+    PATCH_AE_DIA_MATTEO_GAMBESON_09_01 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN";
+    PATCH_AE_DIA_MATTEO_GAMBESON_09_02 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN";
 
 };
+
+
+
 
 
 

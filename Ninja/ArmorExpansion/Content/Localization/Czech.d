@@ -522,3 +522,17 @@ const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08 = "PATCH_AE_DIA_MARTIN_ARCPA
 const string PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_CS";
 const string PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_CS";
 const string PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_CS";
+
+// ------
+// Matteo
+// ------
+
+const string Patch_AE_DIA_Matteo_GAMBESON_desc = "Koupit Lovecký Gambeson (350 zlatých). 20/20/20 bonus pro zbraně na dálku.";
+// AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_CS"); //Dobře, dej mi tu zbroj.
+// AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_CS"); //Bude se ti líbit.
+// AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_CS"); //Ta zbroj má svojí cenu - a taky za ní stojí takže se vrať až budeš mít dost zlata.
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_MATTEO_GAMBESON_15_00 = "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_CS";
+const string PATCH_AE_DIA_MATTEO_GAMBESON_09_01 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_CS";
+const string PATCH_AE_DIA_MATTEO_GAMBESON_09_02 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_CS";
