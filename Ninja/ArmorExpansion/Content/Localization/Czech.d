@@ -355,3 +355,84 @@ const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02 = "PATCH_AE_DIA_LORD_HAGEN_C
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_CS";
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_CS";
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_CS";
+
+// ------
+// Harad
+// ------
+
+const string Patch_AE_DIA_HARAD_PAL_SHOW_desc = "Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_CS"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_CS"); //Ukaž mi ji.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_CS"); //Už je to dlouho co jsem takovou zbroj viděl.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_CS"); //Jsou kované z jiné slitiny kovu a magické rudy než ostatní a pak jsou požehnány mágy z kláštera v Nordmaru
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_CS"); //Rez nepronikla moc hluboko, nebude moc těžké ji opravit.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_CS"); //Samozřejmě pokud budu mít potřebné materiály.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_CS"); //Kde si ji sehnal?
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_CS"); //Prodal mi ji Martin, válela se mezi paladinským vybavením tak jsem ji chtěl použít.
+const string Patch_AE_DIA_HARAD_PAL_SHOW_entry = "Harad souhlasil že mi zbroj opraví.";
+
+const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_desc = "Takže, co budeš na opravu zbroje potřebovat?";
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_CS"); //Takže, co budeš na opravu zbroje potřebovat?
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_CS"); //Hmm, nech mně se zamyslet
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_CS"); //Několik ocelových prutů, 6 by mělo stačit.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_CS"); //3 Hrudky magické oceli.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_CS"); //Co budeš za svou práci chtít?
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_CS"); //Nic. Bude mi potěšením pracovat na takovém kousku.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_CS"); //Dobrá, pokusím se to všechno sehnat.
+const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Na opravu zbroje bude Harad potřebovat 6 ocelových prutů a tři hrudky rudy.";
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_CS");//Tady je ta zbroj.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_CS"); //A tady potřebné materiály.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_CS"); //Dobrá, dám se do práce.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_CS"); //Hotovo.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_CS"); //Tady je, Povedlo se mi ji opravit.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_CS"); //Ale nedokázal jsem ji navrátit její magickou moc.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_CS"); //Na to budeš potřebovat zkušeného mága ohně, který je ochotný pro tebe zbroj posvětit.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_CS"); //Díky.
+const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry2 = "Harad mi opravil paladinskou zbroj, ale nepodařilo se mu navrátit její magickou moc. Budu pro to muset najít ochotného mága ohně, jeden takový mně napadá.";
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_CS"); //Přijď až to všechno seženeš.
+
+const string Patch_AE_DIA_HARAD_END_MAKE_desc = "Nemohl by si mi překovat moji zbroj paladina?";
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_1_CS"); //Nemohl by si mi překovat moji zbroj paladina?
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_2_CS"); //Určitě, ale nevím co by se ti na ní nelíbilo.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_3_CS"); //Používám zbraně na dálku, tak bych ji chtěl odlehčit.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_4_CS"); //To by nemělo být těžké, určitě bych to zvládl.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_5_CS"); //Co za to budeš chtít?
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_6_CS"); //Nic, službu pro paladina vykonám zadarmo.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_7_CS"); //Tady ji máš v tom případě.
+// AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_8_CS"); //Hotovo, nebylo to nic těžkého. Tady je.
+// AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_9_CS"); //Díky!
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_4_1 = "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_CS";
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_01 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_CS";
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_02 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_CS";
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_03 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_CS";
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_04 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_CS";
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_05 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_CS";
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_06 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_CS";
+const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_07 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_CS";
+const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_1 = "PATCH_AE_DIA_HARAD_END_MAKE_1_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_2 = "PATCH_AE_DIA_HARAD_END_MAKE_2_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_3 = "PATCH_AE_DIA_HARAD_END_MAKE_3_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_4 = "PATCH_AE_DIA_HARAD_END_MAKE_4_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_5 = "PATCH_AE_DIA_HARAD_END_MAKE_5_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_6 = "PATCH_AE_DIA_HARAD_END_MAKE_6_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_7 = "PATCH_AE_DIA_HARAD_END_MAKE_7_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_8 = "PATCH_AE_DIA_HARAD_END_MAKE_8_CS";
+const string PATCH_AE_DIA_HARAD_END_MAKE_9 = "PATCH_AE_DIA_HARAD_END_MAKE_9_CS";

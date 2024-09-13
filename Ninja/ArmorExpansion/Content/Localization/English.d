@@ -345,4 +345,85 @@ func void Patch_AE_LocalizeEnglish() {
     const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_EN";
     const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_EN";
 
+    // ------
+    // Harad
+    // ------
+
+    const string Patch_AE_DIA_HARAD_PAL_SHOW_desc = "Could you fix this rusty paladin armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_EN"); //Could you fix this rusty paladin armor for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_EN"); //Let me see it.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_EN"); //It's been a long time since I've seen armor like this.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_EN"); //They are forged from a different alloy of metal and magical ore than the others, and then blessed by the mages of the Nordmar Monastery.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_EN"); //The rust hasn't penetrated very deeply, it won't be too hard to repair.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_EN"); //If I have the materials, of course.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_EN"); //Where did you get it?
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_EN"); //Martin sold it to me, it was lying around amongst the paladin equipment so I wanted to use it.
+    const string Patch_AE_DIA_HARAD_PAL_SHOW_entry = "Harad agreed to repair my armor.";
+
+    const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_desc = "So, what are you gonna need to repair your armor?";
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_EN"); //So, what are you gonna need to repair your armor?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_EN"); //Hmm, let me think.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_EN"); //A few steel rods, six should do it.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_EN"); //3 lumps of magical steel.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_EN"); //What do you want for your work?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_EN"); //Nothing. It would be a pleasure to work on a piece like this.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_EN"); //All right, I'll try to get it all.
+    const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Harad will need 6 steel bars and three lumps of ore to repair the armour.";
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_EN");//Here's the armor.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_EN"); //And here are the materials.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_EN"); //All right, I'll get to work.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_EN"); //I'm done.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_EN"); //Here it is, I managed to fix it.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_EN"); //But I couldn't restore its magical powers.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_EN"); //For that, you'll need an experienced fire mage willing to consecrate the armor for you.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_EN"); //Thank you, sir.
+    const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry2 = "Harad repaired my paladin armor, but failed to restore its magical powers. I'll have to find a willing fire mage for that, I can think of one.";
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_EN"); //Come back when you've got it all.
+
+    const string Patch_AE_DIA_HARAD_END_MAKE_desc = "Could you reforge my paladin armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_1_EN"); //Could you reforge my paladin armor for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_2_EN"); //Sure, but I don't know what you wouldn't like about it.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_3_EN"); //I use ranged weapons, so I'd like to lighten it up.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_4_EN"); //It shouldn't be too hard. I'm sure I could do it.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_5_EN"); //What do you want for it?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_6_EN"); //Nothing. I'll do the paladin's service for free.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_7_EN"); //Here you go, in that case.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_8_EN"); //Done. It wasn't hard. Here you go.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_9_EN"); //Thank you.
+
+    // Localized OU (do not change)
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_4_1 = "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_EN";
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_01 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_EN";
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_02 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_EN";
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_03 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_EN";
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_04 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_EN";
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_05 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_EN";
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_06 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_EN";
+    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_07 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_EN";
+    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_1 = "PATCH_AE_DIA_HARAD_END_MAKE_1_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_2 = "PATCH_AE_DIA_HARAD_END_MAKE_2_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_3 = "PATCH_AE_DIA_HARAD_END_MAKE_3_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_4 = "PATCH_AE_DIA_HARAD_END_MAKE_4_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_5 = "PATCH_AE_DIA_HARAD_END_MAKE_5_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_6 = "PATCH_AE_DIA_HARAD_END_MAKE_6_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_7 = "PATCH_AE_DIA_HARAD_END_MAKE_7_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_8 = "PATCH_AE_DIA_HARAD_END_MAKE_8_EN";
+    const string PATCH_AE_DIA_HARAD_END_MAKE_9 = "PATCH_AE_DIA_HARAD_END_MAKE_9_EN";
+
 };
