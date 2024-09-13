@@ -426,4 +426,21 @@ func void Patch_AE_LocalizeEnglish() {
     const string PATCH_AE_DIA_HARAD_END_MAKE_8 = "PATCH_AE_DIA_HARAD_END_MAKE_8_EN";
     const string PATCH_AE_DIA_HARAD_END_MAKE_9 = "PATCH_AE_DIA_HARAD_END_MAKE_9_EN";
 
+    // ------
+    // Huno
+    // ------
+
+    const string Patch_AE_DIA_HUNO_PAL_REFORGE_desc = "ould you fix this rusty paladin armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_EN"); //I have absolutely no experience with paladin armor. There was nothing like it in the colony.
+    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_EN"); //I'm sorry, but I can't help you with this.
+    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_EN"); //You'll have to find another blacksmith.
+    const string Patch_AE_DIA_HUNO_PAL_REFORGE_entry = "Huno won't fix my armor.";
+
+    // Localized OU (do not change)
+    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_EN";
+    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_EN";
+    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_EN";
+    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_EN";
+
 };

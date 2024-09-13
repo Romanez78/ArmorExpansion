@@ -436,3 +436,20 @@ const string PATCH_AE_DIA_HARAD_END_MAKE_6 = "PATCH_AE_DIA_HARAD_END_MAKE_6_CS";
 const string PATCH_AE_DIA_HARAD_END_MAKE_7 = "PATCH_AE_DIA_HARAD_END_MAKE_7_CS";
 const string PATCH_AE_DIA_HARAD_END_MAKE_8 = "PATCH_AE_DIA_HARAD_END_MAKE_8_CS";
 const string PATCH_AE_DIA_HARAD_END_MAKE_9 = "PATCH_AE_DIA_HARAD_END_MAKE_9_CS";
+
+// ------
+// Huno
+// ------
+
+const string Patch_AE_DIA_HUNO_PAL_REFORGE_desc = "Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
+// AI_Output(other, self, "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_CS"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+// AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_CS"); //S paladinskými zbrojemi nemám vůbec žádné zkušenosti, nic takového v kolonii nebylo.
+// AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_CS"); //Promiň, ale s tímhle ti nepomůžu.
+// AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_CS"); //Budeš si muset najít jiného kováře.
+const string Patch_AE_DIA_HUNO_PAL_REFORGE_entry = "Huno mi zbroj neopraví.";
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_CS";
+const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_CS";
+const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_CS";
+const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_CS";
