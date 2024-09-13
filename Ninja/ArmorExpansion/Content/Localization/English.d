@@ -701,6 +701,7 @@ func void Patch_AE_LocalizeEnglish() {
     // ----
     // Hero
     // ----
+    
     Patch_AE_PC_FORGE_ARMOR_desc = "Forge the Weapon";
     Patch_AE_PC_ITAR_PAL_ST_desc = "Forge Stewark Canvas Armour";
     Patch_AE_PC_ITAR_PAL_ANH_desc = "Remove Helm from Enriched Paladin Armor";
@@ -724,27 +725,19 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Remove Helmet from Crusader Armor";
     Patch_AE_PC_ITAR_nh_crusader_desc = "Return Helmet to Crusader Armor";
 
+    // ------
+    // Ulthar
+    // ------
+    
+    PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "I've cleaned out all the weddings.";
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_EN"); //Wait, we wanted to support you in your fight against evil with new armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN"); //Take this armor of the Crusader Innose, I'm sure you'll use it.
+    // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_EN"); //Thank you.
+    
+    // Localized OU (do not change)
+    PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_EN";
+    PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN";
+    PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_EN";
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -735,3 +735,17 @@ const string Patch_AE_PC_ITAR_PAL_R_FH_desc = "Vyklopit hledí Rezavé paladinsk
 const string Patch_AE_PC_ITAR_PAL_R_NH_desc = "Vyklopit hledí Rezavé paladinské zbroje";
 const string Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Odebrat Helmu ze zbroje křižáka";
 const string Patch_AE_PC_ITAR_nh_crusader_desc = "Vrátit helmu ke zbroji křížáka";
+
+// ------
+// Ulthar
+// ------
+
+const string PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "Vyčistil jsem všechny svatině.";
+// AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_CS"); //Počkej, chtěli jsme tě ještě podpořit v tvém boji proti zlu novou zbrojí.
+// AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_CS"); //Vezmi si tuhle zbroj křižáka Innose, jsem si jistý že ji využiješ.
+// AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_CS"); //Děkuji.
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_CS";
+const string PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_CS";
+const string PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_CS";
