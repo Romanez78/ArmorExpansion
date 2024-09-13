@@ -292,46 +292,46 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_EN"); //Thank you.
 
     // Localized OU (do not change)
-    const string PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_EN";
-    const string PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_EN";
-    const string PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_EN";
-    const string PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06_EN";
-    const string PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_EN";
+    PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_EN";
+    PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_EN";
+    PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_EN";
+    PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06_EN";
+    PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_EN";
 
     // ------
     // Greg
     // ------
 
-    const string Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_desc = "Co takhle nějáká lepší zbroj?";
+    Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_desc = "Co takhle nÄ›jĂˇkĂˇ lepĹˇĂ­ zbroj?";
     // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_EN"); //How about some better armor?
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01_EN"); //What the hell do you think?
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02_EN"); //You knock off Raven and suddenly you're the new captain?
     // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03_EN"); //That's not what I meant. You're still the captain. I'm just worried about the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04_EN"); //All right, I can sell you one of my personal pieces.
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05_EN"); //But it'll cost you a lot. I want 2700 gold for it.
-    const string Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_entry = "I can buy a captain's armor from Greg for 2700 gold";
+    Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_entry = "I can buy a captain's armor from Greg for 2700 gold";
 
-    const string Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_desc = "Buy Captain's Cloak (75/75/75/25/15, +5% one-handed talent, +10 Dexterity, Price 2700)";
+    Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_desc = "Buy Captain's Cloak (75/75/75/25/15, +5% one-handed talent, +10 Dexterity, Price 2700)";
     // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1_EN"); //Sell me the captain's armor.
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2_EN"); //Here you go, but remember, I'm still the captain.
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3_EN"); //Come back when you have enough gold.
 
     // Localized OU (do not change)
-    const string PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1 = "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2 = "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2_EN";
-    const string PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3 = "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3_EN";
+    PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_EN";
+    PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01_EN";
+    PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02_EN";
+    PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03_EN";
+    PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04_EN";
+    PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05_EN";
+    PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1 = "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1_EN";
+    PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2 = "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2_EN";
+    PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3 = "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3_EN";
 
     // ------
     // Hagen
     // ------
 
-    const string Patch_AE_DIA_Lord_Hagen_CROSSBOW_desc = "Is there any lighter armor for me? (Replace current armor)";
+    Patch_AE_DIA_Lord_Hagen_CROSSBOW_desc = "Is there any lighter armor for me? (Replace current armor)";
     // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_EN"); //Is there any lighter armor for me?
     // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_EN"); //I prefer to use ranged weapons.
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_EN"); //I can trade you your knight's armor for a lighter version designed for crossbowmen.
@@ -339,17 +339,17 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_EN"); //Wear it with honor, knight.
 
     // Localized OU (do not change)
-    const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_EN";
-    const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_EN";
-    const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_EN";
-    const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_EN";
-    const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_EN";
+    PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_EN";
+    PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_EN";
+    PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_EN";
+    PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_EN";
+    PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_EN";
 
     // ------
     // Harad
     // ------
 
-    const string Patch_AE_DIA_HARAD_PAL_SHOW_desc = "Could you fix this rusty paladin armor for me?";
+    Patch_AE_DIA_HARAD_PAL_SHOW_desc = "Could you fix this rusty paladin armor for me?";
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_EN"); //Could you fix this rusty paladin armor for me?
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_EN"); //Let me see it.
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_EN"); //It's been a long time since I've seen armor like this.
@@ -358,9 +358,9 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_EN"); //If I have the materials, of course.
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_EN"); //Where did you get it?
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_EN"); //Martin sold it to me, it was lying around amongst the paladin equipment so I wanted to use it.
-    const string Patch_AE_DIA_HARAD_PAL_SHOW_entry = "Harad agreed to repair my armor.";
+    Patch_AE_DIA_HARAD_PAL_SHOW_entry = "Harad agreed to repair my armor.";
 
-    const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_desc = "So, what are you gonna need to repair your armor?";
+    Patch_AE_DIA_HARAD_PALADIN_REFORGE_desc = "So, what are you gonna need to repair your armor?";
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_EN"); //So, what are you gonna need to repair your armor?
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_EN"); //Hmm, let me think.
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_EN"); //A few steel rods, six should do it.
@@ -368,7 +368,7 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_EN"); //What do you want for your work?
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_EN"); //Nothing. It would be a pleasure to work on a piece like this.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_EN"); //All right, I'll try to get it all.
-    const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Harad will need 6 steel bars and three lumps of ore to repair the armour.";
+    Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Harad will need 6 steel bars and three lumps of ore to repair the armour.";
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_EN");//Here's the armor.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_EN"); //And here are the materials.
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_EN"); //All right, I'll get to work.
@@ -377,10 +377,10 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_EN"); //But I couldn't restore its magical powers.
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_EN"); //For that, you'll need an experienced fire mage willing to consecrate the armor for you.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_EN"); //Thank you, sir.
-    const string Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry2 = "Harad repaired my paladin armor, but failed to restore its magical powers. I'll have to find a willing fire mage for that, I can think of one.";
+    Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry2 = "Harad repaired my paladin armor, but failed to restore its magical powers. I'll have to find a willing fire mage for that, I can think of one.";
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_EN"); //Come back when you've got it all.
 
-    const string Patch_AE_DIA_HARAD_END_MAKE_desc = "Could you reforge my paladin armor for me?";
+    Patch_AE_DIA_HARAD_END_MAKE_desc = "Could you reforge my paladin armor for me?";
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_1_EN"); //Could you reforge my paladin armor for me?
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_END_MAKE_2_EN"); //Sure, but I don't know what you wouldn't like about it.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_3_EN"); //I use ranged weapons, so I'd like to lighten it up.
@@ -392,72 +392,88 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_END_MAKE_9_EN"); //Thank you.
 
     // Localized OU (do not change)
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_4_1 = "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_EN";
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_01 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_EN";
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_02 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_EN";
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_03 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_EN";
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_04 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_EN";
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_05 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_EN";
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_06 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_EN";
-    const string PATCH_AE_DIA_HARAD_PAL_SHOW_3_07 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_EN";
-    const string PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_1 = "PATCH_AE_DIA_HARAD_END_MAKE_1_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_2 = "PATCH_AE_DIA_HARAD_END_MAKE_2_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_3 = "PATCH_AE_DIA_HARAD_END_MAKE_3_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_4 = "PATCH_AE_DIA_HARAD_END_MAKE_4_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_5 = "PATCH_AE_DIA_HARAD_END_MAKE_5_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_6 = "PATCH_AE_DIA_HARAD_END_MAKE_6_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_7 = "PATCH_AE_DIA_HARAD_END_MAKE_7_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_8 = "PATCH_AE_DIA_HARAD_END_MAKE_8_EN";
-    const string PATCH_AE_DIA_HARAD_END_MAKE_9 = "PATCH_AE_DIA_HARAD_END_MAKE_9_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_4_1 = "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_3_01 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_3_02 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_3_03 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_3_04 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_3_05 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_3_06 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_EN";
+    PATCH_AE_DIA_HARAD_PAL_SHOW_3_07 = "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_EN";
+    PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16 = "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_1 = "PATCH_AE_DIA_HARAD_END_MAKE_1_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_2 = "PATCH_AE_DIA_HARAD_END_MAKE_2_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_3 = "PATCH_AE_DIA_HARAD_END_MAKE_3_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_4 = "PATCH_AE_DIA_HARAD_END_MAKE_4_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_5 = "PATCH_AE_DIA_HARAD_END_MAKE_5_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_6 = "PATCH_AE_DIA_HARAD_END_MAKE_6_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_7 = "PATCH_AE_DIA_HARAD_END_MAKE_7_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_8 = "PATCH_AE_DIA_HARAD_END_MAKE_8_EN";
+    PATCH_AE_DIA_HARAD_END_MAKE_9 = "PATCH_AE_DIA_HARAD_END_MAKE_9_EN";
 
     // ------
     // Huno
     // ------
 
-    const string Patch_AE_DIA_HUNO_PAL_REFORGE_desc = "ould you fix this rusty paladin armor for me?";
+    Patch_AE_DIA_HUNO_PAL_REFORGE_desc = "ould you fix this rusty paladin armor for me?";
     // AI_Output(other, self, "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
     // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_EN"); //I have absolutely no experience with paladin armor. There was nothing like it in the colony.
     // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_EN"); //I'm sorry, but I can't help you with this.
     // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_EN"); //You'll have to find another blacksmith.
-    const string Patch_AE_DIA_HUNO_PAL_REFORGE_entry = "Huno won't fix my armor.";
+    Patch_AE_DIA_HUNO_PAL_REFORGE_entry = "Huno won't fix my armor.";
 
     // Localized OU (do not change)
-    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_EN";
-    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_EN";
-    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_EN";
-    const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_EN";
+    PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_EN";
+    PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_EN";
+    PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_EN";
+    PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_EN";
 
     // ------
     // Jan
     // ------
 
-    const string Patch_AE_DIA_JAN_PAL_REFORGE_desc = "Could you fix this rusty paladin armor for me?";
+    Patch_AE_DIA_JAN_PAL_REFORGE_desc = "Could you fix this rusty paladin armor for me?";
     // AI_Output(other, self, "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
     // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_EN"); //I'm on thin ice just to work here.
     // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_EN"); //I'm not gonna risk one of your colleagues turning me in for digging through paladin stuff.
     // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_EN"); //You'll have to find another blacksmith.
-    const string Patch_AE_DIA_JAN_PAL_REFORGE_entry = "Dragonslayer Jan will not repair my armor.";
+    Patch_AE_DIA_JAN_PAL_REFORGE_entry = "Dragonslayer Jan will not repair my armor.";
 
     // Localized OU (do not change)
-    const string PATCH_AE_DIA_JAN_PAL_REFORGE_4_1 = "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_EN";
-    const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_01 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_EN";
-    const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_02 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_EN";
-    const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_03 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_EN";
+    PATCH_AE_DIA_JAN_PAL_REFORGE_4_1 = "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_EN";
+    PATCH_AE_DIA_JAN_PAL_REFORGE_3_01 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_EN";
+    PATCH_AE_DIA_JAN_PAL_REFORGE_3_02 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_EN";
+    PATCH_AE_DIA_JAN_PAL_REFORGE_3_03 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_EN";
+
+    // ------
+    // Lee
+    // ------
+
+    Patch_AE_DIA_LEE_SLD_SCOUTArmor_desc = "Is there any light armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_EN"); //Is there any light armor for me?
+    // AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_EN"); //I prefer to use ranged weapons.
+    // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_EN"); //I don't have anything like that for you, but you're not the first one who wants one.
+    // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_EN"); //Go to Wolf. I think he should have something for you.
+
+    // Localized OU (do not change)
+    PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_EN";
+    PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_EN";
+    PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_EN";
+    PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_EN";
 
 };
