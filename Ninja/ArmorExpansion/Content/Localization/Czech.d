@@ -487,3 +487,38 @@ const string PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUT
 const string PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_CS";
 const string PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_CS";
 const string PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_CS";
+
+// ------
+// Martin
+// ------
+
+const string Patch_AE_TOPIC_MARTIN_ARMOR = "Vyjímečná Paladinská zbroj";
+
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_CS"); //Slyšel jsem že si se stal paladinem.
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_CS"); //Možná bych to pro tebe měl něco zvláštního
+// AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_CS"); //O čem to mluvíš?
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_CS"); //Mám tu na skladě výjimečnou paladinskou zbroj.
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_CS"); //Slyšel jsem že tenhle typ zbroje má vysokou ochranu proti magickým útokům
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_CS"); //Ale už tu nejáký čas leží, a pobřežní počasí jí neudělalo dobře
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_CS"); //Není to ale nic co by se nedalo opravit, ty určitě na něco přijdeš.
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_CS"); //Za 2000 zlatých je tvoje.
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_entry = "Martin mi nabídl vyjímečnou zbroj paladina. Zní to jako zajímavá nabídka.";
+
+const string Patch_AE_DIA_Martin_ARKPALA_BUY_desc = "Dobře, beru tu zbroj (Obrany: Sečné 80, Bodné 80. Cena: 2000 zlatých).";
+// AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_CS"); //Dobře, beru tu zbroj.
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_CS"); //Dobře, tady ji máš.
+// AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_CS"); //Přijď až budeš mít u sebe dost zlata
+const string Patch_AE_DIA_Martin_ARKPALA_BUY_entry = "Koupil jsem si od Martina paladinskou zbroj. Je rezavá ale zkušený kovář by ji měl opravit, jenom najít nějakého kdo by byl ochotný to pro mně udělat.";
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_CS";
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_CS";
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_CS";
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_CS";
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_CS";
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_CS";
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_CS";
+const string PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_CS";
+const string PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_CS";
+const string PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_CS";
+const string PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_CS";

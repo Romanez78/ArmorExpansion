@@ -475,5 +475,51 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_EN";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_EN";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_EN";
+    
+    // ------
+    // Martin
+    // ------
+    
+    Patch_AE_TOPIC_MARTIN_ARMOR = "Exceptional Paladin Armour";
+    
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_EN"); //I heard you became a paladin.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_EN"); //I might have something special for you
+    // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_EN"); //What are you talking about?
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_EN"); //I have some exceptional paladin armor in stock here.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_EN"); //I hear this type of armor has high protection against magical attacks
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_EN"); //But it's been lying around for a while, and the coastal weather hasn't done it any good.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_EN"); //It's nothing that can't be repaired. You'll figure something out.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_EN"); //For 2000 gold, it's yours.
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_entry = "Martin offered me the exceptional armor of a paladin. Sounds like an interesting offer.";
+    
+    Patch_AE_DIA_Martin_ARKPALA_BUY_desc = "Okay, I'll take the armor (Defense: Cutting 80, Stabbing 80. Cost: 2000 gold).";
+    // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_EN"); //Okay, I'll take the armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_EN"); //Okay, here you go.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_EN"); //Come back when you have enough gold on you
+    Patch_AE_DIA_Martin_ARKPALA_BUY_entry = "I bought some paladin armor from Martin. It's rusted but a skilled smith should fix it, I just need to find someone willing to do it for me.";
+    
+    // Localized OU (do not change)
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_EN";
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_EN";
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_EN";
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_EN";
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_EN";
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_EN";
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_EN";
+    PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_EN";
+    PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_EN";
+    PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_EN";
+    PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_EN";
 
 };
+
+
+
+
+
+
+
+
+
+
+
