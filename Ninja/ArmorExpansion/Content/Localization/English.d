@@ -250,4 +250,21 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2 = "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2_EN";
     PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_3 = "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_3_EN";
 
+    // ------
+    // Carl
+    // ------
+
+    Patch_AE_DIA_CARL_PAL_REFORGE_desc = "Could you fix this rusty paladin armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_CARL_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_01_EN"); //Paladin armor?
+    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02_EN"); //I'm sorry, boy, but that's beyond me.
+    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03_EN"); //You'll have to find another blacksmith.
+    Patch_AE_DIA_CARL_PAL_REFORGE_entry = "Carl's not gonna fix my armor.";
+
+    // Localized OU (do not change)
+    PATCH_AE_DIA_CARL_PAL_REFORGE_4_1 = "PATCH_AE_DIA_CARL_PAL_REFORGE_4_1_EN";
+    PATCH_AE_DIA_CARL_PAL_REFORGE_3_01 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_01_EN";
+    PATCH_AE_DIA_CARL_PAL_REFORGE_3_02 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02_EN";
+    PATCH_AE_DIA_CARL_PAL_REFORGE_3_03 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03_EN";
+
 };
