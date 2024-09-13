@@ -443,4 +443,21 @@ func void Patch_AE_LocalizeEnglish() {
     const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_EN";
     const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_EN";
 
+    // ------
+    // Jan
+    // ------
+
+    const string Patch_AE_DIA_JAN_PAL_REFORGE_desc = "Could you fix this rusty paladin armor for me?";
+    // AI_Output(other, self, "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_EN"); //I'm on thin ice just to work here.
+    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_EN"); //I'm not gonna risk one of your colleagues turning me in for digging through paladin stuff.
+    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_EN"); //You'll have to find another blacksmith.
+    const string Patch_AE_DIA_JAN_PAL_REFORGE_entry = "Dragonslayer Jan will not repair my armor.";
+
+    // Localized OU (do not change)
+    const string PATCH_AE_DIA_JAN_PAL_REFORGE_4_1 = "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_EN";
+    const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_01 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_EN";
+    const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_02 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_EN";
+    const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_03 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_EN";
+
 };

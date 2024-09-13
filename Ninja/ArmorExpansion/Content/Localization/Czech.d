@@ -453,3 +453,20 @@ const string PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_
 const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_CS";
 const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_CS";
 const string PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03 = "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_CS";
+
+// ------
+// Jan
+// ------
+
+const string Patch_AE_DIA_JAN_PAL_REFORGE_desc = "Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?";
+// AI_Output(other, self, "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_CS"); //Nemohl by si mi opravit tuhle rezavou paladinskou zbroj?
+// AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_CS"); //Jsem na tenkém ledě jenom abych tu mohl pracovat.
+// AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_CS"); //Nehodlám riskovat že mně nějáký z tvých kolegů udá za to že se hrabu v paladinských věcech.
+// AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_CS"); //Budeš si muset najít jiného kováře.
+const string Patch_AE_DIA_JAN_PAL_REFORGE_entry = "Drakobijec Jan mi zbroj neopraví.";
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_JAN_PAL_REFORGE_4_1 = "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_CS";
+const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_01 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_CS";
+const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_02 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_CS";
+const string PATCH_AE_DIA_JAN_PAL_REFORGE_3_03 = "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_CS";
