@@ -536,3 +536,77 @@ const string Patch_AE_DIA_Matteo_GAMBESON_desc = "Koupit Lovecký Gambeson (350 
 const string PATCH_AE_DIA_MATTEO_GAMBESON_15_00 = "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_CS";
 const string PATCH_AE_DIA_MATTEO_GAMBESON_09_01 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_CS";
 const string PATCH_AE_DIA_MATTEO_GAMBESON_09_02 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_CS";
+
+// ------
+// Milten
+// ------
+
+const string Patch_AE_DIA_MILTEN_PALADINARMOR_desc = "Potřebuji tvojí pomoc.";
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_CS"); //Potřebuji tvojí pomoc.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_CS"); //O co jde?
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_CS"); //Potřeboval bych navrátit magickou moc této zbroji, nedokázal by si to pro mně udělat?
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_CS"); //Ukaž mi ji
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_CS"); //Páni, tohle jsem nečekal.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_CS"); //Takové zbroje nosí paladiny z Myrtany požehnat do klášteru v Nordmaru.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_CS"); //O rituálu požehnání jsem něco málo už slyšel, ale nemám ještě dostatek znalostí abych ho provedl.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_CS"); //Jestli se ale nepletu tak je zde v knihovně klášteru kniha která popisuje tento postup.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_CS"); //Budu potřebovat nějáký čas si tu knihu nastudovat. Mezitím by si se ale měl postarat o draky v hornickém údolí, víš jak na tom je Garondova jednotka.
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_CS"); //Jasně, uvidíme se později Miltene.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_CS"); //Hodně štěstí!
+const string Patch_AE_DIA_MILTEN_PALADINARMOR_entry = "Milten souhlasil že mi pomůže navrátit zbroji její magickou sílu, ale nejdříve si bude muset nastudovat postup rituálu. Nějáký čas mu to zabere takže mi řekl že se mám mezitím postarat o draky v hornickém údolí.";
+
+const string Patch_AE_DIA_MILTEN_PLATEARMOR_desc = "Udělal si pokrok ve svých studiích?";
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_CS"); //Udělal si pokrok ve svých studiích?
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_CS"); //Ano, dokážu říct že postupu rituálu rozumím.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_CS"); //Ale budu potřebovat pár věcí
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_CS"); //Jaké?
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_CS"); //Svitek zničení zla, ohnivé koule a 2 kamenné krystaly.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_CS"); //Jedině tak dokážu dosáhnout podobných výsledků jako při provedení rituálu v klášteru v Nordmaru
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_CS"); //Dobrá, jdu sehnat ti věci.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_CS"); //Hodně štěstí, doufám že se ti to povede.
+const string Patch_AE_DIA_MILTEN_PLATEARMOR_entry = "Milten Bude na rituál potřebovat svitek zničení zla, svitek ohnivé koule a 2 kamenné krystaly.";
+
+const string Patch_AE_DIA_MILTEN_RITUALARMOR_desc = "Mám vše co budeš potřebovat.";
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_CS"); //Mám vše co budeš potřebovat.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_CS"); //Skvěle. Můžu začít s rituálem.
+const string Patch_AE_DIA_MILTEN_RITUALARMOR_entry = "Donesl jsem Miltenovi všechno potřebné pro rituál.";
+
+const string Patch_AE_DIA_MILTEN_LORDRMOR_desc = "Super, a kdy bude rituál hotový?";
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_CS"); //Super, a kdy bude rituál hotový?
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_CS"); //Chvilku to potrvá, vrať se zítra.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_CS"); //Už jsem ho provedl, povedlo se.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_CS"); //Vše proběhlo překvapivě hladce.
+// AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_CS"); //To jsem rád, díky.
+// AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_CS"); //Nemáš za co, ať ti slouží.
+// AI_Output(self, other, "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_CS"); //NN
+const string Patch_AE_DIA_MILTEN_LORDRMOR_entry = "Miltenovi se povedlo navrátit zbroji její magickou moc.";
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_04 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_CS";
+const string PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_CS";
+const string PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_CS";
+const string PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01 = "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_CS";
+const string PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02 = "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_CS";
+const string PATCH_AE_DIA_MILTEN_LORDRMOR_15_00 = "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_CS";
+const string PATCH_AE_DIA_MILTEN_LORDRMOR_08_01 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_CS";
+const string PATCH_AE_DIA_MILTEN_LORDRMOR_08_02 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_CS";
+const string PATCH_AE_DIA_MILTEN_LORDRMOR_08_03 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_CS";
+const string PATCH_AE_DIA_MILTEN_LORDRMOR_15_04 = "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_CS";
+const string PATCH_AE_DIA_MILTEN_LORDRMOR_08_05 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_CS";
+const string PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06 = "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_CS";

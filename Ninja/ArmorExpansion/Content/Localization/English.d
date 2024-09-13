@@ -524,19 +524,81 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_MATTEO_GAMBESON_15_00 = "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN";
     PATCH_AE_DIA_MATTEO_GAMBESON_09_01 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN";
     PATCH_AE_DIA_MATTEO_GAMBESON_09_02 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN";
+    
+    // ------
+    // Milten
+    // ------
+    
+    Patch_AE_DIA_MILTEN_PALADINARMOR_desc = "I need your help.";
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_EN"); //I need your help.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_EN"); //What's going on?
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_EN");    //I need to restore the magical powers of this armor, could you do that for me?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_EN"); //Let me see it.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_EN"); //Wow, I didn't see that coming.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_EN"); //It's the kind of armor Myrtanian paladins wear to bless the monastery in Nordmar.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_EN"); //I've heard a little about the blessing ritual, but I don't have enough knowledge to perform it yet.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_EN"); //If I'm not mistaken, there is a book in the monastery's library that describes the procedure.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_EN"); //I'll need some time to study the book. In the meantime, you should take care of the dragons in the mining valley, you know how Garonda's unit is.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_EN"); //Yeah, I'll see you later, Milten.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_EN"); //Good luck!
+    Patch_AE_DIA_MILTEN_PALADINARMOR_entry = "Milten agreed to help me restore the armor to its magical power, but first he would have to study the ritual procedure. It will take him some time, so he told me to take care of the dragons in the mining valley in the meantime.";
+    
+    Patch_AE_DIA_MILTEN_PLATEARMOR_desc = "Have you made progress in your studies?";
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_EN"); //Have you made progress in your studies?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_EN"); //Yes, I can say that I understand the ritual process.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_EN"); //But I'm going to need a few things
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_EN"); //What are they?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_EN"); //A scroll of evil destruction, fireballs and two stone crystals.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_EN"); //It's the only way I'll be able to achieve results similar to the ritual at the Nordmar Monastery.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_EN"); //Okay, I'll go get those things.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_EN"); //Good luck, I hope you succeed.
+    Patch_AE_DIA_MILTEN_PLATEARMOR_entry = "Milten You will need a scroll of destruction of evil, a scroll of fireball and 2 stone crystals for the ritual.";
+    
+    Patch_AE_DIA_MILTEN_RITUALARMOR_desc = "MĂˇm vĹˇe co budeĹˇ potĹ™ebovat.";
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_EN"); //I have everything you'll need.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_EN"); //Oh, great. I can start the ritual.
+    Patch_AE_DIA_MILTEN_RITUALARMOR_entry = "I brought Milten everything he needed for the ritual.";
+    
+    Patch_AE_DIA_MILTEN_LORDRMOR_desc = "Great, and when will the ritual be complete?";
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_EN"); //Great, and when will the ritual be complete?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_EN"); //It's gonna take a while. Come back tomorrow.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_EN"); //I've already done it, it was a success.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_EN"); //Everything went surprisingly smoothly.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_EN"); //I'm glad. Thank you.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_EN"); //You're welcome. Let it serve you.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_EN"); //NN
+    Patch_AE_DIA_MILTEN_LORDRMOR_entry = "Milten managed to restore the armor to its magical powers.";
+    
+    // Localized OU (do not change)
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_04 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_EN";
+    PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_EN";
+    PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08 = "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_EN";
+    PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01 = "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_EN";
+    PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02 = "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_EN";
+    PATCH_AE_DIA_MILTEN_LORDRMOR_15_00 = "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_EN";
+    PATCH_AE_DIA_MILTEN_LORDRMOR_08_01 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_EN";
+    PATCH_AE_DIA_MILTEN_LORDRMOR_08_02 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_EN";
+    PATCH_AE_DIA_MILTEN_LORDRMOR_08_03 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_EN";
+    PATCH_AE_DIA_MILTEN_LORDRMOR_15_04 = "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_EN";
+    PATCH_AE_DIA_MILTEN_LORDRMOR_08_05 = "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_EN";
+    PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06 = "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_EN";
+
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
