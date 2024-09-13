@@ -277,3 +277,17 @@ const string PATCH_AE_DIA_CARL_PAL_REFORGE_4_1 = "PATCH_AE_DIA_CARL_PAL_REFORGE_
 const string PATCH_AE_DIA_CARL_PAL_REFORGE_3_01 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_01_CS";
 const string PATCH_AE_DIA_CARL_PAL_REFORGE_3_02 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02_CS";
 const string PATCH_AE_DIA_CARL_PAL_REFORGE_3_03 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03_CS";
+
+// ------
+// Engor
+// ------
+
+const string Patch_AE_DIA_Engor_ARCHER_KAUFEN_desc = "Koupit zbroj domobránce Kušišníka (65/65, bonus na dálku, Cena: 2300 zlatých)";
+// AI_Output(other, self, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00_CS"); //Dej mi tu zbroj.
+// AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01_CS"); //Tady ji máš, dobře tě ochrání, je to zatraceně dobrý kousek.
+// AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02_CS"); //Nejdřív mi přines to zlato.
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00 = "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00_CS";
+const string PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01 = "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01_CS";
+const string PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02 = "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02_CS";

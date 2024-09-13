@@ -267,4 +267,18 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_CARL_PAL_REFORGE_3_02 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02_EN";
     PATCH_AE_DIA_CARL_PAL_REFORGE_3_03 = "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03_EN";
 
+    // ------
+    // Engor
+    // ------
+
+    Patch_AE_DIA_Engor_ARCHER_KAUFEN_desc = "Buy Kushishnik's Home Guard Armour (65/65, distance bonus, Price: 2300 gold)";
+    // AI_Output(other, self, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00_EN"); //Give me the armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01_EN"); //Here it is, it'll protect you well, it's a damn good piece.
+    // AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02_EN"); //Bring me the gold first.
+
+    // Localized OU (do not change)
+    PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00 = "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00_EN";
+    PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01 = "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01_EN";
+    PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02 = "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02_EN";
+
 };

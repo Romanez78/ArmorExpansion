@@ -38,7 +38,7 @@ instance Patch_AE_DIA_Engor_ARCHER_KAUFEN (C_INFO)
     condition    =  Patch_AE_DIA_Engor_ARCHER_KAUFEN_Condition;
     information  =  Patch_AE_DIA_Engor_ARCHER_KAUFEN_Info;
     permanent    =  TRUE;
-    description  =  "Koupit zbroj domobránce Kušišníka (65/65, bonus na dálku, Cena: 2300 zlatých)";
+    description  =  Patch_AE_DIA_Engor_ARCHER_KAUFEN_desc;
 };
 func int Patch_AE_DIA_Engor_ARCHER_KAUFEN_Condition()
 {
@@ -53,13 +53,13 @@ func void Patch_AE_DIA_Engor_ARCHER_KAUFEN_Info()
 {
     if (B_GiveInvItems(other, self, Itmi_Gold, 2300))
     {
-        AI_Output(other, self, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00"); //Dej mi tu zbroj.
-        AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01"); //Tady ji máš, dobře tě ochrání, je to zatraceně dobrý kousek.
+        AI_Output(other, self, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00);
+        AI_Output(self, other, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01);
         B_GiveInvItems(self, other, ITAR_MIL_P_ARMOREXPANSION,1);
         DIA_Engor_RSkaufen_perm = TRUE;
     }
     else
     {
-        AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02"); //Nejdřív mi přines to zlato.
+        AI_Output(self, other, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02);
     };
 };
