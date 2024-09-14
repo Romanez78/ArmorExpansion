@@ -1,11 +1,11 @@
 func void Patch_AE_LocalizeEnglish() {
     // Blue print
-    ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Drawing for the production of Stewark plate armour";
-    Patch_AE_Use_Plan_StewarkArmor__line1 = "    Drawing for the production of Stewark plate armour";
+    ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Drawing for the production of Stewark plate armor";
+    Patch_AE_Use_Plan_StewarkArmor__line1 = "    Drawing for the production of Stewark plate armor";
     Patch_AE_Use_Plan_StewarkArmor__line2 = "";
     Patch_AE_Use_Plan_StewarkArmor__line3 = "";
     Patch_AE_Use_Plan_StewarkArmor__line4 = "This is a blueprint for all skilled blacksmiths of Stewark,";
-    Patch_AE_Use_Plan_StewarkArmor__line5 = "you are tasked with making new pieces of armour";
+    Patch_AE_Use_Plan_StewarkArmor__line5 = "you are tasked with making new pieces of armor";
     Patch_AE_Use_Plan_StewarkArmor__line5 = "to equip the city guard.";
     Patch_AE_Use_Plan_StewarkArmor__line6 = "To make one piece of armor you will need these the raw materials:";
     Patch_AE_Use_Plan_StewarkArmor__line7 = "-6 pieces of pig iron";
@@ -62,7 +62,7 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_TEXT_ArcheryBonus5 = "+5% Archery Bonus";
     Patch_AE_TEXT_TwoHandedBonus5 = "+5% Two-Handed Bonus";
     Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 Dexterity Bonus, +10% One-handed Bonus";
-    
+
     // Alerts: The constants used to create an alert (print on a screen) about missing ingredient(s) or an forged armor.
     Patch_AE_PRINT_ProdItemsMissing__SUBSTR_1 = "Missing: ";
     Patch_AE_PRINT_ProdItemsMissing__SUBSTR_2 = " x";
@@ -168,14 +168,14 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_04_EN"); //Thanks, I'll take it.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_15_9_EN"); //Here it is, may it serve you well.
 
-    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Dragon Hunter's Medium Armour: Protection: Severe 110, Stabbing 110. (12000 Gold)";
+    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Dragon Hunter's Medium Armor: Protection: Severe 110, Stabbing 110. (12000 Gold)";
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_00_EN"); //I'll buy the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_01_EN"); //Oh, great. You'll like it.
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_02_EN"); //At this price, I hope so.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_03_EN"); //You'll see it was worth the price.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_04_EN"); //You don't have enough gold.
 
-    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_desc = "Heavy Armour of the Dragon Hunter: Defence: Cutting 140, Stabbing 140 (20000 gold)";
+    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_desc = "Heavy Armor of the Dragon Hunter: Defence: Cutting 140, Stabbing 140 (20000 gold)";
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_15_00_EN"); //Give me the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_01_EN"); //This is the best armor I've ever made.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_02_EN"); //It's a true masterpiece.
@@ -276,7 +276,7 @@ func void Patch_AE_LocalizeEnglish() {
     // Engor
     // ------
 
-    Patch_AE_DIA_Engor_ARCHER_KAUFEN_desc = "Buy Kushishnik's Home Guard Armour (65/65, distance bonus, Price: 2300 gold)";
+    Patch_AE_DIA_Engor_ARCHER_KAUFEN_desc = "Buy Kushishnik's Home Guard Armor (65/65, distance bonus, Price: 2300 gold)";
     // AI_Output(other, self, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00_EN"); //Give me the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01_EN"); //Here it is, it'll protect you well, it's a damn good piece.
     // AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02_EN"); //Bring me the gold first.
@@ -373,7 +373,7 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_EN"); //What do you want for your work?
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_EN"); //Nothing. It would be a pleasure to work on a piece like this.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_EN"); //All right, I'll try to get it all.
-    Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Harad will need 6 steel bars and three lumps of ore to repair the armour.";
+    Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Harad will need 6 steel bars and three lumps of ore to repair the armor.";
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_EN");//Here's the armor.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_EN"); //And here are the materials.
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_EN"); //All right, I'll get to work.
@@ -435,7 +435,7 @@ func void Patch_AE_LocalizeEnglish() {
     // Huno
     // ------
 
-    Patch_AE_DIA_HUNO_PAL_REFORGE_desc = "ould you fix this rusty paladin armor for me?";
+    Patch_AE_DIA_HUNO_PAL_REFORGE_desc = "Could you fix this rusty paladin armor for me?";
     // AI_Output(other, self, "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
     // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_EN"); //I have absolutely no experience with paladin armor. There was nothing like it in the colony.
     // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_EN"); //I'm sorry, but I can't help you with this.
@@ -480,13 +480,13 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_EN";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_EN";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_EN";
-    
+
     // ------
     // Martin
     // ------
-    
-    Patch_AE_TOPIC_MARTIN_ARMOR = "Exceptional Paladin Armour";
-    
+
+    Patch_AE_TOPIC_MARTIN_ARMOR = "Exceptional Paladin Armor";
+
     // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_EN"); //I heard you became a paladin.
     // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_EN"); //I might have something special for you
     // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_EN"); //What are you talking about?
@@ -496,13 +496,13 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_EN"); //It's nothing that can't be repaired. You'll figure something out.
     // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_EN"); //For 2000 gold, it's yours.
     PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_entry = "Martin offered me the exceptional armor of a paladin. Sounds like an interesting offer.";
-    
+
     Patch_AE_DIA_Martin_ARKPALA_BUY_desc = "Okay, I'll take the armor (Defense: Cutting 80, Stabbing 80. Cost: 2000 gold).";
     // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_EN"); //Okay, I'll take the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_EN"); //Okay, here you go.
     // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_EN"); //Come back when you have enough gold on you
     Patch_AE_DIA_Martin_ARKPALA_BUY_entry = "I bought some paladin armor from Martin. It's rusted but a skilled smith should fix it, I just need to find someone willing to do it for me.";
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_EN";
     PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02 = "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_EN";
@@ -515,25 +515,25 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_EN";
     PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_EN";
     PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3 = "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_EN";
-    
+
     // ------
     // Matteo
     // ------
-    
+
     Patch_AE_DIA_Matteo_GAMBESON_desc = "Buy Hunting Gambeson (350 gold). 20/20/20 bonus for ranged weapons.";
     // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN"); //Okay, give me the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN"); //You'll like it.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN"); //The armor's worth its weight in gold, so come back when you have enough gold.
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_MATTEO_GAMBESON_15_00 = "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN";
     PATCH_AE_DIA_MATTEO_GAMBESON_09_01 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN";
     PATCH_AE_DIA_MATTEO_GAMBESON_09_02 = "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN";
-    
+
     // ------
     // Milten
     // ------
-    
+
     Patch_AE_DIA_MILTEN_PALADINARMOR_desc = "I need your help.";
     // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_EN"); //I need your help.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_EN"); //What's going on?
@@ -547,7 +547,7 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_EN"); //Yeah, I'll see you later, Milten.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_EN"); //Good luck!
     Patch_AE_DIA_MILTEN_PALADINARMOR_entry = "Milten agreed to help me restore the armor to its magical power, but first he would have to study the ritual procedure. It will take him some time, so he told me to take care of the dragons in the mining valley in the meantime.";
-    
+
     Patch_AE_DIA_MILTEN_PLATEARMOR_desc = "Have you made progress in your studies?";
     // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_EN"); //Have you made progress in your studies?
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_EN"); //Yes, I can say that I understand the ritual process.
@@ -558,12 +558,12 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_EN"); //Okay, I'll go get those things.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_EN"); //Good luck, I hope you succeed.
     Patch_AE_DIA_MILTEN_PLATEARMOR_entry = "Milten You will need a scroll of destruction of evil, a scroll of fireball and 2 stone crystals for the ritual.";
-    
+
     Patch_AE_DIA_MILTEN_RITUALARMOR_desc = "MĂˇm vĹˇe co budeĹˇ potĹ™ebovat.";
     // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_EN"); //I have everything you'll need.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_EN"); //Oh, great. I can start the ritual.
     Patch_AE_DIA_MILTEN_RITUALARMOR_entry = "I brought Milten everything he needed for the ritual.";
-    
+
     Patch_AE_DIA_MILTEN_LORDRMOR_desc = "Great, and when will the ritual be complete?";
     // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_EN"); //Great, and when will the ritual be complete?
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_EN"); //It's gonna take a while. Come back tomorrow.
@@ -573,7 +573,7 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_EN"); //You're welcome. Let it serve you.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_EN"); //NN
     Patch_AE_DIA_MILTEN_LORDRMOR_entry = "Milten managed to restore the armor to its magical powers.";
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_EN";
     PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02 = "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_EN";
@@ -607,9 +607,9 @@ func void Patch_AE_LocalizeEnglish() {
     // ------
     // Mortis
     // ------
-    
-    Patch_AE_TOPIC_MORTIS_ARMOR = "Improvements to the militia armour.";
-    
+
+    Patch_AE_TOPIC_MORTIS_ARMOR = "Improvements to the militia armor.";
+
     PATCH_AE_DIA_MORTIS_ARMORQUESTION_desc = "Don't you have any better armor for me?";
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_EN"); //Do you have any better armor for me?
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_EN"); //Only Lord Andre can give you better armor.
@@ -617,8 +617,8 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_EN"); //What will it cost?
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_EN"); //You'll have to bring materials, I don't have any left.
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_EN"); //And some gold for my work.
-    PATCH_AE_DIA_MORTIS_ARMORQUESTION_entry = "Mortis can upgrade my militia armour if I bring him materials and gold.";
-    
+    PATCH_AE_DIA_MORTIS_ARMORQUESTION_entry = "Mortis can upgrade my militia armor if I bring him materials and gold.";
+
     PATCH_AE_DIA_MORTIS_MIL_LTHINGS_desc = "I'd like to upgrade the light armor";
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_EN"); //I'd like to upgrade the light armor.
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_EN"); //What do you need for that?
@@ -626,8 +626,8 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_EN"); //And let's say 200 gold will do the job.
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_EN"); //And of course, you'll have to bring me the armor.
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_EN"); //All right, I'll try to get it.
-    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_entry = "To upgrade his light armour Mortis will need one steel rod, a boar skin and 200 gold coins.";
-    
+    PATCH_AE_DIA_MORTIS_MIL_LTHINGS_entry = "To upgrade his light armor Mortis will need one steel rod, a boar skin and 200 gold coins.";
+
     PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_desc = "I have all the materials I need to upgrade the light armor.";
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_EN"); //I have all the materials I need to upgrade the light armor.
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_EN"); //All right, I'll get to work.
@@ -636,7 +636,7 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_EN"); //Thank you.
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_EN"); //Come back when you've got it all.
     PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_entry = "Mortis upgraded my light armor.";
-    
+
     PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_desc = "I'd like to upgrade my medium armor";
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_EN"); //I'd like to upgrade my medium armor.
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_EN"); //What do you need for that?
@@ -644,8 +644,8 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_EN"); //two steel bars and a Wargo skin.
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_EN"); //I'll charge 600 gold for the job.
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_EN"); //All right, I'll try to get it.
-    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_entry = "To upgrade the medium armour Mortis will need two steel bars, a Wargo skin and 600 gold.";
-    
+    PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_entry = "To upgrade the medium armor Mortis will need two steel bars, a Wargo skin and 600 gold.";
+
     PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_desc = "I have all the materials I need to upgrade my medium armor.";
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_EN"); //I've got all the materials I need to upgrade my medium armor.
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_EN"); //Here you go.
@@ -655,13 +655,13 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_EN"); //Thank you.
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_EN"); //Come back when you've got it all with you.
     PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_entry = "Mortis upgraded my medium armor.";
-    
+
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_desc = "Could you fix this rusty paladin armor for me?";
     // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_EN"); //Could you fix this rusty paladin armor for me?
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_EN"); //No, I don't have the time or the experience.
     // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_EN"); //You'll have to find another blacksmith.
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_entry = "Mortis will not repair my armor.";
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_EN";
     PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02 = "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_EN";
@@ -697,13 +697,13 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_EN";
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_EN";
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02 = "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_EN";
-    
+
     // ----
     // Hero
     // ----
-    
+
     Patch_AE_PC_FORGE_ARMOR_desc = "Forge the Weapon";
-    Patch_AE_PC_ITAR_PAL_ST_desc = "Forge Stewark Canvas Armour";
+    Patch_AE_PC_ITAR_PAL_ST_desc = "Forge Stewark Canvas Armor";
     Patch_AE_PC_ITAR_PAL_ANH_desc = "Remove Helm from Enriched Paladin Armor";
     Patch_AE_PC_ITAR_PAL_AFH_desc = "Lower the visor of the Enriched Paladin Armor";
     Patch_AE_PC_ITAR_PAL_AFH_NH_desc = "Lower the visor of the Enriched Paladin Armor";
@@ -728,33 +728,32 @@ func void Patch_AE_LocalizeEnglish() {
     // ------
     // Ulthar
     // ------
-    
-    PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "I've cleaned out all the weddings.";
+
+    PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "I've cleaned out all the shrines.";
     // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_EN"); //Wait, we wanted to support you in your fight against evil with new armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN"); //Take this armor of the Crusader Innose, I'm sure you'll use it.
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN"); //Take this armor of the Crusader Innos, I'm sure you'll use it.
     // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_EN"); //Thank you.
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_EN";
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN";
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_EN";
-    
+
     // ----
     // Wolf
     // ----
-    
-    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "I hear you make armor for scouts.";
+
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "I hear you make armor for scouts.";
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN"); //I hear you make armor for scouts.
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN"); //I'd like to replace the one I have now.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN"); //Sure, I just finished one. You can have it for free, for old time's sake.
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN"); //Thanks, man.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN"); //You're welcome.
-    
-    // Localized OU (do not change)
-    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN";
-    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN";
-    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN";
-    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN";
-    const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN";
-};
 
+    // Localized OU (do not change)
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN";
+};
