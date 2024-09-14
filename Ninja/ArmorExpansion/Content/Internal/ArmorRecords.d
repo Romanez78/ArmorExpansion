@@ -91,9 +91,10 @@ func void Patch_AE_NpcOriginalArmor(var int npcInstance, var int armorInstance) 
  * Called by Patch_AE_ApplyChanges to equip the new armors
  * Make changes in "NpcArmors.d".
  */
-func int Patch_AE_NpcArmorsApply() {
+func void Patch_AE_NpcArmorsApply() {
     if (Patch_AE_NpcArmors_htbl) {
-        MEM_SendToSpy(zERR_TYPE_FATAL, "ArmorExpansion: Armor hash table not empty!");
+        MEM_SendToSpy(zERR_TYPE_WARN, "ArmorExpansion: Armor hash table not empty! (Okay if first time level change.)");
+        return;
     };
     Patch_AE_NpcArmors_htbl = _HT_Create();
 
