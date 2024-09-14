@@ -1,26 +1,14 @@
 func void Patch_AE_LocalizeEnglish() {
     // Blue print
     ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Drawing for the production of Stewark plate armor";
-    Patch_AE_Use_Plan_StewarkArmor__line1 = "    Drawing for the production of Stewark plate armor";
-    Patch_AE_Use_Plan_StewarkArmor__line2 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line3 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line4 = "This is a blueprint for all skilled blacksmiths of Stewark,";
-    Patch_AE_Use_Plan_StewarkArmor__line5 = "you are tasked with making new pieces of armor";
-    Patch_AE_Use_Plan_StewarkArmor__line5 = "to equip the city guard.";
-    Patch_AE_Use_Plan_StewarkArmor__line6 = "To make one piece of armor you will need these the raw materials:";
-    Patch_AE_Use_Plan_StewarkArmor__line7 = "-6 pieces of pig iron";
-    Patch_AE_Use_Plan_StewarkArmor__line8 = "-3 Warg skins";
-    Patch_AE_Use_Plan_StewarkArmor__line9 = "Instructions for making it are on the other side of this blueprint.";
-    Patch_AE_Use_Plan_StewarkArmor__line10 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line11 = "If you are caught selling the raw materials";
-    Patch_AE_Use_Plan_StewarkArmor__line12 = "or the blueprint, you will be severely punished.";
-    Patch_AE_Use_Plan_StewarkArmor__line13 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line14 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line15 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line16 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line17 = "The order was given by the commander of the Cenric City Guard";
-    Patch_AE_Use_Plan_StewarkArmor__line18 = "";
-    Patch_AE_Use_Plan_StewarkArmor__line19 = "";
+    Patch_AE_Use_Plan_StewarkArmor__line1 = "Drawing for the production of Stewark plate armor";
+    Patch_AE_Use_Plan_StewarkArmor__line2 = "This is a blueprint for all skilled blacksmiths of Stewark, you are tasked with making new pieces of armor to equip the city guard.";
+    Patch_AE_Use_Plan_StewarkArmor__line3 = "To make one piece of armor you will need these the raw materials:";
+    Patch_AE_Use_Plan_StewarkArmor__line4 = "-6 pieces of pig iron";
+    Patch_AE_Use_Plan_StewarkArmor__line5 = "-3 Warg skins";
+    Patch_AE_Use_Plan_StewarkArmor__line6 = "Instructions for making it are on the other side of this blueprint.";
+    Patch_AE_Use_Plan_StewarkArmor__line7 = "If you are caught selling the raw materials or the blueprint, you will be severely punished.";
+    Patch_AE_Use_Plan_StewarkArmor__line8 = "The order was given by the commander of the Cenric City Guard";
 
     // Armor names
     ITAR_MIL_H_ArmorExpansion__name = "Heavy Militia Armor";

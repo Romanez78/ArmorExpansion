@@ -3,25 +3,13 @@
 // Blue print
 const string ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Nákres na výrobu plátové zbroje ze Stewarku";
 const string Patch_AE_Use_Plan_StewarkArmor__line1 = "     Nákres na výrobu plátové zbroje ze Stewarku";
-const string Patch_AE_Use_Plan_StewarkArmor__line2 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line3 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line4 = "Tohle je nákres pro všechny schopné kováře města Stewark,";
-const string Patch_AE_Use_Plan_StewarkArmor__line5 = "máte za úkol vyrobit nové kusy zbroje kterou bude";
-const string Patch_AE_Use_Plan_StewarkArmor__line5 = "vybavena stráž města.";
-const string Patch_AE_Use_Plan_StewarkArmor__line6 = "Suroviny dostanete brzy, na výrobu jedné zbroje budete potřebovat:";
-const string Patch_AE_Use_Plan_StewarkArmor__line7 = "-6 Kusů surového železa";
-const string Patch_AE_Use_Plan_StewarkArmor__line8 = "-3 Kůže Warga";
-const string Patch_AE_Use_Plan_StewarkArmor__line9 = "Návod k výrobě je na druhé straně tohoto nákresu.";
-const string Patch_AE_Use_Plan_StewarkArmor__line10 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line11 = "Pokud budete přistiženi jak prodáváte suroviny";
-const string Patch_AE_Use_Plan_StewarkArmor__line12 = "nebo nákres, budete tvrdě potrestáni.";
-const string Patch_AE_Use_Plan_StewarkArmor__line13 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line14 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line15 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line16 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line17 = "Rozkaz vydal velitel městské stráže Cenric";
-const string Patch_AE_Use_Plan_StewarkArmor__line18 = "";
-const string Patch_AE_Use_Plan_StewarkArmor__line19 = "";
+const string Patch_AE_Use_Plan_StewarkArmor__line2 = "Tohle je nákres pro všechny schopné kováře města Stewark, máte za úkol vyrobit nové kusy zbroje kterou bude vybavena stráž města.";
+const string Patch_AE_Use_Plan_StewarkArmor__line3 = "Suroviny dostanete brzy, na výrobu jedné zbroje budete potřebovat:";
+const string Patch_AE_Use_Plan_StewarkArmor__line4 = "-6 Kusů surového železa";
+const string Patch_AE_Use_Plan_StewarkArmor__line5 = "-3 Kůže Warga";
+const string Patch_AE_Use_Plan_StewarkArmor__line6 = "Návod k výrobě je na druhé straně tohoto nákresu.";
+const string Patch_AE_Use_Plan_StewarkArmor__line7 = "Pokud budete přistiženi jak prodáváte suroviny nebo nákres, budete tvrdě potrestáni.";
+const string Patch_AE_Use_Plan_StewarkArmor__line8 = "Rozkaz vydal velitel městské stráže Cenric";
 
 // Armor names
 const string ITAR_MIL_H_ArmorExpansion__name = "Tižká Zbroj Domobrany";
