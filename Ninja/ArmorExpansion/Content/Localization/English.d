@@ -307,7 +307,7 @@ func void Patch_AE_LocalizeEnglish() {
     // Greg
     // ------
 
-    Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_desc = "Co takhle nÄ›jĂˇkĂˇ lepĹˇĂ­ zbroj?";
+    Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_desc = "How about some better armor?";
     // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_EN"); //How about some better armor?
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01_EN"); //What the hell do you think?
     // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02_EN"); //You knock off Raven and suddenly you're the new captain?
