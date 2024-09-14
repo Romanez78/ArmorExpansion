@@ -1,60 +1,37 @@
-/*
- * The NPC is not very compatible with other mods, because it requires a lot of functions and items, that might not
- * exist if a mod has removed them. This will result in ugly crashes and parser errors (and crying players).
- */
-
-instance Patch_AE_DeadTreasureHunter (Npc_Default)
+instance Patch_AE_DeadTreasureHunter (C_Npc)
 {
-	// ------ NSC ------
-	name 		= "Mrtvý lovec pokladů";
-	guild 		= GIL_BAU;
-	id 			= 44989;  // An ID that is unlikely already used in a mod
-	voice 		= 14;
-	flags       = 0;		//NPC_FLAG_IMMORTAL oder 0
-	npctype		= NPCTYPE_AMBIENT;
+    // Minimally necessary attributes
+    name          = Patch_AE_DeadTreasureHunter__name;
+    attribute[0]  = 0; // No health: spawn dead
+    attribute[1]  = 0;
+    start_aistate = ZS_Patch_AE_Placeholder; // Empty AI state to keep the NPC in the game
+    senses        = 7;
+    senses_range  = 2000;
 
-	// ------ Attribute ------
-	B_SetAttributesToChapter (self, 2);																	//setzt Attribute und LEVEL entsprechend dem angegebenen Kapitel (1-6)
+    // Visual: Define possibly missing constants locally
+    const int Face_N_OldBald_Jeremiah = 108;
+    const int BodyTex_N = 1;
+    Mdl_SetVisual(self, "HUMANS.MDS");
+    Mdl_SetVisualBody(self, "HUM_BODY_NAKED0", BodyTex_N, 0, "Hum_Head_FatBald", Face_N_OldBald_Jeremiah, 0, MEM_GetSymbolIndex("ITAR_DJG_CRAWLER"));
+    Mdl_SetModelFatness(self, 2);
 
-	// ------ Kampf-Taktik ------
-	fight_tactic		= FAI_HUMAN_STRONG;	// MASTER / STRONG / COWARD
-
-	// ------ Equippte Waffen ------																	//Munition wird automatisch generiert, darf aber angegeben werden
-
-	// ------ Inventory ------
-	CreateInvItems (self, ITWR_BluePrint_StewarkArmor_ArmorExpansion,1);
-	CreateInvItems (self, ITMI_Gold,250);
-	CreateInvItems (self, ITMI_Goldplate,1);
-	CreateInvItems (self, ITMI_Silverring,2);
-	CreateInvItems (self, ITMI_Silvercup,3);
-	CreateInvItems (self, ITMI_SilverNecklace,1);
-	CreateInvItems (self, ITMI_Goldcup,1);
-	CreateInvItems (self, ITFO_Bacon,1);
-	CreateInvItems (self, ITFO_Bread,2);
-    CreateInvItems (self, ITFO_Cheese,1);
-	CreateInvItems (self, ItPl_SwampHerb,3);
-	CreateInvItems (self, ItMiSwordraw,4);
-	CreateInvItems (self, ItMi_Zeitspalt_Addon,1);
-	CreateInvItems (self, ItMi_Nugget,1);
-	CreateInvItems (self, ItMw_Rubinklinge,1);
-	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_OldBald_Jeremiah, BodyTex_N, ITAR_djg_crawler);
-	Mdl_SetModelFatness	(self, 2);
-	Mdl_ApplyOverlayMds	(self, "Humans_Relaxed.mds"); // Tired / Militia / Mage / Arrogance / Relaxed
-
-	// ------ NSC-relevante Talente vergeben ------
-	B_GiveNpcTalents (self);
-
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 60); //Grenzen für Talent-Level liegen bei 30 und 60i
-
-	// ------ TA anmelden ------
-	daily_routine 		= Rtn_Start_44989;
+    // Inventory
+    // Using MEM_GetSymbolIndex prevents crashes in case the item does not exist in the mod
+    CreateInvItems(self, ITWR_BluePrint_StewarkArmor_ArmorExpansion, 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITMI_Gold"), 250);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITMI_Goldplate"), 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITMI_Silverring"), 2);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITMI_Silvercup"), 3);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITMI_SilverNecklace"), 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITMI_Goldcup"), 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITFO_Bacon"), 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITFO_Bread"), 2);
+    CreateInvItems(self, MEM_GetSymbolIndex("ITFO_Cheese"), 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ItPl_SwampHerb"), 3);
+    CreateInvItems(self, MEM_GetSymbolIndex("ItMiSwordraw"), 4);
+    CreateInvItems(self, MEM_GetSymbolIndex("ItMi_Zeitspalt_Addon"), 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ItMi_Nugget"), 1);
+    CreateInvItems(self, MEM_GetSymbolIndex("ItMw_Rubinklinge"), 1);
 };
-
-FUNC VOID Rtn_Start_44989 ()
-{
-    TA_Stand_WP	(08,00,23,00,"DT_E2_09");
-    TA_Stand_WP	(23,00,08,00,"DT_E2_09");
-};
-
+func void ZS_Patch_AE_Placeholder() {};
+func int ZS_Patch_AE_Placeholder_loop() {};

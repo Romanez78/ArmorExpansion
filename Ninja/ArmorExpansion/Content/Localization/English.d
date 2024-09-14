@@ -1,4 +1,7 @@
 func void Patch_AE_LocalizeEnglish() {
+    // NPC
+    Patch_AE_DeadTreasureHunter__name = "Dead Treasure Hunter";
+
     // Blue print
     ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Drawing for the production of Stewark plate armor";
     Patch_AE_Use_Plan_StewarkArmor__line1 = "Drawing for the production of Stewark plate armor";

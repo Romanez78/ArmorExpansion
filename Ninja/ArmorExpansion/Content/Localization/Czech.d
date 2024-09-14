@@ -1,5 +1,8 @@
 // Czech serves as the default localization. Other localizations overwrite these constants
 
+// NPC
+const string Patch_AE_DeadTreasureHunter__name = "Mrtvý lovec pokladů";
+
 // Blue print
 const string ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Nákres na výrobu plátové zbroje ze Stewarku";
 const string Patch_AE_Use_Plan_StewarkArmor__line1 = "     Nákres na výrobu plátové zbroje ze Stewarku";
