@@ -550,7 +550,7 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_EN"); //Good luck, I hope you succeed.
     Patch_AE_DIA_MILTEN_PLATEARMOR_entry = "Milten You will need a scroll of destruction of evil, a scroll of fireball and 2 stone crystals for the ritual.";
 
-    Patch_AE_DIA_MILTEN_RITUALARMOR_desc = "MĂˇm vĹˇe co budeĹˇ potĹ™ebovat.";
+    Patch_AE_DIA_MILTEN_RITUALARMOR_desc = "I have everything you'll need.";
     // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_EN"); //I have everything you'll need.
     // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_EN"); //Oh, great. I can start the ritual.
     Patch_AE_DIA_MILTEN_RITUALARMOR_entry = "I brought Milten everything he needed for the ritual.";

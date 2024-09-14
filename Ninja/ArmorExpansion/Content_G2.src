@@ -8,6 +8,7 @@ Content\Internal\ApplyRevert.d
 // Localization
 Content\Localization\Czech.d
 Content\Localization\English.d
+Content\Localization\Polish.d
 Content\Localization\GuessLocalization.d
 
 // Items
