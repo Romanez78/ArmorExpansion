@@ -42,6 +42,6 @@ Content\Dialogs\SmithArmor.d
 // Functions
 Content\NpcArmors.d
 Content\C_PlayerHasFakeGuild.d
-Content\Startup.d
+Content\InsertNpc.d
 
 Content\ArmorExpansionInit.d

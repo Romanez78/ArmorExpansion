@@ -17,7 +17,7 @@ func void Ninja_ArmorExpansion_Menu() {
 
     // Register script hooks for events and dialogs
     HookDaedalusFuncS("C_PlayerHasFakeGuild",    "Patch_AE_C_PlayerHasFakeGuild");
-    HookDaedalusFuncS("Startup_Demontower",      "Patch_AE_Startup_Demontower");
+    HookDaedalusFuncS("INIT_OLDWORLD",           "Patch_AE_Init_Demontower");
     HookDaedalusFuncS("PC_Common_Condition",     "Patch_AE_PC_Common_Condition");
     HookDaedalusFuncS("PC_Ore_Condition",        "Patch_AE_PC_Ore_Condition");
     HookDaedalusFuncS("DIA_Engor_RSkaufen_Info", "Patch_AE_DIA_Engor_RSkaufen_Info");
