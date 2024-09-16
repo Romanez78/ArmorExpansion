@@ -27,7 +27,7 @@ func void Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Info()
     AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04);
     B_GiveInvItems(other, self, ItAr_MIL_L, 1);
     Patch_AE_ANDRE_MIL_SCOUTArmorBought = B_GiveInvItems(self, other, ITAR_MIL_SCOUT_ARMOREXPANSION, 1);
-    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9);
+    AI_Output(self, other, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9);
 };
 
 instance Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD (C_INFO)
