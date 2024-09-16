@@ -1,6 +1,7 @@
 # ArmorExpansion
 
-[![Scripts](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml)<!--
+[![Scripts](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/scripts.yml)
+[![Output Units](https://github.com/Romanez78/ArmorExpansion/actions/workflows/ou.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/ou.yml)<!--
  [![Validation](https://github.com/Romanez78/ArmorExpansion/actions/workflows/validation.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/validation.yml) -->
 [![Build](https://github.com/Romanez78/ArmorExpansion/actions/workflows/build.yml/badge.svg)](https://github.com/Romanez78/ArmorExpansion/actions/workflows/build.yml)
 [![GitHub release](https://img.shields.io/github/v/release/Romanez78/ArmorExpansion.svg)](https://github.com/Romanez78/ArmorExpansion/releases/latest)  
