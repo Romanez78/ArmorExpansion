@@ -2,7 +2,7 @@ func void Patch_AE_LocalizePolish() {
     // NPC
     Patch_AE_DeadTreasureHunter__name = "Martwy poszukiwacz skarbów";
 
-    // Blue print
+    // Blue print 
     ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Plan produkcji stewarskiej zbroi płytowej";
     Patch_AE_Use_Plan_StewarkArmor__line1 = "Plan produkcji stewarskiej zbroi płytowej";
     Patch_AE_Use_Plan_StewarkArmor__line2 = "Jest to plan dla wszystkich wykwalifikowanych kowali w Stewark, których zadaniem jest stworzenie nowych elementów zbroi dla straży miejskiej.";
