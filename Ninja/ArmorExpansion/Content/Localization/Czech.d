@@ -63,16 +63,16 @@ const string Patch_AE_PRINT_ForgeSuccess = " vyrobeno!";
 // ==============
 //    DIALOGS
 // ==============
-// AI-Output commands are here commented out: They will be used in Redefix but ignored here from Gothic.
+// AI-Output commands are commented out: They will be considered by Redefix or output-unit-action but ignored by Gothic.
 //
 // How does the localization of Output Units (OU) work?
 //
 // In the command AI-Output, Gothic finds the output unit (third argument) by its name (string) and plays it. Each
 // localization has unique OU names, e.g. with a suffix "_CS" for Czech. To make that dynamic, the actual AI-Output
 // commands do not have a literal string as third argument like it's usually done, but instead a constant that has
-// different content based on localization. To still generate the OUs of all localizations with Redefix, syntactically
-// correct AI-Output commands are listed below and in the other localization files. Because they are commented out,
-// they are safely ignored by Gothic here, but will still be parsed by Redefix.
+// different content based on localization. To still generate the OUs of all localization, syntactically correct
+// AI-Output commands are listed below and in the other localization files. Because they are commented out, they are
+// safely ignored by Gothic here, but will still be parsed by Redefix/output-unit-action.
 
 // -----
 // Andre
