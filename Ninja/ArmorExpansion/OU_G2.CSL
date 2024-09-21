@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 17.09.2024 09:17:04
+date 21.09.2024 12:28:47
 user https://github.com/szapp/output-unit-action
 END
 objects 1990
@@ -2682,7 +2682,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 668]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 669]
 subType=enum:0
-text=string:I prefer to fight at a distance.
+text=string:I prefer to keep my distance.
 name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_EN.WAV
 []
 []
@@ -2730,7 +2730,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 680]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 681]
 subType=enum:0
-text=string:You did all my assignments.
+text=string:You completed all of my assignments.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_EN.WAV
 []
 []
@@ -2754,7 +2754,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 686]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 687]
 subType=enum:0
-text=string:Here you go, militia medium armor.
+text=string:Here you go, medium militia armor.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_EN.WAV
 []
 []
@@ -2766,7 +2766,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 689]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 690]
 subType=enum:0
-text=string:Serve you right, soldier.
+text=string:I hope it will serve you well soldier.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_EN.WAV
 []
 []
@@ -2778,7 +2778,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 692]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 693]
 subType=enum:0
-text=string:Thank you.
+text=string:Thanks.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_EN.WAV
 []
 []
@@ -2814,7 +2814,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 701]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 702]
 subType=enum:0
-text=string:I can upgrade the one you already got, but I'll charge you something.
+text=string:But I can improve the one you already got, it'll cost you though.
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_13_03_EN.WAV
 []
 []
@@ -2826,7 +2826,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 704]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 705]
 subType=enum:0
-text=string:What's that?
+text=string:What do you need for it?
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_15_04_EN.WAV
 []
 []
@@ -2862,7 +2862,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 713]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 714]
 subType=enum:0
-text=string:I want to have my light armor upgraded.
+text=string:I want to have my light armor improved.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_01_EN.WAV
 []
 []
@@ -2886,7 +2886,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 719]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 720]
 subType=enum:0
-text=string:Two steel bars and two wolf skins will do for light armor.
+text=string:Two raw steel billets and two wolf skins will do for light armor.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_06_EN.WAV
 []
 []
@@ -2898,7 +2898,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 722]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 723]
 subType=enum:0
-text=string:I'll charge 200 gold pieces for making it.
+text=string:I'll charge you 200 gold pieces for it.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_07_EN.WAV
 []
 []
@@ -2922,7 +2922,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 728]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 729]
 subType=enum:0
-text=string:I have all the materials needed to upgrade my light armor.
+text=string:I have all the materials needed to improve my light armor.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_01_EN.WAV
 []
 []
@@ -2946,7 +2946,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 734]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 735]
 subType=enum:0
-text=string:Okay, let's take a look.
+text=string:Okay, let's take a look at it then.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_12_EN.WAV
 []
 []
@@ -2958,7 +2958,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 737]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 738]
 subType=enum:0
-text=string:It's done.
+text=string:Done.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_13_EN.WAV
 []
 []
@@ -2970,7 +2970,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 740]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 741]
 subType=enum:0
-text=string:There she is, I'm pretty good.
+text=string:Here it is, I think i did a good job.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_14_EN.WAV
 []
 []
@@ -2994,7 +2994,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 746]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 747]
 subType=enum:0
-text=string:Come back when you've got it all.
+text=string:Come back when you've got it all with you.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_16_EN.WAV
 []
 []
@@ -3006,7 +3006,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 749]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 750]
 subType=enum:0
-text=string:I want to get my medium armor upgraded.
+text=string:I want to get my medium armor improved.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_01_EN.WAV
 []
 []
@@ -3030,7 +3030,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 755]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 756]
 subType=enum:0
-text=string:You'll need more than that for medium armor.
+text=string:You'll need more than last time for the medium armor.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_04_EN.WAV
 []
 []
@@ -3042,7 +3042,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 758]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 759]
 subType=enum:0
-text=string:Three steel bars, and one Wargo skin.
+text=string:Three raw steel billets, and one Warg skin.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_05_EN.WAV
 []
 []
@@ -3078,7 +3078,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 767]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 768]
 subType=enum:0
-text=string:I have all the materials needed to upgrade my medium armor.
+text=string:I have all the materials needed to improve my medium armor.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_01_EN.WAV
 []
 []
@@ -3102,7 +3102,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 773]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 774]
 subType=enum:0
-text=string:Okay, let's take a look.
+text=string:Okay, let's take a look at it then.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_11_EN.WAV
 []
 []
@@ -3114,7 +3114,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 776]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 777]
 subType=enum:0
-text=string:It's done.
+text=string:Done.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_12_EN.WAV
 []
 []
@@ -3126,7 +3126,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 779]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 780]
 subType=enum:0
-text=string:There she is, I'm pretty good.
+text=string:Here it is, I think i did a good job.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_13_EN.WAV
 []
 []
@@ -3150,7 +3150,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 785]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 786]
 subType=enum:0
-text=string:Come back when you have it all with you.
+text=string:Come back when you've got it all with you.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_16_EN.WAV
 []
 []
@@ -3186,7 +3186,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 794]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 795]
 subType=enum:0
-text=string:I have nothing against you, you got me out of prison.
+text=string:I have nothing against you, you got me out of jail after all.
 name=string:PATCH_AE_DIA_BENNET_PAL_REFORGE_3_03_EN.WAV
 []
 []
@@ -3222,7 +3222,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 803]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 804]
 subType=enum:0
-text=string:Is there any lighter armor for me?
+text=string:Do you have there any lighter armor for me?
 name=string:PATCH_AE_DIA_BENNET_CROSSBOW_15_01_EN.WAV
 []
 []
@@ -3234,7 +3234,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 806]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 807]
 subType=enum:0
-text=string:Don't get me wrong, I'm grateful for it, but I prefer it lighter.
+text=string:Don't get me wrong, I'm grateful for it, but I would prefer something less heavy.
 name=string:PATCH_AE_DIA_BENNET_CROSSBOW_15_02_EN.WAV
 []
 []
@@ -3246,7 +3246,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 809]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 810]
 subType=enum:0
-text=string:Actually, yes, I've made one of those, if you want I can swap them for you.
+text=string:Actually, yes, I've made one of those, if you want I can swap it for you.
 name=string:PATCH_AE_DIA_BENNET_CROSSBOW_13_03_EN.WAV
 []
 []
@@ -3402,7 +3402,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 848]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 849]
 subType=enum:0
-text=string:I can sell you some of my personal stock, but it'll cost you dearly.
+text=string:I can sell you some of my personal stock, but it'll cost you a lot.
 name=string:PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_02_EN.WAV
 []
 []
@@ -3582,7 +3582,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 893]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 894]
 subType=enum:0
-text=string:Here, this should help you in your quest. Now go, there's not much time to waste.
+text=string:Here, this should help you in your mission. Now go, there's no time to waste.
 name=string:PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06_EN.WAV
 []
 []
@@ -3594,7 +3594,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 896]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 897]
 subType=enum:0
-text=string:Thank you.
+text=string:Thanks.
 name=string:PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_EN.WAV
 []
 []
@@ -3642,7 +3642,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 908]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 909]
 subType=enum:0
-text=string:That's not what I meant. You're still the captain. I'm just worried about the armor.
+text=string:That's not what I meant. You're still the captain. I'm just asking about armor.
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03_EN.WAV
 []
 []
@@ -3666,7 +3666,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 914]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 915]
 subType=enum:0
-text=string:But it'll cost you a lot. I want 2700 gold for it.
+text=string:But it'll cost you. I want 2700 gold for it.
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05_EN.WAV
 []
 []
@@ -3714,7 +3714,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 926]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 927]
 subType=enum:0
-text=string:Is there any lighter armor for me?
+text=string:Would there be any lighter armor for me?
 name=string:PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_EN.WAV
 []
 []
@@ -3738,7 +3738,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 932]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 933]
 subType=enum:0
-text=string:I can trade you your knight's armor for a lighter version designed for crossbowmen.
+text=string:I can swap your knight's armor for a lighter version designed for our crossbowmen.
 name=string:PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_EN.WAV
 []
 []
@@ -3786,7 +3786,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 944]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 945]
 subType=enum:0
-text=string:Let me see it.
+text=string:Let me see.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_EN.WAV
 []
 []
@@ -3810,7 +3810,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 950]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 951]
 subType=enum:0
-text=string:They are forged from a different alloy of metal and magical ore than the others, and then blessed by the mages of the Nordmar Monastery.
+text=string:They are forged from a different alloy of steel and magical ore than the others, and then blessed by the mages from the Monastery in Nordmar.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_EN.WAV
 []
 []
@@ -3870,7 +3870,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 965]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 966]
 subType=enum:0
-text=string:So, what are you gonna need to repair your armor?
+text=string:So, what are you gonna need to repair the armor?
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_EN.WAV
 []
 []
@@ -3894,7 +3894,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 971]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 972]
 subType=enum:0
-text=string:A few steel rods, six should do it.
+text=string:A few raw steel billets, six should be enough.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_EN.WAV
 []
 []
@@ -3906,7 +3906,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 974]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 975]
 subType=enum:0
-text=string:3 lumps of magical steel.
+text=string:3 lumps of magical ore.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_EN.WAV
 []
 []
@@ -3930,7 +3930,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 980]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 981]
 subType=enum:0
-text=string:Nothing. It would be a pleasure to work on a piece like this.
+text=string:Nothing. It would be an honor to work on armor like this.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_EN.WAV
 []
 []
@@ -3990,7 +3990,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 995]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 996]
 subType=enum:0
-text=string:I'm done.
+text=string:Done.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_EN.WAV
 []
 []
@@ -4038,7 +4038,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1007]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1008]
 subType=enum:0
-text=string:Thank you, sir.
+text=string:Thank you.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_EN.WAV
 []
 []
@@ -4074,7 +4074,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1016]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1017]
 subType=enum:0
-text=string:Sure, but I don't know what you wouldn't like about it.
+text=string:Sure, but I can't think of a reason you wouldn't like it.
 name=string:PATCH_AE_DIA_HARAD_END_MAKE_2_EN.WAV
 []
 []
@@ -4086,7 +4086,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1019]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1020]
 subType=enum:0
-text=string:I use ranged weapons, so I'd like to lighten it up.
+text=string:I use ranged weapons, so I'd like it if it was a bit lighter.
 name=string:PATCH_AE_DIA_HARAD_END_MAKE_3_EN.WAV
 []
 []
@@ -4098,7 +4098,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1022]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1023]
 subType=enum:0
-text=string:It shouldn't be too hard. I'm sure I could do it.
+text=string:That shouldn't be too hard. I'm sure I could do it.
 name=string:PATCH_AE_DIA_HARAD_END_MAKE_4_EN.WAV
 []
 []
@@ -4122,7 +4122,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1028]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1029]
 subType=enum:0
-text=string:Nothing. I'll do the paladin's service for free.
+text=string:Nothing. It would be an honor to do this service for a paladin.
 name=string:PATCH_AE_DIA_HARAD_END_MAKE_6_EN.WAV
 []
 []
@@ -4134,7 +4134,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1031]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1032]
 subType=enum:0
-text=string:Here you go, in that case.
+text=string:In that case, here it is.
 name=string:PATCH_AE_DIA_HARAD_END_MAKE_7_EN.WAV
 []
 []
@@ -4230,7 +4230,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1055]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1056]
 subType=enum:0
-text=string:I'm on thin ice just to work here.
+text=string:I'm on thin ice just to be allowed to work here.
 name=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_EN.WAV
 []
 []
@@ -4242,7 +4242,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1058]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1059]
 subType=enum:0
-text=string:I'm not gonna risk one of your colleagues turning me in for digging through paladin stuff.
+text=string:I'm not gonna risk one of your colleagues reporting me for digging through paladin supplies.
 name=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_EN.WAV
 []
 []
@@ -4266,7 +4266,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1064]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1065]
 subType=enum:0
-text=string:Is there any light armor for me?
+text=string:Is there any lighter armor for me?
 name=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_EN.WAV
 []
 []
@@ -4278,7 +4278,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1067]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1068]
 subType=enum:0
-text=string:I prefer to use ranged weapons.
+text=string:I prefer to keep my distance.
 name=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_EN.WAV
 []
 []
@@ -4290,7 +4290,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1070]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1071]
 subType=enum:0
-text=string:I don't have anything like that for you, but you're not the first one who wants one.
+text=string:I don't have anything like that for you, but you're not the first one to ask for something like this.
 name=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_EN.WAV
 []
 []
@@ -4362,7 +4362,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1088]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1089]
 subType=enum:0
-text=string:I hear this type of armor has high protection against magical attacks
+text=string:I hear this type of armor has high protection against magical attacks, while increasing the wearer's own magical abilites.
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_EN.WAV
 []
 []
@@ -4422,7 +4422,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1103]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1104]
 subType=enum:0
-text=string:Okay, here you go.
+text=string:Allright, here you go.
 name=string:PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_EN.WAV
 []
 []
@@ -4470,7 +4470,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1115]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1116]
 subType=enum:0
-text=string:The armor's worth its weight in gold, so come back when you have enough gold.
+text=string:The armor's worth its weight in gold, so come back when you have enough.
 name=string:PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN.WAV
 []
 []
@@ -4530,7 +4530,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1130]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1131]
 subType=enum:0
-text=string:Wow, I didn't see that coming.
+text=string:Wow, I didn't see this coming.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_EN.WAV
 []
 []
@@ -4542,7 +4542,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1133]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1134]
 subType=enum:0
-text=string:It's the kind of armor Myrtanian paladins wear to bless the monastery in Nordmar.
+text=string:This kind of armor is taken by the paladins from Myrtana to be blessed in the monastery in Nordmar.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_EN.WAV
 []
 []
@@ -4566,7 +4566,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1139]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1140]
 subType=enum:0
-text=string:If I'm not mistaken, there is a book in the monastery's library that describes the procedure.
+text=string:If I'm not mistaken, there is a book in the monastery's library that describes the process.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_EN.WAV
 []
 []
@@ -4578,7 +4578,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1142]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1143]
 subType=enum:0
-text=string:I'll need some time to study the book. In the meantime, you should take care of the dragons in the mining valley, you know how Garonda's unit is.
+text=string:I'll need some time to study the book. In the meantime, you should take care of the dragons in the valley of mines, you know how Garond's unit won't survive for long.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_EN.WAV
 []
 []
@@ -4590,7 +4590,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1145]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1146]
 subType=enum:0
-text=string:Yeah, I'll see you later, Milten.
+text=string:Yeah, I'll see you later Milten.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_EN.WAV
 []
 []
@@ -4638,7 +4638,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1157]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1158]
 subType=enum:0
-text=string:But I'm going to need a few things
+text=string:But I'm going to need a few things.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_EN.WAV
 []
 []
@@ -4662,7 +4662,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1163]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1164]
 subType=enum:0
-text=string:A scroll of evil destruction, fireballs and two stone crystals.
+text=string:A scroll of destroy evil, fireball and two rock crystals.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_EN.WAV
 []
 []
@@ -4674,7 +4674,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1166]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1167]
 subType=enum:0
-text=string:It's the only way I'll be able to achieve results similar to the ritual at the Nordmar Monastery.
+text=string:This is the only way I'll be able to achieve results similar to that of a ritual in the Nordmar monastery.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_EN.WAV
 []
 []
@@ -4710,7 +4710,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1175]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1176]
 subType=enum:0
-text=string:I have everything you'll need.
+text=string:I have everything you need.
 name=string:PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_EN.WAV
 []
 []
@@ -4794,7 +4794,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1196]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1197]
 subType=enum:0
-text=string:You're welcome. Let it serve you.
+text=string:You're welcome. May the armor serve you well.
 name=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_EN.WAV
 []
 []
@@ -4818,7 +4818,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1202]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1203]
 subType=enum:0
-text=string:Do you have any better armor for me?
+text=string:Don't you have any better armor for me?
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_EN.WAV
 []
 []
@@ -4842,7 +4842,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1208]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1209]
 subType=enum:0
-text=string:But that doesn't mean I can't upgrade the one you already have. You wouldn't be the first person I've done that to.
+text=string:But that doesn't mean I can't improve the one you already have. You wouldn't be the first person I've done ir for.
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_EN.WAV
 []
 []
@@ -4866,7 +4866,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1214]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1215]
 subType=enum:0
-text=string:You'll have to bring materials, I don't have any left.
+text=string:You'll have to bring your own materials, I don't have any left to spare.
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_EN.WAV
 []
 []
@@ -4890,7 +4890,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1220]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1221]
 subType=enum:0
-text=string:I'd like to upgrade the light armor.
+text=string:I'd like to improve my light armor.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_EN.WAV
 []
 []
@@ -4914,7 +4914,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1226]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1227]
 subType=enum:0
-text=string:For light armor, one steel rod and boarskin will suffice.
+text=string:For light armor, one raw steel and boarskin will suffice.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_EN.WAV
 []
 []
@@ -4926,7 +4926,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1229]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1230]
 subType=enum:0
-text=string:And let's say 200 gold will do the job.
+text=string:And let's say 200 gold will be enough for me.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_EN.WAV
 []
 []
@@ -4962,7 +4962,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1238]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1239]
 subType=enum:0
-text=string:I have all the materials I need to upgrade the light armor.
+text=string:I have all the materials I need to improve my light armor.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_EN.WAV
 []
 []
@@ -4986,7 +4986,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1244]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1245]
 subType=enum:0
-text=string:I'm done.
+text=string:Done.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_EN.WAV
 []
 []
@@ -4998,7 +4998,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1247]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1248]
 subType=enum:0
-text=string:There you go, I think I've done a pretty good job.
+text=string:Here you go, I think I've done a pretty good job.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_EN.WAV
 []
 []
@@ -5022,7 +5022,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1253]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1254]
 subType=enum:0
-text=string:Come back when you've got it all.
+text=string:Come back when you've got it all with you.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_EN.WAV
 []
 []
@@ -5034,7 +5034,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1256]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1257]
 subType=enum:0
-text=string:I'd like to upgrade my medium armor.
+text=string:I'd like to improve my medium armor.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_EN.WAV
 []
 []
@@ -5058,7 +5058,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1262]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1263]
 subType=enum:0
-text=string:You'll need to bring a little more for the medium armor.
+text=string:You'll need to bring a little more than last time for the medium armor.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_EN.WAV
 []
 []
@@ -5070,7 +5070,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1265]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1266]
 subType=enum:0
-text=string:two steel bars and a Wargo skin.
+text=string:two raw steel billets and a Warg skin.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_EN.WAV
 []
 []
@@ -5082,7 +5082,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1268]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1269]
 subType=enum:0
-text=string:I'll charge 600 gold for the job.
+text=string:I'll charge you 600 gold for the job.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_EN.WAV
 []
 []
@@ -5106,7 +5106,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1274]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1275]
 subType=enum:0
-text=string:I've got all the materials I need to upgrade my medium armor.
+text=string:I've got all the materials I need to improve my medium armor.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_EN.WAV
 []
 []
@@ -5142,7 +5142,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1283]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1284]
 subType=enum:0
-text=string:I'm done.
+text=string:Done.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_EN.WAV
 []
 []
@@ -5154,7 +5154,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1286]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1287]
 subType=enum:0
-text=string:There you go, I think I've done a pretty good job.
+text=string:Here you go, I think I've done a pretty good job.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_EN.WAV
 []
 []
@@ -5202,7 +5202,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1298]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1299]
 subType=enum:0
-text=string:No, I don't have the time or the experience.
+text=string:No, I don't have the time or the skill.
 name=string:PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_EN.WAV
 []
 []
@@ -5226,7 +5226,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1304]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1305]
 subType=enum:0
-text=string:Wait, we wanted to support you in your fight against evil with new armor.
+text=string:Wait, we wanted to support you in your fight against evil with a new armor.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_EN.WAV
 []
 []
@@ -5238,7 +5238,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1307]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1308]
 subType=enum:0
-text=string:Take this armor of the Crusader Innos, I'm sure you'll use it.
+text=string:Take this armor of the Crusader of Innos, I'm sure you'll find use for it.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN.WAV
 []
 []
@@ -5250,7 +5250,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1310]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1311]
 subType=enum:0
-text=string:Thank you.
+text=string:Thanks.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_EN.WAV
 []
 []
@@ -5262,7 +5262,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1313]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1314]
 subType=enum:0
-text=string:I hear you make armor for scouts.
+text=string:I hear you make lighter armor for mercenaries.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN.WAV
 []
 []
@@ -5298,7 +5298,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1322]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1323]
 subType=enum:0
-text=string:Thanks, man.
+text=string:Thanks man.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN.WAV
 []
 []
