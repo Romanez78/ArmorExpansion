@@ -46,11 +46,11 @@ FUNC INT Patch_AE_DIA_Lee_BuyArmorM_Condition()
 };
 FUNC VOID Patch_AE_DIA_Lee_BuyArmorM_Info()
 {	
-	AI_Output (other,self , DIA_Lee_BuyArmorM_15_00);
+	AI_Output (other,self , "DIA_Lee_BuyArmorM_15_00");
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 1500))
 	{
-		AI_Output (self ,other, DIA_Lee_BuyArmorM_04_01);
+		AI_Output (self ,other, "DIA_Lee_BuyArmorM_04_01");
 		//B_GiveInvItems (self, other, ITAR_SLD_BOW_ArmorExpansion, 1);
 		CreateInvItems (other, ITAR_SLD_BOW_ArmorExpansion, 1);
 		AI_EquipArmor (other, ITAR_SLD_BOW_ArmorExpansion);
@@ -59,6 +59,6 @@ FUNC VOID Patch_AE_DIA_Lee_BuyArmorM_Info()
 	}
 	else
 	{
-		AI_Output (self ,other, DIA_Lee_BuyArmorM_04_02);
+		AI_Output (self ,other, "DIA_Lee_BuyArmorM_04_02");
 	};
 };

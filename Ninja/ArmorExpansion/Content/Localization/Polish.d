@@ -2,7 +2,7 @@ func void Patch_AE_LocalizePolish() {
     // NPC
     Patch_AE_DeadTreasureHunter__name = "Martwy poszukiwacz skarbów";
 
-    // Blue print 
+    // Blue print
     ItWr_BluePrint_StewarkArmor_ArmorExpansion__name = "Plan produkcji stewarskiej zbroi płytowej";
     Patch_AE_Use_Plan_StewarkArmor__line1 = "Plan produkcji stewarskiej zbroi płytowej";
     Patch_AE_Use_Plan_StewarkArmor__line2 = "Jest to plan dla wszystkich wykwalifikowanych kowali w Stewark, których zadaniem jest stworzenie nowych elementów zbroi dla straży miejskiej.";
@@ -159,7 +159,7 @@ func void Patch_AE_LocalizePolish() {
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_04_PL"); //Dzięki, wezmę to.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_15_9_PL"); //Oto on, oby dobrze ci służył.
 
-    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Średni pancerz tropiciela smoków. Ochrona: 110/110/110/65/25. 12000 sztuk złota.";  
+    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Średni pancerz tropiciela smoków. Ochrona: 110/110/110/65/25. 12000 sztuk złota.";
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_00_PL"); //Kupię tę zbroję.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_01_PL"); //Oh, świetnie. Spodoba ci się.
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_02_PL"); //Za taką cenę musi się spodobać.
@@ -267,7 +267,7 @@ func void Patch_AE_LocalizePolish() {
     // Engor
     // ------
 
-    Patch_AE_DIA_Engor_ARCHER_KAUFEN_desc = "Zbroja kusznika straży. Ochrona: 65/65/65/10/10. 2300 sztuk złota.";  
+    Patch_AE_DIA_Engor_ARCHER_KAUFEN_desc = "Zbroja kusznika straży. Ochrona: 65/65/65/10/10. 2300 sztuk złota.";
     // AI_Output(other, self, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00_PL"); //Daj mi tę zbroję.
     // AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01_PL"); //Oto ona. Da ci świetną ochronę. Naprawdę dobry materiał.
     // AI_Output(self, other, "PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02_PL"); //Najpierw przynieś mi złoto.
@@ -365,7 +365,7 @@ func void Patch_AE_LocalizePolish() {
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_PL"); //Niczego. To sama przyjemność pracować nad taką zbroją, jak ta.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_PL"); //W porządku, postaram się zdobyć materiały.
     Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Harad będzie potrzebował 6 sztuk surowej stali i 3 bryłki rudy, by naprawić zardzewiały pancerz paladyna.";
-    
+
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_PL"); //Oto pancerz.
     // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_PL"); //A tu materiały.
     // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_PL"); //W porządku, biorę się do pracy.
@@ -467,8 +467,8 @@ func void Patch_AE_LocalizePolish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_PL"); //Nie mam niczego takiego dla ciebie, ale nie jesteś pierwszym, który o to pyta.
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_PL"); //Idź do Wilka. Sądzę, że powinien mieć coś dla ciebie.
 
-    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Zbroja łowcy nagród. Ochrona: 55/55, bonus do posługiwania się łukiem. 1500 szt. złota."
-    
+    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Zbroja łowcy nagród. Ochrona: 55/55, bonus do posługiwania się łukiem. 1500 szt. złota.";
+
     // Localized OU (do not change)
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_PL";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_PL";

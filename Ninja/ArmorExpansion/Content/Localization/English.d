@@ -466,7 +466,7 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_EN"); //I don't have anything like that for you, but you're not the first one to ask for something like this.
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_EN"); //Go to Wolf. I think he should have something for you.
 
-    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Buy Mercenary Archer Armor. (Protection: Weapons 55, Arrows 55, Archery Bonus. price 1500 gold)."
+    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Buy Mercenary Archer Armor. (Protection: Weapons 55, Arrows 55, Archery Bonus. price 1500 gold).";
 
     // Localized OU (do not change)
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_EN";
