@@ -23,7 +23,7 @@ func void Patch_AE_LocalizePolish() {
     ITAR_MIL_Med2_ArmorExpansion__name = "Ulepszony średni pancerz straży";
     ITAR_MIL_P_ArmorExpansion__name = "Zbroja kusznika straży";
     ITAR_MIL_M__name = "Średnia zbroja straży";
-    ITAR_DJG_CL_ArmorExpansion__name = "Lekki pancerz łowców smoków";
+    ITAR_DJG_CL_ArmorExpansion__name = "Lekki pancerz tropiciela smoków";
     ITAR_SLD_BOW_ArmorExpansion__name = "Zbroja łowcy nagród";
     ITAR_MIL_R_ArmorExpansion__name = "Ulepszony lekki pancerz straży";
     ITAR_CRUSADER_ArmorExpansion__name = "Zbroja krzyżowca";
@@ -32,8 +32,8 @@ func void Patch_AE_LocalizePolish() {
     ITAR_SLD_R_ArmorExpansion__name = "Ulepszony średni pancerz najemnika";
     ITAR_SLD_LR_ArmorExpansion__name = "Ulepszony lekki pancerz najemnika";
     ITAR_PAL_CH_ArmorExpansion__name = "Zbroja kusznika paladyna";
-    ITAR_DJG_CH_ArmorExpansion__name = "Cieżki pancerz łowców smoków";
-    ITAR_DJG_CM_ArmorExpansion__name = "Średni pancerz łowców smoków";
+    ITAR_DJG_CH_ArmorExpansion__name = "Cieżki pancerz tropiciela smoków";
+    ITAR_DJG_CM_ArmorExpansion__name = "Średni pancerz tropiciela smoków";
     ITAR_PAL_ST_ArmorExpansion__name = "Stewarska zbroja płytowa";
     ITAR_PAL_MH_ArmorExpansion__name = "Ciężka zbroja rycerska";
     ITAR_PIR_H_ArmorExpansion__name = "Pancerz kapitana";
@@ -159,14 +159,14 @@ func void Patch_AE_LocalizePolish() {
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_04_PL"); //Dzięki, wezmę to.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_15_9_PL"); //Oto on, oby dobrze ci służył.
 
-    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Średni pancerz łowcy smoków. Ochrona: 110/110/110/65/25. 12000 sztuk złota.";  
+    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Średni pancerz tropiciela smoków. Ochrona: 110/110/110/65/25. 12000 sztuk złota.";  
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_00_PL"); //Kupię tę zbroję.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_01_PL"); //Oh, świetnie. Spodoba ci się.
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_02_PL"); //Za taką cenę musi się spodobać.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_03_PL"); //Jeszcze zobaczysz, że jest jej warta.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_04_PL"); //Nie masz dość złota.
 
-    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_desc = "Ciężki pancerz łowcy smoków. Ochrona: 140/140/140/90/40. 20000 sztuk złota.";
+    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_desc = "Ciężki pancerz tropiciela smoków. Ochrona: 140/140/140/90/40. 20000 sztuk złota.";
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_15_00_PL"); //Daj mi tę zbroję.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_01_PL"); //To najlepsza zbroja, jaką kiedykolwiek stworzyłem.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_02_PL"); //Prawdziwe arcydzieło.
@@ -467,6 +467,8 @@ func void Patch_AE_LocalizePolish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_PL"); //Nie mam niczego takiego dla ciebie, ale nie jesteś pierwszym, który o to pyta.
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_PL"); //Idź do Wilka. Sądzę, że powinien mieć coś dla ciebie.
 
+    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Zbroja łowcy nagród. Ochrona: 55/55, bonus do posługiwania się łukiem. 1500 szt. złota."
+    
     // Localized OU (do not change)
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_PL";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_PL";
