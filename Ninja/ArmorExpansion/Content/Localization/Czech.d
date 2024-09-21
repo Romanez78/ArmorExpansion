@@ -15,28 +15,28 @@ const string Patch_AE_Use_Plan_StewarkArmor__line7 = "Pokud budete přistiženi 
 const string Patch_AE_Use_Plan_StewarkArmor__line8 = "Rozkaz vydal velitel městské stráže Cenric";
 
 // Armor names
-const string ITAR_MIL_H_ArmorExpansion__name = "Tižká Zbroj Domobrany";
+const string ITAR_MIL_H_ArmorExpansion__name = "Těžká Zbroj Domobrany";
 const string ITAR_GAMBESON_ArmorExpansion__name = "Lovecký Gambeson";
 const string ITAR_PAL_A_ArmorExpansion__name = "Obohacená Paladinská Zbroj";
 const string ITAR_PAL_R_ArmorExpansion__name = "Rezavá Paladinská Zbroj";
 const string ITAR_PAL_F_ArmorExpansion__name = "Opravená Paladinská Zbroj";
 const string ITAR_PAL_C_ArmorExpansion__name = "Zbroj Rytíře Kušišníka";
-const string ITAR_MIL_Med2_ArmorExpansion__name = "Vylepšená Stoedni Tižká Zbroj Domobrany";
-const string ITAR_MIL_P_ArmorExpansion__name = "Zbroj Milicionáoe Kušišníka";
-const string ITAR_MIL_M__name = "Stoední Zbroj Domobrany";
+const string ITAR_MIL_Med2_ArmorExpansion__name = "Vylepšená Středně Těžká Zbroj Domobrany";
+const string ITAR_MIL_P_ArmorExpansion__name = "Zbroj Milicionáře Kušišníka";
+const string ITAR_MIL_M__name = "Střední Zbroj Domobrany";
 const string ITAR_DJG_CL_ArmorExpansion__name = "Lehká Zbroj Lovce Draku";
 const string ITAR_SLD_BOW_ArmorExpansion__name = "Zbroj Nájemného Lovce";
 const string ITAR_MIL_R_ArmorExpansion__name = "Vylepšená Lehká Zbroj Domobrany";
-const string ITAR_CRUSADER_ArmorExpansion__name = "Zbroj Koižáka";
-const string ITAR_SLD_SCOUT_ArmorExpansion__name = "Odiv Žoldáka Zvida";
-const string ITAR_MIL_SCOUT_ArmorExpansion__name = "Odiv Královského Zvida";
+const string ITAR_CRUSADER_ArmorExpansion__name = "Zbroj Křižáka";
+const string ITAR_SLD_SCOUT_ArmorExpansion__name = "Oděv Žoldáka Zvěda";
+const string ITAR_MIL_SCOUT_ArmorExpansion__name = "Oděv Královského Zvěda";
 const string ITAR_SLD_R_ArmorExpansion__name = "Vylepšená Stoední Zbroj Žoldáka";
 const string ITAR_SLD_LR_ArmorExpansion__name = "Vylepšená Lehká Zbroj Žoldáka";
 const string ITAR_PAL_CH_ArmorExpansion__name = "Zbroj Paladina Kušišníka";
-const string ITAR_DJG_CH_ArmorExpansion__name = "Tižká Zbroj Lovce Draku";
-const string ITAR_DJG_CM_ArmorExpansion__name = "Stoední Zbroj Lovce Draku";
+const string ITAR_DJG_CH_ArmorExpansion__name = "Těžká Zbroj Lovce Draku";
+const string ITAR_DJG_CM_ArmorExpansion__name = "Střední Zbroj Lovce Draku";
 const string ITAR_PAL_ST_ArmorExpansion__name = "Stewarkská Plátová Zbroj";
-const string ITAR_PAL_MH_ArmorExpansion__name = "Tižká Zbroj Rytíoe";
+const string ITAR_PAL_MH_ArmorExpansion__name = "Těžká Zbroj Rytíře";
 const string ITAR_PIR_H_ArmorExpansion__name = "Zbroj Kapitána";
 const string ITAR_PAL_ANH_ArmorExpansion__name = "Obohacená Paladinská Zbroj";
 const string ITAR_PAL_RNH_ArmorExpansion__name = "Rezavá Paladinská Zbroj";
@@ -49,11 +49,11 @@ const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Koižáka";
 // Armor bonus
 const string Patch_AE_TEXT_MaxManaBonus20 = "+20 bonus maximální many"; // ITAR_PAL_F_ArmorExpansion, ITAR_PAL_FNH_ArmorExpansion, ITAR_PAL_FFH_ArmorExpansion
 const string Patch_AE_TEXT_MaxManaBonus40 = "+40 bonus maximální many";  // ITAR_PAL_A_ArmorExpansion, ITAR_PAL_ANH_ArmorExpansion, ITAR_PAL_AFH_ArmorExpansion
-const string Patch_AE_TEXT_OldArmor = "Tahle zbroj zažila lepší easy"; // ITAR_PAL_R_ArmorExpansion, ITAR_PAL_RNH_ArmorExpansion, ITAR_PAL_RFH_ArmorExpansion
-const string Patch_AE_TEXT_ArcheryBonus3 = "+3% stoelecký talent"; //ITAR_GAMBESON_ArmorExpansion
-const string Patch_AE_TEXT_ArcheryBonus5 = "+5% stoelecký talent"; // ITAR_PAL_C_ArmorExpansion, ITAR_MIL_P_ArmorExpansion, ITAR_DJG_CL_ArmorExpansion, ITAR_SLD_BOW_ArmorExpansion, ITAR_SLD_SCOUT_ArmorExpansion, ITAR_MIL_SCOUT_ArmorExpansion, ITAR_PAL_CH_ArmorExpansion, ITAR_DJG_CH_ArmorExpansion, ITAR_DJG_CM_ArmorExpansion
-const string Patch_AE_TEXT_TwoHandedBonus5 = "+5% obouruení talent"; // ITAR_CRUSADER_ArmorExpansion, ITAR_NH_CRUSADER_ArmorExpansion
-const string Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 bonus k obratnosti, +10% Jednoruení talent"; // ITAR_PIR_H_ArmorExpansion
+const string Patch_AE_TEXT_OldArmor = "Tahle zbroj zažila lepší časy"; // ITAR_PAL_R_ArmorExpansion, ITAR_PAL_RNH_ArmorExpansion, ITAR_PAL_RFH_ArmorExpansion
+const string Patch_AE_TEXT_ArcheryBonus3 = "+3% střelecký talent"; //ITAR_GAMBESON_ArmorExpansion
+const string Patch_AE_TEXT_ArcheryBonus5 = "+5% střelecký talent"; // ITAR_PAL_C_ArmorExpansion, ITAR_MIL_P_ArmorExpansion, ITAR_DJG_CL_ArmorExpansion, ITAR_SLD_BOW_ArmorExpansion, ITAR_SLD_SCOUT_ArmorExpansion, ITAR_MIL_SCOUT_ArmorExpansion, ITAR_PAL_CH_ArmorExpansion, ITAR_DJG_CH_ArmorExpansion, ITAR_DJG_CM_ArmorExpansion
+const string Patch_AE_TEXT_TwoHandedBonus5 = "+5% obouruční talent"; // ITAR_CRUSADER_ArmorExpansion, ITAR_NH_CRUSADER_ArmorExpansion
+const string Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 bonus k obratnosti, +10% Jednoruční talent"; // ITAR_PIR_H_ArmorExpansion
 
 // Alerts: The constants used to create an alert (print on a screen) about missing ingredient(s) or an forged armor.
 const string Patch_AE_PRINT_ProdItemsMissing__SUBSTR_1 = "Chybí: ";
