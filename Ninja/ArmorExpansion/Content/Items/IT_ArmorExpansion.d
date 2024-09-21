@@ -601,13 +601,13 @@ INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	65;
-	protection [PROT_BLUNT] = 	65;
-	protection [PROT_POINT] = 	65;
-	protection [PROT_FIRE] 	= 	15;
-	protection [PROT_MAGIC] = 	10;
+	protection [PROT_EDGE]	=	55;
+	protection [PROT_BLUNT] = 	55;
+	protection [PROT_POINT] = 	55;
+	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_MAGIC] = 	5;
 
-	value 					=	2500;
+	value 					=	1500;
 
 	wear 					=	WEAR_TORSO;
 
