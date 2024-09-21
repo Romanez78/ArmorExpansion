@@ -477,6 +477,7 @@ const string Patch_AE_DIA_LEE_SLD_SCOUTArmor_desc = "Nenašla by se tu pro mně 
 // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_CS"); //Já nic takového pro tebe nemám, ale nejsi první kdo něco takového chce
 // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_CS"); //Jdi za Wolfem, myslím si že on by měl pro tebe něco mít
 
+const string Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Koupit si Zbroj Nájemného Lovce. Ochrana: zbraně 55, šípy 55, cena 1500 zlaťáků."
 
 // Localized OU (do not change)
 const string PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_CS";
