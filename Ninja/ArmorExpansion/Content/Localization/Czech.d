@@ -44,7 +44,7 @@ const string ITAR_PAL_FNH_ArmorExpansion__name = "Opravená Paladinská Zbroj";
 const string ITAR_PAL_AFH_ArmorExpansion__name = "Obohacená Paladinská Zbroj";
 const string ITAR_PAL_RFH_ArmorExpansion__name = "Rezavá Paladinská Zbroj";
 const string ITAR_PAL_FFH_ArmorExpansion__name = "Opravená Paladinská Zbroj";
-const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Koižáka";
+const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Křižáka";
 
 // Armor bonus
 const string Patch_AE_TEXT_MaxManaBonus20 = "+20 bonus maximální many"; // ITAR_PAL_F_ArmorExpansion, ITAR_PAL_FNH_ArmorExpansion, ITAR_PAL_FFH_ArmorExpansion
