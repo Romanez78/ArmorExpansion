@@ -18,7 +18,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Mil_319_Pablo",          ITAR_MIL_Med2_ArmorExpansion);  // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_320_Miliz",          ITAR_MIL_SCOUT_ArmorExpansion); // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_324_Peck",           ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
-    Patch_AE_NpcUpdateArmor("Mil_325_Miliz",          ITAR_MIL_M);                    // Originally ITAR_MIL_L 
+    Patch_AE_NpcUpdateArmor("Mil_325_Miliz",          ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_327_Miliz",          ITAR_MIL_SCOUT_ArmorExpansion); // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_332_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_333_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
@@ -68,4 +68,12 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("VLK_4140_Waffenknecht",  ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4145_Waffenknecht",  ITAR_MIL_P_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_440_Bartok",         ITAR_GAMBESON_ArmorExpansion);  // Originally ITAR_Vlk_L
+};
+
+/*
+ * Adjust the model fatness of NPCs. The purpose here is to avoid clipping in conjunction with new armors
+ */
+func void Patch_AE_MdlFatness() {
+    Patch_AE_NpcUpdateMdlFatness("PAL_204_Torwache",     0.0);                        // Originally 0.5
+    Patch_AE_NpcUpdateMdlFatness("PAL_205_Torwache",     0.0);                        // Originally 1.0
 };

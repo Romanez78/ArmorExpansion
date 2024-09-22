@@ -3,6 +3,7 @@ LeGo
 
 // Internal
 Content\Internal\ArmorRecords.d
+Content\Internal\FatnessRecords.d
 Content\Internal\ApplyRevert.d
 
 // Localization
@@ -41,7 +42,7 @@ Content\Dialogs\Wolf.d
 Content\Dialogs\SmithArmor.d
 
 // Functions
-Content\NpcArmors.d
+Content\NpcChanges.d
 Content\C_PlayerHasFakeGuild.d
 Content\InsertNpc.d
 

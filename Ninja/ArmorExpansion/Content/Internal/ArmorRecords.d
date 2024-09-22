@@ -1,5 +1,5 @@
 /*
- * This is internal functionality for the file "NpcArmors.d". It handles the mechanics to update the armors to a
+ * This is internal functionality for the file "NpcChanges.d". It handles the mechanics to update the armors in a
  * save game.
  *
  * To allow changing the armors of NPCs in a safe way that will not impact game saves after removing the patch,
@@ -38,7 +38,7 @@ func void Patch_AE_NpcSetArmor(var C_Npc slf, var int armorInstance) {
 
 /*
  * Equip new armor and store the original one in the hash table.
- * This function is called from "NpcArmors.d" for each NPC to equip a new armor from the patch.
+ * This function is called from "NpcChanges.d" for each NPC to equip a new armor from the patch.
  */
 func void Patch_AE_NpcUpdateArmor(var string npcInstanceName, var int armorInstance) {
     // Check if instance exists
@@ -89,7 +89,7 @@ func void Patch_AE_NpcOriginalArmor(var int npcInstance, var int armorInstance) 
 
 /*
  * Called by Patch_AE_ApplyChanges to equip the new armors
- * Make changes in "NpcArmors.d".
+ * Make changes in "NpcChanges.d".
  */
 func void Patch_AE_NpcArmorsApply() {
     if (Patch_AE_NpcArmors_htbl) {

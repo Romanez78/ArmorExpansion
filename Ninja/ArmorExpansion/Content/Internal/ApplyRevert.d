@@ -57,6 +57,7 @@ func void Patch_AE_InitRevert() {
 func void Patch_AE_ApplyChanges() {
     MEM_InitAll();
     MEM_Info("Patch_AE_ApplyChanges");
+    Patch_AE_MdlFatnessApply();
     Patch_AE_NpcArmorsApply();
 };
 
@@ -68,4 +69,5 @@ func void Patch_AE_RevertChanges() {
     MEM_InitAll();
     MEM_Info("Patch_AE_RevertChanges");
     Patch_AE_NpcArmorsRevert();
+    Patch_AE_MdlFatnessRevert();
 };
