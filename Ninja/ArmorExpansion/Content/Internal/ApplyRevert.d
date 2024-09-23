@@ -60,6 +60,7 @@ func void Patch_AE_ApplyChanges() {
     Patch_AE_MdlFatnessApply();
     Patch_AE_NpcArmorsApply();
     Patch_AE_NpcMeleeWeaponApply();
+    Patch_AE_NpcRangedWeaponApply(); // Order important: Ranged has to come AFTER melee
 };
 
 
@@ -70,6 +71,7 @@ func void Patch_AE_RevertChanges() {
     MEM_InitAll();
     MEM_Info("Patch_AE_RevertChanges");
     Patch_AE_NpcMeleeWeaponRevert();
+    Patch_AE_NpcRangedWeaponRevert(); // Order important: Ranged has to come AFTER melee
     Patch_AE_NpcArmorsRevert();
     Patch_AE_MdlFatnessRevert();
 };

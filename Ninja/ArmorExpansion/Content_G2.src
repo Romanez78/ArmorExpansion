@@ -4,6 +4,7 @@ LeGo
 // Internal
 Content\Internal\ArmorRecords.d
 Content\Internal\MwEquipRecords.d
+Content\Internal\RwEquipRecords.d
 Content\Internal\FatnessRecords.d
 Content\Internal\ApplyRevert.d
 

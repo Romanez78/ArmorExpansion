@@ -88,6 +88,23 @@ func void Patch_AE_NpcMeleeWeapons() {
 };
 
 /*
+ * Equip ranged weapons
+ */
+func void Patch_AE_NpcRangedWeapons() {
+    Patch_AE_NpcUpdateRangedWeapon("MIL_327_Miliz",          ItRw_Mil_Crossbow);      // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("MIL_320_Miliz",          ItRw_Mil_Crossbow);      // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("VLK_4145_Waffenknecht",  ItRw_Mil_Crossbow);      // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("VLK_4105_Waffenknecht",  ItRw_Mil_Crossbow);      // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("PAL_208_Paladin",        ItRw_Crossbow_H_01);     // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("PAL_253_Wache",          -1);                     // Originally ItRw_Crossbow_H_01
+    Patch_AE_NpcUpdateRangedWeapon("PAL_266_Ritter",         ItRw_Crossbow_H_01);     // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("PAL_269_Ritter",         ItRw_Crossbow_H_01);     // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("DJG_709_Rethon",         ItRw_Crossbow_H_01);     // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("DJG_711_Godar",          ItRw_Crossbow_H_01);     // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("DJG_710_Kjorn",          ItRw_Crossbow_H_01);     // Originally None
+};
+
+/*
  * Adjust the model fatness of NPCs. The purpose here is to avoid clipping in conjunction with new armors
  */
 func void Patch_AE_MdlFatness() {
