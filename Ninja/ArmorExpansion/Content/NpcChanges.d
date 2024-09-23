@@ -71,6 +71,23 @@ func void Patch_AE_NpcArmors() {
 };
 
 /*
+ * Equip melee weapons
+ */
+func void Patch_AE_NpcMeleeWeapons() {
+    Patch_AE_NpcUpdateMeleeWeapon("MIL_327_Miliz",          ItMw_Shortsword1);        // Originally ItMw_1h_Mil_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("MIL_320_Miliz",          ItMw_Shortsword1);        // Originally ItMw_1h_Mil_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("VLK_4145_Waffenknecht",  ItMw_1h_Mil_Sword);       // Originally ItMw_1h_Mil_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("VLK_4105_Waffenknecht",  ItMw_1h_Mil_Sword);       // Originally ItMw_1h_Vlk_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("PAL_208_Paladin",        ItMw_1H_Pal_Sword);       // Originally ItMw_2H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("PAL_253_Wache",          ItMw_2H_Pal_Sword);       // Originally ItMw_1H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("PAL_266_Ritter",         ItMw_1H_Pal_Sword);       // Originally ItMw_2H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("PAL_269_Ritter",         ItMw_1H_Pal_Sword);       // Originally ItMw_1H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("DJG_709_Rethon",         ItMw_1h_Sld_Sword);       // Originally ItMw_1h_Sld_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("DJG_711_Godar",          ItMw_1h_Sld_Sword);       // Originally ItMw_1h_Sld_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("DJG_710_Kjorn",          ItMw_1h_Sld_Sword);       // Originally ItMw_1h_Sld_Sword
+};
+
+/*
  * Adjust the model fatness of NPCs. The purpose here is to avoid clipping in conjunction with new armors
  */
 func void Patch_AE_MdlFatness() {
