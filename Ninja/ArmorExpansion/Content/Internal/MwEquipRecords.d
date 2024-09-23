@@ -38,7 +38,9 @@ func void Patch_AE_EquipMeleeWeapon(var C_NPC slf, var int weaponInstance) {
 
     // Unready weapon of same type
     var int readied;
-    if (Npc_HasReadiedMeleeWeapon(slf)) {
+    if (Npc_HasReadiedMeleeWeapon(slf))
+        // Does not have a melee weapon but still in fight mode: should now draw the new weapon instead of keeping fists
+    || ((!Npc_HasEquippedMeleeWeapon(slf)) && (Npc_IsInFightMode(slf, FMODE_FIST)) && (weaponInstance != -1)) {
         const int oCNpc__EV_ForceRemoveWeapon = 7662656; //0x74EC40
         const int call0 = 0;
         if (CALL_Begin(call0)) {
@@ -63,7 +65,7 @@ func void Patch_AE_EquipMeleeWeapon(var C_NPC slf, var int weaponInstance) {
         };
     };
 
-    // Instantaneously draw new weapon (or fists) if previous weapon was readied
+    // Instantaneously draw new weapon (or ranged weapon or fists) if previous weapon was readied
     if (readied) {
 
         // Determine exact mode for the new weapon
@@ -81,6 +83,26 @@ func void Patch_AE_EquipMeleeWeapon(var C_NPC slf, var int weaponInstance) {
                 fm = FMODE_FIST;
             };
         };
+
+        // Instead of fist, take the ranged weapon if available
+        if (fm == FMODE_FIST) {
+            if (Npc_HasEquippedRangedWeapon(slf)) {
+                var C_Item itm; itm = Npc_GetEquippedRangedWeapon(slf);
+                if (itm.flags & ITEM_BOW) {
+                    fm = 5;
+                } else if (itm.flags & ITEM_CROSSBOW) {
+                    fm = 6;
+                };
+                B_CreateAmmo(slf);
+            };
+        };
+
+        // Some debug information
+        var string msg; msg = "Patch_AE_EquipMeleeWeapon:  ";
+        msg = ConcatStrings(msg, slf.name);
+        msg = ConcatStrings(msg, " now changing to fight mode ");
+        msg = ConcatStrings(msg, IntToString(fm));
+        MEM_Info(msg);
 
         const int oCNpc__SetWeaponMode2 = 7573120; //0x738E80
         const int call2 = 0;
