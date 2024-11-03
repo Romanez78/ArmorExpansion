@@ -722,7 +722,8 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_PAL_R_NH_desc = "Put up the visor of the Rusty Paladin Armor";
     Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Remove Helmet from Crusader Armor";
     Patch_AE_PC_ITAR_nh_crusader_desc = "Return Helmet to Crusader Armor";
-
+    Patch_AE_PC_ITAR_PAL_MH_desc = "Remove Helmet from heavy knight armor";
+    Patch_AE_PC_PAL_MH_FH_desc = "Return Helmet to heavy knight armor";
     // ------
     // Ulthar
     // ------
