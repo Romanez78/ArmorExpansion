@@ -21,17 +21,17 @@ func int Patch_AE_DIA_Matteo_GAMBESON_Condition()
 };
 func void Patch_AE_DIA_Matteo_GAMBESON_Info()
 {
-    AI_Output(other, self, DIA_Matteo_LEATHER_15_00);
+    AI_Output(other, self, "DIA_Matteo_LEATHER_15_00");
 
     if (B_GiveInvItems(other, self, ItMi_Gold, 350))
     {
-        AI_Output(self, other, DIA_MATTEO_LEATHER_09_01);
+        AI_Output(self, other, "DIA_MATTEO_LEATHER_09_01");
 
         Patch_AE_Matteo_GAMBESONBought = B_GiveInvItems(self, other, ItAr_GAMBESON_ARMOREXPANSION, 1);
     }
     else
     {
-        AI_Output(self, other, DIA_MATTEO_LEATHER_09_02);
+        AI_Output(self, other, "DIA_MATTEO_LEATHER_09_02");
     };
 };
 
@@ -58,17 +58,17 @@ func int Patch_AE_DIA_Matteo_HUNTERJACKET_Condition()
 };
 func void Patch_AE_DIA_Matteo_HUNTERJACKET_Info()
 {
-    AI_Output(other, self, DIA_MATTEO_LEATHER_15_00);
+    AI_Output(other, self, "DIA_Matteo_LEATHER_15_00");
 
     if (B_GiveInvItems(other, self, ItMi_Gold, 800))
     {
-        AI_Output(self, other, DIA_MATTEO_LEATHER_09_01);
+        AI_Output(self, other, "DIA_MATTEO_LEATHER_09_01");
 
         Patch_AE_Matteo_HUNTERJACKETBought = B_GiveInvItems(self, other, ITAR_ARX_HUNTERM_ArmorExpansion, 1);
     }
     else
     {
-        AI_Output(self, other, DIA_MATTEO_LEATHER_09_02);
+        AI_Output(self, other, "DIA_MATTEO_LEATHER_09_02");
     };
 };
 
@@ -96,16 +96,16 @@ func int Patch_AE_DIA_Matteo_HUNTERJACKETH_Condition()
 };
 func void Patch_AE_DIA_Matteo_HUNTERJACKETH_Info()
 {
-    AI_Output(other, self, DIA_MATTEO_LEATHER_15_00);
+    AI_Output (other, self, "DIA_Matteo_LEATHER_15_00");
 
     if (B_GiveInvItems(other, self, ItMi_Gold, 1800))
     {
-        AI_Output(self, other, DIA_MATTEO_LEATHER_09_01);
+        AI_Output(self, other, "DIA_MATTEO_LEATHER_09_01");
 
         Patch_AE_Matteo_HUNTERJACKETHBought = B_GiveInvItems(self, other, ITAR_ARX_HUNTERH_ArmorExpansion, 1);
     }
     else
     {
-        AI_Output(self, other, DIA_MATTEO_LEATHER_09_02);
+        AI_Output(self, other, "DIA_MATTEO_LEATHER_09_02");
     };
 };
