@@ -21,7 +21,7 @@ func void Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_Info()
         AI_Output(self, other, PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03);
         AI_Output(self, other, PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04);
         AI_Output(self, other, PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05);
-        B_GiveInvItems(self, other, ITAR_PAL_MH_ARMOREXPANSION, 1);
+        B_GiveInvItems(self, other, ITAR_PAL_MH_FH_ARMOREXPANSION, 1);
         AI_Output(self, other, PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06);
         AI_Output(other, self, PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01);
 };
