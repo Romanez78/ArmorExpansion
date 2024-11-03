@@ -1736,7 +1736,7 @@ FUNC INT Patch_AE_PC_ITAR_PAL_MH_FH_Condition()
         };
     };
 };
-FUNC VOID Patch_AE_PC_ITAR_CRUSADER_NH_Info()
+FUNC VOID Patch_AE_PC_ITAR_PAL_MH_FH_Info()
 {
 	var int has_all_ingredients; has_all_ingredients = true;
     var int amount_needed;
