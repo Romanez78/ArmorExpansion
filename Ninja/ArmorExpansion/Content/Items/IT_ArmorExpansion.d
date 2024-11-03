@@ -56,6 +56,7 @@ const int Patch_AE_ITAR_PAL_A_BONUS_MANA = 40;
 const int Patch_AE_ITAR_PAL_F_BONUS_MANA = 20;
 var int Patch_AE__ITAR_MIL_H_Equipped;
 var int Patch_AE__ITAR_SLD_BOW_Equipped;
+var int Patch_AE__ITAR_GAMBESON_Equipped;
 INSTANCE ITAR_MIL_H_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_MIL_H_ArmorExpansion__name;
