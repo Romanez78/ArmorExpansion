@@ -721,8 +721,8 @@ func void Patch_AE_LocalizePolish() {
     Patch_AE_PC_ITAR_PAL_R_NH_desc = "Podnieś przyłbicę zardzewiałego pancerza paladyna";
     Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Usuń hełm ze zbroi krzyżowca";
     Patch_AE_PC_ITAR_nh_crusader_desc = "Przywróć hełm do zbroi krzyżowca";
-    Patch_AE_PC_ITAR_PAL_MH_desc = "Usuń hełm z ciężkiej zbroi rycerskiej";
-    Patch_AE_PC_PAL_MH_FH_desc = "Przywróć hełm do ciężkiej zbroi rycerskiej";
+    Patch_AE_PC_PAL_MH_desc = "Usuń hełm z ciężkiej zbroi rycerskiej";
+    Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Przywróć hełm do ciężkiej zbroi rycerskiej";
     
     // ------
     // Ulthar
