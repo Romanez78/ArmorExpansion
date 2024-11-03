@@ -731,8 +731,8 @@ const string Patch_AE_PC_ITAR_PAL_R_FH_desc = "Vyklopit hledí Rezavé paladinsk
 const string Patch_AE_PC_ITAR_PAL_R_NH_desc = "Vyklopit hledí Rezavé paladinské zbroje";
 const string Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Odebrat Helmu ze zbroje křižáka";
 const string Patch_AE_PC_ITAR_nh_crusader_desc = "Vrátit helmu ke zbroji křížáka";
-const string Patch_AE_PC_ITAR_PAL_MH_desc = "Odebrat Helmu z těžké zbroje rytíře";
-const string Patch_AE_PC_PAL_MH_FH_desc = "Vrátit helmu k těžké zbroji rytíře";
+const string Patch_AE_PC_PAL_MH_desc = "Odebrat Helmu z těžké zbroje rytíře";
+const string Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Vrátit helmu k těžké zbroji rytíře";
 
 // ------
 // Ulthar
