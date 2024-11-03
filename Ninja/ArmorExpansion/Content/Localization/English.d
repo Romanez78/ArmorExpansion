@@ -44,6 +44,8 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_PAL_RFH_ArmorExpansion__name = "Rusty Paladin Armor";
     ITAR_PAL_FFH_ArmorExpansion__name = "Repaired Paladin Armor";
     ITAR_NH_CRUSADER_ArmorExpansion_name = "Crusader Armor";
+    ITAR_ARX_HUNTERM_ArmorExpansion__name = "Hunting Jacket";
+    ITAR_ARX_HUNTERH_ArmorExpansion__name = "Strenghtened Hunting Jacket";
 
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximum Mana Bonus";
@@ -513,7 +515,10 @@ func void Patch_AE_LocalizeEnglish() {
     // Matteo
     // ------
 
-    Patch_AE_DIA_Matteo_GAMBESON_desc = "Buy Hunting Gambeson (Protection: Blade 20, Point 20. Cost: 350 gold).";
+    Patch_AE_DIA_Matteo_GAMBESON_desc = "Buy Hunting Gambeson (Protection: 20/20. Ranged Bonus, Cost: 350 gold).";
+    Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Buy Hunting Jacket (Protection: 40/40/10/5. Ranged Bonus, Cost: 800 gold).";
+    Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Buy Strenghtened Hunting Jacket (Prot.: 55/55/15/10. Ranged Bonus, Cost: 1800 gold).";
+ 
     // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN"); //Okay, give me the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN"); //You'll like it.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN"); //The armor's worth its weight in gold, so come back when you have enough.
