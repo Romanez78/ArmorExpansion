@@ -44,6 +44,8 @@ func void Patch_AE_LocalizePolish() {
     ITAR_PAL_RFH_ArmorExpansion__name = "Zardzewiały pancerz paladyna";
     ITAR_PAL_FFH_ArmorExpansion__name = "Naprawiony pancerz paladyna";
     ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroja krzyżowca";
+    ITAR_ARX_HUNTERM_ArmorExpansion__name = "Kurtka myśliwska";
+    ITAR_ARX_HUNTERH_ArmorExpansion__name = "Wzmocniona kurtka myśliwska";
 
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 maksymalnej many";
@@ -513,7 +515,9 @@ func void Patch_AE_LocalizePolish() {
     // ------
     // Matteo
     // ------
-    Patch_AE_DIA_Matteo_GAMBESON_desc = "Przeszywanica myśliwego. 20/20/15/0/0/ +3% do łuku i kuszy. 350 szt. złota.";
+    Patch_AE_DIA_Matteo_GAMBESON_desc = "Przeszywanica myśliwego. 20/20 +3% do łuku i kuszy. 350 szt. złota.";
+    Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Kurtka myśliwska 40/40/10/5 +3% do łuku i kuszy. 800 szt. złota.";
+    Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Wzmocniona kurtka myśliwska 55/55/15/10 +3% do łuku i kuszy. 1800 szt. złota.";
     // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_PL"); //Dobrze, daj mi tę zbroję.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_PL"); //Spodoba ci się.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_PL"); //Pancerz ma wartość z złocie, więc wróć, gdy będziesz miał dość złota.
