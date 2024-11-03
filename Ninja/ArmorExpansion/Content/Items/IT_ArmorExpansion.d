@@ -175,13 +175,40 @@ func void Patch_AE_Equip_ITAR_GAMBESON()
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 3);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 3);
+if (true == Npc_IsPlayer(self))
+    {
+        Patch_AE__ITAR_GAMBESON_Equipped = true;
+
+        if (Leather01_Equipped == TRUE) //Ledergürtel
+		{
+			self.protection[PROT_EDGE] += BA_Bonus01;
+			self.protection[PROT_BLUNT] += BA_Bonus01;
+			self.protection[PROT_POINT] += BA_Bonus01;
+			self.protection[PROT_MAGIC] += BA_Bonus01;
+			self.protection[PROT_FIRE] += BA_Bonus01;
+		};
+    };
 };
 func void Patch_AE_UnEquip_ITAR_GAMBESON()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -3);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -3);
-	};
+if (true == Npc_IsPlayer(self))
+    {
+        Patch_AE__ITAR_GAMBESON_Equipped = false;
+
+        if (Leather01_Equipped == TRUE) //Ledergürtel
+		{
+			self.protection[PROT_EDGE] -= BA_Bonus01;
+			self.protection[PROT_BLUNT] -= BA_Bonus01;
+			self.protection[PROT_POINT] -= BA_Bonus01;
+			self.protection[PROT_MAGIC] -= BA_Bonus01;
+			self.protection[PROT_FIRE] -= BA_Bonus01;
+		};
+    };
+};
+
 INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PAL_A_ArmorExpansion__name;
@@ -1329,11 +1356,11 @@ INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	60;
 	protection [PROT_MAGIC] = 	30;
 
-	value 					=	2500;
+	value 					=	12000;
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ItAr_Pal_H.3ds";
+	visual 					=	"HeavyKnightNH.3ds";
 	visual_change 			=	"Armor_Pal_M10_02.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
@@ -1685,8 +1712,8 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip				=	Patch_AE_Equip_ITAR_CRUSADER;
-	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER;
+	on_equip				=	Patch_AE_Equip_ITAR_CRUSADER_NH;
+	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER_NH;
 
 	description				=	name;
 	TEXT[0]                 =       Patch_AE_TEXT_TwoHandedBonus5;
@@ -1704,5 +1731,142 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 	COUNT[4]				= 	protection	[PROT_MAGIC];
 
 	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+func void Patch_AE_Equip_ITAR_CRUSADER_NH()
+{
+    B_RaiseFightTalent(self, NPC_TALENT_2H, 5);
+};
+func void Patch_AE_UnEquip_ITAR_CRUSADER_NH()
+{
+    B_RaiseFightTalent(self, NPC_TALENT_2H, -5);
+};
+
+INSTANCE ITAR_PAL_MH_FH_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_PAL_MH_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	125;
+	protection [PROT_BLUNT] = 	125;
+	protection [PROT_POINT] = 	125;
+	protection [PROT_FIRE] 	= 	60;
+	protection [PROT_MAGIC] = 	30;
+
+	value 					=	12000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"HeavyKnight.3ds";
+	visual_change 			=	"Armor_Pal_M10_02_FH.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	description				=	name;
+
+	TEXT[0]					= 	"";
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+
+INSTANCE ITAR_ARX_HUNTERM_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_ARX_HUNTERM_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	40;
+	protection [PROT_BLUNT] = 	40;
+	protection [PROT_POINT] = 	40;
+	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_MAGIC] = 	5;
+	
+	value 					=	800;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"KM_ARX_HUNTER1.3ds";
+	visual_change 			=	"ARMOR_ARX_HUNTER1.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;	
+		
+	on_equip    			=    Patch_AE_Equip_ITAR_GAMBESON;
+    on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;	
+	
+	description				=	name;
+
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus3;
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+
+INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_ARX_HUNTERH_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	55;
+	protection [PROT_BLUNT] = 	55;
+	protection [PROT_POINT] = 	55;
+	protection [PROT_FIRE] 	= 	15;
+	protection [PROT_MAGIC] = 	10;
+	
+	value 					=	1800;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"KM_ARX_HUNTER2.3ds";
+	visual_change 			=	"ARMOR_ARX_Hunter2.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;	
+	
+	on_equip    			=    Patch_AE_Equip_ITAR_GAMBESON;
+    on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;
+	
+	description				=	name;
+
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus3;
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
