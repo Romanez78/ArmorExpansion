@@ -45,6 +45,8 @@ const string ITAR_PAL_AFH_ArmorExpansion__name = "Obohacená Paladinská Zbroj";
 const string ITAR_PAL_RFH_ArmorExpansion__name = "Rezavá Paladinská Zbroj";
 const string ITAR_PAL_FFH_ArmorExpansion__name = "Opravená Paladinská Zbroj";
 const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Křižáka";
+const string ITAR_ARX_HUNTERH_ArmorExpansion__name = "Zesílený Lovecký Kabát";
+const string ITAR_ARX_HUNTERM_ArmorExpansion__name = "Lovecký Kabát";
 
 // Armor bonus
 const string Patch_AE_TEXT_MaxManaBonus20 = "+20 bonus maximální many"; // ITAR_PAL_F_ArmorExpansion, ITAR_PAL_FNH_ArmorExpansion, ITAR_PAL_FFH_ArmorExpansion
@@ -524,7 +526,9 @@ const string PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3 = "PATCH_AE_DIA_MARTIN_ARKPALA_
 // Matteo
 // ------
 
-const string Patch_AE_DIA_Matteo_GAMBESON_desc = "Koupit Lovecký Gambeson (350 zlatých). 20/20/20 bonus pro zbraně na dálku.";
+const string Patch_AE_DIA_Matteo_GAMBESON_desc = "Koupit Lovecký Gambeson (350 zlatých). 20/20 bonus k boji na dálku.";
+const string Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Koupit Lovecký Kabát (800 zlatých). 40/40/10/5 bonus k boji na dálku.";
+const string Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Koupit Zesílený Lovecký Kabát (1800 zlatých). 55/55/15/10 bonus k boji na dálku.";
 // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_CS"); //Dobře, dej mi tu zbroj.
 // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_CS"); //Bude se ti líbit.
 // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_CS"); //Ta zbroj má svojí cenu - a taky za ní stojí takže se vrať až budeš mít dost zlata.
