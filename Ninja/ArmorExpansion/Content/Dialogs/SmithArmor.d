@@ -1817,7 +1817,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_Info()
 
     // [Itar_Pal_A]
     amount_needed = Patch_AE_INGREDIENTS_ITAR_PAL_MH__itar_PAL_MH_FH ;
-    amount_current = Npc_HasItems(hero, ITAR_NH_PAL_MH_FH_ArmorExpansion); // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, ITAR_PAL_MH_FH_ArmorExpansion); // IMPORTANT: An one of a raw steel is in a hand
 
     if (amount_needed > amount_current)
     {
