@@ -1698,11 +1698,11 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	115;
-	protection [PROT_BLUNT] = 	115;
-	protection [PROT_POINT] = 	115;
-	protection [PROT_FIRE] 	= 	65;
-	protection [PROT_MAGIC] = 	40;
+	protection [PROT_EDGE]	=	110;
+	protection [PROT_BLUNT] = 	110;
+	protection [PROT_POINT] = 	110;
+	protection [PROT_FIRE] 	= 	60;
+	protection [PROT_MAGIC] = 	35;
 
 	value 					=	10000;
 
