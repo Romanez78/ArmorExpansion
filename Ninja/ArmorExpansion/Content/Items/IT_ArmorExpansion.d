@@ -561,11 +561,39 @@ INSTANCE ITAR_MIL_M (C_Item)
 {
 	name 					=	ITAR_MIL_M__name;
 
-	protection [PROT_EDGE]	=	50;
-	protection [PROT_BLUNT] = 	50;
-	protection [PROT_POINT] = 	50;
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]			=	50;
+	protection [PROT_BLUNT] 		= 	50;
+	protection [PROT_POINT] 		= 	50;
+	protection [PROT_FIRE] 			= 	10;
+	protection [PROT_MAGIC] 		= 	5;
 
 	value 					=	1500;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ItAr_MIL_M.3DS";
+	visual_change 				=	"Armor_MIL_M.asc";
+	visual_skin 				=	0;
+	material 				=	MAT_LEATHER;
+	
+	on_equip				=	Equip_ITAR_MIL_M;
+	on_unequip				=	UnEquip_ITAR_MIL_M;
+	
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
 };
 INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
 {
