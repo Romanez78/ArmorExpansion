@@ -17,19 +17,22 @@ func void Patch_AE_LocalizeGerman() {
 
     // Armor names
     ITAR_MIL_H_ArmorExpansion__name = "Schwere Milizrüstung";
+    ITAR_MILP_H_ArmorExpansion__name = "Schwere Armbrustschützen Milizrüstung";   
     ITAR_GAMBESON_ArmorExpansion__name = "Jäger Stoffrüstung";
     ITAR_PAL_A_ArmorExpansion__name = "Angereicherte Paladinrüstung";
     ITAR_PAL_R_ArmorExpansion__name = "Rostige Paladinrüstung";
     ITAR_PAL_F_ArmorExpansion__name = "Reparierte Paladinrüstung";
     ITAR_PAL_C_ArmorExpansion__name = "Armbrustschützen Ritterrüstung";
+    ITAR_PAL_CM_ArmorExpansion__name = "Schwere Armbrustschützen Ritterrüstung";    
     ITAR_MIL_Med2_ArmorExpansion__name = "Verbesserte Mittlere Milizrüstung";
     ITAR_MIL_P_ArmorExpansion__name = "Armbrustschützen Milizrüstung";
     ITAR_MIL_M__name = "Mittlere Milizrüstung";
     ITAR_DJG_CL_ArmorExpansion__name = "Leichte Drachenjägerrüstung";
-    ITAR_SLD_BOW_ArmorExpansion__name = "Bogenschützen Söldnerrüstung";
+    ITAR_SLD_BOW_ArmorExpansion__name = "Schwere Söldner-Jagdrüstung";
     ITAR_MIL_R_ArmorExpansion__name = "Verbesserte Leichte Milizrüstung";
     ITAR_CRUSADER_ArmorExpansion__name = "Kreuzritterrüstung";
-    ITAR_SLD_SCOUT_ArmorExpansion__name = "Jäger Söldnerrüstung";
+    ITAR_SLD_SCOUT_ArmorExpansion__name = "Leichte Söldner-Jagdrüstung";
+    ITAR_SLD_MP_ArmorExpansion__name = "Mittlere Söldner-Jagdrüstung";
     ITAR_MIL_SCOUT_ArmorExpansion__name = "Königliche Späherrüstung";
     ITAR_SLD_R_ArmorExpansion__name = "Verbesserte Mittlere Söldnerrüstung";
     ITAR_SLD_LR_ArmorExpansion__name = "Verbesserte Leichte Söldnerrüstung";
@@ -46,7 +49,9 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_PAL_RFH_ArmorExpansion__name = "Rostige Paladinrüstung";
     ITAR_PAL_FFH_ArmorExpansion__name = "Reparierte Paladinrüstung";
     ITAR_NH_CRUSADER_ArmorExpansion_name = "Kreuzritterrüstung";
-
+    ITAR_ARX_HUNTERM_ArmorExpansion__name = "Jagdjacke";
+    ITAR_ARX_HUNTERH_ArmorExpansion__name = "Verstärkte Jagdjacke";
+    
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximaler Mana Bonus";
     Patch_AE_TEXT_MaxManaBonus40 = "+40 Maximaler Mana Bonus";
@@ -253,7 +258,7 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_CARL_PAL_REFORGE_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
-    // AI_Output(other, self, "PATCH_AE_DIA_CARL_PAL_REFORGE_4_1_DE"); //Could you fix this rusty paladin armor for me?
+    // AI_Output(other, self, "PATCH_AE_DIA_CARL_PAL_REFORGE_4_1_DE"); //Kannst du diese rostige Paladinrüstung für mich reparieren?
     // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_01_DE"); //Paladin armor?
     // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02_DE"); //I'm sorry, boy, but that's beyond me.
     // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03_DE"); //You'll have to find another blacksmith.
