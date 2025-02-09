@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 15.12.2024 11:22:39
+date 09.02.2025 17:48:00
 user https://github.com/szapp/output-unit-action
 END
 objects 2656
@@ -8766,7 +8766,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2189]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2190]
 subType=enum:0
-text=string:Could you fix this rusty paladin armor for me?
+text=string:Kannst du diese rostige Paladinrüstung für mich reparieren?
 name=string:PATCH_AE_DIA_CARL_PAL_REFORGE_4_1_DE.WAV
 []
 []
