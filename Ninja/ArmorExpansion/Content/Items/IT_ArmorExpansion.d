@@ -555,8 +555,8 @@ INSTANCE ITAR_MIL_Med2_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"MEDIUMMILR.3DS";
-	visual_change 			=	"ARMOR_MIL_MEDIUM.asc";
+	visual 					=	"MIL_MR_AMEXPANSION.3DS";
+	visual_change 			=	"ARMOR_MIL_MR_AMEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1079,8 +1079,8 @@ INSTANCE ITAR_SLD_MP_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDSCOUT.3ds";
-	visual_change 			=	"MEDIUMSLDMP.asc";
+	visual 					=	"MEDIUMSLDMP.3ds";
+	visual_change 			=	"ARMOR_SLD_MP.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
