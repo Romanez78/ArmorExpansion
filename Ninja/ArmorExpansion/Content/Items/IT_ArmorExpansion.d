@@ -160,7 +160,7 @@ INSTANCE ITAR_MILP_H_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	"";
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus5;
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
 
@@ -997,7 +997,7 @@ INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDSCOUT.3ds";
+	visual 					=	"LIGHTSLDLP.3ds";
 	visual_change 			=	"ARMOR_SLD_SCOUT.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
