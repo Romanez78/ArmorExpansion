@@ -69,7 +69,7 @@ FUNC VOID Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEEGO()
  
     FUNC VOID Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_RANGEDGO()
 {
-    B_GiveInvItems(self, other, ITAR_MIL_P, 1);
+    B_GiveInvItems(self, other, ITAR_MIL_P_ArmorExpansion, 1);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06);
     AI_Output(other, self, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01);
