@@ -502,11 +502,11 @@ INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
     mainflag    =    ITEM_KAT_ARMOR;
     flags    =    0;
 
-    protection [PROT_EDGE]  =    90;
-    protection [PROT_BLUNT] =    90;
-    protection [PROT_POINT] =    90;
-    protection [PROT_FIRE]  =    40;
-    protection [PROT_MAGIC] =    20;
+    protection [PROT_EDGE]  =    110;
+    protection [PROT_BLUNT] =    110;
+    protection [PROT_POINT] =    110;
+    protection [PROT_FIRE]  =    60;
+    protection [PROT_MAGIC] =    30;
 
     value    =    5000;
 
