@@ -72,6 +72,8 @@ func void Patch_AE_LocalizeEnglish() {
     // Andre
     // ------
 
+    Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEE = (Choose Medium Militia Armor)
+    Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_RANGED = (Choose Medium Militia Crossbowman Armor)
     Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc = "Couldn't you find lighter armor for me? (Replace Light Milita Armor)";
     // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_EN"); //Couldn't you find lighter armor for me?
     // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_EN"); //I prefer to keep my distance.
@@ -286,6 +288,8 @@ func void Patch_AE_LocalizeEnglish() {
     // Garond
     // ------
 
+    Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_MELEE = (Choose Heavy Knight Armor)
+    Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_RANGED = (Choose Heavy Knight Crossbowman Armor)
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_EN"); //Hold on.
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_EN"); //You're the only one of us who's managed to kill a dragon so far.
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_EN"); //I'm hoping you can get them all.
