@@ -15,19 +15,22 @@ func void Patch_AE_LocalizePolish() {
 
     // Armor names
     ITAR_MIL_H_ArmorExpansion__name = "Ciężki pancerz straży";
+    ITAR_MILP_H_ArmorExpansion__name = "Ciężki pancerz kusznika straży";
     ITAR_GAMBESON_ArmorExpansion__name = "Przeszywanica myśliwego";
     ITAR_PAL_A_ArmorExpansion__name = "Wzmocniony pancerz paladyna";
     ITAR_PAL_R_ArmorExpansion__name = "Zardzewiały pancerz paladyna";
     ITAR_PAL_F_ArmorExpansion__name = "Naprawiony pancerz paladyna";
     ITAR_PAL_C_ArmorExpansion__name = "Zbroja rycerskiego kusznika";
+    ITAR_PAL_CM_ArmorExpansion__name = "Ciężka Zbroja rycerskiego kusznika";
     ITAR_MIL_Med2_ArmorExpansion__name = "Ulepszony średni pancerz straży";
     ITAR_MIL_P_ArmorExpansion__name = "Zbroja kusznika straży";
     ITAR_MIL_M__name = "Średnia zbroja straży";
     ITAR_DJG_CL_ArmorExpansion__name = "Lekki pancerz tropiciela smoków";
-    ITAR_SLD_BOW_ArmorExpansion__name = "Zbroja łowcy nagród";
+    ITAR_SLD_BOW_ArmorExpansion__name = "Cieżka Myśliwska Zbroja Najemnika";
+    ITAR_SLD_MP_ArmorExpansion__name = "Myśliwska Zbroja Najemnika";
     ITAR_MIL_R_ArmorExpansion__name = "Ulepszony lekki pancerz straży";
     ITAR_CRUSADER_ArmorExpansion__name = "Zbroja krzyżowca";
-    ITAR_SLD_SCOUT_ArmorExpansion__name = "Pancerz najemnego myśliwego";
+    ITAR_SLD_SCOUT_ArmorExpansion__name = "Lekka Myśliwska Zbroja Najemnika";
     ITAR_MIL_SCOUT_ArmorExpansion__name = "Królewski pancerz zwiadowcy";
     ITAR_SLD_R_ArmorExpansion__name = "Ulepszony średni pancerz najemnika";
     ITAR_SLD_LR_ArmorExpansion__name = "Ulepszony lekki pancerz najemnika";
