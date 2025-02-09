@@ -15,19 +15,22 @@ func void Patch_AE_LocalizeEnglish() {
 
     // Armor names
     ITAR_MIL_H_ArmorExpansion__name = "Heavy Militia Armor";
+    ITAR_MILP_H_ArmorExpansion__name = "Heavy Militia Crossbowman Armor";
     ITAR_GAMBESON_ArmorExpansion__name = "Hunting Gambeson";
     ITAR_PAL_A_ArmorExpansion__name = "Enriched Paladin Armor";
     ITAR_PAL_R_ArmorExpansion__name = "Rusty Paladin Armor";
     ITAR_PAL_F_ArmorExpansion__name = "Repaired Paladin Armor";
     ITAR_PAL_C_ArmorExpansion__name = "Knight Crossbowman Armor";
+    ITAR_PAL_CM_ArmorExpansion__name = "Heavy Knight Crossbowman Armor";
     ITAR_MIL_Med2_ArmorExpansion__name = "Improved Medium Militia Armor";
-    ITAR_MIL_P_ArmorExpansion__name = "Militia Crossbowman Armor";
+    ITAR_MIL_P_ArmorExpansion__name = "Medium Militia Crossbowman Armor";
     ITAR_MIL_M__name = "Medium Militia Armor";
     ITAR_DJG_CL_ArmorExpansion__name = "Light Dragontracker Armor";
-    ITAR_SLD_BOW_ArmorExpansion__name = "Mercenary Archer Armor";
+    ITAR_SLD_BOW_ArmorExpansion__name = "Heavy Mercenary Hunting Armor";
+    ITAR_SLD_MP_ArmorExpansion__name = "Medium Mercenary Hunting Armor";
     ITAR_MIL_R_ArmorExpansion__name = "Improved Light Militia Armor";
     ITAR_CRUSADER_ArmorExpansion__name = "Crusader Armor";
-    ITAR_SLD_SCOUT_ArmorExpansion__name = "Mercenary Hunter Armor";
+    ITAR_SLD_SCOUT_ArmorExpansion__name = "Light Mercenary Hunting Armor";
     ITAR_MIL_SCOUT_ArmorExpansion__name = "Royal Scout Armor";
     ITAR_SLD_R_ArmorExpansion__name = "Improved Medium Mercenary Armor";
     ITAR_SLD_LR_ArmorExpansion__name = "Improved Light Mercenary Armor";
