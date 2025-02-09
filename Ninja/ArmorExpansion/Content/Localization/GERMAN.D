@@ -73,7 +73,9 @@ func void Patch_AE_LocalizeGerman() {
     // ------
     // Andre
     // ------
-
+    
+    Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEE = (Wählen Sie Mittlere Milizrüstung)
+    Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_RANGED = (Wählen Sie eine mittlere Miliz-Armbrustschützenrüstung)
     Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc = "Hast du keine leichtere Rüstung für mich? (Leichte Milizrüstung ersetzen)";
     // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_DE"); //Couldn't you find lighter armor for me?
     // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_DE"); //I prefer to keep my distance.
@@ -287,7 +289,9 @@ func void Patch_AE_LocalizeGerman() {
     // ------
     // Garond
     // ------
-
+    
+    Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_MELEE = (Wählen Sie eine schwere Ritterrüstung)
+    Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_RANGED = (Wählen Sie eine schwere Ritter-Armbrustschützenrüstung)
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_DE"); //Hold on.
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_DE"); //You're the only one of us who's managed to kill a dragon so far.
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_DE"); //I'm hoping you can get them all.
