@@ -78,7 +78,7 @@ INSTANCE ITAR_MIL_H_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"AEXPANSION_HEAVYMILITIA.3ds";
-	visual_change 			=	"ARMOR_MILH_NEW.asc";
+	visual_change 			=	"ARMOR_MILH_AMEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
