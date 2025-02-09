@@ -67,8 +67,8 @@ INSTANCE ITAR_MIL_H_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	70;
 	protection [PROT_BLUNT] = 	70;
 	protection [PROT_POINT] = 	70;
-	protection [PROT_FIRE] 	= 	15;
-	protection [PROT_MAGIC] = 	15;
+	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_MAGIC] = 	10;
 
     on_equip				=   Patch_AE__Equip_ITAR_MIL_H;
 	on_unequip				=   Patch_AE__UnEquip_ITAR_MIL_H;
@@ -77,8 +77,8 @@ INSTANCE ITAR_MIL_H_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"HeavyMilitiaOC.3ds";
-	visual_change 			=	"Armor_Thorus_ADDON2.asc";
+	visual 					=	"AEXPANSION_HEAVYMILITIA.3ds";
+	visual_change 			=	"ARMOR_MILH_NEW.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -118,6 +118,88 @@ func void Patch_AE__Equip_ITAR_MIL_H()
 };
 func void Patch_AE__UnEquip_ITAR_MIL_H()
 {
+    if (true == Npc_IsPlayer(self))
+    {
+        Patch_AE__ITAR_MIL_H_Equipped = false;
+
+        if (MIL01_Equipped == TRUE) // Gürtel
+		{
+			self.protection[PROT_EDGE] -= BA_Bonus01;
+			self.protection[PROT_BLUNT] -= BA_Bonus01;
+			self.protection[PROT_POINT] -= BA_Bonus01;
+			self.protection[PROT_MAGIC] -= BA_Bonus01;
+			self.protection[PROT_FIRE] -= BA_Bonus01;
+		};
+    };
+};
+
+INSTANCE ITAR_MILP_H_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_MILP_H_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	65;
+	protection [PROT_BLUNT] = 	65;
+	protection [PROT_POINT] = 	65;
+	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_MAGIC] = 	5;
+
+    on_equip				=   Patch_AE__Equip_ITAR_MILP_H;
+	on_unequip				=   Patch_AE__UnEquip_ITAR_MILP_H;
+
+	value 					=	2500;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"HeavyMilitiaOC.3ds";
+	visual_change 			=	"Armor_Thorus_ADDON2.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	description				=	name;
+
+	TEXT[0]					= 	"";
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+func void Patch_AE__Equip_ITAR_MILP_H()
+{
+        // "self" it is C_NPC which is equipping armor
+B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
+B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+	if (true == Npc_IsPlayer(self))
+    {
+        Patch_AE__ITAR_MIL_H_Equipped = true;
+
+        if (MIL01_Equipped == TRUE) // Gürtel
+		{
+			self.protection[PROT_EDGE] += BA_Bonus01;
+			self.protection[PROT_BLUNT] += BA_Bonus01;
+			self.protection[PROT_POINT] += BA_Bonus01;
+			self.protection[PROT_MAGIC] += BA_Bonus01;
+			self.protection[PROT_FIRE] += BA_Bonus01;
+		};
+    };
+};
+func void Patch_AE__UnEquip_ITAR_MILP_H()
+{
+	// "self" it is C_NPC which is equipping armor
+B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
+B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
     if (true == Npc_IsPlayer(self))
     {
         Patch_AE__ITAR_MIL_H_Equipped = false;
@@ -220,8 +302,8 @@ INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	140;
 	protection [PROT_BLUNT] = 	140;
 	protection [PROT_POINT] = 	140;
-	protection [PROT_FIRE] 	= 	125;
-	protection [PROT_MAGIC] = 	75;
+	protection [PROT_FIRE] 	= 	120;
+	protection [PROT_MAGIC] = 	70;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
@@ -271,11 +353,11 @@ INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	80;
-	protection [PROT_BLUNT] = 	80;
-	protection [PROT_POINT] = 	80;
-	protection [PROT_FIRE] 	= 	20;
-	protection [PROT_MAGIC] = 	20;
+	protection [PROT_EDGE]	=	75;
+	protection [PROT_BLUNT] = 	75;
+	protection [PROT_POINT] = 	75;
+	protection [PROT_FIRE] 	= 	15;
+	protection [PROT_MAGIC] = 	15;
 
 	value 					=	2000;
 
@@ -314,7 +396,7 @@ INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	120;
 	protection [PROT_BLUNT] = 	120;
 	protection [PROT_POINT] = 	120;
-	protection [PROT_FIRE] 	= 	70;
+	protection [PROT_FIRE] 	= 	65;
 	protection [PROT_MAGIC] = 	40;
 
 	value 					=	VALUE_ITAR_PAL_H;
@@ -413,6 +495,49 @@ func void Patch_AE_UnEquip_ITAR_PAL_C()
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 };
+INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
+{
+    name    =    ITAR_PAL_CM_ArmorExpansion__name;
+
+    mainflag    =    ITEM_KAT_ARMOR;
+    flags    =    0;
+
+    protection [PROT_EDGE]  =    90;
+    protection [PROT_BLUNT] =    90;
+    protection [PROT_POINT] =    90;
+    protection [PROT_FIRE]  =    40;
+    protection [PROT_MAGIC] =    20;
+
+    value    =    5000;
+
+    wear    =    WEAR_TORSO;
+
+    visual    =    "ARMOR_PAL_GAMBESONH.3ds";
+    visual_change    =    "ARMOR_PAL_GAMBESONH.asc";
+    visual_skin    =    0;
+    material    =    MAT_METAL;
+
+    on_equip    =    Patch_AE_Equip_ITAR_PAL_C;
+    on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_C;
+
+    description    =    name;
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
+
+    TEXT[1]    =    NAME_Prot_Edge;
+    COUNT[1]    =    protection[PROT_EDGE];
+
+    TEXT[2]    =    NAME_Prot_Point;
+    COUNT[2]    =    protection[PROT_POINT];
+
+    TEXT[3]    =    NAME_Prot_Fire;
+    COUNT[3]    =    protection[PROT_FIRE];
+
+    TEXT[4]    =    NAME_Prot_Magic;
+    COUNT[4]    =    protection[PROT_MAGIC];
+
+    TEXT[5]    =    NAME_Value;
+    COUNT[5]    =    value;
+};
 INSTANCE ITAR_MIL_Med2_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_MIL_Med2_ArmorExpansion__name;
@@ -490,13 +615,13 @@ INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	65;
-	protection [PROT_BLUNT] = 	65;
-	protection [PROT_POINT] = 	65;
+	protection [PROT_EDGE]	=	45;
+	protection [PROT_BLUNT] = 	45;
+	protection [PROT_POINT] = 	45;
 	protection [PROT_FIRE] 	= 	10;
-	protection [PROT_MAGIC] = 	10;
+	protection [PROT_MAGIC] = 	5;
 
-	value 					=	2000;
+	value 					=	1000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -570,7 +695,7 @@ INSTANCE ITAR_MIL_M (C_Item)
 	protection [PROT_FIRE] 			= 	10;
 	protection [PROT_MAGIC] 		= 	5;
 
-	value 					=	1500;
+	value 					=	1000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -657,13 +782,13 @@ INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	55;
-	protection [PROT_BLUNT] = 	55;
-	protection [PROT_POINT] = 	55;
+	protection [PROT_EDGE]	=	70;
+	protection [PROT_BLUNT] = 	70;
+	protection [PROT_POINT] = 	70;
 	protection [PROT_FIRE] 	= 	10;
-	protection [PROT_MAGIC] = 	5;
+	protection [PROT_MAGIC] = 	10;
 
-	value 					=	1500;
+	value 					=	2500;
 
 	wear 					=	WEAR_TORSO;
 
@@ -692,8 +817,8 @@ INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 func void Patch_AE_Equip_ITAR_SLD_BOW()
 {
     // "self" it is C_NPC which is equipping armor
-    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 6);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);
     if (true == Npc_IsPlayer(self))
     {
         Patch_AE__ITAR_SLD_BOW_Equipped = true;
@@ -711,8 +836,8 @@ func void Patch_AE_Equip_ITAR_SLD_BOW()
 func void Patch_AE_UnEquip_ITAR_SLD_BOW()
 {
     // "self" it is C_NPC which is unequipping armor
-    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -6);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);
     if (true == Npc_IsPlayer(self))
     {
         Patch_AE__ITAR_SLD_BOW_Equipped = false;
@@ -862,9 +987,9 @@ INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	30;
+	protection [PROT_EDGE]	=	25;
 	protection [PROT_BLUNT] = 	35;
-	protection [PROT_POINT] = 	35;
+	protection [PROT_POINT] = 	25;
 	protection [PROT_FIRE] 	= 	5;
 	protection [PROT_MAGIC] = 	0;
 
@@ -902,8 +1027,8 @@ INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 func void Patch_AE_Equip_ITAR_SLD_SCOUT()
 {
     // "self" it is C_NPC which is equipping armor
-    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 6);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);
     if (true == Npc_IsPlayer(self))
     {
         Patch_AE__ITAR_SLD_BOW_Equipped = true;
@@ -921,8 +1046,8 @@ func void Patch_AE_Equip_ITAR_SLD_SCOUT()
 func void Patch_AE_UnEquip_ITAR_SLD_SCOUT()
 {
     // "self" it is C_NPC which is unequipping armor
-    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -6);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);
     if (true == Npc_IsPlayer(self))
     {
         Patch_AE__ITAR_SLD_BOW_Equipped = false;
@@ -936,6 +1061,50 @@ func void Patch_AE_UnEquip_ITAR_SLD_SCOUT()
 			self.protection[PROT_FIRE] -= BA_Bonus01;
 		};
     };
+};
+INSTANCE ITAR_SLD_MP_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_SLD_MP_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	45;
+	protection [PROT_BLUNT] = 	45;
+	protection [PROT_POINT] = 	45;
+	protection [PROT_FIRE] 	= 	5;
+	protection [PROT_MAGIC] = 	10;
+
+	value 					=	500;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"SLDSCOUT.3ds";
+	visual_change 			=	"MEDIUMSLDMP.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	on_equip				=	Patch_AE_Equip_ITAR_SLD_SCOUT;
+	on_unequip				=	Patch_AE_UnEquip_ITAR_SLD_SCOUT;
+
+	description				=	name;
+
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus5;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
 };
 INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 {
@@ -1477,8 +1646,8 @@ INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	140;
 	protection [PROT_BLUNT] = 	140;
 	protection [PROT_POINT] = 	140;
-	protection [PROT_FIRE] 	= 	125;
-	protection [PROT_MAGIC] = 	75;
+	protection [PROT_FIRE] 	= 	120;
+	protection [PROT_MAGIC] = 	70;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
@@ -1517,11 +1686,11 @@ INSTANCE ITAR_PAL_RNH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	80;
-	protection [PROT_BLUNT] = 	80;
-	protection [PROT_POINT] = 	80;
-	protection [PROT_FIRE] 	= 	20;
-	protection [PROT_MAGIC] = 	20;
+	protection [PROT_EDGE]	=	75;
+	protection [PROT_BLUNT] = 	75;
+	protection [PROT_POINT] = 	75;
+	protection [PROT_FIRE] 	= 	15;
+	protection [PROT_MAGIC] = 	15;
 
 	value 					=	2000;
 
@@ -1560,7 +1729,7 @@ INSTANCE ITAR_PAL_FNH_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	120;
 	protection [PROT_BLUNT] = 	120;
 	protection [PROT_POINT] = 	120;
-	protection [PROT_FIRE] 	= 	70;
+	protection [PROT_FIRE] 	= 	65;
 	protection [PROT_MAGIC] = 	40;
 
 	value 					=	VALUE_ITAR_PAL_H;
@@ -1603,8 +1772,8 @@ INSTANCE ITAR_PAL_AFH_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	140;
 	protection [PROT_BLUNT] = 	140;
 	protection [PROT_POINT] = 	140;
-	protection [PROT_FIRE] 	= 	125;
-	protection [PROT_MAGIC] = 	75;
+	protection [PROT_FIRE] 	= 	120;
+	protection [PROT_MAGIC] = 	70;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
@@ -1643,11 +1812,11 @@ INSTANCE ITAR_PAL_RFH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	80;
-	protection [PROT_BLUNT] = 	80;
-	protection [PROT_POINT] = 	80;
-	protection [PROT_FIRE] 	= 	20;
-	protection [PROT_MAGIC] = 	20;
+	protection [PROT_EDGE]	=	75;
+	protection [PROT_BLUNT] = 	75;
+	protection [PROT_POINT] = 	75;
+	protection [PROT_FIRE] 	= 	15;
+	protection [PROT_MAGIC] = 	15;
 
 	value 					=	2000;
 
@@ -1686,7 +1855,7 @@ INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	120;
 	protection [PROT_BLUNT] = 	120;
 	protection [PROT_POINT] = 	120;
-	protection [PROT_FIRE] 	= 	70;
+	protection [PROT_FIRE] 	= 	65;
 	protection [PROT_MAGIC] = 	40;
 
 	value 					=	VALUE_ITAR_PAL_H;
@@ -1819,13 +1988,13 @@ INSTANCE ITAR_ARX_HUNTERM_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	40;
-	protection [PROT_BLUNT] = 	40;
-	protection [PROT_POINT] = 	40;
+	protection [PROT_EDGE]	=	50;
+	protection [PROT_BLUNT] = 	50;
+	protection [PROT_POINT] = 	50;
 	protection [PROT_FIRE] 	= 	10;
-	protection [PROT_MAGIC] = 	5;
+	protection [PROT_MAGIC] = 	0;
 	
-	value 					=	800;
+	value 					=	1000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -1863,13 +2032,13 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	55;
-	protection [PROT_BLUNT] = 	55;
-	protection [PROT_POINT] = 	55;
+	protection [PROT_EDGE]	=	75;
+	protection [PROT_BLUNT] = 	75;
+	protection [PROT_POINT] = 	75;
 	protection [PROT_FIRE] 	= 	15;
 	protection [PROT_MAGIC] = 	10;
 	
-	value 					=	1800;
+	value 					=	2500;
 
 	wear 					=	WEAR_TORSO;
 
