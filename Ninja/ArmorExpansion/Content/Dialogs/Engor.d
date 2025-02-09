@@ -51,11 +51,11 @@ func int Patch_AE_DIA_Engor_ARCHER_KAUFEN_Condition()
 };
 func void Patch_AE_DIA_Engor_ARCHER_KAUFEN_Info()
 {
-    if (B_GiveInvItems(other, self, Itmi_Gold, 2300))
+    if (B_GiveInvItems(other, self, Itmi_Gold, 2500))
     {
         AI_Output(other, self, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00);
         AI_Output(self, other, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01);
-        B_GiveInvItems(self, other, ITAR_MIL_P_ARMOREXPANSION,1);
+        B_GiveInvItems(self, other, ITAR_MILP_H_ARMOREXPANSION,1);
         DIA_Engor_RSkaufen_perm = TRUE;
     }
     else
