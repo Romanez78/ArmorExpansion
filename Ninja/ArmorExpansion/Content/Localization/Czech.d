@@ -82,7 +82,8 @@ const string Patch_AE_PRINT_ForgeSuccess = " vyrobeno!";
 // -----
 // Andre
 // -----
-
+const string Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEE = (Vybrat si střední zbroj domobrany)
+const string Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_RANGED = (Vybrat si střední zbroj kušišníka domobrany)
 const string Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc = "Nenašla by se tu pro mně lehčí zbroj? (Vyměnit stávající)";
 // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS"); //Nenašla by se pro mně lehhčí zbroj?.
 // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_CS"); //Radši používám zbraně na dálku.
@@ -297,6 +298,8 @@ const string PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02 = "PATCH_AE_DIA_ENGOR_ARCHER
 // Garond
 // ------
 
+const string Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_MELEE = (Vybrat si těžkou zbroj rytíře)
+const string Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_RANGED = (Vybrat si těžkou zbroj rytíře kušišníka)
 // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_CS"); //Zadrž.
 // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_CS"); //Jsi jediný z nás komu se zatím podařilo nějákého draka zabít.
 // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_CS"); //Mám naději že se ti povede je dostat všechny.
