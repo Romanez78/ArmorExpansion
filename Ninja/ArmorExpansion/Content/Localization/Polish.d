@@ -23,7 +23,7 @@ func void Patch_AE_LocalizePolish() {
     ITAR_PAL_C_ArmorExpansion__name = "Zbroja rycerskiego kusznika";
     ITAR_PAL_CM_ArmorExpansion__name = "Ciężka Zbroja rycerskiego kusznika";
     ITAR_MIL_Med2_ArmorExpansion__name = "Ulepszony średni pancerz straży";
-    ITAR_MIL_P_ArmorExpansion__name = "Zbroja kusznika straży";
+    ITAR_MIL_P_ArmorExpansion__name = "Średnia Zbroja kusznika straży";
     ITAR_MIL_M__name = "Średnia zbroja straży";
     ITAR_DJG_CL_ArmorExpansion__name = "Lekki pancerz tropiciela smoków";
     ITAR_SLD_BOW_ArmorExpansion__name = "Cieżka Myśliwska Zbroja Najemnika";
@@ -71,7 +71,9 @@ func void Patch_AE_LocalizePolish() {
     // ------
     // Andre
     // ------
-
+    
+    Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEE = (Wybierz Średnią zbroję straży)
+    Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_RANGED = (Wybierz Średnią zbroję kusznika straży)
     Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc = "Czy jest dla mnie jakaś lżejsza zbroja? (Wymień obecną zbroję)";
     // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_PL"); //Czy nie mógłbyś znaleźć dla mnie jakiejś lżejszej zbroi?
     // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_PL"); //Wolę walczyć na dystans.
@@ -286,6 +288,8 @@ func void Patch_AE_LocalizePolish() {
     // Garond
     // ------
 
+    Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_MELEE = (Wybierz ciężką zbroję rycerską)
+    Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_RANGED = (Wybierz ciężką zbroję rycerza kusznika)
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_PL"); //Zatrzymaj się.
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_PL"); //Jesteś jedynym z nas, któremu jak dotąd udało się zabić smoka.
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_PL"); //Mam nadzieję, że dorwiesz je wszystkie.
