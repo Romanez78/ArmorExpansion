@@ -1271,8 +1271,8 @@ INSTANCE ITAR_SLD_LR_ArmorExpansion (C_Item)
 
 	protection [PROT_EDGE]	=	45;
 	protection [PROT_BLUNT] = 	45;
-	protection [PROT_POINT] = 	45;
-	protection [PROT_FIRE] 	= 	5;
+	protection [PROT_POINT] = 	40;
+	protection [PROT_FIRE] 	= 	0;
 	protection [PROT_MAGIC] = 	0;
 
 	value 					=	600;
@@ -1512,7 +1512,7 @@ INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 	protection [PROT_BLUNT] = 	90;
 	protection [PROT_POINT] = 	90;
 	protection [PROT_FIRE] 	= 	35;
-	protection [PROT_MAGIC] = 	20;
+	protection [PROT_MAGIC] = 	15;
 
 	value 					=	4500;
 
@@ -2067,4 +2067,20 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 	
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
+};
+instance ITAR_Thorus_Addon(C_Item)
+{
+	visual = "Thorus_New_AEXPANSION.3ds";
+};
+instance ItAr_Sld_L(C_Item)
+{
+	visual = "SLDL_New_AEXPANSION.3ds";
+};
+instance ItAr_Sld_M(C_Item)
+{
+	visual = "SLDM_New_AEXPANSION.3ds";
+};
+instance ItAr_Sld_H(C_Item)
+{
+	visual = "SLDH_New_AEXPANSION.3ds";
 };
