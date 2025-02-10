@@ -299,9 +299,9 @@ INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	140;
-	protection [PROT_BLUNT] = 	140;
-	protection [PROT_POINT] = 	140;
+	protection [PROT_EDGE]	=	145;
+	protection [PROT_BLUNT] = 	145;
+	protection [PROT_POINT] = 	145;
 	protection [PROT_FIRE] 	= 	120;
 	protection [PROT_MAGIC] = 	70;
 
@@ -396,8 +396,8 @@ INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	120;
 	protection [PROT_BLUNT] = 	120;
 	protection [PROT_POINT] = 	120;
-	protection [PROT_FIRE] 	= 	70;
-	protection [PROT_MAGIC] = 	40;
+	protection [PROT_FIRE] 	= 	85;
+	protection [PROT_MAGIC] = 	45;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
@@ -505,7 +505,7 @@ INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
     protection [PROT_EDGE]  =    110;
     protection [PROT_BLUNT] =    110;
     protection [PROT_POINT] =    110;
-    protection [PROT_FIRE]  =    60;
+    protection [PROT_FIRE]  =    65;
     protection [PROT_MAGIC] =    30;
 
     value    =    5000;
@@ -548,7 +548,7 @@ INSTANCE ITAR_MIL_Med2_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	60;
 	protection [PROT_BLUNT] = 	60;
 	protection [PROT_POINT] = 	60;
-	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_FIRE] 	= 	5;
 	protection [PROT_MAGIC] = 	5;
 
 	value 					=	2000;
@@ -619,7 +619,7 @@ INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
 	protection [PROT_BLUNT] = 	45;
 	protection [PROT_POINT] = 	45;
 	protection [PROT_FIRE] 	= 	5;
-	protection [PROT_MAGIC] = 	5;
+	protection [PROT_MAGIC] = 	0;
 
 	value 					=	1000;
 
@@ -1116,7 +1116,7 @@ INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	35;
 	protection [PROT_BLUNT] = 	35;
 	protection [PROT_POINT] = 	35;
-	protection [PROT_FIRE] 	= 	5;
+	protection [PROT_FIRE] 	= 	0;
 	protection [PROT_MAGIC] = 	0;
 
 	value 					=	5000;
@@ -1199,7 +1199,7 @@ INSTANCE ITAR_SLD_R_ArmorExpansion (C_Item)
 	protection [PROT_BLUNT] = 	65;
 	protection [PROT_POINT] = 	65;
 	protection [PROT_FIRE] 	= 	5;
-	protection [PROT_MAGIC] = 	0;
+	protection [PROT_MAGIC] = 	5;
 
 	value 					=	1500;
 
@@ -1643,11 +1643,11 @@ INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	140;
-	protection [PROT_BLUNT] = 	140;
-	protection [PROT_POINT] = 	140;
+	protection [PROT_EDGE]	=	145;
+	protection [PROT_BLUNT] = 	145;
+	protection [PROT_POINT] = 	145;
 	protection [PROT_FIRE] 	= 	120;
-	protection [PROT_MAGIC] = 	65;
+	protection [PROT_MAGIC] = 	70;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
@@ -1769,9 +1769,9 @@ INSTANCE ITAR_PAL_AFH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	140;
-	protection [PROT_BLUNT] = 	140;
-	protection [PROT_POINT] = 	140;
+	protection [PROT_EDGE]	=	145;
+	protection [PROT_BLUNT] = 	145;
+	protection [PROT_POINT] = 	145;
 	protection [PROT_FIRE] 	= 	120;
 	protection [PROT_MAGIC] = 	70;
 
@@ -1855,8 +1855,8 @@ INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	120;
 	protection [PROT_BLUNT] = 	120;
 	protection [PROT_POINT] = 	120;
-	protection [PROT_FIRE] 	= 	65;
-	protection [PROT_MAGIC] = 	40;
+	protection [PROT_FIRE] 	= 	85;
+	protection [PROT_MAGIC] = 	45;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
@@ -1898,8 +1898,8 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	110;
 	protection [PROT_BLUNT] = 	110;
 	protection [PROT_POINT] = 	110;
-	protection [PROT_FIRE] 	= 	60;
-	protection [PROT_MAGIC] = 	35;
+	protection [PROT_FIRE] 	= 	70;
+	protection [PROT_MAGIC] = 	40;
 
 	value 					=	10000;
 
@@ -1950,8 +1950,8 @@ INSTANCE ITAR_PAL_MH_FH_ArmorExpansion (C_Item)
 	protection [PROT_EDGE]	=	125;
 	protection [PROT_BLUNT] = 	125;
 	protection [PROT_POINT] = 	125;
-	protection [PROT_FIRE] 	= 	60;
-	protection [PROT_MAGIC] = 	30;
+	protection [PROT_FIRE] 	= 	75;
+	protection [PROT_MAGIC] = 	35;
 
 	value 					=	12000;
 
