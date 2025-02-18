@@ -31,7 +31,7 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_MIL_R_ArmorExpansion__name = "Improved Light Militia Armor";
     ITAR_CRUSADER_ArmorExpansion__name = "Crusader Armor";
     ITAR_SLD_SCOUT_ArmorExpansion__name = "Light Mercenary Hunting Armor";
-    ITAR_MIL_SCOUT_ArmorExpansion__name = "Royal Scout Armor";
+    ITAR_MIL_SCOUT_ArmorExpansion__name = "Militia Crossbowman Recruit Armor";
     ITAR_SLD_R_ArmorExpansion__name = "Improved Medium Mercenary Armor";
     ITAR_SLD_LR_ArmorExpansion__name = "Improved Light Mercenary Armor";
     ITAR_PAL_CH_ArmorExpansion__name = "Paladin Crossbowman Armor";
@@ -49,13 +49,15 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_NH_CRUSADER_ArmorExpansion_name = "Crusader Armor";
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Hunting Jacket";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Strenghtened Hunting Jacket";
-
+    ITAR_KDF_M_ArmorExpansion__name = "Medium Fire Robe";
+    
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximum Mana Bonus";
     Patch_AE_TEXT_MaxManaBonus40 = "+40 Maximum Mana Bonus";
     Patch_AE_TEXT_OldArmor = "This armor has seen better days";
     Patch_AE_TEXT_ArcheryBonus3 = "+3% Archery Bonus";
     Patch_AE_TEXT_ArcheryBonus5 = "+5% Archery Bonus";
+    Patch_AE_TEXT_ArcheryBonus6 = "+6% Archery Bonus";
     Patch_AE_TEXT_TwoHandedBonus5 = "+5% Two-Handed Bonus";
     Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 Dexterity Bonus, +10% One-handed Bonus";
 
