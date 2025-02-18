@@ -33,7 +33,7 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_CRUSADER_ArmorExpansion__name = "Kreuzritterrüstung";
     ITAR_SLD_SCOUT_ArmorExpansion__name = "Leichte Söldner-Jagdrüstung";
     ITAR_SLD_MP_ArmorExpansion__name = "Mittlere Söldner-Jagdrüstung";
-    ITAR_MIL_SCOUT_ArmorExpansion__name = "Königliche Späherrüstung";
+    ITAR_MIL_SCOUT_ArmorExpansion__name = "Rüstung eines Armbrustschützen-Rekruten der Miliz";
     ITAR_SLD_R_ArmorExpansion__name = "Verbesserte Mittlere Söldnerrüstung";
     ITAR_SLD_LR_ArmorExpansion__name = "Verbesserte Leichte Söldnerrüstung";
     ITAR_PAL_CH_ArmorExpansion__name = "Armbrustschützen Paladinrüstung";
@@ -51,6 +51,7 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_NH_CRUSADER_ArmorExpansion_name = "Kreuzritterrüstung";
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Jagdjacke";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Verstärkte Jagdjacke";
+    ITAR_KDF_M_ArmorExpansion__name = "Mittlere Feuerrobe";
     
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximaler Mana Bonus";
@@ -58,6 +59,7 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_TEXT_OldArmor = "Diese Rüstung hat seine besten Tage schon hinter sich.";
     Patch_AE_TEXT_ArcheryBonus3 = "+3% Bogen Bonus";
     Patch_AE_TEXT_ArcheryBonus5 = "+5% Bogen Bonus";
+    Patch_AE_TEXT_ArcheryBonus6 = "+6% Bogen Bonus";    
     Patch_AE_TEXT_TwoHandedBonus5 = "+5% Zweihand Bonus";
     Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 Geschicklichkeit Bonus, +10% Einhand Bonus";
 
