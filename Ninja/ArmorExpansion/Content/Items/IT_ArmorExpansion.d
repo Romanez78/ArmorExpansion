@@ -802,7 +802,7 @@ INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					=	Patch_AE_TEXT_ArcheryBonus5;
+	TEXT[0]					=	Patch_AE_TEXT_ArcheryBonus6;
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;
@@ -1007,7 +1007,7 @@ INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus5;
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus6;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
@@ -1089,7 +1089,7 @@ INSTANCE ITAR_SLD_MP_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus5;
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus6;
 
 	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
