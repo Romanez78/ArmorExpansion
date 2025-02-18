@@ -2071,7 +2071,7 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 
 instance ItAr_KDF_M_AMEXPANSION(C_Item)
 {
-	name = ItAr_KDF_M_AMEXPANSION__name;
+	name = ITAR_KDF_M_ArmorExpansion__name;
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 55;
