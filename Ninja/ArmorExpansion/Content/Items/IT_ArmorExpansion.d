@@ -1124,7 +1124,7 @@ INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"MilitiaScout.3ds";
-	visual_change 			=	"ARMOR_MIL_SCOUT.asc";
+	visual_change 			=	"AMEXPANSION_MIL_LP.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1353,7 +1353,7 @@ INSTANCE ITAR_PAL_CH_ArmorExpansion (C_Item)
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "ItAr_Pal_H.3ds";
+    visual    =    "ItAr_Pal_CH_AMEXPANSION.3ds";
     visual_change    =    "Armor_Pal_H4000.asc";
     visual_skin    =    0;
     material    =    MAT_METAL;
@@ -1998,8 +1998,8 @@ INSTANCE ITAR_ARX_HUNTERM_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"KM_ARX_HUNTER1.3ds";
-	visual_change 			=	"ARMOR_ARX_HUNTER1.asc";
+	visual 					=	"ARMOR_HUNL_AMEXPANSION.3ds";
+	visual_change 			=	"ARMOR_HUNL_AMEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;	
 		
@@ -2042,8 +2042,8 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"KM_ARX_HUNTER2.3ds";
-	visual_change 			=	"ARMOR_ARX_Hunter2.asc";
+	visual 					=	"ARMOR_HUNM_AMEXPANSION.3ds";
+	visual_change 			=	"ARMOR_HUNM_AMEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;	
 	
@@ -2068,6 +2068,41 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 	TEXT[5]					=	NAME_Value;			
 	COUNT[5]				= 	value;
 };
+
+instance ItAr_KDF_M_AMEXPANSION(C_Item)
+{
+	name = ItAr_KDF_M_AMEXPANSION__name;
+	mainflag = ITEM_KAT_ARMOR;
+	flags = 0;
+	protection[PROT_EDGE] = 55;
+	protection[PROT_BLUNT] = 55;
+	protection[PROT_POINT] = 55;
+	protection[PROT_FIRE] = 30;
+	protection[PROT_MAGIC] = 30;
+	value = 2750;
+	wear = WEAR_TORSO;
+	visual = "Armor_KdF_M_AMEXPANSION.3ds";
+	visual_change = "Armor_Kdf_M_AMEXPANSION.asc";
+	visual_skin = 0;
+	material = MAT_LEATHER;
+	on_equip = Equip_ITAR_KDF_L;
+	on_unequip = UnEquip_ITAR_KDF_L;
+	description = name;
+	text[1] = NAME_Prot_Edge;
+	count[1] = protection[PROT_EDGE];
+	text[2] = NAME_Prot_Point;
+	count[2] = protection[PROT_POINT];
+	text[3] = NAME_Prot_Fire;
+	count[3] = protection[PROT_FIRE];
+	text[4] = NAME_Prot_Magic;
+	count[4] = protection[PROT_MAGIC];
+	text[5] = NAME_Value;
+	count[5] = value;
+};
+
+
+
+
 instance ITAR_Thorus_Addon(C_Item)
 {
 	visual = "Thorus_New_AEXPANSION.3ds";
@@ -2084,3 +2119,4 @@ instance ItAr_Sld_H(C_Item)
 {
 	visual = "SLDH_New_AEXPANSION.3ds";
 };
+
