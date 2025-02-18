@@ -31,7 +31,7 @@ func void Patch_AE_LocalizePolish() {
     ITAR_MIL_R_ArmorExpansion__name = "Ulepszony lekki pancerz straży";
     ITAR_CRUSADER_ArmorExpansion__name = "Zbroja krzyżowca";
     ITAR_SLD_SCOUT_ArmorExpansion__name = "Lekka Myśliwska Zbroja Najemnika";
-    ITAR_MIL_SCOUT_ArmorExpansion__name = "Królewski pancerz zwiadowcy";
+    ITAR_MIL_SCOUT_ArmorExpansion__name = "Zbroja rekruta kusznika straży";
     ITAR_SLD_R_ArmorExpansion__name = "Ulepszony średni pancerz najemnika";
     ITAR_SLD_LR_ArmorExpansion__name = "Ulepszony lekki pancerz najemnika";
     ITAR_PAL_CH_ArmorExpansion__name = "Zbroja kusznika paladyna";
@@ -49,13 +49,15 @@ func void Patch_AE_LocalizePolish() {
     ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroja krzyżowca";
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Kurtka myśliwska";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Wzmocniona kurtka myśliwska";
-
+    ITAR_KDF_M_ArmorExpansion__name = "Średnia szata ognia";
+    
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 maksymalnej many";
     Patch_AE_TEXT_MaxManaBonus40 = "+40 maksymalnej many";
     Patch_AE_TEXT_OldArmor = "Ta zbroja widziała już lepsze dni";
     Patch_AE_TEXT_ArcheryBonus3 = "+3% posługiwania się łukiem";
     Patch_AE_TEXT_ArcheryBonus5 = "+5% posługiwania się łukiem";
+    Patch_AE_TEXT_ArcheryBonus6 = "+6% posługiwania się łukiem";
     Patch_AE_TEXT_TwoHandedBonus5 = "+5% walki bronią dwuręczną";
     Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 zręczności, +10% walki bronią jednoręczną";
 
