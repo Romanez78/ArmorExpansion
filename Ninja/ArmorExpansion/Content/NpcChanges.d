@@ -52,9 +52,9 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("PAL_297_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_298_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_299_Sergio",         ITAR_NH_CRUSADER_ArmorExpansion); // Originally ITAR_PAL_M    
-    Patch_AE_NpcUpdateArmor("KDF_503_Karras",         ITAR_KDW_M_ArmorExpansion);     // Originally ITAR_KDF_L
-    Patch_AE_NpcUpdateArmor("KDF_504_Parlan",         ITAR_KDW_M_ArmorExpansion);     // Originally ITAR_KDF_L
-    Patch_AE_NpcUpdateArmor("KDF_510_Hyglas",         ITAR_KDW_M_ArmorExpansion);     // Originally ITAR_KDF_L
+    Patch_AE_NpcUpdateArmor("KDF_503_Karras",         ItAr_KDF_M_AMEXPANSION);        // Originally ITAR_KDF_L
+    Patch_AE_NpcUpdateArmor("KDF_504_Parlan",         ItAr_KDF_M_AMEXPANSION);        // Originally ITAR_KDF_L
+    Patch_AE_NpcUpdateArmor("KDF_510_Hyglas",         ItAr_KDF_M_AMEXPANSION);        // Originally ITAR_KDF_L
     Patch_AE_NpcUpdateArmor("SLD_802_Buster",         ITAR_SLD_LR_ArmorExpansion);    // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_808_Jarvis",         ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M
     Patch_AE_NpcUpdateArmor("SLD_811_Wolf",           ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M
@@ -70,7 +70,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("DJG_711_Godar",          ITAR_DJG_CM_ArmorExpansion);    // Originally ITAR_DJG_M
     Patch_AE_NpcUpdateArmor("DJG_715_Ferros",         ITAR_DJG_CL_ArmorExpansion);    // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("BAU_983_Dragomir",       ITAR_ARX_HUNTERH_ArmorExpansion); // Originally ITAR_Leather_L
-    Patch_AE_NpcUpdateArmor("BAU_984_Niclas",         ITAR_ARX_HUNTERM_ArmorExpansion); // Originally ITAR_Leather_L
+    Patch_AE_NpcUpdateArmor("BAU_981_Grom",           ITAR_ARX_HUNTERM_ArmorExpansion); // Originally ITAR_Leather_L
     Patch_AE_NpcUpdateArmor("VLK_4100_Brutus",        ITAR_MIL_H_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4104_Waffenknecht",  ITAR_MIL_SCOUT_ArmorExpansion); // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4105_Waffenknecht",  ITAR_MIL_P_ArmorExpansion);     // Originally ITAR_MIL_L
