@@ -32,7 +32,7 @@ const string ITAR_MIL_R_ArmorExpansion__name = "Vylepšená Lehká Zbroj Domobra
 const string ITAR_CRUSADER_ArmorExpansion__name = "Zbroj Křižáka";
 const string ITAR_SLD_SCOUT_ArmorExpansion__name = "Lehká Lovecká Zbroj Žoldáka";
 const string ITAR_SLD_MP_ArmorExpansion__name = "Lovecká Zbroj Žoldáka";
-const string ITAR_MIL_SCOUT_ArmorExpansion__name = "Oděv Královského Zvěda";
+const string ITAR_MIL_SCOUT_ArmorExpansion__name = "Zbroj Rekruta Kušišníka Domobrany";
 const string ITAR_SLD_R_ArmorExpansion__name = "Vylepšená Zbroj Žoldáka";
 const string ITAR_SLD_LR_ArmorExpansion__name = "Vylepšená Lehká Zbroj Žoldáka";
 const string ITAR_PAL_CH_ArmorExpansion__name = "Zbroj Paladina Kušišníka";
@@ -50,13 +50,15 @@ const string ITAR_PAL_FFH_ArmorExpansion__name = "Opravená Paladinská Zbroj";
 const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Křižáka";
 const string ITAR_ARX_HUNTERH_ArmorExpansion__name = "Zesílený Lovecký Kabát";
 const string ITAR_ARX_HUNTERM_ArmorExpansion__name = "Lovecký Kabát";
+const string ITAR_KDF_M_ArmorExpansion__name = "Středně Těžké Ohnivé Roucho";
 
 // Armor bonus
 const string Patch_AE_TEXT_MaxManaBonus20 = "+20 bonus maximální many"; // ITAR_PAL_F_ArmorExpansion, ITAR_PAL_FNH_ArmorExpansion, ITAR_PAL_FFH_ArmorExpansion
 const string Patch_AE_TEXT_MaxManaBonus40 = "+40 bonus maximální many";  // ITAR_PAL_A_ArmorExpansion, ITAR_PAL_ANH_ArmorExpansion, ITAR_PAL_AFH_ArmorExpansion
 const string Patch_AE_TEXT_OldArmor = "Tahle zbroj zažila lepší časy"; // ITAR_PAL_R_ArmorExpansion, ITAR_PAL_RNH_ArmorExpansion, ITAR_PAL_RFH_ArmorExpansion
-const string Patch_AE_TEXT_ArcheryBonus3 = "+3% střelecký talent"; //ITAR_GAMBESON_ArmorExpansion
-const string Patch_AE_TEXT_ArcheryBonus5 = "+5% střelecký talent"; // ITAR_PAL_C_ArmorExpansion, ITAR_MIL_P_ArmorExpansion, ITAR_DJG_CL_ArmorExpansion, ITAR_SLD_BOW_ArmorExpansion, ITAR_SLD_SCOUT_ArmorExpansion, ITAR_MIL_SCOUT_ArmorExpansion, ITAR_PAL_CH_ArmorExpansion, ITAR_DJG_CH_ArmorExpansion, ITAR_DJG_CM_ArmorExpansion
+const string Patch_AE_TEXT_ArcheryBonus3 = "+3% střelecký talent"; //ITAR_GAMBESON_ArmorExpansion, ITAR_ARX_HUNTERH_ARMOREXPANSION, ITAR_ARX_HUNTERM_ARMOREXPANSION
+const string Patch_AE_TEXT_ArcheryBonus5 = "+5% střelecký talent"; // ITAR_PAL_C_ArmorExpansion, ITAR_MIL_P_ArmorExpansion, ITAR_DJG_CL_ArmorExpansion, ITAR_MIL_SCOUT_ArmorExpansion, ITAR_PAL_CH_ArmorExpansion, ITAR_DJG_CH_ArmorExpansion, ITAR_DJG_CM_ArmorExpansion
+const string Patch_AE_TEXT_ArcheryBonus6 = "+6% střelecký talent"; //ITAR_SLD_BOW_ArmorExpansion, ITAR_SLD_SCOUT_ArmorExpansion, ITAR_SLD_MP_ArmorExpansion
 const string Patch_AE_TEXT_TwoHandedBonus5 = "+5% obouruční talent"; // ITAR_CRUSADER_ArmorExpansion, ITAR_NH_CRUSADER_ArmorExpansion
 const string Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 bonus k obratnosti, +10% Jednoruční talent"; // ITAR_PIR_H_ArmorExpansion
 
