@@ -3,14 +3,14 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 09.02.2025 17:48:00
+date 19.02.2025 22:10:01
 user https://github.com/szapp/output-unit-action
 END
-objects 2656
+objects 2662
 END
 
 [% zCCSLib 0 0]
-	NumOfItems=int:885
+	NumOfItems=int:887
 [% zCCSBlock 0 1]
 blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS
 numOfBlocks=int:1
@@ -10628,6 +10628,30 @@ subBlock0=float:0
 subType=enum:0
 text=string:B_GiveInvItems (self, other, ITAR_SLD_BOW_ArmorExpansion, 1);
 name=string:DIA_Lee_BuyArmorM_04_01.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2656]
+blockName=string:DIA_Wolf_AboutCrawler_AEXPANSION_15_00
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2657]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2658]
+subType=enum:0
+text=string:vlastně bych chtěl tu zbroj spíš na lovecké účely
+name=string:DIA_Wolf_AboutCrawler_AEXPANSION_15_00.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2659]
+blockName=string:DIA_Wolf_AboutCrawler_AEXPANSION_08_01
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2660]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2661]
+subType=enum:0
+text=string:jasně, není problém. Jenom mi přines tedy těch krunýřú 7.
+name=string:DIA_Wolf_AboutCrawler_AEXPANSION_08_01.WAV
 []
 []
 []
