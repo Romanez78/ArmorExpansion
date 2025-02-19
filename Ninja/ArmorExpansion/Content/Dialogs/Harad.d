@@ -115,48 +115,4 @@ func void Patch_AE_DIA_HARAD_PALADIN_REFORGE_Info()
     };
 };
 
-instance Patch_AE_DIA_HARAD_END_MAKE (C_INFO)
-{
-    npc          =  VLK_412_Harad;
-    nr           =  8;
-    condition    =  Patch_AE_DIA_HARAD_END_MAKE_Condition;
-    information  =  Patch_AE_DIA_HARAD_END_MAKE_Info;
-    permanent    =  FALSE;
-    description  =  Patch_AE_DIA_HARAD_END_MAKE_desc;
-};
-func int Patch_AE_DIA_HARAD_END_MAKE_Condition()
-{
-    if (Npc_Hasitems(other, ItAr_PAL_H) > 0)
-    {
-        return TRUE;
-    };
-};
-func void Patch_AE_DIA_HARAD_END_MAKE_Info()
-{
-    AI_Output(other, self, PATCH_AE_DIA_HARAD_END_MAKE_1);
-    AI_Output(self, other, PATCH_AE_DIA_HARAD_END_MAKE_2);
-    AI_Output(other, self, PATCH_AE_DIA_HARAD_END_MAKE_3);
-    AI_Output(self, other, PATCH_AE_DIA_HARAD_END_MAKE_4);
-    AI_Output(other, self, PATCH_AE_DIA_HARAD_END_MAKE_5);
-    AI_Output(self, other, PATCH_AE_DIA_HARAD_END_MAKE_6);
-    AI_Output(other, self, PATCH_AE_DIA_HARAD_END_MAKE_7);
-    B_GiveInvItems(other, self, ItAr_PAL_H, 1);
 
-    B_LookAtNpc(other, self);
-    AI_UseMob(self, "BSFIRE", 1);
-    AI_UseMob(self, "BSFIRE", -1);
-    B_TurnToNpc(other, self);
-
-    AI_UseMob(self, "BSANVIL", 1);
-    AI_UseMob(self, "BSANVIL", -1);
-    B_TurnToNpc(other, self);
-
-    AI_UseMob(self, "BSCOOL", 1);
-    AI_UseMob(self, "BSCOOL", -1);
-    B_TurnToNpc(other, self);
-    B_TurnToNpc(self, other);
-
-    AI_Output(self, other, PATCH_AE_DIA_HARAD_END_MAKE_8);
-    B_GiveInvItems(self, other, ITAR_PAL_CH_ARMOREXPANSION, 1);
-    AI_Output(other, self, PATCH_AE_DIA_HARAD_END_MAKE_9);
-};
