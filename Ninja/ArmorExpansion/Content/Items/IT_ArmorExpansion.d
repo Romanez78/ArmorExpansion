@@ -2100,9 +2100,84 @@ instance ItAr_KDF_M_AMEXPANSION(C_Item)
 	count[5] = value;
 };
 
+INSTANCE ITAR_DJG_CrawlerP_AEXPANSION (C_Item)
+{
+	name 					=	"Lovecká Zbroj z krunýře důlního červa";
 
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
 
+	protection [PROT_EDGE]	=	60;
+	protection [PROT_BLUNT] = 	60;
+	protection [PROT_POINT] = 	60;
+	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_MAGIC] = 	0;
 
+	value 					=	VALUE_ITAR_DJG_Crawler;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ItAr_Djg_Crawler.3ds";
+	visual_change 			=	"Armor_Djg_CrawlerP_AEXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+	
+	on_equip				=	Equip_ITAR_DJG_CrawlerP;
+	on_unequip				=	UnEquip_ITAR_DJG_CrawlerP;
+	
+	description				=	name;
+	
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+FUNC VOID Equip_ITAR_DJG_CrawlerP()
+{
+	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 6);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);
+	if Npc_IsPlayer (self)
+	{
+		MCArmor_Equipped = TRUE;
+	
+		if (MC_Equipped == TRUE)	
+		{
+			self.protection[PROT_EDGE] 	+= BA_Bonus01;
+			self.protection[PROT_BLUNT] += BA_Bonus01;
+			self.protection[PROT_POINT] += BA_Bonus01;
+			self.protection[PROT_MAGIC] += BA_Bonus01;
+			self.protection[PROT_FIRE] 	+= BA_Bonus01;
+		};
+	};			
+};
+FUNC VOID UnEquip_ITAR_DJG_CrawlerP()
+{
+	 B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -6);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);
+	if Npc_IsPlayer (self)
+	{
+		MCArmor_Equipped = FALSE;
+		
+		if (MC_Equipped == TRUE)	
+		{
+			self.protection[PROT_EDGE] 	-= BA_Bonus01;
+			self.protection[PROT_BLUNT] -= BA_Bonus01;
+			self.protection[PROT_POINT] -= BA_Bonus01;
+			self.protection[PROT_MAGIC] -= BA_Bonus01;
+			self.protection[PROT_FIRE] 	-= BA_Bonus01;
+		};
+	};			
+};
 instance ITAR_Thorus_Addon(C_Item)
 {
 	visual = "Thorus_New_AEXPANSION.3ds";
