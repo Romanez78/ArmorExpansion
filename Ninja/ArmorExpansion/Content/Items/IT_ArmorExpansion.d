@@ -1353,7 +1353,7 @@ INSTANCE ITAR_PAL_CH_ArmorExpansion (C_Item)
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "ItAr_Pal_CH_AMEXPANSION.3ds";
+    visual    =    "ARMOR_PAL_CH_AMEXPANSION.3ds";
     visual_change    =    "Armor_Pal_H4000.asc";
     visual_skin    =    0;
     material    =    MAT_METAL;
@@ -2102,7 +2102,7 @@ instance ItAr_KDF_M_AMEXPANSION(C_Item)
 
 INSTANCE ITAR_DJG_CrawlerP_AEXPANSION (C_Item)
 {
-	name 					=	"Lovecká Zbroj z krunýře důlního červa";
+	name 					=	ITAR_DJG_CrawlerP_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2127,6 +2127,7 @@ INSTANCE ITAR_DJG_CrawlerP_AEXPANSION (C_Item)
 	
 	description				=	name;
 	
+	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus6;
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE];
 	
