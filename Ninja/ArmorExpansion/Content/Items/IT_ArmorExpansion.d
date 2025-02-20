@@ -57,6 +57,7 @@ const int Patch_AE_ITAR_PAL_F_BONUS_MANA = 20;
 var int Patch_AE__ITAR_MIL_H_Equipped;
 var int Patch_AE__ITAR_SLD_BOW_Equipped;
 var int Patch_AE__ITAR_GAMBESON_Equipped;
+var int Patch_AE__ITAR_DJG_CRAWLERP_Equipped;
 INSTANCE ITAR_MIL_H_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_MIL_H_ArmorExpansion__name;
@@ -2149,7 +2150,7 @@ FUNC VOID Equip_ITAR_DJG_CrawlerP()
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);
 	if Npc_IsPlayer (self)
 	{
-		MCArmor_Equipped = TRUE;
+		Patch_AE__ITAR_DJG_CRAWLERP_Equipped = TRUE;
 	
 		if (MC_Equipped == TRUE)	
 		{
@@ -2167,7 +2168,7 @@ FUNC VOID UnEquip_ITAR_DJG_CrawlerP()
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);
 	if Npc_IsPlayer (self)
 	{
-		MCArmor_Equipped = FALSE;
+		Patch_AE__ITAR_DJG_CRAWLERP_Equipped = FALSE;
 		
 		if (MC_Equipped == TRUE)	
 		{
