@@ -479,8 +479,6 @@ func void Patch_AE_LocalizeGerman() {
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_DE"); //I don't have anything like that for you, but you're not the first one to ask for something like this.
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_DE"); //Go to Wolf. I think he should have something for you.
 
-    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Bogenschützen-Söldnerrüstung kaufen. (1500 Gold).";
-
     // Localized OU (do not change)
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_DE";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_DE";
@@ -750,15 +748,11 @@ func void Patch_AE_LocalizeGerman() {
     // ----
 
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Ich habe gehört du stellst leichtere Rüstung für Söldner her. (Söldnerrüstung ersetzen)";
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_DE"); //I hear you make lighter armor for mercenaries.
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE"); //I'd like to replace the one I have now.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE"); //Sure, I just finished one. You can have it for free, for old time's sake.
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE"); //Thanks man.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE"); //You're welcome.
 
     // Localized OU (do not change)
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_DE";
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE";
