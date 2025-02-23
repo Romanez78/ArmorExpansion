@@ -3,14 +3,14 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 20.02.2025 22:41:05
+date 23.02.2025 16:44:19
 user https://github.com/szapp/output-unit-action
 END
-objects 2656
+objects 2653
 END
 
 [% zCCSLib 0 0]
-	NumOfItems=int:885
+	NumOfItems=int:884
 [% zCCSBlock 0 1]
 blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS
 numOfBlocks=int:1
@@ -10616,18 +10616,6 @@ subBlock0=float:0
 subType=enum:0
 text=string:You're welcome.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE.WAV
-[]
-[]
-[]
-[% zCCSBlock 0 2653]
-blockName=string:DIA_Lee_BuyArmorM_04_01
-numOfBlocks=int:1
-subBlock0=float:0
-[% zCCSAtomicBlock 0 2654]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2655]
-subType=enum:0
-text=string:B_GiveInvItems (self, other, ITAR_SLD_BOW_ArmorExpansion, 1);
-name=string:DIA_Lee_BuyArmorM_04_01.WAV
 []
 []
 []
