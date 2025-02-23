@@ -17,10 +17,12 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Mil_318_Miliz",          ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_319_Pablo",          ITAR_MIL_Med2_ArmorExpansion);  // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_320_Miliz",          ITAR_MIL_SCOUT_ArmorExpansion); // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("Mil_321_Rangar",         ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_323_Miliz",          ITAR_MIL_SCOUT_ArmorExpansion); // Originally ITAR_MIL_L   
     Patch_AE_NpcUpdateArmor("Mil_324_Peck",           ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_325_Miliz",          ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_327_Miliz",          ITAR_MIL_P_ArmorExpansion);     // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("Mil_330_Miliz",          ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_332_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_333_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_337_Mika",           ITAR_MIL_Med2_ArmorExpansion);  // Originally ITAR_MIL_L
@@ -30,6 +32,8 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Pal_207_Girion",         ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_207_Girion_DI",      ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_208_Ritter",         ITAR_PAL_CM_ArmorExpansion);    // Originally ITAR_PAL_H   
+    Patch_AE_NpcUpdateArmor("Pal_208_Paladin",        ITAR_PAL_CM_ArmorExpansion);    // Originally ITAR_PAL_M   
+    Patch_AE_NpcUpdateArmor("Pal_211_Torwache",       ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_216_Cedric",         ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_218_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("Pal_225_Schiffswache",   ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
@@ -49,6 +53,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Pal_269_Ritter",         ITAR_PAL_CM_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_270_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_274_Ritter",         ITAR_PAL_C_ArmorExpansion);     // Originally ITAR_PAL_M
+    Patch_AE_NpcUpdateArmor("PAL_293_Ritter",         ITAR_PAL_CM_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_297_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_298_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_299_Sergio",         ITAR_NH_CRUSADER_ArmorExpansion); // Originally ITAR_PAL_M    
@@ -72,13 +77,17 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("BAU_983_Dragomir",       ITAR_ARX_HUNTERH_ArmorExpansion); // Originally ITAR_Leather_L
     Patch_AE_NpcUpdateArmor("BAU_981_Grom",           ITAR_ARX_HUNTERM_ArmorExpansion); // Originally ITAR_Leather_L
     Patch_AE_NpcUpdateArmor("VLK_4100_Brutus",        ITAR_MIL_H_ArmorExpansion);     // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("VLK_4102_Waffenknecht",  ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4104_Waffenknecht",  ITAR_MIL_SCOUT_ArmorExpansion); // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4105_Waffenknecht",  ITAR_MIL_P_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4108_Engor",         ITAR_MIL_Med2_ArmorExpansion);  // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4120_Bilgot",        ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4101_Waffenknecht",  ITAR_MIL_M);                    // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("VLK_4103_Waffenknecht",  ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4140_Waffenknecht",  ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("VLK_4144_Waffenknecht",  ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4145_Waffenknecht",  ITAR_MIL_P_ArmorExpansion);     // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("VLK_4146_Waffenknecht",  ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_440_Bartok",         ITAR_GAMBESON_ArmorExpansion);  // Originally ITAR_Vlk_L
 };
 
