@@ -477,8 +477,6 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_EN"); //I don't have anything like that for you, but you're not the first one to ask for something like this.
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_EN"); //Go to Wolf. I think he should have something for you.
 
-    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Buy Mercenary Archer Armor. (Protection: Weapons 55, Arrows 55, Archery Bonus. price 1500 gold).";
-
     // Localized OU (do not change)
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_EN";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_EN";
@@ -752,15 +750,11 @@ func void Patch_AE_LocalizeEnglish() {
     // ----
 
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "I hear you make lighter armor for mercenaries (Replaces Light Mercenary Armor).";
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN"); //I hear you make lighter armor for mercenaries.
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN"); //I'd like to replace the one I have now.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN"); //Sure, I just finished one. You can have it for free, for old time's sake.
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN"); //Thanks man.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN"); //You're welcome.
 
     // Localized OU (do not change)
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_EN";
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN";
