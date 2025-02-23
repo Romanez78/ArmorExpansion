@@ -478,8 +478,6 @@ func void Patch_AE_LocalizePolish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_PL"); //Nie mam niczego takiego dla ciebie, ale nie jesteś pierwszym, który o to pyta.
     // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_PL"); //Idź do Wilka. Sądzę, że powinien mieć coś dla ciebie.
 
-    Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Zbroja łowcy nagród. Ochrona: 55/55, bonus do posługiwania się łukiem. 1500 szt. złota.";
-
     // Localized OU (do not change)
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_PL";
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_PL";
@@ -752,15 +750,11 @@ func void Patch_AE_LocalizePolish() {
     // ----
 
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Słyszałem, że robisz pancerze dla zwiadowców.";
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_PL"); //Słyszałem, że robisz pancerze dla zwiadowców.
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_PL"); //Chciałbym wymienić ten, który już mam.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_PL"); //Jasne, właśnie jeden skończyłem. Weź go za darmo, ze względu na stare czasy.
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_PL"); //Dzięki, koleś.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_PL"); //Nie ma za co.
 
     // Localized OU (do not change)
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_PL";
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_PL";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_PL";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_PL";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_PL";
