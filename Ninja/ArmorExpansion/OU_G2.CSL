@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 23.02.2025 17:29:52
+date 23.02.2025 18:40:50
 user https://github.com/szapp/output-unit-action
 END
 objects 2719
@@ -1164,14 +1164,14 @@ name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_CS.WAV
 []
 []
 [% zCCSBlock 0 289]
-blockName=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_9_CS
+blockName=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_CS
 numOfBlocks=int:1
 subBlock0=float:0
 [% zCCSAtomicBlock 0 290]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 291]
 subType=enum:0
 text=string:Buď na ní hrdý, málokdo si ji zaslouží nosit.
-name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_9_CS.WAV
+name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_CS.WAV
 []
 []
 []
@@ -2700,14 +2700,14 @@ name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_CS.WAV
 []
 []
 [% zCCSBlock 0 673]
-blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_CS
+blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_CS
 numOfBlocks=int:1
 subBlock0=float:0
 [% zCCSAtomicBlock 0 674]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 675]
 subType=enum:0
 text=string:Chci si vyměnit zbroj za loveckou.
-name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_CS.WAV
+name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_CS.WAV
 []
 []
 []
