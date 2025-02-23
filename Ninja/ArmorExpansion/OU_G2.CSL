@@ -3,14 +3,14 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 23.02.2025 19:10:57
+date 23.02.2025 19:11:21
 user https://github.com/szapp/output-unit-action
 END
-objects 2713
+objects 2707
 END
 
 [% zCCSLib 0 0]
-	NumOfItems=int:904
+	NumOfItems=int:902
 [% zCCSBlock 0 1]
 blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS
 numOfBlocks=int:1
@@ -10800,59 +10800,35 @@ name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_DE.WAV
 []
 []
 [% zCCSBlock 0 2698]
-blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_DE
+blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
 [% zCCSAtomicBlock 0 2699]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2700]
-subType=enum:0
-text=string:I hear you make lighter armor for mercenaries.
-name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_DE.WAV
-[]
-[]
-[]
-[% zCCSBlock 0 2701]
-blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE
-numOfBlocks=int:1
-subBlock0=float:0
-[% zCCSAtomicBlock 0 2702]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2703]
-subType=enum:0
-text=string:I'd like to replace the one I have now.
-name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE.WAV
-[]
-[]
-[]
-[% zCCSBlock 0 2704]
-blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE
-numOfBlocks=int:1
-subBlock0=float:0
-[% zCCSAtomicBlock 0 2705]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2706]
 subType=enum:0
 text=string:Sure, I just finished one. You can have it for free, for old time's sake.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2707]
+[% zCCSBlock 0 2701]
 blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2708]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2709]
+[% zCCSAtomicBlock 0 2702]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2703]
 subType=enum:0
 text=string:Thanks man.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2710]
+[% zCCSBlock 0 2704]
 blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2711]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2712]
+[% zCCSAtomicBlock 0 2705]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2706]
 subType=enum:0
 text=string:You're welcome.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE.WAV
