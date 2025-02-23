@@ -355,12 +355,24 @@ const string Patch_AE_DIA_Lord_Hagen_CROSSBOW_desc = "Nenašla by se pro mně le
 // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_CS"); //Beru jí.
 // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_CS"); //Nos ji se ctí, rytíři.
 
+const string Patch_AE_DIA_Lord_Hagen_HEAVYCROSSBOW_desc = "Potřebuji lepší zbroj.";
+// AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_CS"); //Potřebuji lepší zbroj.
+// AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_CS"); //Hm, je pravda že sis poradil s draky v hornickém údolí.
+// AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_CS"); //Zasloužíš si těžkou zbroj kušišníka, tady je.
+// AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_CS"); //Díky.
+// AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_9_CS"); //Buď na ní hrdý, málokdo si ji zaslouží nosit.
+
 // Localized OU (do not change)
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_CS";
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_CS";
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_CS";
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_CS";
 const string PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_CS";
+const string PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_CS";
+const string PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_CS";
+const string PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_CS";
+const string PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_CS";
+const string PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_9_CS";
 
 // ------
 // Harad
@@ -486,8 +498,6 @@ const string Patch_AE_DIA_LEE_SLD_SCOUTArmor_desc = "Nenašla by se tu pro mně 
 // AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_CS"); //Radši používám zbraně na dálku.
 // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_CS"); //Já nic takového pro tebe nemám, ale nejsi první kdo něco takového chce
 // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_CS"); //Jdi za Wolfem, myslím si že on by měl pro tebe něco mít
-
-const string Patch_AE_DIA_LEE_SLD_BOWArmor_desc = "Koupit si Zbroj Nájemného Lovce. Ochrana: zbraně 55, šípy 55, cena 1500 zlaťáků.";
 
 // Localized OU (do not change)
 const string PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_CS";
@@ -760,16 +770,66 @@ const string PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03 = "PATCH_AE_DIA_ARMOREXPAN
 // Wolf
 // ----
 
-const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Slyšel jsem že děláš zbroje pro zvědy.";
-// AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_CS"); //Slyšel jsem že děláš zbroje pro zvědy.
-// AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_CS"); //chtěl bych si vyměnit tu co mám teď
-// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_CS"); //Jistě, zrovna jsem jednu dokončil. Můžeš ji mít zadarmo, kvůli starým časům.
+const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_desc = "Slyšel jsem že děláš zbroje.";
+// AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_CS"); //Slyšel jsem že děláš zbroje.
+// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_CS"); //To jsi slyšel správně, dělám lehčí kožené zbroje na lov. 
+// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_CS"); //Sice tě tolik neochrání, ale střílet se ti v nich bude o hodně líp.
+
+const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Chci si vyměnit zbroj za loveckou.";
+// AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_CS"); //Chci si vyměnit zbroj za loveckou.
+// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_CS"); //Jistě, zrovna jsem jednu dokončil. Tady je.
 // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_CS"); //Díky.
-// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_CS"); //Nemáš za co
+// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_CS"); //Není za co.
+
+const string DIA_Wolf_ArmorM_AEXPANSION_desc = "Co takhle nějáká lepší zbroj?.";
+// AI_Output(other, self, "DIA_Wolf_ArmorM_AEXPANSION_15_00_CS"); //Co takhle nějáká lepší zbroj?.
+// AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_01_CS"); //Jasně, teď už ti ho můžu prodat.
+// AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_02_CS"); //Mám tady pro tebe střední zbroj, je to celkem slušný kousek.
+// AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_03_CS"); //Promiň, ale Lee by mi nedovolil ti ho dát jen tak. Myslím že by si nejdřív měl pomoct Torlofovi.
+// AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_04_CS"); //Až to budeš mít za sebou, rád ti prodám nějáký lepší kousek.
+
+const string DIA_Wolf_BuyArmorMP_AEXPANSION_desc = "Koupit Střední Loveckou Zbroj Žoldáka (Ochrana: 45/45, +6% bonus ke střelbě, Cena 1000).";
+// AI_Output(other, self, "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_CS"); //Dej mi to brnění.
+// AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_CS"); //Tady je. Poměrně dobrá zbroj.
+// AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_CS"); //Promiň ale nemůžu ti ho dát zadarmo, Lee by mi utrhnul hlavu kdyby zjistil že rozdávám zbroje jen tak.
+
+const string DIA_Wolf_ArmorBow_AEXPANSION_desc = "Neměl bys pro mě nějakou lepší zbroj?.";
+// AI_Output(other, self, "DIA_Wolf_ArmorBow_AEXPANSION_15_00_CS"); //Neměl bys pro mě nějakou lepší zbroj?.
+// AI_Output(self, other, "DIA_Wolf_ArmorBow_AEXPANSION_04_01_CS"); //Jasně.
+
+const string DIA_Wolf_BuyArmorMP_AEXPANSION_desc = "Koupit Těžkou Loveckou Zbroj Žoldáka (Ochrana: 70/70, +6% bonus ke střelbě, Cena 2500).";
+// AI_Output(other, self, "DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_CS"); //Dej mi to těžké brnění.
+// AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_CS"); //Tady je. Parádní zbroj, jsem na ni docela hrdý.
+// AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_02_CS"); //Víš, jak to chodí. Nejdřív mi musíš přiníst dost peněz.
+
+const string DIA_Wolf_AboutCrawler_Description_AEXPANSION = "Vlastně bych chtěl tu zbroj odlehčenou.";
+// AI_Output(other, self, "DIA_Wolf_AboutCrawler_AEXPANSION_15_00_CS"); //Vlastně bych chtěl tu zbroj odlehčenou.
+// AI_Output(self, other, "DIA_Wolf_AboutCrawler_AEXPANSION_08_01_CS"); //jasně, není problém. Jenom mi přines tedy těch krunýřú 7.
+
+const string DIA_Wolf_BringPlates_Description_AEXPANSION = "Sehnal jsem ty červí krunýře na brnění.";
+
+const string Patch_AE_DIA_WOLF_CRAWLERARMOR_Description = "Prima, a kdy ta zbroj bude?";
 
 // Localized OU (do not change)
+const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_CS";
+const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_CS";
+const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_06_CS";
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_01_CS";
-const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_CS";
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_CS";
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_CS";
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_CS";
+const string DIA_Wolf_ArmorM_AEXPANSION_15_00 = "DIA_Wolf_ArmorM_AEXPANSION_15_00_CS";
+const string DIA_Wolf_ArmorM_AEXPANSION_04_01 = "DIA_Wolf_ArmorM_AEXPANSION_04_01_CS";
+const string DIA_Wolf_ArmorM_AEXPANSION_04_02 = "DIA_Wolf_ArmorM_AEXPANSION_04_02_CS";
+const string DIA_Wolf_ArmorM_AEXPANSION_04_03 = "DIA_Wolf_ArmorM_AEXPANSION_04_03_CS";
+const string DIA_Wolf_ArmorM_AEXPANSION_04_04 = "DIA_Wolf_ArmorM_AEXPANSION_04_04_CS";
+const string DIA_Wolf_BuyArmorMP_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_CS";
+const string DIA_Wolf_BuyArmorMP_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_CS";
+const string DIA_Wolf_BuyArmorMP_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_CS";
+const string DIA_Wolf_ArmorBow_AEXPANSION_15_00 = "DIA_Wolf_ArmorBow_AEXPANSION_15_00_CS";
+const string DIA_Wolf_ArmorBow_AEXPANSION_04_01 = "DIA_Wolf_ArmorBow_AEXPANSION_04_01_CS";
+const string DIA_Wolf_BuyArmorBow_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_CS";
+const string DIA_Wolf_BuyArmorBow_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_CS";
+const string DIA_Wolf_BuyArmorBow_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_CS";
+const string DIA_Wolf_AboutCrawler_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_CS";
+const string DIA_Wolf_AboutCrawler_AEXPANSION_08_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_CS";
