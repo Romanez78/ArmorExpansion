@@ -14,6 +14,7 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_Use_Plan_StewarkArmor__line8 = "This order was given by commander Cenric of the City Guard";
 
     // Armor names
+    ITAR_DJG_CrawlerP_ArmorExpansion__name = "Crawler Plate Hunting Armor";
     ITAR_MIL_H_ArmorExpansion__name = "Heavy Militia Armor";
     ITAR_MILP_H_ArmorExpansion__name = "Heavy Militia Crossbowman Armor";
     ITAR_GAMBESON_ArmorExpansion__name = "Hunting Gambeson";
@@ -344,14 +345,26 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_EN"); //I can swap your knight's armor for a lighter version designed for our crossbowmen.
     // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_EN"); //I'll take it.
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_EN"); //Wear it with honor, knight.
-
+    
+    Patch_AE_DIA_Lord_Hagen_HEAVYCROSSBOW_desc = "I need better armor.";
+    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_EN"); //I need better armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_EN"); //Hm, It is true you took care of the dragons in the valley of mines.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_EN"); //You deserve the heavy crossbowman armor, here it is.
+    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_EN"); //Thanks.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_EN"); //Be proud of it, not many get to wear it.
+    
     // Localized OU (do not change)
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_EN";
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_EN";
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_EN";
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_EN";
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_EN";
-
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_EN";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_EN";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_EN";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_EN";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_EN";
+   
     // ------
     // Harad
     // ------
@@ -749,13 +762,67 @@ func void Patch_AE_LocalizeEnglish() {
     // Wolf
     // ----
 
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "I hear you make lighter armor for mercenaries (Replaces Light Mercenary Armor).";
-    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN"); //Sure, I just finished one. You can have it for free, for old time's sake.
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN"); //Thanks man.
-    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN"); //You're welcome.
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_desc = "I heard you make armor.";
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_EN"); //I heard you make armor.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_EN"); //Then you heard right, i make lighter leather armors for hunting. 
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_EN"); //They will not protect you as much, but you will be able to shoot more comfortably.
+    
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "I want to replace my armor with the lighter one.";
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN"); //I want to replace my armor with the lighter one.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN"); //Sure, i just finished making one. Here you go.
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN"); //Thanks.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN"); //Don't mention it.
 
+    DIA_Wolf_ArmorM_AEXPANSION_desc = "What about some better armor?.";
+    // AI_Output(other, self, "DIA_Wolf_ArmorM_AEXPANSION_15_00_EN"); //What about some better armor?.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_01_EN"); //Sure, i can sell it to you now.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_02_EN"); //I have medium armor for you here, It's a decent piece.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_03_EN"); //Sorry, but Lee wouldn't let me give it to you just like that. I think you should help Torlof first.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_04_EN"); //When you're done come see me, I'll have something better for you.
+    
+    DIA_Wolf_BuyArmorMP_AEXPANSION_desc = "Buy Medium Hunting Armor (Protection: 45/45, +6% Ranged Bonus, Price 1000).";
+    // AI_Output(other, self, "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_EN"); //Give me the armor.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_EN"); //Here you are. It's a decent piece of armor.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_EN"); //Sorry but I can't give it to you for free, Lee would rip my head off if he found out I was giving away armor for nothing.
+    
+    DIA_Wolf_ArmorBow_AEXPANSION_desc = "Wouldn't you have some better armor for me?.";
+    // AI_Output(other, self, "DIA_Wolf_ArmorBow_AEXPANSION_15_00_EN"); //Wouldn't you have some better armor for me?.
+    // AI_Output(self, other, "DIA_Wolf_ArmorBow_AEXPANSION_04_01_EN"); //Sure.
+    
+    DIA_Wolf_BuyArmorBow_AEXPANSION_desc = "Buy Heavy Hunting Armor (Protection: 70/70, +6% Ranged Bonus, Price 2500).";
+    // AI_Output(other, self, "DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_EN"); //Give me the armor.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_EN"); //Here it is. A good piece, I'm proud of it.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_02_EN"); //You know how it is. First you have to bring me enough gold.
+
+    DIA_Wolf_AboutCrawler_Description_AEXPANSION = "Actually i would prefer to have the armor lighter.";
+    // AI_Output(other, self, "DIA_Wolf_AboutCrawler_AEXPANSION_15_00_EN"); //Actually i would prefer to have the armor lighter.
+    // AI_Output(self, other, "DIA_Wolf_AboutCrawler_AEXPANSION_08_01_EN"); //Sure, no problem. Just bring me 7 of those crawler plates.
+
+    DIA_Wolf_BringPlates_Description_AEXPANSION = "I got you the crawler plates for the armor.";
+
+    Patch_AE_DIA_WOLF_CRAWLERARMOR_Description = "Great, when will the armor be ready?";
+    
     // Localized OU (do not change)
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_EN";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_EN";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_EN";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_EN";
+    DIA_Wolf_ArmorM_AEXPANSION_15_00 = "DIA_Wolf_ArmorM_AEXPANSION_15_00_EN";
+    DIA_Wolf_ArmorM_AEXPANSION_04_01 = "DIA_Wolf_ArmorM_AEXPANSION_04_01_EN";
+    DIA_Wolf_ArmorM_AEXPANSION_04_02 = "DIA_Wolf_ArmorM_AEXPANSION_04_02_EN";
+    DIA_Wolf_ArmorM_AEXPANSION_04_03 = "DIA_Wolf_ArmorM_AEXPANSION_04_03_EN";
+    DIA_Wolf_ArmorM_AEXPANSION_04_04 = "DIA_Wolf_ArmorM_AEXPANSION_04_04_EN";
+    DIA_Wolf_BuyArmorMP_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_EN";
+    DIA_Wolf_BuyArmorMP_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_EN";
+    DIA_Wolf_BuyArmorMP_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_EN";
+    DIA_Wolf_ArmorBow_AEXPANSION_15_00 = "DIA_Wolf_ArmorBow_AEXPANSION_15_00_EN";
+    DIA_Wolf_ArmorBow_AEXPANSION_04_01 = "DIA_Wolf_ArmorBow_AEXPANSION_04_01_EN";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_EN";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_EN";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_EN";
+    DIA_Wolf_AboutCrawler_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_EN";
+    DIA_Wolf_AboutCrawler_AEXPANSION_08_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_EN";
 };
