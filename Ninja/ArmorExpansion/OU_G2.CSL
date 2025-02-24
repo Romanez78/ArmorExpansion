@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 24.02.2025 22:57:33
+date 24.02.2025 23:11:38
 user https://github.com/szapp/output-unit-action
 END
 objects 2773
@@ -8478,7 +8478,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2117]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2118]
 subType=enum:0
-text=string:Couldn't you find lighter armor for me?
+text=string:Hast du keine leichtere Rüstung für mich?
 name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_DE.WAV
 []
 []
@@ -8490,7 +8490,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2120]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2121]
 subType=enum:0
-text=string:I prefer to keep my distance.
+text=string:Ich halte lieber Abstand.
 name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_DE.WAV
 []
 []
@@ -8502,7 +8502,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2123]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2124]
 subType=enum:0
-text=string:I can trade you your armor for the armor of a scout. It's lighter than standard equipment, so you'll be more agile, but also more vulnerable.
+text=string:Ich kann deine Rüstung gegen die Rüstung eines Armbrustschützen tauschen. Sie ist leichter als die Standardausrüstung, sodass du beweglicher, aber auch verwundbarer bist.
 name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_DE.WAV
 []
 []
@@ -8514,7 +8514,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2126]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2127]
 subType=enum:0
-text=string:I'll take it.
+text=string:Ich nehme es.
 name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_DE.WAV
 []
 []
@@ -8526,7 +8526,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2129]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2130]
 subType=enum:0
-text=string:Here, let it serve you well.
+text=string:Hier, lass es dir gut dienen.
 name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_DE.WAV
 []
 []
@@ -8538,7 +8538,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2132]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2133]
 subType=enum:0
-text=string:You completed all of my assignments.
+text=string:Sie haben alle meine Aufgaben erledigt.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_DE.WAV
 []
 []
@@ -8550,7 +8550,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2135]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2136]
 subType=enum:0
-text=string:You proved to me that you deserve a promotion.
+text=string:Sie haben mir bewiesen, dass Sie eine Beförderung verdienen.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_DE.WAV
 []
 []
@@ -8562,7 +8562,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2138]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2139]
 subType=enum:0
-text=string:Here you go, medium militia armor.
+text=string:Bitte sehr, mittlere Milizrüstung.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_DE.WAV
 []
 []
@@ -8574,7 +8574,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2141]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2142]
 subType=enum:0
-text=string:I hope it will serve you well soldier.
+text=string:Ich hoffe, es wird Ihnen gute Dienste leisten, Soldat.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_DE.WAV
 []
 []
@@ -8586,7 +8586,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2144]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2145]
 subType=enum:0
-text=string:Thanks.
+text=string:Danke.
 name=string:PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_DE.WAV
 []
 []
@@ -8598,7 +8598,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2147]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2148]
 subType=enum:0
-text=string:Can you sell me some better armor?
+text=string:Hast du keine bessere Rüstung für mich?
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_15_01_DE.WAV
 []
 []
@@ -8610,7 +8610,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2150]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2151]
 subType=enum:0
-text=string:No, only Lee can give out armor.
+text=string:Nein, nur Lee kann Rüstungen ausgeben.
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_13_02_DE.WAV
 []
 []
@@ -8622,7 +8622,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2153]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2154]
 subType=enum:0
-text=string:But I can improve the one you already got, it'll cost you though.
+text=string:Aber ich kann das, was Sie bereits haben, verbessern. Das wird Sie allerdings etwas kosten.
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_13_03_DE.WAV
 []
 []
@@ -8634,7 +8634,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2156]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2157]
 subType=enum:0
-text=string:What do you need for it?
+text=string:Was brauchst du dafür?
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_15_04_DE.WAV
 []
 []
@@ -8646,7 +8646,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2159]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2160]
 subType=enum:0
-text=string:The materials to make it, you bring them yourself, I won't make it from my own supplies.
+text=string:Die Materialien zur Herstellung bringst Du selbst mit, ich fertige es nicht aus eigenen Vorräten.
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_13_05_DE.WAV
 []
 []
@@ -8658,7 +8658,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2162]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2163]
 subType=enum:0
-text=string:And I don't work for free, so get some gold ready too.
+text=string:Und ich arbeite nicht umsonst, also legen Sie auch etwas Gold bereit.
 name=string:PATCH_AE_DIA_BENNET_SLDARMORASK_13_07_DE.WAV
 []
 []
@@ -8670,7 +8670,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2165]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2166]
 subType=enum:0
-text=string:I want to have my light armor improved.
+text=string:Ich will meine leichte Rüstung verbessern.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_01_DE.WAV
 []
 []
@@ -8682,7 +8682,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2168]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2169]
 subType=enum:0
-text=string:What do you need for that?
+text=string:Was brauchen Sie dafür?
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_04_DE.WAV
 []
 []
@@ -8694,7 +8694,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2171]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2172]
 subType=enum:0
-text=string:Two raw steel billets and two wolf skins will do for light armor.
+text=string:Für eine leichte Rüstung genügen zwei Stahlstangen und zwei Wolfsfelle.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_06_DE.WAV
 []
 []
@@ -8706,7 +8706,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2174]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2175]
 subType=enum:0
-text=string:I'll charge you 200 gold pieces for it.
+text=string:Ich verlange dafür 200 Goldstücke von Ihnen.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_07_DE.WAV
 []
 []
@@ -8730,7 +8730,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2180]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2181]
 subType=enum:0
-text=string:I have all the materials needed to improve my light armor.
+text=string:Ich habe alle Materialien um meine leichte Rüstung zu verbessern.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_01_DE.WAV
 []
 []
