@@ -1,4 +1,4 @@
-//German Translation for version 1.2 done by iyumichan on Nexusmods.com
+//German Translation for version 1.2 done by iyumichan on Nexusmods.com, rest that was not finished was done by me with the help of Google
 
 func void Patch_AE_LocalizeGerman() {
     // NPC
@@ -79,17 +79,17 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEE = "(Wählen Sie Mittlere Milizrüstung)";
     Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_RANGED = "(Wählen Sie eine mittlere Miliz-Armbrustschützenrüstung)";
     Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc = "Hast du keine leichtere Rüstung für mich? (Leichte Milizrüstung ersetzen)";
-    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_DE"); //Couldn't you find lighter armor for me?
-    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_DE"); //I prefer to keep my distance.
-    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_DE"); //I can trade you your armor for the armor of a scout. It's lighter than standard equipment, so you'll be more agile, but also more vulnerable.
-    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_DE"); //I'll take it.
-    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_DE"); //Here, let it serve you well.
+    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_DE"); //Hast du keine leichtere Rüstung für mich?
+    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02_DE"); //Ich halte lieber Abstand.
+    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_DE"); //Ich kann deine Rüstung gegen die Rüstung eines Armbrustschützen tauschen. Sie ist leichter als die Standardausrüstung, sodass du beweglicher, aber auch verwundbarer bist.
+    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04_DE"); //Ich nehme es.
+    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9_DE"); //Hier, lass es dir gut dienen.
 
-    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_DE"); //You completed all of my assignments.
-    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_DE"); //You proved to me that you deserve a promotion.
-    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_DE"); //Here you go, medium militia armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_DE"); //I hope it will serve you well soldier.
-    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_DE"); //Thanks.
+    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_03_DE"); //Sie haben alle meine Aufgaben erledigt.
+    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_04_DE"); //Sie haben mir bewiesen, dass Sie eine Beförderung verdienen.
+    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05_DE"); //Bitte sehr, mittlere Milizrüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06_DE"); //Ich hoffe, es wird Ihnen gute Dienste leisten, Soldat.
+    // AI_Output(other, self, "PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01_DE"); //Danke.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01 = "PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_DE";
@@ -110,24 +110,24 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_TOPIC_BENNET_ARMOR = "Söldnerrüstung-Verbesserungen.";
 
     Patch_AE_DIA_BENNET_SLDARMORASK_desc = "Hast du keine bessere Rüstung für mich?";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLDARMORASK_15_01_DE"); //Can you sell me some better armor?
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_02_DE"); //No, only Lee can give out armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_03_DE"); //But I can improve the one you already got, it'll cost you though.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLDARMORASK_15_04_DE"); //What do you need for it?
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_05_DE"); //The materials to make it, you bring them yourself, I won't make it from my own supplies.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_07_DE"); //And I don't work for free, so get some gold ready too.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLDARMORASK_15_01_DE"); //Hast du keine bessere Rüstung für mich?
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_02_DE"); //Nein, nur Lee kann Rüstungen ausgeben.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_03_DE"); //Aber ich kann das, was Sie bereits haben, verbessern. Das wird Sie allerdings etwas kosten.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLDARMORASK_15_04_DE"); //Was brauchst du dafür?
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_05_DE"); //Die Materialien zur Herstellung bringst Du selbst mit, ich fertige es nicht aus eigenen Vorräten.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLDARMORASK_13_07_DE"); //Und ich arbeite nicht umsonst, also legen Sie auch etwas Gold bereit.
     Patch_AE_DIA_BENNET_SLDARMORASK_entry = "Bennet kann meine Söldnerrüstungen verbesseren, wenn ich ihm Gold und Materialien bringe.";
 
     Patch_AE_DIA_BENNET_SLD_LReforgedHUH_desc = "Ich will meine leichte Rüstung verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_01_DE"); //I want to have my light armor improved.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_04_DE"); //What do you need for that?
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_06_DE"); //Two raw steel billets and two wolf skins will do for light armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_07_DE"); //I'll charge you 200 gold pieces for it.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_01_DE"); //Ich will meine leichte Rüstung verbessern.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_04_DE"); //Was brauchen Sie dafür?
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_06_DE"); //Für eine leichte Rüstung genügen zwei Stahlstangen und zwei Wolfsfelle.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_07_DE"); //Ich verlange dafür 200 Goldstücke von Ihnen.
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_09_DE"); //All right.
     Patch_AE_DIA_BENNET_SLD_LReforgedHUH_entry = "Um meine leichte Rüstung zu verbessern braucht Bennet zwei Stück Rohstahl, zwei Wolfsfelle und 200 Gold.";
 
     Patch_AE_DIA_BENNET_SLD_LReforgedArmor_desc = "Ich habe alle Materialien um meine leichte Rüstung zu verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_01_DE"); //I have all the materials needed to improve my light armor.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_01_DE"); //Ich habe alle Materialien um meine leichte Rüstung zu verbessern.
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_11_DE"); //Here you go.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_12_DE"); //Okay, let's take a look at it then.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_13_DE"); //Done.
