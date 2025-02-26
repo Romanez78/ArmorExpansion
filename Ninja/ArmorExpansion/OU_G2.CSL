@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 24.02.2025 23:11:38
+date 26.02.2025 19:56:03
 user https://github.com/szapp/output-unit-action
 END
 objects 2773
@@ -8718,7 +8718,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2177]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2178]
 subType=enum:0
-text=string:All right.
+text=string:Ok.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_09_DE.WAV
 []
 []
@@ -8742,7 +8742,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2183]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2184]
 subType=enum:0
-text=string:Here you go.
+text=string:Bitte schön.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_11_DE.WAV
 []
 []
@@ -8754,7 +8754,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2186]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2187]
 subType=enum:0
-text=string:Okay, let's take a look at it then.
+text=string:Okay, dann schauen wir es uns mal an.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_12_DE.WAV
 []
 []
@@ -8766,7 +8766,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2189]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2190]
 subType=enum:0
-text=string:Done.
+text=string:Erledigt.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_13_DE.WAV
 []
 []
@@ -8778,7 +8778,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2192]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2193]
 subType=enum:0
-text=string:Here it is, I think i did a good job.
+text=string:Hier ist es, ich denke, ich habe gute Arbeit geleistet.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_14_DE.WAV
 []
 []
@@ -8790,7 +8790,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2195]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2196]
 subType=enum:0
-text=string:Thank you.
+text=string:Danke schön.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_15_DE.WAV
 []
 []
@@ -8802,7 +8802,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2198]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2199]
 subType=enum:0
-text=string:Come back when you've got it all with you.
+text=string:Komm wieder, wenn du alles dabei hast.
 name=string:PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_16_DE.WAV
 []
 []
@@ -8814,7 +8814,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2201]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2202]
 subType=enum:0
-text=string:I want to get my medium armor improved.
+text=string:Ich will meine mittlere Rüstung verbessern.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_01_DE.WAV
 []
 []
@@ -8826,7 +8826,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2204]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2205]
 subType=enum:0
-text=string:What do you need for that?
+text=string:Was brauchen Sie dafür?
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_03_DE.WAV
 []
 []
@@ -8838,7 +8838,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2207]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2208]
 subType=enum:0
-text=string:You'll need more than last time for the medium armor.
+text=string:Für die mittlere Rüstung benötigen Sie mehr als beim letzten Mal.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_04_DE.WAV
 []
 []
@@ -8850,7 +8850,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2210]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2211]
 subType=enum:0
-text=string:Three raw steel billets, and one Warg skin.
+text=string:Drei Rohstahlbarren und eine Warg-Haut.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_05_DE.WAV
 []
 []
@@ -8862,7 +8862,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2213]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2214]
 subType=enum:0
-text=string:I'll want, say, 650 gold to make it.
+text=string:Ich brauche, sagen wir, 650 Gold, um es zu schaffen.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_06_DE.WAV
 []
 []
@@ -8874,7 +8874,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2216]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2217]
 subType=enum:0
-text=string:All right.
+text=string:Ok.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_08_DE.WAV
 []
 []
@@ -8886,7 +8886,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2219]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2220]
 subType=enum:0
-text=string:I have all the materials needed to improve my medium armor.
+text=string:Ich habe alle Materialien um meine mittlere Rüstung zu verbessern.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_01_DE.WAV
 []
 []
@@ -8898,7 +8898,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2222]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2223]
 subType=enum:0
-text=string:Here you go.
+text=string:Bitte schön.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_10_DE.WAV
 []
 []
@@ -8910,7 +8910,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2225]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2226]
 subType=enum:0
-text=string:Okay, let's take a look at it then.
+text=string:Okay, dann schauen wir es uns mal an.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_11_DE.WAV
 []
 []
@@ -8922,7 +8922,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2228]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2229]
 subType=enum:0
-text=string:Done.
+text=string:Erledigt.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_12_DE.WAV
 []
 []
@@ -8934,7 +8934,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2231]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2232]
 subType=enum:0
-text=string:Here it is, I think i did a good job.
+text=string:Hier ist es, ich denke, ich habe gute Arbeit geleistet.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_13_DE.WAV
 []
 []
@@ -8946,7 +8946,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2234]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2235]
 subType=enum:0
-text=string:Thank you.
+text=string:Danke schön.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_14_DE.WAV
 []
 []
@@ -8958,7 +8958,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2237]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2238]
 subType=enum:0
-text=string:Come back when you've got it all with you.
+text=string:Komm wieder, wenn du alles dabei hast.
 name=string:PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_16_DE.WAV
 []
 []
