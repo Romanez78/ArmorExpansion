@@ -123,37 +123,37 @@ func void Patch_AE_LocalizeGerman() {
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_04_DE"); //Was brauchen Sie dafür?
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_06_DE"); //Für eine leichte Rüstung genügen zwei Stahlstangen und zwei Wolfsfelle.
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_07_DE"); //Ich verlange dafür 200 Goldstücke von Ihnen.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_09_DE"); //All right.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_09_DE"); //Ok.
     Patch_AE_DIA_BENNET_SLD_LReforgedHUH_entry = "Um meine leichte Rüstung zu verbessern braucht Bennet zwei Stück Rohstahl, zwei Wolfsfelle und 200 Gold.";
 
     Patch_AE_DIA_BENNET_SLD_LReforgedArmor_desc = "Ich habe alle Materialien um meine leichte Rüstung zu verbessern.";
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_01_DE"); //Ich habe alle Materialien um meine leichte Rüstung zu verbessern.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_11_DE"); //Here you go.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_12_DE"); //Okay, let's take a look at it then.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_13_DE"); //Done.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_14_DE"); //Here it is, I think i did a good job.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_15_DE"); //Thank you.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_11_DE"); //Bitte schön.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_12_DE"); //Okay, dann schauen wir es uns mal an.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_13_DE"); //Erledigt.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_14_DE"); //Hier ist es, ich denke, ich habe gute Arbeit geleistet.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_15_DE"); //Danke schön.
     Patch_AE_DIA_BENNET_SLD_LReforgedArmor_entry = "Bennet hat meine leichte Rüstung verbessert.";
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_16_DE"); //Come back when you've got it all with you.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_16_DE"); //Komm wieder, wenn du alles dabei hast.
 
     Patch_AE_DIA_BENNET_MERC_MReforgedHUH_desc = "Ich will meine mittlere Rüstung verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_01_DE"); //I want to get my medium armor improved.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_03_DE"); //What do you need for that?
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_04_DE"); //You'll need more than last time for the medium armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_05_DE"); //Three raw steel billets, and one Warg skin.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_06_DE"); //I'll want, say, 650 gold to make it.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_08_DE"); //All right.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_01_DE"); //Ich will meine mittlere Rüstung verbessern.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_03_DE"); //Was brauchen Sie dafür?
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_04_DE"); //Für die mittlere Rüstung benötigen Sie mehr als beim letzten Mal.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_05_DE"); //Drei Rohstahlbarren und eine Warg-Haut.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_06_DE"); //Ich brauche, sagen wir, 650 Gold, um es zu schaffen.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_08_DE"); //Ok.
     Patch_AE_DIA_BENNET_MERC_MReforgedHUH_entry = "Um meine mittlere Rüstung zu verbessern braucht Bennet drei Stück Rohstahl, ein Wargfell und 650 Gold.";
 
     Patch_AE_DIA_BENNET_MERC_MReforgedArmor_desc = "Ich habe alle Materialien um meine mittlere Rüstung zu verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_01_DE"); //I have all the materials needed to improve my medium armor.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_10_DE"); //Here you go.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_11_DE"); //Okay, let's take a look at it then.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_12_DE"); //Done.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_13_DE"); //Here it is, I think i did a good job.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_14_DE"); //Thank you.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_01_DE"); //Ich habe alle Materialien um meine mittlere Rüstung zu verbessern.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_10_DE"); //Bitte schön.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_11_DE"); //Okay, dann schauen wir es uns mal an.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_12_DE"); //Erledigt.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_13_DE"); //Hier ist es, ich denke, ich habe gute Arbeit geleistet.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_14_DE"); //Danke schön.
     Patch_AE_DIA_BENNET_MERC_MReforgedArmor_entry = "Bennet hat meine mittlere Rüstung verbessert.";
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_16_DE"); //Come back when you've got it all with you.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_16_DE"); //Komm wieder, wenn du alles dabei hast.
 
     Patch_AE_DIA_BENNET_PAL_REFORGE_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
     // AI_Output(other, self, "PATCH_AE_DIA_BENNET_PAL_REFORGE_4_1_DE"); //Could you fix this rusty paladin armor for me?
