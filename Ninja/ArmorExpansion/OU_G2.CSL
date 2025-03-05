@@ -3,14 +3,14 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 05.03.2025 22:01:03
+date 05.03.2025 22:40:16
 user https://github.com/szapp/output-unit-action
 END
-objects 2773
+objects 2845
 END
 
 [% zCCSLib 0 0]
-	NumOfItems=int:924
+	NumOfItems=int:948
 [% zCCSBlock 0 1]
 blockName=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01_CS
 numOfBlocks=int:1
@@ -9414,7 +9414,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2351]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2352]
 subType=enum:0
-text=string:How about some better armor?
+text=string:Wie wäre es mit etwas besserer Rüstung?
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_DE.WAV
 []
 []
@@ -9426,7 +9426,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2354]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2355]
 subType=enum:0
-text=string:What the hell do you think?
+text=string:Was zum Teufel denken Sie sich dabei?
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01_DE.WAV
 []
 []
@@ -9438,7 +9438,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2357]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2358]
 subType=enum:0
-text=string:You knock off Raven and suddenly you're the new captain?
+text=string:Du tötest Raven und bist plötzlich der neue Kapitän?
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02_DE.WAV
 []
 []
@@ -9450,7 +9450,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2360]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2361]
 subType=enum:0
-text=string:That's not what I meant. You're still the captain. I'm just asking about armor.
+text=string:Das habe ich nicht gemeint. Du bist immer noch der Captain. Ich frage nur nach einer besseren Rüstung.
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03_DE.WAV
 []
 []
@@ -9462,7 +9462,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2363]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2364]
 subType=enum:0
-text=string:All right, I can sell you one of my personal pieces.
+text=string:Na gut, ich kann Ihnen eines meiner persönlichen Stücke verkaufen.
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04_DE.WAV
 []
 []
@@ -9474,7 +9474,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2366]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2367]
 subType=enum:0
-text=string:But it'll cost you. I want 2700 gold for it.
+text=string:Aber es wird dich etwas kosten. Ich will 2700 Gold dafür.
 name=string:PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05_DE.WAV
 []
 []
@@ -9486,7 +9486,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2369]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2370]
 subType=enum:0
-text=string:Sell me the captain's armor.
+text=string:Verkaufen Sie mir die Kapitäns-Rüstung.
 name=string:PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1_DE.WAV
 []
 []
@@ -9498,7 +9498,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2372]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2373]
 subType=enum:0
-text=string:Here you go, but remember, I'm still the captain.
+text=string:Bitte sehr, aber denken Sie daran, dass ich immer noch der Kapitän bin.
 name=string:PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2_DE.WAV
 []
 []
@@ -9510,7 +9510,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2375]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2376]
 subType=enum:0
-text=string:Come back when you have enough gold.
+text=string:Kommen Sie wieder, wenn Sie genug Gold haben.
 name=string:PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3_DE.WAV
 []
 []
@@ -9522,7 +9522,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2378]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2379]
 subType=enum:0
-text=string:Would there be any lighter armor for me?
+text=string:Hast du keine leichtere Rüstung für mich?
 name=string:PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_DE.WAV
 []
 []
@@ -9534,7 +9534,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2381]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2382]
 subType=enum:0
-text=string:I prefer to use ranged weapons.
+text=string:Ich ziehe es vor, Fernkampfwaffen zu benutzen.
 name=string:PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_DE.WAV
 []
 []
@@ -9546,7 +9546,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2384]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2385]
 subType=enum:0
-text=string:I can swap your knight's armor for a lighter version designed for our crossbowmen.
+text=string:Ich kann die Rüstung eures Ritters durch eine leichtere Version für unsere Armbrustschützen ersetzen.
 name=string:PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_DE.WAV
 []
 []
@@ -9558,7 +9558,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2387]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2388]
 subType=enum:0
-text=string:I'll take it.
+text=string:Ich nehme es an.
 name=string:PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_DE.WAV
 []
 []
@@ -9570,1532 +9570,1820 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2390]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2391]
 subType=enum:0
-text=string:Wear it with honor, knight.
+text=string:Tragt es mit Ehre, Ritter.
 name=string:PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_DE.WAV
 []
 []
 []
 [% zCCSBlock 0 2392]
-blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_DE
+blockName=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
 [% zCCSAtomicBlock 0 2393]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2394]
+subType=enum:0
+text=string:Ich brauche eine bessere Rüstung.
+name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2395]
+blockName=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2396]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2397]
+subType=enum:0
+text=string:Hm, es stimmt, du hast dich um die Drachen im Tal der Minental.
+name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2398]
+blockName=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2399]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2400]
+subType=enum:0
+text=string:Du hast die schwere Armbrustschützen-Rüstung verdient, hier ist sie.
+name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2401]
+blockName=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2402]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2403]
+subType=enum:0
+text=string:Danke.
+name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2404]
+blockName=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2405]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2406]
+subType=enum:0
+text=string:Seien Sie stolz darauf, nicht viele haben die Möglichkeit, ihn zu tragen.
+name=string:PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2407]
+blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2408]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2409]
 subType=enum:0
 text=string:Could you fix this rusty paladin armor for me?
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2395]
+[% zCCSBlock 0 2410]
 blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2396]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2397]
+[% zCCSAtomicBlock 0 2411]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2412]
 subType=enum:0
 text=string:Let me see.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2398]
+[% zCCSBlock 0 2413]
 blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2399]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2400]
+[% zCCSAtomicBlock 0 2414]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2415]
 subType=enum:0
 text=string:It's been a long time since I've seen armor like this.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2401]
+[% zCCSBlock 0 2416]
 blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2402]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2403]
+[% zCCSAtomicBlock 0 2417]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2418]
 subType=enum:0
 text=string:They are forged from a different alloy of steel and magical ore than the others, and then blessed by the mages from the Monastery in Nordmar.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2404]
+[% zCCSBlock 0 2419]
 blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2405]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2406]
+[% zCCSAtomicBlock 0 2420]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2421]
 subType=enum:0
 text=string:The rust hasn't penetrated very deeply, it won't be too hard to repair.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2407]
+[% zCCSBlock 0 2422]
 blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2408]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2409]
+[% zCCSAtomicBlock 0 2423]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2424]
 subType=enum:0
 text=string:If I have the materials, of course.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2410]
+[% zCCSBlock 0 2425]
 blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2411]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2412]
+[% zCCSAtomicBlock 0 2426]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2427]
 subType=enum:0
 text=string:Where did you get it?
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2413]
+[% zCCSBlock 0 2428]
 blockName=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2414]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2415]
+[% zCCSAtomicBlock 0 2429]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2430]
 subType=enum:0
 text=string:Martin sold it to me, it was lying around amongst the paladin equipment so I wanted to use it.
 name=string:PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2416]
+[% zCCSBlock 0 2431]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2417]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2418]
+[% zCCSAtomicBlock 0 2432]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2433]
 subType=enum:0
 text=string:So, what are you gonna need to repair the armor?
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2419]
+[% zCCSBlock 0 2434]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2420]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2421]
+[% zCCSAtomicBlock 0 2435]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2436]
 subType=enum:0
 text=string:Hmm, let me think.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2422]
+[% zCCSBlock 0 2437]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2423]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2424]
+[% zCCSAtomicBlock 0 2438]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2439]
 subType=enum:0
 text=string:A few raw steel billets, six should be enough.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2425]
+[% zCCSBlock 0 2440]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2426]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2427]
+[% zCCSAtomicBlock 0 2441]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2442]
 subType=enum:0
 text=string:3 lumps of magical ore.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2428]
+[% zCCSBlock 0 2443]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2429]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2430]
+[% zCCSAtomicBlock 0 2444]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2445]
 subType=enum:0
 text=string:What do you want for your work?
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2431]
+[% zCCSBlock 0 2446]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2432]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2433]
+[% zCCSAtomicBlock 0 2447]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2448]
 subType=enum:0
 text=string:Nothing. It would be an honor to work on armor like this.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2434]
+[% zCCSBlock 0 2449]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2435]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2436]
+[% zCCSAtomicBlock 0 2450]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2451]
 subType=enum:0
 text=string:All right, I'll try to get it all.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2437]
+[% zCCSBlock 0 2452]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2438]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2439]
+[% zCCSAtomicBlock 0 2453]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2454]
 subType=enum:0
 text=string:Here's the armor.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2440]
+[% zCCSBlock 0 2455]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2441]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2442]
+[% zCCSAtomicBlock 0 2456]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2457]
 subType=enum:0
 text=string:And here are the materials.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2443]
+[% zCCSBlock 0 2458]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2444]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2445]
+[% zCCSAtomicBlock 0 2459]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2460]
 subType=enum:0
 text=string:All right, I'll get to work.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2446]
+[% zCCSBlock 0 2461]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2447]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2448]
+[% zCCSAtomicBlock 0 2462]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2463]
 subType=enum:0
 text=string:Done.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2449]
+[% zCCSBlock 0 2464]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2450]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2451]
+[% zCCSAtomicBlock 0 2465]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2466]
 subType=enum:0
 text=string:Here it is, I managed to fix it.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2452]
+[% zCCSBlock 0 2467]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2453]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2454]
+[% zCCSAtomicBlock 0 2468]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2469]
 subType=enum:0
 text=string:But I couldn't restore its magical powers.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2455]
+[% zCCSBlock 0 2470]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2456]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2457]
+[% zCCSAtomicBlock 0 2471]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2472]
 subType=enum:0
 text=string:For that, you'll need an experienced fire mage willing to consecrate the armor for you.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2458]
+[% zCCSBlock 0 2473]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2459]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2460]
+[% zCCSAtomicBlock 0 2474]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2475]
 subType=enum:0
 text=string:Thank you.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2461]
+[% zCCSBlock 0 2476]
 blockName=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2462]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2463]
+[% zCCSAtomicBlock 0 2477]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2478]
 subType=enum:0
 text=string:Come back when you've got it all.
 name=string:PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2464]
+[% zCCSBlock 0 2479]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_1_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2465]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2466]
+[% zCCSAtomicBlock 0 2480]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2481]
 subType=enum:0
 text=string:Could you reforge my paladin armor for me?
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_1_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2467]
+[% zCCSBlock 0 2482]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_2_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2468]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2469]
+[% zCCSAtomicBlock 0 2483]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2484]
 subType=enum:0
 text=string:Sure, but I can't think of a reason you wouldn't like it.
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_2_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2470]
+[% zCCSBlock 0 2485]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_3_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2471]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2472]
+[% zCCSAtomicBlock 0 2486]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2487]
 subType=enum:0
 text=string:I use ranged weapons, so I'd like it if it was a bit lighter.
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_3_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2473]
+[% zCCSBlock 0 2488]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_4_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2474]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2475]
+[% zCCSAtomicBlock 0 2489]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2490]
 subType=enum:0
 text=string:That shouldn't be too hard. I'm sure I could do it.
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_4_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2476]
+[% zCCSBlock 0 2491]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_5_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2477]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2478]
+[% zCCSAtomicBlock 0 2492]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2493]
 subType=enum:0
 text=string:What do you want for it?
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_5_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2479]
+[% zCCSBlock 0 2494]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_6_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2480]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2481]
+[% zCCSAtomicBlock 0 2495]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2496]
 subType=enum:0
 text=string:Nothing. It would be an honor to do this service for a paladin.
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_6_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2482]
+[% zCCSBlock 0 2497]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_7_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2483]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2484]
+[% zCCSAtomicBlock 0 2498]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2499]
 subType=enum:0
 text=string:In that case, here it is.
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_7_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2485]
+[% zCCSBlock 0 2500]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_8_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2486]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2487]
+[% zCCSAtomicBlock 0 2501]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2502]
 subType=enum:0
 text=string:Done. It wasn't hard. Here you go.
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_8_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2488]
+[% zCCSBlock 0 2503]
 blockName=string:PATCH_AE_DIA_HARAD_end_MAKE_9_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2489]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2490]
+[% zCCSAtomicBlock 0 2504]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2505]
 subType=enum:0
 text=string:Thank you.
 name=string:PATCH_AE_DIA_HARAD_end_MAKE_9_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2491]
+[% zCCSBlock 0 2506]
 blockName=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2492]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2493]
+[% zCCSAtomicBlock 0 2507]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2508]
 subType=enum:0
 text=string:Could you fix this rusty paladin armor for me?
 name=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2494]
+[% zCCSBlock 0 2509]
 blockName=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2495]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2496]
+[% zCCSAtomicBlock 0 2510]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2511]
 subType=enum:0
 text=string:I have absolutely no experience with paladin armor. There was nothing like it in the colony.
 name=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2497]
+[% zCCSBlock 0 2512]
 blockName=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2498]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2499]
+[% zCCSAtomicBlock 0 2513]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2514]
 subType=enum:0
 text=string:I'm sorry, but I can't help you with this.
 name=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2500]
+[% zCCSBlock 0 2515]
 blockName=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2501]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2502]
+[% zCCSAtomicBlock 0 2516]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2517]
 subType=enum:0
 text=string:You'll have to find another blacksmith.
 name=string:PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2503]
+[% zCCSBlock 0 2518]
 blockName=string:PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2504]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2505]
+[% zCCSAtomicBlock 0 2519]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2520]
 subType=enum:0
 text=string:Could you fix this rusty paladin armor for me?
 name=string:PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2506]
+[% zCCSBlock 0 2521]
 blockName=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2507]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2508]
+[% zCCSAtomicBlock 0 2522]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2523]
 subType=enum:0
 text=string:I'm on thin ice just to be allowed to work here.
 name=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2509]
+[% zCCSBlock 0 2524]
 blockName=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2510]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2511]
+[% zCCSAtomicBlock 0 2525]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2526]
 subType=enum:0
 text=string:I'm not gonna risk one of your colleagues reporting me for digging through paladin supplies.
 name=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2512]
+[% zCCSBlock 0 2527]
 blockName=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2513]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2514]
+[% zCCSAtomicBlock 0 2528]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2529]
 subType=enum:0
 text=string:You'll have to find another blacksmith.
 name=string:PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2515]
+[% zCCSBlock 0 2530]
 blockName=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2516]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2517]
+[% zCCSAtomicBlock 0 2531]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2532]
 subType=enum:0
 text=string:Is there any lighter armor for me?
 name=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2518]
+[% zCCSBlock 0 2533]
 blockName=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2519]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2520]
+[% zCCSAtomicBlock 0 2534]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2535]
 subType=enum:0
 text=string:I prefer to keep my distance.
 name=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2521]
+[% zCCSBlock 0 2536]
 blockName=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2522]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2523]
+[% zCCSAtomicBlock 0 2537]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2538]
 subType=enum:0
 text=string:I don't have anything like that for you, but you're not the first one to ask for something like this.
 name=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2524]
+[% zCCSBlock 0 2539]
 blockName=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2525]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2526]
+[% zCCSAtomicBlock 0 2540]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2541]
 subType=enum:0
 text=string:Go to Wolf. I think he should have something for you.
 name=string:PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2527]
+[% zCCSBlock 0 2542]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2528]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2529]
+[% zCCSAtomicBlock 0 2543]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2544]
 subType=enum:0
 text=string:I heard you became a paladin.
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2530]
+[% zCCSBlock 0 2545]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2531]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2532]
+[% zCCSAtomicBlock 0 2546]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2547]
 subType=enum:0
 text=string:I might have something special for you
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2533]
+[% zCCSBlock 0 2548]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2534]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2535]
+[% zCCSAtomicBlock 0 2549]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2550]
 subType=enum:0
 text=string:What are you talking about?
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2536]
+[% zCCSBlock 0 2551]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2537]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2538]
+[% zCCSAtomicBlock 0 2552]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2553]
 subType=enum:0
 text=string:I have some exceptional paladin armor in stock here.
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2539]
+[% zCCSBlock 0 2554]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2540]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2541]
+[% zCCSAtomicBlock 0 2555]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2556]
 subType=enum:0
 text=string:I hear this type of armor has high protection against magical attacks, while increasing the wearer's own magical abilites.
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2542]
+[% zCCSBlock 0 2557]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2543]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2544]
+[% zCCSAtomicBlock 0 2558]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2559]
 subType=enum:0
 text=string:But it's been lying around for a while, and the coastal weather hasn't done it any good.
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2545]
+[% zCCSBlock 0 2560]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2546]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2547]
+[% zCCSAtomicBlock 0 2561]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2562]
 subType=enum:0
 text=string:It's nothing that can't be repaired. You'll figure something out.
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2548]
+[% zCCSBlock 0 2563]
 blockName=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2549]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2550]
+[% zCCSAtomicBlock 0 2564]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2565]
 subType=enum:0
 text=string:For 2000 gold, it's yours.
 name=string:PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2551]
+[% zCCSBlock 0 2566]
 blockName=string:PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2552]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2553]
+[% zCCSAtomicBlock 0 2567]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2568]
 subType=enum:0
 text=string:Okay, I'll take the armor.
 name=string:PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2554]
+[% zCCSBlock 0 2569]
 blockName=string:PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2555]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2556]
+[% zCCSAtomicBlock 0 2570]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2571]
 subType=enum:0
 text=string:Allright, here you go.
 name=string:PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2557]
+[% zCCSBlock 0 2572]
 blockName=string:PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2558]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2559]
+[% zCCSAtomicBlock 0 2573]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2574]
 subType=enum:0
 text=string:Come back when you have enough gold on you
 name=string:PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2560]
+[% zCCSBlock 0 2575]
 blockName=string:PATCH_AE_DIA_MATTEO_GAMBESON_15_00_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2561]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2562]
+[% zCCSAtomicBlock 0 2576]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2577]
 subType=enum:0
 text=string:Okay, give me the armor.
 name=string:PATCH_AE_DIA_MATTEO_GAMBESON_15_00_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2563]
+[% zCCSBlock 0 2578]
 blockName=string:PATCH_AE_DIA_MATTEO_GAMBESON_09_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2564]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2565]
+[% zCCSAtomicBlock 0 2579]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2580]
 subType=enum:0
 text=string:You'll like it.
 name=string:PATCH_AE_DIA_MATTEO_GAMBESON_09_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2566]
+[% zCCSBlock 0 2581]
 blockName=string:PATCH_AE_DIA_MATTEO_GAMBESON_09_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2567]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2568]
+[% zCCSAtomicBlock 0 2582]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2583]
 subType=enum:0
 text=string:The armor's worth its weight in gold, so come back when you have enough.
 name=string:PATCH_AE_DIA_MATTEO_GAMBESON_09_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2569]
+[% zCCSBlock 0 2584]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2570]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2571]
+[% zCCSAtomicBlock 0 2585]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2586]
 subType=enum:0
 text=string:I need your help.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2572]
+[% zCCSBlock 0 2587]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2573]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2574]
+[% zCCSAtomicBlock 0 2588]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2589]
 subType=enum:0
 text=string:What's going on?
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2575]
+[% zCCSBlock 0 2590]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2576]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2577]
+[% zCCSAtomicBlock 0 2591]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2592]
 subType=enum:0
 text=string:I need to restore the magical powers of this armor, could you do that for me?
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2578]
+[% zCCSBlock 0 2593]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2579]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2580]
+[% zCCSAtomicBlock 0 2594]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2595]
 subType=enum:0
 text=string:Let me see it.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2581]
+[% zCCSBlock 0 2596]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2582]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2583]
+[% zCCSAtomicBlock 0 2597]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2598]
 subType=enum:0
 text=string:Wow, I didn't see this coming.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2584]
+[% zCCSBlock 0 2599]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2585]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2586]
+[% zCCSAtomicBlock 0 2600]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2601]
 subType=enum:0
 text=string:This kind of armor is taken by the paladins from Myrtana to be blessed in the monastery in Nordmar.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2587]
+[% zCCSBlock 0 2602]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2588]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2589]
+[% zCCSAtomicBlock 0 2603]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2604]
 subType=enum:0
 text=string:I've heard a little about the blessing ritual, but I don't have enough knowledge to perform it yet.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2590]
+[% zCCSBlock 0 2605]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2591]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2592]
+[% zCCSAtomicBlock 0 2606]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2607]
 subType=enum:0
 text=string:If I'm not mistaken, there is a book in the monastery's library that describes the process.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2593]
+[% zCCSBlock 0 2608]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2594]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2595]
+[% zCCSAtomicBlock 0 2609]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2610]
 subType=enum:0
 text=string:I'll need some time to study the book. In the meantime, you should take care of the dragons in the valley of mines, you know how Garond's unit won't survive for long.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2596]
+[% zCCSBlock 0 2611]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2597]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2598]
+[% zCCSAtomicBlock 0 2612]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2613]
 subType=enum:0
 text=string:Yeah, I'll see you later Milten.
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2599]
+[% zCCSBlock 0 2614]
 blockName=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2600]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2601]
+[% zCCSAtomicBlock 0 2615]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2616]
 subType=enum:0
 text=string:Good luck!
 name=string:PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2602]
+[% zCCSBlock 0 2617]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2603]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2604]
+[% zCCSAtomicBlock 0 2618]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2619]
 subType=enum:0
 text=string:Have you made progress in your studies?
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2605]
+[% zCCSBlock 0 2620]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2606]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2607]
+[% zCCSAtomicBlock 0 2621]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2622]
 subType=enum:0
 text=string:Yes, I can say that I understand the ritual process.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2608]
+[% zCCSBlock 0 2623]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2609]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2610]
+[% zCCSAtomicBlock 0 2624]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2625]
 subType=enum:0
 text=string:But I'm going to need a few things.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2611]
+[% zCCSBlock 0 2626]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2612]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2613]
+[% zCCSAtomicBlock 0 2627]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2628]
 subType=enum:0
 text=string:What are they?
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2614]
+[% zCCSBlock 0 2629]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2615]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2616]
+[% zCCSAtomicBlock 0 2630]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2631]
 subType=enum:0
 text=string:A scroll of destroy evil, fireball and two rock crystals.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2617]
+[% zCCSBlock 0 2632]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2618]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2619]
+[% zCCSAtomicBlock 0 2633]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2634]
 subType=enum:0
 text=string:This is the only way I'll be able to achieve results similar to that of a ritual in the Nordmar monastery.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2620]
+[% zCCSBlock 0 2635]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2621]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2622]
+[% zCCSAtomicBlock 0 2636]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2637]
 subType=enum:0
 text=string:Okay, I'll go get those things.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2623]
+[% zCCSBlock 0 2638]
 blockName=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2624]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2625]
+[% zCCSAtomicBlock 0 2639]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2640]
 subType=enum:0
 text=string:Good luck, I hope you succeed.
 name=string:PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2626]
+[% zCCSBlock 0 2641]
 blockName=string:PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2627]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2628]
+[% zCCSAtomicBlock 0 2642]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2643]
 subType=enum:0
 text=string:I have everything you need.
 name=string:PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2629]
+[% zCCSBlock 0 2644]
 blockName=string:PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2630]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2631]
+[% zCCSAtomicBlock 0 2645]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2646]
 subType=enum:0
 text=string:Oh, great. I can start the ritual.
 name=string:PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2632]
+[% zCCSBlock 0 2647]
 blockName=string:PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2633]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2634]
+[% zCCSAtomicBlock 0 2648]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2649]
 subType=enum:0
 text=string:Great, and when will the ritual be complete?
 name=string:PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2635]
+[% zCCSBlock 0 2650]
 blockName=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2636]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2637]
+[% zCCSAtomicBlock 0 2651]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2652]
 subType=enum:0
 text=string:It's gonna take a while. Come back tomorrow.
 name=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2638]
+[% zCCSBlock 0 2653]
 blockName=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2639]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2640]
+[% zCCSAtomicBlock 0 2654]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2655]
 subType=enum:0
 text=string:I've already done it, it was a success.
 name=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2641]
+[% zCCSBlock 0 2656]
 blockName=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2642]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2643]
+[% zCCSAtomicBlock 0 2657]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2658]
 subType=enum:0
 text=string:Everything went surprisingly smoothly.
 name=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2644]
+[% zCCSBlock 0 2659]
 blockName=string:PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2645]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2646]
+[% zCCSAtomicBlock 0 2660]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2661]
 subType=enum:0
 text=string:I'm glad. Thank you.
 name=string:PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2647]
+[% zCCSBlock 0 2662]
 blockName=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2648]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2649]
+[% zCCSAtomicBlock 0 2663]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2664]
 subType=enum:0
 text=string:You're welcome. May the armor serve you well.
 name=string:PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2650]
+[% zCCSBlock 0 2665]
 blockName=string:PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2651]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2652]
+[% zCCSAtomicBlock 0 2666]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2667]
 subType=enum:0
 text=string:NN
 name=string:PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2653]
+[% zCCSBlock 0 2668]
 blockName=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2654]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2655]
+[% zCCSAtomicBlock 0 2669]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2670]
 subType=enum:0
 text=string:Don't you have any better armor for me?
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2656]
+[% zCCSBlock 0 2671]
 blockName=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2657]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2658]
+[% zCCSAtomicBlock 0 2672]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2673]
 subType=enum:0
 text=string:Only Lord Andre can give you better armor.
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2659]
+[% zCCSBlock 0 2674]
 blockName=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2660]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2661]
+[% zCCSAtomicBlock 0 2675]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2676]
 subType=enum:0
 text=string:But that doesn't mean I can't improve the one you already have. You wouldn't be the first person I've done ir for.
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2662]
+[% zCCSBlock 0 2677]
 blockName=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2663]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2664]
+[% zCCSAtomicBlock 0 2678]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2679]
 subType=enum:0
 text=string:What will it cost?
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2665]
+[% zCCSBlock 0 2680]
 blockName=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2666]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2667]
+[% zCCSAtomicBlock 0 2681]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2682]
 subType=enum:0
 text=string:You'll have to bring your own materials, I don't have any left to spare.
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2668]
+[% zCCSBlock 0 2683]
 blockName=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2669]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2670]
+[% zCCSAtomicBlock 0 2684]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2685]
 subType=enum:0
 text=string:And some gold for my work.
 name=string:PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2671]
+[% zCCSBlock 0 2686]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2672]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2673]
+[% zCCSAtomicBlock 0 2687]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2688]
 subType=enum:0
 text=string:I'd like to improve my light armor.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2674]
+[% zCCSBlock 0 2689]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2675]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2676]
+[% zCCSAtomicBlock 0 2690]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2691]
 subType=enum:0
 text=string:What do you need for that?
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2677]
+[% zCCSBlock 0 2692]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2678]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2679]
+[% zCCSAtomicBlock 0 2693]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2694]
 subType=enum:0
 text=string:For light armor, one raw steel and boarskin will suffice.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2680]
+[% zCCSBlock 0 2695]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2681]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2682]
+[% zCCSAtomicBlock 0 2696]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2697]
 subType=enum:0
 text=string:And let's say 200 gold will be enough for me.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2683]
+[% zCCSBlock 0 2698]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2684]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2685]
+[% zCCSAtomicBlock 0 2699]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2700]
 subType=enum:0
 text=string:And of course, you'll have to bring me the armor.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2686]
+[% zCCSBlock 0 2701]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2687]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2688]
+[% zCCSAtomicBlock 0 2702]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2703]
 subType=enum:0
 text=string:All right, I'll try to get it.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2689]
+[% zCCSBlock 0 2704]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2690]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2691]
+[% zCCSAtomicBlock 0 2705]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2706]
 subType=enum:0
 text=string:I have all the materials I need to improve my light armor.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2692]
+[% zCCSBlock 0 2707]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2693]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2694]
+[% zCCSAtomicBlock 0 2708]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2709]
 subType=enum:0
 text=string:All right, I'll get to work.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2695]
+[% zCCSBlock 0 2710]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2696]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2697]
+[% zCCSAtomicBlock 0 2711]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2712]
 subType=enum:0
 text=string:Done.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2698]
+[% zCCSBlock 0 2713]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2699]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2700]
+[% zCCSAtomicBlock 0 2714]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2715]
 subType=enum:0
 text=string:Here you go, I think I've done a pretty good job.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2701]
+[% zCCSBlock 0 2716]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2702]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2703]
+[% zCCSAtomicBlock 0 2717]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2718]
 subType=enum:0
 text=string:Thank you.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2704]
+[% zCCSBlock 0 2719]
 blockName=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2705]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2706]
+[% zCCSAtomicBlock 0 2720]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2721]
 subType=enum:0
 text=string:Come back when you've got it all with you.
 name=string:PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2707]
+[% zCCSBlock 0 2722]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2708]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2709]
+[% zCCSAtomicBlock 0 2723]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2724]
 subType=enum:0
 text=string:I'd like to improve my medium armor.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2710]
+[% zCCSBlock 0 2725]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2711]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2712]
+[% zCCSAtomicBlock 0 2726]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2727]
 subType=enum:0
 text=string:What do you need for that?
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2713]
+[% zCCSBlock 0 2728]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2714]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2715]
+[% zCCSAtomicBlock 0 2729]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2730]
 subType=enum:0
 text=string:You'll need to bring a little more than last time for the medium armor.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2716]
+[% zCCSBlock 0 2731]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2717]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2718]
+[% zCCSAtomicBlock 0 2732]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2733]
 subType=enum:0
 text=string:two raw steel billets and a Warg skin.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2719]
+[% zCCSBlock 0 2734]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2720]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2721]
+[% zCCSAtomicBlock 0 2735]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2736]
 subType=enum:0
 text=string:I'll charge you 600 gold for the job.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2722]
+[% zCCSBlock 0 2737]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2723]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2724]
+[% zCCSAtomicBlock 0 2738]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2739]
 subType=enum:0
 text=string:All right, I'll try to get it.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2725]
+[% zCCSBlock 0 2740]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2726]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2727]
+[% zCCSAtomicBlock 0 2741]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2742]
 subType=enum:0
 text=string:I've got all the materials I need to improve my medium armor.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2728]
+[% zCCSBlock 0 2743]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2729]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2730]
+[% zCCSAtomicBlock 0 2744]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2745]
 subType=enum:0
 text=string:Here you go.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2731]
+[% zCCSBlock 0 2746]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2732]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2733]
+[% zCCSAtomicBlock 0 2747]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2748]
 subType=enum:0
 text=string:Okay, I'll get to work.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2734]
+[% zCCSBlock 0 2749]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2735]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2736]
+[% zCCSAtomicBlock 0 2750]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2751]
 subType=enum:0
 text=string:Done.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2737]
+[% zCCSBlock 0 2752]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2738]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2739]
+[% zCCSAtomicBlock 0 2753]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2754]
 subType=enum:0
 text=string:Here you go, I think I've done a pretty good job.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2740]
+[% zCCSBlock 0 2755]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2741]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2742]
+[% zCCSAtomicBlock 0 2756]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2757]
 subType=enum:0
 text=string:Thank you.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2743]
+[% zCCSBlock 0 2758]
 blockName=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2744]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2745]
+[% zCCSAtomicBlock 0 2759]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2760]
 subType=enum:0
 text=string:Come back when you've got it all with you.
 name=string:PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2746]
+[% zCCSBlock 0 2761]
 blockName=string:PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2747]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2748]
+[% zCCSAtomicBlock 0 2762]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2763]
 subType=enum:0
 text=string:Could you fix this rusty paladin armor for me?
 name=string:PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2749]
+[% zCCSBlock 0 2764]
 blockName=string:PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2750]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2751]
+[% zCCSAtomicBlock 0 2765]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2766]
 subType=enum:0
 text=string:No, I don't have the time or the skill.
 name=string:PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2752]
+[% zCCSBlock 0 2767]
 blockName=string:PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2753]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2754]
+[% zCCSAtomicBlock 0 2768]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2769]
 subType=enum:0
 text=string:You'll have to find another blacksmith.
 name=string:PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2755]
+[% zCCSBlock 0 2770]
 blockName=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2756]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2757]
+[% zCCSAtomicBlock 0 2771]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2772]
 subType=enum:0
 text=string:Wait, we wanted to support you in your fight against evil with a new armor.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2758]
+[% zCCSBlock 0 2773]
 blockName=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2759]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2760]
+[% zCCSAtomicBlock 0 2774]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2775]
 subType=enum:0
 text=string:Take this armor of the Crusader of Innos, I'm sure you'll find use for it.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2761]
+[% zCCSBlock 0 2776]
 blockName=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2762]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2763]
+[% zCCSAtomicBlock 0 2777]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2778]
 subType=enum:0
 text=string:Thanks.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2764]
+[% zCCSBlock 0 2779]
+blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2780]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2781]
+subType=enum:0
+text=string:Ich habe gehört, du machst Rüstungen.
+name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2782]
+blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2783]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2784]
+subType=enum:0
+text=string:Dann hast du richtig gehört, ich mache leichtere Lederrüstungen für die Jagd. 
+name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2785]
+blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2786]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2787]
+subType=enum:0
+text=string:Zwar bieten sie keinen so guten Schutz, erleichtern jedoch das Schießen mit Bogen oder Armbrust..
+name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2788]
+blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2789]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2790]
+subType=enum:0
+text=string:Ich möchte meine Rüstung durch die leichtere ersetzen.
+name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2791]
 blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2765]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2766]
+[% zCCSAtomicBlock 0 2792]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2793]
 subType=enum:0
-text=string:Sure, I just finished one. You can have it for free, for old time's sake.
+text=string:Klar, ich habe gerade eins gemacht. Bitte sehr.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2767]
+[% zCCSBlock 0 2794]
 blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2768]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2769]
+[% zCCSAtomicBlock 0 2795]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2796]
 subType=enum:0
-text=string:Thanks man.
+text=string:Danke.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE.WAV
 []
 []
 []
-[% zCCSBlock 0 2770]
+[% zCCSBlock 0 2797]
 blockName=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE
 numOfBlocks=int:1
 subBlock0=float:0
-[% zCCSAtomicBlock 0 2771]
-[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2772]
+[% zCCSAtomicBlock 0 2798]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2799]
 subType=enum:0
-text=string:You're welcome.
+text=string:Sie sind herzlich willkommen.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2800]
+blockName=string:DIA_Wolf_ArmorM_AEXPANSION_15_00_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2801]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2802]
+subType=enum:0
+text=string:Wie wäre es mit einer besseren Rüstung?.
+name=string:DIA_Wolf_ArmorM_AEXPANSION_15_00_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2803]
+blockName=string:DIA_Wolf_ArmorM_AEXPANSION_04_01_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2804]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2805]
+subType=enum:0
+text=string:Sicher, ich kann es Ihnen jetzt verkaufen.
+name=string:DIA_Wolf_ArmorM_AEXPANSION_04_01_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2806]
+blockName=string:DIA_Wolf_ArmorM_AEXPANSION_04_02_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2807]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2808]
+subType=enum:0
+text=string:Ich habe hier eine mittelschwere Rüstung für dich, es ist ein gutes Stück.
+name=string:DIA_Wolf_ArmorM_AEXPANSION_04_02_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2809]
+blockName=string:DIA_Wolf_ArmorM_AEXPANSION_04_03_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2810]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2811]
+subType=enum:0
+text=string:Tut mir leid, aber Lee wollte nicht, dass ich es dir einfach so gebe. Ich denke, du solltest zuerst Torlof helfen.
+name=string:DIA_Wolf_ArmorM_AEXPANSION_04_03_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2812]
+blockName=string:DIA_Wolf_ArmorM_AEXPANSION_04_04_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2813]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2814]
+subType=enum:0
+text=string:Wenn du fertig bist, komm zu mir, ich werde etwas Besseres für dich haben..
+name=string:DIA_Wolf_ArmorM_AEXPANSION_04_04_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2815]
+blockName=string:DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2816]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2817]
+subType=enum:0
+text=string:Gib mir die Rüstung.
+name=string:DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2818]
+blockName=string:DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2819]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2820]
+subType=enum:0
+text=string:Hier, bitte sehr. Es ist ein anständiges Stück Rüstung.
+name=string:DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2821]
+blockName=string:DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2822]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2823]
+subType=enum:0
+text=string:Tut mir leid, aber ich kann sie dir nicht umsonst geben. Lee würde mir den Kopf abreißen, wenn er herausfände, dass ich die Rüstung umsonst verschenke.
+name=string:DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2824]
+blockName=string:DIA_Wolf_ArmorBow_AEXPANSION_15_00_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2825]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2826]
+subType=enum:0
+text=string:Hätten Sie nicht eine bessere Rüstung für mich?.
+name=string:DIA_Wolf_ArmorBow_AEXPANSION_15_00_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2827]
+blockName=string:DIA_Wolf_ArmorBow_AEXPANSION_04_01_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2828]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2829]
+subType=enum:0
+text=string:Ja, sicher.
+name=string:DIA_Wolf_ArmorBow_AEXPANSION_04_01_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2830]
+blockName=string:DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2831]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2832]
+subType=enum:0
+text=string:Gib mir die Rüstung.
+name=string:DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2833]
+blockName=string:DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2834]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2835]
+subType=enum:0
+text=string:Hier ist er. Ein gutes Stück, ich bin stolz darauf.
+name=string:DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2836]
+blockName=string:DIA_Wolf_BuyArmorBow_AEXPANSION_04_02_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2837]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2838]
+subType=enum:0
+text=string:Du weißt, wie das ist. Zuerst musst du mir genug Gold bringen.
+name=string:DIA_Wolf_BuyArmorBow_AEXPANSION_04_02_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2839]
+blockName=string:DIA_Wolf_AboutCrawler_AEXPANSION_15_00_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2840]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2841]
+subType=enum:0
+text=string:Eigentlich würde ich es vorziehen, die Rüstung leichter zu machen.
+name=string:DIA_Wolf_AboutCrawler_AEXPANSION_15_00_DE.WAV
+[]
+[]
+[]
+[% zCCSBlock 0 2842]
+blockName=string:DIA_Wolf_AboutCrawler_AEXPANSION_08_01_DE
+numOfBlocks=int:1
+subBlock0=float:0
+[% zCCSAtomicBlock 0 2843]
+[% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2844]
+subType=enum:0
+text=string:Klar, kein Problem. Bringen Sie mir einfach 7 von diesen Crawlerplatten.
+name=string:DIA_Wolf_AboutCrawler_AEXPANSION_08_01_DE.WAV
 []
 []
 []
