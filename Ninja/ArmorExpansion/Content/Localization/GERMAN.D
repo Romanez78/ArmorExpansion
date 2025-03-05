@@ -1,4 +1,4 @@
-//German Translation for version 1.2 done by iyumichan on Nexusmods.com, rest that was not finished was done by me with the help of Google
+//German Translation for version 1.2 done by iyumichan on Nexusmods.com, rest that was not finished was done by me with the help of machine translation
 
 func void Patch_AE_LocalizeGerman() {
     // NPC
@@ -16,6 +16,7 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_Use_Plan_StewarkArmor__line8 = "Dies ist ein Befehl des Commandanten Cenrin der Stadtwache.";
 
     // Armor names
+    ITAR_DJG_CrawlerP_ArmorExpansion__name = "Crawler Platte Jagd Rüstung";    
     ITAR_MIL_H_ArmorExpansion__name = "Schwere Milizrüstung";
     ITAR_MILP_H_ArmorExpansion__name = "Schwere Armbrustschützen Milizrüstung";   
     ITAR_GAMBESON_ArmorExpansion__name = "Jäger Stoffrüstung";
@@ -312,18 +313,18 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_desc = "Wie wäre es mit etwas besserer Rüstung?";
-    // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_DE"); //How about some better armor?
-    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01_DE"); //What the hell do you think?
-    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02_DE"); //You knock off Raven and suddenly you're the new captain?
-    // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03_DE"); //That's not what I meant. You're still the captain. I'm just asking about armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04_DE"); //All right, I can sell you one of my personal pieces.
-    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05_DE"); //But it'll cost you. I want 2700 gold for it.
+    // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_DE"); //Wie wäre es mit etwas besserer Rüstung?
+    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_01_DE"); //Was zum Teufel denken Sie sich dabei?
+    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_02_DE"); //Du tötest Raven und bist plötzlich der neue Kapitän?
+    // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_03_DE"); //Das habe ich nicht gemeint. Du bist immer noch der Captain. Ich frage nur nach einer besseren Rüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_04_DE"); //Na gut, ich kann Ihnen eines meiner persönlichen Stücke verkaufen.
+    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_01_05_DE"); //Aber es wird dich etwas kosten. Ich will 2700 Gold dafür.
     Patch_AE_DIA_Addon_Greg_RavenDead_ARMOREXPANSION_entry = "Ich kann für 2700 Gold von Greg einen Kapitäns Mantel kaufen.";
 
     Patch_AE_DIA_Addon_Greg_BUY_ARMOREXPANSION_desc = "Kapitäns Mantel kaufen (2700 Gold)";
-    // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1_DE"); //Sell me the captain's armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2_DE"); //Here you go, but remember, I'm still the captain.
-    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3_DE"); //Come back when you have enough gold.
+    // AI_Output(other, self, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_1_DE"); //Verkaufen Sie mir die Kapitäns-Rüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_2_DE"); //Bitte sehr, aber denken Sie daran, dass ich immer noch der Kapitän bin.
+    // AI_Output(self, other, "PATCH_AE_DIA_ADDON_GREG_BUY_ARMOREXPANSION_4_3_DE"); //Kommen Sie wieder, wenn Sie genug Gold haben.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00 = "PATCH_AE_DIA_ADDON_GREG_RAVENDEAD_ARMOREXPANSION_15_00_DE";
@@ -341,11 +342,19 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_Lord_Hagen_CROSSBOW_desc = "Hast du keine leichtere Rüstung für mich? (Ritterrüstung ersetzen)";
-    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_DE"); //Would there be any lighter armor for me?
-    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_DE"); //I prefer to use ranged weapons.
-    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_DE"); //I can swap your knight's armor for a lighter version designed for our crossbowmen.
-    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_DE"); //I'll take it.
-    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_DE"); //Wear it with honor, knight.
+    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_DE"); //Hast du keine leichtere Rüstung für mich?
+    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_DE"); //Ich ziehe es vor, Fernkampfwaffen zu benutzen.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_DE"); //Ich kann die Rüstung eures Ritters durch eine leichtere Version für unsere Armbrustschützen ersetzen.
+    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_DE"); //Ich nehme es an.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_DE"); //Tragt es mit Ehre, Ritter.
+
+    Patch_AE_DIA_Lord_Hagen_HEAVYCROSSBOW_desc = "Ich brauche eine bessere Rüstung.";
+    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_DE"); //Ich brauche eine bessere Rüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_DE"); //Hm, es stimmt, du hast dich um die Drachen im Tal der Minental.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_DE"); //Du hast die schwere Armbrustschützen-Rüstung verdient, hier ist sie.
+    // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_DE"); //Danke.
+    // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_DE"); //Seien Sie stolz darauf, nicht viele haben die Möglichkeit, ihn zu tragen.
+
 
     // Localized OU (do not change)
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_DE";
@@ -353,7 +362,12 @@ func void Patch_AE_LocalizeGerman() {
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_DE";
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_DE";
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_DE";
-
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_DE";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_DE";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_DE";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_DE";
+    PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_DE";
+    
     // ------
     // Harad
     // ------
@@ -746,14 +760,68 @@ func void Patch_AE_LocalizeGerman() {
     // ----
     // Wolf
     // ----
+    
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_desc = "Ich habe gehört, du machst Rüstungen.";
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_DE"); //Ich habe gehört, du machst Rüstungen.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_DE"); //Dann hast du richtig gehört, ich mache leichtere Lederrüstungen für die Jagd. 
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_DE"); //Zwar bieten sie keinen so guten Schutz, erleichtern jedoch das Schießen mit Bogen oder Armbrust..
+    
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Ich möchte meine Rüstung durch die leichtere ersetzen.";
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE"); //Ich möchte meine Rüstung durch die leichtere ersetzen.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE"); //Klar, ich habe gerade eins gemacht. Bitte sehr.
+    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE"); //Danke.
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE"); //Sie sind herzlich willkommen.
 
-    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Ich habe gehört du stellst leichtere Rüstung für Söldner her. (Söldnerrüstung ersetzen)";
-    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE"); //Sure, I just finished one. You can have it for free, for old time's sake.
-    // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE"); //Thanks man.
-    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE"); //You're welcome.
+    DIA_Wolf_ArmorM_AEXPANSION_desc = "Wie wäre es mit einer besseren Rüstung?.";
+    // AI_Output(other, self, "DIA_Wolf_ArmorM_AEXPANSION_15_00_DE"); //Wie wäre es mit einer besseren Rüstung?.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_01_DE"); //Sicher, ich kann es Ihnen jetzt verkaufen.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_02_DE"); //Ich habe hier eine mittelschwere Rüstung für dich, es ist ein gutes Stück.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_03_DE"); //Tut mir leid, aber Lee wollte nicht, dass ich es dir einfach so gebe. Ich denke, du solltest zuerst Torlof helfen.
+    // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_04_DE"); //Wenn du fertig bist, komm zu mir, ich werde etwas Besseres für dich haben..
+    
+    DIA_Wolf_BuyArmorMP_AEXPANSION_desc = "Mittlere Jagdrüstung kaufen (Schutz: 45/45, +6% Bogen Bonus Preis 1000).";
+    // AI_Output(other, self, "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_DE"); //Gib mir die Rüstung.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_DE"); //Hier, bitte sehr. Es ist ein anständiges Stück Rüstung.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_DE"); //Tut mir leid, aber ich kann sie dir nicht umsonst geben. Lee würde mir den Kopf abreißen, wenn er herausfände, dass ich die Rüstung umsonst verschenke.
+    
+    DIA_Wolf_ArmorBow_AEXPANSION_desc = "Hätten Sie nicht eine bessere Rüstung für mich?.";
+    // AI_Output(other, self, "DIA_Wolf_ArmorBow_AEXPANSION_15_00_DE"); //Hätten Sie nicht eine bessere Rüstung für mich?.
+    // AI_Output(self, other, "DIA_Wolf_ArmorBow_AEXPANSION_04_01_DE"); //Ja, sicher.
+    
+    DIA_Wolf_BuyArmorBow_AEXPANSION_desc = "Schwere Jagd-Rüstung kaufen (Schutz: 70/70, +6% Bogen Bonus, Preis 2500).";
+    // AI_Output(other, self, "DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_DE"); //Gib mir die Rüstung.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_DE"); //Hier ist er. Ein gutes Stück, ich bin stolz darauf.
+    // AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_02_DE"); //Du weißt, wie das ist. Zuerst musst du mir genug Gold bringen.
+
+    DIA_Wolf_AboutCrawler_Description_AEXPANSION = "Eigentlich würde ich es vorziehen, die Rüstung leichter zu machen.";
+    // AI_Output(other, self, "DIA_Wolf_AboutCrawler_AEXPANSION_15_00_DE"); //Eigentlich würde ich es vorziehen, die Rüstung leichter zu machen.
+    // AI_Output(self, other, "DIA_Wolf_AboutCrawler_AEXPANSION_08_01_DE"); //Klar, kein Problem. Bringen Sie mir einfach 7 von diesen Crawlerplatten.
+
+    DIA_Wolf_BringPlates_Description_AEXPANSION = "Ich habe dir die Crawlerplatten für die Rüstung besorgt.";
+
+    Patch_AE_DIA_WOLF_CRAWLERARMOR_Description = "Toll, wann wird die Rüstung fertig sein?";
 
     // Localized OU (do not change)
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_DE";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_DE";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_DE";
+    PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_06_DE";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_07_DE";
+    DIA_Wolf_ArmorM_AEXPANSION_15_00 = "DIA_Wolf_ArmorM_AEXPANSION_15_00_DE";
+    DIA_Wolf_ArmorM_AEXPANSION_04_01 = "DIA_Wolf_ArmorM_AEXPANSION_04_01_DE";
+    DIA_Wolf_ArmorM_AEXPANSION_04_02 = "DIA_Wolf_ArmorM_AEXPANSION_04_02_DE";
+    DIA_Wolf_ArmorM_AEXPANSION_04_03 = "DIA_Wolf_ArmorM_AEXPANSION_04_03_DE";
+    DIA_Wolf_ArmorM_AEXPANSION_04_04 = "DIA_Wolf_ArmorM_AEXPANSION_04_04_DE";
+    DIA_Wolf_BuyArmorMP_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_DE";
+    DIA_Wolf_BuyArmorMP_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_DE";
+    DIA_Wolf_BuyArmorMP_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_DE";
+    DIA_Wolf_ArmorBow_AEXPANSION_15_00 = "DIA_Wolf_ArmorBow_AEXPANSION_15_00_DE";
+    DIA_Wolf_ArmorBow_AEXPANSION_04_01 = "DIA_Wolf_ArmorBow_AEXPANSION_04_01_DE";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_DE";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_DE";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_DE";
+    DIA_Wolf_AboutCrawler_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_DE";
+    DIA_Wolf_AboutCrawler_AEXPANSION_08_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_DE";
 };
