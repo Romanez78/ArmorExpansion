@@ -28,7 +28,7 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_MIL_Med2_ArmorExpansion__name = "Verbesserte Mittlere Milizrüstung";
     ITAR_MIL_P_ArmorExpansion__name = "Armbrustschützen Milizrüstung";
     ITAR_MIL_M__name = "Mittlere Milizrüstung";
-    ITAR_DJG_CL_ArmorExpansion__name = "Leichte Drachenjägerrüstung";
+    ITAR_DJG_CL_ArmorExpansion__name = "Leichte DrachenverfolgerRüstung";
     ITAR_SLD_BOW_ArmorExpansion__name = "Schwere Söldner-Jagdrüstung";
     ITAR_MIL_R_ArmorExpansion__name = "Verbesserte Leichte Milizrüstung";
     ITAR_CRUSADER_ArmorExpansion__name = "Kreuzritterrüstung";
@@ -38,8 +38,8 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_SLD_R_ArmorExpansion__name = "Verbesserte Mittlere Söldnerrüstung";
     ITAR_SLD_LR_ArmorExpansion__name = "Verbesserte Leichte Söldnerrüstung";
     ITAR_PAL_CH_ArmorExpansion__name = "Armbrustschützen Paladinrüstung";
-    ITAR_DJG_CH_ArmorExpansion__name = "Schwere Drachenjägerrüstung";
-    ITAR_DJG_CM_ArmorExpansion__name = "Mittlere Drachenjägerrüstung";
+    ITAR_DJG_CH_ArmorExpansion__name = "Schwere DrachenverfolgerRüstung";
+    ITAR_DJG_CM_ArmorExpansion__name = "Mittlere DrachenverfolgerRüstung";
     ITAR_PAL_ST_ArmorExpansion__name = "Stewark Plattenrüstung";
     ITAR_PAL_MH_ArmorExpansion__name = "Schwere Ritterrüstung";
     ITAR_PIR_H_ArmorExpansion__name = "Kapitäns Mantel";
@@ -157,32 +157,32 @@ func void Patch_AE_LocalizeGerman() {
     // AI_Output(self, other, "PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_16_DE"); //Komm wieder, wenn du alles dabei hast.
 
     Patch_AE_DIA_BENNET_PAL_REFORGE_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_PAL_REFORGE_4_1_DE"); //Could you fix this rusty paladin armor for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_01_DE"); //I'm sorry, but I can't.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_03_DE"); //I have nothing against you, you got me out of jail after all.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_04_DE"); //But what would the others on the farm think if I started repairing paladin armor here?
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_05_DE"); //You'll have to find another blacksmith.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_PAL_REFORGE_4_1_DE"); //Kannst du diese rostige Paladinrüstung für mich reparieren?
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_01_DE"); //Es tut mir leid, aber das kann ich nicht.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_03_DE"); //Ich habe nichts gegen Sie, schließlich haben Sie mich aus dem Gefängnis geholt.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_04_DE"); //Aber was würden die anderen auf dem Hof denken, wenn ich hier anfangen würde, Paladin-Rüstungen zu reparieren?
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PAL_REFORGE_3_05_DE"); //Ihr müsst einen anderen Schmied finden.
     Patch_AE_DIA_BENNET_PAL_REFORGE_entry = "Bennet wird meine Rüstung nicht reparieren.";
 
     Patch_AE_DIA_Bennet_CROSSBOW_desc = "Hast du keine leichtere Rüstung für mich? (Leichte Drachenjägerrüstung ersetzen)";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_01_DE"); //Do you have there any lighter armor for me?
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_02_DE"); //Don't get me wrong, I'm grateful for it, but I would prefer something less heavy.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_13_03_DE"); //Actually, yes, I've made one of those, if you want I can swap it for you.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_04_DE"); //Thanks, I'll take it.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_15_9_DE"); //Here it is, may it serve you well.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_01_DE"); //Hast du keine leichtere Rüstung für mich?
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_02_DE"); //Verstehen Sie mich nicht falsch, ich bin dankbar dafür, aber ich würde etwas weniger Schweres vorziehen.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_13_03_DE"); //Ja, ich habe auch so eine gemacht, wenn Sie wollen, kann ich sie für Sie austauschen.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_CROSSBOW_15_04_DE"); //Danke, ich nehme es.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_CROSSBOW_15_9_DE"); //Hier ist sie, möge sie Ihnen gute Dienste leisten.
 
-    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Mittlere Drachenjägerrüstung (12000 Gold)";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_00_DE"); //I'll buy the armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_01_DE"); //Oh, great. You'll like it.
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_02_DE"); //At this price, I hope so.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_03_DE"); //You'll see it was worth the price.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_04_DE"); //You don't have enough gold.
+    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_desc = "Mittlere DrachenverfolgerRüstung (12000 Gold)";
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_00_DE"); //Ich werde die Rüstung kaufen.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_01_DE"); //Oh, großartig. Es wird dir gefallen.
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_02_DE"); //Bei diesem Preis hoffe ich das.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_03_DE"); //Sie werden sehen, es war den Preis wert.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_04_DE"); //Sie haben nicht genug Gold bei sich.
 
-    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_desc = "Schwere Drachenjägerrüstung (20000 Gold)";
-    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_15_00_DE"); //Give me the armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_01_DE"); //This is the best armor I've ever made.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_02_DE"); //It's a true masterpiece.
-    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_03_DE"); //You don't have enough gold.
+    Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_desc = "Schwere DrachenverfolgerRüstung (20000 Gold)";
+    // AI_Output(other, self, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_15_00_DE"); //Gib mir die Rüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_01_DE"); //Das ist die beste Rüstung, die ich je gemacht habe.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_02_DE"); //Es ist ein wahres Meisterwerk.
+    // AI_Output(self, other, "PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_03_DE"); //Sie haben nicht genug Gold bei sich.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_BENNET_SLDARMORASK_15_01 = "PATCH_AE_DIA_BENNET_SLDARMORASK_15_01_DE";
@@ -241,14 +241,14 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_desc = "Ich brauche mehr Rohstahl.";
-    // AI_Output(other, self, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_15_01_DE"); //I need more raw steel.
-    // AI_Output(self, other, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_02_DE"); //I can sell you some of my personal stock, but it'll cost you a lot.
-    // AI_Output(self, other, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_03_DE"); //200 gold a piece.
+    // AI_Output(other, self, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_15_01_DE"); //Ich brauche mehr Rohstahl.
+    // AI_Output(self, other, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_02_DE"); //Ich kann Ihnen einige meiner eigenen Vorräte verkaufen, aber das wird Sie viel kosten.
+    // AI_Output(self, other, "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_13_03_DE"); //200 pro Stück.
 
     Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_desc = "Verkauf mir ein Stück Rohstahl. (200 Gold).";
-    // AI_Output(other, self, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_1_DE"); //Sell me one piece of raw steel.
-    // AI_Output(self, other, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2_DE"); //Here it is.
-    // AI_Output(self, other, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_3_DE"); //Come back when you have enough gold on you.
+    // AI_Output(other, self, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_1_DE"); //Verkaufen Sie mir ein Stück Rohstahl.
+    // AI_Output(self, other, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2_DE"); //Hier ist sie.
+    // AI_Output(self, other, "PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_3_DE"); //Kommen Sie wieder, wenn Sie genug Gold bei sich haben.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_15_01 = "PATCH_AE_DIA_BRIAN_BUYRAWSTEEL_PATCHOC_15_01_DE";
@@ -264,9 +264,9 @@ func void Patch_AE_LocalizeGerman() {
 
     Patch_AE_DIA_CARL_PAL_REFORGE_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
     // AI_Output(other, self, "PATCH_AE_DIA_CARL_PAL_REFORGE_4_1_DE"); //Kannst du diese rostige Paladinrüstung für mich reparieren?
-    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_01_DE"); //Paladin armor?
-    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02_DE"); //I'm sorry, boy, but that's beyond me.
-    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03_DE"); //You'll have to find another blacksmith.
+    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_01_DE"); //Paladin-Rüstung?
+    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_02_DE"); //Tut mir leid, Junge, aber das ist zu kompliziert für mich.
+    // AI_Output(self, other, "PATCH_AE_DIA_CARL_PAL_REFORGE_3_03_DE"); //Ihr müsst einen anderen Schmied finden.
     Patch_AE_DIA_CARL_PAL_REFORGE_entry = "Carl wird meine Rüstung nicht reparieren.";
 
     // Localized OU (do not change)
@@ -280,9 +280,9 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_engor_ARCHER_KAUFEN_desc = "Armbrustschützen-Milizrüstung kaufen (2300 Gold)";
-    // AI_Output(other, self, "PATCH_AE_DIA_engor_ARCHER_KAUFEN_15_00_DE"); //Give me the armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_engor_ARCHER_KAUFEN_13_01_DE"); //Here it is, it'll protect you well, it's a damn good piece.
-    // AI_Output(self, other, "PATCH_AE_DIA_engor_ARCHER_KAUFEN_13_02_DE"); //Bring me the gold first.
+    // AI_Output(other, self, "PATCH_AE_DIA_engor_ARCHER_KAUFEN_15_00_DE"); //Gib mir die Rüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_engor_ARCHER_KAUFEN_13_01_DE"); //Hier ist es, es wird dich gut schützen, es ist ein verdammt gutes Stück.
+    // AI_Output(self, other, "PATCH_AE_DIA_engor_ARCHER_KAUFEN_13_02_DE"); //Bringt mir zuerst das Gold.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_engor_ARCHER_KAUFEN_15_00 = "PATCH_AE_DIA_engor_ARCHER_KAUFEN_15_00_DE";
@@ -295,11 +295,11 @@ func void Patch_AE_LocalizeGerman() {
     
     Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_MELEE = "(Wählen Sie eine schwere Ritterrüstung)";
     Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_RANGED = "(Wählen Sie eine schwere Ritter-Armbrustschützenrüstung)";
-    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_DE"); //Hold on.
-    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_DE"); //You're the only one of us who's managed to kill a dragon so far.
-    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_DE"); //I'm hoping you can get them all.
-    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06_DE"); //Here, this should help you in your mission. Now go, there's no time to waste.
-    // AI_Output(other, self, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_DE"); //Thanks.
+    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_DE"); //Warte!
+    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_04_DE"); //You are the only one of us who has managed to kill a dragon so far.
+    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_05_DE"); //Ich hoffe, dass Sie sie alle bekommen können.
+    // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06_DE"); //Hier, das sollte euch bei eurer Mission helfen. Jetzt geh, wir haben keine Zeit zu verlieren.
+    // AI_Output(other, self, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_DE"); //Danke.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_DE";
@@ -373,46 +373,35 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_HARAD_PAL_SHOW_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_DE"); //Could you fix this rusty paladin armor for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_DE"); //Let me see.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_DE"); //It's been a long time since I've seen armor like this.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_DE"); //They are forged from a different alloy of steel and magical ore than the others, and then blessed by the mages from the Monastery in Nordmar.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_DE"); //The rust hasn't penetrated very deeply, it won't be too hard to repair.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_DE"); //If I have the materials, of course.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_DE"); //Where did you get it?
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_DE"); //Martin sold it to me, it was lying around amongst the paladin equipment so I wanted to use it.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_DE"); //Kannst du diese rostige Paladinrüstung für mich reparieren?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_01_DE"); //Lassen Sie mich sehen.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_02_DE"); //Es ist lange her, dass ich so eine Rüstung gesehen habe.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_03_DE"); //Sie werden aus einer anderen Legierung aus Stahl und magischem Erz geschmiedet als die anderen und dann von den Magiern des Klosters in Nordmar gesegnet.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_04_DE"); //Der Rost ist nicht sehr tief eingedrungen, es wird nicht allzu schwierig sein, ihn zu reparieren.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_05_DE"); //Wenn ich die Materialien habe, natürlich.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_06_DE"); //Woher haben Sie es?
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PAL_SHOW_3_07_DE"); //Martin hat es mir verkauft, es lag bei den Paladin-Vorräten herum und ich wollte es benutzen.
     Patch_AE_DIA_HARAD_PAL_SHOW_entry = "Harad wird die Rüstung für mich reparieren.";
 
     Patch_AE_DIA_HARAD_PALADIN_REFORGE_desc = "Was brauchst du zum reparieren der Rüstung?";
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_DE"); //So, what are you gonna need to repair the armor?
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_DE"); //Hmm, let me think.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_DE"); //A few raw steel billets, six should be enough.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_DE"); //3 lumps of magical ore.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_DE"); //What do you want for your work?
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_DE"); //Nothing. It would be an honor to work on armor like this.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_DE"); //All right, I'll try to get it all.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_01_DE"); //Was brauchst du also, um die Rüstung zu reparieren?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_02_DE"); //Hmm, lass mich nachdenken.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_04_DE"); //Ein paar rohe Stahlknüppel, sechs sollten ausreichen.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_05_DE"); //3 Stücke magischen Erzes.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_06_DE"); //Was schulde ich Ihnen für Ihre Arbeit?
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_07_DE"); //Nichts. Es wäre mir eine Ehre, an einer solchen Rüstung zu arbeiten.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_08_DE"); //In Ordnung, ich werde versuchen, alles zu besorgen, was Sie brauchen.
     Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1 = "Um die Rüstung zu reparieren braucht Harad sechs Stück Rohstahl und drei Erzbrocken.";
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_DE");//Here's the armor.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_DE"); //And here are the materials.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_DE"); //All right, I'll get to work.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_DE"); //Done.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_DE"); //Here it is, I managed to fix it.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_DE"); //But I couldn't restore its magical powers.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_DE"); //For that, you'll need an experienced fire mage willing to consecrate the armor for you.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_DE"); //Thank you.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9_DE");//Hier ist die Rüstung.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10_DE"); //Und hier sind die Materialien.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11_DE"); //In Ordnung, ich mache mich an die Arbeit.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_12_DE"); //Erledigt.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_13_DE"); //Hier ist er, ich habe ihn repariert.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_14_DE"); //Aber ich konnte die magischen Kräfte der Rüstung nicht wiederherstellen.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_15_DE"); //Dazu brauchst du einen erfahrenen Feuermagier, der die Rüstung für dich weiht.
+    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_14_DE"); //Danke.
     Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry2 = "Harad hat die Paladinrüstung repariert, konnte aber dessen magische Kräfte nicht wiederherstellen. Dazu werde ich wohl einen Feuermagier finden müssen.";
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_DE"); //Come back when you've got it all.
-
-    Patch_AE_DIA_HARAD_end_MAKE_desc = "Kannst du die Paladinrüstung für mich verändern? (Weniger Schutz, Bogen Bonus)";
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_end_MAKE_1_DE"); //Could you reforge my paladin armor for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_end_MAKE_2_DE"); //Sure, but I can't think of a reason you wouldn't like it.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_end_MAKE_3_DE"); //I use ranged weapons, so I'd like it if it was a bit lighter.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_end_MAKE_4_DE"); //That shouldn't be too hard. I'm sure I could do it.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_end_MAKE_5_DE"); //What do you want for it?
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_end_MAKE_6_DE"); //Nothing. It would be an honor to do this service for a paladin.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_end_MAKE_7_DE"); //In that case, here it is.
-    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_end_MAKE_8_DE"); //Done. It wasn't hard. Here you go.
-    // AI_Output(other, self, "PATCH_AE_DIA_HARAD_end_MAKE_9_DE"); //Thank you.
+    // AI_Output(self, other, "PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_16_DE"); //Kommen Sie wieder, wenn Sie alles haben.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_HARAD_PAL_SHOW_4_1 = "PATCH_AE_DIA_HARAD_PAL_SHOW_4_1_DE";
@@ -454,10 +443,10 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_HUNO_PAL_REFORGE_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
-    // AI_Output(other, self, "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_DE"); //Could you fix this rusty paladin armor for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_DE"); //I have absolutely no experience with paladin armor. There was nothing like it in the colony.
-    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_DE"); //I'm sorry, but I can't help you with this.
-    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_DE"); //You'll have to find another blacksmith.
+    // AI_Output(other, self, "PATCH_AE_DIA_HUNO_PAL_REFORGE_4_1_DE"); //Kannst du diese rostige Paladinrüstung für mich reparieren?
+    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_01_DE"); //Ich habe absolut keine Erfahrung mit Paladin-Rüstungen. Im Tal der Minental gab es nichts dergleichen.
+    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_02_DE"); //Es tut mir leid, aber ich kann Ihnen in dieser Sache nicht helfen.
+    // AI_Output(self, other, "PATCH_AE_DIA_HUNO_PAL_REFORGE_3_03_DE"); //Ihr müsst einen anderen Schmied finden.
     Patch_AE_DIA_HUNO_PAL_REFORGE_entry = "Huno wird meine Rüstung nicht reparieren.";
 
     // Localized OU (do not change)
@@ -471,10 +460,10 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_JAN_PAL_REFORGE_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
-    // AI_Output(other, self, "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_DE"); //Could you fix this rusty paladin armor for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_DE"); //I'm on thin ice just to be allowed to work here.
-    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_DE"); //I'm not gonna risk one of your colleagues reporting me for digging through paladin supplies.
-    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_DE"); //You'll have to find another blacksmith.
+    // AI_Output(other, self, "PATCH_AE_DIA_JAN_PAL_REFORGE_4_1_DE"); //Kannst du diese rostige Paladinrüstung für mich reparieren?
+    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_01_DE"); //Ich bewege mich auf dünnem Eis, nur um hier arbeiten zu dürfen.
+    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_02_DE"); //Ich werde nicht riskieren, dass mich einer Ihrer Kollegen anzeigt, weil ich in den Vorräten der Paladins gewühlt habe.
+    // AI_Output(self, other, "PATCH_AE_DIA_JAN_PAL_REFORGE_3_03_DE"); //Ihr müsst einen anderen Schmied finden.
     Patch_AE_DIA_JAN_PAL_REFORGE_entry = "Jan wird meine Rüstung nicht reparieren.";
 
     // Localized OU (do not change)
@@ -488,10 +477,10 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_LEE_SLD_SCOUTArmor_desc = "Gibt es auch eine leichtere Rüstung?";
-    // AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_DE"); //Is there any lighter armor for me?
-    // AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_DE"); //I prefer to keep my distance.
-    // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_DE"); //I don't have anything like that for you, but you're not the first one to ask for something like this.
-    // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_DE"); //Go to Wolf. I think he should have something for you.
+    // AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_DE"); //Gibt es auch eine leichtere Rüstung?
+    // AI_Output(other, self, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_02_DE"); //Ich ziehe es vor, Abstand zu halten.
+    // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_03_DE"); //Ich habe nichts dergleichen für Sie, aber Sie sind nicht der erste, der um so etwas bittet.
+    // AI_Output(self, other, "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_13_04_DE"); //Geh zu Wolf. Ich denke, er sollte etwas für dich haben.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_LEE_SLD_SCOUTARMOR_15_01_DE";
@@ -505,20 +494,20 @@ func void Patch_AE_LocalizeGerman() {
 
     Patch_AE_TOPIC_MARTIN_ARMOR = "Einzigartige Paladinrüstung";
 
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_DE"); //I heard you became a paladin.
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_DE"); //I might have something special for you
-    // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_DE"); //What are you talking about?
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_DE"); //I have some exceptional paladin armor in stock here.
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_DE"); //I hear this type of armor has high protection against magical attacks, while increasing the wearer's own magical abilites.
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_DE"); //But it's been lying around for a while, and the coastal weather hasn't done it any good.
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_DE"); //It's nothing that can't be repaired. You'll figure something out.
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_DE"); //For 2000 gold, it's yours.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_01_DE"); //Ich habe gehört, dass du ein Paladin geworden bist.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_02_DE"); //Ich habe vielleicht etwas Besonderes für Sie
+    // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_03_DE"); //Wovon sprechen Sie?
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_04_DE"); //Ich habe hier einige außergewöhnliche Paladin-Rüstungen auf Lager.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_05_DE"); //Ich habe gehört, dass diese Art von Rüstung einen hohen Schutz gegen magische Angriffe bietet und gleichzeitig die eigenen magischen Fähigkeiten des Trägers erhöht.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_06_DE"); //Aber es liegt schon eine Weile herum, und das Wetter an der Küste hat ihm nicht gut getan.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_07_DE"); //Es ist nichts, was nicht repariert werden kann. Dir wird schon etwas einfallen.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_3_08_DE"); //Für 2000 Gold gehört er Ihnen.
     PATCH_AE_DIA_MARTIN_ARCPALA_NOTIF_entry = "Martin hat mir angeboten mir für 2000 Gold eine einzigartige Paladinrüstung zu verkaufen. Hört sich interesant an.";
 
     Patch_AE_DIA_Martin_ARKPALA_BUY_desc = "Ok, Ich will die Rüstung. (2000 Gold).";
-    // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_DE"); //Okay, I'll take the armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_DE"); //Allright, here you go.
-    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_DE"); //Come back when you have enough gold on you
+    // AI_Output(other, self, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_1_DE"); //Ok, Ich will die Rüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_2_DE"); //Also gut, hier ist es.
+    // AI_Output(self, other, "PATCH_AE_DIA_MARTIN_ARKPALA_BUY_4_3_DE"); //Komm wieder, wenn du genug Gold bei dir hast
     Patch_AE_DIA_Martin_ARKPALA_BUY_entry = "Ich habe die Paladinrüstung von Martin gekauft. Sie ist verrosten aber ein guter Schmied kann sie vermutlich reparieren. Ich muss nur einen finden.";
 
     // Localized OU (do not change)
@@ -539,9 +528,9 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_Matteo_GAMBESON_desc = "Jäger Stoffrüstung kaufen. (350 Gold).";
-    // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_DE"); //Okay, give me the armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_DE"); //You'll like it.
-    // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_DE"); //The armor's worth its weight in gold, so come back when you have enough.
+    // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_DE"); //Okay, gib mir die Rüstung.
+    // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_DE"); //Es wird Ihnen gefallen.
+    // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_DE"); //Die Rüstung ist ihr Gewicht in Gold wert, also komm wieder, wenn du genug hast.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_MATTEO_GAMBESON_15_00 = "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_DE";
@@ -553,42 +542,42 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     Patch_AE_DIA_MILTEN_PALADINARMOR_desc = "Ich brauche deine Hilfe.";
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_DE"); //I need your help.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_DE"); //What's going on?
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_DE"); //I need to restore the magical powers of this armor, could you do that for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_DE"); //Let me see it.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_DE"); //Wow, I didn't see this coming.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_DE"); //This kind of armor is taken by the paladins from Myrtana to be blessed in the monastery in Nordmar.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_DE"); //I've heard a little about the blessing ritual, but I don't have enough knowledge to perform it yet.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_DE"); //If I'm not mistaken, there is a book in the monastery's library that describes the process.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_DE"); //I'll need some time to study the book. In the meantime, you should take care of the dragons in the valley of mines, you know how Garond's unit won't survive for long.
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_DE"); //Yeah, I'll see you later Milten.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_DE"); //Good luck!
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_01_DE"); //Ich brauche deine Hilfe.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_02_DE"); //Was ist los?
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_04_DE"); //Ich muss die magischen Kräfte dieser Rüstung wiederherstellen, könnten Sie das für mich tun?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_05_DE"); //Zeigen Sie es mir.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_06_DE"); //Wow, das habe ich nicht erwartet.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_07_DE"); //Diese Art von Rüstung wird von den Paladinen aus Myrtana mitgenommen, um im Kloster in Nordmar gesegnet zu werden.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_08_DE"); //Ich habe ein wenig über das Segnungsritual gehört, aber ich habe noch nicht genug Wissen, um es durchzuführen.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_09_DE"); //Wenn ich mich nicht irre, gibt es in der Bibliothek des Klosters ein Buch, in dem dieser Vorgang beschrieben wird.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_10_DE"); //Ich werde etwas Zeit brauchen, um das Buch zu studieren. In der Zwischenzeit solltest du dich um die Drachen im der Minental kümmern, du weißt, dass Garonds Einheit nicht lange überleben wird.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PALADINARMOR_15_11_DE"); //Ja, wir sehen uns später, Milten.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PALADINARMOR_13_12_DE"); //Viel Glück!
     Patch_AE_DIA_MILTEN_PALADINARMOR_entry = "Milten wird versuchen die magischen Kräfte der Rüstung wiederherzustellen. Zuerst muss er aber einige Nachforschungen betreiben. Das wird etwas dauern. Ich sollte mich in der Zwischenzeit um die Drachen kümmern.";
 
     Patch_AE_DIA_MILTEN_PLATEARMOR_desc = "Hast du bei deinen Nachforschungen Fortschritte gemacht?";
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_DE"); //Have you made progress in your studies?
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_DE"); //Yes, I can say that I understand the ritual process.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_DE"); //But I'm going to need a few things.
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_DE"); //What are they?
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_DE"); //A scroll of destroy evil, fireball and two rock crystals.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_DE"); //This is the only way I'll be able to achieve results similar to that of a ritual in the Nordmar monastery.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_DE"); //Okay, I'll go get those things.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_DE"); //Good luck, I hope you succeed.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_01_DE"); //Hast du bei deinen Nachforschungen Fortschritte gemacht?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_02_DE"); //Ja, ich kann sagen, dass ich den rituellen Prozess verstehe.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_03_DE"); //Aber ich werde ein paar Dinge brauchen.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04_DE"); //Was werden Sie brauchen?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05_DE"); //Eine Schriftrolle der Zerstörung des Bösen, ein Feuerball und zwei Bergkristalle.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06_DE"); //Nur so kann ich ähnliche Ergebnisse wie bei einem Ritual im Kloster Nordmar erzielen.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07_DE"); //Okay, ich werde die Sachen holen gehen.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08_DE"); //Viel Glück, ich hoffe, Sie haben Erfolg.
     Patch_AE_DIA_MILTEN_PLATEARMOR_entry = "Um die Rüstung zu stärken braucht Milten eine Schriftrolle Böses vernichten, eine Schriftrolle Feuerball und zwei Bergkristalle.";
 
     Patch_AE_DIA_MILTEN_RITUALARMOR_desc = "Ich habe alles was du brauchst.";
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_DE"); //I have everything you need.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_DE"); //Oh, great. I can start the ritual.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01_DE"); //Ich habe alles was du brauchst.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02_DE"); //Oh, großartig. Ich kann mit dem Ritual beginnen.
     Patch_AE_DIA_MILTEN_RITUALARMOR_entry = "Ich habe Milten alles gebracht, was er für das Ritual braucht.";
 
     Patch_AE_DIA_MILTEN_LORDRMOR_desc = "Toll, wann ist das Ritual vollendet?";
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_DE"); //Great, and when will the ritual be complete?
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_DE"); //It's gonna take a while. Come back tomorrow.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_DE"); //I've already done it, it was a success.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_DE"); //Everything went surprisingly smoothly.
-    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_DE"); //I'm glad. Thank you.
-    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_DE"); //You're welcome. May the armor serve you well.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_00_DE"); //Toll, wann ist das Ritual vollendet?
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_01_DE"); //Es wird eine Weile dauern. Kommen Sie morgen wieder.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_02_DE"); //Ich habe es bereits getan, es war ein Erfolg.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_03_DE"); //Alles verlief erstaunlich reibungslos.
+    // AI_Output(other, self, "PATCH_AE_DIA_MILTEN_LORDRMOR_15_04_DE"); //Das macht mich froh. Ich danke Ihnen vielmals.
+    // AI_Output(self, other, "PATCH_AE_DIA_MILTEN_LORDRMOR_08_05_DE"); //Gern geschehen. Möge die Rüstung Ihnen gute Dienste leisten.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06_DE"); //NN
     Patch_AE_DIA_MILTEN_LORDRMOR_entry = "Milten hat es geschafft die magischen Kräfte der Rüstung wiederherzustellen.";
 
@@ -629,55 +618,55 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_TOPIC_MORTIS_ARMOR = "Milizrüstung-Verbesserungen";
 
     PATCH_AE_DIA_MORTIS_ARMORQUESTION_desc = "Hast du keine bessere Rüstung für mich?";
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_DE"); //Don't you have any better armor for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_DE"); //Only Lord Andre can give you better armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_DE"); //But that doesn't mean I can't improve the one you already have. You wouldn't be the first person I've done ir for.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_DE"); //What will it cost?
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_DE"); //You'll have to bring your own materials, I don't have any left to spare.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_DE"); //And some gold for my work.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_01_DE"); //Hast du keine bessere Rüstung für mich?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_02_DE"); //Nur Lord Andre kann dir eine bessere Rüstung geben.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_03_DE"); //Das heißt aber nicht, dass ich das, was Sie bereits haben, nicht noch verbessern kann. Du wärst nicht die erste Person, für die ich etwas getan habe.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_15_04_DE"); //Was wird es kosten?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_05_DE"); //Ihr müsst euer eigenes Material mitbringen, ich habe keins mehr übrig.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_ARMORQUESTION_13_06_DE"); //Und bringt auch etwas Gold als Bezahlung für meine Arbeit mit.
     PATCH_AE_DIA_MORTIS_ARMORQUESTION_entry = "Mortis kann meine Milizrüstung verbesseren, wenn ich ihm Gold und Materialien bringe.";
 
     PATCH_AE_DIA_MORTIS_MIL_LTHINGS_desc = "Ich will meine leichte Rüstung verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_DE"); //I'd like to improve my light armor.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_DE"); //What do you need for that?
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_DE"); //For light armor, one raw steel and boarskin will suffice.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_DE"); //And let's say 200 gold will be enough for me.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_DE"); //And of course, you'll have to bring me the armor.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_DE"); //All right, I'll try to get it.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_01_DE"); //Ich will meine leichte Rüstung verbessern.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_04_DE"); //Was brauchen Sie dafür?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_06_DE"); //Für eine leichte Rüstung reichen ein roher Stahl und ein Wildschweinfell aus.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_07_DE"); //Und sagen wir mal, 200 Gold sind genug für mich.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_13_08_DE"); //Und natürlich müsst ihr mir die Rüstung bringen.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LTHINGS_15_09_DE"); //In Ordnung, ich werde versuchen, es zu bekommen.
     PATCH_AE_DIA_MORTIS_MIL_LTHINGS_entry = "Um meine leichte Rüstung zu verbessern braucht Mortis ein Stück Rohstahl, ein Keilerfell und 200 Gold.";
 
     PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_desc = "Ich habe alle Materialien um meine leichte Rüstung zu verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_DE"); //I have all the materials I need to improve my light armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_DE"); //All right, I'll get to work.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_DE"); //Done.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_DE"); //Here you go, I think I've done a pretty good job.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_DE"); //Thank you.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_DE"); //Come back when you've got it all with you.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01_DE"); //Ich habe alle Materialien um meine leichte Rüstung zu verbessern.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12_DE"); //In Ordnung, ich mache mich an die Arbeit.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_13_DE"); //Erledigt.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_14_DE"); //Bitte sehr, ich denke, ich habe gute Arbeit geleistet.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_15_DE"); //Danke.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_16_DE"); //Kommen Sie wieder, wenn Sie alles dabei haben.
     PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_entry = "Mortis hat meine leichte Rüstung verbessert.";
 
     PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_desc = "Ich will meine mittlere Rüstung verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_DE"); //I'd like to improve my medium armor.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_DE"); //What do you need for that?
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_DE"); //You'll need to bring a little more than last time for the medium armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_DE"); //two raw steel billets and a Warg skin.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_DE"); //I'll charge you 600 gold for the job.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_DE"); //All right, I'll try to get it.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_01_DE"); //Ich will meine mittlere Rüstung verbessern.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_03_DE"); //Was brauchen Sie dafür?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_04_DE"); //Für die mittlere Rüstung müssen Sie etwas mehr mitbringen als beim letzten Mal.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_05_DE"); //zwei rohe Stahlknüppel und eine Warg-Haut.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_13_06_DE"); //Ich berechne dir 600 Gold für den Auftrag.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_15_08_DE"); //In Ordnung, ich werde versuchen, es zu bekommen.
     PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMHUH_entry = "Um meine leichte Rüstung zu verbessern braucht Mortis zwei Stück Rohstahl, ein Wargfell und 600 Gold.";
 
     PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_desc = "Ich habe alle Materialien um meine mittlere Rüstung zu verbessern.";
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_DE"); //I've got all the materials I need to improve my medium armor.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_DE"); //Here you go.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_DE"); //Okay, I'll get to work.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_DE"); //Done.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_DE"); //Here you go, I think I've done a pretty good job.
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_DE"); //Thank you.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_DE"); //Come back when you've got it all with you.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01_DE"); //Ich habe alle Materialien um meine mittlere Rüstung zu verbessern.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10_DE"); //Hier ist es.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_11_DE"); //In Ordnung, ich mache mich an die Arbeit.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_12_DE"); //Erledigt.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_13_DE"); //Bitte sehr, ich denke, ich habe gute Arbeit geleistet.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_14_DE"); //Danke.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_13_16_DE"); //Kommen Sie wieder, wenn Sie alles dabei haben.
     PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_entry = "Mortis hat meine mittlere Rüstung verbessert.";
 
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_desc = "Kannst du diese rostige Paladinrüstung für mich reparieren?";
-    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_DE"); //Could you fix this rusty paladin armor for me?
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_DE"); //No, I don't have the time or the skill.
-    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_DE"); //You'll have to find another blacksmith.
+    // AI_Output(other, self, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_4_1_DE"); //Kannst du diese rostige Paladinrüstung für mich reparieren?
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_01_DE"); //Nein, ich habe weder die Zeit noch die Fähigkeit dazu.
+    // AI_Output(self, other, "PATCH_AE_DIA_MORTIS_PAL_REFORGE_3_02_DE"); //Ihr müsst einen anderen Schmied finden.
     PATCH_AE_DIA_MORTIS_PAL_REFORGE_entry = "Mortis wird meine Rüstung nicht reparieren.";
 
     // Localized OU (do not change)
@@ -748,9 +737,9 @@ func void Patch_AE_LocalizeGerman() {
     // ------
 
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "Ich habe alle Schreine bereinigt.";
-    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_DE"); //Wait, we wanted to support you in your fight against evil with a new armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_DE"); //Take this armor of the Crusader of Innos, I'm sure you'll find use for it.
-    // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_DE"); //Thanks.
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_DE"); //Warte, wir wollten dich in deinem Kampf gegen das Böse mit einer neuen Rüstung unterstützen.
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_DE"); //Nimm diese Rüstung des Kreuzritters von Innos, ich bin sicher, du wirst sie gebrauchen können.
+    // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_DE"); //Danke.
 
     // Localized OU (do not change)
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01 = "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_DE";
