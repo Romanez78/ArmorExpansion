@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 26.02.2025 19:56:03
+date 05.03.2025 22:01:03
 user https://github.com/szapp/output-unit-action
 END
 objects 2773
@@ -2958,7 +2958,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 737]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 738]
 subType=enum:0
-text=string:I can trade you your armor for the armor of a scout. It's lighter than standard equipment, so you'll be more agile, but also more vulnerable.
+text=string:I can give you the light crossbowman armor. It's lighter, so you'll be more agile, but also more vulnerable.
 name=string:PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03_EN.WAV
 []
 []
