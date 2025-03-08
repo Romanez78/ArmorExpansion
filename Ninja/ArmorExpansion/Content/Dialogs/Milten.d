@@ -55,7 +55,7 @@ func void Patch_AE_DIA_MILTEN_PLATEARMOR_Info()
     AI_Output(other, self, PATCH_AE_DIA_MILTEN_PLATEARMOR_15_04);
     AI_Output(self, other, PATCH_AE_DIA_MILTEN_PLATEARMOR_13_05);
     AI_Output(self, other, PATCH_AE_DIA_MILTEN_PLATEARMOR_13_06);
-    AI_Output(self, other, PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07);
+    AI_Output(other, self, PATCH_AE_DIA_MILTEN_PLATEARMOR_13_07);
     AI_Output(self, other, PATCH_AE_DIA_MILTEN_PLATEARMOR_13_08);
     B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, Patch_AE_DIA_MILTEN_PLATEARMOR_entry);
 };
@@ -198,7 +198,7 @@ instance Patch_AE_DIA_MILTEN_LORDRMOR2 (C_INFO)
 };
 func int Patch_AE_DIA_MILTEN_LORDRMOR2_Condition()
 {
-    if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_RITUALARMOR))
+    if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_RITUALARMOR2))
     && (Patch_AE_Player_GotARCArmor == FALSE)
     {
         return TRUE;
@@ -288,7 +288,7 @@ instance Patch_AE_DIA_MILTEN_LORDRMOR3 (C_INFO)
 };
 func int Patch_AE_DIA_MILTEN_LORDRMOR3_Condition()
 {
-    if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_RITUALARMOR))
+    if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_RITUALARMOR3))
     && (Patch_AE_Player_GotARCArmor == FALSE)
     {
         return TRUE;
