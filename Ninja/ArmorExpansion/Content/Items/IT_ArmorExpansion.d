@@ -354,9 +354,9 @@ INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	75;
-	protection [PROT_BLUNT] = 	75;
-	protection [PROT_POINT] = 	75;
+	protection [PROT_EDGE]	=	85;
+	protection [PROT_BLUNT] = 	85;
+	protection [PROT_POINT] = 	85;
 	protection [PROT_FIRE] 	= 	15;
 	protection [PROT_MAGIC] = 	15;
 
@@ -1687,9 +1687,9 @@ INSTANCE ITAR_PAL_RNH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	75;
-	protection [PROT_BLUNT] = 	75;
-	protection [PROT_POINT] = 	75;
+	protection [PROT_EDGE]	=	85;
+	protection [PROT_BLUNT] = 	85;
+	protection [PROT_POINT] = 	85;
 	protection [PROT_FIRE] 	= 	15;
 	protection [PROT_MAGIC] = 	15;
 
@@ -1813,9 +1813,9 @@ INSTANCE ITAR_PAL_RFH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	75;
-	protection [PROT_BLUNT] = 	75;
-	protection [PROT_POINT] = 	75;
+	protection [PROT_EDGE]	=	85;
+	protection [PROT_BLUNT] = 	85;
+	protection [PROT_POINT] = 	85;
 	protection [PROT_FIRE] 	= 	15;
 	protection [PROT_MAGIC] = 	15;
 
