@@ -9,7 +9,7 @@ instance Patch_AE_DIA_MILTEN_PALADINARMOR (C_INFO)
 };
 func int Patch_AE_DIA_MILTEN_PALADINARMOR_Condition()
 {
-    if (Npc_HasItems(other, ItAr_PAL_F_ARMOREXPANSION) > 0)
+    if (Npc_HasItems(other, ItAr_PAL_F_ARMOREXPANSION) > 0) || (Npc_HasItems(other, ITAR_PAL_FFH_ArmorExpansion) > 0) || (Npc_HasItems(other, ITAR_PAL_FNH_ArmorExpansion) > 0)
     {
         return TRUE;
     };
@@ -140,6 +140,186 @@ func void Patch_AE_DIA_MILTEN_LORDRMOR_Info()
 
             AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_02);
             B_GiveInvItems (self, other, ItAr_PAL_A_ARMOREXPANSION, 1);
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_03);
+            AI_Output(other, self, PATCH_AE_DIA_MILTEN_LORDRMOR_15_04);
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_05);
+            Patch_AE_Player_GotARCArmor = TRUE;
+            Log_SetTopicStatus(Patch_AE_TOPIC_MARTIN_ARMOR, LOG_SUCCESS);
+            B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, Patch_AE_DIA_MILTEN_LORDRMOR_entry);
+        };
+    }
+    else
+    {
+        AI_Output(self, other, PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06);
+    };
+};
+
+//FNH
+
+instance Patch_AE_DIA_MILTEN_RITUALARMOR2 (C_INFO)
+{
+    npc          =  PC_Mage_NW;
+    nr           =  8;
+    condition    =  Patch_AE_DIA_MILTEN_RITUALARMOR2_Condition;
+    information  =  Patch_AE_DIA_MILTEN_RITUALARMOR2_Info;
+    permanent    =  TRUE;
+    description  =  Patch_AE_DIA_MILTEN_RITUALARMOR_desc;
+};
+func int Patch_AE_DIA_MILTEN_RITUALARMOR2_Condition()
+{
+    if (Npc_KnowsInfo(other, Patch_AE_DIA_MILTEN_PLATEARMOR))
+    && (Npc_HasItems(other, ItSc_InstantFireball) >= 1)
+    && (Npc_HasItems(other, ItSc_PalDestroyEvil) >= 1)
+    && (Npc_HasItems(other, ItMi_Rockcrystal) >= 2)
+    && (Npc_HasItems(other, ITAR_PAL_FNH_ARMOREXPANSION) >= 1)
+    {
+        return TRUE;
+    };
+};
+func void Patch_AE_DIA_MILTEN_RITUALARMOR2_Info()
+{
+    AI_Output(other, self, PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01);
+    B_GiveInvItems(other, self, ITAR_PAL_FNH_ARMOREXPANSION, 1);
+    B_GiveInvItems(other, self, ItSc_InstantFireball, 1);
+    B_GiveInvItems(other, self, ItSc_PalDestroyEvil, 1);
+    B_GiveInvItems(other, self, ItMi_Rockcrystal, 2);
+    AI_Output(self, other, PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02);
+    B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, Patch_AE_DIA_MILTEN_RITUALARMOR_entry);
+};
+
+instance Patch_AE_DIA_MILTEN_LORDRMOR2 (C_INFO)
+{
+    npc          =  PC_Mage_NW;
+    nr           =  8;
+    condition    =  Patch_AE_DIA_MILTEN_LORDRMOR2_Condition;
+    information  =  Patch_AE_DIA_MILTEN_LORDRMOR2_Info;
+    permanent    =  TRUE;
+    description  =  Patch_AE_DIA_MILTEN_LORDRMOR_desc;
+};
+func int Patch_AE_DIA_MILTEN_LORDRMOR2_Condition()
+{
+    if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_RITUALARMOR))
+    && (Patch_AE_Player_GotARCArmor == FALSE)
+    {
+        return TRUE;
+    };
+};
+func void Patch_AE_DIA_MILTEN_LORDRMOR2_Info()
+{
+    AI_Output(other, self, PATCH_AE_DIA_MILTEN_LORDRMOR_15_00);
+
+    if (Npc_HasItems(self, ItSc_InstantFireball) >= 1)
+    && (Npc_HasItems(self, ItSc_PalDestroyEvil) >= 1)
+    && (Npc_HasItems(self, ItMi_Rockcrystal) >= 2)
+    && (Npc_HasItems(self, ITAR_PAL_FNH_ARMOREXPANSION) >= 1)
+    {
+        if (Patch_AE_MILTEN_LORDRMOR_MakeArmor == FALSE)
+        {
+            Patch_AE_MILTEN_BIGMAGIC_DAY = (Wld_GetDay() + 1);
+            Patch_AE_MILTEN_LORDRMOR_MakeArmor = TRUE;
+        };
+
+        if (Patch_AE_MILTEN_LORDRMOR_MakeArmor == TRUE)
+        && (Patch_AE_MILTEN_BIGMAGIC_DAY > Wld_GetDay())
+        {
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_01);
+        }
+        else
+        {
+            CreateInvItems (self, ItAr_PAL_A_ARMOREXPANSION, 1);
+
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_02);
+            B_GiveInvItems (self, other, ItAr_PAL_ANH_ARMOREXPANSION, 1);
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_03);
+            AI_Output(other, self, PATCH_AE_DIA_MILTEN_LORDRMOR_15_04);
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_05);
+            Patch_AE_Player_GotARCArmor = TRUE;
+            Log_SetTopicStatus(Patch_AE_TOPIC_MARTIN_ARMOR, LOG_SUCCESS);
+            B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, Patch_AE_DIA_MILTEN_LORDRMOR_entry);
+        };
+    }
+    else
+    {
+        AI_Output(self, other, PATCH_AE_DIA_WOLFEE_ARMORREADY_08_06);
+    };
+};
+
+//FFH
+
+instance Patch_AE_DIA_MILTEN_RITUALARMOR3 (C_INFO)
+{
+    npc          =  PC_Mage_NW;
+    nr           =  8;
+    condition    =  Patch_AE_DIA_MILTEN_RITUALARMOR3_Condition;
+    information  =  Patch_AE_DIA_MILTEN_RITUALARMOR3_Info;
+    permanent    =  TRUE;
+    description  =  Patch_AE_DIA_MILTEN_RITUALARMOR_desc;
+};
+func int Patch_AE_DIA_MILTEN_RITUALARMOR3_Condition()
+{
+    if (Npc_KnowsInfo(other, Patch_AE_DIA_MILTEN_PLATEARMOR))
+    && (Npc_HasItems(other, ItSc_InstantFireball) >= 1)
+    && (Npc_HasItems(other, ItSc_PalDestroyEvil) >= 1)
+    && (Npc_HasItems(other, ItMi_Rockcrystal) >= 2)
+    && (Npc_HasItems(other, ITAR_PAL_FFH_ARMOREXPANSION) >= 1)
+    {
+        return TRUE;
+    };
+};
+func void Patch_AE_DIA_MILTEN_RITUALARMOR3_Info()
+{
+    AI_Output(other, self, PATCH_AE_DIA_MILTEN_RITUALARMOR_15_01);
+    B_GiveInvItems(other, self, ITAR_PAL_FFH_ARMOREXPANSION, 1);
+    B_GiveInvItems(other, self, ItSc_InstantFireball, 1);
+    B_GiveInvItems(other, self, ItSc_PalDestroyEvil, 1);
+    B_GiveInvItems(other, self, ItMi_Rockcrystal, 2);
+    AI_Output(self, other, PATCH_AE_DIA_MILTEN_RITUALARMOR_13_02);
+    B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, Patch_AE_DIA_MILTEN_RITUALARMOR_entry);
+};
+
+instance Patch_AE_DIA_MILTEN_LORDRMOR3 (C_INFO)
+{
+    npc          =  PC_Mage_NW;
+    nr           =  8;
+    condition    =  Patch_AE_DIA_MILTEN_LORDRMOR3_Condition;
+    information  =  Patch_AE_DIA_MILTEN_LORDRMOR3_Info;
+    permanent    =  TRUE;
+    description  =  Patch_AE_DIA_MILTEN_LORDRMOR_desc;
+};
+func int Patch_AE_DIA_MILTEN_LORDRMOR3_Condition()
+{
+    if (Npc_KnowsInfo (other,Patch_AE_DIA_MILTEN_RITUALARMOR))
+    && (Patch_AE_Player_GotARCArmor == FALSE)
+    {
+        return TRUE;
+    };
+};
+func void Patch_AE_DIA_MILTEN_LORDRMOR3_Info()
+{
+    AI_Output(other, self, PATCH_AE_DIA_MILTEN_LORDRMOR_15_00);
+
+    if (Npc_HasItems(self, ItSc_InstantFireball) >= 1)
+    && (Npc_HasItems(self, ItSc_PalDestroyEvil) >= 1)
+    && (Npc_HasItems(self, ItMi_Rockcrystal) >= 2)
+    && (Npc_HasItems(self, ITAR_PAL_FFH_ARMOREXPANSION) >= 1)
+    {
+        if (Patch_AE_MILTEN_LORDRMOR_MakeArmor == FALSE)
+        {
+            Patch_AE_MILTEN_BIGMAGIC_DAY = (Wld_GetDay() + 1);
+            Patch_AE_MILTEN_LORDRMOR_MakeArmor = TRUE;
+        };
+
+        if (Patch_AE_MILTEN_LORDRMOR_MakeArmor == TRUE)
+        && (Patch_AE_MILTEN_BIGMAGIC_DAY > Wld_GetDay())
+        {
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_01);
+        }
+        else
+        {
+            CreateInvItems (self, ItAr_PAL_A_ARMOREXPANSION, 1);
+
+            AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_02);
+            B_GiveInvItems (self, other, ItAr_PAL_AFH_ARMOREXPANSION, 1);
             AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_03);
             AI_Output(other, self, PATCH_AE_DIA_MILTEN_LORDRMOR_15_04);
             AI_Output(self, other, PATCH_AE_DIA_MILTEN_LORDRMOR_08_05);
