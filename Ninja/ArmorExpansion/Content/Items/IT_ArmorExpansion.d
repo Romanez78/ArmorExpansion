@@ -1989,10 +1989,10 @@ INSTANCE ITAR_ARX_HUNTERM_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	50;
-	protection [PROT_BLUNT] = 	50;
-	protection [PROT_POINT] = 	50;
-	protection [PROT_FIRE] 	= 	10;
+	protection [PROT_EDGE]	=	40;
+	protection [PROT_BLUNT] = 	40;
+	protection [PROT_POINT] = 	40;
+	protection [PROT_FIRE] 	= 	0;
 	protection [PROT_MAGIC] = 	0;
 	
 	value 					=	1000;
@@ -2033,11 +2033,11 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	75;
-	protection [PROT_BLUNT] = 	75;
-	protection [PROT_POINT] = 	75;
-	protection [PROT_FIRE] 	= 	15;
-	protection [PROT_MAGIC] = 	10;
+	protection [PROT_EDGE]	=	55;
+	protection [PROT_BLUNT] = 	55;
+	protection [PROT_POINT] = 	55;
+	protection [PROT_FIRE] 	= 	5;
+	protection [PROT_MAGIC] = 	0;
 	
 	value 					=	2500;
 
