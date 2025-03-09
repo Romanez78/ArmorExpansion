@@ -60,7 +60,7 @@ instance Patch_AE_DIA_Gorax_KDFM_BUY (C_INFO)
     permanent    =  TRUE;
     description  =  Patch_AE_DIA_Gorax_KDFM_BUY_desc;
 };
-func int Patch_AE_DIA_Martin_ARKPALA_BUY_Condition()
+func int Patch_AE_DIA_Gorax_KDFM_BUY_Condition()
 {
     if (Patch_AE_GORAX_KDFM_BOUGHT == FALSE)
     && (Npc_KnowsInfo (other, Patch_AE_DIA_Gorax_KDFM_ASK))
