@@ -825,9 +825,9 @@ func void Patch_AE_LocalizeEnglish() {
     DIA_Wolf_BuyArmorMP_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_EN";
     DIA_Wolf_ArmorBow_AEXPANSION_15_00 = "DIA_Wolf_ArmorBow_AEXPANSION_15_00_EN";
     DIA_Wolf_ArmorBow_AEXPANSION_04_01 = "DIA_Wolf_ArmorBow_AEXPANSION_04_01_EN";
-    DIA_Wolf_BuyArmorBow_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_EN";
-    DIA_Wolf_BuyArmorBow_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_EN";
-    DIA_Wolf_BuyArmorBow_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_EN";
-    DIA_Wolf_AboutCrawler_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_EN";
-    DIA_Wolf_AboutCrawler_AEXPANSION_08_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_EN";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_EN";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_EN";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorBow_AEXPANSION_04_02_EN";
+    DIA_Wolf_AboutCrawler_AEXPANSION_15_00 = "DIA_Wolf_AboutCrawler_AEXPANSION_15_00_EN";
+    DIA_Wolf_AboutCrawler_AEXPANSION_08_01 = "DIA_Wolf_AboutCrawler_AEXPANSION_08_01_EN";
 };
