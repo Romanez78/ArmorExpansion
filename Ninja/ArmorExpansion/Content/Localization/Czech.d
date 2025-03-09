@@ -317,6 +317,28 @@ const string PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_06 = "PATCH_AE_DIA_GAROND
 const string PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_CS";
 
 // ------
+// Gorax
+// ------
+
+const string Patch_AE_DIA_Gorax_KDFM_ASK_desc = "Nemohl bych dostat lepší roucho?";
+// AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_CS"); //Nemohl bych dostat lepší roucho?
+// AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_CS"); //Ano mohl, za poskytnutí malého daru klášteru ti dám lepší roucho.
+// AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_05_CS"); //Jak velkého daru?
+// AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_CS"); //1500 zlatých by mělo stačit.
+
+const string Patch_AE_DIA_Gorax_KDFM_BUY_desc = "Koupit střední roucho ohně (Ochrana: 55/55/30/30, Cena: 1500 zlatých)";
+// AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_CS"); //Přináším dar klášteru.
+// AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_CS"); //Skvelé, tady je tvé roucho.
+
+// Localized OU (do not change)
+const string PATCH_AE_DIA_Gorax_KDFM_ASK_3_03 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_CS";
+const string PATCH_AE_DIA_Gorax_KDFM_ASK_3_04 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_CS";
+const string PATCH_AE_DIA_Gorax_KDFM_ASK_3_05 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_05_CS";
+const string PATCH_AE_DIA_Gorax_KDFM_ASK_3_06 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_CS";
+const string PATCH_AE_DIA_Gorax_KDFM_BUY_4_1 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_CS";
+const string PATCH_AE_DIA_Gorax_KDFM_BUY_4_2 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_CS";
+
+// ------
 // Greg
 // ------
 
