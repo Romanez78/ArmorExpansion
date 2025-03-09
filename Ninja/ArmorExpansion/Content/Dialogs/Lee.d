@@ -4,7 +4,7 @@ instance Patch_AE_DIA_LEE_SLD_SCOUTArmor (C_INFO)
     nr           =  888;
     condition    =  Patch_AE_DIA_LEE_SLD_SCOUTArmor_Condition;
     information  =  Patch_AE_DIA_LEE_SLD_SCOUTArmor_Info;
-    permanent    =  TRUE;
+    permanent    =  FALSE;
     description  =  Patch_AE_DIA_LEE_SLD_SCOUTArmor_desc;
 };
 func int Patch_AE_DIA_LEE_SLD_SCOUTArmor_Condition()
