@@ -75,7 +75,7 @@ func void Patch_AE_DIA_Gorax_KDFM_BUY_Info()
     if (B_GiveInvItems(other, self, ItMi_Gold, 1500))
     {
         AI_Output(self, other, PATCH_AE_DIA_Gorax_KDFM_BUY_4_2);
-        Patch_AE_GORAX_KDFM_BOUGHT = B_GiveInvItems(self, other, ItAr_KDF_M_ARMOREXPANSION, 1);
+        Patch_AE_GORAX_KDFM_BOUGHT = B_GiveInvItems(self, other, ItAr_KDF_M_AMEXPANSION, 1);
     }
     else
     {
