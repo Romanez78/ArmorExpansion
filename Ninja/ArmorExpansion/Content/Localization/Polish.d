@@ -801,7 +801,12 @@ func void Patch_AE_LocalizePolish() {
     DIA_Wolf_BringPlates_Description_AEXPANSION = "Mam dla ciebie płytki pełzaczy.";
 
     Patch_AE_DIA_WOLF_CRAWLERARMOR_Description = "Znakomicie, kiedy zbroja będzie gotowa?";
-	    
+
+    Patch_AE_TOPIC_WOLF_CRAWLERARMOR = "Myśliwska zbroja z płytek pełzaczy";
+    Patch_AE_TOPIC_WOLF_CRAWLERARMOR_NOTIF_entry = "Wilk może zrobić dla mnie mysliwską zbroję z 7 pancerzy pełzacza.";
+    Patch_AE_DIA_WOLF_CRAWLERARMOR_Bring_entry = "Przyniosłem płyty pełzacza.";
+    Patch_AE_DIA_WOLF_GOTARMOR_entry = "Wilk dał mi zbroję.";    
+    
     // Localized OU (do not change)
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_PL";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_PL";
@@ -820,9 +825,9 @@ func void Patch_AE_LocalizePolish() {
     DIA_Wolf_BuyArmorMP_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_PL";
     DIA_Wolf_ArmorBow_AEXPANSION_15_00 = "DIA_Wolf_ArmorBow_AEXPANSION_15_00_PL";
     DIA_Wolf_ArmorBow_AEXPANSION_04_01 = "DIA_Wolf_ArmorBow_AEXPANSION_04_01_PL";
-    DIA_Wolf_BuyArmorBow_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_PL";
-    DIA_Wolf_BuyArmorBow_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_PL";
-    DIA_Wolf_BuyArmorBow_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_PL";
-    DIA_Wolf_AboutCrawler_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_PL";
-    DIA_Wolf_AboutCrawler_AEXPANSION_08_01 = "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_PL";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_15_00 = "DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_PL";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_01 = "DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_PL";
+    DIA_Wolf_BuyArmorBow_AEXPANSION_04_02 = "DIA_Wolf_BuyArmorBow_AEXPANSION_04_02_PL";
+    DIA_Wolf_AboutCrawler_AEXPANSION_15_00 = "DIA_Wolf_AboutCrawler_AEXPANSION_15_00_PL";
+    DIA_Wolf_AboutCrawler_AEXPANSION_08_01 = "DIA_Wolf_AboutCrawler_AEXPANSION_08_01_PL";
 };
