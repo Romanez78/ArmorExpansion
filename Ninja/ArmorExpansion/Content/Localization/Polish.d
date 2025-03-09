@@ -307,6 +307,28 @@ func void Patch_AE_LocalizePolish() {
     PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01 = "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_15_01_PL";
 
     // ------
+    // Gorax
+    // ------
+    
+    Patch_AE_DIA_Gorax_KDFM_ASK_desc = "Can i get a better robe?";
+    // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_PL"); //Can i get a better robe?
+    // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_PL"); //Yes, i will reward you with a beter robe for a small donation to the monastery.
+    // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_05_PL"); //How big of a donation?
+    // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_PL"); //1500 gold should be enough.
+    
+    Patch_AE_DIA_Gorax_KDFM_BUY_desc = "Buy medium fire robe (Protection: 55/55/30/30, Price: 1500 gold)";
+    // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_PL"); //I bring a donation to the monastery.
+    // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_PL"); //Great, here is your robe.
+    
+    // Localized OU (do not change)
+    PATCH_AE_DIA_Gorax_KDFM_ASK_3_03 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_PL";
+    PATCH_AE_DIA_Gorax_KDFM_ASK_3_04 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_PL";
+    PATCH_AE_DIA_Gorax_KDFM_ASK_3_05 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_05_PL";
+    PATCH_AE_DIA_Gorax_KDFM_ASK_3_06 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_PL";
+    PATCH_AE_DIA_Gorax_KDFM_BUY_4_1 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_PL";
+    PATCH_AE_DIA_Gorax_KDFM_BUY_4_2 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_PL";
+    
+    // ------
     // Greg
     // ------
 
