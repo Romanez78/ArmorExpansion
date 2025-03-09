@@ -1600,7 +1600,7 @@ INSTANCE ITAR_PIR_H_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"ItAr_PIR_H_ADDON.3ds";
-	visual_change 			=	"Armor_PIR_H_ADDON.asc";
+	visual_change 			=	"ARMOR_PIR_H_NH_AEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
