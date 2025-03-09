@@ -34,7 +34,8 @@ instance Patch_AE_DIA_Gorax_KDFM_ASK (C_INFO)
 func int Patch_AE_DIA_Gorax_KDFM_ASK_Condition()
 {
     if (other.guild == GIL_KDF)
-	&& (kapitel == 2) || (kapitel == 3)
+    && (kapitel >= 2)
+    && (kapitel <= 3)
     {
         return TRUE;
     };
