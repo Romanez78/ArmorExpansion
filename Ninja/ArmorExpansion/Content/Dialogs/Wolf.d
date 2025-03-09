@@ -9,7 +9,7 @@ instance Patch_AE_DIA_WOLF_SLD_SCOUTArmor(C_INFO)
 };
 func int Patch_AE_DIA_WOLF_SLD_SCOUTArmor_Condition()
 {
-    if (Npc_KnowsInfo(other, Patch_AE_DIA_LEE_SLD_SCOUTArmor))
+    if (Npc_Hasitems(other, ItAr_SLD_L) > 0)
     {
         return TRUE;
     };
