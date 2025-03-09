@@ -802,6 +802,11 @@ func void Patch_AE_LocalizeEnglish() {
 
     Patch_AE_DIA_WOLF_CRAWLERARMOR_Description = "Great, when will the armor be ready?";
     
+    Patch_AE_TOPIC_WOLF_CRAWLERARMOR = "Hunting armor from crawler plates";
+    Patch_AE_TOPIC_WOLF_CRAWLERARMOR_NOTIF_entry = "Wolf can make me a hunting armor out of 7 crawler plates.";
+    Patch_AE_DIA_WOLF_CRAWLERARMOR_Bring_entry = "I got the necessary crawler plates.";
+    Patch_AE_DIA_WOLF_GOTARMOR_entry = "Wolf gave me the armor.";
+    
     // Localized OU (do not change)
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_EN";
