@@ -811,6 +811,11 @@ const string DIA_Wolf_BringPlates_Description_AEXPANSION = "Sehnal jsem ty červ
 
 const string Patch_AE_DIA_WOLF_CRAWLERARMOR_Description = "Prima, a kdy ta zbroj bude?";
 
+const string Patch_AE_TOPIC_WOLF_CRAWLERARMOR = "Lovecká zbroj z krunýřů důlního červa";
+const string Patch_AE_TOPIC_WOLF_CRAWLERARMOR_NOTIF_entry = "Vlk mi ze 7 červích krunýřů vyková loveckou zbroj.";
+const string Patch_AE_DIA_WOLF_CRAWLERARMOR_Bring_entry = "Sehnal jsem červí krunýře na brnění.";
+const string Patch_AE_DIA_WOLF_GOTARMOR_entry = "Vlk mi vykoval zbroj.";
+
 // Localized OU (do not change)
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_CS";
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_CS";
