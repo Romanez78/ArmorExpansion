@@ -25,6 +25,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Mil_330_Miliz",          ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_332_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_333_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("Mil_335_Rumbold",        ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L    
     Patch_AE_NpcUpdateArmor("Mil_337_Mika",           ITAR_MIL_Med2_ArmorExpansion);  // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_350_Addon_Martin",   ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Pal_204_Torwache",       ITAR_CRUSADER_ArmorExpansion);  // Originally ITAR_PAL_M
@@ -66,9 +67,9 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("SLD_811_Wolf_DI",        ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_M
     Patch_AE_NpcUpdateArmor("SLD_815_Soeldner",       ITAR_SLD_SCOUT_ArmorExpansion); // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_816_Fester",         ITAR_SLD_LR_ArmorExpansion);    // Originally ITAR_SLD_L
-    Patch_AE_NpcUpdateArmor("SLD_817_Soeldner",       ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_L
+    Patch_AE_NpcUpdateArmor("SLD_817_Soeldner",       ITAR_SLD_MP_ArmorExpansion);    // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_818_Soeldner",       ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_M
-    Patch_AE_NpcUpdateArmor("SLD_821_Soeldner",       ITAR_SLD_MP_ArmorExpansion);    // Originally ITAR_SLD_M    
+    Patch_AE_NpcUpdateArmor("SLD_821_Soeldner",       ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M    
     Patch_AE_NpcUpdateArmor("SLD_822_Raoul",          ITAR_SLD_LR_ArmorExpansion);    // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_825_Soeldner",       ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M 
     Patch_AE_NpcUpdateArmor("DJG_709_Rethon",         ITAR_DJG_CM_ArmorExpansion);    // Originally ITAR_DJG_M
