@@ -62,8 +62,8 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("KDF_510_Hyglas",         ItAr_KDF_M_AMEXPANSION);        // Originally ITAR_KDF_L
     Patch_AE_NpcUpdateArmor("SLD_802_Buster",         ITAR_SLD_LR_ArmorExpansion);    // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_808_Jarvis",         ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M
-    Patch_AE_NpcUpdateArmor("SLD_811_Wolf",           ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M
-    Patch_AE_NpcUpdateArmor("SLD_811_Wolf_DI",        ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M
+    Patch_AE_NpcUpdateArmor("SLD_811_Wolf",           ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_M
+    Patch_AE_NpcUpdateArmor("SLD_811_Wolf_DI",        ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_M
     Patch_AE_NpcUpdateArmor("SLD_815_Soeldner",       ITAR_SLD_SCOUT_ArmorExpansion); // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_816_Fester",         ITAR_SLD_LR_ArmorExpansion);    // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_817_Soeldner",       ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_L
