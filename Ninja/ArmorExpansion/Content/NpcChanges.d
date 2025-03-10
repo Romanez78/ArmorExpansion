@@ -70,6 +70,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("SLD_818_Soeldner",       ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_M
     Patch_AE_NpcUpdateArmor("SLD_821_Soeldner",       ITAR_SLD_MP_ArmorExpansion);    // Originally ITAR_SLD_M    
     Patch_AE_NpcUpdateArmor("SLD_822_Raoul",          ITAR_SLD_LR_ArmorExpansion);    // Originally ITAR_SLD_L
+    Patch_AE_NpcUpdateArmor("SLD_825_Soeldner",       ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M 
     Patch_AE_NpcUpdateArmor("DJG_709_Rethon",         ITAR_DJG_CM_ArmorExpansion);    // Originally ITAR_DJG_M
     Patch_AE_NpcUpdateArmor("DJG_710_Kjorn",          ITAR_DJG_CL_ArmorExpansion);    // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("DJG_711_Godar",          ITAR_DJG_CM_ArmorExpansion);    // Originally ITAR_DJG_M
