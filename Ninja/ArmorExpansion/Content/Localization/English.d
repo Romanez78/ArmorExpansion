@@ -16,6 +16,7 @@ func void Patch_AE_LocalizeEnglish() {
     // Armor names
     ITAR_DJG_CrawlerP_ArmorExpansion__name = "Crawler Plate Hunting Armor";
     ITAR_MIL_H_ArmorExpansion__name = "Heavy Militia Armor";
+    ITAR_PAL_H_ArmorExpansion__name = "Paladin's Armor";
     ITAR_MILP_H_ArmorExpansion__name = "Heavy Militia Crossbowman Armor";
     ITAR_GAMBESON_ArmorExpansion__name = "Hunting Gambeson";
     ITAR_PAL_A_ArmorExpansion__name = "Enriched Paladin Armor";
@@ -766,6 +767,13 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_nh_crusader_desc = "Return Helmet to Crusader Armor";
     Patch_AE_PC_PAL_MH_desc = "Remove Helmet from heavy knight armor";
     Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Return Helmet to heavy knight armor";
+    Patch_AE_PC_ITAR_PAL_HNH_desc = "Remove Helm from Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_HFH_desc = "Lower the visor of the Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Lower the visor of the Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Remove Helm from Paladin Armor";
+    Patch_AE_PC_Itar_pal_h_FH_desc = "Put up the visor of the Paladin Armor";
+    Patch_AE_PC_Itar_pal_h_NH_desc = "Put up the visor of the Paladin Armor";
+    
     // ------
     // Ulthar
     // ------
