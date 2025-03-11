@@ -69,7 +69,14 @@ const int Patch_AE_INGREDIENTS_ITAR_CRUSADER__itar_pal_Crusader_NH = 1;
 
 const int Patch_AE_INGREDIENTS_ITAR_PAL_MH__ITAR_PAL_MH_FH = 1;
 const int Patch_AE_INGREDIENTS_ITAR_PAL_MH_FH__ITAR_PAL_MH = 1;
-	
+
+const int Patch_AE_INGREDIENTS_ITAR_PAL_HNH__itar_pal_h = 1;
+const int Patch_AE_INGREDIENTS_ITAR_PAL_HFH__itar_pal_h = 1;
+const int Patch_AE_INGREDIENTS_ITAR_PAL_H__itar_pal_hnh = 1;
+const int Patch_AE_INGREDIENTS_ITAR_PAL_H__itar_pal_hfh = 1;
+const int Patch_AE_INGREDIENTS_ITAR_PAL_HNH__itar_pal_hfh = 1;
+const int Patch_AE_INGREDIENTS_ITAR_PAL_HFH__itar_pal_hnh = 1;
+
 /*
  *  [FUNCTIONS & INSTANCES]
  */
@@ -1846,6 +1853,427 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_Info()
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_ArmorExpansion.name);
+    // If hasn't
+    } else
+    {
+        // Restore a raw steel
+        CreateInvItem(hero, ItMiSwordrawhot);
+    };
+
+
+    // Quit a dialogue window
+	B_ENDPRODUCTIONDIALOG();
+};
+
+INSTANCE Patch_AE_PC_ITAR_PAL_HNH (C_INFO)
+{
+	npc				= PC_Hero;
+	condition		= Patch_AE_PC_ITAR_PAL_HNH_Condition;
+	information		= Patch_AE_PC_ITAR_PAL_HNH_Info;
+	permanent		= true;
+    description     = Patch_AE_PC_ITAR_PAL_HNH_desc;
+};
+FUNC INT Patch_AE_PC_ITAR_PAL_HNH_Condition()
+{
+	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+    {
+        // If has armor
+        if (0 < Npc_HasItems(hero, ITAR_PAL_H))
+        {
+            return true;
+        };
+    };
+};
+FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_Info()
+{
+	var int has_all_ingredients; has_all_ingredients = true;
+    var int amount_needed;
+    var int amount_current;
+    var int amount_missing;
+
+    // Check ingredients
+
+    // [Itar_pal_h]
+    amount_needed = Patch_AE_INGREDIENTS_ITAR_PAL_HNH__Itar_pal_h;
+    amount_current = Npc_HasItems(hero, ITAR_PAL_H); // IMPORTANT: An one of a raw steel is in a hand
+
+    if (amount_needed > amount_current)
+    {
+        // Count missing ingredients
+        amount_missing = amount_needed - amount_current;
+
+        // Print message
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+
+        // Save an information, that player hasn't all ingredients
+        has_all_ingredients = false;
+    };
+
+    // If player has all ingredients
+    if (true == has_all_ingredients)
+    {
+        // Remove ingredients
+
+        // [ItMiSwordrawhot]
+        // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
+        Npc_RemoveInvItems(hero, ITAR_PAL_H, 1);
+        // Create an armor
+        CreateInvItem(hero, ITAR_PAL_HNH_ArmorExpansion);
+        CreateInvItem(hero, ItMiSwordrawhot);
+
+        // Print an information about success
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
+    // If hasn't
+    } else
+    {
+        // Restore a raw steel
+        CreateInvItem(hero, ItMiSwordrawhot);
+    };
+
+
+    // Quit a dialogue window
+	B_ENDPRODUCTIONDIALOG();
+};
+INSTANCE Patch_AE_PC_ITAR_PAL_HFH (C_INFO)
+{
+	npc				= PC_Hero;
+	condition		= Patch_AE_PC_ITAR_PAL_HFH_Condition;
+	information		= Patch_AE_PC_ITAR_PAL_HFH_Info;
+	permanent		= true;
+    description     = Patch_AE_PC_ITAR_PAL_HFH_desc;
+};
+FUNC INT Patch_AE_PC_ITAR_PAL_HFH_Condition()
+{
+	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+    {
+        // If has armor
+        if (0 < Npc_HasItems(hero, ITAR_PAL_H))
+        {
+            return true;
+        };
+    };
+};
+FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_Info()
+{
+	var int has_all_ingredients; has_all_ingredients = true;
+    var int amount_needed;
+    var int amount_current;
+    var int amount_missing;
+
+    // Check ingredients
+
+    // [Itar_pal_h]
+    amount_needed = Patch_AE_INGREDIENTS_ITAR_PAL_HFH__Itar_pal_h;
+    amount_current = Npc_HasItems(hero, ITAR_PAL_H); // IMPORTANT: An one of a raw steel is in a hand
+
+    if (amount_needed > amount_current)
+    {
+        // Count missing ingredients
+        amount_missing = amount_needed - amount_current;
+
+        // Print message
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+
+        // Save an information, that player hasn't all ingredients
+        has_all_ingredients = false;
+    };
+
+    // If player has all ingredients
+    if (true == has_all_ingredients)
+    {
+        // Remove ingredients
+
+        // [ItMiSwordrawhot]
+        // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
+        Npc_RemoveInvItems(hero, ITAR_PAL_H, 1);
+        // Create an armor
+        CreateInvItem(hero, ITAR_PAL_HFH_ArmorExpansion);
+        CreateInvItem(hero, ItMiSwordrawhot);
+
+        // Print an information about success
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
+    // If hasn't
+    } else
+    {
+        // Restore a raw steel
+        CreateInvItem(hero, ItMiSwordrawhot);
+    };
+
+
+    // Quit a dialogue window
+	B_ENDPRODUCTIONDIALOG();
+};
+INSTANCE Patch_AE_PC_ITAR_PAL_HFH_NH (C_INFO)
+{
+	npc				= PC_Hero;
+	condition		= Patch_AE_PC_ITAR_PAL_HFH_NH_Condition;
+	information		= Patch_AE_PC_ITAR_PAL_HFH_NH_Info;
+	permanent		= true;
+    description     = Patch_AE_PC_ITAR_PAL_HFH_NH_desc;
+};
+FUNC INT Patch_AE_PC_ITAR_PAL_HFH_NH_Condition()
+{
+	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+    {
+        // If has armor
+        if (0 < Npc_HasItems(hero, ITAR_PAL_HNH_ArmorExpansion))
+        {
+            return true;
+        };
+    };
+};
+FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_NH_Info()
+{
+	var int has_all_ingredients; has_all_ingredients = true;
+    var int amount_needed;
+    var int amount_current;
+    var int amount_missing;
+
+    // Check ingredients
+
+    // [Itar_pal_h]
+    amount_needed = Patch_AE_INGREDIENTS_ITAR_PAL_HFH__itar_pal_HNH ;
+    amount_current = Npc_HasItems(hero, ITAR_PAL_HNH_ArmorExpansion); // IMPORTANT: An one of a raw steel is in a hand
+
+    if (amount_needed > amount_current)
+    {
+        // Count missing ingredients
+        amount_missing = amount_needed - amount_current;
+
+        // Print message
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_HNH_ArmorExpansion.name, amount_missing);
+
+        // Save an information, that player hasn't all ingredients
+        has_all_ingredients = false;
+    };
+
+    // If player has all ingredients
+    if (true == has_all_ingredients)
+    {
+        // Remove ingredients
+
+        // [ItMiSwordrawhot]
+        // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
+        Npc_RemoveInvItems(hero, ITAR_PAL_HNH_ArmorExpansion, 1);
+        // Create an armor
+        CreateInvItem(hero, ITAR_PAL_HFH_ArmorExpansion);
+        CreateInvItem(hero, ItMiSwordrawhot);
+
+		// Print an information about success
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
+    // If hasn't
+    } else
+    {
+        // Restore a raw steel
+        CreateInvItem(hero, ItMiSwordrawhot);
+    };
+
+
+    // Quit a dialogue window
+	B_ENDPRODUCTIONDIALOG();
+};
+INSTANCE Patch_AE_PC_ITAR_PAL_HNH_FH (C_INFO)
+{
+	npc				= PC_Hero;
+	condition		= Patch_AE_PC_ITAR_PAL_HNH_FH_Condition;
+	information		= Patch_AE_PC_ITAR_PAL_HNH_FH_Info;
+	permanent		= true;
+    description     = Patch_AE_PC_ITAR_PAL_HNH_FH_desc;
+};
+FUNC INT Patch_AE_PC_ITAR_PAL_HNH_FH_Condition()
+{
+	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+    {
+        // If has armor
+        if (0 < Npc_HasItems(hero, ITAR_PAL_HFH_ArmorExpansion))
+        {
+            return true;
+        };
+    };
+};
+FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_FH_Info()
+{
+	var int has_all_ingredients; has_all_ingredients = true;
+    var int amount_needed;
+    var int amount_current;
+    var int amount_missing;
+
+    // Check ingredients
+
+    // [Itar_pal_h]
+    amount_needed = Patch_AE_INGREDIENTS_ITAR_PAL_HNH__itar_pal_HFH ;
+    amount_current = Npc_HasItems(hero, ITAR_PAL_HFH_ArmorExpansion); // IMPORTANT: An one of a raw steel is in a hand
+
+    if (amount_needed > amount_current)
+    {
+        // Count missing ingredients
+        amount_missing = amount_needed - amount_current;
+
+        // Print message
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_HFH_ArmorExpansion.name, amount_missing);
+
+        // Save an information, that player hasn't all ingredients
+        has_all_ingredients = false;
+    };
+
+    // If player has all ingredients
+    if (true == has_all_ingredients)
+    {
+        // Remove ingredients
+
+        // [ItMiSwordrawhot]
+        // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
+        Npc_RemoveInvItems(hero, ITAR_PAL_HFH_ArmorExpansion, 1);
+        // Create an armor
+        CreateInvItem(hero, ITAR_PAL_HNH_ArmorExpansion);
+        CreateInvItem(hero, ItMiSwordrawhot);
+
+		// Print an information about success
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
+    // If hasn't
+    } else
+    {
+        // Restore a raw steel
+        CreateInvItem(hero, ItMiSwordrawhot);
+    };
+
+
+    // Quit a dialogue window
+	B_ENDPRODUCTIONDIALOG();
+};
+INSTANCE Patch_AE_PC_Itar_pal_h_FH (C_INFO)
+{
+	npc				= PC_Hero;
+	condition		= Patch_AE_PC_Itar_pal_h_FH_Condition;
+	information		= Patch_AE_PC_Itar_pal_h_FH_Info;
+	permanent		= true;
+    description     = Patch_AE_PC_Itar_pal_h_FH_desc;
+};
+FUNC INT Patch_AE_PC_Itar_pal_h_FH_Condition()
+{
+	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+    {
+        // If has armor
+        if (0 < Npc_HasItems(hero, ITAR_PAL_HFH_ArmorExpansion))
+        {
+            return true;
+        };
+    };
+};
+FUNC VOID Patch_AE_PC_Itar_pal_h_FH_Info()
+{
+	var int has_all_ingredients; has_all_ingredients = true;
+    var int amount_needed;
+    var int amount_current;
+    var int amount_missing;
+
+    // Check ingredients
+
+    // [Itar_pal_h]
+    amount_needed = Patch_AE_INGREDIENTS_Itar_pal_h__itar_pal_HFH ;
+    amount_current = Npc_HasItems(hero, ITAR_PAL_HFH_ArmorExpansion); // IMPORTANT: An one of a raw steel is in a hand
+
+    if (amount_needed > amount_current)
+    {
+        // Count missing ingredients
+        amount_missing = amount_needed - amount_current;
+
+        // Print message
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+
+        // Save an information, that player hasn't all ingredients
+        has_all_ingredients = false;
+    };
+
+    // If player has all ingredients
+    if (true == has_all_ingredients)
+    {
+        // Remove ingredients
+
+        // [ItMiSwordrawhot]
+        // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
+        Npc_RemoveInvItems(hero, ITAR_PAL_HFH_ArmorExpansion, 1);
+        // Create an armor
+        CreateInvItem(hero, ITAR_PAL_H);
+        CreateInvItem(hero, ItMiSwordrawhot);
+
+		// Print an information about success
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
+    // If hasn't
+    } else
+    {
+        // Restore a raw steel
+        CreateInvItem(hero, ItMiSwordrawhot);
+    };
+
+
+    // Quit a dialogue window
+	B_ENDPRODUCTIONDIALOG();
+};
+INSTANCE Patch_AE_PC_Itar_pal_h_NH (C_INFO)
+{
+	npc				= PC_Hero;
+	condition		= Patch_AE_PC_Itar_pal_h_NH_Condition;
+	information		= Patch_AE_PC_Itar_pal_h_NH_Info;
+	permanent		= true;
+    description     = Patch_AE_PC_Itar_pal_h_NH_desc;
+};
+FUNC INT Patch_AE_PC_Itar_pal_h_NH_Condition()
+{
+	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+    {
+        // If has armor
+        if (0 < Npc_HasItems(hero, ITAR_PAL_HNH_ArmorExpansion))
+        {
+            return true;
+        };
+    };
+};
+FUNC VOID Patch_AE_PC_Itar_pal_h_NH_Info()
+{
+	var int has_all_ingredients; has_all_ingredients = true;
+    var int amount_needed;
+    var int amount_current;
+    var int amount_missing;
+
+    // Check ingredients
+
+    // [Itar_pal_h]
+    amount_needed = Patch_AE_INGREDIENTS_Itar_pal_h__itar_pal_HNH ;
+    amount_current = Npc_HasItems(hero, ITAR_PAL_HNH_ArmorExpansion); // IMPORTANT: An one of a raw steel is in a hand
+
+    if (amount_needed > amount_current)
+    {
+        // Count missing ingredients
+        amount_missing = amount_needed - amount_current;
+
+        // Print message
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+
+        // Save an information, that player hasn't all ingredients
+        has_all_ingredients = false;
+    };
+
+    // If player has all ingredients
+    if (true == has_all_ingredients)
+    {
+        // Remove ingredients
+
+        // [ItMiSwordrawhot]
+        // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
+        Npc_RemoveInvItems(hero, ITAR_PAL_HNH_ArmorExpansion, 1);
+        // Create an armor
+        CreateInvItem(hero, ITAR_PAL_H);
+        CreateInvItem(hero, ItMiSwordrawhot);
+
+		// Print an information about success
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
     // If hasn't
     } else
     {
