@@ -17,6 +17,7 @@ func void Patch_AE_LocalizeGerman() {
 
     // Armor names
     ITAR_DJG_CrawlerP_ArmorExpansion__name = "Crawler Platte Jagd Rüstung";    
+    ITAR_PAL_H_ArmorExpansion__name = "Paladinrüstung";    
     ITAR_MIL_H_ArmorExpansion__name = "Schwere Milizrüstung";
     ITAR_MILP_H_ArmorExpansion__name = "Schwere Armbrustschützen Milizrüstung";   
     ITAR_GAMBESON_ArmorExpansion__name = "Jäger Stoffrüstung";
@@ -753,7 +754,15 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_PC_ITAR_PAL_R_NH_desc = "Das Visier der Rostigen Paladinrüstung hochziehen";
     Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Den Helm der Kreuzritterrüstung entfernen";
     Patch_AE_PC_ITAR_nh_crusader_desc = "Einen Helm zur Kreuzritterrüstung hinzufügen";
-
+    Patch_AE_PC_PAL_MH_desc = "Den Helm der schwere ritterrüstung entfernen";
+    Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Einen Helm zur schwere rüstung hinzufügen";
+    Patch_AE_PC_ITAR_PAL_HNH_desc = "Den Helm der Paladinrüstung entfernen.";
+    Patch_AE_PC_ITAR_PAL_HFH_desc = "Das Visier der Paladinrüstung herunterziehen";
+    Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Das Visier der Paladinrüstung herunterziehen";
+    Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Den Helm der Paladinrüstung entfernen.";
+    Patch_AE_PC_Itar_pal_h_FH_desc = "Das Visier der Paladinrüstung hochziehen";
+    Patch_AE_PC_Itar_pal_h_NH_desc = "Das Visier der Paladinrüstung hochziehen";
+    
     // ------
     // Ulthar
     // ------
