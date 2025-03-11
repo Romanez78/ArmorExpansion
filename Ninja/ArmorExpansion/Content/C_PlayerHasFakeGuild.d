@@ -55,6 +55,8 @@ func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
 		||	 (Hlp_IsItem(itm, ITAR_PAL_CM_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_PAL_CH_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_NH_CRUSADER_ArmorExpansion) == TRUE)
+		||	 (Hlp_IsItem(itm, ITAR_PAL_HNH_ArmorExpansion) == TRUE)
+		||	 (Hlp_IsItem(itm, ITAR_PAL_HFH_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_CRUSADER_ArmorExpansion) == TRUE))
 		{
 			HasProperArmorFromPatch = true;
@@ -62,6 +64,7 @@ func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
 		else if (oth.guild == GIL_SLD)
 		&&	((Hlp_IsItem(itm, ITAR_SLD_SCOUT_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_BOW_ArmorExpansion) == TRUE)
+		||	 (Hlp_IsItem(itm, ITAR_DJG_CrawlerP_AEXPANSION) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_LR_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_R_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_MP_ArmorExpansion) == TRUE)
@@ -71,6 +74,7 @@ func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
 		}
 		else if (oth.guild == GIL_DJG)
 		&&	((Hlp_IsItem(itm, ITAR_SLD_SCOUT_ArmorExpansion) == TRUE)
+		||	 (Hlp_IsItem(itm, ITAR_DJG_CrawlerP_AEXPANSION) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_BOW_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_LR_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_MP_ArmorExpansion) == TRUE)
@@ -79,6 +83,11 @@ func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
 		||	 (Hlp_IsItem(itm, ITAR_DJG_CH_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_DJG_CM_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_SLD_LR_ArmorExpansion) == TRUE))
+		{
+			HasProperArmorFromPatch = true;
+		}
+		else if (oth.guild == GIL_KDF)
+		&&	((Hlp_IsItem(itm, ItAr_KDF_M_AMEXPANSION) == TRUE))
 		{
 			HasProperArmorFromPatch = true;
 		}
