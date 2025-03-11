@@ -15,6 +15,7 @@ func void Patch_AE_LocalizePolish() {
 
     // Armor names
     ITAR_DJG_CrawlerP_ArmorExpansion__name = "Myśliwska zbroja z płytek pełzaczy";
+    ITAR_PAL_H_ArmorExpansion__name = "Pancerz paladyna";
     ITAR_MIL_H_ArmorExpansion__name = "Ciężki pancerz straży";
     ITAR_MILP_H_ArmorExpansion__name = "Ciężki pancerz kusznika straży";
     ITAR_GAMBESON_ArmorExpansion__name = "Przeszywanica myśliwego";
@@ -765,6 +766,12 @@ func void Patch_AE_LocalizePolish() {
     Patch_AE_PC_ITAR_nh_crusader_desc = "Przywróć hełm do zbroi krzyżowca";
     Patch_AE_PC_PAL_MH_desc = "Usuń hełm z ciężkiej zbroi rycerskiej";
     Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Przywróć hełm do ciężkiej zbroi rycerskiej";
+    Patch_AE_PC_ITAR_PAL_HNH_desc = "Usuń hełm z pancerza paladyna";
+    Patch_AE_PC_ITAR_PAL_HFH_desc = "Opuść przyłbicę pancerza paladyna";
+    Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Opuść przyłbicę pancerza paladyna";
+    Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Usuń hełm z pancerza paladyna";
+    Patch_AE_PC_Itar_pal_h_FH_desc = "Podnieś przybłicę pancerza paladyna";
+    Patch_AE_PC_Itar_pal_h_NH_desc = "Podnieś przybłicę pancerza paladyna";
     
     // ------
     // Ulthar
