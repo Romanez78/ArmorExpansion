@@ -17,6 +17,7 @@ const string Patch_AE_Use_Plan_StewarkArmor__line8 = "Rozkaz vydal velitel měst
 // Armor names
 const string ITAR_DJG_CrawlerP_ArmorExpansion__name = "Lovecká zbroj z krunýře dulního červa";
 const string ITAR_MIL_H_ArmorExpansion__name = "Těžká Zbroj Domobrany";
+const string ITAR_PAL_H_ArmorExpansion__name = "Paladinská zbroj";
 const string ITAR_MILP_H_ArmorExpansion__name = "Těžká Zbroj Kušišníka Domobrany";
 const string ITAR_GAMBESON_ArmorExpansion__name = "Lovecký Gambeson";
 const string ITAR_PAL_A_ArmorExpansion__name = "Obohacená Paladinská Zbroj";
@@ -758,13 +759,13 @@ const string Patch_AE_PC_ITAR_PAL_AFH_NH_desc = "Sklopit hledí Obohacené palad
 const string Patch_AE_PC_ITAR_PAL_ANH_FH_desc = "Odebrat Helmu Obohacené paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_A_FH_desc = "Vyklopit hledí Obohacené paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_A_NH_desc = "Vyklopit hledí Obohacené paladinské zbroje";
-const string Patch_AE_PC_ITAR_PAL_FNH_desc = "Odebrat Helmu z opravené paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_FNH_desc = "Odebrat Helmu opravené paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_FFH_desc = "Sklopit hledí opravené paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_FFH_NH_desc = "Sklopit hledí opravené paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_fNH_FH_desc = "Odebrat Helmu opravené paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_F_FH_desc = "Vyklopit hledí opravené paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_F_NH_desc = "Vyklopit hledí Obohacené paladinské zbroje";
-const string Patch_AE_PC_ITAR_PAL_RNH_desc = "Odebrat Helmu z Rezavé paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_RNH_desc = "Odebrat Helmu Rezavé paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_RFH_desc = "Sklopit hledí Rezavé paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_RFH_NH_desc = "Sklopit hledí Rezavé paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_RNH_FH_desc = "Odebrat Helmu Rezavé paladinské zbroje";
@@ -774,6 +775,12 @@ const string Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Odebrat Helmu ze zbroje křiž
 const string Patch_AE_PC_ITAR_nh_crusader_desc = "Vrátit helmu ke zbroji křížáka";
 const string Patch_AE_PC_PAL_MH_desc = "Odebrat Helmu z těžké zbroje rytíře";
 const string Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Vrátit helmu k těžké zbroji rytíře";
+const string Patch_AE_PC_ITAR_PAL_HNH_desc = "Odebrat Helmu paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_HFH_desc = "Sklopit hledí paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Sklopit hledí paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Odebrat Helmu paladinské zbroje";
+const string Patch_AE_PC_Itar_pal_h_FH_desc = "Vyklopit hledí paladinské zbroje";
+const string Patch_AE_PC_Itar_pal_h_NH_desc = "Vyklopit hledí paladinské zbroje";
 
 // ------
 // Ulthar
