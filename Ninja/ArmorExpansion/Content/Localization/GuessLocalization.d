@@ -27,26 +27,26 @@ func int Patch_AE_GuessLocalization() {
         } else if (Hlp_StrCmp(panName, "Patelnia")) {     // PL cp1250
             return Patch_AE_Lang_PL;
         } else if (Hlp_StrCmp(panName, "Ńęîâîđîäŕ")) {    // RU cp1251
-            return Patch_AE_Lang_RU;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Padella")) {      // IT cp1252
-            return Patch_AE_Lang_IT;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Sartén")) {       // ES cp1252
-            return Patch_AE_Lang_ES;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Casserole")) {    // FR cp1252
-            return Patch_AE_Lang_FR;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Pánvička"))
                || (Hlp_StrCmp(panName, "Pánev")) {        // CS cp1250
             return Patch_AE_Lang_CS;
         } else if (Hlp_StrCmp(panName, "Serpenyő")) {     // HU cp1250
-            return Patch_AE_Lang_HU;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Tigaie")) {       // RO cp1250
-            return Patch_AE_Lang_RO;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Ďŕňĺëüí˙")) {     // UK cp1251
-            return Patch_AE_Lang_UK;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Tava")) {         // TR cp1254
-            return Patch_AE_Lang_TR;
+            return Patch_AE_Lang_EN;
         } else if (Hlp_StrCmp(panName, "Padell")) {       // CY
-            return Patch_AE_Lang_CY;
+            return Patch_AE_Lang_EN;
         };
     };
     return Patch_AE_Lang_EN; // Otherwise EN
