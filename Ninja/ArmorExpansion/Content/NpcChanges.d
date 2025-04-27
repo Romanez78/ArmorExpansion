@@ -28,6 +28,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Mil_335_Rumbold",        ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L    
     Patch_AE_NpcUpdateArmor("Mil_337_Mika",           ITAR_MIL_Med2_ArmorExpansion);  // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_350_Addon_Martin",   ITAR_MIL_M);                    // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("Pal_202_Albrecht",       ITAR_PAL_HNH_ArmorExpansion);   // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("Pal_204_Torwache",       ITAR_CRUSADER_ArmorExpansion);  // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_205_Torwache",       ITAR_CRUSADER_ArmorExpansion);  // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_207_Girion",         ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
@@ -36,13 +37,15 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Pal_208_Paladin",        ITAR_PAL_CM_ArmorExpansion);    // Originally ITAR_PAL_M   
     Patch_AE_NpcUpdateArmor("Pal_211_Torwache",       ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_216_Cedric",         ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
+    Patch_AE_NpcUpdateArmor("Pal_217_Marcos",         ITAR_PAL_HFH_ArmorExpansion);   // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("Pal_218_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("Pal_225_Schiffswache",   ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_225_Schiffswache",   ITAR_PAL_C_ArmorExpansion);     // Originally ITAR_PAL_M  
     Patch_AE_NpcUpdateArmor("Pal_233_Ritter",         ITAR_PAL_C_ArmorExpansion);     // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_235_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_238_Ritter",         ITAR_PAL_C_ArmorExpansion);     // Originally ITAR_PAL_M
-    Patch_AE_NpcUpdateArmor("Pal_240_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
+    Patch_AE_NpcUpdateArmor("Pal_240_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_MM
+    Patch_AE_NpcUpdateArmor("Pal_250_Garond",         ITAR_PAL_HNH_ArmorExpansionn);  // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("PAL_253_Wache",          ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_258_Keroloth",       ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_262_Wache",          ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
