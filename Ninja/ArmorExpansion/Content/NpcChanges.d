@@ -45,7 +45,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Pal_235_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_238_Ritter",         ITAR_PAL_C_ArmorExpansion);     // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_240_Ritter",         ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_MM
-    Patch_AE_NpcUpdateArmor("Pal_250_Garond",         ITAR_PAL_HNH_ArmorExpansionn);  // Originally ITAR_PAL_H
+    Patch_AE_NpcUpdateArmor("Pal_250_Garond",         ITAR_PAL_HNH_ArmorExpansion);   // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("PAL_253_Wache",          ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_258_Keroloth",       ITAR_PAL_MH_ArmorExpansion);    // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("PAL_262_Wache",          ITAR_PAL_MH_FH_ArmorExpansion); // Originally ITAR_PAL_M
