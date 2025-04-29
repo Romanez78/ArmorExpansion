@@ -11,6 +11,7 @@
 func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Mil_309_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_310_Stadtwache",     ITAR_MIL_M);                    // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("Mil_311_Andre",          ITAR_PAL_ANDRE_ArmorExpansion); // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Mil_312_Wulfgar",        ITAR_MIL_H_ArmorExpansion);     // Originally ITAR_MIL_M
     Patch_AE_NpcUpdateArmor("Mil_313_Boltan",         ITAR_MIL_H_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_317_Ruga",           ITAR_MILP_H_ArmorExpansion);    // Originally ITAR_MIL_L
@@ -28,6 +29,7 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("Mil_335_Rumbold",        ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L    
     Patch_AE_NpcUpdateArmor("Mil_337_Mika",           ITAR_MIL_Med2_ArmorExpansion);  // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("Mil_350_Addon_Martin",   ITAR_MIL_M);                    // Originally ITAR_MIL_L
+    Patch_AE_NpcUpdateArmor("Pal_200_Hagen",          ITAR_PAL_HAGEN_ArmorExpansion); // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("Pal_202_Albrecht",       ITAR_PAL_HNH_ArmorExpansion);   // Originally ITAR_PAL_H
     Patch_AE_NpcUpdateArmor("Pal_204_Torwache",       ITAR_CRUSADER_ArmorExpansion);  // Originally ITAR_PAL_M
     Patch_AE_NpcUpdateArmor("Pal_205_Torwache",       ITAR_CRUSADER_ArmorExpansion);  // Originally ITAR_PAL_M
@@ -64,6 +66,8 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("KDF_503_Karras",         ItAr_KDF_M_AMEXPANSION);        // Originally ITAR_KDF_L
     Patch_AE_NpcUpdateArmor("KDF_504_Parlan",         ItAr_KDF_M_AMEXPANSION);        // Originally ITAR_KDF_L
     Patch_AE_NpcUpdateArmor("KDF_510_Hyglas",         ItAr_KDF_M_AMEXPANSION);        // Originally ITAR_KDF_L
+    Patch_AE_NpcUpdateArmor("SLD_800_Lee_DI",         ITAR_SLD_LEE_ARMOREXPANSION);   // Originally ITAR_SLD_H
+    Patch_AE_NpcUpdateArmor("SLD_800_Lee",            ITAR_SLD_LEE_ARMOREXPANSION);   // Originally ITAR_SLD_H
     Patch_AE_NpcUpdateArmor("SLD_802_Buster",         ITAR_SLD_LR_ArmorExpansion);    // Originally ITAR_SLD_L
     Patch_AE_NpcUpdateArmor("SLD_808_Jarvis",         ITAR_SLD_R_ArmorExpansion);     // Originally ITAR_SLD_M
     Patch_AE_NpcUpdateArmor("SLD_811_Wolf",           ITAR_SLD_BOW_ArmorExpansion);   // Originally ITAR_SLD_M
@@ -79,6 +83,10 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("DJG_710_Kjorn",          ITAR_DJG_CL_ArmorExpansion);    // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("DJG_711_Godar",          ITAR_DJG_CM_ArmorExpansion);    // Originally ITAR_DJG_M
     Patch_AE_NpcUpdateArmor("DJG_715_Ferros",         ITAR_DJG_CL_ArmorExpansion);    // Originally ITAR_DJG_L
+    Patch_AE_NpcUpdateArmor("DJG_733_ToterDrachenjaeger", ITAR_DJG_CM_ArmorExpansion);  // Originally ITAR_DJG_L
+    Patch_AE_NpcUpdateArmor("DJG_738_ToterDrachenjaeger", ITAR_DJG_CM_ArmorExpansion);  // Originally ITAR_DJG_L
+    Patch_AE_NpcUpdateArmor("DJG_739_ToterDrachenjaeger", ITAR_DJG_CL_ArmorExpansion);  // Originally ITAR_DJG_L
+    Patch_AE_NpcUpdateArmor("DJG_740_ToterDrachenjaeger", ITAR_DJG_CL_ArmorExpansion);  // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("BAU_983_Dragomir",       ITAR_ARX_HUNTERH_ArmorExpansion); // Originally ITAR_Leather_L
     Patch_AE_NpcUpdateArmor("BAU_981_Grom",           ITAR_ARX_HUNTERM_ArmorExpansion); // Originally ITAR_Leather_L
     Patch_AE_NpcUpdateArmor("VLK_4100_Brutus",        ITAR_MIL_H_ArmorExpansion);     // Originally ITAR_MIL_L
@@ -104,7 +112,15 @@ func void Patch_AE_NpcMeleeWeapons() {
     Patch_AE_NpcUpdateMeleeWeapon("MIL_320_Miliz",          ItMw_Shortsword1);        // Originally ItMw_1h_Mil_Sword
     Patch_AE_NpcUpdateMeleeWeapon("VLK_4145_Waffenknecht",  ItMw_1h_Mil_Sword);       // Originally ItMw_1h_Mil_Sword
     Patch_AE_NpcUpdateMeleeWeapon("VLK_4105_Waffenknecht",  ItMw_1h_Mil_Sword);       // Originally ItMw_1h_Vlk_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("Pal_200_Hagen",          ItMw_2H_Blessed_02);      // Originally ItMw_2H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("Pal_201_Ingmar",         ItMw_1H_Blessed_01);      // Originally ItMw_1H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("Pal_202_Albrecht",       ItMw_1H_Blessed_01);      // Originally ItMw_1H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("Pal_203_Lothar",         ItMw_1H_Blessed_01);      // Originally ItMw_1H_Pal_Sword
     Patch_AE_NpcUpdateMeleeWeapon("PAL_208_Paladin",        ItMw_1H_Pal_Sword);       // Originally ItMw_2H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("Pal_217_Marcos",         ItMw_1H_Blessed_01);      // Originally ItMw_1H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("Pal_250_Garond",         ItMw_2H_Blessed_02);      // Originally ItMw_2H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("PAL_251_Oric",           ItMw_2H_Blessed_01);      // Originally ItMw_2H_Pal_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("PAL_252_Parcival",       ItMw_1H_Blessed_01);      // Originally ItMw_1H_Pal_Sword
     Patch_AE_NpcUpdateMeleeWeapon("PAL_253_Wache",          ItMw_2H_Pal_Sword);       // Originally ItMw_1H_Pal_Sword
     Patch_AE_NpcUpdateMeleeWeapon("PAL_266_Ritter",         ItMw_1H_Pal_Sword);       // Originally ItMw_2H_Pal_Sword
     Patch_AE_NpcUpdateMeleeWeapon("PAL_269_Ritter",         ItMw_1H_Pal_Sword);       // Originally ItMw_1H_Pal_Sword
