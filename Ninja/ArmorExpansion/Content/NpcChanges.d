@@ -127,6 +127,7 @@ func void Patch_AE_NpcMeleeWeapons() {
     Patch_AE_NpcUpdateMeleeWeapon("DJG_709_Rethon",         ItMw_1h_Sld_Sword);       // Originally ItMw_1h_Sld_Sword
     Patch_AE_NpcUpdateMeleeWeapon("DJG_711_Godar",          ItMw_1h_Sld_Sword);       // Originally ItMw_1h_Sld_Sword
     Patch_AE_NpcUpdateMeleeWeapon("DJG_710_Kjorn",          ItMw_1h_Sld_Sword);       // Originally ItMw_1h_Sld_Sword
+    Patch_AE_NpcUpdateMeleeWeapon("SLD_818_Soeldner",       ItMw_1h_Sld_Sword);       // Originally ItMw_2h_Sld_Axe
 };
 
 /*
@@ -138,6 +139,7 @@ func void Patch_AE_NpcRangedWeapons() {
     Patch_AE_NpcUpdateRangedWeapon("MIL_327_Miliz",          ItRw_Mil_Crossbow);      // Originally None
     Patch_AE_NpcUpdateRangedWeapon("VLK_4145_Waffenknecht",  ItRw_Mil_Crossbow);      // Originally None
     Patch_AE_NpcUpdateRangedWeapon("VLK_4105_Waffenknecht",  ItRw_Mil_Crossbow);      // Originally None
+    Patch_AE_NpcUpdateRangedWeapon("VLK_4104_Waffenknecht",  ItRw_Mil_Crossbow);      // Originally None
     Patch_AE_NpcUpdateRangedWeapon("PAL_208_Paladin",        ItRw_Crossbow_M_01);     // Originally None
     Patch_AE_NpcUpdateRangedWeapon("PAL_208_Ritter",         ItRw_Crossbow_M_01);     // Originally None
     Patch_AE_NpcUpdateRangedWeapon("Pal_225_Schiffswache",   ItRw_Crossbow_M_01);     // Originally None
