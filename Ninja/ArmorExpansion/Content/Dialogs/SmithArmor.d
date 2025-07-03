@@ -155,13 +155,9 @@ func int Patch_AE_PC_FORGE_ARMOR_Condition()
 {
 	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SMITHWEAPON)
     {
-        if (false == Normalwaffen)
-        {
-            if (false == Erzwaffen)
-            {
-                return TRUE;
-            };
-        };
+
+		return true;
+		
     };
 };
 func void Patch_AE_PC_FORGE_ARMOR_Info()
