@@ -215,10 +215,6 @@ func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
 	CreateInvItems(self, ItMiSwordRaw, 1);
 	B_ENDPRODUCTIONDIALOG();
-
-    // For sure I reset it.
-	Erzwaffen = FALSE;
-	NormalWaffen = FALSE;
 };
 
 
