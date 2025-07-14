@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 09.03.2025 15:27:54
+date 14.07.2025 13:26:55
 user https://github.com/szapp/output-unit-action
 END
 objects 2962
@@ -6930,7 +6930,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1730]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1731]
 subType=enum:0
-text=string:Can i get a better robe?
+text=string:Czy mogę dostać lepszą szatę?
 name=string:PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_PL.WAV
 []
 []
@@ -6942,7 +6942,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1733]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1734]
 subType=enum:0
-text=string:Yes, i will reward you with a beter robe for a small donation to the monastery.
+text=string:Tak, podaruję ci lepszą szatę za drobną darowiznę na rzecz klasztoru.
 name=string:PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_PL.WAV
 []
 []
@@ -6954,7 +6954,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1736]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1737]
 subType=enum:0
-text=string:How big of a donation?
+text=string:Jak wysoka ma być ta darowizna?
 name=string:PATCH_AE_DIA_Gorax_KDFM_ASK_3_05_PL.WAV
 []
 []
@@ -6966,7 +6966,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1739]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1740]
 subType=enum:0
-text=string:1500 gold should be enough.
+text=string:1500 sztuk złota powinno wystarczyć.
 name=string:PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_PL.WAV
 []
 []
@@ -6978,7 +6978,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1742]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1743]
 subType=enum:0
-text=string:I bring a donation to the monastery.
+text=string:Przynoszę darowiznę dla klasztoru.
 name=string:PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_PL.WAV
 []
 []
@@ -6990,7 +6990,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 1745]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 1746]
 subType=enum:0
-text=string:Great, here is your robe.
+text=string:Świetnie, oto twoja szata.
 name=string:PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_PL.WAV
 []
 []
