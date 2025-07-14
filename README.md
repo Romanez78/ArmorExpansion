@@ -32,7 +32,8 @@ The patch is also available on
 
 <table><thead><tr><th>Gothic II: NotR</th></tr></thead>
 <tbody><tr><td><a href="https://www.worldofgothic.de/dl/download_278.htm">Report version 2.6.0.0</a></td></tr></tbody>
-<tbody><tr><td colspan="1" align="center"><a href="https://github.com/szapp/Ninja">Ninja 2.9.15</a> or higher</td></tr></tbody></table>
+<tbody><tr><td colspan="1" align="center"><a href="https://github.com/szapp/Ninja">Ninja 4.0.16</a> or higher</td></tr></tbody></table>
+<tbody><tr><td colspan="1" align="center"><a href="https://github.com/szapp/Toolkit">Toolkit 16.0</a> or higher</td></tr></tbody></table>
 
 <!--
 
