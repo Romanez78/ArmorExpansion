@@ -2147,38 +2147,12 @@ INSTANCE ITAR_DJG_CrawlerP_AEXPANSION (C_Item)
 FUNC VOID Equip_ITAR_DJG_CrawlerP()
 {
 	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 6);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);
-	if Npc_IsPlayer (self)
-	{
-		Patch_AE__ITAR_DJG_CRAWLERP_Equipped = TRUE;
-	
-		if (MC_Equipped == TRUE)	
-		{
-			self.protection[PROT_EDGE] 	+= BA_Bonus01;
-			self.protection[PROT_BLUNT] += BA_Bonus01;
-			self.protection[PROT_POINT] += BA_Bonus01;
-			self.protection[PROT_MAGIC] += BA_Bonus01;
-			self.protection[PROT_FIRE] 	+= BA_Bonus01;
-		};
-	};			
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);		
 };
 FUNC VOID UnEquip_ITAR_DJG_CrawlerP()
 {
-	 B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -6);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);
-	if Npc_IsPlayer (self)
-	{
-		Patch_AE__ITAR_DJG_CRAWLERP_Equipped = FALSE;
-		
-		if (MC_Equipped == TRUE)	
-		{
-			self.protection[PROT_EDGE] 	-= BA_Bonus01;
-			self.protection[PROT_BLUNT] -= BA_Bonus01;
-			self.protection[PROT_POINT] -= BA_Bonus01;
-			self.protection[PROT_MAGIC] -= BA_Bonus01;
-			self.protection[PROT_FIRE] 	-= BA_Bonus01;
-		};
-	};			
+	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -6);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);		
 };
 
 INSTANCE ITAR_PAL_HNH_ArmorExpansion (C_Item)
