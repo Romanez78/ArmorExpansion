@@ -16,6 +16,7 @@ Content\Localization\German.d
 Content\Localization\GuessLocalization.d
 
 // Items
+Content\Items\Balancing.d
 Content\Items\IT_Belts.d
 Content\Items\IT_ArmorExpansion.d
 Content\Items\IT_ArmorExpansion_Blueprint.d

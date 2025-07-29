@@ -37,9 +37,14 @@ func void Ninja_ArmorExpansion_Menu() {
     } else if (loc == Patch_AE_Lang_PL) {
         Patch_AE_LocalizePolish();
     } else if (loc == Patch_AE_Lang_DE) {
-        Patch_AE_LocalizeGerman(); 
+        Patch_AE_LocalizeGerman();
     };
     // Else: keep Czech
+
+    // TODO Test balancing
+    ITAR_MIL_R_ArmorExpansion__PROT_EDGE = 992;
+    ITAR_MIL_R_ArmorExpansion__PROT_BLUNT = 981;
+    ITAR_MIL_R_ArmorExpansion__PROT_POINT = 970;
 };
 
 

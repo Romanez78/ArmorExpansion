@@ -704,21 +704,21 @@ INSTANCE ITAR_MIL_M (C_Item)
 	visual_change 				=	"Armor_MIL_M.asc";
 	visual_skin 				=	0;
 	material 				=	MAT_LEATHER;
-	
+
 	on_equip				=	Equip_ITAR_MIL_M;
 	on_unequip				=	UnEquip_ITAR_MIL_M;
-	
+
 	description				=	name;
 
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	TEXT[2]					=	NAME_Prot_Point;		
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	TEXT[3] 				=	NAME_Prot_Fire;			
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	TEXT[4]					=	NAME_Prot_Magic;		
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	TEXT[5]					=	NAME_Value;			
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
@@ -860,11 +860,11 @@ INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	45;
-	protection [PROT_BLUNT] = 	45;
-	protection [PROT_POINT] = 	45;
-	protection [PROT_FIRE] 	= 	5;
-	protection [PROT_MAGIC] = 	0;
+	protection [PROT_EDGE]	=	ITAR_MIL_R_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_MIL_R_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_MIL_R_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_MIL_R_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_MIL_R_ArmorExpansion__PROT_MAGIC;
 
 	value 					=	800;
 
@@ -1994,7 +1994,7 @@ INSTANCE ITAR_ARX_HUNTERM_ArmorExpansion (C_Item)
 	protection [PROT_POINT] = 	40;
 	protection [PROT_FIRE] 	= 	0;
 	protection [PROT_MAGIC] = 	0;
-	
+
 	value 					=	1000;
 
 	wear 					=	WEAR_TORSO;
@@ -2002,27 +2002,27 @@ INSTANCE ITAR_ARX_HUNTERM_ArmorExpansion (C_Item)
 	visual 					=	"ARMOR_HUNL_AMEXPANSION.3ds";
 	visual_change 			=	"ARMOR_HUNL_AMEXPANSION.asc";
 	visual_skin 			=	0;
-	material 				=	MAT_METAL;	
-		
+	material 				=	MAT_METAL;
+
 	on_equip    			=    Patch_AE_Equip_ITAR_GAMBESON;
-    on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;	
-	
+    on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;
+
 	description				=	name;
 
 	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus3;
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 
@@ -2038,7 +2038,7 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 	protection [PROT_POINT] = 	55;
 	protection [PROT_FIRE] 	= 	5;
 	protection [PROT_MAGIC] = 	0;
-	
+
 	value 					=	2500;
 
 	wear 					=	WEAR_TORSO;
@@ -2046,27 +2046,27 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 	visual 					=	"ARMOR_HUNM_AMEXPANSION.3ds";
 	visual_change 			=	"ARMOR_HUNM_AMEXPANSION.asc";
 	visual_skin 			=	0;
-	material 				=	MAT_METAL;	
-	
+	material 				=	MAT_METAL;
+
 	on_equip    			=    Patch_AE_Equip_ITAR_GAMBESON;
     on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;
-	
+
 	description				=	name;
 
 	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus3;
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 
@@ -2122,37 +2122,37 @@ INSTANCE ITAR_DJG_CrawlerP_AEXPANSION (C_Item)
 	visual_change 			=	"Armor_Djg_CrawlerP_AEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
-	
+
 	on_equip				=	Equip_ITAR_DJG_CrawlerP;
 	on_unequip				=	UnEquip_ITAR_DJG_CrawlerP;
-	
+
 	description				=	name;
-	
+
 	TEXT[0]					= 	Patch_AE_TEXT_ArcheryBonus6;
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 FUNC VOID Equip_ITAR_DJG_CrawlerP()
 {
 	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 6);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);		
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);
 };
 FUNC VOID UnEquip_ITAR_DJG_CrawlerP()
 {
 	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -6);
-	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);		
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);
 };
 
 INSTANCE ITAR_PAL_HNH_ArmorExpansion (C_Item)
@@ -2179,19 +2179,19 @@ INSTANCE ITAR_PAL_HNH_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 INSTANCE ITAR_PAL_HFH_ArmorExpansion (C_Item)
@@ -2218,19 +2218,19 @@ INSTANCE ITAR_PAL_HFH_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 
@@ -2315,19 +2315,19 @@ INSTANCE ITAR_PAL_HAGEN_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 INSTANCE ITAR_SLD_LEE_ARMOREXPANSION (C_Item)
@@ -2351,20 +2351,20 @@ INSTANCE ITAR_SLD_LEE_ARMOREXPANSION (C_Item)
 	visual_change 			=	"ARMOR_LEEHEAVYMERCENARY.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
-	
+
 	on_equip				=	Equip_ITAR_SLD_H;
 	on_unequip				=	UnEquip_ITAR_SLD_H;
-	
+
 	description				=	name;
 
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	TEXT[2]					=	NAME_Prot_Point;		
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	TEXT[3] 				=	NAME_Prot_Fire;			
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	TEXT[4]					=	NAME_Prot_Magic;		
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	TEXT[5]					=	NAME_Value;			
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
