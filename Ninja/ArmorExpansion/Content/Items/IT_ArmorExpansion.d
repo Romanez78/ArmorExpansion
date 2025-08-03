@@ -2235,7 +2235,7 @@ INSTANCE ITAR_PAL_HFH_ArmorExpansion (C_Item)
 };
 INSTANCE ITAR_DJG_HNH_ArmorExpansion (C_Item)
 {
-	name 					=	ITAR_PAL_H_ArmorExpansion__name;
+	name 					=	ITAR_DJG_H_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2275,7 +2275,7 @@ INSTANCE ITAR_DJG_HNH_ArmorExpansion (C_Item)
 
 INSTANCE ITAR_DJG_MNH_ArmorExpansion (C_Item)
 {
-	name 					=	ITAR_PAL_H_ArmorExpansion__name;
+	name 					=	ITAR_DJG_M_ArmorExpansion__name;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
