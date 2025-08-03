@@ -764,6 +764,10 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Den Helm der Paladinrüstung entfernen.";
     Patch_AE_PC_Itar_pal_h_FH_desc = "Das Visier der Paladinrüstung hochziehen";
     Patch_AE_PC_Itar_pal_h_NH_desc = "Das Visier der Paladinrüstung hochziehen";
+    Patch_AE_PC_Itar_djg_M_desc = "Den Helm der mittlere Drachenjägerrüstung entfernen";
+    Patch_AE_PC_Itar_djg_M_NH_desc = "Den Helm der mittlere Drachenjägerrüstung hinzufügen";
+    Patch_AE_PC_Itar_djg_H_NH_desc = "Den Helm der schwere Drachenjägerrüstung hinzufügen";
+    Patch_AE_PC_Itar_djg_H_desc = "Den Helm der schwere Drachenjägerrüstung entfernen";
     
     // ------
     // Ulthar
