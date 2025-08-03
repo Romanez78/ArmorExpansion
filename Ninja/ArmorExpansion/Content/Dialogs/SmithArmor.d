@@ -78,7 +78,7 @@ const int Patch_AE_INGREDIENTS_ITAR_PAL_HNH__itar_pal_hfh = 1;
 const int Patch_AE_INGREDIENTS_ITAR_PAL_HFH__itar_pal_hnh = 1;
 
 const int Patch_AE_INGREDIENTS_Itar_djg_M_NH__itar_djg_M = 1;
-const int Patch_AE_INGREDIENTS_ITAR_DJG_M__itar_djg_m_nh = 1;
+const int Patch_AE_INGREDIENTS_Itar_djg_M__itar_djg_MNH = 1;
 
 const int Patch_AE_INGREDIENTS_Itar_DJG_H_NH__itar_DJG_H = 1;
 const int Patch_AE_INGREDIENTS_ITAR_DJG_H__itar_djg_Hnh = 1;
@@ -2311,7 +2311,7 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_NH_Info()
 
     // Check ingredients
 
-    // [Itar_pal_h]
+    // [Itar_DJG_M]
     amount_needed = Patch_AE_INGREDIENTS_Itar_djg_M__itar_djg_MNH ;
     amount_current = Npc_HasItems(hero, ITAR_djg_MNH_ArmorExpansion); // IMPORTANT: An one of a raw steel is in a hand
 
@@ -2521,7 +2521,7 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_Info()
 
     // Check ingredients
 
-    // [Itar_pal_h]
+    // [Itar_DJG_h]
     amount_needed = Patch_AE_INGREDIENTS_Itar_DJG_H_NH__itar_DJG_H ;
     amount_current = Npc_HasItems(hero, ITAR_DJG_H); // IMPORTANT: An one of a raw steel is in a hand
 
