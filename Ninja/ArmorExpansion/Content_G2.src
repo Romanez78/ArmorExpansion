@@ -15,8 +15,17 @@ Content\Localization\Polish.d
 Content\Localization\German.d
 Content\Localization\GuessLocalization.d
 
+// Balancing
+Content\Balancing\Default.d
+Content\Balancing\LHiverMasty.d
+Content\Balancing\LHiverBuddygothArtstuff.d
+Content\Balancing\LHiverMarcello.d
+Content\Balancing\Atariar.d
+Content\Balancing\ShieldsMod.d
+Content\Balancing\MinimodBalance.d
+Content\Balancing\Router.d
+
 // Items
-Content\Items\Balancing.d
 Content\Items\IT_Belts.d
 Content\Items\IT_ArmorExpansion.d
 Content\Items\IT_ArmorExpansion_Blueprint.d

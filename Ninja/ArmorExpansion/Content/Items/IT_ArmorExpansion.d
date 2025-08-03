@@ -52,8 +52,6 @@ func void Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(var int attribute, var in
     };
 };
 
-const int Patch_AE_ITAR_PAL_A_BONUS_MANA = 40;
-const int Patch_AE_ITAR_PAL_F_BONUS_MANA = 20;
 var int Patch_AE__ITAR_MIL_H_Equipped;
 var int Patch_AE__ITAR_SLD_BOW_Equipped;
 var int Patch_AE__ITAR_GAMBESON_Equipped;
@@ -115,6 +113,11 @@ func void Patch_AE__Equip_ITAR_MIL_H()
 			self.protection[PROT_MAGIC] += BA_Bonus01;
 			self.protection[PROT_FIRE] += BA_Bonus01;
 		};
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, 5);
+        };
+
     };
 };
 func void Patch_AE__UnEquip_ITAR_MIL_H()
@@ -131,6 +134,11 @@ func void Patch_AE__UnEquip_ITAR_MIL_H()
 			self.protection[PROT_MAGIC] -= BA_Bonus01;
 			self.protection[PROT_FIRE] -= BA_Bonus01;
 		};
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, -5);
+        };
+
     };
 };
 
@@ -194,6 +202,11 @@ B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
 			self.protection[PROT_MAGIC] += BA_Bonus01;
 			self.protection[PROT_FIRE] += BA_Bonus01;
 		};
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 5);
+        };
+
     };
 };
 func void Patch_AE__UnEquip_ITAR_MILP_H()
@@ -213,6 +226,11 @@ B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
 			self.protection[PROT_MAGIC] -= BA_Bonus01;
 			self.protection[PROT_FIRE] -= BA_Bonus01;
 		};
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -5);
+        };
+
     };
 };
 INSTANCE ITAR_GAMBESON_ArmorExpansion (C_Item)
@@ -337,16 +355,33 @@ INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
 	COUNT[5]				= 	value;
 };
 FUNC VOID Patch_AE_Equip_ITAR_PAL_A()
-	{
-    // Mana
-    self.attribute[ATR_MANA_MAX] += Patch_AE_ITAR_PAL_A_BONUS_MANA;
-	self.attribute[ATR_MANA] += Patch_AE_ITAR_PAL_A_BONUS_MANA;
-	};
+{
+    if (Npc_IsPlayer(self)) {
+        // Mana
+        self.attribute[ATR_MANA_MAX] += Patch_AE_ITAR_PAL_A_BONUS_MANA;
+        self.attribute[ATR_MANA] += Patch_AE_ITAR_PAL_A_BONUS_MANA;
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, 7);
+            self.attribute[ATR_HITPOINTS_MAX] += 40;
+	        self.attribute[ATR_HITPOINTS] += 40;
+        };
+
+    };
+};
 FUNC VOID Patch_AE_UnEquip_ITAR_PAL_A()
-	{
-    // Mana
-    Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Patch_AE_ITAR_PAL_A_BONUS_MANA);
-	};
+{
+    if (Npc_IsPlayer(self)) {
+        // Mana
+        Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Patch_AE_ITAR_PAL_A_BONUS_MANA);
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, -7);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 40);
+        };
+
+    };
+};
 INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PAL_R_ArmorExpansion__name;
@@ -431,16 +466,33 @@ INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
 	COUNT[5]				= 	value;
 };
 FUNC VOID Patch_AE_Equip_ITAR_PAL_F()
-	{
-    // Mana
-    self.attribute[ATR_MANA_MAX] += Patch_AE_ITAR_PAL_F_BONUS_MANA;
-	self.attribute[ATR_MANA] += Patch_AE_ITAR_PAL_F_BONUS_MANA;
-	};
+{
+    if (Npc_IsPlayer(self)) {
+        // Mana
+        self.attribute[ATR_MANA_MAX] += Patch_AE_ITAR_PAL_F_BONUS_MANA;
+        self.attribute[ATR_MANA] += Patch_AE_ITAR_PAL_F_BONUS_MANA;
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, 5);
+            self.attribute[ATR_HITPOINTS_MAX] += 30;
+	        self.attribute[ATR_HITPOINTS] += 30;
+        };
+
+    };
+};
 FUNC VOID Patch_AE_UnEquip_ITAR_PAL_F()
-	{
-    // Mana
-    Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Patch_AE_ITAR_PAL_F_BONUS_MANA);
-	};
+{
+    if (Npc_IsPlayer(self)) {
+        // Mana
+        Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, Patch_AE_ITAR_PAL_F_BONUS_MANA);
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, -5);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 30);
+        };
+
+    };
+};
 INSTANCE ITAR_PAL_C_ArmorExpansion (C_Item)
 {
     name    =    ITAR_PAL_C_ArmorExpansion__name;
@@ -489,12 +541,32 @@ func void Patch_AE_Equip_ITAR_PAL_C()
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 5);
+            self.attribute[ATR_MANA_MAX] += 10;
+	        self.attribute[ATR_MANA] += 10;
+            self.attribute[ATR_HITPOINTS_MAX] += 10;
+	        self.attribute[ATR_HITPOINTS] += 10;
+        };
+
+    };
 };
 func void Patch_AE_UnEquip_ITAR_PAL_C()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -5);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, 10);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 10);
+        };
+
+    };
 };
 INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
 {
@@ -518,8 +590,8 @@ INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
     visual_skin    =    0;
     material    =    MAT_METAL;
 
-    on_equip    =    Patch_AE_Equip_ITAR_PAL_C;
-    on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_C;
+    on_equip    =    Patch_AE_Equip_ITAR_PAL_CM;
+    on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_CM;
 
     description    =    name;
 	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
@@ -539,6 +611,39 @@ INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
     TEXT[5]    =    NAME_Value;
     COUNT[5]    =    value;
 };
+func void Patch_AE_Equip_ITAR_PAL_CM()
+{
+    // "self" it is C_NPC which is equipping armor
+    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 7);
+            self.attribute[ATR_MANA_MAX] += 15;
+	        self.attribute[ATR_MANA] += 15;
+            self.attribute[ATR_HITPOINTS_MAX] += 15;
+	        self.attribute[ATR_HITPOINTS] += 15;
+        };
+
+    };
+};
+func void Patch_AE_UnEquip_ITAR_PAL_CM()
+{
+    // "self" it is C_NPC which is unequipping armor
+    B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
+	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -7);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, 15);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 15);
+        };
+
+    };
+};
+
 INSTANCE ITAR_MIL_Med2_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_MIL_Med2_ArmorExpansion__name;
@@ -769,12 +874,26 @@ func void Equip_ITAR_DHT2S_ARMOREXPANSION()
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 6);
+        };
+
+    };
 };
 func void UnEquip_ITAR_DHT2S_ARMOREXPANSION()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -6);
+        };
+
+    };
 };
 INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 {
@@ -832,6 +951,10 @@ func void Patch_AE_Equip_ITAR_SLD_BOW()
 			self.protection[PROT_MAGIC] += BA_Bonus01;
 			self.protection[PROT_FIRE] += BA_Bonus01;
 		};
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 4);
+        };
     };
 };
 func void Patch_AE_UnEquip_ITAR_SLD_BOW()
@@ -851,6 +974,10 @@ func void Patch_AE_UnEquip_ITAR_SLD_BOW()
 			self.protection[PROT_MAGIC] -= BA_Bonus01;
 			self.protection[PROT_FIRE] -= BA_Bonus01;
 		};
+
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -4);
+        };
     };
 };
 INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
@@ -973,6 +1100,17 @@ func void Patch_AE_Equip_ITAR_CRUSADER()
 
     // A head adjusting
     Patch_AE_ArmorChanging_Head_HumHeadBald(self);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, 5);
+            self.attribute[ATR_MANA_MAX] += 15;
+	        self.attribute[ATR_MANA] += 15;
+            self.attribute[ATR_HITPOINTS_MAX] += 20;
+	        self.attribute[ATR_HITPOINTS] += 20;
+        };
+
+    };
 };
 func void Patch_AE_UnEquip_ITAR_CRUSADER()
 {
@@ -980,6 +1118,15 @@ func void Patch_AE_UnEquip_ITAR_CRUSADER()
 
     // A head adjusting
     Patch_AE_ArmorChanging_Head_Original(self);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, -5);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, 15);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 20);
+        };
+
+    };
 };
 INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 {
@@ -1385,13 +1532,34 @@ func void Patch_AE_Equip_ITAR_PAL_CH()
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 10);
+            self.attribute[ATR_MANA_MAX] += 20;
+	        self.attribute[ATR_MANA] += 20;
+            self.attribute[ATR_HITPOINTS_MAX] += 25;
+	        self.attribute[ATR_HITPOINTS] += 25;
+        };
+
+    };
 };
 func void Patch_AE_UnEquip_ITAR_PAL_CH()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -10);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, 20);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 25);
+        };
+
+    };
 };
+
 INSTANCE ITAR_DJG_CH_ArmorExpansion (C_Item)
 {
     name    =    ITAR_DJG_CH_ArmorExpansion__name;
@@ -1440,12 +1608,29 @@ func void Patch_AE_Equip_ITAR_DJG_CH()
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 23);
+            self.attribute[ATR_HITPOINTS_MAX] += 200;
+	        self.attribute[ATR_HITPOINTS] += 200;
+        };
+
+    };
 };
 func void Patch_AE_UnEquip_ITAR_DJG_CH()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -23);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 200);
+        };
+
+    };
 };
 INSTANCE ITAR_DJG_CM_ArmorExpansion (C_Item)
 {
@@ -1495,13 +1680,31 @@ func void Patch_AE_Equip_ITAR_DJG_CM()
     // "self" it is C_NPC which is equipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, 12);
+            self.attribute[ATR_HITPOINTS_MAX] += 10;
+	        self.attribute[ATR_HITPOINTS] += 10;
+        };
+
+    };
 };
 func void Patch_AE_UnEquip_ITAR_DJG_CM()
 {
     // "self" it is C_NPC which is unequipping armor
     B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -5);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -5);
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_DEXTERITY, -12);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 10);
+        };
+
+    };
 };
+
 INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PAL_ST_ArmorExpansion__name;
@@ -1524,6 +1727,9 @@ INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
+    on_equip                =    Patch_AE_Equip_ITAR_PAL_ST;
+    on_unequip              =    Patch_AE_UnEquip_ITAR_PAL_ST;
+
 	description				=	name;
 	TEXT[0]                 =   "";
 
@@ -1542,6 +1748,25 @@ INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
+func void Patch_AE_Equip_ITAR_PAL_ST()
+{
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, 3);
+        };
+
+    };
+};
+func void Patch_AE_UnEquip_ITAR_PAL_ST()
+{
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, -3);
+        };
+
+    };
+};
+
 INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PAL_MH_ArmorExpansion__name;
@@ -1564,6 +1789,9 @@ INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
+    on_equip    =    Patch_AE_Equip_ITAR_PAL_MH;
+    on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_MH;
+
 	description				=	name;
 
 	TEXT[0]					= 	"";
@@ -1582,6 +1810,31 @@ INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
+func void Patch_AE_Equip_ITAR_PAL_MH()
+{
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, 7);
+            self.attribute[ATR_MANA_MAX] += 15;
+	        self.attribute[ATR_MANA] += 15;
+            self.attribute[ATR_HITPOINTS_MAX] += 20;
+	        self.attribute[ATR_HITPOINTS] += 20;
+        };
+
+    };
+};
+func void Patch_AE_UnEquip_ITAR_PAL_MH()
+{
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, -7);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, 15);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 20);
+        };
+
+    };
+};
+
 INSTANCE ITAR_PIR_H_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PIR_H_ArmorExpansion__name;
@@ -1643,7 +1896,7 @@ INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
-	
+
 	protection [PROT_EDGE]	=	ITAR_PAL_ANH_ArmorExpansion__PROT_EDGE;
 	protection [PROT_BLUNT] = 	ITAR_PAL_ANH_ArmorExpansion__PROT_BLUNT;
 	protection [PROT_POINT] = 	ITAR_PAL_ANH_ArmorExpansion__PROT_POINT;
@@ -2086,8 +2339,8 @@ instance ItAr_KDF_M_AMEXPANSION(C_Item)
 	visual_change = "Armor_Kdf_M_AMEXPANSION.asc";
 	visual_skin = 0;
 	material = MAT_LEATHER;
-	on_equip = Equip_ITAR_KDF_L;
-	on_unequip = UnEquip_ITAR_KDF_L;
+	on_equip = Patch_AE_Equip_ITAR_KDF_M;
+	on_unequip = Patch_AE_UnEquip_ITAR_KDF_M;
 	description = name;
 	text[1] = NAME_Prot_Edge;
 	count[1] = protection[PROT_EDGE];
@@ -2099,6 +2352,27 @@ instance ItAr_KDF_M_AMEXPANSION(C_Item)
 	count[4] = protection[PROT_MAGIC];
 	text[5] = NAME_Value;
 	count[5] = value;
+};
+func void Patch_AE_Equip_ITAR_KDF_M()
+{
+    Equip_ITAR_KDF_L();
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            self.attribute[ATR_MANA_MAX] += 30;
+	        self.attribute[ATR_MANA] += 30;
+        };
+    };
+};
+func void Patch_AE_UnEquip_ITAR_KDF_M()
+{
+    UnEquip_ITAR_KDF_L();
+
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, 30);
+        };
+    };
 };
 
 INSTANCE ITAR_DJG_CrawlerP_AEXPANSION (C_Item)
