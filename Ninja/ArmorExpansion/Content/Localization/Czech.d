@@ -53,6 +53,8 @@ const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Křižáka";
 const string ITAR_ARX_HUNTERH_ArmorExpansion__name = "Zesílený Lovecký Kabát";
 const string ITAR_ARX_HUNTERM_ArmorExpansion__name = "Lovecký Kabát";
 const string ITAR_KDF_M_ArmorExpansion__name = "Středně Těžké Ohnivé Roucho";
+const string ITAR_DJG_H_ArmorExpansion__name = "Těžká zbroj drakobijců";
+const string ITAR_DJG_M_ArmorExpansion__name = "Středně těžká zbroj drakobijců";
 
 // Armor bonus
 const string Patch_AE_TEXT_MaxManaBonus20 = "+20 bonus maximální many"; // ITAR_PAL_F_ArmorExpansion, ITAR_PAL_FNH_ArmorExpansion, ITAR_PAL_FFH_ArmorExpansion
