@@ -54,6 +54,8 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Jagdjacke";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Verstärkte Jagdjacke";
     ITAR_KDF_M_ArmorExpansion__name = "Mittlere Feuerrobe";
+    ITAR_DJG_H_ArmorExpansion__name = "Schwere Drachenjägerrüstung";
+    ITAR_DJG_M_ArmorExpansion__name = "Mittlere Drachenjägerrüstung";
     
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximaler Mana Bonus";
