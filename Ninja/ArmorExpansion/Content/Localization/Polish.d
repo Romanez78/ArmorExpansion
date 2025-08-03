@@ -774,6 +774,10 @@ func void Patch_AE_LocalizePolish() {
     Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Usuń hełm z pancerza paladyna";
     Patch_AE_PC_Itar_pal_h_FH_desc = "Podnieś przybłicę pancerza paladyna";
     Patch_AE_PC_Itar_pal_h_NH_desc = "Podnieś przybłicę pancerza paladyna";
+    Patch_AE_PC_Itar_djg_M_desc = "Zdejmij hełm ze średniego pancerza łowcy smoków.";
+    Patch_AE_PC_Itar_djg_M_NH_desc = "Załóż hełm na średni pancerz łowcy smoków.";
+    Patch_AE_PC_Itar_djg_H_NH_desc = "Załóż hełm na ciężki pancerz łowcy smoków";
+    Patch_AE_PC_Itar_djg_H_desc = "Zdejmij hełm z ciężkiego pancerza łowcy smoków";
     
     // ------
     // Ulthar
