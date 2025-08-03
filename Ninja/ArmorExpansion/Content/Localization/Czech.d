@@ -783,6 +783,10 @@ const string Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Sklopit hledí paladinské zbro
 const string Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Odebrat Helmu paladinské zbroje";
 const string Patch_AE_PC_Itar_pal_h_FH_desc = "Vyklopit hledí paladinské zbroje";
 const string Patch_AE_PC_Itar_pal_h_NH_desc = "Vyklopit hledí paladinské zbroje";
+const string Patch_AE_PC_Itar_djg_M_desc = "Odebrat Helmu ke střední zbroji drakobijců";
+const string Patch_AE_PC_Itar_djg_M_NH_desc = "Vrátit helmu ke střední zbroji drakobijců";
+const string Patch_AE_PC_Itar_djg_H_NH_desc = "Vrátit helmu k těžké zbroji drakobijců";
+const string Patch_AE_PC_Itar_djg_H_desc = "Odebrat helmu k těžké zbroji drakobijců";
 
 // ------
 // Ulthar
