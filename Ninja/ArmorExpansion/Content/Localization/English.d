@@ -775,6 +775,10 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Remove Helm from Paladin Armor";
     Patch_AE_PC_Itar_pal_h_FH_desc = "Put up the visor of the Paladin Armor";
     Patch_AE_PC_Itar_pal_h_NH_desc = "Put up the visor of the Paladin Armor";
+    Patch_AE_PC_Itar_djg_M_desc = "Remove Helm from medium dragonhunter armor";
+    Patch_AE_PC_Itar_djg_M_NH_desc = "Return Helmet to medium dragonhunter armor";
+    Patch_AE_PC_Itar_djg_H_NH_desc = "Return Helmet to heavy dragonhunter armor";
+    Patch_AE_PC_Itar_djg_H_desc = "Remove Helm from heavy dragonhunter armor";
     
     // ------
     // Ulthar
