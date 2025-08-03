@@ -52,6 +52,8 @@ func void Patch_AE_LocalizePolish() {
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Kurtka myśliwska";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Wzmocniona kurtka myśliwska";
     ITAR_KDF_M_ArmorExpansion__name = "Średnia szata ognia";
+    ITAR_DJG_H_ArmorExpansion__name = "Ciężki pancerz łowcy smoków";
+    ITAR_DJG_M_ArmorExpansion__name = "Średni pancerz łowcy smoków";
     
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 maksymalnej many";
