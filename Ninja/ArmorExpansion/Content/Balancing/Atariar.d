@@ -1,9 +1,9 @@
 func int Patch_AE_IsAtariar() {
-    return ((Hlp_StrCmp(NINJA_MODNAME, "ATARIAR_CZ"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "ATARIAR_DE"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "ATARIAR_EN"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "ATARIAR_PL"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "ATARIAR_RU"))
+    return ((Hlp_StrCmp(NINJA_MODNAME, "2793245513_ATARIAR_CZ"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2793245513_ATARIAR_DE"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2793245513_ATARIAR_EN"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2793245513_ATARIAR_PL"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2793245513_ATARIAR_RU"))
          || (Hlp_StrCmp(NINJA_MODNAME, "GOTHIC2_ATARIAR")));
 };
 
