@@ -52,6 +52,8 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Hunting Jacket";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Strenghtened Hunting Jacket";
     ITAR_KDF_M_ArmorExpansion__name = "Medium Fire Robe";
+    ITAR_DJG_H_ArmorExpansion__name = "Heavy Dragon Hunter's Armor";
+    ITAR_DJG_M_ArmorExpansion__name = "Medium Dragon Hunter's Armor";
     
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximum Mana Bonus";
@@ -773,6 +775,10 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Remove Helm from Paladin Armor";
     Patch_AE_PC_Itar_pal_h_FH_desc = "Put up the visor of the Paladin Armor";
     Patch_AE_PC_Itar_pal_h_NH_desc = "Put up the visor of the Paladin Armor";
+    Patch_AE_PC_Itar_djg_M_desc = "Remove Helm from medium dragonhunter armor";
+    Patch_AE_PC_Itar_djg_M_NH_desc = "Return Helmet to medium dragonhunter armor";
+    Patch_AE_PC_Itar_djg_H_NH_desc = "Return Helmet to heavy dragonhunter armor";
+    Patch_AE_PC_Itar_djg_H_desc = "Remove Helm from heavy dragonhunter armor";
     
     // ------
     // Ulthar

@@ -52,6 +52,8 @@ func void Patch_AE_LocalizePolish() {
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Kurtka myśliwska";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Wzmocniona kurtka myśliwska";
     ITAR_KDF_M_ArmorExpansion__name = "Średnia szata ognia";
+    ITAR_DJG_H_ArmorExpansion__name = "Ciężki pancerz łowcy smoków";
+    ITAR_DJG_M_ArmorExpansion__name = "Średni pancerz łowcy smoków";
     
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 maksymalnej many";
@@ -772,6 +774,10 @@ func void Patch_AE_LocalizePolish() {
     Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Usuń hełm z pancerza paladyna";
     Patch_AE_PC_Itar_pal_h_FH_desc = "Podnieś przybłicę pancerza paladyna";
     Patch_AE_PC_Itar_pal_h_NH_desc = "Podnieś przybłicę pancerza paladyna";
+    Patch_AE_PC_Itar_djg_M_desc = "Zdejmij hełm ze średniego pancerza łowcy smoków.";
+    Patch_AE_PC_Itar_djg_M_NH_desc = "Załóż hełm na średni pancerz łowcy smoków.";
+    Patch_AE_PC_Itar_djg_H_NH_desc = "Załóż hełm na ciężki pancerz łowcy smoków";
+    Patch_AE_PC_Itar_djg_H_desc = "Zdejmij hełm z ciężkiego pancerza łowcy smoków";
     
     // ------
     // Ulthar

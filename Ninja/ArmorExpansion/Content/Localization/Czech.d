@@ -53,6 +53,8 @@ const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Křižáka";
 const string ITAR_ARX_HUNTERH_ArmorExpansion__name = "Zesílený Lovecký Kabát";
 const string ITAR_ARX_HUNTERM_ArmorExpansion__name = "Lovecký Kabát";
 const string ITAR_KDF_M_ArmorExpansion__name = "Středně Těžké Ohnivé Roucho";
+const string ITAR_DJG_H_ArmorExpansion__name = "Těžká zbroj drakobijců";
+const string ITAR_DJG_M_ArmorExpansion__name = "Středně těžká zbroj drakobijců";
 
 // Armor bonus
 const string Patch_AE_TEXT_MaxManaBonus20 = "+20 bonus maximální many"; // ITAR_PAL_F_ArmorExpansion, ITAR_PAL_FNH_ArmorExpansion, ITAR_PAL_FFH_ArmorExpansion
@@ -781,6 +783,10 @@ const string Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Sklopit hledí paladinské zbro
 const string Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Odebrat Helmu paladinské zbroje";
 const string Patch_AE_PC_Itar_pal_h_FH_desc = "Vyklopit hledí paladinské zbroje";
 const string Patch_AE_PC_Itar_pal_h_NH_desc = "Vyklopit hledí paladinské zbroje";
+const string Patch_AE_PC_Itar_djg_M_desc = "Odebrat Helmu ke střední zbroji drakobijců";
+const string Patch_AE_PC_Itar_djg_M_NH_desc = "Vrátit helmu ke střední zbroji drakobijců";
+const string Patch_AE_PC_Itar_djg_H_NH_desc = "Vrátit helmu k těžké zbroji drakobijců";
+const string Patch_AE_PC_Itar_djg_H_desc = "Odebrat helmu k těžké zbroji drakobijců";
 
 // ------
 // Ulthar
