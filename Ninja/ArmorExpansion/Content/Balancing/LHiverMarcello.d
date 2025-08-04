@@ -229,7 +229,7 @@ func void Patch_AE_BalanceLHiverMarcello() {
 
     // Guildless
 
-    ITAR_PAL_ST_ArmorExpansion__PROT_EDGE = 90;
+    ITAR_PAL_ST_ArmorExpansion__PROT_EDGE = 100;
     ITAR_PAL_ST_ArmorExpansion__PROT_BLUNT = 90;
     ITAR_PAL_ST_ArmorExpansion__PROT_POINT = 70;
     ITAR_PAL_ST_ArmorExpansion__PROT_FIRE = 20;
@@ -253,9 +253,9 @@ func void Patch_AE_BalanceLHiverMarcello() {
     ITAR_ARX_HUNTERH_ArmorExpansion__PROT_FIRE = 15;
     ITAR_ARX_HUNTERH_ArmorExpansion__PROT_MAGIC = 15;
 
-    ITAR_PIR_H_ArmorExpansion__PROT_EDGE = 75;
-    ITAR_PIR_H_ArmorExpansion__PROT_BLUNT = 75;
-    ITAR_PIR_H_ArmorExpansion__PROT_POINT = 65;
+    ITAR_PIR_H_ArmorExpansion__PROT_EDGE = 90;
+    ITAR_PIR_H_ArmorExpansion__PROT_BLUNT = 90;
+    ITAR_PIR_H_ArmorExpansion__PROT_POINT = 90;
     ITAR_PIR_H_ArmorExpansion__PROT_FIRE = 15;
     ITAR_PIR_H_ArmorExpansion__PROT_MAGIC = 10;
 };
