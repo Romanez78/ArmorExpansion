@@ -31,15 +31,16 @@ func void Ninja_ArmorExpansion_Menu() {
 
     // Localization
     const int loc = 0; loc = Patch_AE_GuessLocalization();
-
     if (loc == Patch_AE_Lang_EN) {
         Patch_AE_LocalizeEnglish();
     } else if (loc == Patch_AE_Lang_PL) {
         Patch_AE_LocalizePolish();
     } else if (loc == Patch_AE_Lang_DE) {
-        Patch_AE_LocalizeGerman(); 
-    };
-    // Else: keep Czech
+        Patch_AE_LocalizeGerman();
+    }; // Else: keep Czech
+
+    // Apply balancing based on mods
+    Patch_AE_RouteBalancing();
 };
 
 
