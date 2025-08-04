@@ -202,6 +202,18 @@ func void Patch_AE_BalanceShieldsMod() {
 
     // DJG
 
+    ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE = 130;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_BLUNT = 130;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_POINT = 130;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_FIRE = 85;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_MAGIC = 40;
+
+    ITAR_DJG_MNH_ArmorExpansion__PROT_EDGE = 120;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_BLUNT = 120;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_POINT = 120;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE = 75;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC = 35;
+
     ITAR_DJG_CL_ArmorExpansion__PROT_EDGE = 90;
     ITAR_DJG_CL_ArmorExpansion__PROT_BLUNT = 90;
     ITAR_DJG_CL_ArmorExpansion__PROT_POINT = 90;
