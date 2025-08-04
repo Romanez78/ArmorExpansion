@@ -1,13 +1,13 @@
 func int Patch_AE_IsLHiverBuddygothArtstuff() {
-    return ((Hlp_StrCmp(NINJA_MODNAME, "LHIVER"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_DE"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_EN"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_PL"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVERBYBUDDYGOTH"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_ARTSTUFF_DE"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_ARTSTUFF_EN"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_ARTSTUFF_PL"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_ARTSTUFF_RU")));
+    return ((Hlp_StrCmp(NINJA_MODNAME, "2807488408_LHIVER"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2807488408_LHIVER_DE"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2807488408_LHIVER_EN"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2807488408_LHIVER_PL"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2802368795_LHIVERBYBUDDYGOTH"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "3434711154_LHIVER_ARTSTUFF_DE"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "3434711154_LHIVER_ARTSTUFF_EN"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "3434711154_LHIVER_ARTSTUFF_PL"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "3434711154_LHIVER_ARTSTUFF_RU")));
 };
 
 func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
