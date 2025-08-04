@@ -207,6 +207,18 @@ func void Patch_AE_BalanceAtariar() {
 
     // DJG
 
+    ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE = 160;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_BLUNT = 160;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_POINT = 160;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_FIRE = 100;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_MAGIC = 50;
+
+    ITAR_DJG_MNH_ArmorExpansion__PROT_EDGE = 125;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_BLUNT = 125;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_POINT = 125;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE = 75;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC = 30;
+
     ITAR_DJG_CL_ArmorExpansion__PROT_EDGE = 90;
     ITAR_DJG_CL_ArmorExpansion__PROT_BLUNT = 95;
     ITAR_DJG_CL_ArmorExpansion__PROT_POINT = 90;
