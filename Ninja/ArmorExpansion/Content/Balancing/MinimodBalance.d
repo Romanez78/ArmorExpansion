@@ -1,8 +1,8 @@
 func int Patch_AE_IsBalanceMinimodBalance() {
-    return ((Hlp_StrCmp(NINJA_MODNAME, "REMASTER_DE"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "REMASTER_EN"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "REMASTER_PL"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "REMASTER_RU"))
+    return ((Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_DE"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_EN"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_PL"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_RU"))
          || (Hlp_StrCmp(NINJA_MODNAME, "MINIMOD_BALANCE")));
 };
 
