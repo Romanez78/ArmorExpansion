@@ -212,6 +212,18 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
 
     // DJG
 
+    ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE = 75;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_BLUNT = 100;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_POINT = 95;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_FIRE = 85;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_MAGIC = 20;
+
+    ITAR_DJG_MNH_ArmorExpansion__PROT_EDGE = 70;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_BLUNT = 90;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_POINT = 85;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE = 70;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC = 15;
+
     ITAR_DJG_CL_ArmorExpansion__PROT_EDGE = 55;
     ITAR_DJG_CL_ArmorExpansion__PROT_BLUNT = 75;
     ITAR_DJG_CL_ArmorExpansion__PROT_POINT = 55;
