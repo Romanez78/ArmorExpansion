@@ -238,6 +238,18 @@ const int ITAR_DJG_CrawlerP_AEXPANSION__PROT_POINT = 60;
 const int ITAR_DJG_CrawlerP_AEXPANSION__PROT_FIRE = 10;
 const int ITAR_DJG_CrawlerP_AEXPANSION__PROT_MAGIC = 0;
 
+const int ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE = 150;
+const int ITAR_DJG_HNH_ArmorExpansion__PROT_BLUNT = 150;
+const int ITAR_DJG_HNH_ArmorExpansion__PROT_POINT = 150;
+const int ITAR_DJG_HNH_ArmorExpansion__PROT_FIRE = 100;
+const int ITAR_DJG_HNH_ArmorExpansion__PROT_MAGIC = 50;
+
+const int ITAR_DJG_MNH_ArmorExpansion__PROT_EDGE = 120;
+const int ITAR_DJG_MNH_ArmorExpansion__PROT_BLUNT = 120;
+const int ITAR_DJG_MNH_ArmorExpansion__PROT_POINT = 120;
+const int ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE = 70;
+const int ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC = 35;
+
 const int ITAR_PAL_HNH_ArmorExpansion__PROT_EDGE = 150;
 const int ITAR_PAL_HNH_ArmorExpansion__PROT_BLUNT = 150;
 const int ITAR_PAL_HNH_ArmorExpansion__PROT_POINT = 150;
