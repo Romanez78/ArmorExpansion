@@ -1,7 +1,7 @@
 func int Patch_AE_IsLHiverMasty() {
-    return ((Hlp_StrCmp(NINJA_MODNAME, "LHIVER_MASTY_DE"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_MASTY_EN"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "LHIVER_MASTY_PL")));
+    return ((Hlp_StrCmp(NINJA_MODNAME, "2973766210_LHIVER_MASTY_DE"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2973766210_LHIVER_MASTY_EN"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2973766210_LHIVER_MASTY_PL")));
 };
 
 func void Patch_AE_BalanceLHiverMasty() {
