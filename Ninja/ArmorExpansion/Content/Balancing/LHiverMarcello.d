@@ -204,6 +204,18 @@ func void Patch_AE_BalanceLHiverMarcello() {
 
     // DJG
 
+    ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE = 150;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_BLUNT = 150;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_POINT = 150;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_FIRE = 100;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_MAGIC = 50;
+
+    ITAR_DJG_MNH_ArmorExpansion__PROT_EDGE = 120;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_BLUNT = 120;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_POINT = 120;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE = 70;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC = 35;
+
     ITAR_DJG_CL_ArmorExpansion__PROT_EDGE = 90;
     ITAR_DJG_CL_ArmorExpansion__PROT_BLUNT = 90;
     ITAR_DJG_CL_ArmorExpansion__PROT_POINT = 90;
