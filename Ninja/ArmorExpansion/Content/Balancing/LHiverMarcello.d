@@ -1,5 +1,6 @@
 func int Patch_AE_IsLHiverMarcello() {
     return ((Hlp_StrCmp(NINJA_MODNAME, "LHIVER_MARCELLO_DE"))
+         || (Hlp_StrCmp(NINJA_MODNAME, "2793700066_LHE204_DE"))
          || (Hlp_StrCmp(NINJA_MODNAME, "LHE204_DE")));
 };
 
