@@ -206,6 +206,18 @@ func void Patch_AE_BalanceMinimodBalance() {
 
     // DJG
 
+    ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE = 150;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_BLUNT = 150;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_POINT = 150;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_FIRE = 120;
+    ITAR_DJG_HNH_ArmorExpansion__PROT_MAGIC = 60;
+
+    ITAR_DJG_MNH_ArmorExpansion__PROT_EDGE = 125;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_BLUNT = 125;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_POINT = 125;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE = 90;
+    ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC = 40;
+
     ITAR_DJG_CL_ArmorExpansion__PROT_EDGE = 80;
     ITAR_DJG_CL_ArmorExpansion__PROT_BLUNT = 80;
     ITAR_DJG_CL_ArmorExpansion__PROT_POINT = 90;
