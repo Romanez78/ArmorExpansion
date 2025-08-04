@@ -154,9 +154,9 @@ const int ITAR_PAL_ST_ArmorExpansion__PROT_POINT = 90;
 const int ITAR_PAL_ST_ArmorExpansion__PROT_FIRE = 35;
 const int ITAR_PAL_ST_ArmorExpansion__PROT_MAGIC = 15;
 
-const int ITAR_PAL_MH_ArmorExpansion__PROT_EDGE = 125;
-const int ITAR_PAL_MH_ArmorExpansion__PROT_BLUNT = 125;
-const int ITAR_PAL_MH_ArmorExpansion__PROT_POINT = 125;
+const int ITAR_PAL_MH_ArmorExpansion__PROT_EDGE = 120;
+const int ITAR_PAL_MH_ArmorExpansion__PROT_BLUNT = 120;
+const int ITAR_PAL_MH_ArmorExpansion__PROT_POINT = 120;
 const int ITAR_PAL_MH_ArmorExpansion__PROT_FIRE = 75;
 const int ITAR_PAL_MH_ArmorExpansion__PROT_MAGIC = 35;
 
