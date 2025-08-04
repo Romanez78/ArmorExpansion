@@ -2514,11 +2514,11 @@ INSTANCE ITAR_DJG_HNH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	150;
-	protection [PROT_BLUNT] = 	150;
-	protection [PROT_POINT] = 	150;
-	protection [PROT_FIRE] 	= 	100;
-	protection [PROT_MAGIC] = 	50;
+	protection [PROT_EDGE]	=	ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_HNH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_HNH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_HNH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_HNH_ArmorExpansion__PROT_MAGIC;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
@@ -2554,11 +2554,11 @@ INSTANCE ITAR_DJG_MNH_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	120;
-	protection [PROT_BLUNT] = 	120;
-	protection [PROT_POINT] = 	120;
-	protection [PROT_FIRE] 	= 	75;
-	protection [PROT_MAGIC] = 	35;
+	protection [PROT_EDGE]	=	ITAR_DJG_MNH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_MNH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_MNH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC;
 
 	value 					=	VALUE_ITAR_PAL_H;
 
