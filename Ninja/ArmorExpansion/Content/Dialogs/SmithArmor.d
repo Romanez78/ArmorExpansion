@@ -219,12 +219,8 @@ func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 };
 func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
-	{
-        // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+	CreateInvItems(self, ItMiSwordRaw, 1);
 	B_ENDPRODUCTIONDIALOG();
-	};
 };
 
 
@@ -317,11 +313,15 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
-    };
+
+
+    // Quit a dialogue window
+	B_ENDPRODUCTIONDIALOG();
+};
+
 INSTANCE Patch_AE_PC_ITAR_PAL_ANH (C_INFO)
 {
 	npc				= PC_Hero;
@@ -373,21 +373,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_A_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_ANH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -445,21 +443,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_A_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_AFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -517,21 +513,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_ANH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_AFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -589,21 +583,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_AFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_ANH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -661,21 +653,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_AFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_A_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -733,21 +723,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_ANH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_A_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -805,21 +793,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FNH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_F_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_FNH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -877,21 +863,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_F_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_FFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -949,22 +933,21 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_FNH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_FFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
-    };
+
 
     // Quit a dialogue window
 	B_ENDPRODUCTIONDIALOG();
@@ -1020,21 +1003,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_fNH_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_FFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_FNH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1092,21 +1073,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_FFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_F_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1164,22 +1143,21 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_FNH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_F_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
-    };
+
 
     // Quit a dialogue window
 	B_ENDPRODUCTIONDIALOG();
@@ -1235,22 +1213,21 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_R_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_RNH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
-    };
+
 
     // Quit a dialogue window
 	B_ENDPRODUCTIONDIALOG();
@@ -1306,21 +1283,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_R_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_RFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1378,21 +1353,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_RNH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_RFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1450,21 +1423,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_RFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_RNH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1522,21 +1493,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_RFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_R_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1594,21 +1563,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_RNH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_R_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1666,21 +1633,19 @@ FUNC VOID Patch_AE_PC_ITAR_CRUSADER_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_CRUSADER_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_NH_CRUSADER_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_NH_CRUSADER_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1738,21 +1703,19 @@ FUNC VOID Patch_AE_PC_ITAR_nh_crusader_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_NH_CRUSADER_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_CRUSADER_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_CRUSADER_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1811,20 +1774,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_MH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_MH_FH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_FH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1882,21 +1844,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_MH_FH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_MH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -1955,21 +1915,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_H, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_HNH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -2027,21 +1985,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_H, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_HFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -2099,21 +2055,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_HNH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_HFH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -2171,21 +2125,19 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_HFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_HNH_ArmorExpansion);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -2243,21 +2195,19 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_FH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_HFH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_H);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -2315,21 +2265,19 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_NH_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, - 1);
+        Npc_RemoveInvItems(hero, ItMiSwordrawhot, - 1);
         Npc_RemoveInvItems(hero, ITAR_PAL_HNH_ArmorExpansion, 1);
         // Create an armor
         CreateInvItem(hero, ITAR_PAL_H);
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -2398,11 +2346,10 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_NH_Info()
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
-    };
+
 
     // Quit a dialogue window
 	B_ENDPRODUCTIONDIALOG();
@@ -2469,11 +2416,10 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_Info()
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
-    };
+
 
     // Quit a dialogue window
 	B_ENDPRODUCTIONDIALOG();
@@ -2538,13 +2484,10 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_NH_Info()
 		// Print an information about success
         Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_H.name);
     // If hasn't
-    // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
@@ -2613,10 +2556,8 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_Info()
     // If hasn't
     } else
     {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+        CreateInvItem(hero, ItMiSwordrawhot);
     };
 
 
