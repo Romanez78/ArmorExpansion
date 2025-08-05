@@ -745,7 +745,7 @@ func void Patch_AE_LocalizeEnglish() {
     // Hero
     // ----
 
-    Patch_AE_PC_FORGE_ARMOR_desc = "Forge Weapon";
+    Patch_AE_PC_FORGE_ARMOR_desc = "Forge Armor";
     Patch_AE_PC_ITAR_PAL_ST_desc = "Forge Stewark Plate Armor";
     Patch_AE_PC_ITAR_PAL_ANH_desc = "Remove Helm from Enriched Paladin Armor";
     Patch_AE_PC_ITAR_PAL_AFH_desc = "Lower the visor of the Enriched Paladin Armor";
