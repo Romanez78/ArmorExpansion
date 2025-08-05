@@ -1,9 +1,5 @@
 func int Patch_AE_IsBalanceMinimodBalance() {
-    return ((Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_DE"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_EN"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_PL"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "3372979990_REMASTER_RU"))
-         || (Hlp_StrCmp(NINJA_MODNAME, "MINIMOD_BALANCE")));
+    return ((Hlp_StrCmp(NINJA_MODNAME, "MINIMOD_BALANCE"));
 };
 
 func void Patch_AE_BalanceMinimodBalance() {
