@@ -219,7 +219,9 @@ func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 };
 func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
-	CreateInvItems(self, ItMiSwordRaw, 1);
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+        // Restore a raw steel
+        CreateInvItem(hero, Patch_AE_SmithItem);
 	B_ENDPRODUCTIONDIALOG();
 };
 
@@ -313,6 +315,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -384,6 +387,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -454,6 +458,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -524,6 +529,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -594,6 +600,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -664,6 +671,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -734,6 +742,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -804,6 +813,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FNH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -874,6 +884,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -944,6 +955,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1014,6 +1026,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_fNH_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1084,6 +1097,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1154,6 +1168,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1224,6 +1239,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1294,6 +1310,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1364,6 +1381,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1434,6 +1452,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1504,6 +1523,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1574,6 +1594,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1644,6 +1665,7 @@ FUNC VOID Patch_AE_PC_ITAR_CRUSADER_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1714,6 +1736,7 @@ FUNC VOID Patch_AE_PC_ITAR_nh_crusader_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1785,6 +1808,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1855,6 +1879,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1926,6 +1951,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -1996,6 +2022,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -2066,6 +2093,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -2136,6 +2164,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -2206,6 +2235,7 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_FH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -2276,6 +2306,7 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
     };
@@ -2346,8 +2377,9 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, ItMiSwordrawhot);
+        CreateInvItem(hero, Patch_AE_SmithItem);
     };
 
 
@@ -2416,8 +2448,9 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, ItMiSwordrawhot);
+        CreateInvItem(hero, Patch_AE_SmithItem);
     };
 
 
@@ -2486,8 +2519,9 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_NH_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, ItMiSwordrawhot);
+        CreateInvItem(hero, Patch_AE_SmithItem);
     };
 
 
@@ -2556,8 +2590,9 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_Info()
     // If hasn't
     } else
     {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
         // Restore a raw steel
-        CreateInvItem(hero, ItMiSwordrawhot);
+        CreateInvItem(hero, Patch_AE_SmithItem);
     };
 
 
