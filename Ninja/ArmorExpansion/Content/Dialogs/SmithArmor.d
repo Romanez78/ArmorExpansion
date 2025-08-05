@@ -219,10 +219,12 @@ func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 };
 func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
 	B_ENDPRODUCTIONDIALOG();
+	};
 };
 
 
@@ -314,11 +316,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ST_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -386,11 +390,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -457,11 +463,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -528,11 +536,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -599,11 +609,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -670,11 +682,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -741,11 +755,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -812,11 +828,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FNH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -883,11 +901,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -954,11 +974,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1025,11 +1047,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_fNH_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1096,11 +1120,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1167,11 +1193,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1238,11 +1266,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1309,11 +1339,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1380,11 +1412,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1451,11 +1485,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1522,11 +1558,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1593,11 +1631,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1664,11 +1704,13 @@ FUNC VOID Patch_AE_PC_ITAR_CRUSADER_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_NH_CRUSADER_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1735,11 +1777,13 @@ FUNC VOID Patch_AE_PC_ITAR_nh_crusader_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_CRUSADER_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1807,11 +1851,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_FH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1878,11 +1924,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -1950,11 +1998,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2021,11 +2071,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2092,11 +2144,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2163,11 +2217,13 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2234,11 +2290,13 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_FH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2305,11 +2363,13 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2376,11 +2436,13 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_djg_M.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2447,12 +2509,13 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_MNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
-
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
     // Quit a dialogue window
 	B_ENDPRODUCTIONDIALOG();
@@ -2518,11 +2581,13 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_NH_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_H.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
@@ -2589,11 +2654,13 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_Info()
         Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_HNH_ArmorExpansion.name);
     // If hasn't
     } else
-    {
-    if (!Patch_AE_IsLHiverBuddygothArtstuff()) {
+    if (!Patch_AE_IsLHiverBuddygothArtstuff()) 
+	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-    };
+	B_ENDPRODUCTIONDIALOG();
+	};
+};
 
 
     // Quit a dialogue window
