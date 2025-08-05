@@ -320,11 +320,6 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
 	{
         // Restore a raw steel
         CreateInvItem(hero, Patch_AE_SmithItem);
-	B_ENDPRODUCTIONDIALOG();
-	};
-};
-
-
     // Quit a dialogue window
 	B_ENDPRODUCTIONDIALOG();
 };
