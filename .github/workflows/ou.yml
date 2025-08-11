@@ -19,7 +19,7 @@ jobs:
     name: Generate output units from scripts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Generate output units
         id: ou
         uses: szapp/output-unit-action@v1
