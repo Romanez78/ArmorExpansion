@@ -160,12 +160,16 @@ instance Patch_AE_PC_FORGE_ARMOR(C_INFO)
 	nr				= 0;
 	condition		= Patch_AE_PC_FORGE_ARMOR_Condition;
 	information		= Patch_AE_PC_FORGE_ARMOR_Info;
-	permanent		= true;
+	permanent		= TRUE;
 	description		= Patch_AE_PC_FORGE_ARMOR_desc;
 };
 func int Patch_AE_PC_FORGE_ARMOR_Condition()
 {
-	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SMITHWEAPON)
+    // Safely check if the variables "Normalwaffen" and "Erzwaffen" exist
+    var int Normalwaffen; Normalwaffen = Patch_AE_ReadInteger("Normalwaffen", FALSE);
+    var int Erzwaffen; Erzwaffen = Patch_AE_ReadInteger("Erzwaffen", FALSE);
+
+	if (PLAYER_MOBSI_PRODUCTION == MOBSI_SMITHWEAPON) && (Normalwaffen == FALSE) && (Erzwaffen == FALSE) // Do not show during the other sub-menus
     {
 
 		return true;
@@ -192,7 +196,7 @@ instance Patch_AE_PC_FORGE_ARMORBACK(C_INFO)
 };
 func int Patch_AE_PC_FORGE_ARMORBACK_Condition()
 {
-    if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+    if (PLAYER_MOBSI_PRODUCTION == Patch_AE_MOBSI_SmithWeapon)
     {
         return true;
     };
@@ -218,7 +222,7 @@ instance Patch_AE_PC_FORGE_ARMOR_End(C_Info)
 };
 func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 {
-	if (Patch_AE_MOBSI_SmithWeapon == PLAYER_MOBSI_PRODUCTION)
+	if (PLAYER_MOBSI_PRODUCTION == Patch_AE_MOBSI_SmithWeapon)
 	{
 		return TRUE;
 	};

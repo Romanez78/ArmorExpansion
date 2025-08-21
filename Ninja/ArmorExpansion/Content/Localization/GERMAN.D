@@ -16,16 +16,16 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_Use_Plan_StewarkArmor__line8 = "Dies ist ein Befehl des Commandanten Cenrin der Stadtwache.";
 
     // Armor names
-    ITAR_DJG_CrawlerP_ArmorExpansion__name = "Crawler Platte Jagd Rüstung";    
-    ITAR_PAL_H_ArmorExpansion__name = "Paladinrüstung";    
+    ITAR_DJG_CrawlerP_ArmorExpansion__name = "Crawler Platte Jagd Rüstung";
+    ITAR_PAL_H_ArmorExpansion__name = "Paladinrüstung";
     ITAR_MIL_H_ArmorExpansion__name = "Schwere Milizrüstung";
-    ITAR_MILP_H_ArmorExpansion__name = "Schwere Armbrustschützen Milizrüstung";   
+    ITAR_MILP_H_ArmorExpansion__name = "Schwere Armbrustschützen Milizrüstung";
     ITAR_GAMBESON_ArmorExpansion__name = "Jäger Stoffrüstung";
     ITAR_PAL_A_ArmorExpansion__name = "Angereicherte Paladinrüstung";
     ITAR_PAL_R_ArmorExpansion__name = "Rostige Paladinrüstung";
     ITAR_PAL_F_ArmorExpansion__name = "Reparierte Paladinrüstung";
     ITAR_PAL_C_ArmorExpansion__name = "Armbrustschützen Ritterrüstung";
-    ITAR_PAL_CM_ArmorExpansion__name = "Schwere Armbrustschützen Ritterrüstung";    
+    ITAR_PAL_CM_ArmorExpansion__name = "Schwere Armbrustschützen Ritterrüstung";
     ITAR_MIL_Med2_ArmorExpansion__name = "Verbesserte Mittlere Milizrüstung";
     ITAR_MIL_P_ArmorExpansion__name = "Armbrustschützen Milizrüstung";
     ITAR_MIL_M__name = "Mittlere Milizrüstung";
@@ -56,14 +56,14 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_KDF_M_ArmorExpansion__name = "Mittlere Feuerrobe";
     ITAR_DJG_H_ArmorExpansion__name = "Schwere Drachenjägerrüstung";
     ITAR_DJG_M_ArmorExpansion__name = "Mittlere Drachenjägerrüstung";
-    
+
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximaler Mana Bonus";
     Patch_AE_TEXT_MaxManaBonus40 = "+40 Maximaler Mana Bonus";
     Patch_AE_TEXT_OldArmor = "Diese Rüstung hat seine besten Tage schon hinter sich.";
     Patch_AE_TEXT_ArcheryBonus3 = "+3% Bogen Bonus";
     Patch_AE_TEXT_ArcheryBonus5 = "+5% Bogen Bonus";
-    Patch_AE_TEXT_ArcheryBonus6 = "+6% Bogen Bonus";    
+    Patch_AE_TEXT_ArcheryBonus6 = "+6% Bogen Bonus";
     Patch_AE_TEXT_TwoHandedBonus5 = "+5% Zweihand Bonus";
     Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 Geschicklichkeit Bonus, +10% Einhand Bonus";
 
@@ -79,7 +79,7 @@ func void Patch_AE_LocalizeGerman() {
     // ------
     // Andre
     // ------
-    
+
     Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEE = "(Wählen Sie Mittlere Milizrüstung)";
     Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_RANGED = "(Wählen Sie eine mittlere Miliz-Armbrustschützenrüstung)";
     Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_desc = "Hast du keine leichtere Rüstung für mich? (Leichte Milizrüstung ersetzen)";
@@ -295,7 +295,7 @@ func void Patch_AE_LocalizeGerman() {
     // ------
     // Garond
     // ------
-    
+
     Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_MELEE = "(Wählen Sie eine schwere Ritterrüstung)";
     Patch_AE_DIA_GAROND_KNIGHT_ARMORREWARD_RANGED = "(Wählen Sie eine schwere Ritter-Armbrustschützenrüstung)";
     // AI_Output(self, other, "PATCH_AE_DIA_GAROND_KNIGHT_ARMORREWARD_01_03_DE"); //Warte!
@@ -314,17 +314,17 @@ func void Patch_AE_LocalizeGerman() {
     // ------
     // Gorax
     // ------
-    
+
     Patch_AE_DIA_Gorax_KDFM_ASK_desc = "Kann ich eine bessere Robe des Feuers bekommen?";
     // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_DE"); //Kann ich eine bessere Robe des Feuers bekommen?
     // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_DE"); //Ja, für eine kleine Spende an das Kloster werde ich dich mit einer besseren Robe des Feuers belohnen.
     // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_05_DE"); //Wie hoch ist die Spende?
     // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_DE"); //1500 Gold sollten genug sein.
-    
+
     Patch_AE_DIA_Gorax_KDFM_BUY_desc = "Mittlere Feuerrobe kaufen (Schutz: 55/55/30/30, Preis: 1500 Gold)";
     // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_DE"); //Ich bringe eine Spende für das Kloster.
     // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_DE"); //Großartig, hier ist dein Feuergewand.
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_Gorax_KDFM_ASK_3_03 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_DE";
     PATCH_AE_DIA_Gorax_KDFM_ASK_3_04 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_DE";
@@ -332,7 +332,7 @@ func void Patch_AE_LocalizeGerman() {
     PATCH_AE_DIA_Gorax_KDFM_ASK_3_06 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_DE";
     PATCH_AE_DIA_Gorax_KDFM_BUY_4_1 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_DE";
     PATCH_AE_DIA_Gorax_KDFM_BUY_4_2 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_DE";
-    
+
     // ------
     // Greg
     // ------
@@ -392,7 +392,7 @@ func void Patch_AE_LocalizeGerman() {
     PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_DE";
     PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_DE";
     PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_DE";
-    
+
     // ------
     // Harad
     // ------
@@ -734,9 +734,9 @@ func void Patch_AE_LocalizeGerman() {
     // Hero
     // ----
 
-    Patch_AE_PC_FORGE_ARMOR_desc = "Rüstung schmieden.";
-    Patch_AE_PC_ITAR_PAL_ST_desc = "Stewark Plattenrüstung schmieden.";
-    Patch_AE_PC_ITAR_PAL_ANH_desc = "Den Helm der Angereicherten Paladinrüstung entfernen.";
+    Patch_AE_PC_FORGE_ARMOR_desc = "Rüstung schmieden";
+    Patch_AE_PC_ITAR_PAL_ST_desc = "Stewark Plattenrüstung schmieden";
+    Patch_AE_PC_ITAR_PAL_ANH_desc = "Den Helm der Angereicherten Paladinrüstung entfernen";
     Patch_AE_PC_ITAR_PAL_AFH_desc = "Das Visier der Angereicherten Paladinrüstung herunterziehen";
     Patch_AE_PC_ITAR_PAL_AFH_NH_desc = "Das Visier der Angereicherten Paladinrüstung herunterziehen";
     Patch_AE_PC_ITAR_PAL_ANH_FH_desc = "Den Helm der Angereicherten Paladinrüstung entfernen";
@@ -758,17 +758,17 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_PC_ITAR_nh_crusader_desc = "Einen Helm zur Kreuzritterrüstung hinzufügen";
     Patch_AE_PC_PAL_MH_desc = "Den Helm der schwere ritterrüstung entfernen";
     Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Einen Helm zur schwere rüstung hinzufügen";
-    Patch_AE_PC_ITAR_PAL_HNH_desc = "Den Helm der Paladinrüstung entfernen.";
+    Patch_AE_PC_ITAR_PAL_HNH_desc = "Den Helm der Paladinrüstung entfernen";
     Patch_AE_PC_ITAR_PAL_HFH_desc = "Das Visier der Paladinrüstung herunterziehen";
     Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Das Visier der Paladinrüstung herunterziehen";
-    Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Den Helm der Paladinrüstung entfernen.";
+    Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Den Helm der Paladinrüstung entfernen";
     Patch_AE_PC_Itar_pal_h_FH_desc = "Das Visier der Paladinrüstung hochziehen";
     Patch_AE_PC_Itar_pal_h_NH_desc = "Das Visier der Paladinrüstung hochziehen";
     Patch_AE_PC_Itar_djg_M_desc = "Den Helm der mittlere Drachenjägerrüstung entfernen";
     Patch_AE_PC_Itar_djg_M_NH_desc = "Den Helm der mittlere Drachenjägerrüstung hinzufügen";
     Patch_AE_PC_Itar_djg_H_NH_desc = "Den Helm der schwere Drachenjägerrüstung hinzufügen";
     Patch_AE_PC_Itar_djg_H_desc = "Den Helm der schwere Drachenjägerrüstung entfernen";
-    
+
     // ------
     // Ulthar
     // ------
@@ -786,12 +786,12 @@ func void Patch_AE_LocalizeGerman() {
     // ----
     // Wolf
     // ----
-    
+
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_desc = "Ich habe gehört, du machst Rüstungen.";
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_DE"); //Ich habe gehört, du machst Rüstungen.
-    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_DE"); //Dann hast du richtig gehört, ich mache leichtere Lederrüstungen für die Jagd. 
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_DE"); //Dann hast du richtig gehört, ich mache leichtere Lederrüstungen für die Jagd.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_DE"); //Zwar bieten sie keinen so guten Schutz, erleichtern jedoch das Schießen mit Bogen oder Armbrust..
-    
+
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Ich möchte meine Rüstung durch die leichtere ersetzen.";
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_DE"); //Ich möchte meine Rüstung durch die leichtere ersetzen.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_DE"); //Klar, ich habe gerade eins gemacht. Bitte sehr.
@@ -804,16 +804,16 @@ func void Patch_AE_LocalizeGerman() {
     // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_02_DE"); //Ich habe hier eine mittelschwere Rüstung für dich, es ist ein gutes Stück.
     // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_03_DE"); //Tut mir leid, aber Lee wollte nicht, dass ich es dir einfach so gebe. Ich denke, du solltest zuerst Torlof helfen.
     // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_04_DE"); //Wenn du fertig bist, komm zu mir, ich werde etwas Besseres für dich haben..
-    
+
     DIA_Wolf_BuyArmorMP_AEXPANSION_desc = "Mittlere Jagdrüstung kaufen (Schutz: 45/45, +6% Bogen Bonus Preis 1000).";
     // AI_Output(other, self, "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_DE"); //Gib mir die Rüstung.
     // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_DE"); //Hier, bitte sehr. Es ist ein anständiges Stück Rüstung.
     // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_DE"); //Tut mir leid, aber ich kann sie dir nicht umsonst geben. Lee würde mir den Kopf abreißen, wenn er herausfände, dass ich die Rüstung umsonst verschenke.
-    
+
     DIA_Wolf_ArmorBow_AEXPANSION_desc = "Hätten Sie nicht eine bessere Rüstung für mich?.";
     // AI_Output(other, self, "DIA_Wolf_ArmorBow_AEXPANSION_15_00_DE"); //Hätten Sie nicht eine bessere Rüstung für mich?.
     // AI_Output(self, other, "DIA_Wolf_ArmorBow_AEXPANSION_04_01_DE"); //Ja, sicher.
-    
+
     DIA_Wolf_BuyArmorBow_AEXPANSION_desc = "Schwere Jagd-Rüstung kaufen (Schutz: 70/70, +6% Bogen Bonus, Preis 2500).";
     // AI_Output(other, self, "DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_DE"); //Gib mir die Rüstung.
     // AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_DE"); //Hier ist er. Ein gutes Stück, ich bin stolz darauf.
@@ -830,7 +830,7 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_TOPIC_WOLF_CRAWLERARMOR = "Crawler Platte Jagd Rüstung";
     Patch_AE_TOPIC_WOLF_CRAWLERARMOR_NOTIF_entry = "Aus 7 Crawlerplatten kann Wolf mir eine Jagd Rüstung herstellen.";
     Patch_AE_DIA_WOLF_CRAWLERARMOR_Bring_entry = "Ich habe die Crawler platten mitgebracht.";
-    Patch_AE_DIA_WOLF_GOTARMOR_entry = "Wolf gab mir die Rüstung.";    
+    Patch_AE_DIA_WOLF_GOTARMOR_entry = "Wolf gab mir die Rüstung.";
 
     // Localized OU (do not change)
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_DE";

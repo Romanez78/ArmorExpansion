@@ -7,6 +7,7 @@ Content\Internal\MwEquipRecords.d
 Content\Internal\RwEquipRecords.d
 Content\Internal\FatnessRecords.d
 Content\Internal\ApplyRevert.d
+Content\Internal\ReadSymbol.d
 
 // Localization
 Content\Localization\Czech.d
