@@ -54,6 +54,7 @@ Content\Dialogs\Mortis.d
 Content\Dialogs\Ulthar.d
 Content\Dialogs\Wolf.d
 Content\Dialogs\SmithArmor\Core.d
+Content\Dialogs\SmithArmor\Armors.d
 
 // Functions
 Content\NpcChanges.d
