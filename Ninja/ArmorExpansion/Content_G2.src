@@ -54,7 +54,15 @@ Content\Dialogs\Mortis.d
 Content\Dialogs\Ulthar.d
 Content\Dialogs\Wolf.d
 Content\Dialogs\SmithArmor\Core.d
-Content\Dialogs\SmithArmor\Armors.d
+Content\Dialogs\SmithArmor\ItAr_PAL_ST_Blueprint.d
+Content\Dialogs\SmithArmor\ItAr_PAL_A.d
+Content\Dialogs\SmithArmor\ItAr_PAL_F.d
+Content\Dialogs\SmithArmor\ItAr_PAL_H.d
+Content\Dialogs\SmithArmor\ItAr_PAL_MH.d
+Content\Dialogs\SmithArmor\ItAr_PAL_R.d
+Content\Dialogs\SmithArmor\ItAr_DJG_H.d
+Content\Dialogs\SmithArmor\ItAr_DJG_M.d
+Content\Dialogs\SmithArmor\ItAr_Crusader.d
 
 // Functions
 Content\NpcChanges.d

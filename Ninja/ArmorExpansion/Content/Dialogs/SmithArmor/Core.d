@@ -160,6 +160,28 @@ func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 };
 func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
-	CreateInvItems(self, ItMiSwordRaw, 1);
+	CreateInvItems(self, Patch_AE_SmithItem, 1);  // Default: ItMiSwordrawhot
 	B_ENDPRODUCTIONDIALOG();
+};
+
+/*
+ * Basic condition and info dialogs
+ */
+func int Patch_AE_Smith_Basic_Condition(var int armorInst)
+{
+    if (PLAYER_MOBSI_PRODUCTION == Patch_AE_MOBSI_SmithWeapon)
+    {
+        // If has armor
+        if (Npc_HasItems(hero, armorInst) > 0)
+        {
+            return TRUE;
+        };
+    };
+};
+func void Patch_AE_Smith_ForgeAndReplace(var int armorInst, var int removeItemInst)
+{
+    Npc_RemoveInvItems(hero, removeItemInst, 1);
+    CreateInvItem(hero, armorInst);
+    Patch_AE_Func_Print_ForgeSuccess(armorInst);
+    B_ENDPRODUCTIONDIALOG();
 };
