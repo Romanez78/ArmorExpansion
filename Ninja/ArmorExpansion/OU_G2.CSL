@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 14.07.2025 13:26:55
+date 21.08.2025 20:23:22
 user https://github.com/szapp/output-unit-action
 END
 objects 2962
@@ -11610,7 +11610,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2900]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2901]
 subType=enum:0
-text=string:Dann hast du richtig gehört, ich mache leichtere Lederrüstungen für die Jagd. 
+text=string:Dann hast du richtig gehört, ich mache leichtere Lederrüstungen für die Jagd.
 name=string:PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_DE.WAV
 []
 []
