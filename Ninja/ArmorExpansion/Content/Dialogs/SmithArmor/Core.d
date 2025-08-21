@@ -91,8 +91,11 @@ const int Patch_AE_INGREDIENTS_ITAR_DJG_H__itar_djg_Hnh = 1;
  *  Patch_AE_Func_Print_ProdItemsMissing
  *   - display information about missing ingredient(s)
  */
-func void Patch_AE_Func_Print_ProdItemsMissing(var string ingredientName, var int missingAmount)
+func void Patch_AE_Func_Print_ProdItemsMissing(var int ingredientInst, var int missingAmount)
 {
+    var int itmPtr; itmPtr = Itm_GetPtr(ingredientInst); // Initialize and load it into "item"
+    var string ingredientName; ingredientName = item.name;
+
     // Build a string
     var string str; str = Patch_AE_PRINT_ProdItemsMissing__SUBSTR_1;
     str = ConcatStrings(str, ingredientName);
@@ -107,8 +110,11 @@ func void Patch_AE_Func_Print_ProdItemsMissing(var string ingredientName, var in
  *  Patch_AE_Func_Print_ForgeSuccess
  *   - display information about an forged armor
  */
-func void Patch_AE_Func_Print_ForgeSuccess(var string armorName)
+func void Patch_AE_Func_Print_ForgeSuccess(var int armorInst)
 {
+    var int itmPtr; itmPtr = Itm_GetPtr(armorInst); // Initialize and load it into "item"
+    var string armorName; armorName = item.name;
+
     // Build and print a string
     Print(ConcatStrings(armorName, Patch_AE_PRINT_ForgeSuccess));
 };
@@ -269,8 +275,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        var int itmPtr; itmPtr = Itm_GetPtr(Patch_AE_SmithItem); // Initialize and load it into "item"
-        Patch_AE_Func_Print_ProdItemsMissing(item.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(Patch_AE_SmithItem, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -285,7 +290,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ItAt_WargFur.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ItAt_WargFur, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -309,7 +314,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
         CreateInvItem(hero, ITAR_PAL_ST_ArmorExpansion);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ST_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ST_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -360,7 +365,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -380,7 +385,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -430,7 +435,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -450,7 +455,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -500,7 +505,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_ANH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_ANH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -520,7 +525,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_AFH_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_AFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -570,7 +575,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_AFH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_AFH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -590,7 +595,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ANH_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ANH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -640,7 +645,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -660,7 +665,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -710,7 +715,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_A_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -730,7 +735,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_A_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_A_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -780,7 +785,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FNH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -800,7 +805,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FNH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -850,7 +855,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -870,7 +875,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -920,7 +925,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_FNH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_FNH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -940,7 +945,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_FFH_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -990,7 +995,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_fNH_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_FFH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_FFH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1010,7 +1015,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_fNH_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_FNH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1060,7 +1065,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1080,7 +1085,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1130,7 +1135,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_F_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1150,7 +1155,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_F_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_F_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1200,7 +1205,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1220,7 +1225,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1270,7 +1275,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1290,7 +1295,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1340,7 +1345,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_RNH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_RNH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1360,7 +1365,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RFH_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1410,7 +1415,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_RFH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_RFH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1430,7 +1435,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_RNH_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_RNH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1480,7 +1485,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1500,7 +1505,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1550,7 +1555,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_R_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1570,7 +1575,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_R_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_R_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1620,7 +1625,7 @@ FUNC VOID Patch_AE_PC_ITAR_CRUSADER_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_NH_CRUSADER_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_NH_CRUSADER_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1640,7 +1645,7 @@ FUNC VOID Patch_AE_PC_ITAR_CRUSADER_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_NH_CRUSADER_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_NH_CRUSADER_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1690,7 +1695,7 @@ FUNC VOID Patch_AE_PC_ITAR_nh_crusader_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_CRUSADER_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_CRUSADER_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1710,7 +1715,7 @@ FUNC VOID Patch_AE_PC_ITAR_nh_crusader_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_CRUSADER_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_CRUSADER_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1761,7 +1766,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_MH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_MH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1781,7 +1786,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_FH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_FH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1831,7 +1836,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_MH_FH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_MH_FH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1851,7 +1856,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_MH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_MH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1902,7 +1907,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1922,7 +1927,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -1972,7 +1977,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -1992,7 +1997,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -2042,7 +2047,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_HNH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_HNH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2062,7 +2067,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HFH_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HFH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -2112,7 +2117,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_HFH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_HFH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2132,7 +2137,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_HNH_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_HNH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -2182,7 +2187,7 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_FH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2202,7 +2207,7 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_FH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H);
     // If hasn't
     } else
     {
@@ -2252,7 +2257,7 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_PAL_H, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2272,7 +2277,7 @@ FUNC VOID Patch_AE_PC_Itar_pal_h_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_H);
     // If hasn't
     } else
     {
@@ -2322,7 +2327,7 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_djg_M.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_djg_M, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2342,7 +2347,7 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_djg_M.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_djg_M);
     // If hasn't
     } else
     {
@@ -2392,7 +2397,7 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_DJG_MNH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_DJG_MNH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2412,7 +2417,7 @@ FUNC VOID Patch_AE_PC_Itar_djg_M_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_MNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_MNH_ArmorExpansion);
     // If hasn't
     } else
     {
@@ -2462,7 +2467,7 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_NH_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_DJG_H.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_DJG_H, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2482,7 +2487,7 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_NH_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_H.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_H);
     // If hasn't
     } else
     {
@@ -2532,7 +2537,7 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_Info()
         amount_missing = amount_needed - amount_current;
 
         // Print message
-        Patch_AE_Func_Print_ProdItemsMissing(ITAR_DJG_HNH_ArmorExpansion.name, amount_missing);
+        Patch_AE_Func_Print_ProdItemsMissing(ITAR_DJG_HNH_ArmorExpansion, amount_missing);
 
         // Save an information, that player hasn't all ingredients
         has_all_ingredients = false;
@@ -2552,7 +2557,7 @@ FUNC VOID Patch_AE_PC_Itar_DJG_H_Info()
         CreateInvItem(hero, ItMiSwordrawhot);
 
 		// Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_HNH_ArmorExpansion.name);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_DJG_HNH_ArmorExpansion);
     // If hasn't
     } else
     {

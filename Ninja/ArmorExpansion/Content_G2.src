@@ -52,7 +52,7 @@ Content\Dialogs\Milten.d
 Content\Dialogs\Mortis.d
 Content\Dialogs\Ulthar.d
 Content\Dialogs\Wolf.d
-Content\Dialogs\SmithArmor.d
+Content\Dialogs\SmithArmor\Core.d
 
 // Functions
 Content\NpcChanges.d
