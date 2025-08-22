@@ -8,6 +8,8 @@ func int Patch_AE_IsAtariar() {
 };
 
 func void Patch_AE_BalanceAtariar() {
+    // No additional steel in hand at anvil
+    Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot = Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot + 1;
 
     // MIL
 

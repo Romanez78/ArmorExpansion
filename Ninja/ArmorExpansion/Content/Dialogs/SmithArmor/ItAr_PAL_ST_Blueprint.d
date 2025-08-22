@@ -101,9 +101,10 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
     } else
     {
         // Restore a raw steel
-        if (!Patch_AE_IsLHiverMasty()) // LHiver requires no base resource to use the anvil
+        if (!Patch_AE_IsLHiverMasty()) // These mods require no base-resource to use the anvil
         && (!Patch_AE_IsLHiverBuddygothArtstuff())
-        && (!Patch_AE_IsLHiverMarcello()) {
+        && (!Patch_AE_IsLHiverMarcello())
+        && (!Patch_AE_IsAtariar()) {
             CreateInvItem(hero, ItMiSwordraw);
         };
     };

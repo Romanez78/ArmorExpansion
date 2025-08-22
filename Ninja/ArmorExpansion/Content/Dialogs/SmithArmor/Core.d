@@ -167,9 +167,10 @@ func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 };
 func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
-    if (!Patch_AE_IsLHiverMasty()) // LHiver requires no base resource to use the anvil
+    if (!Patch_AE_IsLHiverMasty()) // These mods require no base-resource to use the anvil
     && (!Patch_AE_IsLHiverBuddygothArtstuff())
-    && (!Patch_AE_IsLHiverMarcello()) {
+    && (!Patch_AE_IsLHiverMarcello())
+    && (!Patch_AE_IsAtariar()) {
 	    CreateInvItems(self, ItMiSwordraw, 1);
     };
 
