@@ -96,6 +96,13 @@ instance Patch_AE_PC_FORGE_ARMOR(C_INFO)
 };
 func int Patch_AE_PC_FORGE_ARMOR_Condition()
 {
+    // If the "common weapon" smith dialog condition exists, use that one
+    if (MEM_GetSymbolIndex("PC_Common_Condition") != -1)
+    {
+        MEM_CallByString("PC_Common_Condition");
+        return MEM_PopIntResult();
+    };
+
     // Safely check if the variables "Normalwaffen" and "Erzwaffen" exist
     var int Normalwaffen; Normalwaffen = Patch_AE_ReadInteger("Normalwaffen", FALSE);
     var int Erzwaffen; Erzwaffen = Patch_AE_ReadInteger("Erzwaffen", FALSE);
@@ -160,7 +167,12 @@ func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 };
 func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
-	CreateInvItems(self, Patch_AE_SmithItem, 1);  // Default: ItMiSwordrawhot
+    if (!Patch_AE_IsLHiverMasty()) // LHiver requires no base resource to use the anvil
+    && (!Patch_AE_IsLHiverBuddygothArtstuff())
+    && (!Patch_AE_IsLHiverMarcello()) {
+	    CreateInvItems(self, ItMiSwordraw, 1);
+    };
+
 	B_ENDPRODUCTIONDIALOG();
 };
 

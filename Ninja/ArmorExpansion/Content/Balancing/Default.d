@@ -3,6 +3,9 @@
  */
 
 const int Patch_AE_SmithItem = -1;
+const int Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot = 6 - 1; // IMPORTANT: An one of a raw steel is in a hand
+const int Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItAt_WargFur = 3;
+
 
 /*
  * Item stats and bonuses

@@ -11,9 +11,9 @@
 /*
  *  instance `ITAR_PAL_ST`
  *      Description: in `Patch_AE_Use_Plan_StewarkArmor` called by `ItWr_BluePrint_StewarkArmor_ArmorExpansion` [IT_ARMOREXPANSION.D]
+ *
+ * Resource amount listed in [Balancing/Default.d]
  */
-const int Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot = 6;
-const int Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItAt_WargFur = 3;
 
 
 /*
@@ -49,7 +49,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
 
     // [ItMiSwordrawhot]
     amount_needed = Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot;
-    amount_current = Npc_HasItems(hero, Patch_AE_SmithItem) + 1; // IMPORTANT: An one of a raw steel is in a hand
+    amount_current = Npc_HasItems(hero, Patch_AE_SmithItem);
 
     if (amount_needed > amount_current)
     {
@@ -86,7 +86,7 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
 
         // [ItMiSwordrawhot]
         // IMPORTANT: An one raw steel will be removed by finishing using of an anvil
-        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot - 1);
+        Npc_RemoveInvItems(hero, Patch_AE_SmithItem, Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot);
 
         // [ItAt_WargFur]
         Npc_RemoveInvItems(hero, ItAt_WargFur, Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItAt_WargFur);
@@ -101,7 +101,11 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
     } else
     {
         // Restore a raw steel
-        CreateInvItem(hero, Patch_AE_SmithItem);
+        if (!Patch_AE_IsLHiverMasty()) // LHiver requires no base resource to use the anvil
+        && (!Patch_AE_IsLHiverBuddygothArtstuff())
+        && (!Patch_AE_IsLHiverMarcello()) {
+            CreateInvItem(hero, ItMiSwordraw);
+        };
     };
 
 

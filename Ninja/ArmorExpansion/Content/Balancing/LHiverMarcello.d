@@ -5,6 +5,8 @@ func int Patch_AE_IsLHiverMarcello() {
 };
 
 func void Patch_AE_BalanceLHiverMarcello() {
+    // No additional steel in hand at anvil
+    Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot = Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot + 1;
 
     // MIL
 
@@ -272,4 +274,3 @@ func void Patch_AE_BalanceLHiverMarcello() {
     ITAR_PIR_H_ArmorExpansion__PROT_FIRE = 15;
     ITAR_PIR_H_ArmorExpansion__PROT_MAGIC = 10;
 };
-
