@@ -2422,11 +2422,37 @@ FUNC VOID Equip_ITAR_DJG_CrawlerP()
 {
 	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, 6);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, 6);
+
+    if(Npc_IsPlayer(self))
+    {
+        MCArmor_Equipped = TRUE;
+        if(MC_Equipped == TRUE)
+        {
+            self.protection[PROT_EDGE] += BA_Bonus01;
+            self.protection[PROT_BLUNT] += BA_Bonus01;
+            self.protection[PROT_POINT] += BA_Bonus01;
+            self.protection[PROT_MAGIC] += BA_Bonus01;
+            self.protection[PROT_FIRE] += BA_Bonus01;
+        };
+    };
 };
 FUNC VOID UnEquip_ITAR_DJG_CrawlerP()
 {
 	B_RaiseFightTalent(self, NPC_TALENT_CROSSBOW, -6);
 	B_RaiseFightTalent(self, NPC_TALENT_BOW, -6);
+
+    if(Npc_IsPlayer(self))
+    {
+        MCArmor_Equipped = FALSE;
+        if(MC_Equipped == TRUE)
+        {
+            self.protection[PROT_EDGE] -= BA_Bonus01;
+            self.protection[PROT_BLUNT] -= BA_Bonus01;
+            self.protection[PROT_POINT] -= BA_Bonus01;
+            self.protection[PROT_MAGIC] -= BA_Bonus01;
+            self.protection[PROT_FIRE] -= BA_Bonus01;
+        };
+    };
 };
 
 INSTANCE ITAR_PAL_HNH_ArmorExpansion (C_Item)
@@ -2531,19 +2557,19 @@ INSTANCE ITAR_DJG_HNH_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 
@@ -2571,19 +2597,19 @@ INSTANCE ITAR_DJG_MNH_ArmorExpansion (C_Item)
 
 	description				=	name;
 
-	TEXT[1]					=	NAME_Prot_Edge;			
+	TEXT[1]					=	NAME_Prot_Edge;
 	COUNT[1]				= 	protection	[PROT_EDGE];
-	
-	TEXT[2]					=	NAME_Prot_Point;		
+
+	TEXT[2]					=	NAME_Prot_Point;
 	COUNT[2]				= 	protection	[PROT_POINT];
-	
-	TEXT[3] 				=	NAME_Prot_Fire;			
+
+	TEXT[3] 				=	NAME_Prot_Fire;
 	COUNT[3]				= 	protection	[PROT_FIRE];
-	
-	TEXT[4]					=	NAME_Prot_Magic;		
+
+	TEXT[4]					=	NAME_Prot_Magic;
 	COUNT[4]				= 	protection	[PROT_MAGIC];
-	
-	TEXT[5]					=	NAME_Value;			
+
+	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
 
