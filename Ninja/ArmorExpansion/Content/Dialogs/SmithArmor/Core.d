@@ -50,6 +50,19 @@ func void Patch_AE_Func_Print_ForgeSuccess(var int armorInst)
     Print(ConcatStrings(armorName, Patch_AE_PRINT_ForgeSuccess));
 };
 
+/*
+ *  Patch_AE_ReturnSmithResourceToPC
+ *   - return the anvil resource to the player
+ *   - handles exceptions for mods that don't require resources for using the anvil
+ */
+func void Patch_AE_ReturnSmithResourceToPC() {
+    if (!Patch_AE_IsLHiverMasty()) // These mods require no base-resource to use the anvil
+    && (!Patch_AE_IsLHiverBuddygothArtstuff())
+    && (!Patch_AE_IsLHiverMarcello())
+    && (!Patch_AE_IsAtariar()) {
+        CreateInvItem(hero, ItMiSwordraw);
+    };
+};
 
 /*
  *  [DIALOGUES]
@@ -167,13 +180,7 @@ func int Patch_AE_PC_FORGE_ARMOR_End_Condition()
 };
 func void Patch_AE_PC_FORGE_ARMOR_End_Info()
 {
-    if (!Patch_AE_IsLHiverMasty()) // These mods require no base-resource to use the anvil
-    && (!Patch_AE_IsLHiverBuddygothArtstuff())
-    && (!Patch_AE_IsLHiverMarcello())
-    && (!Patch_AE_IsAtariar()) {
-	    CreateInvItems(self, ItMiSwordraw, 1);
-    };
-
+    Patch_AE_ReturnSmithResourceToPC();
 	B_ENDPRODUCTIONDIALOG();
 };
 
@@ -196,5 +203,8 @@ func void Patch_AE_Smith_ForgeAndReplace(var int armorInst, var int removeItemIn
     Npc_RemoveInvItems(hero, removeItemInst, 1);
     CreateInvItem(hero, armorInst);
     Patch_AE_Func_Print_ForgeSuccess(armorInst);
+
+    Patch_AE_ReturnSmithResourceToPC(); // The resource (ItMiSwordRaw) is returned to the player, because it was a cosmetic job
+
     B_ENDPRODUCTIONDIALOG();
 };
