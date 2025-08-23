@@ -17,7 +17,7 @@ on:
 # Leaving the variables empty, will skip the deployment steps
 env:
   STEAM_WORKSHOP_G1:
-  STEAM_WORKSHOP_G2: 3385060610
+  STEAM_WORKSHOP_G2:
 
 permissions:
   contents: write
