@@ -17,8 +17,11 @@ const int Patch_AE_NpcMeleeWeapons_htbl = 0;
 
 /*
  * Equip melee weapon, and unequip any melee weapons before, including exchanging currently readied weapons
+ *
+ * This is the basic version that also the function Patch_AE_EquipRangedWeapon" in "RwEquipRecords.d" is based on.
  */
 func void Patch_AE_EquipMeleeWeapon(var C_NPC slf, var int weaponInstance) {
+
     // Check if weapon already equipped and/or add it to the inventory
     if (weaponInstance != -1) {
         if (!Npc_HasItems(slf, weaponInstance)) {
@@ -39,7 +42,7 @@ func void Patch_AE_EquipMeleeWeapon(var C_NPC slf, var int weaponInstance) {
     // Unready weapon of same type
     var int readied;
     if (Npc_HasReadiedMeleeWeapon(slf))
-        // Does not have a melee weapon but still in fight mode: should now draw the new weapon instead of keeping fists
+        // Does not have a melee weapon but still in fight mode: should now draw new weapon instead of keeping fists
     || ((!Npc_HasEquippedMeleeWeapon(slf)) && (Npc_IsInFightMode(slf, FMODE_FIST)) && (weaponInstance != -1)) {
         const int oCNpc__EV_ForceRemoveWeapon = 7662656; //0x74EC40
         const int call0 = 0;
@@ -57,17 +60,20 @@ func void Patch_AE_EquipMeleeWeapon(var C_NPC slf, var int weaponInstance) {
     if (weaponInstance != -1) {
         var int itemPtr; itemPtr = _@(item);
 
+        // oCNpc__EquipWeapon already defined elsewhere
         const int call1 = 0;
         if (CALL_Begin(call1)) {
             CALL_PtrParam(_@(itemPtr));
             CALL__thiscall(_@(slfPtr), oCNpc__EquipWeapon);
             call1 = CALL_End();
         };
+
+        // No ammunition or similar required
+        //
     };
 
     // Instantaneously draw new weapon (or ranged weapon or fists) if previous weapon was readied
     if (readied) {
-
         // Determine exact mode for the new weapon
         var int fm;
         if (weaponInstance == -1) {
@@ -93,6 +99,7 @@ func void Patch_AE_EquipMeleeWeapon(var C_NPC slf, var int weaponInstance) {
                 } else if (itm.flags & ITEM_CROSSBOW) {
                     fm = 6;
                 };
+                // Ensure enough amo
                 B_CreateAmmo(slf);
             };
         };
@@ -149,8 +156,10 @@ func void Patch_AE_NpcUpdateMeleeWeapon(var string npcInstanceName, var int weap
     // Update the melee weapon
     Patch_AE_EquipMeleeWeapon(slf, weaponInstance);
 
-    // Remove unequipped weapon if any
-    Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    // Remove unequipped weapon if any and if not same as new one
+    if (weaponInstance != curWeaponInst) {
+        Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    };
 };
 
 /*
@@ -180,8 +189,10 @@ func void Patch_AE_NpcOriginalMeleeWeapon(var int npcInstance, var int weaponIns
     // Update the melee weapon
     Patch_AE_EquipMeleeWeapon(slf, weaponInstance);
 
-    // Remove unequipped weapon if any
-    Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    // Remove unequipped weapon if any and if not same as new one
+    if (weaponInstance != curWeaponInst) {
+        Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    };
 };
 
 /*

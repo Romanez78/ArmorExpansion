@@ -21,6 +21,7 @@ const int Patch_AE_NpcRangedWeapons_htbl = 0;
  * This is slightly adjusted from the function Patch_AE_EquipMeleeWeapon in "MwEquipRecords.d"
  */
 func void Patch_AE_EquipRangedWeapon(var C_NPC slf, var int weaponInstance) {
+
     // Check if weapon already equipped and/or add it to the inventory
     if (weaponInstance != -1) {
         if (!Npc_HasItems(slf, weaponInstance)) {
@@ -82,6 +83,8 @@ func void Patch_AE_EquipRangedWeapon(var C_NPC slf, var int weaponInstance) {
                 fm = 5;
             } else if (item.flags & ITEM_CROSSBOW) {
                 fm = 6;
+            // There is no extra types
+            // like in melee combat
             } else {
                 fm = FMODE_FIST;
             };
@@ -153,8 +156,10 @@ func void Patch_AE_NpcUpdateRangedWeapon(var string npcInstanceName, var int wea
     // Update the ranged weapon
     Patch_AE_EquipRangedWeapon(slf, weaponInstance);
 
-    // Remove unequipped weapon if any
-    Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    // Remove unequipped weapon if any and if not same as new one
+    if (weaponInstance != curWeaponInst) {
+        Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    };
 };
 
 /*
@@ -184,8 +189,10 @@ func void Patch_AE_NpcOriginalRangedWeapon(var int npcInstance, var int weaponIn
     // Update the ranged weapon
     Patch_AE_EquipRangedWeapon(slf, weaponInstance);
 
-    // Remove unequipped weapon if any
-    Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    // Remove unequipped weapon if any and if not same as new one
+    if (weaponInstance != curWeaponInst) {
+        Npc_RemoveInvItems(slf, curWeaponInst, 1);
+    };
 };
 
 /*
