@@ -71,7 +71,7 @@ func int Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Condition()
 {
     if (Patch_AE_BENNET_SLD_LReforgedArmorBought == FALSE)
     && (Npc_Hasitems(other, ItAr_SLD_L) > 0)
-    && (Npc_HasItems(other, ItMiSwordraw) >= 2)
+    && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_Wolffur) >= 2)
     && (Npc_HasItems(other, ItMi_Gold) >= 200)
     && (Npc_KnowsInfo (other, Patch_AE_DIA_BENNET_SLD_LReforgedHUH))
@@ -84,13 +84,13 @@ func void Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Info()
     AI_Output(other, self, PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_01);
 
     if (Npc_HasItems(other, ItAr_SLD_L) > 0)
-    && (Npc_HasItems(other, ItMiSwordraw) >= 2)
+    && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_Wolffur) >= 2)
     && (Npc_HasItems(other, ItMi_Gold) >= 200)
     {
         B_GivePlayerXP(20);
         B_GiveInvItems(other, self, ItAr_SLD_L, 1);
-        B_GiveInvItems(other, self, ItMiSwordraw, 2);
+        B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 2);
         B_GiveInvItems(other, self, ItAt_WolfFur, 2);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
         AI_Output(other, self, PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_11);
@@ -168,7 +168,7 @@ func int Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Condition()
 {
     if (Patch_AE_BENNET_MERC_MReforgedArmorBought == FALSE)
     && (Npc_Hasitems(other, ItAr_SLD_M) > 0)
-    && (Npc_HasItems(other, ItMiSwordraw) >= 2)
+    && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_Wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 650)
     && (Npc_KnowsInfo(other, Patch_AE_DIA_BENNET_MERC_MReforgedHUH))
@@ -181,13 +181,13 @@ func void Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Info()
     AI_Output(other, self, PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_01);
 
     if (Npc_HasItems(other, ItAr_SLD_M) > 0)
-    && (Npc_HasItems(other, ItMiSwordraw) >= 2)
+    && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_Wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 650)
     {
         B_GivePlayerXP(25);
         B_GiveInvItems(other, self, ItAr_SLD_M, 1);
-        B_GiveInvItems(other, self, ItMiSwordraw, 2);
+        B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 2);
         B_GiveInvItems(other, self, ItAt_WargFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 650);
         AI_Output(other, self, PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_10);
