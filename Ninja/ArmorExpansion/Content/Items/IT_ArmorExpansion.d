@@ -328,8 +328,8 @@ INSTANCE ITAR_PAL_A_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ARCPALA.3ds";
-	visual_change 			=	"Armor_Pal_H112.asc";
+	visual 					=	"ARMOR_STATIC_PALADINFINALFH_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_PALADIN_MANAFINAL_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -439,8 +439,8 @@ INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ARCPALA.3ds";
-	visual_change 			=	"Armor_Pal_H112.asc";
+	visual 					=	"ARMOR_STATIC_PALADINFIXEDFH_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_PALADIN_MANAFIXED_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -1907,8 +1907,8 @@ INSTANCE ITAR_PAL_ANH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ARCPALANH.3ds";
-	visual_change 			=	"Armor_Pal_H_Blessed.asc";
+	visual 					=	"ARMOR_STATIC_PALADINFINALNH_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_PALADIN_MANAFINAL_NH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -1990,8 +1990,8 @@ INSTANCE ITAR_PAL_FNH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ARCPALANH.3ds";
-	visual_change 			=	"Armor_Pal_H_Blessed.asc";
+	visual 					=	"ARMOR_STATIC_PALADINFIXEDNH_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_PALADIN_MANAFIXED_NH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -2033,8 +2033,8 @@ INSTANCE ITAR_PAL_AFH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ARCPALA.3ds";
-	visual_change 			=	"Armor_PAL_H_ARCFULLHELM.asc";
+	visual 					=	"ARMOR_STATIC_PALADINFINALFH_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_PALADIN_MANAFINAL_FH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -2116,8 +2116,8 @@ INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ARCPALA.3ds";
-	visual_change 			=	"Armor_PAL_H_ARCFULLHELM.asc";
+	visual 					=	"ARMOR_STATIC_PALADINFIXEDFH_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_PALADIN_MANAFIXED_FH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
