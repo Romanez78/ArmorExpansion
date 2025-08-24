@@ -44,7 +44,7 @@ func void Patch_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_Info()
     if (B_GiveInvItems(other, self, ItMi_Gold, 200))
     {
         AI_Output(self, other, PATCH_AE_DIA_PATCHOC_BRIAN_IWANNABUYSOMESTEEL_4_2);
-        B_GiveInvItems(self, other, ItMiSwordraw, 1);
+        B_GiveInvItems(self, other, Patch_AE_SmithItemCold, 1);
     }
     else
     {
