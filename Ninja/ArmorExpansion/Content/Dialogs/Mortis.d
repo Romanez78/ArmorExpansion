@@ -65,7 +65,7 @@ instance Patch_AE_DIA_MORTIS_MIL_LReforgedArmor (C_INFO)
 };
 func int Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Condition()
 {
-    if (Npc_HasItems(other, ItAr_MIL_L) >= 0) && (Npc_HasItems(other, ItMiSwordraw) >= 1) && (Npc_HasItems(other, ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other, ItMi_Gold) >= 200)
+    if (Npc_HasItems(other, ItAr_MIL_L) >= 0) && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 1) && (Npc_HasItems(other, ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other, ItMi_Gold) >= 200)
     && (Npc_KnowsInfo(other, Patch_AE_DIA_MORTIS_MIL_LTHINGS))
     {
         return TRUE;
@@ -75,11 +75,11 @@ func void Patch_AE_DIA_MORTIS_MIL_LReforgedArmor_Info()
 {
     AI_Output(other, self, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_15_01);
 
-    if (Npc_HasItems(other, ItAr_MIL_L) >= 0) && (Npc_HasItems(other, ItMiSwordraw) >= 1) && (Npc_HasItems(other, ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other, ItMi_Gold) >= 200)
+    if (Npc_HasItems(other, ItAr_MIL_L) >= 0) && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 1) && (Npc_HasItems(other, ItAt_Addon_KeilerFur) >= 1) && (Npc_HasItems(other, ItMi_Gold) >= 200)
     {
         B_GivePlayerXP(20);
         B_GiveInvItems(other, self, ItAr_MIL_L, 1);
-        B_GiveInvItems(other, self, ItMiSwordraw, 1);
+        B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 1);
         B_GiveInvItems(other, self, ItAt_Addon_KeilerFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
         AI_Output(self, other, PATCH_AE_DIA_MORTIS_MIL_LREFORGEDARMOR_13_12);
@@ -154,7 +154,7 @@ func int Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Condition()
 {
     if (Patch_AE_MORTIS_MILITIA_MediumArmorBought == FALSE)
     && (Npc_HasItems(other, ItAr_MIL_M) > 0)
-    && (Npc_HasItems(other, ItMiSwordraw) >= 2)
+    && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 600)
     && (Npc_KnowsInfo (other, Patch_AE_DIA_MORTIS_MILITIA_MediumHUH))
@@ -167,13 +167,13 @@ func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info()
     AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01);
 
     if (Npc_HasItems(other, ItAr_MIL_M) > 0)
-    && (Npc_HasItems(other, ItMiSwordraw) >= 2)
+    && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 600)
     {
         B_GivePlayerXP(25);
         B_GiveInvItems(other, self, ItAr_MIL_M, 1);
-        B_GiveInvItems(other, self, ItMiSwordraw, 2);
+        B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 2);
         B_GiveInvItems(other, self, ItAt_wargfur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 600);
         AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_10);
