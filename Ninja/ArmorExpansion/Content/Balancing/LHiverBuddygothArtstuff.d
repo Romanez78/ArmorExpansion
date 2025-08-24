@@ -13,6 +13,7 @@ func int Patch_AE_IsLHiverBuddygothArtstuff() {
 func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     // Resources
     Patch_AE_SmithItem = MEM_GetSymbolIndex("ITMI_STEELBAR");
+    Patch_AE_SmithItemCold = MEM_GetSymbolIndex("ITMI_STEELBAR");
 
     // No additional steel in hand at anvil
     Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot = Patch_AE_INGREDIENTS_ITAR_PAL_ST__ItMiSwordrawhot + 1;
