@@ -63,13 +63,13 @@ func void Patch_AE_DIA_HARAD_PALADIN_REFORGE_Info()
     B_LogEntry(Patch_AE_TOPIC_MARTIN_ARMOR, Patch_AE_DIA_HARAD_PALADIN_REFORGE_entry1);
 
     if (Npc_HasItems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
-    && (Npc_HasItems(other, ItMiSwordraw) >= 6)
+    && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 6)
     && (Npc_HasItems(other, ItMi_Nugget) >= 3)
     {
         B_GivePlayerXP(100);
         B_GiveInvItems(other, self, ItAr_PAL_R_ARMOREXPANSION, 1);
         AI_Output(other, self, PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_9);
-        B_GiveInvItems(other, self, ItMiSwordraw, 6);
+        B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 6);
         B_GiveInvItems(other, self, ItMi_Nugget, 2);
         AI_Output(other, self, PATCH_AE_DIA_HARAD_PALADIN_REFORGE_15_10);
         AI_Output(self, other, PATCH_AE_DIA_HARAD_PALADIN_REFORGE_13_11);
