@@ -31,7 +31,7 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_SLD_BOW_ArmorExpansion__name = "Heavy Mercenary Hunting Armor";
     ITAR_SLD_MP_ArmorExpansion__name = "Medium Mercenary Hunting Armor";
     ITAR_MIL_R_ArmorExpansion__name = "Improved Light Militia Armor";
-    ITAR_CRUSADER_ArmorExpansion__name = "Crusader Armor";
+    ITAR_CRUSADER_ArmorExpansion__name = "Armor of the Order of Innos";
     ITAR_SLD_SCOUT_ArmorExpansion__name = "Light Mercenary Hunting Armor";
     ITAR_MIL_SCOUT_ArmorExpansion__name = "Militia Crossbowman Recruit Armor";
     ITAR_SLD_R_ArmorExpansion__name = "Improved Medium Mercenary Armor";
@@ -48,7 +48,7 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_PAL_AFH_ArmorExpansion__name = "Enriched Paladin Armor";
     ITAR_PAL_RFH_ArmorExpansion__name = "Rusty Paladin Armor";
     ITAR_PAL_FFH_ArmorExpansion__name = "Repaired Paladin Armor";
-    ITAR_NH_CRUSADER_ArmorExpansion_name = "Crusader Armor";
+    ITAR_NH_CRUSADER_ArmorExpansion_name = "Armor of the Order of Innos";
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Hunting Jacket";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Strenghtened Hunting Jacket";
     ITAR_KDF_M_ArmorExpansion__name = "Medium Fire Robe";
@@ -765,8 +765,8 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_PAL_RNH_FH_desc = "Remove the Helmet of the Rusty Paladin Armor";
     Patch_AE_PC_ITAR_PAL_R_FH_desc = "Put up the visor of the Rusty Paladin Armor";
     Patch_AE_PC_ITAR_PAL_R_NH_desc = "Put up the visor of the Rusty Paladin Armor";
-    Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Remove Helmet from Crusader Armor";
-    Patch_AE_PC_ITAR_nh_crusader_desc = "Return Helmet to Crusader Armor";
+    Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Remove Helmet from Armor of the Order of Innos";
+    Patch_AE_PC_ITAR_nh_crusader_desc = "Return Helmet to Armor of the Order of Innos";
     Patch_AE_PC_PAL_MH_desc = "Remove Helmet from heavy knight armor";
     Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Return Helmet to heavy knight armor";
     Patch_AE_PC_ITAR_PAL_HNH_desc = "Remove Helm from Paladin Armor";
@@ -786,7 +786,7 @@ func void Patch_AE_LocalizeEnglish() {
 
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "I've cleaned out all the shrines.";
     // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_EN"); //Wait, we wanted to support you in your fight against evil with a new armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN"); //Take this armor of the Crusader of Innos, I'm sure you'll find use for it.
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_EN"); //Take this Armor of our order, I'm sure you'll find it useful.
     // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_EN"); //Thanks.
 
     // Localized OU (do not change)
