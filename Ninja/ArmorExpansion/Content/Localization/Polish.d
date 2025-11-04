@@ -31,7 +31,7 @@ func void Patch_AE_LocalizePolish() {
     ITAR_SLD_BOW_ArmorExpansion__name = "Cieżka Myśliwska Zbroja Najemnika";
     ITAR_SLD_MP_ArmorExpansion__name = "Myśliwska Zbroja Najemnika";
     ITAR_MIL_R_ArmorExpansion__name = "Ulepszony lekki pancerz straży";
-    ITAR_CRUSADER_ArmorExpansion__name = "Zbroja krzyżowca";
+    ITAR_CRUSADER_ArmorExpansion__name = "Zbroja zakonu Innosa";
     ITAR_SLD_SCOUT_ArmorExpansion__name = "Lekka Myśliwska Zbroja Najemnika";
     ITAR_MIL_SCOUT_ArmorExpansion__name = "Zbroja rekruta kusznika straży";
     ITAR_SLD_R_ArmorExpansion__name = "Ulepszony średni pancerz najemnika";
@@ -48,7 +48,7 @@ func void Patch_AE_LocalizePolish() {
     ITAR_PAL_AFH_ArmorExpansion__name = "Wzbogacony pancerz paladyna";
     ITAR_PAL_RFH_ArmorExpansion__name = "Zardzewiały pancerz paladyna";
     ITAR_PAL_FFH_ArmorExpansion__name = "Naprawiony pancerz paladyna";
-    ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroja krzyżowca";
+    ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroja zakonu Innosa";
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Kurtka myśliwska";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Wzmocniona kurtka myśliwska";
     ITAR_KDF_M_ArmorExpansion__name = "Średnia szata ognia";
@@ -764,8 +764,8 @@ func void Patch_AE_LocalizePolish() {
     Patch_AE_PC_ITAR_PAL_RNH_FH_desc = "Usuń hełm z zardzewiałego pancerza paladyna";
     Patch_AE_PC_ITAR_PAL_R_FH_desc = "Podnieś przyłbicę zardzewiałego pancerza paladyna";
     Patch_AE_PC_ITAR_PAL_R_NH_desc = "Podnieś przyłbicę zardzewiałego pancerza paladyna";
-    Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Usuń hełm ze zbroi krzyżowca";
-    Patch_AE_PC_ITAR_nh_crusader_desc = "Przywróć hełm do zbroi krzyżowca";
+    Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Usuń hełm ze zbroi zakonu Innosa";
+    Patch_AE_PC_ITAR_nh_crusader_desc = "Przywróć hełm do zbroi zakonu Innosa";
     Patch_AE_PC_PAL_MH_desc = "Usuń hełm z ciężkiej zbroi rycerskiej";
     Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Przywróć hełm do ciężkiej zbroi rycerskiej";
     Patch_AE_PC_ITAR_PAL_HNH_desc = "Usuń hełm z pancerza paladyna";
@@ -785,7 +785,7 @@ func void Patch_AE_LocalizePolish() {
 
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "Oczyściłem wszystkie kapliczki.";
     // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_PL"); //Czekaj, chcieliśmy wesprzeć cię nowym pancerzem w twojej walce ze złem.
-    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_PL"); //Weź tę zbroję krzyżowca. Będzie ci służyć.
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_PL"); //Proszę, weź tę zbroję naszego zakonu. Jestem pewien, że dobrze ci posłuży.
     // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_PL"); //Dziękuję.
 
     // Localized OU (do not change)
