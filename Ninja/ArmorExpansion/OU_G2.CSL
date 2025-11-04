@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 04.11.2025 15:44:01
+date 04.11.2025 15:46:11
 user https://github.com/szapp/output-unit-action
 END
 objects 2962
@@ -11574,7 +11574,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2891]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2892]
 subType=enum:0
-text=string:Nimm diese Rüstung des Kreuzritters von Innos, ich bin sicher, du wirst sie gebrauchen können.
+text=string:Hier, nimm diese Rüstung unseres Ordens. Ich bin sicher, du wirst sie in deinem Kampf gegen das Böse gut gebrauchen können.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_DE.WAV
 []
 []
