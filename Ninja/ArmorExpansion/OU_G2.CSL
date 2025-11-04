@@ -3,7 +3,7 @@ ver 1
 zCArchiverGeneric
 ASCII
 saveGame 0
-date 04.11.2025 15:33:34
+date 04.11.2025 15:44:01
 user https://github.com/szapp/output-unit-action
 END
 objects 2962
@@ -8694,7 +8694,7 @@ subBlock0=float:0
 [% zCCSAtomicBlock 0 2171]
 [% oCMsgConversation:oCNpcMessage:zCEventMessage 0 2172]
 subType=enum:0
-text=string:Weź tę zbroję krzyżowca. Będzie ci służyć.
+text=string:Proszę, weź tę zbroję naszego zakonu. Jestem pewien, że dobrze ci posłuży.
 name=string:PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_PL.WAV
 []
 []
