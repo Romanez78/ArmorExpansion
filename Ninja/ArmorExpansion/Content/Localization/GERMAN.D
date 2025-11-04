@@ -32,7 +32,7 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_DJG_CL_ArmorExpansion__name = "Leichte DrachenverfolgerRüstung";
     ITAR_SLD_BOW_ArmorExpansion__name = "Schwere Söldner-Jagdrüstung";
     ITAR_MIL_R_ArmorExpansion__name = "Verbesserte Leichte Milizrüstung";
-    ITAR_CRUSADER_ArmorExpansion__name = "Kreuzritterrüstung";
+    ITAR_CRUSADER_ArmorExpansion__name = "Rüstung des Ordens des Innos";
     ITAR_SLD_SCOUT_ArmorExpansion__name = "Leichte Söldner-Jagdrüstung";
     ITAR_SLD_MP_ArmorExpansion__name = "Mittlere Söldner-Jagdrüstung";
     ITAR_MIL_SCOUT_ArmorExpansion__name = "Rüstung eines Armbrustschützen-Rekruten der Miliz";
@@ -50,7 +50,7 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_PAL_AFH_ArmorExpansion__name = "Angereicherte Paladinrüstung";
     ITAR_PAL_RFH_ArmorExpansion__name = "Rostige Paladinrüstung";
     ITAR_PAL_FFH_ArmorExpansion__name = "Reparierte Paladinrüstung";
-    ITAR_NH_CRUSADER_ArmorExpansion_name = "Kreuzritterrüstung";
+    ITAR_NH_CRUSADER_ArmorExpansion_name = "Rüstung des Ordens des Innos";
     ITAR_ARX_HUNTERM_ArmorExpansion__name = "Jagdjacke";
     ITAR_ARX_HUNTERH_ArmorExpansion__name = "Verstärkte Jagdjacke";
     ITAR_KDF_M_ArmorExpansion__name = "Mittlere Feuerrobe";
@@ -754,8 +754,8 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_PC_ITAR_PAL_RNH_FH_desc = "Den Helm der Rostigen Paladinrüstung entfernen";
     Patch_AE_PC_ITAR_PAL_R_FH_desc = "Das Visier der Rostigen Paladinrüstung hochziehen";
     Patch_AE_PC_ITAR_PAL_R_NH_desc = "Das Visier der Rostigen Paladinrüstung hochziehen";
-    Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Den Helm der Kreuzritterrüstung entfernen";
-    Patch_AE_PC_ITAR_nh_crusader_desc = "Einen Helm zur Kreuzritterrüstung hinzufügen";
+    Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Helm von der Rüstung des Ordens des Innos entfernen";
+    Patch_AE_PC_ITAR_nh_crusader_desc = "Helm an der Rüstung des Ordens des Innos befestigen";
     Patch_AE_PC_PAL_MH_desc = "Den Helm der schwere ritterrüstung entfernen";
     Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Einen Helm zur schwere rüstung hinzufügen";
     Patch_AE_PC_ITAR_PAL_HNH_desc = "Den Helm der Paladinrüstung entfernen";
@@ -775,7 +775,7 @@ func void Patch_AE_LocalizeGerman() {
 
     PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "Ich habe alle Schreine bereinigt.";
     // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_DE"); //Warte, wir wollten dich in deinem Kampf gegen das Böse mit einer neuen Rüstung unterstützen.
-    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_DE"); //Nimm diese Rüstung des Kreuzritters von Innos, ich bin sicher, du wirst sie gebrauchen können.
+    // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_DE"); //Hier, nimm diese Rüstung unseres Ordens. Ich bin sicher, du wirst sie in deinem Kampf gegen das Böse gut gebrauchen können.
     // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_DE"); //Danke.
 
     // Localized OU (do not change)
