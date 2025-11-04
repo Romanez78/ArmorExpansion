@@ -31,7 +31,7 @@ const string ITAR_MIL_M__name = "Střední Zbroj Domobrany";
 const string ITAR_DJG_CL_ArmorExpansion__name = "Lehká Zbroj Lovce Draku";
 const string ITAR_SLD_BOW_ArmorExpansion__name = "Těžká Lovecká Zbroj Žoldáka";
 const string ITAR_MIL_R_ArmorExpansion__name = "Vylepšená Lehká Zbroj Domobrany";
-const string ITAR_CRUSADER_ArmorExpansion__name = "Zbroj Křižáka";
+const string ITAR_CRUSADER_ArmorExpansion__name = "Zbroj Innosova řádu";
 const string ITAR_SLD_SCOUT_ArmorExpansion__name = "Lehká Lovecká Zbroj Žoldáka";
 const string ITAR_SLD_MP_ArmorExpansion__name = "Lovecká Zbroj Žoldáka";
 const string ITAR_MIL_SCOUT_ArmorExpansion__name = "Zbroj Rekruta Kušišníka Domobrany";
@@ -49,7 +49,7 @@ const string ITAR_PAL_FNH_ArmorExpansion__name = "Opravená Paladinská Zbroj";
 const string ITAR_PAL_AFH_ArmorExpansion__name = "Obohacená Paladinská Zbroj";
 const string ITAR_PAL_RFH_ArmorExpansion__name = "Rezavá Paladinská Zbroj";
 const string ITAR_PAL_FFH_ArmorExpansion__name = "Opravená Paladinská Zbroj";
-const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Křižáka";
+const string ITAR_NH_CRUSADER_ArmorExpansion_name = "Zbroj Innosova řádu";
 const string ITAR_ARX_HUNTERH_ArmorExpansion__name = "Zesílený Lovecký Kabát";
 const string ITAR_ARX_HUNTERM_ArmorExpansion__name = "Lovecký Kabát";
 const string ITAR_KDF_M_ArmorExpansion__name = "Středně Těžké Ohnivé Roucho";
@@ -773,8 +773,8 @@ const string Patch_AE_PC_ITAR_PAL_RFH_NH_desc = "Sklopit hledí Rezavé paladins
 const string Patch_AE_PC_ITAR_PAL_RNH_FH_desc = "Odebrat Helmu Rezavé paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_R_FH_desc = "Vyklopit hledí Rezavé paladinské zbroje";
 const string Patch_AE_PC_ITAR_PAL_R_NH_desc = "Vyklopit hledí Rezavé paladinské zbroje";
-const string Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Odebrat Helmu ze zbroje křižáka";
-const string Patch_AE_PC_ITAR_nh_crusader_desc = "Vrátit helmu ke zbroji křížáka";
+const string Patch_AE_PC_ITAR_CRUSADER_NH_desc = "Odebrat Helmu ze zbroje Innosova řádu";
+const string Patch_AE_PC_ITAR_nh_crusader_desc = "Vrátit helmu ke zbroji Innosova řádu";
 const string Patch_AE_PC_PAL_MH_desc = "Odebrat Helmu z těžké zbroje rytíře";
 const string Patch_AE_PC_ITAR_PAL_MH_FH_desc = "Vrátit helmu k těžké zbroji rytíře";
 const string Patch_AE_PC_ITAR_PAL_HNH_desc = "Odebrat Helmu paladinské zbroje";
@@ -794,7 +794,7 @@ const string Patch_AE_PC_Itar_djg_H_desc = "Odebrat helmu k těžké zbroji drak
 
 const string PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_desc = "Vyčistil jsem všechny svatině.";
 // AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01_CS"); //Počkej, chtěli jsme tě ještě podpořit v tvém boji proti zlu novou zbrojí.
-// AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_CS"); //Vezmi si tuhle zbroj křižáka Innose, jsem si jistý že ji využiješ.
+// AI_Output(self, other, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02_CS"); //Vezmi si tuhle zbroj našeho řádu, jsem si jistý že ji využiješ.
 // AI_Output(other, self, "PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03_CS"); //Děkuji.
 
 // Localized OU (do not change)
