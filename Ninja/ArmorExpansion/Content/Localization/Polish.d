@@ -54,6 +54,11 @@ func void Patch_AE_LocalizePolish() {
     ITAR_KDF_M_ArmorExpansion__name = "Średnia szata ognia";
     ITAR_DJG_H_ArmorExpansion__name = "Ciężki pancerz łowcy smoków";
     ITAR_DJG_M_ArmorExpansion__name = "Średni pancerz łowcy smoków";
+    ITAR_DJG_L_ArmorExpansion__name = "Lekki pancerz łowcy smoków";
+    ITAR_DJG_L2_ArmorExpansion__name = "Ulepszony Lekki pancerz łowcy smoków";
+    ITAR_DJG_H2_ArmorExpansion__name = "Ulepszony Ciężki pancerz łowcy smoków";
+    ITAR_DJG_M2_ArmorExpansion__name = "Ulepszony Średni pancerz łowcy smoków";
+    ITAR_PAL_M_ArmorExpansion__name = "Pancerz rycerza";
     
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 maksymalnej many";
