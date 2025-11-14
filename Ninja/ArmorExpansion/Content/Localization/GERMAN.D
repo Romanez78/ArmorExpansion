@@ -58,8 +58,8 @@ func void Patch_AE_LocalizeGerman() {
     ITAR_DJG_M_ArmorExpansion__name = "Mittlere Drachenjägerrüstung";
     ITAR_DJG_L_ArmorExpansion__name = "Leichte Drachenjägerrüstung";
     ITAR_DJG_L2_ArmorExpansion__name = "Verbesserte Leichte Drachenjägerrüstung";
-    ITAR_DJG_H2_ArmorExpansion__name = "Verbesserte Mittlere Drachenjägerrüstung";
-    ITAR_DJG_M2_ArmorExpansion__name = "Verbesserte Schwere Drachenjägerrüstung";
+    ITAR_DJG_H2_ArmorExpansion__name = "Verbesserte Schwere Drachenjägerrüstung";
+    ITAR_DJG_M2_ArmorExpansion__name = "Verbesserte Mittlere Drachenjägerrüstung";
     ITAR_PAL_M_ArmorExpansion__name = "Ritterrüstung";
 
     // Armor bonus
