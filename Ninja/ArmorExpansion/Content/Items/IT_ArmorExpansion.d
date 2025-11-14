@@ -734,7 +734,7 @@ INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
 	visual 					=	"MilitiaRed.3DS";
 	visual_change 			=	"ARMOR_MIL_P.asc";
 	visual_skin 			=	0;
-	material 				=	MAT_METAL;
+	material 				=	MAT_LEATHER;
 
 	on_equip    			=    Patch_AE_Equip_ITAR_MIL_P;
     on_unequip    			=    Patch_AE_UnEquip_ITAR_MIL_P;
@@ -1580,7 +1580,7 @@ INSTANCE ITAR_DJG_CH_ArmorExpansion (C_Item)
     visual    =    "DrachenHeavy.3ds";
     visual_change    =    "DJGF_NoHelmet.asc";
     visual_skin    =    0;
-    material    =    MAT_METAL;
+    material    =    MAT_LEATHER;
 
     on_equip    =    Patch_AE_Equip_ITAR_DJG_CH;
     on_unequip    =    Patch_AE_UnEquip_ITAR_DJG_CH;
@@ -1652,7 +1652,7 @@ INSTANCE ITAR_DJG_CM_ArmorExpansion (C_Item)
     visual    =    "DrachenMedium.3ds";
     visual_change    =    "DJGH_NoHelmet.asc";
     visual_skin    =    0;
-    material    =    MAT_METAL;
+    material    =    MAT_LEATHER;
 
     on_equip    =    Patch_AE_Equip_ITAR_DJG_CM;
     on_unequip    =    Patch_AE_UnEquip_ITAR_DJG_CM;
@@ -2255,7 +2255,7 @@ INSTANCE ITAR_ARX_HUNTERM_ArmorExpansion (C_Item)
 	visual 					=	"ARMOR_HUNL_AMEXPANSION.3ds";
 	visual_change 			=	"ARMOR_HUNL_AMEXPANSION.asc";
 	visual_skin 			=	0;
-	material 				=	MAT_METAL;
+	material 				=	MAT_LEATHER;
 
 	on_equip    			=    Patch_AE_Equip_ITAR_GAMBESON;
     on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;
@@ -2299,7 +2299,7 @@ INSTANCE ITAR_ARX_HUNTERH_ArmorExpansion (C_Item)
 	visual 					=	"ARMOR_HUNM_AMEXPANSION.3ds";
 	visual_change 			=	"ARMOR_HUNM_AMEXPANSION.asc";
 	visual_skin 			=	0;
-	material 				=	MAT_METAL;
+	material 				=	MAT_LEATHER;
 
 	on_equip    			=    Patch_AE_Equip_ITAR_GAMBESON;
     on_unequip    			=    Patch_AE_UnEquip_ITAR_GAMBESON;
@@ -2553,7 +2553,7 @@ INSTANCE ITAR_DJG_HNH_ArmorExpansion (C_Item)
 	visual 					=	"ARMOR_DJG_H_NH_ARMOREXPANSION.3ds";
 	visual_change 			=	"ARMOR_DJG_H_NH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
-	material 				=	MAT_METAL;
+	material 				=	MAT_LEATHER;
 
 	description				=	name;
 
@@ -2593,7 +2593,7 @@ INSTANCE ITAR_DJG_MNH_ArmorExpansion (C_Item)
 	visual 					=	"ARMOR_DJG_M_NH_ARMOREXPANSION.3ds";
 	visual_change 			=	"ARMOR_DJG_M_NH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
-	material 				=	MAT_METAL;
+	material 				=	MAT_LEATHER;
 
 	description				=	name;
 
