@@ -435,7 +435,7 @@ INSTANCE ITAR_PAL_F_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_F_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_F_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	VALUE_ITAR_PAL_H;
+	value 					=	15000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -506,7 +506,7 @@ INSTANCE ITAR_PAL_C_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_C_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_C_ArmorExpansion__PROT_MAGIC;
 
-    value    =    5000;
+    value    =    VALUE_ITAR_PAL_M;
 
     wear    =    WEAR_TORSO;
 
@@ -581,7 +581,7 @@ INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_CM_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_CM_ArmorExpansion__PROT_MAGIC;
 
-    value    =    5000;
+    value    =    VALUE_ITAR_DJG_M;
 
     wear    =    WEAR_TORSO;
 
@@ -839,7 +839,7 @@ INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_DJG_CL_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_DJG_CL_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	4000;
+	value 					=	VALUE_ITAR_DJG_L;
 
 	wear 					=	WEAR_TORSO;
 
@@ -1223,7 +1223,7 @@ INSTANCE ITAR_SLD_MP_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_SLD_MP_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_SLD_MP_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	500;
+	value 					=	1000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -1267,7 +1267,7 @@ INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_MIL_SCOUT_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_MIL_SCOUT_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	5000;
+	value 					=	500;
 
 	wear 					=	WEAR_TORSO;
 
@@ -1645,7 +1645,7 @@ INSTANCE ITAR_DJG_CM_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_DJG_CM_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_DJG_CM_ArmorExpansion__PROT_MAGIC;
 
-    value    =    VALUE_ITAR_PAL_H;
+    value    =    VALUE_ITAR_DJG_M;
 
     wear    =    WEAR_TORSO;
 
@@ -1718,7 +1718,7 @@ INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_ST_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_ST_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	4500;
+	value 					=	3000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -1780,7 +1780,7 @@ INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_MH_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_MH_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	12000;
+	value 					=	VALUE_ITAR_DJG_M;
 
 	wear 					=	WEAR_TORSO;
 
@@ -1986,7 +1986,7 @@ INSTANCE ITAR_PAL_FNH_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_FNH_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_FNH_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	VALUE_ITAR_PAL_H;
+	value 					=	15000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -2112,7 +2112,7 @@ INSTANCE ITAR_PAL_FFH_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_FFH_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_FFH_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	VALUE_ITAR_PAL_H;
+	value 					=	15000;
 
 	wear 					=	WEAR_TORSO;
 
@@ -2207,7 +2207,7 @@ INSTANCE ITAR_PAL_MH_FH_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_PAL_MH_FH_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_PAL_MH_FH_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	12000;
+	value 					=	VALUE_ITAR_DJG_M;
 
 	wear 					=	WEAR_TORSO;
 
@@ -2333,7 +2333,7 @@ instance ItAr_KDF_M_AMEXPANSION(C_Item)
 	protection [PROT_POINT] = 	ItAr_KDF_M_AMEXPANSION__PROT_POINT;
 	protection [PROT_FIRE] 	= 	ItAr_KDF_M_AMEXPANSION__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ItAr_KDF_M_AMEXPANSION__PROT_MAGIC;
-	value = 2750;
+	value = 2000;
 	wear = WEAR_TORSO;
 	visual = "Armor_KdF_M_AMEXPANSION.3ds";
 	visual_change = "Armor_Kdf_M_AMEXPANSION.asc";
@@ -2586,7 +2586,7 @@ INSTANCE ITAR_DJG_MNH_ArmorExpansion (C_Item)
 	protection [PROT_FIRE] 	= 	ITAR_DJG_MNH_ArmorExpansion__PROT_FIRE;
 	protection [PROT_MAGIC] = 	ITAR_DJG_MNH_ArmorExpansion__PROT_MAGIC;
 
-	value 					=	VALUE_ITAR_PAL_H;
+	value 					=	VALUE_ITAR_DJG_M;
 
 	wear 					=	WEAR_TORSO;
 
