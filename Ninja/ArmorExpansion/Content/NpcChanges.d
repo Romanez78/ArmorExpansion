@@ -81,7 +81,9 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("DJG_709_Rethon",         ITAR_DJG_CM_ArmorExpansion);    // Originally ITAR_DJG_M
     Patch_AE_NpcUpdateArmor("DJG_710_Kjorn",          ITAR_DJG_CL_ArmorExpansion);    // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("DJG_711_Godar",          ITAR_DJG_CM_ArmorExpansion);    // Originally ITAR_DJG_M
-    Patch_AE_NpcUpdateArmor("DJG_715_Ferros",         ITAR_DJG_CL_ArmorExpansion);    // Originally ITAR_DJG_L
+    Patch_AE_NpcUpdateArmor("DJG_712_Hokurn",         ITAR_DJG_M2_NH_ArmorExpansion); // Originally ITAR_DJG_M
+    Patch_AE_NpcUpdateArmor("DJG_713_Biff",           ITAR_DJG_M2_ArmorExpansion);    // Originally ITAR_DJG_M
+    Patch_AE_NpcUpdateArmor("DJG_715_Ferros",         ITAR_DJG_L2_NH_ArmorExpansion); // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("DJG_733_ToterDrachenjaeger", ITAR_DJG_CM_ArmorExpansion);  // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("DJG_738_ToterDrachenjaeger", ITAR_DJG_CM_ArmorExpansion);  // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("DJG_739_ToterDrachenjaeger", ITAR_DJG_CL_ArmorExpansion);  // Originally ITAR_DJG_L
