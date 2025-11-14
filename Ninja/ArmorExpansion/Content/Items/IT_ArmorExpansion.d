@@ -2748,3 +2748,489 @@ INSTANCE ITAR_SLD_LEE_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
+INSTANCE ITAR_DJG_H2_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_DJG_H2_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_H2_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_H2_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_H2_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_H2_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_H2_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_DJG_H + 5000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_H2_EXPANSION.3ds";
+	visual_change 			=	"ARMOR_DJG_H2_EXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+
+INSTANCE ITAR_DJG_M2_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_DJG_M2_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_M2_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_M2_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_M2_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_M2_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_M2_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_DJG_M + 3000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_M2_EXPANSION.3ds";
+	visual_change 			=	"ARMOR_DJG_M2_EXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_DJG_L2_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_DJG_L2_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_L2_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_L2_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_L2_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_L2_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_L2_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_DJG_L + 1500;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_L2_EXPANSION.3ds";
+	visual_change 			=	"ARMOR_DJG_L2_EXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_DJG_H2_NH_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_DJG_H2_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_H2_NH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_H2_NH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_H2_NH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_H2_NH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_H2_NH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_DJG_H + 5000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_H2_NH_EXPANSION.3ds";
+	visual_change 			=	"ARMOR_DJG_H2_NH_EXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+
+INSTANCE ITAR_DJG_M2_NH_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_DJG_M2_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_M2_NH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_M2_NH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_M2_NH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_M2_NH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_M2_NH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_DJG_M + 3000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_M2_NH_EXPANSION.3ds";
+	visual_change 			=	"ARMOR_DJG_M2_NH_EXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_DJG_L2_NH_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_DJG_L2_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_L2_NH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_L2_NH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_L2_NH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_L2_NH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_L2_NH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_DJG_L + 1500;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_L2_NH_EXPANSION.3ds";
+	visual_change 			=	"ARMOR_DJG_L2_NH_EXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_DJG_L_FH_ARMOREXPANSION (C_Item)
+{
+	name 					=	ITAR_DJG_L_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_L_FH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_L_FH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_L_FH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_L_FH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_L_FH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_DJG_L;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_L1_EXPANSION.3ds";
+	visual_change 			=	"ARMOR_DJG_L_FH_ARMOREXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	description				=	name;
+	
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_PAL_M_NH_ARMOREXPANSION (C_Item)
+{
+	name 					=	ITAR_PAL_M_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_PAL_M_NH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_M_NH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_M_NH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_M_NH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_M_NH_ArmorExpansion__PROT_MAGIC;
+	
+	value 					=	VALUE_ITAR_PAL_M;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"STATIC_PAL_M_NH_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_PAL_M_NH_ARMOREXPANSION.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	description				=	name;
+	
+	TEXT[1]					=	NAME_Prot_Edge;			
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	
+	TEXT[2]					=	NAME_Prot_Point;		
+	COUNT[2]				= 	protection	[PROT_POINT];
+	
+	TEXT[3] 				=	NAME_Prot_Fire;			
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	
+	TEXT[4]					=	NAME_Prot_Magic;		
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	
+	TEXT[5]					=	NAME_Value;			
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_DJG_CM_FH_ArmorExpansion (C_Item)
+{
+    name    =    ITAR_DJG_CM_ArmorExpansion__name;
+
+    mainflag    =    ITEM_KAT_ARMOR;
+    flags    =    0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_CM_FH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_CM_FH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_CM_FH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_CM_FH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_CM_FH_ArmorExpansion__PROT_MAGIC;
+
+    value    =    VALUE_ITAR_DJG_M;
+
+    wear    =    WEAR_TORSO;
+
+    visual    =    "STATIC_DJG_CM_FH_ARMOREXPANSION.3ds";
+    visual_change    =    "ARMOR_DJG_CM_FH_ARMOREXPANSION.asc";
+    visual_skin    =    0;
+    material    =    MAT_LEATHER;
+
+    on_equip    =    Patch_AE_Equip_ITAR_DJG_CM;
+    on_unequip    =    Patch_AE_UnEquip_ITAR_DJG_CM;
+
+    description    =    name;
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
+
+    TEXT[1]    =    NAME_Prot_Edge;
+    COUNT[1]    =    protection[PROT_EDGE];
+
+    TEXT[2]    =    NAME_Prot_Point;
+    COUNT[2]    =    protection[PROT_POINT];
+
+    TEXT[3]    =    NAME_Prot_Fire;
+    COUNT[3]    =    protection[PROT_FIRE];
+
+    TEXT[4]    =    NAME_Prot_Magic;
+    COUNT[4]    =    protection[PROT_MAGIC];
+
+    TEXT[5]    =    NAME_Value;
+    COUNT[5]    =    value;
+};
+INSTANCE ITAR_DJG_CH_FH_ArmorExpansion (C_Item)
+{
+    name    =    ITAR_DJG_CH_ArmorExpansion__name;
+
+    mainflag    =    ITEM_KAT_ARMOR;
+    flags    =    0;
+
+	protection [PROT_EDGE]	=	ITAR_DJG_CH_FH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_DJG_CH_FH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_DJG_CH_FH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_DJG_CH_FH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_DJG_CH_FH_ArmorExpansion__PROT_MAGIC;
+
+    value    =    VALUE_ITAR_DJG_H;
+
+    wear    =    WEAR_TORSO;
+
+    visual    =    "STATIC_DJG_CH_FH_ARMOREXPANSION.3ds";
+    visual_change    =    "ARMOR_DJG_CH_FH_ARMOREXPANSION.asc";
+    visual_skin    =    0;
+    material    =    MAT_LEATHER;
+
+    on_equip    =    Patch_AE_Equip_ITAR_DJG_CH;
+    on_unequip    =    Patch_AE_UnEquip_ITAR_DJG_CH;
+
+    description    =    name;
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
+
+    TEXT[1]    =    NAME_Prot_Edge;
+    COUNT[1]    =    protection[PROT_EDGE];
+
+    TEXT[2]    =    NAME_Prot_Point;
+    COUNT[2]    =    protection[PROT_POINT];
+
+    TEXT[3]    =    NAME_Prot_Fire;
+    COUNT[3]    =    protection[PROT_FIRE];
+
+    TEXT[4]    =    NAME_Prot_Magic;
+    COUNT[4]    =    protection[PROT_MAGIC];
+
+    TEXT[5]    =    NAME_Value;
+    COUNT[5]    =    value;
+};
+INSTANCE ITAR_PAL_CM_FH_ArmorExpansion (C_Item)
+{
+    name    =    ITAR_PAL_CM_ArmorExpansion__name;
+
+    mainflag    =    ITEM_KAT_ARMOR;
+    flags    =    0;
+
+	protection [PROT_EDGE]	=	ITAR_PAL_CM_FH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_CM_FH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_CM_FH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_CM_FH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_CM_FH_ArmorExpansion__PROT_MAGIC;
+
+    value    =    VALUE_ITAR_DJG_M;
+
+    wear    =    WEAR_TORSO;
+
+    visual    =    "STATIC_PAL_CM_FH_ARMOREXPANSION.3ds";
+    visual_change    =    "ARMOR_PAL_CM_FH_ARMOREXPANSION.asc";
+    visual_skin    =    0;
+    material    =    MAT_METAL;
+
+    on_equip    =    Patch_AE_Equip_ITAR_PAL_CM;
+    on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_CM;
+
+    description    =    name;
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
+
+    TEXT[1]    =    NAME_Prot_Edge;
+    COUNT[1]    =    protection[PROT_EDGE];
+
+    TEXT[2]    =    NAME_Prot_Point;
+    COUNT[2]    =    protection[PROT_POINT];
+
+    TEXT[3]    =    NAME_Prot_Fire;
+    COUNT[3]    =    protection[PROT_FIRE];
+
+    TEXT[4]    =    NAME_Prot_Magic;
+    COUNT[4]    =    protection[PROT_MAGIC];
+
+    TEXT[5]    =    NAME_Value;
+    COUNT[5]    =    value;
+};
+INSTANCE ITAR_PAL_CH_FH_ArmorExpansion (C_Item)
+{
+    name    =    ITAR_PAL_CH_ArmorExpansion__name;
+
+    mainflag    =    ITEM_KAT_ARMOR;
+    flags    =    0;
+
+	protection [PROT_EDGE]	=	ITAR_PAL_CH_FH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_CH_FH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_CH_FH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_CH_FH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_CH_FH_ArmorExpansion__PROT_MAGIC;
+
+    value    =    VALUE_ITAR_PAL_H;
+
+    wear    =    WEAR_TORSO;
+
+    visual    =    "STATIC_PAL_CH_FH_ARMOREXPANSION.3ds";
+    visual_change    =    "ARMOR_PAL_CH_FH_ARMOREXPANSION.asc";
+    visual_skin    =    0;
+    material    =    MAT_METAL;
+
+    on_equip    =    Patch_AE_Equip_ITAR_PAL_CH;
+    on_unequip    =    Patch_AE_UnEquip_ITAR_PAL_CH;
+
+    description    =    name;
+	TEXT[0]                 =       Patch_AE_TEXT_ArcheryBonus5;
+
+    TEXT[1]    =    NAME_Prot_Edge;
+    COUNT[1]    =    protection[PROT_EDGE];
+
+    TEXT[2]    =    NAME_Prot_Point;
+    COUNT[2]    =    protection[PROT_POINT];
+
+    TEXT[3]    =    NAME_Prot_Fire;
+    COUNT[3]    =    protection[PROT_FIRE];
+
+    TEXT[4]    =    NAME_Prot_Magic;
+    COUNT[4]    =    protection[PROT_MAGIC];
+
+    TEXT[5]    =    NAME_Value;
+    COUNT[5]    =    value;
+};
