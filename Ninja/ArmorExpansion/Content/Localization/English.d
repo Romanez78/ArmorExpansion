@@ -54,6 +54,11 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_KDF_M_ArmorExpansion__name = "Medium Fire Robe";
     ITAR_DJG_H_ArmorExpansion__name = "Heavy Dragon Hunter's Armor";
     ITAR_DJG_M_ArmorExpansion__name = "Medium Dragon Hunter's Armor";
+    ITAR_DJG_L_ArmorExpansion__name = "Light Dragon Hunter's Armor";
+    ITAR_DJG_L2_ArmorExpansion__name = "Improved Light Dragon Hunter's Armor";
+    ITAR_DJG_H2_ArmorExpansion__name = "Improved Medium Dragon Hunter's Armor";
+    ITAR_DJG_M2_ArmorExpansion__name = "Improved Heavy Dragon Hunter's Armor";
+    ITAR_PAL_M_ArmorExpansion__name = "Knight's Armor";
     
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximum Mana Bonus";
