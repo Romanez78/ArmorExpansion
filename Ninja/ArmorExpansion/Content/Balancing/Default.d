@@ -265,3 +265,75 @@ const int ITAR_PAL_HFH_ArmorExpansion__PROT_BLUNT = 150;
 const int ITAR_PAL_HFH_ArmorExpansion__PROT_POINT = 150;
 const int ITAR_PAL_HFH_ArmorExpansion__PROT_FIRE = 100;
 const int ITAR_PAL_HFH_ArmorExpansion__PROT_MAGIC = 50;
+
+const int ITAR_DJG_H2_ArmorExpansion__PROT_EDGE = 155;
+const int ITAR_DJG_H2_ArmorExpansion__PROT_BLUNT = 155;
+const int ITAR_DJG_H2_ArmorExpansion__PROT_POINT = 155;
+const int ITAR_DJG_H2_ArmorExpansion__PROT_FIRE = 105;
+const int ITAR_DJG_H2_ArmorExpansion_PROT_MAGIC = 50;
+
+const int ITAR_DJG_M2_ArmorExpansion__PROT_EDGE = 130;
+const int ITAR_DJG_M2_ArmorExpansion__PROT_BLUNT = 130;
+const int ITAR_DJG_M2_ArmorExpansion__PROT_POINT = 130;
+const int ITAR_DJG_M2_ArmorExpansion__PROT_FIRE = 80;
+const int ITAR_DJG_M2_ArmorExpansion_PROT_MAGIC = 40;
+
+const int ITAR_DJG_L2_ArmorExpansion__PROT_EDGE = 110;
+const int ITAR_DJG_L2_ArmorExpansion__PROT_BLUNT = 110;
+const int ITAR_DJG_L2_ArmorExpansion__PROT_POINT = 110;
+const int ITAR_DJG_L2_ArmorExpansion__PROT_FIRE = 60;
+const int ITAR_DJG_L2_ArmorExpansion_PROT_MAGIC = 25;
+
+const int ITAR_DJG_H2_NH_ArmorExpansion__PROT_EDGE = 155;
+const int ITAR_DJG_H2_NH_ArmorExpansion__PROT_BLUNT = 155;
+const int ITAR_DJG_H2_NH_ArmorExpansion__PROT_POINT = 155;
+const int ITAR_DJG_H2_NH_ArmorExpansion__PROT_FIRE = 105;
+const int ITAR_DJG_H2_NH_ArmorExpansion_PROT_MAGIC = 50;
+
+const int ITAR_DJG_M2_NH_ArmorExpansion__PROT_EDGE = 130;
+const int ITAR_DJG_M2_NH_ArmorExpansion__PROT_BLUNT = 130;
+const int ITAR_DJG_M2_NH_ArmorExpansion__PROT_POINT = 130;
+const int ITAR_DJG_M2_NH_ArmorExpansion__PROT_FIRE = 80;
+const int ITAR_DJG_M2_NH_ArmorExpansion_PROT_MAGIC = 40;
+
+const int ITAR_DJG_L2_NH_ArmorExpansion__PROT_EDGE = 110;
+const int ITAR_DJG_L2_NH_ArmorExpansion__PROT_BLUNT = 110;
+const int ITAR_DJG_L2_NH_ArmorExpansion__PROT_POINT = 110;
+const int ITAR_DJG_L2_NH_ArmorExpansion__PROT_FIRE = 60;
+const int ITAR_DJG_L2_NH_ArmorExpansion_PROT_MAGIC = 25;
+
+const int ITAR_DJG_L_FH_ArmorExpansion__PROT_EDGE = 100;
+const int ITAR_DJG_L_FH_ArmorExpansion__PROT_BLUNT = 100;
+const int ITAR_DJG_L_FH_ArmorExpansion__PROT_POINT = 100;
+const int ITAR_DJG_L_FH_ArmorExpansion__PROT_FIRE = 50;
+const int ITAR_DJG_L_FH_ArmorExpansion_PROT_MAGIC = 25;
+
+const int ITAR_PAL_M_NH_ArmorExpansion__PROT_EDGE = 100;
+const int ITAR_PAL_M_NH_ArmorExpansion__PROT_BLUNT = 100;
+const int ITAR_PAL_M_NH_ArmorExpansion__PROT_POINT = 100;
+const int ITAR_PAL_M_NH_ArmorExpansion__PROT_FIRE = 50;
+const int ITAR_PAL_M_NH_ArmorExpansion_PROT_MAGIC = 25;
+
+const int ITAR_DJG_CH_FH_ArmorExpansion__PROT_EDGE = 140;
+const int ITAR_DJG_CH_FH_ArmorExpansion__PROT_BLUNT = 140;
+const int ITAR_DJG_CH_FH_ArmorExpansion__PROT_POINT = 140;
+const int ITAR_DJG_CH_FH_ArmorExpansion__PROT_FIRE = 95;
+const int ITAR_DJG_CH_FH_ArmorExpansion__PROT_MAGIC = 40;
+
+const int ITAR_DJG_CM_FH_ArmorExpansion__PROT_EDGE = 110;
+const int ITAR_DJG_CM_FH_ArmorExpansion__PROT_BLUNT = 110;
+const int ITAR_DJG_CM_FH_ArmorExpansion__PROT_POINT = 110;
+const int ITAR_DJG_CM_FH_ArmorExpansion__PROT_FIRE = 65;
+const int ITAR_DJG_CM_FH_ArmorExpansion__PROT_MAGIC = 30;
+
+const int ITAR_PAL_CH_FH_ArmorExpansion__PROT_EDGE = 140;
+const int ITAR_PAL_CH_FH_ArmorExpansion__PROT_BLUNT = 140;
+const int ITAR_PAL_CH_FH_ArmorExpansion__PROT_POINT = 140;
+const int ITAR_PAL_CH_FH_ArmorExpansion__PROT_FIRE = 90;
+const int ITAR_PAL_CH_FH_ArmorExpansion__PROT_MAGIC = 45;
+
+const int ITAR_PAL_CM_FH_ArmorExpansion__PROT_EDGE = 110;
+const int ITAR_PAL_CM_FH_ArmorExpansion__PROT_BLUNT = 110;
+const int ITAR_PAL_CM_FH_ArmorExpansion__PROT_POINT = 110;
+const int ITAR_PAL_CM_FH_ArmorExpansion__PROT_FIRE = 65;
+const int ITAR_PAL_CM_FH_ArmorExpansion__PROT_MAGIC = 30;
