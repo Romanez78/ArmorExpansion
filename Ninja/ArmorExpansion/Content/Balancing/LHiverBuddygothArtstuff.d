@@ -122,15 +122,15 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     ITAR_PAL_C_ArmorExpansion__PROT_FIRE = 30;
     ITAR_PAL_C_ArmorExpansion__PROT_MAGIC = 20;
 
-    ITAR_PAL_CM_ArmorExpansion__PROT_EDGE = 85;
+    ITAR_PAL_CM_ArmorExpansion__PROT_EDGE = 80;
     ITAR_PAL_CM_ArmorExpansion__PROT_BLUNT = 70;
     ITAR_PAL_CM_ArmorExpansion__PROT_POINT = 65;
     ITAR_PAL_CM_ArmorExpansion__PROT_FIRE = 40;
-    ITAR_PAL_CM_ArmorExpansion__PROT_MAGIC = 30;
+    ITAR_PAL_CM_ArmorExpansion__PROT_MAGIC = 25;
 
-    ITAR_PAL_CH_ArmorExpansion__PROT_EDGE = 95;
+    ITAR_PAL_CH_ArmorExpansion__PROT_EDGE = 90;
     ITAR_PAL_CH_ArmorExpansion__PROT_BLUNT = 75;
-    ITAR_PAL_CH_ArmorExpansion__PROT_POINT = 70;
+    ITAR_PAL_CH_ArmorExpansion__PROT_POINT = 65;
     ITAR_PAL_CH_ArmorExpansion__PROT_FIRE = 45;
     ITAR_PAL_CH_ArmorExpansion__PROT_MAGIC = 35;
 
@@ -214,6 +214,24 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     ITAR_PAL_HNH_ArmorExpansion__PROT_FIRE = 50;
     ITAR_PAL_HNH_ArmorExpansion__PROT_MAGIC = 40;
 
+    	ITAR_PAL_CH_FH_ArmorExpansion__PROT_EDGE = 95;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_BLUNT = 75;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_POINT = 70;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_FIRE = 90;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_MAGIC = 45;
+
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_EDGE = 85;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_BLUNT = 70;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_POINT = 65;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_FIRE = 40;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_MAGIC = 30;
+
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_EDGE = 80;
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_BLUNT = 65;
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_POINT = 65;
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_FIRE = 40;
+	ITAR_PAL_M_NH_ArmorExpansion_PROT_MAGIC = 25;
+
     // DJG
 
     ITAR_DJG_HNH_ArmorExpansion__PROT_EDGE = 75;
@@ -235,15 +253,15 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     ITAR_DJG_CL_ArmorExpansion__PROT_MAGIC = 10;
 
     ITAR_DJG_CM_ArmorExpansion__PROT_EDGE = 60;
-    ITAR_DJG_CM_ArmorExpansion__PROT_BLUNT = 85;
+    ITAR_DJG_CM_ArmorExpansion__PROT_BLUNT = 80;
     ITAR_DJG_CM_ArmorExpansion__PROT_POINT = 75;
-    ITAR_DJG_CM_ArmorExpansion__PROT_FIRE = 65;
+    ITAR_DJG_CM_ArmorExpansion__PROT_FIRE = 55;
     ITAR_DJG_CM_ArmorExpansion__PROT_MAGIC = 15;
 
     ITAR_DJG_CH_ArmorExpansion__PROT_EDGE = 70;
-    ITAR_DJG_CH_ArmorExpansion__PROT_BLUNT = 95;
+    ITAR_DJG_CH_ArmorExpansion__PROT_BLUNT = 90;
     ITAR_DJG_CH_ArmorExpansion__PROT_POINT = 85;
-    ITAR_DJG_CH_ArmorExpansion__PROT_FIRE = 80;
+    ITAR_DJG_CH_ArmorExpansion__PROT_FIRE = 70;
     ITAR_DJG_CH_ArmorExpansion__PROT_MAGIC = 20;
 
     ITAR_DJG_CrawlerP_AEXPANSION__PROT_EDGE = 60;
@@ -251,6 +269,60 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     ITAR_DJG_CrawlerP_AEXPANSION__PROT_POINT = 60;
     ITAR_DJG_CrawlerP_AEXPANSION__PROT_FIRE = 0;
     ITAR_DJG_CrawlerP_AEXPANSION__PROT_MAGIC = 0;
+    	
+    ITAR_DJG_H2_ArmorExpansion__PROT_EDGE = 85;
+	ITAR_DJG_H2_ArmorExpansion__PROT_BLUNT = 105;
+	ITAR_DJG_H2_ArmorExpansion__PROT_POINT = 100;
+	ITAR_DJG_H2_ArmorExpansion__PROT_FIRE = 90;
+	ITAR_DJG_H2_ArmorExpansion_PROT_MAGIC = 20;
+
+	ITAR_DJG_M2_ArmorExpansion__PROT_EDGE = 70;
+	ITAR_DJG_M2_ArmorExpansion__PROT_BLUNT = 95;
+	ITAR_DJG_M2_ArmorExpansion__PROT_POINT = 90;
+	ITAR_DJG_M2_ArmorExpansion__PROT_FIRE = 75;
+	ITAR_DJG_M2_ArmorExpansion_PROT_MAGIC = 15;
+
+	ITAR_DJG_L2_ArmorExpansion__PROT_EDGE = 65;
+	ITAR_DJG_L2_ArmorExpansion__PROT_BLUNT = 85;
+	ITAR_DJG_L2_ArmorExpansion__PROT_POINT = 75;
+	ITAR_DJG_L2_ArmorExpansion__PROT_FIRE = 65;
+	ITAR_DJG_L2_ArmorExpansion_PROT_MAGIC = 10;
+
+	ITAR_DJG_H2_NH_ArmorExpansion__PROT_EDGE = 85;
+	ITAR_DJG_H2_NH_ArmorExpansion__PROT_BLUNT = 100;
+	ITAR_DJG_H2_NH_ArmorExpansion__PROT_POINT = 100;
+	ITAR_DJG_H2_NH_ArmorExpansion__PROT_FIRE = 80;
+	ITAR_DJG_H2_NH_ArmorExpansion_PROT_MAGIC = 20;
+
+	ITAR_DJG_M2_NH_ArmorExpansion__PROT_EDGE = 70;
+	ITAR_DJG_M2_NH_ArmorExpansion__PROT_BLUNT = 95;
+	ITAR_DJG_M2_NH_ArmorExpansion__PROT_POINT = 90;
+	ITAR_DJG_M2_NH_ArmorExpansion__PROT_FIRE = 65;
+	ITAR_DJG_M2_NH_ArmorExpansion_PROT_MAGIC = 15;
+
+	ITAR_DJG_L2_NH_ArmorExpansion__PROT_EDGE = 65;
+	ITAR_DJG_L2_NH_ArmorExpansion__PROT_BLUNT = 85;
+	ITAR_DJG_L2_NH_ArmorExpansion__PROT_POINT = 75;
+	ITAR_DJG_L2_NH_ArmorExpansion__PROT_FIRE = 60;
+	ITAR_DJG_L2_NH_ArmorExpansion_PROT_MAGIC = 10;
+
+	ITAR_DJG_L_FH_ArmorExpansion__PROT_EDGE = 60;
+	ITAR_DJG_L_FH_ArmorExpansion__PROT_BLUNT = 80;
+	ITAR_DJG_L_FH_ArmorExpansion__PROT_POINT = 70;
+	ITAR_DJG_L_FH_ArmorExpansion__PROT_FIRE = 60;
+	ITAR_DJG_L_FH_ArmorExpansion_PROT_MAGIC = 10;
+
+	ITAR_DJG_CH_FH_ArmorExpansion__PROT_EDGE = 70;
+	ITAR_DJG_CH_FH_ArmorExpansion__PROT_BLUNT = 95;
+	ITAR_DJG_CH_FH_ArmorExpansion__PROT_POINT = 85;
+	ITAR_DJG_CH_FH_ArmorExpansion__PROT_FIRE = 80;
+	ITAR_DJG_CH_FH_ArmorExpansion__PROT_MAGIC = 20;
+
+	ITAR_DJG_CM_FH_ArmorExpansion__PROT_EDGE = 60;
+	ITAR_DJG_CM_FH_ArmorExpansion__PROT_BLUNT = 85;
+	ITAR_DJG_CM_FH_ArmorExpansion__PROT_POINT = 75;
+	ITAR_DJG_CM_FH_ArmorExpansion__PROT_FIRE = 65;
+	ITAR_DJG_CM_FH_ArmorExpansion__PROT_MAGIC = 15;
 
     // Guildless
 
