@@ -199,6 +199,24 @@ func void Patch_AE_BalanceMinimodBalance() {
     ITAR_PAL_HNH_ArmorExpansion__PROT_POINT = 130;
     ITAR_PAL_HNH_ArmorExpansion__PROT_FIRE = 100;
     ITAR_PAL_HNH_ArmorExpansion__PROT_MAGIC = 50;
+		
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_EDGE = 120;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_BLUNT = 120;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_POINT = 120;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_FIRE = 90;
+	ITAR_PAL_CH_FH_ArmorExpansion__PROT_MAGIC = 40;
+
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_EDGE = 105;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_BLUNT = 105;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_POINT = 105;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_FIRE = 65;
+	ITAR_PAL_CM_FH_ArmorExpansion__PROT_MAGIC = 30;
+
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_EDGE = 100;
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_BLUNT = 100;
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_POINT = 100;
+	ITAR_PAL_M_NH_ArmorExpansion__PROT_FIRE = 50;
+	ITAR_PAL_M_NH_ArmorExpansion_PROT_MAGIC = 25;
 
     // DJG
 
@@ -238,7 +256,7 @@ func void Patch_AE_BalanceMinimodBalance() {
     ITAR_DJG_CrawlerP_AEXPANSION__PROT_FIRE = 40;
     ITAR_DJG_CrawlerP_AEXPANSION__PROT_MAGIC = 20;
     	
-        ITAR_DJG_H2_ArmorExpansion__PROT_EDGE = 155;
+    ITAR_DJG_H2_ArmorExpansion__PROT_EDGE = 155;
 	ITAR_DJG_H2_ArmorExpansion__PROT_BLUNT = 155;
 	ITAR_DJG_H2_ArmorExpansion__PROT_POINT = 155;
 	ITAR_DJG_H2_ArmorExpansion__PROT_FIRE = 105;
