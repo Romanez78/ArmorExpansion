@@ -2612,142 +2612,6 @@ INSTANCE ITAR_DJG_MNH_ArmorExpansion (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
-
-instance ITAR_Thorus_Addon(C_Item)
-{
-	visual = "Thorus_New_AEXPANSION.3ds";
-};
-instance ItAr_Sld_L(C_Item)
-{
-	visual = "SLDL_New_AEXPANSION.3ds";
-};
-instance ItAr_Sld_M(C_Item)
-{
-	visual = "SLDM_New_AEXPANSION.3ds";
-};
-instance ItAr_Sld_H(C_Item)
-{
-	visual = "SLDH_New_AEXPANSION.3ds";
-};
-
-//These 3 armors are worn by immortal NPC only, no need to adjust stats
-INSTANCE ITAR_PAL_ANDRE_ArmorExpansion (C_Item)
-{
-	name 					=	"Andres Knight Armor";
-
-	mainflag 				=	ITEM_KAT_ARMOR;
-	flags 					=	0;
-
-	protection [PROT_EDGE]	=	100;
-	protection [PROT_BLUNT] = 	100;
-	protection [PROT_POINT] = 	100;
-	protection [PROT_FIRE] 	= 	50;
-	protection [PROT_MAGIC] = 	25;
-
-	value 					=	VALUE_ITAR_PAL_M;
-
-	wear 					=	WEAR_TORSO;
-
-	visual 					=	"ItAr_Pal_M.3ds";
-	visual_change 			=	"ARMOR_LORDANDREKNIGHT.asc";
-	visual_skin 			=	0;
-	material 				=	MAT_METAL;
-
-	description				=	name;
-	TEXT[0]                 =   "";
-
-	TEXT[1]					=	NAME_Prot_Edge;
-	COUNT[1]				= 	protection	[PROT_EDGE];
-
-	TEXT[2]					=	NAME_Prot_Point;
-	COUNT[2]				= 	protection	[PROT_POINT];
-
-	TEXT[3] 				=	NAME_Prot_Fire;
-	COUNT[3]				= 	protection	[PROT_FIRE];
-
-	TEXT[4]					=	NAME_Prot_Magic;
-	COUNT[4]				= 	protection	[PROT_MAGIC];
-
-	TEXT[5]					=	NAME_Value;
-	COUNT[5]				= 	value;
-};
-INSTANCE ITAR_PAL_HAGEN_ArmorExpansion (C_Item)
-{
-	name 					=	"Lord Hagens Armor";
-
-	mainflag 				=	ITEM_KAT_ARMOR;
-	flags 					=	0;
-
-	protection [PROT_EDGE]	=	150;
-	protection [PROT_BLUNT] = 	150;
-	protection [PROT_POINT] = 	150;
-	protection [PROT_FIRE] 	= 	100;
-	protection [PROT_MAGIC] = 	50;
-
-	value 					=	VALUE_ITAR_PAL_H;
-
-	wear 					=	WEAR_TORSO;
-
-	visual 					=	"ItAr_Pal_H.3ds";
-	visual_change 			=	"ARMOR_LORDHAGENPALADIN.asc";
-	visual_skin 			=	0;
-	material 				=	MAT_METAL;
-
-	description				=	name;
-
-	TEXT[1]					=	NAME_Prot_Edge;
-	COUNT[1]				= 	protection	[PROT_EDGE];
-
-	TEXT[2]					=	NAME_Prot_Point;
-	COUNT[2]				= 	protection	[PROT_POINT];
-
-	TEXT[3] 				=	NAME_Prot_Fire;
-	COUNT[3]				= 	protection	[PROT_FIRE];
-
-	TEXT[4]					=	NAME_Prot_Magic;
-	COUNT[4]				= 	protection	[PROT_MAGIC];
-
-	TEXT[5]					=	NAME_Value;
-	COUNT[5]				= 	value;
-};
-INSTANCE ITAR_SLD_LEE_ARMOREXPANSION (C_Item)
-{
-	name 					=	"Lees Armor";
-
-	mainflag 				=	ITEM_KAT_ARMOR;
-	flags 					=	0;
-
-	protection [PROT_EDGE]	=	90;
-	protection [PROT_BLUNT] = 	90;
-	protection [PROT_POINT] = 	90;
-	protection [PROT_FIRE] 	= 	5;
-	protection [PROT_MAGIC] = 	10;
-
-	value 					=	VALUE_ITAR_SLD_H;
-
-	wear 					=	WEAR_TORSO;
-
-	visual 					=	"ItAr_Sld_H.3ds";
-	visual_change 			=	"ARMOR_LEEHEAVYMERCENARY.asc";
-	visual_skin 			=	0;
-	material 				=	MAT_LEATHER;
-
-	on_equip				=	Equip_ITAR_SLD_H;
-	on_unequip				=	UnEquip_ITAR_SLD_H;
-
-	description				=	name;
-
-	TEXT[1]					=	NAME_Prot_Edge;
-	COUNT[1]				= 	protection	[PROT_EDGE];
-	TEXT[2]					=	NAME_Prot_Point;
-	COUNT[2]				= 	protection	[PROT_POINT];
-	TEXT[3] 				=	NAME_Prot_Fire;
-	COUNT[3]				= 	protection	[PROT_FIRE];
-	TEXT[4]					=	NAME_Prot_Magic;
-	COUNT[4]				= 	protection	[PROT_MAGIC];
-	TEXT[5]					=	NAME_Value;
-	COUNT[5]				= 	value;
-};
 INSTANCE ITAR_DJG_H2_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_DJG_H2_ArmorExpansion__name;
@@ -3233,4 +3097,139 @@ INSTANCE ITAR_PAL_CH_FH_ArmorExpansion (C_Item)
 
     TEXT[5]    =    NAME_Value;
     COUNT[5]    =    value;
+};
+instance ITAR_Thorus_Addon(C_Item)
+{
+	visual = "Thorus_New_AEXPANSION.3ds";
+};
+instance ItAr_Sld_L(C_Item)
+{
+	visual = "SLDL_New_AEXPANSION.3ds";
+};
+instance ItAr_Sld_M(C_Item)
+{
+	visual = "SLDM_New_AEXPANSION.3ds";
+};
+instance ItAr_Sld_H(C_Item)
+{
+	visual = "SLDH_New_AEXPANSION.3ds";
+};
+
+//These 3 armors are worn by immortal NPC only, no need to adjust stats
+INSTANCE ITAR_PAL_ANDRE_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_PAL_M_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_PAL_M_NH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_M_NH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_M_NH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_M_NH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_M_NH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_PAL_M;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ItAr_Pal_M.3ds";
+	visual_change 			=	"ARMOR_LORDANDREKNIGHT.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	description				=	name;
+	TEXT[0]                 =   "";
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_PAL_HAGEN_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_PAL_H_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_PAL_HNH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_HNH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_HNH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_HNH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_HNH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	VALUE_ITAR_PAL_H;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ItAr_Pal_H.3ds";
+	visual_change 			=	"ARMOR_LORDHAGENPALADIN.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_SLD_LEE_ARMOREXPANSION (C_Item)
+{
+	name 					=	"Lees Armor";
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	90;
+	protection [PROT_BLUNT] = 	90;
+	protection [PROT_POINT] = 	90;
+	protection [PROT_FIRE] 	= 	5;
+	protection [PROT_MAGIC] = 	10;
+
+	value 					=	VALUE_ITAR_SLD_H;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ItAr_Sld_H.3ds";
+	visual_change 			=	"ARMOR_LEEHEAVYMERCENARY.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_LEATHER;
+
+	on_equip				=	Equip_ITAR_SLD_H;
+	on_unequip				=	UnEquip_ITAR_SLD_H;
+
+	description				=	name;
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
 };
