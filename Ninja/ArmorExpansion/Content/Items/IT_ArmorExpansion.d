@@ -3114,6 +3114,10 @@ instance ItAr_Sld_H(C_Item)
 {
 	visual = "SLDH_New_AEXPANSION.3ds";
 };
+instance ItAr_mil_l(C_Item)
+{
+	visual = "HUM_WACHE_ARMOREX.3ds";
+};
 
 //These 3 armors are worn by immortal NPC only, no need to adjust stats
 INSTANCE ITAR_PAL_ANDRE_ArmorExpansion (C_Item)
