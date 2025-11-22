@@ -51,6 +51,13 @@ func void Ninja_ArmorExpansion_Init() {
     // Initialize Ikarus
     MEM_InitAll();
 
+    // Someone's custom init-function is called too late and causes a division-by-zero
+    // when calling B_CreateAmmo from Patch_AE_EquipRangedWeapon.
+    // Let's clean up other peoples' mess :)
+    if (MEM_GetSymbol("HLP_RAND_RESET")) {
+        MEM_CallByString("HLP_RAND_RESET");
+    };
+
     // On every game start, loading, and level change, apply the patch specific changes (NPC armors)
     Patch_AE_ApplyChanges();
 };
