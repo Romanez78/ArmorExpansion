@@ -162,8 +162,8 @@ INSTANCE ITAR_MILP_H_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"HeavyMilitiaOC.3ds";
-	visual_change 			=	"Armor_Thorus_ADDON2.asc";
+	visual 					=	"AEXPANSION_HEAVYMILITIAP.3ds";
+	visual_change 			=	"ARMOR_MILPH_AMEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -399,8 +399,8 @@ INSTANCE ITAR_PAL_R_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"RUSTARC.3ds";
-	visual_change 			=	"Armor_Pal_H600.asc";
+	visual 					=	"RUSTARC_PATCHAE.3ds";
+	visual_change 			=	"Armor_Pal_R_PATCHAE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -510,8 +510,8 @@ INSTANCE ITAR_PAL_C_ArmorExpansion (C_Item)
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "PALCROSBOW.3ds";
-    visual_change    =    "Armor_Pal_M8.asc";
+    visual    =    "PALCROSBOW_PATCHAE.3ds";
+    visual_change    =    "Armor_Pal_C_AE.asc";
     visual_skin    =    0;
     material    =    MAT_METAL;
 
@@ -586,7 +586,7 @@ INSTANCE ITAR_PAL_CM_ArmorExpansion (C_Item)
     wear    =    WEAR_TORSO;
 
     visual    =    "ARMOR_PAL_GAMBESONH.3ds";
-    visual_change    =    "ARMOR_PAL_GAMBESONH.asc";
+    visual_change    =    "ARMOR_PAL_GAMBESONH_AE.asc";
     visual_skin    =    0;
     material    =    MAT_METAL;
 
@@ -731,7 +731,7 @@ INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"MilitiaRed.3DS";
+	visual 					=	"MIL_MP_AMEXPANSION.3DS";
 	visual_change 			=	"ARMOR_MIL_P.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -843,8 +843,8 @@ INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"DrachenLow.3ds";
-	visual_change 			=	"DJGL.asc";
+	visual 					=	"ARMOR_DJGCL_STATIC_AE.3ds";
+	visual_change 			=	"DJGL_C_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -912,8 +912,8 @@ INSTANCE ITAR_SLD_BOW_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDHC.3ds";
-	visual_change 			=	"Armor_SLD_BOW.asc";
+	visual 					=	"SLDHC_PATCHAE.3ds";
+	visual_change 			=	"Armor_SLD_BOW_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -997,8 +997,8 @@ INSTANCE ITAR_MIL_R_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"LIGHTMILR.3DS";
-	visual_change 			=	"Armor_MIL_R.asc";
+	visual 					=	"LIGHTMILR_PATCHAE.3DS";
+	visual_change 			=	"Armor_MIL_R_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1146,7 +1146,7 @@ INSTANCE ITAR_SLD_SCOUT_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"LIGHTSLDLP.3ds";
-	visual_change 			=	"ARMOR_SLD_SCOUT.asc";
+	visual_change 			=	"ARMOR_SLD_SCOUT_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1228,7 +1228,7 @@ INSTANCE ITAR_SLD_MP_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"MEDIUMSLDMP.3ds";
-	visual_change 			=	"ARMOR_SLD_MP.asc";
+	visual_change 			=	"ARMOR_SLD_MP_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1271,7 +1271,7 @@ INSTANCE ITAR_MIL_SCOUT_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"MilitiaScout.3ds";
+	visual 					=	"MilitiaScout_PATCH_AE.3ds";
 	visual_change 			=	"AMEXPANSION_MIL_LP.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -1353,8 +1353,8 @@ INSTANCE ITAR_SLD_R_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDMR.3ds";
-	visual_change 			=	"Armor_Sld_R.asc";
+	visual 					=	"SLDMR_AE.3ds";
+	visual_change 			=	"Armor_Sld_R_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1427,8 +1427,8 @@ INSTANCE ITAR_SLD_LR_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"SLDLR.3ds";
-	visual_change 			=	"Armor_Sld_LR.asc";
+	visual 					=	"SLDLR_AE.3ds";
+	visual_change 			=	"Armor_Sld_LR_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1502,7 +1502,7 @@ INSTANCE ITAR_PAL_CH_ArmorExpansion (C_Item)
     wear    =    WEAR_TORSO;
 
     visual    =    "ARMOR_PAL_CH_AMEXPANSION.3ds";
-    visual_change    =    "Armor_Pal_H4000.asc";
+    visual_change    =    "ARMOR_PALCROSSBOW_H_AMEXPANSION.asc";
     visual_skin    =    0;
     material    =    MAT_METAL;
 
@@ -1577,7 +1577,7 @@ INSTANCE ITAR_DJG_CH_ArmorExpansion (C_Item)
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "DrachenHeavy.3ds";
+    visual    =    "DrachenHeavy_AE.3ds";
     visual_change    =    "DJGF_NoHelmet.asc";
     visual_skin    =    0;
     material    =    MAT_LEATHER;
@@ -1649,8 +1649,8 @@ INSTANCE ITAR_DJG_CM_ArmorExpansion (C_Item)
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "DrachenMedium.3ds";
-    visual_change    =    "DJGH_NoHelmet.asc";
+    visual    =    "DrachenMedium_AE.3ds";
+    visual_change    =    "DJGCM_NoHelmet_AE.asc";
     visual_skin    =    0;
     material    =    MAT_LEATHER;
 
@@ -1722,7 +1722,7 @@ INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"STEWARK.3ds";
+	visual 					=	"ITAR_STEWARK_AE.3ds";
 	visual_change 			=	"Armor_Pal_STEWARK.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
