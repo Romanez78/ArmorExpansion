@@ -1784,8 +1784,8 @@ INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"HeavyKnightNH.3ds";
-	visual_change 			=	"Armor_Pal_M10_02.asc";
+	visual 					=	"ITAR_Pal_MH_PATCHAE.3ds";
+	visual_change 			=	"Armor_Pal_MH_PATCHAE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -1852,7 +1852,7 @@ INSTANCE ITAR_PIR_H_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ItAr_PIR_H_ADDON.3ds";
+	visual 					=	"ItAr_PIR_H_ARMOREXPANSION.3ds";
 	visual_change 			=	"ARMOR_PIR_H_NH_AEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -1951,7 +1951,7 @@ INSTANCE ITAR_PAL_RNH_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"RUSTARCNH.3ds";
-	visual_change 			=	"Armor_Pal_H_Rusty.asc";
+	visual_change 			=	"Armor_Pal_H_Rusty_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -2076,7 +2076,7 @@ INSTANCE ITAR_PAL_RFH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"RUSTARC.3ds";
+	visual 					=	"RUSTARC_PATCHAE.3ds";
 	visual_change 			=	"Armor_PAL_H_RUSTFULLHELM.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
@@ -2211,8 +2211,8 @@ INSTANCE ITAR_PAL_MH_FH_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"HeavyKnight.3ds";
-	visual_change 			=	"Armor_Pal_M10_02_FH.asc";
+	visual 					=	"ITAR_Pal_MH_FH_PATCHAE.3ds";
+	visual_change 			=	"Armor_Pal_MH_FH_PATCHAE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -2392,7 +2392,7 @@ INSTANCE ITAR_DJG_CrawlerP_AEXPANSION (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ItAr_Djg_Crawler.3ds";
+	visual 					=	"ItAr_Djg_CrawlerP_AEXPANSION.3ds";
 	visual_change 			=	"Armor_Djg_CrawlerP_AEXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -3097,26 +3097,6 @@ INSTANCE ITAR_PAL_CH_FH_ArmorExpansion (C_Item)
 
     TEXT[5]    =    NAME_Value;
     COUNT[5]    =    value;
-};
-instance ITAR_Thorus_Addon(C_Item)
-{
-	visual = "Thorus_New_AEXPANSION.3ds";
-};
-instance ItAr_Sld_L(C_Item)
-{
-	visual = "SLDL_New_AEXPANSION.3ds";
-};
-instance ItAr_Sld_M(C_Item)
-{
-	visual = "SLDM_New_AEXPANSION.3ds";
-};
-instance ItAr_Sld_H(C_Item)
-{
-	visual = "SLDH_New_AEXPANSION.3ds";
-};
-instance ItAr_mil_l(C_Item)
-{
-	visual = "HUM_WACHE_ARMOREX.3ds";
 };
 
 //These 3 armors are worn by immortal NPC only, no need to adjust stats
