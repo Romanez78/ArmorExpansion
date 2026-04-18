@@ -35,6 +35,7 @@ func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
 		||	 (Hlp_IsItem(itm, ITAR_MIL_R_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_MILP_H_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_MIL_Med2_ArmorExpansion) == TRUE)
+		||	 (Hlp_IsItem(itm, ITAR_MIL_M_ARMOREXPANSION) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_MIL_P_ArmorExpansion) == TRUE))
 		{
 			HasProperArmorFromPatch = true;
