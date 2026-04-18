@@ -788,7 +788,7 @@ func void Patch_AE_UnEquip_ITAR_MIL_P()
 		};
     };
 };
-INSTANCE ITAR_MIL_M (C_Item)
+INSTANCE ITAR_MIL_M_ARMOREXPANSION (C_Item)
 {
 	name 					=	ITAR_MIL_M__name;
 
