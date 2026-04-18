@@ -121,7 +121,7 @@ instance Patch_AE_DIA_MORTIS_MILITIA_MediumHUH (C_INFO)
 };
 func int Patch_AE_DIA_MORTIS_MILITIA_MediumHUH_Condition()
 {
-    if (Npc_Hasitems(other, ItAr_MIL_M) > 0)
+    if (Npc_Hasitems(other, ITAR_MIL_M_ARMOREXPANSION) > 0)
     && (Npc_KnowsInfo (other, Patch_AE_DIA_MORTIS_ARMORQUESTION))
     {
         return TRUE;
@@ -153,7 +153,7 @@ instance Patch_AE_DIA_MORTIS_MILITIA_MediumArmor (C_INFO)
 func int Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Condition()
 {
     if (Patch_AE_MORTIS_MILITIA_MediumArmorBought == FALSE)
-    && (Npc_HasItems(other, ItAr_MIL_M) > 0)
+    && (Npc_HasItems(other, ITAR_MIL_M_ARMOREXPANSION) > 0)
     && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 600)
@@ -166,13 +166,13 @@ func void Patch_AE_DIA_MORTIS_MILITIA_MediumArmor_Info()
 {
     AI_Output(other, self, PATCH_AE_DIA_MORTIS_MILITIA_MEDIUMARMOR_15_01);
 
-    if (Npc_HasItems(other, ItAr_MIL_M) > 0)
+    if (Npc_HasItems(other, ITAR_MIL_M_ARMOREXPANSION) > 0)
     && (Npc_HasItems(other, Patch_AE_SmithItemCold) >= 2)
     && (Npc_HasItems(other, ItAt_wargfur) >= 1)
     && (Npc_HasItems(other, ItMi_Gold) >= 600)
     {
         B_GivePlayerXP(25);
-        B_GiveInvItems(other, self, ItAr_MIL_M, 1);
+        B_GiveInvItems(other, self, ITAR_MIL_M_ARMOREXPANSION, 1);
         B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 2);
         B_GiveInvItems(other, self, ItAt_wargfur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 600);
