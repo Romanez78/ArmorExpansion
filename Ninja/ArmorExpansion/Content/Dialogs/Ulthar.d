@@ -18,7 +18,7 @@ func void Patch_AE_DIA_ARMOREXPANSION_Ulthar_Info()
 {
     AI_Output(self, other, PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_01);
     AI_Output(self, other, PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_02);
-    AI_Output(other, self, PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03);
+    AI_Output(other, self, "DIA_KARRAS_ITAM_PROT_BLACKEYE_MIS_15_03");
     B_GiveInvItems(self, other, ItAr_Crusader_ARMOREXPANSION, 1);
 };
 
@@ -71,7 +71,7 @@ func int Patch_AE_DIA_Gorax_KDFM_BUY_Condition()
 };
 func void Patch_AE_DIA_Gorax_KDFM_BUY_Info()
 {
-    AI_Output(other, self, PATCH_AE_DIA_Gorax_KDFM_BUY_4_1);
+    AI_Output(other, self, "DIA_Daron_Spende_15_00");
 
     if (B_GiveInvItems(other, self, ItMi_Gold, 1500))
     {
