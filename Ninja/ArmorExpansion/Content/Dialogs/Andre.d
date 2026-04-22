@@ -24,7 +24,7 @@ func void Patch_AE_DIA_ANDRE_MIL_SCOUTArmor_Info()
     AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_01);
     AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_02);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_13_03);
-    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_04);
+    AI_Output(other, self, "DIA_Engor_RSkaufen_15_00");
     B_GiveInvItems(other, self, ItAr_MIL_L, 1);
     Patch_AE_ANDRE_MIL_SCOUTArmorBought = B_GiveInvItems(self, other, ITAR_MIL_SCOUT_ARMOREXPANSION, 1);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MIL_SCOUTARMOR_15_9);
@@ -64,7 +64,7 @@ FUNC VOID Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEEGO()
     B_GiveInvItems(self, other, ITAR_MIL_M_ARMOREXPANSION, 1);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06);
-    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01);
+    AI_Output(other, self, "DIA_Addon_Snaf_Abschied_15_14");
     Info_ClearChoices (Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD);
 };
  
@@ -73,6 +73,6 @@ FUNC VOID Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD_MELEEGO()
     B_GiveInvItems(self, other, ITAR_MIL_P_ArmorExpansion, 1);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_05);
     AI_Output(self, other, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_01_06);
-    AI_Output(other, self, PATCH_AE_DIA_ANDRE_MILITIA_ARMORREWARD_15_01);
+    AI_Output(other, self, "DIA_Addon_Snaf_Abschied_15_14");
     Info_ClearChoices (Patch_AE_DIA_ANDRE_MILITIA_ARMORREWARD);        
 };   
