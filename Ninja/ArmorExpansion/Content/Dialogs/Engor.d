@@ -53,13 +53,13 @@ func void Patch_AE_DIA_Engor_ARCHER_KAUFEN_Info()
 {
     if (B_GiveInvItems(other, self, Itmi_Gold, 2500))
     {
-        AI_Output(other, self, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_15_00);
-        AI_Output(self, other, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_01);
+        AI_Output(other, self, "DIA_Engor_RSkaufen_15_00");
+        AI_Output(self, other, "DIA_Engor_RSkaufen_13_01");
         B_GiveInvItems(self, other, ITAR_MILP_H_ARMOREXPANSION,1);
         DIA_Engor_RSkaufen_perm = TRUE;
     }
     else
     {
-        AI_Output(self, other, PATCH_AE_DIA_ENGOR_ARCHER_KAUFEN_13_02);
+        AI_Output(self, other, "DIA_Engor_RSkaufen_13_02");
     };
 };
