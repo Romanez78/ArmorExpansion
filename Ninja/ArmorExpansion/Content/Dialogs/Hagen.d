@@ -47,7 +47,7 @@ func void Patch_AE_DIA_Lord_Hagen_HEAVYCROSSBOW_Info()
     AI_Output(self, other, PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03);
     AI_Output(self, other, PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04);    
         B_GiveInvItems(self, other, ITAR_PAL_CH_ARMOREXPANSION, 1);
-    AI_Output(other, self, PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05);
+    AI_Output(other, self, "DIA_KARRAS_ITAM_PROT_BLACKEYE_MIS_15_03");
     AI_Output(self, other, PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06);
 };
 
