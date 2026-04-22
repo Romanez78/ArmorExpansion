@@ -54,7 +54,7 @@ func void Patch_AE_DIA_BENNET_SLD_LReforgedHUH_Info()
     AI_Output(other, self, PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_04);
     AI_Output(self, other, PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_06);
     AI_Output(self, other, PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_13_07);
-    AI_Output(other, self, PATCH_AE_DIA_BENNET_SLD_LREFORGEDHUH_15_09);
+    AI_Output(other, self, "DIA_Lobart_WorkNOW_Ok_15_00");
     B_LogEntry(Patch_AE_TOPIC_BENNET_ARMOR, Patch_AE_DIA_BENNET_SLD_LReforgedHUH_entry);
 };
 
@@ -93,7 +93,7 @@ func void Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Info()
         B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 2);
         B_GiveInvItems(other, self, ItAt_WolfFur, 2);
         B_GiveInvItems(other, self, ItMi_Gold, 200);
-        AI_Output(other, self, PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_11);
+        AI_Output(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02");
         AI_Output(self, other, PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_12);
 
         B_LookAtNpc(other, self);
@@ -113,8 +113,8 @@ func void Patch_AE_DIA_BENNET_SLD_LReforgedArmor_Info()
         AI_Output(self, other, PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_13);
         Patch_AE_BENNET_SLD_LReforgedArmorBought = B_GiveInvItems(self, other, ITAR_SLD_LR_ARMOREXPANSION, 1);
         AI_Output(self, other, PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_13_14);
-        AI_Output(other, self, PATCH_AE_DIA_BENNET_SLD_LREFORGEDARMOR_15_15);
-        B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, Patch_AE_DIA_BENNET_SLD_LReforgedArmor_entry);
+        AI_Output(other, self, "DIA_Addon_Snaf_Abschied_15_14");
+        B_LogEntry(Patch_AE_TOPIC_BENNET_ARMOR, Patch_AE_DIA_BENNET_SLD_LReforgedArmor_entry);
     }
     else
     {
@@ -151,7 +151,7 @@ func void Patch_AE_DIA_BENNET_MERC_MReforgedHUH_Info()
     AI_Output(self, other, PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_04);
     AI_Output(self, other, PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_05);
     AI_Output(self, other, PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_13_06);
-    AI_Output(other, self, PATCH_AE_DIA_BENNET_MERC_MREFORGEDHUH_15_08);
+    AI_Output(other, self, "DIA_Lobart_WorkNOW_Ok_15_00");
     B_LogEntry(Patch_AE_TOPIC_BENNET_ARMOR, Patch_AE_DIA_BENNET_MERC_MReforgedHUH_entry);
 };
 
@@ -190,7 +190,7 @@ func void Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Info()
         B_GiveInvItems(other, self, Patch_AE_SmithItemCold, 2);
         B_GiveInvItems(other, self, ItAt_WargFur, 1);
         B_GiveInvItems(other, self, ItMi_Gold, 650);
-        AI_Output(other, self, PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_10);
+        AI_Output(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02");
         AI_Output(self, other, PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_11);
 
         B_LookAtNpc(other, self);
@@ -210,7 +210,7 @@ func void Patch_AE_DIA_BENNET_MERC_MReforgedArmor_Info()
         AI_Output(self, other, PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_12);
         Patch_AE_BENNET_MERC_MReforgedArmorBought = B_GiveInvItems(self, other, ITAR_SLD_R_ARMOREXPANSION, 1);
         AI_Output(self, other, PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_13_13);
-        AI_Output(other, self, PATCH_AE_DIA_BENNET_MERC_MREFORGEDARMOR_15_14);
+        AI_Output(other, self, "DIA_Addon_Snaf_Abschied_15_14");
         B_LogEntry(Patch_AE_TOPIC_MORTIS_ARMOR, Patch_AE_DIA_BENNET_MERC_MReforgedArmor_entry);
     }
     else
@@ -267,7 +267,7 @@ func void Patch_AE_DIA_Bennet_CROSSBOW_Info()
     AI_Output(other, self, PATCH_AE_DIA_BENNET_CROSSBOW_15_01);
     AI_Output(other, self, PATCH_AE_DIA_BENNET_CROSSBOW_15_02);
     AI_Output(self, other, PATCH_AE_DIA_BENNET_CROSSBOW_13_03);
-    AI_Output(other, self, PATCH_AE_DIA_BENNET_CROSSBOW_15_04);
+    AI_Output(other, self, "DIA_Matteo_LEATHER_15_00");
     B_GiveInvItems(other, self, ItAr_DJG_L, 1);
     B_GiveInvItems(self, other, ITAR_DJG_CL_ARMOREXPANSION, 1);
     AI_Output(self, other, PATCH_AE_DIA_BENNET_CROSSBOW_15_9);
@@ -298,13 +298,13 @@ func int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_Condition()
 
 func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_Info()
 {
-    AI_Output(other, self, PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_00);
+    AI_Output(other, self, "DIA_Bennet_DJG_ARMOR_M_15_00");
 
     if (Npc_HasItems (other,itmi_Gold) >= 12000)
     {
-        AI_Output(self, other, PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_01);
-        AI_Output(other, self, PATCH_AE_DIA_BENNET_DJG_ARMOR_M_15_02);
-        AI_Output(self, other, PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_03);
+        AI_Output(self, other, "DIA_Bennet_DJG_ARMOR_M_06_01");
+        AI_Output(other, self, "DIA_Bennet_DJG_ARMOR_M_15_02");
+        AI_Output(self, other, "DIA_Bennet_DJG_ARMOR_M_06_03");
 
         B_GiveInvItems(other, self, ItMi_Gold, 12000);
         CreateInvItems(self, ITAR_DJG_CM_ARMOREXPANSION, 1);
@@ -314,7 +314,7 @@ func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CM_Info()
     }
     else
     {
-        AI_Output(self, other, PATCH_AE_DIA_BENNET_DJG_ARMOR_M_06_04);
+        AI_Output(self, other, "DIA_Bennet_DJG_ARMOR_M_06_04");
     };
 
 };
@@ -344,12 +344,12 @@ func int Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Condition()
 
 func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Info()
 {
-    AI_Output(other, self, PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_15_00);
+    AI_Output(other, self, "DIA_Bennet_DJG_ARMOR_H_15_00");
 
     if (Npc_HasItems (other,itmi_Gold) >= 20000)
     {
-        AI_Output(self, other, PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_01);
-        AI_Output(self, other, PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_02);
+        AI_Output(self, other, "DIA_Bennet_DJG_ARMOR_H_06_01");
+        AI_Output(self, other, "DIA_Bennet_DJG_ARMOR_H_06_02");
 
         B_GiveInvItems(other, self, ItMi_Gold, 20000);
         CreateInvItems(self, ITAR_DJG_CH_ARMOREXPANSION, 1);
@@ -359,6 +359,6 @@ func void Patch_AE_DIA_Bennet_PATCH_DJG_ARMOR_CH_Info()
     }
     else
     {
-        AI_Output(self, other, PATCH_AE_DIA_BENNET_PATCH_DJG_ARMOR_CH_06_03);
+        AI_Output(self, other, "DIA_Bennet_DJG_ARMOR_H_06_03");
     };
 };
