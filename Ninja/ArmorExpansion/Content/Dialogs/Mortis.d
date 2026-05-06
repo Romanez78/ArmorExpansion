@@ -216,7 +216,9 @@ instance Patch_AE_DIA_MORTIS_PAL_REFORGE (C_INFO)
 };
 func int Patch_AE_DIA_MORTIS_PAL_REFORGE_Condition()
 {
-    if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0)
+    if (Npc_Hasitems(other, ItAr_PAL_R_ARMOREXPANSION) > 0))
+    || (Npc_HasItems (other, ItAr_PAL_RFH_ARMOREXPANSION) > 0))
+    || (Npc_HasItems (other, ItAr_PAL_RNH_ARMOREXPANSION) > 0))
     {
         return TRUE;
     };
