@@ -250,8 +250,8 @@ INSTANCE ITAR_GAMBESON_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"GAMBESON.3ds";
-	visual_change 			=	"ARMOR_GAMBESON.asc";
+	visual 					=	"GAMBESON_ARMOREXPANSION.3ds";
+	visual_change 			=	"ARMOR_GAMBESON_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -732,7 +732,7 @@ INSTANCE ITAR_MIL_P_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"MIL_MP_AMEXPANSION.3DS";
-	visual_change 			=	"ARMOR_MIL_P.asc";
+	visual_change 			=	"ARMOR_MIL_P_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -844,7 +844,7 @@ INSTANCE ITAR_DJG_CL_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"ARMOR_DJGCL_STATIC_AE.3ds";
-	visual_change 			=	"DJGL_C_AE.asc";
+	visual_change 			=	"DJGL_C_ArmorExpansion.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
@@ -1068,8 +1068,8 @@ INSTANCE ITAR_CRUSADER_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"CRUSADERHELMETGROUND.3DS";
-	visual_change 			=	"Armor_CRUSADER.asc";
+	visual 					=	"PAL_CRUSADER_STATIC_ARMOREXPANSION.3DS";
+	visual_change 			=	"Armor_CRUSADER_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -1577,8 +1577,8 @@ INSTANCE ITAR_DJG_CH_ArmorExpansion (C_Item)
 
     wear    =    WEAR_TORSO;
 
-    visual    =    "DrachenHeavy_AE.3ds";
-    visual_change    =    "DJGF_NoHelmet.asc";
+    visual    =    "DJG_CH_AE.3ds";
+    visual_change    =    "DJG_CH_ARMOREXPANSION.asc";
     visual_skin    =    0;
     material    =    MAT_LEATHER;
 
@@ -1722,8 +1722,8 @@ INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ITAR_STEWARK_AE.3ds";
-	visual_change 			=	"Armor_Pal_STEWARK.asc";
+	visual 					=	"ITAR_STEWARK_AE_NH.3ds";
+	visual_change 			=	"Armor_Pal_STEWARK_NH.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
@@ -2159,13 +2159,13 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"CRUSADER.3DS";
-	visual_change 			=	"Armor_CRUSADER_NH.asc";
+	visual 					=	"PAL_CRUSADER_NH_STATIC_ARMOREXPANSION.3DS";
+	visual_change 			=	"Armor_CRUSADER_NH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip				=	Patch_AE_Equip_ITAR_CRUSADER_NH;
-	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER_NH;
+	on_equip				=	Patch_AE_Equip_ITAR_CRUSADER;
+	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER;
 
 	description				=	name;
 	TEXT[0]                 =       Patch_AE_TEXT_TwoHandedBonus5;
@@ -2184,14 +2184,6 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
-};
-func void Patch_AE_Equip_ITAR_CRUSADER_NH()
-{
-    B_RaiseFightTalent(self, NPC_TALENT_2H, 5);
-};
-func void Patch_AE_UnEquip_ITAR_CRUSADER_NH()
-{
-    B_RaiseFightTalent(self, NPC_TALENT_2H, -5);
 };
 
 INSTANCE ITAR_PAL_MH_FH_ArmorExpansion (C_Item)
@@ -2629,7 +2621,7 @@ INSTANCE ITAR_DJG_L_FH_ARMOREXPANSION (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"STATIC_L1_EXPANSION.3ds";
+	visual 					=	"STATIC_DJGLFH_ARMOREXPANSION.3ds";
 	visual_change 			=	"ARMOR_DJG_L_FH_ARMOREXPANSION.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
@@ -2881,7 +2873,7 @@ INSTANCE ITAR_PAL_ANDRE_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ItAr_Pal_M.3ds";
+	visual 					=	"STATIC_PAL_M_NH_ARMOREXPANSION.3ds";
 	visual_change 			=	"ARMOR_LORDANDREKNIGHT.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
@@ -2921,7 +2913,7 @@ INSTANCE ITAR_PAL_HAGEN_ArmorExpansion (C_Item)
 
 	wear 					=	WEAR_TORSO;
 
-	visual 					=	"ItAr_Pal_H.3ds";
+	visual 					=	"Armor_pal_H_NH_Static.3ds";
 	visual_change 			=	"ARMOR_LORDHAGENPALADIN.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
