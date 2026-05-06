@@ -10,6 +10,7 @@ instance Patch_AE_DIA_ARMOREXPANSION_Ulthar (C_INFO)
 func int Patch_AE_DIA_ARMOREXPANSION_Ulthar_Condition()
 {
     if (MIS_Ulthar_HeileSchreine_PAL == LOG_SUCCESS)
+    && (other.guild == GIL_PAL)
     {
             return TRUE;
     };
