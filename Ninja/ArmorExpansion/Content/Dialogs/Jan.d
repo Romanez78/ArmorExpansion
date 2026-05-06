@@ -23,3 +23,37 @@ func void Patch_AE_DIA_JAN_PAL_REFORGE_Info()
     AI_Output(self, other, PATCH_AE_DIA_JAN_PAL_REFORGE_3_03);
     B_LogEntry (Patch_AE_TOPIC_MARTIN_ARMOR, Patch_AE_DIA_JAN_PAL_REFORGE_entry);
 };
+
+instance Patch_AE_DIA_JAN_PALNH_REFORGE (C_INFO)
+{
+    npc          =  DJG_714_Jan;
+    nr           =  3;
+    condition    =  Patch_AE_DIA_JAN_PALNH_REFORGE_Condition;
+    information  =  Patch_AE_DIA_JAN_PAL_REFORGE_Info;
+    permanent    =  FALSE;
+    description  =  Patch_AE_DIA_JAN_PAL_REFORGE_desc;
+};
+func int Patch_AE_DIA_JAN_PALNH_REFORGE_Condition()
+{
+    if (Npc_Hasitems(other, ItAr_PAL_RNH_ARMOREXPANSION) > 0)
+    {
+        return TRUE;
+    };
+};
+
+instance Patch_AE_DIA_JAN_PALFH_REFORGE (C_INFO)
+{
+    npc          =  DJG_714_Jan;
+    nr           =  3;
+    condition    =  Patch_AE_DIA_JAN_PALFH_REFORGE_Condition;
+    information  =  Patch_AE_DIA_JAN_PAL_REFORGE_Info;
+    permanent    =  FALSE;
+    description  =  Patch_AE_DIA_JAN_PAL_REFORGE_desc;
+};
+func int Patch_AE_DIA_JAN_PALFH_REFORGE_Condition()
+{
+    if (Npc_Hasitems(other, ItAr_PAL_RFH_ARMOREXPANSION) > 0)
+    {
+        return TRUE;
+    };
+};
