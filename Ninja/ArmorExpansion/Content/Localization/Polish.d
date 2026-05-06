@@ -64,9 +64,9 @@ func void Patch_AE_LocalizePolish() {
     Patch_AE_TEXT_MaxManaBonus20 = "+20 maksymalnej many";
     Patch_AE_TEXT_MaxManaBonus40 = "+40 maksymalnej many";
     Patch_AE_TEXT_OldArmor = "Ta zbroja widziała już lepsze dni";
-    Patch_AE_TEXT_ArcheryBonus3 = "+3% posługiwania się łukiem";
-    Patch_AE_TEXT_ArcheryBonus5 = "+5% posługiwania się łukiem";
-    Patch_AE_TEXT_ArcheryBonus6 = "+6% posługiwania się łukiem";
+    Patch_AE_TEXT_ArcheryBonus3 = "+3% do łuku i kuszy";
+    Patch_AE_TEXT_ArcheryBonus5 = "+5% do łuku i kuszy";
+    Patch_AE_TEXT_ArcheryBonus6 = "+6% do łuku i kuszy";
     Patch_AE_TEXT_TwoHandedBonus5 = "+5% walki bronią dwuręczną";
     Patch_AE_TEXT_DexBonus10_OneHandedBonus10 = "+10 zręczności, +10% walki bronią jednoręczną";
 
