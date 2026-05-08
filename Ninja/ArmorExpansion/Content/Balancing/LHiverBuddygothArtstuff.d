@@ -214,7 +214,7 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     ITAR_PAL_HNH_ArmorExpansion__PROT_FIRE = 50;
     ITAR_PAL_HNH_ArmorExpansion__PROT_MAGIC = 40;
 
-    	ITAR_PAL_CH_FH_ArmorExpansion__PROT_EDGE = 95;
+    ITAR_PAL_CH_FH_ArmorExpansion__PROT_EDGE = 95;
 	ITAR_PAL_CH_FH_ArmorExpansion__PROT_BLUNT = 75;
 	ITAR_PAL_CH_FH_ArmorExpansion__PROT_POINT = 70;
 	ITAR_PAL_CH_FH_ArmorExpansion__PROT_FIRE = 90;
@@ -331,6 +331,12 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     ITAR_PAL_ST_ArmorExpansion__PROT_POINT = 60;
     ITAR_PAL_ST_ArmorExpansion__PROT_FIRE = 20;
     ITAR_PAL_ST_ArmorExpansion__PROT_MAGIC = 10;
+	    
+	ITAR_PAL_ST_NH_ArmorExpansion__PROT_EDGE = 70;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_BLUNT = 55;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_POINT = 50;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_FIRE = 20;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_MAGIC = 10;
 
     ITAR_GAMBESON_ArmorExpansion__PROT_EDGE = 15;
     ITAR_GAMBESON_ArmorExpansion__PROT_BLUNT = 20;
