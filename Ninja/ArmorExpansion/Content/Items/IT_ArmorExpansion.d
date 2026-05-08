@@ -1705,7 +1705,7 @@ func void Patch_AE_UnEquip_ITAR_DJG_CM()
     };
 };
 
-INSTANCE ITAR_PAL_ST_ArmorExpansion (C_Item)
+INSTANCE ITAR_PAL_ST_NH_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PAL_ST_ArmorExpansion__name;
 
@@ -1766,7 +1766,92 @@ func void Patch_AE_UnEquip_ITAR_PAL_ST()
 
     };
 };
+INSTANCE ITAR_PAL_ST_AE_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_PAL_ST_ArmorExpansion__name;
 
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_PAL_ST_FH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	3000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ITAR_STEWARK_AE.3ds";
+	visual_change 			=	"Armor_Pal_STEWARK_AE.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+    on_equip                =    Patch_AE_Equip_ITAR_PAL_ST;
+    on_unequip              =    Patch_AE_UnEquip_ITAR_PAL_ST;
+
+	description				=	name;
+	TEXT[0]                 =   "";
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
+INSTANCE ITAR_PAL_ST_FH_ArmorExpansion (C_Item)
+{
+	name 					=	ITAR_PAL_ST_ArmorExpansion__name;
+
+	mainflag 				=	ITEM_KAT_ARMOR;
+	flags 					=	0;
+
+	protection [PROT_EDGE]	=	ITAR_PAL_ST_FH_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_ST_FH_ArmorExpansion__PROT_MAGIC;
+
+	value 					=	3000;
+
+	wear 					=	WEAR_TORSO;
+
+	visual 					=	"ITAR_STEWARK_AE.3ds";
+	visual_change 			=	"Armor_Pal_STEWARK_FH.asc";
+	visual_skin 			=	0;
+	material 				=	MAT_METAL;
+
+    on_equip                =    Patch_AE_Equip_ITAR_PAL_ST;
+    on_unequip              =    Patch_AE_UnEquip_ITAR_PAL_ST;
+
+	description				=	name;
+	TEXT[0]                 =   "";
+
+	TEXT[1]					=	NAME_Prot_Edge;
+	COUNT[1]				= 	protection	[PROT_EDGE];
+
+	TEXT[2]					=	NAME_Prot_Point;
+	COUNT[2]				= 	protection	[PROT_POINT];
+
+	TEXT[3] 				=	NAME_Prot_Fire;
+	COUNT[3]				= 	protection	[PROT_FIRE];
+
+	TEXT[4]					=	NAME_Prot_Magic;
+	COUNT[4]				= 	protection	[PROT_MAGIC];
+
+	TEXT[5]					=	NAME_Value;
+	COUNT[5]				= 	value;
+};
 INSTANCE ITAR_PAL_MH_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PAL_MH_ArmorExpansion__name;
