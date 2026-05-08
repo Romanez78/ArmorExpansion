@@ -322,6 +322,12 @@ func void Patch_AE_BalanceLHiverMarcello() {
     ITAR_PAL_ST_ArmorExpansion__PROT_FIRE = 20;
     ITAR_PAL_ST_ArmorExpansion__PROT_MAGIC = 10;
 
+	ITAR_PAL_ST_NH_ArmorExpansion__PROT_EDGE = 100;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_BLUNT = 90;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_POINT = 70;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_FIRE = 20;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_MAGIC = 10;
+
     ITAR_GAMBESON_ArmorExpansion__PROT_EDGE = 15;
     ITAR_GAMBESON_ArmorExpansion__PROT_BLUNT = 20;
     ITAR_GAMBESON_ArmorExpansion__PROT_POINT = 15;
