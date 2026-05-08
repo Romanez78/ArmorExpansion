@@ -1722,7 +1722,7 @@ INSTANCE ITAR_PAL_ST_AE_ArmorExpansion (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"ITAR_STEWARK_AE_NH.3ds";
-	visual_change 			=	"Armor_Pal_STEWARK_NH.asc";
+	visual_change 			=	"Armor_Pal_STEWARK_AE.asc";
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
