@@ -25,9 +25,7 @@ func int Patch_AE_C_PlayerHasFakeGuild (var C_NPC slf, var C_NPC oth)
 		&&	((Hlp_IsItem(itm, ITAR_GAMBESON_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_ARX_HUNTERH_ArmorExpansion) == TRUE)
 		||	 (Hlp_IsItem(itm, ITAR_ARX_HUNTERM_ArmorExpansion) == TRUE)
-		||	 (Hlp_IsItem(itm, ITAR_PAL_ST_FH_ArmorExpansion) == TRUE)
-		||	 (Hlp_IsItem(itm, ITAR_PAL_ST_AE_ArmorExpansion) == TRUE)
-		||	 (Hlp_IsItem(itm, ITAR_PAL_ST_NH_ArmorExpansion) == TRUE))
+		||	 (Hlp_IsItem(itm, ITAR_PAL_ST_AE_ArmorExpansion) == TRUE))
 		{
 			HasProperArmorFromPatch = true;
 		}
