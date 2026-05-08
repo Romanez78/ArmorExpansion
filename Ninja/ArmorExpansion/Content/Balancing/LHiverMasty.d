@@ -302,6 +302,12 @@ func void Patch_AE_BalanceLHiverMasty() {
     ITAR_PAL_ST_ArmorExpansion__PROT_FIRE = 20;
     ITAR_PAL_ST_ArmorExpansion__PROT_MAGIC = 20;
 
+	ITAR_PAL_ST_NH_ArmorExpansion__PROT_EDGE = 80;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_BLUNT = 60;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_POINT = 60;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_FIRE = 20;
+    ITAR_PAL_ST_NH_ArmorExpansion__PROT_MAGIC = 20;
+
     ITAR_GAMBESON_ArmorExpansion__PROT_EDGE = 15;
     ITAR_GAMBESON_ArmorExpansion__PROT_BLUNT = 20;
     ITAR_GAMBESON_ArmorExpansion__PROT_POINT = 15;
