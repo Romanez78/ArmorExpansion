@@ -1711,11 +1711,11 @@ INSTANCE ITAR_PAL_ST_AE_ArmorExpansion (C_Item)
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 
-	protection [PROT_EDGE]	=	ITAR_PAL_ST_AE_ArmorExpansion__PROT_EDGE;
-	protection [PROT_BLUNT] = 	ITAR_PAL_ST_AE_ArmorExpansion__PROT_BLUNT;
-	protection [PROT_POINT] = 	ITAR_PAL_ST_AE_ArmorExpansion__PROT_POINT;
-	protection [PROT_FIRE] 	= 	ITAR_PAL_ST_AE_ArmorExpansion__PROT_FIRE;
-	protection [PROT_MAGIC] = 	ITAR_PAL_ST_AE_ArmorExpansion__PROT_MAGIC;
+	protection [PROT_EDGE]	=	ITAR_PAL_ST_ArmorExpansion__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ITAR_PAL_ST_ArmorExpansion__PROT_BLUNT;
+	protection [PROT_POINT] = 	ITAR_PAL_ST_ArmorExpansion__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ITAR_PAL_ST_ArmorExpansion__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ITAR_PAL_ST_ArmorExpansion__PROT_MAGIC;
 
 	value 					=	3000;
 
