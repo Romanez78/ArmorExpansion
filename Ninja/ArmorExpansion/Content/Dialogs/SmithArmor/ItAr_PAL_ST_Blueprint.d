@@ -93,10 +93,10 @@ FUNC VOID Patch_AE_PC_ITAR_PAL_ST_Info()
 
 
         // Create an armor
-        CreateInvItem(hero, ITAR_PAL_ST_ArmorExpansion);
+        CreateInvItem(hero, ITAR_PAL_ST_AE_ArmorExpansion);
 
         // Print an information about success
-        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ST_ArmorExpansion);
+        Patch_AE_Func_Print_ForgeSuccess(ITAR_PAL_ST_AE_ArmorExpansion);
     // If hasn't
     } else
     {
