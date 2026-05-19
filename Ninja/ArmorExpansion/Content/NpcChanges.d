@@ -88,6 +88,12 @@ func void Patch_AE_NpcArmors() {
     Patch_AE_NpcUpdateArmor("DJG_740_ToterDrachenjaeger", ITAR_DJG_CL_ArmorExpansion);  // Originally ITAR_DJG_L
     Patch_AE_NpcUpdateArmor("BAU_983_Dragomir",       ITAR_ARX_HUNTERH_ArmorExpansion); // Originally ITAR_Leather_L
     Patch_AE_NpcUpdateArmor("BAU_981_Grom",           ITAR_ARX_HUNTERM_ArmorExpansion); // Originally ITAR_Leather_L
+    Patch_AE_NpcUpdateArmor("KDW_1401_Addon_Cronos_NW", ItAr_KDW_L_AMEXPANSION); // Originally ITAR_KDW_H
+    Patch_AE_NpcUpdateArmor("KDW_14010_Addon_Cronos_ADW", ItAr_KDW_L_AMEXPANSION); // Originally ITAR_KDW_H
+    Patch_AE_NpcUpdateArmor("KDW_1404_Addon_Riordian_NW", ItAr_KDW_L_AMEXPANSION); // Originally ITAR_KDW_H
+    Patch_AE_NpcUpdateArmor("KDW_14040_Addon_Riordian_ADW", ItAr_KDW_L_AMEXPANSION); // Originally ITAR_KDW_H
+    Patch_AE_NpcUpdateArmor("KDW_1405_Addon_Merdarion_NW", ItAr_KDW_L_AMEXPANSION); // Originally ITAR_KDW_H
+    Patch_AE_NpcUpdateArmor("KDW_14050_Addon_Merdarion_ADW", ItAr_KDW_L_AMEXPANSION); // Originally ITAR_KDW_H
     Patch_AE_NpcUpdateArmor("VLK_4100_Brutus",        ITAR_MIL_H_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4102_Waffenknecht",  ITAR_MIL_R_ArmorExpansion);     // Originally ITAR_MIL_L
     Patch_AE_NpcUpdateArmor("VLK_4104_Waffenknecht",  ITAR_MIL_SCOUT_ArmorExpansion); // Originally ITAR_MIL_L
