@@ -2971,3 +2971,31 @@ INSTANCE ITAR_SLD_LEE_ARMOREXPANSION (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
+instance ItAr_KDW_L_AMEXPANSION(C_Item)
+{
+	name 					= "Light robe of Water";
+	mainflag 				= ITEM_KAT_ARMOR;
+	flags 					= 0;
+	protection [PROT_EDGE]	=	ItAr_KDF_M_AMEXPANSION__PROT_EDGE;
+	protection [PROT_BLUNT] = 	ItAr_KDF_M_AMEXPANSION__PROT_BLUNT;
+	protection [PROT_POINT] = 	ItAr_KDF_M_AMEXPANSION__PROT_POINT;
+	protection [PROT_FIRE] 	= 	ItAr_KDF_M_AMEXPANSION__PROT_FIRE;
+	protection [PROT_MAGIC] = 	ItAr_KDF_M_AMEXPANSION__PROT_MAGIC;
+	value 					=	VALUE_ITAR_KDW_L_Addon;
+	wear 					= WEAR_TORSO;
+	visual 					=	"ItAr_KDW_L_ADDON.3ds";
+	visual_change 			=	"Armor_KDW_L_ADDON.asc";
+	visual_skin 			= 0;
+	material 				= MAT_LEATHER;
+	description 			= name;
+	text[1] 				= NAME_Prot_Edge;
+	count[1] 				= protection[PROT_EDGE];
+	text[2] 				= NAME_Prot_Point;
+	count[2] 				= protection[PROT_POINT];
+	text[3] 				= NAME_Prot_Fire;
+	count[3] 				= protection[PROT_FIRE];
+	text[4] 				= NAME_Prot_Magic;
+	count[4] 				= protection[PROT_MAGIC];
+	text[5] 				= NAME_Value;
+	count[5] 				= value;
+};
