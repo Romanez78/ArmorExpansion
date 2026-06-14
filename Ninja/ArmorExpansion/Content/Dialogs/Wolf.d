@@ -55,7 +55,7 @@ func void Patch_AE_DIA_WOLF_SLD_SCOUTArmorBought_Info()
 var int Wolf_Give_Sld_MP_AEXPANSION;
 // -----------------------
 
-instance DIA_Lee_ArmorM (C_INFO)
+instance DIA_Wolf_ArmorM_AEXPANSION (C_INFO)
 {
 	npc			= SLD_811_Wolf;
 	nr			= 3;
