@@ -168,4 +168,5 @@ func void Patch_AE_NpcRangedWeapons() {
 func void Patch_AE_MdlFatness() {
     Patch_AE_NpcUpdateMdlFatness("PAL_204_Torwache",     0.0);                        // Originally 0.5
     Patch_AE_NpcUpdateMdlFatness("PAL_205_Torwache",     0.0);                        // Originally 1.0
+    Patch_AE_NpcUpdateMdlFatness("Mil_312_Wulfgar",      1.0);                        // Originally 2.0
 };
