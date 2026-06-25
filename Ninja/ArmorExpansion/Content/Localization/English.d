@@ -59,7 +59,7 @@ func void Patch_AE_LocalizeEnglish() {
     ITAR_DJG_H2_ArmorExpansion__name = "Improved Heavy Dragon Hunter's Armor";
     ITAR_DJG_M2_ArmorExpansion__name = "Improved Medium Dragon Hunter's Armor";
     ITAR_PAL_M_ArmorExpansion__name = "Knight's Armor";
-    
+
     // Armor bonus
     Patch_AE_TEXT_MaxManaBonus20 = "+20 Maximum Mana Bonus";
     Patch_AE_TEXT_MaxManaBonus40 = "+40 Maximum Mana Bonus";
@@ -317,17 +317,17 @@ func void Patch_AE_LocalizeEnglish() {
     // ------
     // Gorax
     // ------
-    
+
     Patch_AE_DIA_Gorax_KDFM_ASK_desc = "Can i get a better robe?";
     // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_EN"); //Can i get a better robe?
     // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_EN"); //Yes, i will reward you with a beter robe for a small donation to the monastery.
     // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_05_EN"); //How big of a donation?
     // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_EN"); //1500 gold should be enough.
-    
+
     Patch_AE_DIA_Gorax_KDFM_BUY_desc = "Buy medium fire robe (Protection: 55/55/30/30, Price: 1500 gold)";
     // AI_Output(other, self, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_EN"); //I bring a donation to the monastery.
     // AI_Output(self, other, "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_EN"); //Great, here is your robe.
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_Gorax_KDFM_ASK_3_03 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_03_EN";
     PATCH_AE_DIA_Gorax_KDFM_ASK_3_04 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_04_EN";
@@ -335,7 +335,7 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_Gorax_KDFM_ASK_3_06 = "PATCH_AE_DIA_Gorax_KDFM_ASK_3_06_EN";
     PATCH_AE_DIA_Gorax_KDFM_BUY_4_1 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_1_EN";
     PATCH_AE_DIA_Gorax_KDFM_BUY_4_2 = "PATCH_AE_DIA_Gorax_KDFM_BUY_4_2_EN";
-    
+
     // ------
     // Greg
     // ------
@@ -375,14 +375,14 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_13_03_EN"); //I can swap your knight's armor for a lighter version designed for our crossbowmen.
     // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_04_EN"); //I'll take it.
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_9_EN"); //Wear it with honor, knight.
-    
+
     Patch_AE_DIA_Lord_Hagen_HEAVYCROSSBOW_desc = "I need better armor.";
     // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_01_EN"); //I need better armor.
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_03_EN"); //Hm, It is true you took care of the dragons in the valley of mines.
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_EN"); //You deserve the heavy crossbowman armor, here it is.
     // AI_Output(other, self, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_EN"); //Thanks.
     // AI_Output(self, other, "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_EN"); //Be proud of it, not many get to wear it.
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_01_EN";
     PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02 = "PATCH_AE_DIA_LORD_HAGEN_CROSSBOW_15_02_EN";
@@ -394,7 +394,7 @@ func void Patch_AE_LocalizeEnglish() {
     PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_13_04_EN";
     PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_05_EN";
     PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06 = "PATCH_AE_DIA_LORD_HAGEN_HEAVYCROSSBOW_15_06_EN";
-   
+
     // ------
     // Harad
     // ------
@@ -568,7 +568,7 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_DIA_Matteo_GAMBESON_desc = "Buy Hunting Gambeson (Protection: 20/20. Ranged Bonus, Cost: 350 gold).";
     Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Buy Hunting Jacket (Protection: 40/40/10/5. Ranged Bonus, Cost: 800 gold).";
     Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Buy Strenghtened Hunting Jacket (Prot.: 55/55/15/10. Ranged Bonus, Cost: 1800 gold).";
- 
+
     // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN"); //Okay, give me the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN"); //You'll like it.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_EN"); //The armor's worth its weight in gold, so come back when you have enough.
@@ -780,11 +780,13 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Remove Helm from Paladin Armor";
     Patch_AE_PC_Itar_pal_h_FH_desc = "Put up the visor of the Paladin Armor";
     Patch_AE_PC_Itar_pal_h_NH_desc = "Put up the visor of the Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_desc = "Return Helmet of the Paladin Armor";
+    Patch_AE_PC_ITAR_PAL_M_desc = "Remove Helmet of the Paladin Armor";
     Patch_AE_PC_Itar_djg_M_desc = "Remove Helm from medium dragonhunter armor";
     Patch_AE_PC_Itar_djg_M_NH_desc = "Return Helmet to medium dragonhunter armor";
     Patch_AE_PC_Itar_djg_H_NH_desc = "Return Helmet to heavy dragonhunter armor";
     Patch_AE_PC_Itar_djg_H_desc = "Remove Helm from heavy dragonhunter armor";
-    
+
     // ------
     // Ulthar
     // ------
@@ -805,9 +807,9 @@ func void Patch_AE_LocalizeEnglish() {
 
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_desc = "I heard you make armor.";
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_EN"); //I heard you make armor.
-    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_EN"); //Then you heard right, i make lighter leather armors for hunting. 
+    // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_EN"); //Then you heard right, i make lighter leather armors for hunting.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_EN"); //They will not protect you as much, but you will be able to shoot more comfortably.
-    
+
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "I want to replace my armor with the lighter one.";
     // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_15_02_EN"); //I want to replace my armor with the lighter one.
     // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_13_03_EN"); //Sure, i just finished making one. Here you go.
@@ -820,16 +822,16 @@ func void Patch_AE_LocalizeEnglish() {
     // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_02_EN"); //I have medium armor for you here, It's a decent piece.
     // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_03_EN"); //Sorry, but Lee wouldn't let me give it to you just like that. I think you should help Torlof first.
     // AI_Output(self, other, "DIA_Wolf_ArmorM_AEXPANSION_04_04_EN"); //When you're done come see me, I'll have something better for you.
-    
+
     DIA_Wolf_BuyArmorMP_AEXPANSION_desc = "Buy Medium Hunting Armor (Protection: 45/45, +6% Ranged Bonus, Price 1000).";
     // AI_Output(other, self, "DIA_Wolf_BuyArmorMP_AEXPANSION_15_00_EN"); //Give me the armor.
     // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_01_EN"); //Here you are. It's a decent piece of armor.
     // AI_Output(self, other, "DIA_Wolf_BuyArmorMP_AEXPANSION_04_02_EN"); //Sorry but I can't give it to you for free, Lee would rip my head off if he found out I was giving away armor for nothing.
-    
+
     DIA_Wolf_ArmorBow_AEXPANSION_desc = "Wouldn't you have some better armor for me?.";
     // AI_Output(other, self, "DIA_Wolf_ArmorBow_AEXPANSION_15_00_EN"); //Wouldn't you have some better armor for me?.
     // AI_Output(self, other, "DIA_Wolf_ArmorBow_AEXPANSION_04_01_EN"); //Sure.
-    
+
     DIA_Wolf_BuyArmorBow_AEXPANSION_desc = "Buy Heavy Hunting Armor (Protection: 70/70, +6% Ranged Bonus, Price 2500).";
     // AI_Output(other, self, "DIA_Wolf_BuyArmorBow_AEXPANSION_15_00_EN"); //Give me the armor.
     // AI_Output(self, other, "DIA_Wolf_BuyArmorBow_AEXPANSION_04_01_EN"); //Here it is. A good piece, I'm proud of it.
@@ -842,12 +844,12 @@ func void Patch_AE_LocalizeEnglish() {
     DIA_Wolf_BringPlates_Description_AEXPANSION = "I got you the crawler plates for the armor.";
 
     Patch_AE_DIA_WOLF_CRAWLERARMOR_Description = "Great, when will the armor be ready?";
-    
+
     Patch_AE_TOPIC_WOLF_CRAWLERARMOR = "Hunting armor from crawler plates";
     Patch_AE_TOPIC_WOLF_CRAWLERARMOR_NOTIF_entry = "Wolf can make me a hunting armor out of 7 crawler plates.";
     Patch_AE_DIA_WOLF_CRAWLERARMOR_Bring_entry = "I got the necessary crawler plates.";
     Patch_AE_DIA_WOLF_GOTARMOR_entry = "Wolf gave me the armor.";
-    
+
     // Localized OU (do not change)
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_EN";
     PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02 = "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_EN";

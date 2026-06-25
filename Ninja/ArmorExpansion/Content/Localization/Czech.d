@@ -788,6 +788,8 @@ const string Patch_AE_PC_ITAR_PAL_HFH_NH_desc = "Sklopit hledí paladinské zbro
 const string Patch_AE_PC_ITAR_PAL_HNH_FH_desc = "Odebrat Helmu paladinské zbroje";
 const string Patch_AE_PC_Itar_pal_h_FH_desc = "Vyklopit hledí paladinské zbroje";
 const string Patch_AE_PC_Itar_pal_h_NH_desc = "Vyklopit hledí paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_desc = "Vrátit helmu paladinské zbroje";
+const string Patch_AE_PC_ITAR_PAL_M_desc = "Odebrat helmu paladinské zbroje";
 const string Patch_AE_PC_Itar_djg_M_desc = "Odebrat Helmu ke střední zbroji drakobijců";
 const string Patch_AE_PC_Itar_djg_M_NH_desc = "Vrátit helmu ke střední zbroji drakobijců";
 const string Patch_AE_PC_Itar_djg_H_NH_desc = "Vrátit helmu k těžké zbroji drakobijců";
@@ -813,7 +815,7 @@ const string PATCH_AE_DIA_ARMOREXPANSION_ULTHAR_05_03 = "PATCH_AE_DIA_ARMOREXPAN
 
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_desc = "Slyšel jsem že děláš zbroje.";
 // AI_Output(other, self, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_01_CS"); //Slyšel jsem že děláš zbroje.
-// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_CS"); //To jsi slyšel správně, dělám lehčí kožené zbroje na lov. 
+// AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_15_02_CS"); //To jsi slyšel správně, dělám lehčí kožené zbroje na lov.
 // AI_Output(self, other, "PATCH_AE_DIA_WOLF_SLD_SCOUTARMOR_13_03_CS"); //Sice tě tolik neochrání, ale střílet se ti v nich bude o hodně líp.
 
 const string PATCH_AE_DIA_WOLF_SLD_SCOUTARMORBOUGHT_desc = "Chci si vyměnit zbroj za loveckou.";
