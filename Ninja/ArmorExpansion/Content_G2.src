@@ -60,9 +60,15 @@ Content\Dialogs\SmithArmor\ItAr_PAL_F.d
 Content\Dialogs\SmithArmor\ItAr_PAL_H.d
 Content\Dialogs\SmithArmor\ItAr_PAL_MH.d
 Content\Dialogs\SmithArmor\ItAr_PAL_R.d
+Content\Dialogs\SmithArmor\ItAr_PAL_CM.d
+Content\Dialogs\SmithArmor\ItAr_PAL_CH.d
 Content\Dialogs\SmithArmor\ItAr_DJG_H.d
 Content\Dialogs\SmithArmor\ItAr_DJG_M.d
+Content\Dialogs\SmithArmor\ItAr_DJG_L.d
+Content\Dialogs\SmithArmor\ItAr_DJG_CM.d
+Content\Dialogs\SmithArmor\ItAr_DJG_CH.d
 Content\Dialogs\SmithArmor\ItAr_Crusader.d
+Content\Dialogs\SmithArmor\ItAr_PAL_M.d
 
 // Functions
 Content\NpcChanges.d
