@@ -800,6 +800,8 @@ const string Patch_AE_PC_ITAR_DJG_CM_FH_ArmorExpansion_desc = "Vyklopit hledí s
 const string Patch_AE_PC_ITAR_DJG_CM_ArmorExpansion_desc = "Sklopit hledí střední zbroje lovce draků";
 const string Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_desc = "Vyklopit hledí těžké zbroje lovce draků";
 const string Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_desc = "Sklopit hledí těžké zbroje lovce draků";
+const string Patch_AE_PC_ITAR_PAL_CM_FH_ArmorExpansion_desc = "Vyklopit hledí střední paladinské kušišnické zbroje";
+const string Patch_AE_PC_ITAR_PAL_CM_ArmorExpansion_desc = "Sklopit hledí střední paladinské kušišnické zbroje";
 
 // ------
 // Ulthar
