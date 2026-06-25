@@ -1,44 +1,44 @@
 /*
- * ITAR_PAL_M
- * ITAR_PAL_M_NH_ARMOREXPANSION
+ * ITAR_DJG_CH_ArmorExpansion
+ * ITAR_DJG_CH_FH_ArmorExpansion
  *
  * Dialogs:
- * Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION
- * Patch_AE_PC_ITAR_PAL_M
+ * Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion
+ * Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion
  */
 
  // TODO: German and Polish localization
-instance Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION (C_Info)
+instance Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion(C_Info)
 {
     npc         = PC_Hero;
-    condition   = Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_Condition;
-    information = Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_Info;
+    condition   = Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_Condition;
+    information = Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_Info;
     permanent   = TRUE;
-    description = Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_desc;
+    description = Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_desc;
 };
-func int Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_Condition()
+func int Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_Condition()
 {
-    Patch_AE_Smith_Basic_Condition(ITAR_PAL_M_NH_ARMOREXPANSION);
+    Patch_AE_Smith_Basic_Condition(ITAR_DJG_CH_FH_ArmorExpansion);
 };
-func void Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_Info()
+func void Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_Info()
 {
-    Patch_AE_Smith_ForgeAndReplace(ITAR_PAL_M, ITAR_PAL_M_NH_ARMOREXPANSION);
+    Patch_AE_Smith_ForgeAndReplace(ITAR_DJG_CH_ArmorExpansion, ITAR_DJG_CH_FH_ArmorExpansion);
 };
 
 
-instance Patch_AE_PC_ITAR_PAL_M (C_Info)
+instance Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion (C_Info)
 {
     npc         = PC_Hero;
-    condition   = Patch_AE_PC_ITAR_PAL_M_Condition;
-    information = Patch_AE_PC_ITAR_PAL_M_Info;
+    condition   = Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_Condition;
+    information = Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_Info;
     permanent   = TRUE;
-    description = Patch_AE_PC_ITAR_PAL_M_desc;
+    description = Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_desc;
 };
-func int Patch_AE_PC_ITAR_PAL_M_Condition()
+func int Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_Condition()
 {
-    Patch_AE_Smith_Basic_Condition(ITAR_PAL_M);
+    Patch_AE_Smith_Basic_Condition(ITAR_DJG_CH_ArmorExpansion);
 };
-func void Patch_AE_PC_ITAR_PAL_M_Info()
+func void Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_Info()
 {
-    Patch_AE_Smith_ForgeAndReplace(ITAR_PAL_M_NH_ARMOREXPANSION, ITAR_PAL_M);
+    Patch_AE_Smith_ForgeAndReplace(ITAR_DJG_CH_FH_ArmorExpansion, ITAR_DJG_CH_ArmorExpansion);
 };
