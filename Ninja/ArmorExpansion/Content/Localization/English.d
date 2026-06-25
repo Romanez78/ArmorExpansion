@@ -790,6 +790,8 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_DJG_L_desc = "Lower the visor of the light dragonhunter armor";
     Patch_AE_PC_ITAR_DJG_CM_FH_ArmorExpansion_desc = "Put up the visor of the medium dragontracker crossbowman  armor";
     Patch_AE_PC_ITAR_DJG_CM_ArmorExpansion_desc = "Lower the visor of the medium dragontracker crossbowman armor";
+    Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_desc = "Put up the visor of the heavy dragontracker crossbowman armor";
+    Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_desc = "Lower the visor of the heavy dragontracker crossbowman armor";
 
     // ------
     // Ulthar
