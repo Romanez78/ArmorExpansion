@@ -795,7 +795,7 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_ITAR_PAL_CM_FH_ArmorExpansion_desc = "Put up the visor of the medium crossbowman paladin armor";
     Patch_AE_PC_ITAR_PAL_CM_ArmorExpansion_desc = "Lower the visor of the medium crossbowman paladin armor";
     Patch_AE_PC_ITAR_PAL_CH_FH_ArmorExpansion_desc = "Remove helmet of the heavy crossbowman paladin armor";
-    Patch_AE_PC_ITAR_PAL_CH_ArmorExpansion_desc = "Return helmet of the heavy crowwbowman paladin armor"
+    Patch_AE_PC_ITAR_PAL_CH_ArmorExpansion_desc = "Return helmet of the heavy crowwbowman paladin armor";
 
     // ------
     // Ulthar
