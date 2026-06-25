@@ -786,6 +786,8 @@ func void Patch_AE_LocalizeEnglish() {
     Patch_AE_PC_Itar_djg_M_NH_desc = "Return Helmet to medium dragonhunter armor";
     Patch_AE_PC_Itar_djg_H_NH_desc = "Return Helmet to heavy dragonhunter armor";
     Patch_AE_PC_Itar_djg_H_desc = "Remove Helm from heavy dragonhunter armor";
+    Patch_AE_PC_ITAR_DJG_L_FH_ARMOREXPANSION_desc = "Put up the visor of the light dragonhunter armor";
+    Patch_AE_PC_ITAR_DJG_L_desc = "Lower the visor of the light dragonhunter armor";
 
     // ------
     // Ulthar
