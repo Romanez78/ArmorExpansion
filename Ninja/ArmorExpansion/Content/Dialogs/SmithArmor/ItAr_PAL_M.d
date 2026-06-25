@@ -6,6 +6,8 @@
  * Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION
  * Patch_AE_PC_ITAR_PAL_M
  */
+
+ // TODO: German and Polish localization
 instance Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION (C_Info)
 {
     npc         = PC_Hero;
