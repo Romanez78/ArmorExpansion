@@ -334,14 +334,14 @@ func void Patch_AE_BalanceLHiverMarcello() {
     ITAR_GAMBESON_ArmorExpansion__PROT_FIRE = 5;
     ITAR_GAMBESON_ArmorExpansion__PROT_MAGIC = 5;
 
-    ITAR_ARX_HUNTERM_ArmorExpansion__PROT_EDGE = 40;
-    ITAR_ARX_HUNTERM_ArmorExpansion__PROT_BLUNT = 40;
+    ITAR_ARX_HUNTERM_ArmorExpansion__PROT_EDGE = 35;
+    ITAR_ARX_HUNTERM_ArmorExpansion__PROT_BLUNT = 35;
     ITAR_ARX_HUNTERM_ArmorExpansion__PROT_POINT = 20;
     ITAR_ARX_HUNTERM_ArmorExpansion__PROT_FIRE = 10;
     ITAR_ARX_HUNTERM_ArmorExpansion__PROT_MAGIC = 10;
 
-    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_EDGE = 55;
-    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_BLUNT = 55;
+    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_EDGE = 50;
+    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_BLUNT = 50;
     ITAR_ARX_HUNTERH_ArmorExpansion__PROT_POINT = 30;
     ITAR_ARX_HUNTERH_ArmorExpansion__PROT_FIRE = 15;
     ITAR_ARX_HUNTERH_ArmorExpansion__PROT_MAGIC = 15;
