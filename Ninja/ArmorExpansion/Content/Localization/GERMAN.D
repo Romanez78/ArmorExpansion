@@ -773,6 +773,18 @@ func void Patch_AE_LocalizeGerman() {
     Patch_AE_PC_Itar_djg_M_NH_desc = "Den Helm der mittlere Drachenjägerrüstung hinzufügen";
     Patch_AE_PC_Itar_djg_H_NH_desc = "Den Helm der schwere Drachenjägerrüstung hinzufügen";
     Patch_AE_PC_Itar_djg_H_desc = "Den Helm der schwere Drachenjägerrüstung entfernen";
+    Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_desc = "Kettenhaube der Ritterrüstung zurückgeben";
+    Patch_AE_PC_ITAR_PAL_M_desc = "Kettenhaube der Ritterrüstung entfernen";
+    Patch_AE_PC_ITAR_DJG_L_FH_ARMOREXPANSION_desc = "Helm der leichten Drachenjäger-Rüstung entfernen";
+    Patch_AE_PC_ITAR_DJG_L_desc = "Helm der leichten Drachenjäger-Rüstung zurückgeben";
+    Patch_AE_PC_ITAR_DJG_CM_FH_ArmorExpansion_desc = "Helm der mittelschweren DrachenverfolgerRüstung entfernen";
+    Patch_AE_PC_ITAR_DJG_CM_ArmorExpansion_desc = "Helm der mittelschweren DrachenverfolgerRüstung zurückgeben";
+    Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_desc = "Helm der schweren DrachenverfolgerRüstung entfernen";
+    Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_desc = "Helm der schweren DrachenverfolgerRüstung zurückgeben";
+    Patch_AE_PC_ITAR_PAL_CM_FH_ArmorExpansion_desc = "Helm der Schwere Armbrustschützen Ritterrüstung entfernen";
+    Patch_AE_PC_ITAR_PAL_CM_ArmorExpansion_desc = "Helm der Schwere Armbrustschützen Ritterrüstung zurückgeben";
+    Patch_AE_PC_ITAR_PAL_CH_FH_ArmorExpansion_desc = "Helm der Armbrustschützen Paladinrüstung entfernen";
+    Patch_AE_PC_ITAR_PAL_CH_ArmorExpansion_desc = "Helm der Armbrustschützen Paladinrüstung zurückgeben";
 
     // ------
     // Ulthar
