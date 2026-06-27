@@ -350,11 +350,11 @@ func void Patch_AE_BalanceLHiverBuddygothArtstuff() {
     ITAR_ARX_HUNTERM_ArmorExpansion__PROT_FIRE = 15;
     ITAR_ARX_HUNTERM_ArmorExpansion__PROT_MAGIC = 10;
 
-    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_EDGE = 45;
-    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_BLUNT = 50;
-    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_POINT = 40;
-    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_FIRE = 25;
-    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_MAGIC = 15;
+    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_EDGE = 40;
+    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_BLUNT = 45;
+    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_POINT = 35;
+    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_FIRE = 20;
+    ITAR_ARX_HUNTERH_ArmorExpansion__PROT_MAGIC = 10;
 
     ITAR_PIR_H_ArmorExpansion__PROT_EDGE = 65;
     ITAR_PIR_H_ArmorExpansion__PROT_BLUNT = 55;
