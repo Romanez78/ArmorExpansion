@@ -224,17 +224,17 @@ const int ITAR_PAL_MH_FH_ArmorExpansion__PROT_POINT = 125;
 const int ITAR_PAL_MH_FH_ArmorExpansion__PROT_FIRE = 75;
 const int ITAR_PAL_MH_FH_ArmorExpansion__PROT_MAGIC = 35;
 
-const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_EDGE = 40;
-const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_BLUNT = 40;
-const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_POINT = 40;
-const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_FIRE = 0;
-const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_MAGIC = 0;
+const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_EDGE = 35;
+const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_BLUNT = 35;
+const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_POINT = 35;
+const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_FIRE = 10;
+const int ITAR_ARX_HUNTERM_ArmorExpansion__PROT_MAGIC = 5;
 
-const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_EDGE = 55;
-const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_BLUNT = 55;
-const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_POINT = 55;
-const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_FIRE = 5;
-const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_MAGIC = 0;
+const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_EDGE = 50;
+const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_BLUNT = 50;
+const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_POINT = 50;
+const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_FIRE = 15;
+const int ITAR_ARX_HUNTERH_ArmorExpansion__PROT_MAGIC = 10;
 
 const int ItAr_KDF_M_AMEXPANSION__PROT_EDGE = 55;
 const int ItAr_KDF_M_AMEXPANSION__PROT_BLUNT = 55;
