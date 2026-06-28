@@ -2162,8 +2162,8 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	on_equip				=	Patch_AE_Equip_ITAR_CRUSADER;
-	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER;
+	on_equip				=	Patch_AE_Equip_ITAR_CRUSADER_NH;
+	on_unequip				=	Patch_AE_UnEquip_ITAR_CRUSADER_NH; 
 
 	description				=	name;
 	TEXT[0]                 =       Patch_AE_TEXT_TwoHandedBonus5;
@@ -2183,7 +2183,32 @@ INSTANCE ITAR_NH_CRUSADER_ArmorExpansion (C_Item)
 	TEXT[5]					=	NAME_Value;
 	COUNT[5]				= 	value;
 };
+func void Patch_AE_Equip_ITAR_CRUSADER_NH()
+{
+    B_RaiseFightTalent(self, NPC_TALENT_2H, 5);
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, 5);
+            self.attribute[ATR_MANA_MAX] += 15;
+	        self.attribute[ATR_MANA] += 15;
+            self.attribute[ATR_HITPOINTS_MAX] += 20;
+	        self.attribute[ATR_HITPOINTS] += 20;
+        };
 
+    };
+};
+func void Patch_AE_UnEquip_ITAR_CRUSADER_NH()
+{
+    B_RaiseFightTalent(self, NPC_TALENT_2H, -5);
+    if (Npc_IsPlayer(self)) {
+        if (Patch_AE_IsLHiverMasty()) {
+            Npc_ChangeAttribute(self, ATR_STRENGTH, -5);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_MANA_MAX, 15);
+            Patch_AE_ItemsWithBonuses_HPMana_UnEquipping(ATR_HITPOINTS_MAX, 20);
+        };
+
+    };
+};
 INSTANCE ITAR_PAL_MH_FH_ArmorExpansion (C_Item)
 {
 	name 					=	ITAR_PAL_MH_ArmorExpansion__name;
