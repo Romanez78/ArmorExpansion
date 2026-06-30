@@ -60,7 +60,7 @@ func void Patch_AE_DIA_Matteo_HUNTERJACKET_Info()
 {
     AI_Output(other, self, "DIA_Matteo_LEATHER_15_00");
 
-    if (B_GiveInvItems(other, self, ItMi_Gold, 800))
+    if (B_GiveInvItems(other, self, ItMi_Gold, 1000))
     {
         AI_Output(self, other, "DIA_MATTEO_LEATHER_09_01");
 
@@ -98,7 +98,7 @@ func void Patch_AE_DIA_Matteo_HUNTERJACKETH_Info()
 {
     AI_Output (other, self, "DIA_Matteo_LEATHER_15_00");
 
-    if (B_GiveInvItems(other, self, ItMi_Gold, 1800))
+    if (B_GiveInvItems(other, self, ItMi_Gold, 2000))
     {
         AI_Output(self, other, "DIA_MATTEO_LEATHER_09_01");
 
