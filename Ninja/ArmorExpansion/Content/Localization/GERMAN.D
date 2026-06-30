@@ -557,7 +557,9 @@ func void Patch_AE_LocalizeGerman() {
     // Matteo
     // ------
 
-    Patch_AE_DIA_Matteo_GAMBESON_desc = "Jäger Stoffrüstung kaufen. (350 Gold).";
+    Patch_AE_DIA_Matteo_GAMBESON_desc = "Jäger Stoffrüstung kaufen. (350 Geld).";
+    Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Jagdjacke kaufen. (1000 Geld).";
+    Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Verstärkte Jagdjacke kaufen. (2000 Geld).";
     // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_DE"); //Okay, gib mir die Rüstung.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_DE"); //Es wird Ihnen gefallen.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_DE"); //Die Rüstung ist ihr Gewicht in Gold wert, also komm wieder, wenn du genug hast.
