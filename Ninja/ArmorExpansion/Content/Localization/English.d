@@ -566,8 +566,8 @@ func void Patch_AE_LocalizeEnglish() {
     // ------
 
     Patch_AE_DIA_Matteo_GAMBESON_desc = "Buy Hunting Gambeson (Protection: 20/20. Ranged Bonus, Cost: 350 gold).";
-    Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Buy Hunting Jacket (Protection: 40/40/10/5. Ranged Bonus, Cost: 800 gold).";
-    Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Buy Strenghtened Hunting Jacket (Prot.: 55/55/15/10. Ranged Bonus, Cost: 1800 gold).";
+    Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Buy Hunting Jacket (Protection: 35/35/10/5. Ranged Bonus, Cost: 1000 gold).";
+    Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Buy Strenghtened Hunting Jacket (Prot.: 50/50/15/10. Ranged Bonus, Cost: 2000 gold).";
 
     // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_EN"); //Okay, give me the armor.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_EN"); //You'll like it.
