@@ -566,8 +566,8 @@ func void Patch_AE_LocalizePolish() {
     // Matteo
     // ------
     Patch_AE_DIA_Matteo_GAMBESON_desc = "Przeszywanica myśliwego. 20/20 +3% do łuku i kuszy. 350 szt. złota.";
-    Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Kurtka myśliwska 40/40/10/5 +3% do łuku i kuszy. 800 szt. złota.";
-    Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Wzmocniona kurtka myśliwska 55/55/15/10 +3% do łuku i kuszy. 1800 szt. złota.";
+    Patch_AE_DIA_Matteo_HUNTERJACKET_desc = "Kurtka myśliwska 35/35/10/5 +3% do łuku i kuszy. 1000 szt. złota.";
+    Patch_AE_DIA_Matteo_HUNTERJACKETH_desc = "Wzmocniona kurtka myśliwska 50/50/15/10 +3% do łuku i kuszy. 2000 szt. złota.";
     // AI_Output(other, self, "PATCH_AE_DIA_MATTEO_GAMBESON_15_00_PL"); //Dobrze, daj mi tę zbroję.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_01_PL"); //Spodoba ci się.
     // AI_Output(self, other, "PATCH_AE_DIA_MATTEO_GAMBESON_09_02_PL"); //Pancerz ma wartość z złocie, więc wróć, gdy będziesz miał dość złota.
