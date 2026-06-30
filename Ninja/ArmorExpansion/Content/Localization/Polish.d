@@ -783,18 +783,18 @@ func void Patch_AE_LocalizePolish() {
     Patch_AE_PC_Itar_djg_M_NH_desc = "Załóż hełm na średni pancerz łowcy smoków.";
     Patch_AE_PC_Itar_djg_H_NH_desc = "Załóż hełm na ciężki pancerz łowcy smoków";
     Patch_AE_PC_Itar_djg_H_desc = "Zdejmij hełm z ciężkiego pancerza łowcy smoków";
-    Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_desc = "Zwróć hełm kolczasty z zbroi rycerskiej";
+    Patch_AE_PC_ITAR_PAL_M_NH_ARMOREXPANSION_desc = "Zwróć hełm kolczasty do zbroi rycerskiej";
     Patch_AE_PC_ITAR_PAL_M_desc = "Zdejmij hełm kolczasty z zbroi rycerskiej";
     Patch_AE_PC_ITAR_DJG_L_FH_ARMOREXPANSION_desc = "Zdejmij hełm z lekkiej zbroi łowcy smoków";
-    Patch_AE_PC_ITAR_DJG_L_desc = "Zwróć hełm z lekkiej zbroi łowcy smoków";
-    Patch_AE_PC_ITAR_DJG_CM_FH_ArmorExpansion_desc = "Zdejmij hełm ze średniej zbroi pogromcy smoków";
-    Patch_AE_PC_ITAR_DJG_CM_ArmorExpansion_desc = "Zwróć hełm ze średniej zbroi pogromcy smoków";
-    Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_desc = "Zdejmij hełm z ciężkiej zbroi łowcy smoków";
-    Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_desc = "Zwróć hełm z ciężkiej zbroi łowcy smoków";
-    Patch_AE_PC_ITAR_PAL_CM_FH_ArmorExpansion_desc = "Zdejmij hełm ciężkich łuczników z zbroi rycerskiej";
-    Patch_AE_PC_ITAR_PAL_CM_ArmorExpansion_desc = "Zwróć hełm ciężkich łuczników do zbroi rycerskiej";
-    Patch_AE_PC_ITAR_PAL_CH_FH_ArmorExpansion_desc = "Zdejmij hełm łuczników z zbroi paladyna";
-    Patch_AE_PC_ITAR_PAL_CH_ArmorExpansion_desc = "Zwróć hełm łuczników do zbroi paladyna";
+    Patch_AE_PC_ITAR_DJG_L_desc = "Zwróć hełm do lekkiej zbroi łowcy smoków";
+    Patch_AE_PC_ITAR_DJG_CM_FH_ArmorExpansion_desc = "Zdejmij hełm ze średniego pancerza tropiciela smoków";
+    Patch_AE_PC_ITAR_DJG_CM_ArmorExpansion_desc = "Zwróć hełm do średniego pancerza tropiciela smoków";
+    Patch_AE_PC_ITAR_DJG_CH_FH_ArmorExpansion_desc = "Zdejmij hełm z ciężkiego pancerza tropiciela smoków";
+    Patch_AE_PC_ITAR_DJG_CH_ArmorExpansion_desc = "Zwróć hełm do ciężkiego pancerza tropiciela smoków";
+    Patch_AE_PC_ITAR_PAL_CM_FH_ArmorExpansion_desc = "Zdejmij hełm ciężkiej zbroi rycerskiego kusznik";
+    Patch_AE_PC_ITAR_PAL_CM_ArmorExpansion_desc = "Zwróć hełm do ciężkiej zbroi rycerskiego kusznika";
+    Patch_AE_PC_ITAR_PAL_CH_FH_ArmorExpansion_desc = "Zdejmij hełm ze zbroi kusznika paladyna";
+    Patch_AE_PC_ITAR_PAL_CH_ArmorExpansion_desc = "Zwróć hełm do zbroi kusznika paladyna";
     
     // ------
     // Ulthar
